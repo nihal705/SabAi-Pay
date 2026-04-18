@@ -1,0 +1,506 @@
+[
+  {
+    "id": "pharmeasy_prod_bangalore_1",
+    "name": "Paracetamol",
+    "price": 127,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_2",
+    "name": "Paracetamol (19 tablets)",
+    "price": 32,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_3",
+    "name": "Dolo 650",
+    "price": 177,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_4",
+    "name": "Dolo 650 (27 tablets)",
+    "price": 92,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_5",
+    "name": "Crocin",
+    "price": 178,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_6",
+    "name": "Crocin (22 tablets)",
+    "price": 93,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_7",
+    "name": "Aspirin",
+    "price": 30,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_8",
+    "name": "Aspirin (30 tablets)",
+    "price": 98,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_9",
+    "name": "Ibuprofen",
+    "price": 172,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_10",
+    "name": "Ibuprofen (35 tablets)",
+    "price": 138,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_11",
+    "name": "Cetrizine",
+    "price": 39,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_12",
+    "name": "Cetrizine (19 tablets)",
+    "price": 129,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_13",
+    "name": "Vitamin C",
+    "price": 288,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_14",
+    "name": "Vitamin C (14 tablets)",
+    "price": 146,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_15",
+    "name": "Vitamin D3",
+    "price": 467,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_16",
+    "name": "Vitamin D3 (19 tablets)",
+    "price": 594,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_17",
+    "name": "Vitamin B12",
+    "price": 240,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_18",
+    "name": "Vitamin B12 (12 tablets)",
+    "price": 157,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_19",
+    "name": "Calcium Tablets",
+    "price": 558,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_20",
+    "name": "Calcium Tablets (12 tablets)",
+    "price": 450,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_21",
+    "name": "Iron Supplement",
+    "price": 320,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_22",
+    "name": "Iron Supplement (36 tablets)",
+    "price": 518,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_23",
+    "name": "Multivitamin",
+    "price": 562,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_24",
+    "name": "Multivitamin (16 tablets)",
+    "price": 174,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_25",
+    "name": "Hand Sanitizer",
+    "price": 70,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_26",
+    "name": "Hand Sanitizer (13 tablets)",
+    "price": 162,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_27",
+    "name": "Face Mask",
+    "price": 250,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_28",
+    "name": "Face Mask (21 tablets)",
+    "price": 280,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_29",
+    "name": "Thermometer",
+    "price": 391,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_30",
+    "name": "Thermometer (11 tablets)",
+    "price": 84,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_31",
+    "name": "Bandages",
+    "price": 210,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_32",
+    "name": "Bandages (23 tablets)",
+    "price": 279,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_33",
+    "name": "Cotton",
+    "price": 172,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_34",
+    "name": "Cotton (11 tablets)",
+    "price": 407,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_35",
+    "name": "First Aid Kit",
+    "price": 165,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_36",
+    "name": "First Aid Kit (34 tablets)",
+    "price": 258,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_37",
+    "name": "Diapers",
+    "price": 293,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_38",
+    "name": "Diapers (10 tablets)",
+    "price": 261,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_39",
+    "name": "Baby Cream",
+    "price": 354,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_40",
+    "name": "Baby Cream (16 tablets)",
+    "price": 124,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_41",
+    "name": "Baby Oil",
+    "price": 247,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_42",
+    "name": "Baby Oil (10 tablets)",
+    "price": 400,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_43",
+    "name": "Baby Shampoo",
+    "price": 433,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_44",
+    "name": "Baby Shampoo (31 tablets)",
+    "price": 114,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_45",
+    "name": "Baby Powder",
+    "price": 72,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_46",
+    "name": "Baby Powder (30 tablets)",
+    "price": 353,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_47",
+    "name": "Ensure",
+    "price": 287,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_48",
+    "name": "Ensure (36 tablets)",
+    "price": 421,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_49",
+    "name": "Horlicks",
+    "price": 352,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_50",
+    "name": "Horlicks (17 tablets)",
+    "price": 305,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_51",
+    "name": "Boost",
+    "price": 162,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_52",
+    "name": "Boost (27 tablets)",
+    "price": 129,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_53",
+    "name": "Complan",
+    "price": 244,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_54",
+    "name": "Complan (28 tablets)",
+    "price": 308,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_55",
+    "name": "Protinex",
+    "price": 294,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_bangalore_56",
+    "name": "Protinex (26 tablets)",
+    "price": 255,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  }
+]

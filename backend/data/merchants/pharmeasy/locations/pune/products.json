@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "pharmeasy_prod_pune_1",
+    "name": "Dolo 650",
+    "price": 79,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_2",
+    "name": "Crocin 41mg",
+    "price": 173,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_3",
+    "name": "Aspirin",
+    "price": 421,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_4",
+    "name": "Vitamin C 87mg",
+    "price": 59,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_5",
+    "name": "Calcium Tablets 27mg",
+    "price": 141,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_6",
+    "name": "Paracetamol 39mg",
+    "price": 146,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_7",
+    "name": "Dolo 650 12mg",
+    "price": 162,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_8",
+    "name": "Crocin 11mg",
+    "price": 159,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_9",
+    "name": "Aspirin",
+    "price": 237,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_10",
+    "name": "Vitamin C",
+    "price": 387,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_11",
+    "name": "Calcium Tablets",
+    "price": 137,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_12",
+    "name": "Paracetamol 75mg",
+    "price": 283,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_13",
+    "name": "Dolo 650 4mg",
+    "price": 160,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_14",
+    "name": "Crocin 66mg",
+    "price": 262,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_15",
+    "name": "Aspirin",
+    "price": 415,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_16",
+    "name": "Vitamin C 99mg",
+    "price": 363,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_17",
+    "name": "Calcium Tablets",
+    "price": 126,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_18",
+    "name": "Paracetamol 8mg",
+    "price": 364,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_19",
+    "name": "Dolo 650",
+    "price": 517,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_20",
+    "name": "Crocin 91mg",
+    "price": 121,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_21",
+    "name": "Aspirin 7mg",
+    "price": 142,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_22",
+    "name": "Vitamin C",
+    "price": 450,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_23",
+    "name": "Calcium Tablets 10mg",
+    "price": 499,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_24",
+    "name": "Paracetamol",
+    "price": 145,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_25",
+    "name": "Dolo 650 66mg",
+    "price": 162,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_26",
+    "name": "Crocin 32mg",
+    "price": 370,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_27",
+    "name": "Aspirin 55mg",
+    "price": 170,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_28",
+    "name": "Vitamin C 78mg",
+    "price": 121,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_29",
+    "name": "Calcium Tablets 98mg",
+    "price": 186,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_30",
+    "name": "Paracetamol 40mg",
+    "price": 28,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_31",
+    "name": "Dolo 650",
+    "price": 108,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_32",
+    "name": "Crocin 21mg",
+    "price": 363,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_33",
+    "name": "Aspirin 76mg",
+    "price": 246,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_34",
+    "name": "Vitamin C 100mg",
+    "price": 397,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_35",
+    "name": "Calcium Tablets",
+    "price": 326,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_36",
+    "name": "Paracetamol",
+    "price": 506,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_37",
+    "name": "Dolo 650",
+    "price": 244,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_38",
+    "name": "Crocin 3mg",
+    "price": 45,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_39",
+    "name": "Aspirin 58mg",
+    "price": 31,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_40",
+    "name": "Vitamin C",
+    "price": 235,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_41",
+    "name": "Calcium Tablets 51mg",
+    "price": 79,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_42",
+    "name": "Paracetamol 2mg",
+    "price": 333,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_43",
+    "name": "Dolo 650 47mg",
+    "price": 291,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_44",
+    "name": "Crocin",
+    "price": 244,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_45",
+    "name": "Aspirin 19mg",
+    "price": 199,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_46",
+    "name": "Vitamin C 100mg",
+    "price": 517,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_47",
+    "name": "Calcium Tablets 46mg",
+    "price": 69,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_48",
+    "name": "Paracetamol 91mg",
+    "price": 208,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_49",
+    "name": "Dolo 650",
+    "price": 322,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_50",
+    "name": "Crocin 99mg",
+    "price": 154,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_51",
+    "name": "Aspirin",
+    "price": 336,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_52",
+    "name": "Vitamin C 73mg",
+    "price": 348,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_53",
+    "name": "Calcium Tablets 17mg",
+    "price": 462,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_54",
+    "name": "Paracetamol",
+    "price": 450,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_55",
+    "name": "Dolo 650",
+    "price": 499,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_56",
+    "name": "Crocin 57mg",
+    "price": 132,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_57",
+    "name": "Aspirin",
+    "price": 477,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_58",
+    "name": "Vitamin C",
+    "price": 46,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_59",
+    "name": "Calcium Tablets 50mg",
+    "price": 418,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_60",
+    "name": "Paracetamol 44mg",
+    "price": 256,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_61",
+    "name": "Dolo 650",
+    "price": 402,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_62",
+    "name": "Crocin",
+    "price": 137,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_63",
+    "name": "Aspirin 28mg",
+    "price": 301,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_64",
+    "name": "Vitamin C",
+    "price": 424,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_65",
+    "name": "Calcium Tablets 92mg",
+    "price": 211,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_66",
+    "name": "Paracetamol 3mg",
+    "price": 33,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_67",
+    "name": "Dolo 650 52mg",
+    "price": 158,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_68",
+    "name": "Crocin",
+    "price": 228,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_69",
+    "name": "Aspirin 43mg",
+    "price": 139,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_70",
+    "name": "Vitamin C",
+    "price": 376,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_71",
+    "name": "Calcium Tablets 74mg",
+    "price": 197,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_72",
+    "name": "Paracetamol 5mg",
+    "price": 31,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_73",
+    "name": "Dolo 650",
+    "price": 369,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_74",
+    "name": "Crocin",
+    "price": 274,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_75",
+    "name": "Aspirin 13mg",
+    "price": 357,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_76",
+    "name": "Vitamin C 26mg",
+    "price": 325,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_77",
+    "name": "Calcium Tablets",
+    "price": 401,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_78",
+    "name": "Paracetamol",
+    "price": 487,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_79",
+    "name": "Dolo 650 21mg",
+    "price": 392,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_80",
+    "name": "Crocin 8mg",
+    "price": 169,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_81",
+    "name": "Aspirin 99mg",
+    "price": 272,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_82",
+    "name": "Vitamin C",
+    "price": 437,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_83",
+    "name": "Calcium Tablets",
+    "price": 233,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_84",
+    "name": "Paracetamol",
+    "price": 372,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_85",
+    "name": "Dolo 650 97mg",
+    "price": 179,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_86",
+    "name": "Crocin",
+    "price": 396,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_87",
+    "name": "Aspirin",
+    "price": 84,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_88",
+    "name": "Vitamin C",
+    "price": 219,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_89",
+    "name": "Calcium Tablets",
+    "price": 333,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_90",
+    "name": "Paracetamol 27mg",
+    "price": 461,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_91",
+    "name": "Dolo 650 48mg",
+    "price": 491,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_92",
+    "name": "Crocin 70mg",
+    "price": 393,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_93",
+    "name": "Aspirin 73mg",
+    "price": 411,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_94",
+    "name": "Vitamin C",
+    "price": 283,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_95",
+    "name": "Calcium Tablets 44mg",
+    "price": 172,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_96",
+    "name": "Paracetamol 17mg",
+    "price": 60,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_97",
+    "name": "Dolo 650",
+    "price": 255,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_98",
+    "name": "Crocin 52mg",
+    "price": 145,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_99",
+    "name": "Aspirin",
+    "price": 385,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_100",
+    "name": "Vitamin C",
+    "price": 67,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_101",
+    "name": "Calcium Tablets 96mg",
+    "price": 310,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_102",
+    "name": "Paracetamol",
+    "price": 93,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_103",
+    "name": "Dolo 650 24mg",
+    "price": 152,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_104",
+    "name": "Crocin",
+    "price": 460,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_105",
+    "name": "Aspirin",
+    "price": 284,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_106",
+    "name": "Vitamin C",
+    "price": 127,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_107",
+    "name": "Calcium Tablets 31mg",
+    "price": 325,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_108",
+    "name": "Paracetamol 13mg",
+    "price": 471,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_109",
+    "name": "Dolo 650 3mg",
+    "price": 82,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_110",
+    "name": "Crocin",
+    "price": 147,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_111",
+    "name": "Aspirin 73mg",
+    "price": 327,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_112",
+    "name": "Vitamin C 93mg",
+    "price": 68,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_113",
+    "name": "Calcium Tablets 28mg",
+    "price": 119,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_114",
+    "name": "Paracetamol 75mg",
+    "price": 147,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_115",
+    "name": "Dolo 650",
+    "price": 421,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_116",
+    "name": "Crocin 71mg",
+    "price": 246,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_117",
+    "name": "Aspirin 85mg",
+    "price": 517,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_118",
+    "name": "Vitamin C 7mg",
+    "price": 51,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_119",
+    "name": "Calcium Tablets 12mg",
+    "price": 218,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_120",
+    "name": "Paracetamol",
+    "price": 445,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_121",
+    "name": "Dolo 650 4mg",
+    "price": 126,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_122",
+    "name": "Crocin 74mg",
+    "price": 444,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_123",
+    "name": "Aspirin",
+    "price": 34,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_124",
+    "name": "Vitamin C 22mg",
+    "price": 139,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_125",
+    "name": "Calcium Tablets",
+    "price": 237,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_126",
+    "name": "Paracetamol 82mg",
+    "price": 470,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_127",
+    "name": "Dolo 650 12mg",
+    "price": 217,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_128",
+    "name": "Crocin 28mg",
+    "price": 400,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_129",
+    "name": "Aspirin",
+    "price": 512,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_130",
+    "name": "Vitamin C",
+    "price": 496,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_131",
+    "name": "Calcium Tablets",
+    "price": 218,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_132",
+    "name": "Paracetamol 100mg",
+    "price": 297,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_133",
+    "name": "Dolo 650 5mg",
+    "price": 301,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_134",
+    "name": "Crocin",
+    "price": 437,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_135",
+    "name": "Aspirin 75mg",
+    "price": 215,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_136",
+    "name": "Vitamin C 13mg",
+    "price": 489,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_137",
+    "name": "Calcium Tablets 18mg",
+    "price": 328,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_138",
+    "name": "Paracetamol 60mg",
+    "price": 195,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_139",
+    "name": "Dolo 650 40mg",
+    "price": 397,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_140",
+    "name": "Crocin 11mg",
+    "price": 328,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_141",
+    "name": "Aspirin",
+    "price": 376,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_142",
+    "name": "Vitamin C",
+    "price": 143,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_143",
+    "name": "Calcium Tablets 46mg",
+    "price": 278,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_144",
+    "name": "Paracetamol",
+    "price": 270,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_145",
+    "name": "Dolo 650 8mg",
+    "price": 469,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_146",
+    "name": "Crocin",
+    "price": 297,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_147",
+    "name": "Aspirin 33mg",
+    "price": 230,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_148",
+    "name": "Vitamin C 58mg",
+    "price": 376,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_149",
+    "name": "Calcium Tablets",
+    "price": 433,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_150",
+    "name": "Paracetamol",
+    "price": 129,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_151",
+    "name": "Dolo 650 43mg",
+    "price": 77,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_152",
+    "name": "Crocin",
+    "price": 198,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_153",
+    "name": "Aspirin",
+    "price": 258,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_154",
+    "name": "Vitamin C",
+    "price": 134,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_155",
+    "name": "Calcium Tablets",
+    "price": 271,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_156",
+    "name": "Paracetamol 51mg",
+    "price": 223,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_157",
+    "name": "Dolo 650",
+    "price": 290,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_158",
+    "name": "Crocin 17mg",
+    "price": 355,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_159",
+    "name": "Aspirin",
+    "price": 267,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_160",
+    "name": "Vitamin C 64mg",
+    "price": 372,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_161",
+    "name": "Calcium Tablets 36mg",
+    "price": 141,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_162",
+    "name": "Paracetamol",
+    "price": 243,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_163",
+    "name": "Dolo 650 34mg",
+    "price": 447,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_164",
+    "name": "Crocin",
+    "price": 155,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_165",
+    "name": "Aspirin",
+    "price": 426,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_166",
+    "name": "Vitamin C 32mg",
+    "price": 327,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_167",
+    "name": "Calcium Tablets 69mg",
+    "price": 252,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_168",
+    "name": "Paracetamol 88mg",
+    "price": 167,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_169",
+    "name": "Dolo 650 64mg",
+    "price": 397,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_170",
+    "name": "Crocin 17mg",
+    "price": 301,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_171",
+    "name": "Aspirin 71mg",
+    "price": 130,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_172",
+    "name": "Vitamin C",
+    "price": 345,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_173",
+    "name": "Calcium Tablets 29mg",
+    "price": 431,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_174",
+    "name": "Paracetamol",
+    "price": 486,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_175",
+    "name": "Dolo 650 72mg",
+    "price": 231,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_176",
+    "name": "Crocin 29mg",
+    "price": 276,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_177",
+    "name": "Aspirin 5mg",
+    "price": 306,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_178",
+    "name": "Vitamin C",
+    "price": 464,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_179",
+    "name": "Calcium Tablets 45mg",
+    "price": 269,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_180",
+    "name": "Paracetamol",
+    "price": 378,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_181",
+    "name": "Dolo 650 5mg",
+    "price": 212,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_182",
+    "name": "Crocin 87mg",
+    "price": 309,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_183",
+    "name": "Aspirin 8mg",
+    "price": 381,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_184",
+    "name": "Vitamin C 100mg",
+    "price": 335,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_185",
+    "name": "Calcium Tablets 14mg",
+    "price": 53,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_186",
+    "name": "Paracetamol 33mg",
+    "price": 99,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_187",
+    "name": "Dolo 650",
+    "price": 343,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_188",
+    "name": "Crocin 62mg",
+    "price": 161,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_189",
+    "name": "Aspirin 13mg",
+    "price": 163,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_190",
+    "name": "Vitamin C",
+    "price": 153,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_191",
+    "name": "Calcium Tablets 95mg",
+    "price": 297,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_192",
+    "name": "Paracetamol",
+    "price": 63,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_193",
+    "name": "Dolo 650",
+    "price": 373,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_194",
+    "name": "Crocin",
+    "price": 149,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_195",
+    "name": "Aspirin 48mg",
+    "price": 221,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_196",
+    "name": "Vitamin C 75mg",
+    "price": 506,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_197",
+    "name": "Calcium Tablets",
+    "price": 407,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_198",
+    "name": "Paracetamol",
+    "price": 383,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_199",
+    "name": "Dolo 650",
+    "price": 445,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_200",
+    "name": "Crocin 58mg",
+    "price": 349,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_201",
+    "name": "Aspirin 8mg",
+    "price": 245,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_202",
+    "name": "Vitamin C",
+    "price": 379,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_203",
+    "name": "Calcium Tablets",
+    "price": 393,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_204",
+    "name": "Paracetamol 82mg",
+    "price": 394,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_205",
+    "name": "Dolo 650",
+    "price": 32,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_206",
+    "name": "Crocin 41mg",
+    "price": 137,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_207",
+    "name": "Aspirin",
+    "price": 236,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_208",
+    "name": "Vitamin C 67mg",
+    "price": 27,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_209",
+    "name": "Calcium Tablets 16mg",
+    "price": 342,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_210",
+    "name": "Paracetamol 56mg",
+    "price": 48,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_211",
+    "name": "Dolo 650 57mg",
+    "price": 508,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_212",
+    "name": "Crocin 4mg",
+    "price": 355,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_213",
+    "name": "Aspirin",
+    "price": 406,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_214",
+    "name": "Vitamin C",
+    "price": 195,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_215",
+    "name": "Calcium Tablets",
+    "price": 267,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_216",
+    "name": "Paracetamol",
+    "price": 392,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_217",
+    "name": "Dolo 650",
+    "price": 299,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_218",
+    "name": "Crocin",
+    "price": 64,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_219",
+    "name": "Aspirin",
+    "price": 388,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_220",
+    "name": "Vitamin C 67mg",
+    "price": 316,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_221",
+    "name": "Calcium Tablets 20mg",
+    "price": 55,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_222",
+    "name": "Paracetamol",
+    "price": 300,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_223",
+    "name": "Dolo 650 46mg",
+    "price": 62,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_224",
+    "name": "Crocin",
+    "price": 215,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_225",
+    "name": "Aspirin 58mg",
+    "price": 99,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_226",
+    "name": "Vitamin C 32mg",
+    "price": 154,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_227",
+    "name": "Calcium Tablets 34mg",
+    "price": 468,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_228",
+    "name": "Paracetamol",
+    "price": 252,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_229",
+    "name": "Dolo 650 69mg",
+    "price": 187,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_230",
+    "name": "Crocin 36mg",
+    "price": 299,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_231",
+    "name": "Aspirin",
+    "price": 293,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_232",
+    "name": "Vitamin C 91mg",
+    "price": 28,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_233",
+    "name": "Calcium Tablets",
+    "price": 141,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_234",
+    "name": "Paracetamol 4mg",
+    "price": 117,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_235",
+    "name": "Dolo 650 4mg",
+    "price": 281,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_236",
+    "name": "Crocin",
+    "price": 166,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_237",
+    "name": "Aspirin 80mg",
+    "price": 267,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_238",
+    "name": "Vitamin C",
+    "price": 370,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_239",
+    "name": "Calcium Tablets 70mg",
+    "price": 294,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_240",
+    "name": "Paracetamol",
+    "price": 272,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_241",
+    "name": "Dolo 650 15mg",
+    "price": 475,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_242",
+    "name": "Crocin",
+    "price": 287,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_243",
+    "name": "Aspirin 64mg",
+    "price": 466,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_244",
+    "name": "Vitamin C",
+    "price": 154,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_245",
+    "name": "Calcium Tablets 18mg",
+    "price": 333,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_246",
+    "name": "Paracetamol 90mg",
+    "price": 208,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_247",
+    "name": "Dolo 650",
+    "price": 461,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_248",
+    "name": "Crocin 26mg",
+    "price": 376,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_249",
+    "name": "Aspirin 94mg",
+    "price": 384,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_250",
+    "name": "Vitamin C",
+    "price": 24,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_251",
+    "name": "Calcium Tablets 42mg",
+    "price": 396,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_252",
+    "name": "Paracetamol",
+    "price": 218,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_253",
+    "name": "Dolo 650 73mg",
+    "price": 482,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_254",
+    "name": "Crocin",
+    "price": 217,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_255",
+    "name": "Aspirin",
+    "price": 91,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_256",
+    "name": "Vitamin C 8mg",
+    "price": 291,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_257",
+    "name": "Calcium Tablets",
+    "price": 88,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_258",
+    "name": "Paracetamol",
+    "price": 178,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_259",
+    "name": "Dolo 650",
+    "price": 165,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_260",
+    "name": "Crocin 64mg",
+    "price": 295,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_261",
+    "name": "Aspirin 48mg",
+    "price": 95,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_262",
+    "name": "Vitamin C",
+    "price": 347,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_263",
+    "name": "Calcium Tablets 44mg",
+    "price": 479,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_264",
+    "name": "Paracetamol",
+    "price": 407,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_265",
+    "name": "Dolo 650",
+    "price": 413,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_266",
+    "name": "Crocin 65mg",
+    "price": 153,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_267",
+    "name": "Aspirin 31mg",
+    "price": 210,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_268",
+    "name": "Vitamin C",
+    "price": 116,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_269",
+    "name": "Calcium Tablets",
+    "price": 353,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_270",
+    "name": "Paracetamol 13mg",
+    "price": 210,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_271",
+    "name": "Dolo 650",
+    "price": 49,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_272",
+    "name": "Crocin",
+    "price": 500,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_273",
+    "name": "Aspirin 33mg",
+    "price": 224,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_274",
+    "name": "Vitamin C 32mg",
+    "price": 231,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_275",
+    "name": "Calcium Tablets 10mg",
+    "price": 412,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_276",
+    "name": "Paracetamol 99mg",
+    "price": 73,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_277",
+    "name": "Dolo 650",
+    "price": 350,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_278",
+    "name": "Crocin",
+    "price": 420,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_279",
+    "name": "Aspirin",
+    "price": 478,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_280",
+    "name": "Vitamin C",
+    "price": 397,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_281",
+    "name": "Calcium Tablets 43mg",
+    "price": 419,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_282",
+    "name": "Paracetamol",
+    "price": 269,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_283",
+    "name": "Dolo 650 57mg",
+    "price": 341,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_284",
+    "name": "Crocin",
+    "price": 26,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_285",
+    "name": "Aspirin 99mg",
+    "price": 46,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_286",
+    "name": "Vitamin C 23mg",
+    "price": 361,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_287",
+    "name": "Calcium Tablets 12mg",
+    "price": 192,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_288",
+    "name": "Paracetamol 14mg",
+    "price": 268,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_289",
+    "name": "Dolo 650 69mg",
+    "price": 225,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_290",
+    "name": "Crocin",
+    "price": 47,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_291",
+    "name": "Aspirin 59mg",
+    "price": 49,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_292",
+    "name": "Vitamin C 19mg",
+    "price": 253,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_293",
+    "name": "Calcium Tablets",
+    "price": 182,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_294",
+    "name": "Paracetamol 11mg",
+    "price": 508,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_295",
+    "name": "Dolo 650",
+    "price": 171,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_296",
+    "name": "Crocin",
+    "price": 262,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_297",
+    "name": "Aspirin 65mg",
+    "price": 119,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "pharmeasy_prod_pune_298",
+    "name": "Vitamin C",
+    "price": 345,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_299",
+    "name": "Calcium Tablets 92mg",
+    "price": 260,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "pharmeasy_prod_pune_300",
+    "name": "Paracetamol 44mg",
+    "price": 35,
+    "category": "Medicine",
+    "requiresPrescription": true
+  }
+]

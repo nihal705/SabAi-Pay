@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Zinger Burger",
+    "price": 189,
+    "category": "Burgers",
+    "isVeg": false,
+    "isPopular": true,
+    "description": "Crispy chicken burger",
+    "prepTime": "10-15 min",
+    "image": "/images/items/zinger-burger.jpg",
+    "id": "Zinger_Burger_1775766061512_60w07"
+  },
+  {
+    "name": "Big Mac",
+    "price": 249,
+    "category": "Burgers",
+    "isVeg": false,
+    "isPopular": true,
+    "description": "Double beef patty burger",
+    "prepTime": "10-15 min",
+    "image": "/images/items/big-mac.jpg",
+    "id": "Big_Mac_1775766061512_hqtst"
+  },
+  {
+    "name": "McChicken",
+    "price": 189,
+    "category": "Burgers",
+    "isVeg": false,
+    "isPopular": true,
+    "description": "Chicken burger",
+    "prepTime": "10-15 min",
+    "image": "/images/items/mcchicken.jpg",
+    "id": "McChicken_1775766061512_el9bf"
+  },
+  {
+    "name": "McVeggie",
+    "price": 149,
+    "category": "Burgers",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Vegetable burger",
+    "prepTime": "10-15 min",
+    "image": "/images/items/mcveggie.jpg",
+    "id": "McVeggie_1775766061512_azmbk"
+  },
+  {
+    "name": "Whopper",
+    "price": 229,
+    "category": "Burgers",
+    "isVeg": false,
+    "isPopular": true,
+    "description": "Flame-grilled beef burger",
+    "prepTime": "10-15 min",
+    "image": "/images/items/whopper.jpg",
+    "id": "Whopper_1775766061512_8ymal"
+  },
+  {
+    "name": "French Fries",
+    "price": 79,
+    "category": "Sides",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Classic salted fries",
+    "prepTime": "5-10 min",
+    "image": "/images/items/french-fries.jpg",
+    "id": "French_Fries_1775766061512_vmlun"
+  },
+  {
+    "name": "McFlurry Oreo",
+    "price": 129,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Soft serve with Oreo",
+    "prepTime": "5-10 min",
+    "image": "/images/items/mcflurry.jpg",
+    "id": "McFlurry_Oreo_1775766061512_plzok"
+  },
+  {
+    "name": "Chicken Nuggets (6 pcs)",
+    "price": 199,
+    "category": "Chicken",
+    "isVeg": false,
+    "isPopular": true,
+    "description": "Crispy chicken nuggets",
+    "prepTime": "5-10 min",
+    "image": "/images/items/chicken-nuggets.jpg",
+    "id": "Chicken_Nuggets_(6_pcs)_1775766061512_vhn4l"
+  }
+]

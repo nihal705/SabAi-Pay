@@ -1,0 +1,272 @@
+[
+  {
+    "id": "kfc_item_bangalore_1",
+    "name": "Hot Wings (1\")",
+    "price": 123,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_2",
+    "name": "Popcorn Chicken (2\")",
+    "price": 193,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_3",
+    "name": "Zinger Burger",
+    "price": 186,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_4",
+    "name": "French Fries",
+    "price": 198,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_5",
+    "name": "Coleslaw",
+    "price": 181,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_6",
+    "name": "Chicken Strips",
+    "price": 184,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_7",
+    "name": "Chocolate Mousse (4\")",
+    "price": 219,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_8",
+    "name": "Chicken Bucket",
+    "price": 179,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_9",
+    "name": "Hot Wings",
+    "price": 93,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_10",
+    "name": "Popcorn Chicken",
+    "price": 242,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_11",
+    "name": "Zinger Burger (10\")",
+    "price": 192,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_12",
+    "name": "French Fries (5\")",
+    "price": 180,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_13",
+    "name": "Coleslaw (6\")",
+    "price": 181,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_14",
+    "name": "Chicken Strips",
+    "price": 221,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_15",
+    "name": "Chocolate Mousse (3\")",
+    "price": 53,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_16",
+    "name": "Chicken Bucket",
+    "price": 176,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_17",
+    "name": "Hot Wings",
+    "price": 176,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_18",
+    "name": "Popcorn Chicken (8\")",
+    "price": 135,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_19",
+    "name": "Zinger Burger",
+    "price": 372,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_20",
+    "name": "French Fries (4\")",
+    "price": 101,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_21",
+    "name": "Coleslaw (3\")",
+    "price": 212,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_22",
+    "name": "Chicken Strips (6\")",
+    "price": 160,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_23",
+    "name": "Chocolate Mousse",
+    "price": 147,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_24",
+    "name": "Chicken Bucket (2\")",
+    "price": 165,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_25",
+    "name": "Hot Wings",
+    "price": 142,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_26",
+    "name": "Popcorn Chicken",
+    "price": 181,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_27",
+    "name": "Zinger Burger (4\")",
+    "price": 200,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_28",
+    "name": "French Fries (6\")",
+    "price": 198,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_29",
+    "name": "Coleslaw (5\")",
+    "price": 103,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_bangalore_30",
+    "name": "Chicken Strips",
+    "price": 227,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

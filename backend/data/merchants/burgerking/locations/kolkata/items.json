@@ -1,0 +1,212 @@
+[
+  {
+    "id": "burgerking_item_kolkata_1",
+    "name": "Chicken Burger 10",
+    "price": 396,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_2",
+    "name": "Veg Burger",
+    "price": 218,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_3",
+    "name": "Fries",
+    "price": 197,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_4",
+    "name": "Whopper",
+    "price": 487,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_5",
+    "name": "Chicken Burger 2",
+    "price": 463,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_6",
+    "name": "Veg Burger",
+    "price": 326,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_7",
+    "name": "Fries",
+    "price": 107,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_8",
+    "name": "Whopper",
+    "price": 349,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_9",
+    "name": "Chicken Burger",
+    "price": 106,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_10",
+    "name": "Veg Burger",
+    "price": 146,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_11",
+    "name": "Fries",
+    "price": 324,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_12",
+    "name": "Whopper 3",
+    "price": 196,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_13",
+    "name": "Chicken Burger 3",
+    "price": 286,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_14",
+    "name": "Veg Burger 7",
+    "price": 475,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_15",
+    "name": "Fries",
+    "price": 257,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_16",
+    "name": "Whopper 5",
+    "price": 406,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_17",
+    "name": "Chicken Burger 4",
+    "price": 233,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_18",
+    "name": "Veg Burger",
+    "price": 174,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_19",
+    "name": "Fries",
+    "price": 286,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_20",
+    "name": "Whopper",
+    "price": 380,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_21",
+    "name": "Chicken Burger",
+    "price": 362,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_22",
+    "name": "Veg Burger",
+    "price": 294,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_23",
+    "name": "Fries 8",
+    "price": 317,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_24",
+    "name": "Whopper 6",
+    "price": 157,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_25",
+    "name": "Chicken Burger",
+    "price": 279,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_26",
+    "name": "Veg Burger",
+    "price": 153,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_27",
+    "name": "Fries 2",
+    "price": 396,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_28",
+    "name": "Whopper",
+    "price": 294,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_kolkata_29",
+    "name": "Chicken Burger",
+    "price": 377,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_kolkata_30",
+    "name": "Veg Burger 7",
+    "price": 398,
+    "category": "Main",
+    "isVeg": true
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "swiggy_rest_bangalore_10_item_1",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 535,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer-butter-masala.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_2",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 84,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/roti.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_3",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 325,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken-biryani.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_4",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 83,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/gulab-jamun.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_5",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 127,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/cold-coffee.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_6",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 204,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_7",
+    "name": "Chicken Curry",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 553,
+    "category": "Main Course",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken-curry.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_8",
+    "name": "Butter Naan",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 71,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/butter-naan.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_9",
+    "name": "Jeera Rice",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 282,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/jeera-rice.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_10",
+    "name": "Ice Cream",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 199,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/ice-cream.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_11",
+    "name": "Soft Drinks",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 179,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/soft-drink.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_12",
+    "name": "Paneer Tikka",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 299,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer-tikka.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_13",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 299,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer-butter-masala.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_14",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 98,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/roti.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_15",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 326,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken-biryani.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_16",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 163,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/gulab-jamun.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_17",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 192,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/cold-coffee.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_18",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 348,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_19",
+    "name": "Chicken Curry",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 498,
+    "category": "Main Course",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken-curry.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_20",
+    "name": "Butter Naan",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 80,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/butter-naan.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_21",
+    "name": "Jeera Rice",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 326,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/jeera-rice.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_22",
+    "name": "Ice Cream",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 149,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/ice-cream.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_23",
+    "name": "Soft Drinks",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 88,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/soft-drink.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_24",
+    "name": "Paneer Tikka",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 291,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer-tikka.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_25",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 208,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer-butter-masala.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_26",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 68,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/roti.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_27",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 331,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken-biryani.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_28",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 185,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/gulab-jamun.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_29",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 182,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/cold-coffee.png"
+  },
+  {
+    "id": "swiggy_rest_bangalore_10_item_30",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 258,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.png"
+  }
+]

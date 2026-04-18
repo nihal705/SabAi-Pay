@@ -1,0 +1,111 @@
+[
+  {
+    "name": "bangalore",
+    "displayName": "Bengaluru",
+    "areas": [
+      "Indiranagar",
+      "Koramangala",
+      "Whitefield",
+      "MG Road",
+      "Jayanagar",
+      "JP Nagar",
+      "HSR Layout",
+      "Electronic City",
+      "Marathahalli",
+      "Bellandur"
+    ],
+    "coordinates": {
+      "lat": 12.9716,
+      "lng": 77.5946
+    }
+  },
+  {
+    "name": "mumbai",
+    "displayName": "Mumbai",
+    "areas": [
+      "Andheri",
+      "Bandra",
+      "Juhu",
+      "Powai",
+      "Lower Parel",
+      "Dadar",
+      "Worli",
+      "Malad",
+      "Borivali",
+      "Colaba"
+    ],
+    "coordinates": {
+      "lat": 19.076,
+      "lng": 72.8777
+    }
+  },
+  {
+    "name": "delhi",
+    "displayName": "Delhi",
+    "areas": [
+      "Connaught Place",
+      "South Extension",
+      "Rajouri Garden",
+      "Dwarka",
+      "Rohini",
+      "Pitampura",
+      "Karol Bagh",
+      "Lajpat Nagar"
+    ],
+    "coordinates": {
+      "lat": 28.7041,
+      "lng": 77.1025
+    }
+  },
+  {
+    "name": "hyderabad",
+    "displayName": "Hyderabad",
+    "areas": [
+      "Banjara Hills",
+      "Jubilee Hills",
+      "Gachibowli",
+      "Hitech City",
+      "Madhapur",
+      "Kukatpally",
+      "Secunderabad"
+    ],
+    "coordinates": {
+      "lat": 17.385,
+      "lng": 78.4867
+    }
+  },
+  {
+    "name": "chennai",
+    "displayName": "Chennai",
+    "areas": [
+      "Anna Nagar",
+      "Adyar",
+      "Velachery",
+      "T Nagar",
+      "Porur",
+      "OMR",
+      "ECR",
+      "Guindy"
+    ],
+    "coordinates": {
+      "lat": 13.0827,
+      "lng": 80.2707
+    }
+  },
+  {
+    "name": "kolkata",
+    "displayName": "Kolkata",
+    "areas": [
+      "Salt Lake",
+      "New Town",
+      "Park Street",
+      "Howrah",
+      "Dum Dum",
+      "Behala"
+    ],
+    "coordinates": {
+      "lat": 22.5726,
+      "lng": 88.3639
+    }
+  }
+]

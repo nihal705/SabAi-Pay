@@ -1,0 +1,272 @@
+[
+  {
+    "id": "pizzahut_item_bangalore_1",
+    "name": "Chicken Supreme",
+    "price": 118,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_2",
+    "name": "Veg Supreme",
+    "price": 78,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_3",
+    "name": "Pepperoni Feast (10\")",
+    "price": 172,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_4",
+    "name": "Tandoori Paneer",
+    "price": 217,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_5",
+    "name": "Garlic Breadsticks",
+    "price": 161,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_6",
+    "name": "Cheesy Bites",
+    "price": 146,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_7",
+    "name": "Chicken Wings",
+    "price": 91,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_8",
+    "name": "Cheese Pizza",
+    "price": 277,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_9",
+    "name": "Chicken Supreme",
+    "price": 115,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_10",
+    "name": "Veg Supreme (4\")",
+    "price": 68,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_11",
+    "name": "Pepperoni Feast (2\")",
+    "price": 68,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_12",
+    "name": "Tandoori Paneer",
+    "price": 100,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_13",
+    "name": "Garlic Breadsticks",
+    "price": 135,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_14",
+    "name": "Cheesy Bites",
+    "price": 150,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_15",
+    "name": "Chicken Wings",
+    "price": 225,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_16",
+    "name": "Cheese Pizza",
+    "price": 670,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_17",
+    "name": "Chicken Supreme",
+    "price": 65,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_18",
+    "name": "Veg Supreme",
+    "price": 115,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_19",
+    "name": "Pepperoni Feast",
+    "price": 148,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_20",
+    "name": "Tandoori Paneer",
+    "price": 146,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_21",
+    "name": "Garlic Breadsticks",
+    "price": 129,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_22",
+    "name": "Cheesy Bites",
+    "price": 123,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_23",
+    "name": "Chicken Wings (10\")",
+    "price": 249,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_24",
+    "name": "Cheese Pizza",
+    "price": 675,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_25",
+    "name": "Chicken Supreme",
+    "price": 222,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_26",
+    "name": "Veg Supreme (4\")",
+    "price": 169,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_27",
+    "name": "Pepperoni Feast (8\")",
+    "price": 158,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_28",
+    "name": "Tandoori Paneer",
+    "price": 185,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_29",
+    "name": "Garlic Breadsticks",
+    "price": 113,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_bangalore_30",
+    "name": "Cheesy Bites (8\")",
+    "price": 132,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

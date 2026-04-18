@@ -1,0 +1,272 @@
+/* frontend/src/components/auth/GoogleAccountPicker.css */
+
+.google-picker-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    animation: fadeIn 0.3s ease;
+}
+
+.google-picker-modal {
+    background: white;
+    border-radius: 28px;
+    width: 90%;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.dark .google-picker-modal {
+    background: #1a1a1a;
+    border: 1px solid #333;
+}
+
+.google-picker-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.google-icon {
+    font-size: 48px;
+    color: #4285F4;
+    margin-bottom: 16px;
+}
+
+.google-picker-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.dark .google-picker-header h2 {
+    color: white;
+}
+
+.google-picker-subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.google-picker-phone {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.dark .google-picker-phone {
+    background: #333;
+    color: #fff;
+}
+
+.google-picker-loading {
+    text-align: center;
+    padding: 40px;
+}
+
+.google-picker-loading .loader {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f0f0f0;
+    border-top-color: #4285F4;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 16px;
+}
+
+.google-picker-search {
+    margin-bottom: 20px;
+}
+
+.google-picker-search input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.google-picker-search input:focus {
+    outline: none;
+    border-color: #4285F4;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+}
+
+.dark .google-picker-search input {
+    background: #333;
+    border-color: #444;
+    color: white;
+}
+
+.google-accounts-list {
+    margin-bottom: 24px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 4px;
+}
+
+.google-account-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 8px;
+    border: 2px solid transparent;
+}
+
+.google-account-item:hover {
+    background: #f5f5f5;
+}
+
+.dark .google-account-item:hover {
+    background: #2d2d2d;
+}
+
+.google-account-item.selected {
+    border-color: #4285F4;
+    background: #f0f7ff;
+}
+
+.dark .google-account-item.selected {
+    background: #1a2a3a;
+    border-color: #4285F4;
+}
+
+.account-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.account-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4285F4, #34A853, #FBBC05, #EA4335);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.account-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.account-details h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.dark .account-details h4 {
+    color: white;
+}
+
+.account-details p {
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dark .account-details p {
+    color: #aaa;
+}
+
+.selected-icon {
+    color: #4285F4;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.google-picker-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.add-account-btn {
+    background: none;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-account-btn:hover {
+    border-color: #4285F4;
+    color: #4285F4;
+    background: #f5f5f5;
+}
+
+.continue-btn {
+    background: #4285F4;
+    border: none;
+    border-radius: 30px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.continue-btn:hover:not(:disabled) {
+    background: #3367D6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(66, 133, 244, 0.3);
+}
+
+.continue-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

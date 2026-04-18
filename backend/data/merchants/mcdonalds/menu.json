@@ -1,0 +1,272 @@
+[
+  {
+    "id": "mcdonalds_item_all_1",
+    "name": "McChicken",
+    "price": 240,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_2",
+    "name": "McVeggie (10\")",
+    "price": 180,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_3",
+    "name": "McSpicy (6\")",
+    "price": 67,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_4",
+    "name": "French Fries",
+    "price": 112,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_5",
+    "name": "McFlurry (1\")",
+    "price": 54,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_6",
+    "name": "Chicken McNuggets",
+    "price": 220,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_7",
+    "name": "Happy Meal",
+    "price": 181,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_8",
+    "name": "Big Mac",
+    "price": 215,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_9",
+    "name": "McChicken",
+    "price": 204,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_10",
+    "name": "McVeggie (2\")",
+    "price": 92,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_11",
+    "name": "McSpicy (4\")",
+    "price": 227,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_12",
+    "name": "French Fries",
+    "price": 61,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_13",
+    "name": "McFlurry",
+    "price": 113,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_14",
+    "name": "Chicken McNuggets",
+    "price": 170,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_15",
+    "name": "Happy Meal",
+    "price": 234,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_16",
+    "name": "Big Mac",
+    "price": 129,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_17",
+    "name": "McChicken",
+    "price": 116,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_18",
+    "name": "McVeggie",
+    "price": 101,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_19",
+    "name": "McSpicy",
+    "price": 155,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_20",
+    "name": "French Fries",
+    "price": 221,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_21",
+    "name": "McFlurry",
+    "price": 213,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_22",
+    "name": "Chicken McNuggets (3\")",
+    "price": 190,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_23",
+    "name": "Happy Meal",
+    "price": 85,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_24",
+    "name": "Big Mac",
+    "price": 231,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_25",
+    "name": "McChicken",
+    "price": 160,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_26",
+    "name": "McVeggie",
+    "price": 155,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_27",
+    "name": "McSpicy (6\")",
+    "price": 136,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_28",
+    "name": "French Fries (7\")",
+    "price": 66,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_29",
+    "name": "McFlurry",
+    "price": 93,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_all_30",
+    "name": "Chicken McNuggets",
+    "price": 101,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

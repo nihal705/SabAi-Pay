@@ -1,0 +1,362 @@
+[
+  {
+    "id": "ccd_item_delhi_1",
+    "name": "Cappuccino (Hot)",
+    "price": 141,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_2",
+    "name": "Espresso",
+    "price": 112,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_3",
+    "name": "Americano (Cold)",
+    "price": 140,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_4",
+    "name": "Mocha",
+    "price": 226,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_5",
+    "name": "Cold Coffee",
+    "price": 225,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_6",
+    "name": "Frappuccino",
+    "price": 212,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_7",
+    "name": "Hot Chocolate",
+    "price": 178,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_8",
+    "name": "Caffè Latte (Hot)",
+    "price": 274,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_9",
+    "name": "Cappuccino",
+    "price": 260,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_10",
+    "name": "Espresso",
+    "price": 145,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_11",
+    "name": "Americano",
+    "price": 123,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_12",
+    "name": "Mocha",
+    "price": 193,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_13",
+    "name": "Cold Coffee (Cold)",
+    "price": 130,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_14",
+    "name": "Frappuccino",
+    "price": 259,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_15",
+    "name": "Hot Chocolate",
+    "price": 178,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_16",
+    "name": "Caffè Latte (Hot)",
+    "price": 148,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_17",
+    "name": "Cappuccino (Cold)",
+    "price": 272,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_18",
+    "name": "Espresso (Hot)",
+    "price": 228,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_19",
+    "name": "Americano",
+    "price": 114,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_20",
+    "name": "Mocha",
+    "price": 227,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_21",
+    "name": "Cold Coffee",
+    "price": 120,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_22",
+    "name": "Frappuccino",
+    "price": 108,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_23",
+    "name": "Hot Chocolate",
+    "price": 145,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_24",
+    "name": "Caffè Latte",
+    "price": 97,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_25",
+    "name": "Muffin",
+    "price": 51,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_26",
+    "name": "Brownie",
+    "price": 144,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_27",
+    "name": "Cookie",
+    "price": 88,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_28",
+    "name": "Sandwich",
+    "price": 181,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_29",
+    "name": "Cake Slice",
+    "price": 150,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_30",
+    "name": "Bagel",
+    "price": 67,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_31",
+    "name": "Donut",
+    "price": 181,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_32",
+    "name": "Croissant",
+    "price": 87,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_33",
+    "name": "Muffin",
+    "price": 80,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_34",
+    "name": "Brownie",
+    "price": 116,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_35",
+    "name": "Cookie",
+    "price": 179,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_36",
+    "name": "Sandwich",
+    "price": 154,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_37",
+    "name": "Cake Slice",
+    "price": 56,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_38",
+    "name": "Bagel",
+    "price": 55,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_39",
+    "name": "Donut",
+    "price": 168,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_delhi_40",
+    "name": "Croissant",
+    "price": 78,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

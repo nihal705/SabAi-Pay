@@ -1,0 +1,3502 @@
+[
+  {
+    "id": "dmart_prod_chennai_1",
+    "name": "Wheat Flour 2kg",
+    "price": 392,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_2",
+    "name": "Sugar 1kg",
+    "price": 272,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_3",
+    "name": "Salt 4kg",
+    "price": 297,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_4",
+    "name": "Oil 3kg",
+    "price": 446,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_5",
+    "name": "Pulses",
+    "price": 398,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_6",
+    "name": "Rice",
+    "price": 280,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_7",
+    "name": "Wheat Flour 1kg",
+    "price": 532,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_8",
+    "name": "Sugar",
+    "price": 53,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_9",
+    "name": "Salt",
+    "price": 147,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_10",
+    "name": "Oil",
+    "price": 340,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_11",
+    "name": "Pulses 3kg",
+    "price": 128,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_12",
+    "name": "Rice 2kg",
+    "price": 95,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_13",
+    "name": "Wheat Flour 3kg",
+    "price": 78,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_14",
+    "name": "Sugar",
+    "price": 346,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_15",
+    "name": "Salt 2kg",
+    "price": 50,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_16",
+    "name": "Oil",
+    "price": 414,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_17",
+    "name": "Pulses 3kg",
+    "price": 80,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_18",
+    "name": "Rice",
+    "price": 118,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_19",
+    "name": "Wheat Flour 4kg",
+    "price": 142,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_20",
+    "name": "Sugar",
+    "price": 297,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_21",
+    "name": "Salt",
+    "price": 64,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_22",
+    "name": "Oil",
+    "price": 204,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_23",
+    "name": "Pulses",
+    "price": 458,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_24",
+    "name": "Rice 3kg",
+    "price": 185,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_25",
+    "name": "Wheat Flour",
+    "price": 219,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_26",
+    "name": "Sugar",
+    "price": 238,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_27",
+    "name": "Salt",
+    "price": 80,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_28",
+    "name": "Oil 1kg",
+    "price": 194,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_29",
+    "name": "Pulses",
+    "price": 169,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_30",
+    "name": "Rice 2kg",
+    "price": 240,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_31",
+    "name": "Wheat Flour",
+    "price": 164,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_32",
+    "name": "Sugar",
+    "price": 239,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_33",
+    "name": "Salt",
+    "price": 467,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_34",
+    "name": "Oil 1kg",
+    "price": 292,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_35",
+    "name": "Pulses 3kg",
+    "price": 490,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_36",
+    "name": "Rice",
+    "price": 527,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_37",
+    "name": "Wheat Flour 2kg",
+    "price": 170,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_38",
+    "name": "Sugar 2kg",
+    "price": 161,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_39",
+    "name": "Salt 2kg",
+    "price": 477,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_40",
+    "name": "Oil 5kg",
+    "price": 241,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_41",
+    "name": "Pulses 5kg",
+    "price": 529,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_42",
+    "name": "Rice",
+    "price": 426,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_43",
+    "name": "Wheat Flour",
+    "price": 413,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_44",
+    "name": "Sugar 2kg",
+    "price": 534,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_45",
+    "name": "Salt",
+    "price": 430,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_46",
+    "name": "Oil",
+    "price": 518,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_47",
+    "name": "Pulses",
+    "price": 344,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_48",
+    "name": "Rice 1kg",
+    "price": 464,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_49",
+    "name": "Wheat Flour 3kg",
+    "price": 375,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_50",
+    "name": "Sugar 1kg",
+    "price": 221,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_51",
+    "name": "Salt 1kg",
+    "price": 503,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_52",
+    "name": "Oil 1kg",
+    "price": 333,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_53",
+    "name": "Pulses",
+    "price": 280,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_54",
+    "name": "Rice 3kg",
+    "price": 503,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_55",
+    "name": "Wheat Flour 5kg",
+    "price": 200,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_56",
+    "name": "Sugar 1kg",
+    "price": 437,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_57",
+    "name": "Salt",
+    "price": 543,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_58",
+    "name": "Oil",
+    "price": 182,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_59",
+    "name": "Pulses 3kg",
+    "price": 414,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_60",
+    "name": "Rice",
+    "price": 154,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_61",
+    "name": "Wheat Flour",
+    "price": 223,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_62",
+    "name": "Sugar 3kg",
+    "price": 292,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_63",
+    "name": "Salt",
+    "price": 300,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_64",
+    "name": "Oil 5kg",
+    "price": 313,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_65",
+    "name": "Pulses",
+    "price": 95,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_66",
+    "name": "Rice 3kg",
+    "price": 527,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_67",
+    "name": "Wheat Flour 2kg",
+    "price": 102,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_68",
+    "name": "Sugar 3kg",
+    "price": 302,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_69",
+    "name": "Salt",
+    "price": 290,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_70",
+    "name": "Oil 5kg",
+    "price": 354,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_71",
+    "name": "Pulses 2kg",
+    "price": 132,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_72",
+    "name": "Rice 5kg",
+    "price": 62,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_73",
+    "name": "Wheat Flour 4kg",
+    "price": 295,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_74",
+    "name": "Sugar",
+    "price": 234,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_75",
+    "name": "Salt",
+    "price": 445,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_76",
+    "name": "Oil 3kg",
+    "price": 404,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_77",
+    "name": "Pulses",
+    "price": 498,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_78",
+    "name": "Rice",
+    "price": 545,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_79",
+    "name": "Wheat Flour",
+    "price": 487,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_80",
+    "name": "Sugar 5kg",
+    "price": 376,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_81",
+    "name": "Salt 4kg",
+    "price": 252,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_82",
+    "name": "Oil 3kg",
+    "price": 542,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_83",
+    "name": "Pulses 3kg",
+    "price": 225,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_84",
+    "name": "Rice 5kg",
+    "price": 503,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_85",
+    "name": "Wheat Flour",
+    "price": 93,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_86",
+    "name": "Sugar",
+    "price": 291,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_87",
+    "name": "Salt 4kg",
+    "price": 138,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_88",
+    "name": "Oil 2kg",
+    "price": 320,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_89",
+    "name": "Pulses 3kg",
+    "price": 412,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_90",
+    "name": "Rice",
+    "price": 358,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_91",
+    "name": "Wheat Flour 4kg",
+    "price": 357,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_92",
+    "name": "Sugar",
+    "price": 532,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_93",
+    "name": "Salt",
+    "price": 417,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_94",
+    "name": "Oil 5kg",
+    "price": 498,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_95",
+    "name": "Pulses 5kg",
+    "price": 445,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_96",
+    "name": "Rice",
+    "price": 403,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_97",
+    "name": "Wheat Flour",
+    "price": 115,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_98",
+    "name": "Sugar 3kg",
+    "price": 143,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_99",
+    "name": "Salt",
+    "price": 296,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_100",
+    "name": "Oil",
+    "price": 414,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_101",
+    "name": "Pulses",
+    "price": 295,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_102",
+    "name": "Rice 2kg",
+    "price": 188,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_103",
+    "name": "Wheat Flour",
+    "price": 329,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_104",
+    "name": "Sugar 5kg",
+    "price": 284,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_105",
+    "name": "Salt",
+    "price": 526,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_106",
+    "name": "Oil 1kg",
+    "price": 542,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_107",
+    "name": "Pulses 4kg",
+    "price": 104,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_108",
+    "name": "Rice",
+    "price": 59,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_109",
+    "name": "Wheat Flour",
+    "price": 172,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_110",
+    "name": "Sugar 3kg",
+    "price": 241,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_111",
+    "name": "Salt 2kg",
+    "price": 456,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_112",
+    "name": "Oil",
+    "price": 221,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_113",
+    "name": "Pulses",
+    "price": 453,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_114",
+    "name": "Rice 2kg",
+    "price": 147,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_115",
+    "name": "Wheat Flour",
+    "price": 223,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_116",
+    "name": "Sugar 3kg",
+    "price": 532,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_117",
+    "name": "Salt",
+    "price": 509,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_118",
+    "name": "Oil 5kg",
+    "price": 315,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_119",
+    "name": "Pulses",
+    "price": 187,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_120",
+    "name": "Rice",
+    "price": 132,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_121",
+    "name": "Wheat Flour 1kg",
+    "price": 247,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_122",
+    "name": "Sugar",
+    "price": 498,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_123",
+    "name": "Salt",
+    "price": 231,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_124",
+    "name": "Oil",
+    "price": 405,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_125",
+    "name": "Pulses 2kg",
+    "price": 109,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_126",
+    "name": "Rice 5kg",
+    "price": 160,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_127",
+    "name": "Wheat Flour 4kg",
+    "price": 61,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_128",
+    "name": "Sugar 4kg",
+    "price": 244,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_129",
+    "name": "Salt",
+    "price": 433,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_130",
+    "name": "Oil 1kg",
+    "price": 278,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_131",
+    "name": "Pulses 2kg",
+    "price": 303,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_132",
+    "name": "Rice",
+    "price": 358,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_133",
+    "name": "Wheat Flour 2kg",
+    "price": 164,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_134",
+    "name": "Sugar",
+    "price": 341,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_135",
+    "name": "Salt 2kg",
+    "price": 459,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_136",
+    "name": "Oil",
+    "price": 85,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_137",
+    "name": "Pulses",
+    "price": 84,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_138",
+    "name": "Rice 1kg",
+    "price": 393,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_139",
+    "name": "Wheat Flour",
+    "price": 465,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_140",
+    "name": "Sugar",
+    "price": 174,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_141",
+    "name": "Salt",
+    "price": 337,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_142",
+    "name": "Oil",
+    "price": 507,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_143",
+    "name": "Pulses 2kg",
+    "price": 484,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_144",
+    "name": "Rice",
+    "price": 260,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_145",
+    "name": "Wheat Flour",
+    "price": 175,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_146",
+    "name": "Sugar 4kg",
+    "price": 428,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_147",
+    "name": "Salt",
+    "price": 474,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_148",
+    "name": "Oil 5kg",
+    "price": 371,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_149",
+    "name": "Pulses",
+    "price": 339,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_150",
+    "name": "Rice",
+    "price": 70,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_151",
+    "name": "Wheat Flour",
+    "price": 293,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_152",
+    "name": "Sugar",
+    "price": 469,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_153",
+    "name": "Salt 2kg",
+    "price": 57,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_154",
+    "name": "Oil",
+    "price": 160,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_155",
+    "name": "Pulses 4kg",
+    "price": 68,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_156",
+    "name": "Rice 4kg",
+    "price": 541,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_157",
+    "name": "Wheat Flour",
+    "price": 346,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_158",
+    "name": "Sugar",
+    "price": 405,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_159",
+    "name": "Salt 3kg",
+    "price": 129,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_160",
+    "name": "Oil 3kg",
+    "price": 121,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_161",
+    "name": "Pulses 1kg",
+    "price": 319,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_162",
+    "name": "Rice 5kg",
+    "price": 211,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_163",
+    "name": "Wheat Flour 4kg",
+    "price": 425,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_164",
+    "name": "Sugar",
+    "price": 51,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_165",
+    "name": "Salt 5kg",
+    "price": 103,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_166",
+    "name": "Oil",
+    "price": 360,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_167",
+    "name": "Pulses",
+    "price": 513,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_168",
+    "name": "Rice 5kg",
+    "price": 252,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_169",
+    "name": "Wheat Flour",
+    "price": 293,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_170",
+    "name": "Sugar 5kg",
+    "price": 382,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_171",
+    "name": "Salt 4kg",
+    "price": 230,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_172",
+    "name": "Oil",
+    "price": 287,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_173",
+    "name": "Pulses 5kg",
+    "price": 483,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_174",
+    "name": "Rice 2kg",
+    "price": 171,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_175",
+    "name": "Wheat Flour",
+    "price": 465,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_176",
+    "name": "Sugar",
+    "price": 428,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_177",
+    "name": "Salt 5kg",
+    "price": 362,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_178",
+    "name": "Oil",
+    "price": 233,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_179",
+    "name": "Pulses 5kg",
+    "price": 175,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_180",
+    "name": "Rice",
+    "price": 521,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_181",
+    "name": "Wheat Flour 2kg",
+    "price": 440,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_182",
+    "name": "Sugar 4kg",
+    "price": 409,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_183",
+    "name": "Salt 3kg",
+    "price": 133,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_184",
+    "name": "Oil 3kg",
+    "price": 110,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_185",
+    "name": "Pulses 5kg",
+    "price": 107,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_186",
+    "name": "Rice 4kg",
+    "price": 324,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_187",
+    "name": "Wheat Flour 5kg",
+    "price": 318,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_188",
+    "name": "Sugar 3kg",
+    "price": 97,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_189",
+    "name": "Salt 1kg",
+    "price": 216,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_190",
+    "name": "Oil 2kg",
+    "price": 59,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_191",
+    "name": "Pulses",
+    "price": 515,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_192",
+    "name": "Rice",
+    "price": 514,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_193",
+    "name": "Wheat Flour 5kg",
+    "price": 519,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_194",
+    "name": "Sugar",
+    "price": 177,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_195",
+    "name": "Salt",
+    "price": 442,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_196",
+    "name": "Oil",
+    "price": 499,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_197",
+    "name": "Pulses 3kg",
+    "price": 304,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_198",
+    "name": "Rice 3kg",
+    "price": 138,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_199",
+    "name": "Wheat Flour",
+    "price": 201,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_200",
+    "name": "Sugar 4kg",
+    "price": 312,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_201",
+    "name": "Salt",
+    "price": 468,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_202",
+    "name": "Oil 3kg",
+    "price": 506,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_203",
+    "name": "Pulses",
+    "price": 288,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_204",
+    "name": "Rice",
+    "price": 280,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_205",
+    "name": "Wheat Flour 3kg",
+    "price": 169,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_206",
+    "name": "Sugar 2kg",
+    "price": 195,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_207",
+    "name": "Salt 3kg",
+    "price": 239,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_208",
+    "name": "Oil 5kg",
+    "price": 183,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_209",
+    "name": "Pulses",
+    "price": 411,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_210",
+    "name": "Rice 2kg",
+    "price": 467,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_211",
+    "name": "Wheat Flour 2kg",
+    "price": 355,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_212",
+    "name": "Sugar 4kg",
+    "price": 219,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_213",
+    "name": "Salt",
+    "price": 545,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_214",
+    "name": "Oil",
+    "price": 273,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_215",
+    "name": "Pulses",
+    "price": 242,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_216",
+    "name": "Rice",
+    "price": 455,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_217",
+    "name": "Wheat Flour",
+    "price": 516,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_218",
+    "name": "Sugar 4kg",
+    "price": 185,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_219",
+    "name": "Salt",
+    "price": 371,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_220",
+    "name": "Oil 2kg",
+    "price": 188,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_221",
+    "name": "Pulses",
+    "price": 476,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_222",
+    "name": "Rice 2kg",
+    "price": 239,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_223",
+    "name": "Wheat Flour",
+    "price": 333,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_224",
+    "name": "Sugar 2kg",
+    "price": 196,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_225",
+    "name": "Salt",
+    "price": 249,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_226",
+    "name": "Oil 5kg",
+    "price": 259,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_227",
+    "name": "Pulses 3kg",
+    "price": 444,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_228",
+    "name": "Rice",
+    "price": 521,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_229",
+    "name": "Wheat Flour 1kg",
+    "price": 228,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_230",
+    "name": "Sugar 5kg",
+    "price": 201,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_231",
+    "name": "Salt",
+    "price": 424,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_232",
+    "name": "Oil",
+    "price": 200,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_233",
+    "name": "Pulses",
+    "price": 474,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_234",
+    "name": "Rice",
+    "price": 545,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_235",
+    "name": "Wheat Flour 2kg",
+    "price": 195,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_236",
+    "name": "Sugar",
+    "price": 443,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_237",
+    "name": "Salt",
+    "price": 117,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_238",
+    "name": "Oil 3kg",
+    "price": 477,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_239",
+    "name": "Pulses 1kg",
+    "price": 53,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_240",
+    "name": "Rice 3kg",
+    "price": 464,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_241",
+    "name": "Wheat Flour 2kg",
+    "price": 55,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_242",
+    "name": "Sugar",
+    "price": 295,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_243",
+    "name": "Salt",
+    "price": 508,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_244",
+    "name": "Oil",
+    "price": 111,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_245",
+    "name": "Pulses 2kg",
+    "price": 345,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_246",
+    "name": "Rice 3kg",
+    "price": 316,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_247",
+    "name": "Wheat Flour",
+    "price": 513,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_248",
+    "name": "Sugar 2kg",
+    "price": 374,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_249",
+    "name": "Salt",
+    "price": 449,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_250",
+    "name": "Oil 5kg",
+    "price": 326,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_251",
+    "name": "Pulses",
+    "price": 519,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_252",
+    "name": "Rice 3kg",
+    "price": 534,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_253",
+    "name": "Wheat Flour",
+    "price": 386,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_254",
+    "name": "Sugar 1kg",
+    "price": 211,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_255",
+    "name": "Salt",
+    "price": 160,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_256",
+    "name": "Oil",
+    "price": 77,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_257",
+    "name": "Pulses 1kg",
+    "price": 540,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_258",
+    "name": "Rice",
+    "price": 288,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_259",
+    "name": "Wheat Flour",
+    "price": 240,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_260",
+    "name": "Sugar",
+    "price": 487,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_261",
+    "name": "Salt",
+    "price": 465,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_262",
+    "name": "Oil",
+    "price": 417,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_263",
+    "name": "Pulses 2kg",
+    "price": 507,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_264",
+    "name": "Rice",
+    "price": 519,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_265",
+    "name": "Wheat Flour",
+    "price": 64,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_266",
+    "name": "Sugar",
+    "price": 257,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_267",
+    "name": "Salt",
+    "price": 345,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_268",
+    "name": "Oil 5kg",
+    "price": 365,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_269",
+    "name": "Pulses",
+    "price": 505,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_270",
+    "name": "Rice 2kg",
+    "price": 119,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_271",
+    "name": "Wheat Flour 3kg",
+    "price": 287,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_272",
+    "name": "Sugar",
+    "price": 86,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_273",
+    "name": "Salt 4kg",
+    "price": 322,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_274",
+    "name": "Oil 4kg",
+    "price": 149,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_275",
+    "name": "Pulses 3kg",
+    "price": 192,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_276",
+    "name": "Rice 1kg",
+    "price": 220,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_277",
+    "name": "Wheat Flour 4kg",
+    "price": 177,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_278",
+    "name": "Sugar 2kg",
+    "price": 477,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_279",
+    "name": "Salt",
+    "price": 400,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_280",
+    "name": "Oil",
+    "price": 431,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_281",
+    "name": "Pulses 2kg",
+    "price": 243,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_282",
+    "name": "Rice",
+    "price": 169,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_283",
+    "name": "Wheat Flour 5kg",
+    "price": 454,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_284",
+    "name": "Sugar",
+    "price": 185,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_285",
+    "name": "Salt 3kg",
+    "price": 385,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_286",
+    "name": "Oil 5kg",
+    "price": 302,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_287",
+    "name": "Pulses 4kg",
+    "price": 426,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_288",
+    "name": "Rice 2kg",
+    "price": 432,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_289",
+    "name": "Wheat Flour 5kg",
+    "price": 279,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_290",
+    "name": "Sugar",
+    "price": 344,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_291",
+    "name": "Salt 4kg",
+    "price": 539,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_292",
+    "name": "Oil 3kg",
+    "price": 142,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_293",
+    "name": "Pulses",
+    "price": 498,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_294",
+    "name": "Rice 2kg",
+    "price": 365,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_295",
+    "name": "Wheat Flour 2kg",
+    "price": 373,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_296",
+    "name": "Sugar 2kg",
+    "price": 105,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_297",
+    "name": "Salt 5kg",
+    "price": 461,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_298",
+    "name": "Oil",
+    "price": 274,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_299",
+    "name": "Pulses",
+    "price": 515,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_300",
+    "name": "Rice",
+    "price": 295,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_301",
+    "name": "Wheat Flour 4kg",
+    "price": 400,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_302",
+    "name": "Sugar",
+    "price": 345,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_303",
+    "name": "Salt",
+    "price": 392,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_304",
+    "name": "Oil 1kg",
+    "price": 466,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_305",
+    "name": "Pulses 3kg",
+    "price": 447,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_306",
+    "name": "Rice",
+    "price": 95,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_307",
+    "name": "Wheat Flour 2kg",
+    "price": 228,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_308",
+    "name": "Sugar",
+    "price": 442,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_309",
+    "name": "Salt 2kg",
+    "price": 465,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_310",
+    "name": "Oil",
+    "price": 114,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_311",
+    "name": "Pulses 4kg",
+    "price": 176,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_312",
+    "name": "Rice",
+    "price": 241,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_313",
+    "name": "Wheat Flour",
+    "price": 432,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_314",
+    "name": "Sugar",
+    "price": 194,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_315",
+    "name": "Salt 4kg",
+    "price": 537,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_316",
+    "name": "Oil 2kg",
+    "price": 105,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_317",
+    "name": "Pulses 5kg",
+    "price": 258,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_318",
+    "name": "Rice 3kg",
+    "price": 373,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_319",
+    "name": "Wheat Flour 3kg",
+    "price": 98,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_320",
+    "name": "Sugar 5kg",
+    "price": 77,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_321",
+    "name": "Salt",
+    "price": 492,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_322",
+    "name": "Oil 3kg",
+    "price": 107,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_323",
+    "name": "Pulses",
+    "price": 413,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_324",
+    "name": "Rice 2kg",
+    "price": 455,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_325",
+    "name": "Wheat Flour",
+    "price": 215,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_326",
+    "name": "Sugar 1kg",
+    "price": 324,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_327",
+    "name": "Salt 4kg",
+    "price": 460,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_328",
+    "name": "Oil",
+    "price": 449,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_329",
+    "name": "Pulses",
+    "price": 321,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_330",
+    "name": "Rice 2kg",
+    "price": 98,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_331",
+    "name": "Wheat Flour",
+    "price": 369,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_332",
+    "name": "Sugar",
+    "price": 545,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_333",
+    "name": "Salt 4kg",
+    "price": 289,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_334",
+    "name": "Oil 2kg",
+    "price": 409,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_335",
+    "name": "Pulses",
+    "price": 273,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_336",
+    "name": "Rice",
+    "price": 146,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_337",
+    "name": "Wheat Flour",
+    "price": 200,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_338",
+    "name": "Sugar",
+    "price": 210,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_339",
+    "name": "Salt",
+    "price": 274,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_340",
+    "name": "Oil 5kg",
+    "price": 446,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_341",
+    "name": "Pulses 1kg",
+    "price": 284,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_342",
+    "name": "Rice 2kg",
+    "price": 216,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_343",
+    "name": "Wheat Flour",
+    "price": 410,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_344",
+    "name": "Sugar 4kg",
+    "price": 230,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_345",
+    "name": "Salt",
+    "price": 406,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_346",
+    "name": "Oil",
+    "price": 406,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_347",
+    "name": "Pulses 4kg",
+    "price": 152,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_348",
+    "name": "Rice 3kg",
+    "price": 355,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_349",
+    "name": "Wheat Flour 5kg",
+    "price": 240,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_350",
+    "name": "Sugar",
+    "price": 211,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_351",
+    "name": "Salt 5kg",
+    "price": 222,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_352",
+    "name": "Oil",
+    "price": 59,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_353",
+    "name": "Pulses 4kg",
+    "price": 82,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_354",
+    "name": "Rice",
+    "price": 188,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_355",
+    "name": "Wheat Flour 3kg",
+    "price": 381,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_356",
+    "name": "Sugar",
+    "price": 208,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_357",
+    "name": "Salt 5kg",
+    "price": 428,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_358",
+    "name": "Oil",
+    "price": 354,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_359",
+    "name": "Pulses",
+    "price": 165,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_360",
+    "name": "Rice",
+    "price": 309,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_361",
+    "name": "Wheat Flour 5kg",
+    "price": 318,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_362",
+    "name": "Sugar",
+    "price": 117,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_363",
+    "name": "Salt",
+    "price": 77,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_364",
+    "name": "Oil",
+    "price": 191,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_365",
+    "name": "Pulses 3kg",
+    "price": 487,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_366",
+    "name": "Rice 1kg",
+    "price": 339,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_367",
+    "name": "Wheat Flour 1kg",
+    "price": 443,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_368",
+    "name": "Sugar",
+    "price": 433,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_369",
+    "name": "Salt",
+    "price": 276,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_370",
+    "name": "Oil 5kg",
+    "price": 220,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_371",
+    "name": "Pulses",
+    "price": 545,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_372",
+    "name": "Rice 5kg",
+    "price": 333,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_373",
+    "name": "Wheat Flour",
+    "price": 326,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_374",
+    "name": "Sugar 3kg",
+    "price": 310,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_375",
+    "name": "Salt 3kg",
+    "price": 188,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_376",
+    "name": "Oil 2kg",
+    "price": 395,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_377",
+    "name": "Pulses 3kg",
+    "price": 329,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_378",
+    "name": "Rice",
+    "price": 275,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_379",
+    "name": "Wheat Flour",
+    "price": 91,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_380",
+    "name": "Sugar",
+    "price": 274,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_381",
+    "name": "Salt",
+    "price": 453,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_382",
+    "name": "Oil",
+    "price": 475,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_383",
+    "name": "Pulses",
+    "price": 146,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_384",
+    "name": "Rice 5kg",
+    "price": 302,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_385",
+    "name": "Wheat Flour",
+    "price": 206,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_386",
+    "name": "Sugar 1kg",
+    "price": 214,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_387",
+    "name": "Salt",
+    "price": 463,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_388",
+    "name": "Oil",
+    "price": 458,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_389",
+    "name": "Pulses 5kg",
+    "price": 312,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_390",
+    "name": "Rice 1kg",
+    "price": 321,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_391",
+    "name": "Wheat Flour",
+    "price": 294,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_392",
+    "name": "Sugar 4kg",
+    "price": 98,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_393",
+    "name": "Salt 4kg",
+    "price": 279,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_394",
+    "name": "Oil 1kg",
+    "price": 260,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_395",
+    "name": "Pulses 2kg",
+    "price": 322,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_396",
+    "name": "Rice 1kg",
+    "price": 133,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_397",
+    "name": "Wheat Flour",
+    "price": 126,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_398",
+    "name": "Sugar 5kg",
+    "price": 484,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_399",
+    "name": "Salt 2kg",
+    "price": 226,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_400",
+    "name": "Oil",
+    "price": 528,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_401",
+    "name": "Pulses 4kg",
+    "price": 98,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_402",
+    "name": "Rice 5kg",
+    "price": 184,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_403",
+    "name": "Wheat Flour 5kg",
+    "price": 362,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_404",
+    "name": "Sugar 2kg",
+    "price": 529,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_405",
+    "name": "Salt",
+    "price": 549,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_406",
+    "name": "Oil 5kg",
+    "price": 442,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_407",
+    "name": "Pulses 2kg",
+    "price": 138,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_408",
+    "name": "Rice 4kg",
+    "price": 321,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_409",
+    "name": "Wheat Flour 5kg",
+    "price": 430,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_410",
+    "name": "Sugar 5kg",
+    "price": 78,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_411",
+    "name": "Salt",
+    "price": 235,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_412",
+    "name": "Oil 4kg",
+    "price": 133,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_413",
+    "name": "Pulses",
+    "price": 233,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_414",
+    "name": "Rice 3kg",
+    "price": 149,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_415",
+    "name": "Wheat Flour 5kg",
+    "price": 424,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_416",
+    "name": "Sugar",
+    "price": 261,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_417",
+    "name": "Salt 2kg",
+    "price": 218,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_418",
+    "name": "Oil",
+    "price": 284,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_419",
+    "name": "Pulses 4kg",
+    "price": 476,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_420",
+    "name": "Rice 2kg",
+    "price": 530,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_421",
+    "name": "Wheat Flour",
+    "price": 239,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_422",
+    "name": "Sugar 4kg",
+    "price": 204,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_423",
+    "name": "Salt",
+    "price": 360,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_424",
+    "name": "Oil",
+    "price": 282,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_425",
+    "name": "Pulses",
+    "price": 447,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_426",
+    "name": "Rice 1kg",
+    "price": 223,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_427",
+    "name": "Wheat Flour 5kg",
+    "price": 103,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_428",
+    "name": "Sugar",
+    "price": 137,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_429",
+    "name": "Salt 3kg",
+    "price": 155,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_430",
+    "name": "Oil",
+    "price": 423,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_431",
+    "name": "Pulses",
+    "price": 388,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_432",
+    "name": "Rice",
+    "price": 459,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_433",
+    "name": "Wheat Flour 3kg",
+    "price": 72,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_434",
+    "name": "Sugar 5kg",
+    "price": 158,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_435",
+    "name": "Salt",
+    "price": 366,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_436",
+    "name": "Oil",
+    "price": 274,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_437",
+    "name": "Pulses",
+    "price": 502,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_438",
+    "name": "Rice",
+    "price": 362,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_439",
+    "name": "Wheat Flour 4kg",
+    "price": 315,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_440",
+    "name": "Sugar",
+    "price": 253,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_441",
+    "name": "Salt",
+    "price": 308,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_442",
+    "name": "Oil 5kg",
+    "price": 70,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_443",
+    "name": "Pulses 4kg",
+    "price": 198,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_444",
+    "name": "Rice",
+    "price": 297,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_445",
+    "name": "Wheat Flour",
+    "price": 389,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_446",
+    "name": "Sugar",
+    "price": 408,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_447",
+    "name": "Salt 3kg",
+    "price": 92,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_448",
+    "name": "Oil 2kg",
+    "price": 305,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_449",
+    "name": "Pulses 4kg",
+    "price": 422,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_450",
+    "name": "Rice",
+    "price": 478,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_451",
+    "name": "Wheat Flour",
+    "price": 314,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_452",
+    "name": "Sugar 1kg",
+    "price": 274,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_453",
+    "name": "Salt",
+    "price": 93,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_454",
+    "name": "Oil 1kg",
+    "price": 159,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_455",
+    "name": "Pulses 1kg",
+    "price": 132,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_456",
+    "name": "Rice 5kg",
+    "price": 510,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_457",
+    "name": "Wheat Flour 5kg",
+    "price": 325,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_458",
+    "name": "Sugar 5kg",
+    "price": 440,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_459",
+    "name": "Salt 5kg",
+    "price": 274,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_460",
+    "name": "Oil",
+    "price": 385,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_461",
+    "name": "Pulses 5kg",
+    "price": 293,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_462",
+    "name": "Rice 1kg",
+    "price": 82,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_463",
+    "name": "Wheat Flour 5kg",
+    "price": 240,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_464",
+    "name": "Sugar",
+    "price": 187,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_465",
+    "name": "Salt 1kg",
+    "price": 173,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_466",
+    "name": "Oil",
+    "price": 300,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_467",
+    "name": "Pulses",
+    "price": 383,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_468",
+    "name": "Rice",
+    "price": 109,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_469",
+    "name": "Wheat Flour 1kg",
+    "price": 131,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_470",
+    "name": "Sugar 1kg",
+    "price": 118,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_471",
+    "name": "Salt",
+    "price": 285,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_472",
+    "name": "Oil 4kg",
+    "price": 341,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_473",
+    "name": "Pulses",
+    "price": 508,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_474",
+    "name": "Rice 2kg",
+    "price": 182,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_475",
+    "name": "Wheat Flour",
+    "price": 254,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_476",
+    "name": "Sugar 4kg",
+    "price": 50,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_477",
+    "name": "Salt",
+    "price": 297,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_478",
+    "name": "Oil 1kg",
+    "price": 318,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_479",
+    "name": "Pulses 2kg",
+    "price": 369,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_480",
+    "name": "Rice",
+    "price": 406,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_481",
+    "name": "Wheat Flour",
+    "price": 91,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_482",
+    "name": "Sugar 3kg",
+    "price": 336,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_483",
+    "name": "Salt",
+    "price": 549,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_484",
+    "name": "Oil 2kg",
+    "price": 113,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_485",
+    "name": "Pulses",
+    "price": 403,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_486",
+    "name": "Rice",
+    "price": 160,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_487",
+    "name": "Wheat Flour",
+    "price": 445,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_488",
+    "name": "Sugar",
+    "price": 131,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_489",
+    "name": "Salt",
+    "price": 495,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_490",
+    "name": "Oil",
+    "price": 510,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_491",
+    "name": "Pulses 5kg",
+    "price": 312,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_492",
+    "name": "Rice",
+    "price": 419,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_493",
+    "name": "Wheat Flour 3kg",
+    "price": 66,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_494",
+    "name": "Sugar 1kg",
+    "price": 490,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_495",
+    "name": "Salt",
+    "price": 106,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_496",
+    "name": "Oil 3kg",
+    "price": 118,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_497",
+    "name": "Pulses 5kg",
+    "price": 329,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_498",
+    "name": "Rice",
+    "price": 441,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_499",
+    "name": "Wheat Flour 5kg",
+    "price": 286,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_chennai_500",
+    "name": "Sugar 4kg",
+    "price": 98,
+    "unit": "liter",
+    "category": "Staples"
+  }
+]

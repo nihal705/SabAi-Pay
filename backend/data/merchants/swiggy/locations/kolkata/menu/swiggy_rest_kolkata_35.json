@@ -1,0 +1,227 @@
+[
+  {
+    "id": "swiggy_rest_kolkata_35_item_1",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 535,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_2",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 61,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_3",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 246,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_4",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 82,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_5",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 171,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_6",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 208,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_7",
+    "name": "Chicken Curry",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 381,
+    "category": "Main Course",
+    "isVeg": false,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_8",
+    "name": "Butter Naan",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 98,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_9",
+    "name": "Jeera Rice",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 221,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_10",
+    "name": "Ice Cream",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 203,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_11",
+    "name": "Soft Drinks",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 128,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_12",
+    "name": "Paneer Tikka",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 214,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_13",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 499,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_14",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 75,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_15",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 354,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_16",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 133,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_17",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 199,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_18",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 279,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_19",
+    "name": "Chicken Curry",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 228,
+    "category": "Main Course",
+    "isVeg": false,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_20",
+    "name": "Butter Naan",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 62,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_21",
+    "name": "Jeera Rice",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 136,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_22",
+    "name": "Ice Cream",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 83,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_23",
+    "name": "Soft Drinks",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 138,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_24",
+    "name": "Paneer Tikka",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 190,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_kolkata_35_item_25",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 253,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false
+  }
+]

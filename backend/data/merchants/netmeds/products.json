@@ -1,0 +1,506 @@
+[
+  {
+    "id": "netmeds_prod_all_1",
+    "name": "Paracetamol",
+    "price": 155,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_2",
+    "name": "Paracetamol (29 tablets)",
+    "price": 203,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_3",
+    "name": "Dolo 650",
+    "price": 182,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_4",
+    "name": "Dolo 650 (29 tablets)",
+    "price": 63,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_5",
+    "name": "Crocin",
+    "price": 118,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_6",
+    "name": "Crocin (18 tablets)",
+    "price": 76,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_7",
+    "name": "Aspirin",
+    "price": 189,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_8",
+    "name": "Aspirin (32 tablets)",
+    "price": 117,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_9",
+    "name": "Ibuprofen",
+    "price": 136,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_10",
+    "name": "Ibuprofen (35 tablets)",
+    "price": 199,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_11",
+    "name": "Cetrizine",
+    "price": 109,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_12",
+    "name": "Cetrizine (25 tablets)",
+    "price": 167,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_13",
+    "name": "Vitamin C",
+    "price": 324,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_14",
+    "name": "Vitamin C (10 tablets)",
+    "price": 244,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_15",
+    "name": "Vitamin D3",
+    "price": 306,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_16",
+    "name": "Vitamin D3 (15 tablets)",
+    "price": 483,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_17",
+    "name": "Vitamin B12",
+    "price": 236,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_18",
+    "name": "Vitamin B12 (15 tablets)",
+    "price": 293,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_19",
+    "name": "Calcium Tablets",
+    "price": 242,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_20",
+    "name": "Calcium Tablets (29 tablets)",
+    "price": 138,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_21",
+    "name": "Iron Supplement",
+    "price": 483,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_22",
+    "name": "Iron Supplement (15 tablets)",
+    "price": 518,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_23",
+    "name": "Multivitamin",
+    "price": 150,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_24",
+    "name": "Multivitamin (31 tablets)",
+    "price": 597,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_25",
+    "name": "Hand Sanitizer",
+    "price": 287,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_26",
+    "name": "Hand Sanitizer (26 tablets)",
+    "price": 362,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_27",
+    "name": "Face Mask",
+    "price": 276,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_28",
+    "name": "Face Mask (10 tablets)",
+    "price": 322,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_29",
+    "name": "Thermometer",
+    "price": 435,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_30",
+    "name": "Thermometer (33 tablets)",
+    "price": 62,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_31",
+    "name": "Bandages",
+    "price": 266,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_32",
+    "name": "Bandages (13 tablets)",
+    "price": 404,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_33",
+    "name": "Cotton",
+    "price": 151,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_34",
+    "name": "Cotton (35 tablets)",
+    "price": 362,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_35",
+    "name": "First Aid Kit",
+    "price": 169,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_36",
+    "name": "First Aid Kit (33 tablets)",
+    "price": 60,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_37",
+    "name": "Diapers",
+    "price": 323,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_38",
+    "name": "Diapers (14 tablets)",
+    "price": 292,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_39",
+    "name": "Baby Cream",
+    "price": 242,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_40",
+    "name": "Baby Cream (12 tablets)",
+    "price": 69,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_41",
+    "name": "Baby Oil",
+    "price": 359,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_42",
+    "name": "Baby Oil (30 tablets)",
+    "price": 348,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_43",
+    "name": "Baby Shampoo",
+    "price": 275,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_44",
+    "name": "Baby Shampoo (32 tablets)",
+    "price": 442,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_45",
+    "name": "Baby Powder",
+    "price": 286,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_46",
+    "name": "Baby Powder (28 tablets)",
+    "price": 89,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_47",
+    "name": "Ensure",
+    "price": 282,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_48",
+    "name": "Ensure (14 tablets)",
+    "price": 70,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_49",
+    "name": "Horlicks",
+    "price": 256,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_50",
+    "name": "Horlicks (38 tablets)",
+    "price": 431,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_51",
+    "name": "Boost",
+    "price": 369,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_52",
+    "name": "Boost (23 tablets)",
+    "price": 202,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_53",
+    "name": "Complan",
+    "price": 168,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_54",
+    "name": "Complan (38 tablets)",
+    "price": 170,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_55",
+    "name": "Protinex",
+    "price": 328,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  },
+  {
+    "id": "netmeds_prod_all_56",
+    "name": "Protinex (20 tablets)",
+    "price": 93,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  }
+]

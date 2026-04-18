@@ -1,0 +1,272 @@
+[
+  {
+    "id": "kfc_item_all_1",
+    "name": "Hot Wings",
+    "price": 229,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_2",
+    "name": "Popcorn Chicken",
+    "price": 120,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_all_3",
+    "name": "Zinger Burger",
+    "price": 285,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_all_4",
+    "name": "French Fries",
+    "price": 176,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_5",
+    "name": "Coleslaw (4\")",
+    "price": 193,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_6",
+    "name": "Chicken Strips (3\")",
+    "price": 145,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_all_7",
+    "name": "Chocolate Mousse",
+    "price": 138,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_8",
+    "name": "Chicken Bucket",
+    "price": 177,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_all_9",
+    "name": "Hot Wings (1\")",
+    "price": 101,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_10",
+    "name": "Popcorn Chicken",
+    "price": 239,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_all_11",
+    "name": "Zinger Burger (3\")",
+    "price": 379,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_all_12",
+    "name": "French Fries (10\")",
+    "price": 116,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_13",
+    "name": "Coleslaw (7\")",
+    "price": 50,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_14",
+    "name": "Chicken Strips",
+    "price": 86,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_all_15",
+    "name": "Chocolate Mousse (7\")",
+    "price": 215,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_16",
+    "name": "Chicken Bucket",
+    "price": 211,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_all_17",
+    "name": "Hot Wings",
+    "price": 138,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_18",
+    "name": "Popcorn Chicken",
+    "price": 62,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_all_19",
+    "name": "Zinger Burger",
+    "price": 315,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_all_20",
+    "name": "French Fries",
+    "price": 184,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_21",
+    "name": "Coleslaw (8\")",
+    "price": 84,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_22",
+    "name": "Chicken Strips (8\")",
+    "price": 72,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_all_23",
+    "name": "Chocolate Mousse",
+    "price": 127,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_24",
+    "name": "Chicken Bucket",
+    "price": 91,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_all_25",
+    "name": "Hot Wings",
+    "price": 148,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_26",
+    "name": "Popcorn Chicken",
+    "price": 211,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_all_27",
+    "name": "Zinger Burger (8\")",
+    "price": 361,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_all_28",
+    "name": "French Fries",
+    "price": 217,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_29",
+    "name": "Coleslaw (2\")",
+    "price": 157,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_all_30",
+    "name": "Chicken Strips (4\")",
+    "price": 82,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

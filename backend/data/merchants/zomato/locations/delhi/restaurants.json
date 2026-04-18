@@ -1,0 +1,200 @@
+[
+  {
+    "id": "zomato_karims_del",
+    "name": "Karim's",
+    "cuisine": "Mughlai",
+    "rating": 4.5,
+    "ratingCount": 15000,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 600,
+    "area": "Jama Masjid",
+    "landmark": "Near Gate No.1",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Jama Masjid",
+      "address": "Karim's, Jama Masjid, Delhi",
+      "coordinates": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      }
+    },
+    "imageUrl": "/images/restaurants/karims.jpg"
+  },
+  {
+    "id": "zomato_parathe_wali_galian_del",
+    "name": "Parathe Wali Gali",
+    "cuisine": "Street Food",
+    "rating": 4.4,
+    "ratingCount": 12000,
+    "deliveryTime": "20-30 min",
+    "priceForTwo": 200,
+    "area": "Chandni Chowk",
+    "landmark": "Near Fountain",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Chandni Chowk",
+      "address": "Parathe Wali Gali, Chandni Chowk, Delhi",
+      "coordinates": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      }
+    },
+    "imageUrl": "/images/restaurants/parathe.jpg"
+  },
+  {
+    "id": "zomato_bukhara_del",
+    "name": "Bukhara",
+    "cuisine": "North Indian",
+    "rating": 4.7,
+    "ratingCount": 8900,
+    "deliveryTime": "45-60 min",
+    "priceForTwo": 2500,
+    "area": "Chanakyapuri",
+    "landmark": "ITC Maurya",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Chanakyapuri",
+      "address": "Bukhara, Chanakyapuri, Delhi",
+      "coordinates": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      }
+    },
+    "imageUrl": "/images/restaurants/bukhara.jpg"
+  },
+  {
+    "id": "zomato_indian_accent_del",
+    "name": "Indian Accent",
+    "cuisine": "Modern Indian",
+    "rating": 4.8,
+    "ratingCount": 7200,
+    "deliveryTime": "45-60 min",
+    "priceForTwo": 3000,
+    "area": "Lodhi Road",
+    "landmark": "The Lodhi",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Lodhi Road",
+      "address": "Indian Accent, Lodhi Road, Delhi",
+      "coordinates": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      }
+    },
+    "imageUrl": "/images/restaurants/indian.jpg"
+  },
+  {
+    "id": "zomato_sarvana_bhavan_del",
+    "name": "Sarvana Bhavan",
+    "cuisine": "South Indian",
+    "rating": 4.3,
+    "ratingCount": 9800,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 350,
+    "area": "Connaught Place",
+    "landmark": "Scindia House",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Connaught Place",
+      "address": "Sarvana Bhavan, Connaught Place, Delhi",
+      "coordinates": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      }
+    },
+    "imageUrl": "/images/restaurants/sarvana.jpg"
+  },
+  {
+    "id": "zomato_kfc_del",
+    "name": "KFC",
+    "cuisine": "Fast Food",
+    "rating": 4.2,
+    "ratingCount": 18000,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 400,
+    "area": "Multiple Locations",
+    "landmark": "Select Citywalk",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "KFC, Multiple Locations, Delhi",
+      "coordinates": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      }
+    },
+    "imageUrl": "/images/restaurants/kfc.jpg"
+  },
+  {
+    "id": "zomato_mcdonalds_del",
+    "name": "McDonald's",
+    "cuisine": "Fast Food",
+    "rating": 4.1,
+    "ratingCount": 22000,
+    "deliveryTime": "20-30 min",
+    "priceForTwo": 350,
+    "area": "Multiple Locations",
+    "landmark": "Connaught Place",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "McDonald's, Multiple Locations, Delhi",
+      "coordinates": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      }
+    },
+    "imageUrl": "/images/restaurants/mcdonalds.jpg"
+  },
+  {
+    "id": "zomato_dominos_del",
+    "name": "Domino's Pizza",
+    "cuisine": "Pizza",
+    "rating": 4.3,
+    "ratingCount": 25000,
+    "deliveryTime": "30-40 min",
+    "priceForTwo": 500,
+    "area": "Multiple Locations",
+    "landmark": "Rajouri Garden",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "Domino's Pizza, Multiple Locations, Delhi",
+      "coordinates": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      }
+    },
+    "imageUrl": "/images/restaurants/dominos.jpg"
+  },
+  {
+    "id": "zomato_starbucks_del",
+    "name": "Starbucks",
+    "cuisine": "Cafe",
+    "rating": 4.4,
+    "ratingCount": 28000,
+    "deliveryTime": "15-25 min",
+    "priceForTwo": 400,
+    "area": "Multiple Locations",
+    "landmark": "Connaught Place",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "Starbucks, Multiple Locations, Delhi",
+      "coordinates": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      }
+    },
+    "imageUrl": "/images/restaurants/starbucks.jpg"
+  }
+]

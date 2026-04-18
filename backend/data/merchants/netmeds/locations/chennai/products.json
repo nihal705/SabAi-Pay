@@ -1,0 +1,506 @@
+[
+  {
+    "id": "netmeds_prod_chennai_1",
+    "name": "Paracetamol",
+    "price": 31,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_2",
+    "name": "Paracetamol (17 tablets)",
+    "price": 40,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_3",
+    "name": "Dolo 650",
+    "price": 198,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_4",
+    "name": "Dolo 650 (19 tablets)",
+    "price": 209,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_5",
+    "name": "Crocin",
+    "price": 63,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_6",
+    "name": "Crocin (13 tablets)",
+    "price": 37,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_7",
+    "name": "Aspirin",
+    "price": 92,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_8",
+    "name": "Aspirin (23 tablets)",
+    "price": 71,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_9",
+    "name": "Ibuprofen",
+    "price": 44,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_10",
+    "name": "Ibuprofen (17 tablets)",
+    "price": 84,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_11",
+    "name": "Cetrizine",
+    "price": 48,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_12",
+    "name": "Cetrizine (13 tablets)",
+    "price": 36,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_13",
+    "name": "Vitamin C",
+    "price": 112,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_14",
+    "name": "Vitamin C (25 tablets)",
+    "price": 573,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_15",
+    "name": "Vitamin D3",
+    "price": 349,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_16",
+    "name": "Vitamin D3 (22 tablets)",
+    "price": 134,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_17",
+    "name": "Vitamin B12",
+    "price": 387,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_18",
+    "name": "Vitamin B12 (39 tablets)",
+    "price": 311,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_19",
+    "name": "Calcium Tablets",
+    "price": 572,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_20",
+    "name": "Calcium Tablets (39 tablets)",
+    "price": 492,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_21",
+    "name": "Iron Supplement",
+    "price": 181,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_22",
+    "name": "Iron Supplement (34 tablets)",
+    "price": 436,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_23",
+    "name": "Multivitamin",
+    "price": 545,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_24",
+    "name": "Multivitamin (31 tablets)",
+    "price": 133,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_25",
+    "name": "Hand Sanitizer",
+    "price": 339,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_26",
+    "name": "Hand Sanitizer (26 tablets)",
+    "price": 446,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_27",
+    "name": "Face Mask",
+    "price": 166,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_28",
+    "name": "Face Mask (31 tablets)",
+    "price": 302,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_29",
+    "name": "Thermometer",
+    "price": 293,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_30",
+    "name": "Thermometer (16 tablets)",
+    "price": 79,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_31",
+    "name": "Bandages",
+    "price": 269,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_32",
+    "name": "Bandages (16 tablets)",
+    "price": 201,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_33",
+    "name": "Cotton",
+    "price": 246,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_34",
+    "name": "Cotton (33 tablets)",
+    "price": 151,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_35",
+    "name": "First Aid Kit",
+    "price": 65,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_36",
+    "name": "First Aid Kit (36 tablets)",
+    "price": 288,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_37",
+    "name": "Diapers",
+    "price": 322,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_38",
+    "name": "Diapers (19 tablets)",
+    "price": 97,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_39",
+    "name": "Baby Cream",
+    "price": 424,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_40",
+    "name": "Baby Cream (17 tablets)",
+    "price": 70,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_41",
+    "name": "Baby Oil",
+    "price": 69,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_42",
+    "name": "Baby Oil (16 tablets)",
+    "price": 92,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_43",
+    "name": "Baby Shampoo",
+    "price": 378,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_44",
+    "name": "Baby Shampoo (32 tablets)",
+    "price": 181,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_45",
+    "name": "Baby Powder",
+    "price": 177,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_46",
+    "name": "Baby Powder (31 tablets)",
+    "price": 56,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_47",
+    "name": "Ensure",
+    "price": 431,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_48",
+    "name": "Ensure (22 tablets)",
+    "price": 236,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_49",
+    "name": "Horlicks",
+    "price": 217,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_50",
+    "name": "Horlicks (20 tablets)",
+    "price": 109,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_51",
+    "name": "Boost",
+    "price": 361,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_52",
+    "name": "Boost (13 tablets)",
+    "price": 98,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_53",
+    "name": "Complan",
+    "price": 139,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_54",
+    "name": "Complan (25 tablets)",
+    "price": 222,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_55",
+    "name": "Protinex",
+    "price": 270,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  },
+  {
+    "id": "netmeds_prod_chennai_56",
+    "name": "Protinex (14 tablets)",
+    "price": 292,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "burgerking_item_hyderabad_1",
+    "name": "Chicken Whopper",
+    "price": 214,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_2",
+    "name": "Veg Whopper",
+    "price": 243,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_3",
+    "name": "Crispy Chicken (3\")",
+    "price": 173,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_4",
+    "name": "French Fries",
+    "price": 109,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_5",
+    "name": "Onion Rings",
+    "price": 61,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_6",
+    "name": "Chicken Nuggets (1\")",
+    "price": 161,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_7",
+    "name": "Milkshake (2\")",
+    "price": 232,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_8",
+    "name": "Whopper (10\")",
+    "price": 115,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_9",
+    "name": "Chicken Whopper",
+    "price": 235,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_10",
+    "name": "Veg Whopper",
+    "price": 160,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_11",
+    "name": "Crispy Chicken",
+    "price": 231,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_12",
+    "name": "French Fries",
+    "price": 240,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_13",
+    "name": "Onion Rings",
+    "price": 69,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_14",
+    "name": "Chicken Nuggets (10\")",
+    "price": 208,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_15",
+    "name": "Milkshake",
+    "price": 137,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_16",
+    "name": "Whopper",
+    "price": 170,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_17",
+    "name": "Chicken Whopper",
+    "price": 234,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_18",
+    "name": "Veg Whopper",
+    "price": 249,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_19",
+    "name": "Crispy Chicken",
+    "price": 148,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_20",
+    "name": "French Fries",
+    "price": 208,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_21",
+    "name": "Onion Rings (8\")",
+    "price": 54,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_22",
+    "name": "Chicken Nuggets",
+    "price": 194,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_23",
+    "name": "Milkshake (4\")",
+    "price": 213,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_24",
+    "name": "Whopper (3\")",
+    "price": 185,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_25",
+    "name": "Chicken Whopper",
+    "price": 174,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_26",
+    "name": "Veg Whopper (2\")",
+    "price": 119,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_27",
+    "name": "Crispy Chicken (2\")",
+    "price": 230,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_28",
+    "name": "French Fries",
+    "price": 89,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_29",
+    "name": "Onion Rings (4\")",
+    "price": 119,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_hyderabad_30",
+    "name": "Chicken Nuggets",
+    "price": 167,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

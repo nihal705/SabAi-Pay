@@ -1,0 +1,702 @@
+[
+  {
+    "id": "haldiram_item_kolkata_1",
+    "name": "Kachori (248g)",
+    "price": 50,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_2",
+    "name": "Pakora",
+    "price": 60,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_3",
+    "name": "Jalebi",
+    "price": 21,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_4",
+    "name": "Gulab Jamun",
+    "price": 111,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_5",
+    "name": "Rasgulla",
+    "price": 38,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_6",
+    "name": "Samosa",
+    "price": 44,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_7",
+    "name": "Kachori",
+    "price": 127,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_8",
+    "name": "Pakora",
+    "price": 81,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_9",
+    "name": "Jalebi",
+    "price": 69,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_10",
+    "name": "Gulab Jamun",
+    "price": 114,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_11",
+    "name": "Rasgulla",
+    "price": 153,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_12",
+    "name": "Samosa (75g)",
+    "price": 115,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_13",
+    "name": "Kachori",
+    "price": 92,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_14",
+    "name": "Pakora",
+    "price": 101,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_15",
+    "name": "Jalebi",
+    "price": 74,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_16",
+    "name": "Gulab Jamun",
+    "price": 143,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_17",
+    "name": "Rasgulla",
+    "price": 167,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_18",
+    "name": "Samosa",
+    "price": 62,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_19",
+    "name": "Kachori",
+    "price": 129,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_20",
+    "name": "Pakora",
+    "price": 152,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_21",
+    "name": "Jalebi",
+    "price": 152,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_22",
+    "name": "Gulab Jamun",
+    "price": 70,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_23",
+    "name": "Rasgulla (80g)",
+    "price": 77,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_24",
+    "name": "Samosa",
+    "price": 37,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_25",
+    "name": "Kachori (242g)",
+    "price": 25,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_26",
+    "name": "Pakora",
+    "price": 106,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_27",
+    "name": "Jalebi (205g)",
+    "price": 27,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_28",
+    "name": "Gulab Jamun (193g)",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_29",
+    "name": "Rasgulla",
+    "price": 86,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_30",
+    "name": "Samosa",
+    "price": 154,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_31",
+    "name": "Kachori",
+    "price": 38,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_32",
+    "name": "Pakora",
+    "price": 51,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_33",
+    "name": "Jalebi",
+    "price": 47,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_34",
+    "name": "Gulab Jamun (151g)",
+    "price": 161,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_35",
+    "name": "Rasgulla (210g)",
+    "price": 123,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_36",
+    "name": "Samosa",
+    "price": 98,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_37",
+    "name": "Kachori (218g)",
+    "price": 117,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_38",
+    "name": "Pakora (152g)",
+    "price": 45,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_39",
+    "name": "Jalebi",
+    "price": 20,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_40",
+    "name": "Gulab Jamun",
+    "price": 115,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_41",
+    "name": "Rasgulla (63g)",
+    "price": 168,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_42",
+    "name": "Samosa",
+    "price": 85,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_43",
+    "name": "Kachori",
+    "price": 160,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_44",
+    "name": "Pakora (29g)",
+    "price": 91,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_45",
+    "name": "Jalebi",
+    "price": 118,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_46",
+    "name": "Gulab Jamun (214g)",
+    "price": 28,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_47",
+    "name": "Rasgulla",
+    "price": 86,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_48",
+    "name": "Samosa",
+    "price": 96,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_49",
+    "name": "Kachori",
+    "price": 137,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_50",
+    "name": "Pakora",
+    "price": 51,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_51",
+    "name": "Jalebi",
+    "price": 97,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_52",
+    "name": "Gulab Jamun",
+    "price": 102,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_53",
+    "name": "Rasgulla",
+    "price": 121,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_54",
+    "name": "Samosa (78g)",
+    "price": 86,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_55",
+    "name": "Kachori (71g)",
+    "price": 131,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_56",
+    "name": "Pakora",
+    "price": 121,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_57",
+    "name": "Jalebi (54g)",
+    "price": 44,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_58",
+    "name": "Gulab Jamun",
+    "price": 67,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_59",
+    "name": "Rasgulla",
+    "price": 150,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_60",
+    "name": "Samosa",
+    "price": 133,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_61",
+    "name": "Kachori",
+    "price": 88,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_62",
+    "name": "Pakora",
+    "price": 115,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_63",
+    "name": "Jalebi",
+    "price": 103,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_64",
+    "name": "Gulab Jamun",
+    "price": 109,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_65",
+    "name": "Rasgulla (164g)",
+    "price": 84,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_66",
+    "name": "Samosa",
+    "price": 80,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_67",
+    "name": "Kachori",
+    "price": 43,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_68",
+    "name": "Pakora",
+    "price": 98,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_69",
+    "name": "Jalebi",
+    "price": 64,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_70",
+    "name": "Gulab Jamun",
+    "price": 111,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_71",
+    "name": "Rasgulla",
+    "price": 43,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_72",
+    "name": "Samosa",
+    "price": 90,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_73",
+    "name": "Kachori",
+    "price": 77,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_74",
+    "name": "Pakora",
+    "price": 107,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_75",
+    "name": "Jalebi",
+    "price": 161,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_76",
+    "name": "Gulab Jamun (79g)",
+    "price": 49,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_77",
+    "name": "Rasgulla",
+    "price": 95,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_78",
+    "name": "Samosa",
+    "price": 62,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_79",
+    "name": "Kachori",
+    "price": 57,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_80",
+    "name": "Pakora",
+    "price": 102,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_81",
+    "name": "Jalebi",
+    "price": 88,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_82",
+    "name": "Gulab Jamun (16g)",
+    "price": 164,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_83",
+    "name": "Rasgulla",
+    "price": 118,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_84",
+    "name": "Samosa",
+    "price": 20,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_85",
+    "name": "Kachori",
+    "price": 52,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_86",
+    "name": "Pakora",
+    "price": 100,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_87",
+    "name": "Jalebi",
+    "price": 38,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_88",
+    "name": "Gulab Jamun",
+    "price": 148,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_89",
+    "name": "Rasgulla (60g)",
+    "price": 169,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_90",
+    "name": "Samosa",
+    "price": 88,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_91",
+    "name": "Kachori",
+    "price": 113,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_92",
+    "name": "Pakora",
+    "price": 44,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_93",
+    "name": "Jalebi",
+    "price": 88,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_94",
+    "name": "Gulab Jamun",
+    "price": 63,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_95",
+    "name": "Rasgulla",
+    "price": 136,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_96",
+    "name": "Samosa (138g)",
+    "price": 168,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_97",
+    "name": "Kachori (197g)",
+    "price": 32,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_98",
+    "name": "Pakora",
+    "price": 138,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_99",
+    "name": "Jalebi",
+    "price": 122,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_kolkata_100",
+    "name": "Gulab Jamun",
+    "price": 54,
+    "category": "Snacks",
+    "isVeg": true
+  }
+]

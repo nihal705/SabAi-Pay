@@ -1,0 +1,632 @@
+[
+  {
+    "id": "bigbasket_prod_hyderabad_1",
+    "name": "Basmati Rice",
+    "price": 538,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_2",
+    "name": "Basmati Rice (1kg)",
+    "price": 237,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_3",
+    "name": "Sonamasoori Rice",
+    "price": 235,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_4",
+    "name": "Sonamasoori Rice (1kg)",
+    "price": 204,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_5",
+    "name": "Wheat Flour",
+    "price": 262,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_6",
+    "name": "Wheat Flour (1kg)",
+    "price": 99,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_7",
+    "name": "Sugar",
+    "price": 206,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_8",
+    "name": "Sugar (1kg)",
+    "price": 246,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_9",
+    "name": "Salt",
+    "price": 476,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_10",
+    "name": "Salt (1kg)",
+    "price": 460,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_11",
+    "name": "Cooking Oil",
+    "price": 504,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_12",
+    "name": "Cooking Oil (1kg)",
+    "price": 343,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_13",
+    "name": "Toor Dal",
+    "price": 238,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_14",
+    "name": "Toor Dal (1kg)",
+    "price": 404,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_15",
+    "name": "Masoor Dal",
+    "price": 545,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_16",
+    "name": "Masoor Dal (1kg)",
+    "price": 283,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_17",
+    "name": "Chana Dal",
+    "price": 489,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_18",
+    "name": "Chana Dal (1kg)",
+    "price": 250,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_19",
+    "name": "Besan",
+    "price": 528,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_20",
+    "name": "Besan (1kg)",
+    "price": 377,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_21",
+    "name": "Milk",
+    "price": 155,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_22",
+    "name": "Milk (1kg)",
+    "price": 502,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_23",
+    "name": "Curd",
+    "price": 164,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_24",
+    "name": "Curd (1kg)",
+    "price": 517,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_25",
+    "name": "Butter",
+    "price": 395,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_26",
+    "name": "Butter (1kg)",
+    "price": 363,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_27",
+    "name": "Paneer",
+    "price": 253,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_28",
+    "name": "Paneer (1kg)",
+    "price": 310,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_29",
+    "name": "Ghee",
+    "price": 279,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_30",
+    "name": "Ghee (1kg)",
+    "price": 77,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_31",
+    "name": "Cheese",
+    "price": 344,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_32",
+    "name": "Cheese (1kg)",
+    "price": 307,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_33",
+    "name": "Buttermilk",
+    "price": 337,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_34",
+    "name": "Buttermilk (1kg)",
+    "price": 371,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_35",
+    "name": "Chips",
+    "price": 450,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_36",
+    "name": "Chips (1kg)",
+    "price": 193,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_37",
+    "name": "Biscuits",
+    "price": 70,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_38",
+    "name": "Biscuits (1kg)",
+    "price": 256,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_39",
+    "name": "Namkeen",
+    "price": 311,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_40",
+    "name": "Namkeen (1kg)",
+    "price": 478,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_41",
+    "name": "Chocolate",
+    "price": 137,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_42",
+    "name": "Chocolate (1kg)",
+    "price": 245,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_43",
+    "name": "Cookies",
+    "price": 236,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_44",
+    "name": "Cookies (1kg)",
+    "price": 198,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_45",
+    "name": "Cakes",
+    "price": 363,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_46",
+    "name": "Cakes (1kg)",
+    "price": 225,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_47",
+    "name": "Tea",
+    "price": 234,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_48",
+    "name": "Tea (1kg)",
+    "price": 248,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_49",
+    "name": "Coffee",
+    "price": 181,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_50",
+    "name": "Coffee (1kg)",
+    "price": 232,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_51",
+    "name": "Juice",
+    "price": 446,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_52",
+    "name": "Juice (1kg)",
+    "price": 420,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_53",
+    "name": "Soft Drink",
+    "price": 103,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_54",
+    "name": "Soft Drink (1kg)",
+    "price": 66,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_55",
+    "name": "Energy Drink",
+    "price": 50,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_56",
+    "name": "Energy Drink (1kg)",
+    "price": 269,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_57",
+    "name": "Coconut Water",
+    "price": 434,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_58",
+    "name": "Coconut Water (1kg)",
+    "price": 254,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_59",
+    "name": "Detergent",
+    "price": 282,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_60",
+    "name": "Detergent (1kg)",
+    "price": 507,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_61",
+    "name": "Soap",
+    "price": 220,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_62",
+    "name": "Soap (1kg)",
+    "price": 198,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_63",
+    "name": "Surface Cleaner",
+    "price": 322,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_64",
+    "name": "Surface Cleaner (1kg)",
+    "price": 192,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_65",
+    "name": "Tissue",
+    "price": 407,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_66",
+    "name": "Tissue (1kg)",
+    "price": 96,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_67",
+    "name": "Aluminum Foil",
+    "price": 310,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_68",
+    "name": "Aluminum Foil (1kg)",
+    "price": 463,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_69",
+    "name": "Cling Wrap",
+    "price": 290,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_hyderabad_70",
+    "name": "Cling Wrap (1kg)",
+    "price": 89,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  }
+]

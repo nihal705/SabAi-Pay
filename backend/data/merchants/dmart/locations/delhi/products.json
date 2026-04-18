@@ -1,0 +1,632 @@
+[
+  {
+    "id": "dmart_prod_delhi_1",
+    "name": "Basmati Rice",
+    "price": 183,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_2",
+    "name": "Basmati Rice (1kg)",
+    "price": 457,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_3",
+    "name": "Sonamasoori Rice",
+    "price": 343,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_4",
+    "name": "Sonamasoori Rice (1kg)",
+    "price": 137,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_5",
+    "name": "Wheat Flour",
+    "price": 352,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_6",
+    "name": "Wheat Flour (1kg)",
+    "price": 479,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_7",
+    "name": "Sugar",
+    "price": 284,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_8",
+    "name": "Sugar (1kg)",
+    "price": 439,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_9",
+    "name": "Salt",
+    "price": 257,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_10",
+    "name": "Salt (1kg)",
+    "price": 167,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_11",
+    "name": "Cooking Oil",
+    "price": 161,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_12",
+    "name": "Cooking Oil (1kg)",
+    "price": 73,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_13",
+    "name": "Toor Dal",
+    "price": 155,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_14",
+    "name": "Toor Dal (1kg)",
+    "price": 434,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_15",
+    "name": "Masoor Dal",
+    "price": 441,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_16",
+    "name": "Masoor Dal (1kg)",
+    "price": 327,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_17",
+    "name": "Chana Dal",
+    "price": 420,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_18",
+    "name": "Chana Dal (1kg)",
+    "price": 353,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_19",
+    "name": "Besan",
+    "price": 325,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_20",
+    "name": "Besan (1kg)",
+    "price": 292,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_21",
+    "name": "Milk",
+    "price": 451,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_22",
+    "name": "Milk (1kg)",
+    "price": 102,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_23",
+    "name": "Curd",
+    "price": 222,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_24",
+    "name": "Curd (1kg)",
+    "price": 131,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_25",
+    "name": "Butter",
+    "price": 511,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_26",
+    "name": "Butter (1kg)",
+    "price": 261,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_27",
+    "name": "Paneer",
+    "price": 440,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_28",
+    "name": "Paneer (1kg)",
+    "price": 329,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_29",
+    "name": "Ghee",
+    "price": 129,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_30",
+    "name": "Ghee (1kg)",
+    "price": 331,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_31",
+    "name": "Cheese",
+    "price": 111,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_32",
+    "name": "Cheese (1kg)",
+    "price": 278,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_33",
+    "name": "Buttermilk",
+    "price": 398,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_34",
+    "name": "Buttermilk (1kg)",
+    "price": 96,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_35",
+    "name": "Chips",
+    "price": 522,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_36",
+    "name": "Chips (1kg)",
+    "price": 481,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_37",
+    "name": "Biscuits",
+    "price": 315,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_38",
+    "name": "Biscuits (1kg)",
+    "price": 448,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_39",
+    "name": "Namkeen",
+    "price": 359,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_40",
+    "name": "Namkeen (1kg)",
+    "price": 361,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_41",
+    "name": "Chocolate",
+    "price": 275,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_42",
+    "name": "Chocolate (1kg)",
+    "price": 347,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_43",
+    "name": "Cookies",
+    "price": 235,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_44",
+    "name": "Cookies (1kg)",
+    "price": 475,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_45",
+    "name": "Cakes",
+    "price": 126,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_46",
+    "name": "Cakes (1kg)",
+    "price": 233,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_47",
+    "name": "Tea",
+    "price": 156,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_48",
+    "name": "Tea (1kg)",
+    "price": 190,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_49",
+    "name": "Coffee",
+    "price": 536,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_50",
+    "name": "Coffee (1kg)",
+    "price": 255,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_51",
+    "name": "Juice",
+    "price": 314,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_52",
+    "name": "Juice (1kg)",
+    "price": 333,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_53",
+    "name": "Soft Drink",
+    "price": 117,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_54",
+    "name": "Soft Drink (1kg)",
+    "price": 401,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_55",
+    "name": "Energy Drink",
+    "price": 66,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_56",
+    "name": "Energy Drink (1kg)",
+    "price": 115,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_57",
+    "name": "Coconut Water",
+    "price": 329,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_58",
+    "name": "Coconut Water (1kg)",
+    "price": 160,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_59",
+    "name": "Detergent",
+    "price": 394,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_60",
+    "name": "Detergent (1kg)",
+    "price": 239,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_61",
+    "name": "Soap",
+    "price": 229,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_62",
+    "name": "Soap (1kg)",
+    "price": 144,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_63",
+    "name": "Surface Cleaner",
+    "price": 214,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_64",
+    "name": "Surface Cleaner (1kg)",
+    "price": 428,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_65",
+    "name": "Tissue",
+    "price": 525,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_66",
+    "name": "Tissue (1kg)",
+    "price": 60,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_67",
+    "name": "Aluminum Foil",
+    "price": 205,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_68",
+    "name": "Aluminum Foil (1kg)",
+    "price": 210,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_69",
+    "name": "Cling Wrap",
+    "price": 176,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_delhi_70",
+    "name": "Cling Wrap (1kg)",
+    "price": 350,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

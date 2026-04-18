@@ -1,0 +1,227 @@
+[
+  {
+    "id": "swiggy_rest_lucknow_8_item_1",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 539,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_2",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 102,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_3",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 161,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_4",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 90,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_5",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 93,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_6",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 312,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_7",
+    "name": "Chicken Curry",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 312,
+    "category": "Main Course",
+    "isVeg": false,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_8",
+    "name": "Butter Naan",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 54,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_9",
+    "name": "Jeera Rice",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 265,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_10",
+    "name": "Ice Cream",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 203,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_11",
+    "name": "Soft Drinks",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 86,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_12",
+    "name": "Paneer Tikka",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 224,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_13",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 567,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_14",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 33,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_15",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 319,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_16",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 170,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_17",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 121,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_18",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 318,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_19",
+    "name": "Chicken Curry",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 458,
+    "category": "Main Course",
+    "isVeg": false,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_20",
+    "name": "Butter Naan",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 92,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_21",
+    "name": "Jeera Rice",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 201,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_22",
+    "name": "Ice Cream",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 152,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_23",
+    "name": "Soft Drinks",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 162,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_24",
+    "name": "Paneer Tikka",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 253,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "swiggy_rest_lucknow_8_item_25",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 351,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false
+  }
+]

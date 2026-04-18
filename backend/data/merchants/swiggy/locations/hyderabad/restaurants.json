@@ -1,0 +1,134 @@
+[
+  {
+    "id": "swiggy_paradise_hyd",
+    "name": "Paradise Biryani",
+    "cuisine": "Biryani",
+    "rating": 4.6,
+    "ratingCount": 25000,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 600,
+    "area": "Secunderabad",
+    "landmark": "Paradise Circle",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Secunderabad",
+      "address": "Paradise Biryani, Secunderabad, Hyderabad",
+      "coordinates": {
+        "lat": 17.385,
+        "lng": 78.4867
+      }
+    },
+    "imageUrl": "/images/restaurants/paradise.jpg"
+  },
+  {
+    "id": "swiggy_bawarchi_hyd",
+    "name": "Bawarchi",
+    "cuisine": "Biryani",
+    "rating": 4.5,
+    "ratingCount": 18000,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 550,
+    "area": "RTC X Roads",
+    "landmark": "Near Indian Oil",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "RTC X Roads",
+      "address": "Bawarchi, RTC X Roads, Hyderabad",
+      "coordinates": {
+        "lat": 17.385,
+        "lng": 78.4867
+      }
+    },
+    "imageUrl": "/images/restaurants/bawarchi.jpg"
+  },
+  {
+    "id": "swiggy_shadab_hyd",
+    "name": "Shadab",
+    "cuisine": "Biryani",
+    "rating": 4.4,
+    "ratingCount": 12000,
+    "deliveryTime": "40-55 min",
+    "priceForTwo": 500,
+    "area": "Charminar",
+    "landmark": "Near High Court",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Charminar",
+      "address": "Shadab, Charminar, Hyderabad",
+      "coordinates": {
+        "lat": 17.385,
+        "lng": 78.4867
+      }
+    },
+    "imageUrl": "/images/restaurants/shadab.jpg"
+  },
+  {
+    "id": "swiggy_meghana_hyd",
+    "name": "Meghana Foods",
+    "cuisine": "South Indian",
+    "rating": 4.3,
+    "ratingCount": 9800,
+    "deliveryTime": "40-55 min",
+    "priceForTwo": 550,
+    "area": "Jubilee Hills",
+    "landmark": "Road No 36",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Jubilee Hills",
+      "address": "Meghana Foods, Jubilee Hills, Hyderabad",
+      "coordinates": {
+        "lat": 17.385,
+        "lng": 78.4867
+      }
+    },
+    "imageUrl": "/images/restaurants/meghana.jpg"
+  },
+  {
+    "id": "swiggy_pista_house_hyd",
+    "name": "Pista House",
+    "cuisine": "Biryani",
+    "rating": 4.4,
+    "ratingCount": 11000,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 520,
+    "area": "Tolichowki",
+    "landmark": "Near Masjid",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Tolichowki",
+      "address": "Pista House, Tolichowki, Hyderabad",
+      "coordinates": {
+        "lat": 17.385,
+        "lng": 78.4867
+      }
+    },
+    "imageUrl": "/images/restaurants/pista.jpg"
+  },
+  {
+    "id": "swiggy_meridian_hyd",
+    "name": "Meridian",
+    "cuisine": "Mughlai",
+    "rating": 4.2,
+    "ratingCount": 7500,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 580,
+    "area": "Panjagutta",
+    "landmark": "Greenlands",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Panjagutta",
+      "address": "Meridian, Panjagutta, Hyderabad",
+      "coordinates": {
+        "lat": 17.385,
+        "lng": 78.4867
+      }
+    },
+    "imageUrl": "/images/restaurants/meridian.jpg"
+  }
+]

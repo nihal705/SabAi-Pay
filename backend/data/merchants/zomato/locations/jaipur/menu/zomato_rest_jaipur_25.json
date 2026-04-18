@@ -1,0 +1,227 @@
+[
+  {
+    "id": "zomato_rest_jaipur_25_item_1",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 526,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_2",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 65,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_3",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 375,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_4",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 136,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_5",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 158,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_6",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 253,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_7",
+    "name": "Chicken Curry",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 507,
+    "category": "Main Course",
+    "isVeg": false,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_8",
+    "name": "Butter Naan",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 62,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_9",
+    "name": "Jeera Rice",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 156,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_10",
+    "name": "Ice Cream",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 171,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_11",
+    "name": "Soft Drinks",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 125,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_12",
+    "name": "Paneer Tikka",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 219,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_13",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 548,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_14",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 77,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_15",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 378,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": true
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_16",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 160,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": true
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_17",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 108,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_18",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 282,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_19",
+    "name": "Chicken Curry",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 517,
+    "category": "Main Course",
+    "isVeg": false,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_20",
+    "name": "Butter Naan",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 83,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_21",
+    "name": "Jeera Rice",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 329,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_22",
+    "name": "Ice Cream",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 103,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_23",
+    "name": "Soft Drinks",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 98,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_24",
+    "name": "Paneer Tikka",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 208,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false
+  },
+  {
+    "id": "zomato_rest_jaipur_25_item_25",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 327,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false
+  }
+]

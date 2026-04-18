@@ -1,0 +1,212 @@
+[
+  {
+    "id": "dominos_item_chennai_1",
+    "name": "Pepperoni Pizza",
+    "price": 277,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_2",
+    "name": "Farmhouse Pizza",
+    "price": 153,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_3",
+    "name": "Garlic Bread",
+    "price": 497,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_4",
+    "name": "Margherita Pizza",
+    "price": 459,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_5",
+    "name": "Pepperoni Pizza",
+    "price": 453,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_6",
+    "name": "Farmhouse Pizza 3",
+    "price": 424,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_7",
+    "name": "Garlic Bread",
+    "price": 396,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_8",
+    "name": "Margherita Pizza 4",
+    "price": 199,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_9",
+    "name": "Pepperoni Pizza",
+    "price": 380,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_10",
+    "name": "Farmhouse Pizza 2",
+    "price": 145,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_11",
+    "name": "Garlic Bread",
+    "price": 233,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_12",
+    "name": "Margherita Pizza",
+    "price": 334,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_13",
+    "name": "Pepperoni Pizza",
+    "price": 387,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_14",
+    "name": "Farmhouse Pizza",
+    "price": 360,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_15",
+    "name": "Garlic Bread",
+    "price": 224,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_16",
+    "name": "Margherita Pizza",
+    "price": 386,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_17",
+    "name": "Pepperoni Pizza 6",
+    "price": 106,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_18",
+    "name": "Farmhouse Pizza",
+    "price": 391,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_19",
+    "name": "Garlic Bread",
+    "price": 174,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_20",
+    "name": "Margherita Pizza",
+    "price": 309,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_21",
+    "name": "Pepperoni Pizza",
+    "price": 197,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_22",
+    "name": "Farmhouse Pizza 10",
+    "price": 139,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_23",
+    "name": "Garlic Bread",
+    "price": 466,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_24",
+    "name": "Margherita Pizza 1",
+    "price": 151,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_25",
+    "name": "Pepperoni Pizza",
+    "price": 427,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_26",
+    "name": "Farmhouse Pizza",
+    "price": 454,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_27",
+    "name": "Garlic Bread 9",
+    "price": 288,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_28",
+    "name": "Margherita Pizza",
+    "price": 421,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_chennai_29",
+    "name": "Pepperoni Pizza",
+    "price": 162,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_chennai_30",
+    "name": "Farmhouse Pizza",
+    "price": 151,
+    "category": "Main",
+    "isVeg": true
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "kfc_item_mumbai_1",
+    "name": "Hot Wings",
+    "price": 72,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_2",
+    "name": "Popcorn Chicken",
+    "price": 78,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_3",
+    "name": "Zinger Burger",
+    "price": 231,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_4",
+    "name": "French Fries",
+    "price": 249,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_5",
+    "name": "Coleslaw (4\")",
+    "price": 59,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_6",
+    "name": "Chicken Strips",
+    "price": 125,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_7",
+    "name": "Chocolate Mousse",
+    "price": 153,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_8",
+    "name": "Chicken Bucket",
+    "price": 200,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_9",
+    "name": "Hot Wings",
+    "price": 58,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_10",
+    "name": "Popcorn Chicken",
+    "price": 168,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_11",
+    "name": "Zinger Burger (10\")",
+    "price": 277,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_12",
+    "name": "French Fries (7\")",
+    "price": 212,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_13",
+    "name": "Coleslaw",
+    "price": 150,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_14",
+    "name": "Chicken Strips",
+    "price": 230,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_15",
+    "name": "Chocolate Mousse (2\")",
+    "price": 179,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_16",
+    "name": "Chicken Bucket",
+    "price": 70,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_17",
+    "name": "Hot Wings",
+    "price": 230,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_18",
+    "name": "Popcorn Chicken",
+    "price": 247,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_19",
+    "name": "Zinger Burger",
+    "price": 271,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_20",
+    "name": "French Fries",
+    "price": 132,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_21",
+    "name": "Coleslaw",
+    "price": 61,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_22",
+    "name": "Chicken Strips",
+    "price": 50,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_23",
+    "name": "Chocolate Mousse",
+    "price": 141,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_24",
+    "name": "Chicken Bucket (4\")",
+    "price": 217,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_25",
+    "name": "Hot Wings",
+    "price": 133,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_26",
+    "name": "Popcorn Chicken",
+    "price": 182,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_27",
+    "name": "Zinger Burger",
+    "price": 390,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_28",
+    "name": "French Fries",
+    "price": 231,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_29",
+    "name": "Coleslaw",
+    "price": 124,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_mumbai_30",
+    "name": "Chicken Strips",
+    "price": 202,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

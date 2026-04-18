@@ -1,0 +1,272 @@
+[
+  {
+    "id": "dominos_item_all_1",
+    "name": "Pepperoni Pizza",
+    "price": 590,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_2",
+    "name": "Farmhouse Pizza",
+    "price": 312,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_3",
+    "name": "Veg Extravaganza (2\")",
+    "price": 174,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_all_4",
+    "name": "Chicken Dominator",
+    "price": 87,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_all_5",
+    "name": "Garlic Bread",
+    "price": 172,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_all_6",
+    "name": "Cheese Burst",
+    "price": 89,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_all_7",
+    "name": "Stuffed Crust",
+    "price": 70,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_all_8",
+    "name": "Margherita Pizza",
+    "price": 546,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_9",
+    "name": "Pepperoni Pizza (3\")",
+    "price": 572,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_10",
+    "name": "Farmhouse Pizza (8\")",
+    "price": 670,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_11",
+    "name": "Veg Extravaganza (4\")",
+    "price": 214,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_all_12",
+    "name": "Chicken Dominator",
+    "price": 109,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_all_13",
+    "name": "Garlic Bread",
+    "price": 51,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_all_14",
+    "name": "Cheese Burst",
+    "price": 116,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_all_15",
+    "name": "Stuffed Crust",
+    "price": 123,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_all_16",
+    "name": "Margherita Pizza",
+    "price": 482,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_17",
+    "name": "Pepperoni Pizza",
+    "price": 676,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_18",
+    "name": "Farmhouse Pizza",
+    "price": 623,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_19",
+    "name": "Veg Extravaganza",
+    "price": 115,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_all_20",
+    "name": "Chicken Dominator",
+    "price": 190,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_all_21",
+    "name": "Garlic Bread (8\")",
+    "price": 63,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_all_22",
+    "name": "Cheese Burst (1\")",
+    "price": 139,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_all_23",
+    "name": "Stuffed Crust",
+    "price": 123,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_all_24",
+    "name": "Margherita Pizza",
+    "price": 627,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_25",
+    "name": "Pepperoni Pizza (4\")",
+    "price": 550,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_26",
+    "name": "Farmhouse Pizza",
+    "price": 552,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_all_27",
+    "name": "Veg Extravaganza (1\")",
+    "price": 214,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_all_28",
+    "name": "Chicken Dominator",
+    "price": 95,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_all_29",
+    "name": "Garlic Bread",
+    "price": 108,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_all_30",
+    "name": "Cheese Burst",
+    "price": 57,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

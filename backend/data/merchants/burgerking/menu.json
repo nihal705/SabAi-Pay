@@ -1,0 +1,272 @@
+[
+  {
+    "id": "burgerking_item_all_1",
+    "name": "Chicken Whopper (10\")",
+    "price": 71,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_2",
+    "name": "Veg Whopper",
+    "price": 91,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_3",
+    "name": "Crispy Chicken",
+    "price": 155,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_4",
+    "name": "French Fries",
+    "price": 209,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_5",
+    "name": "Onion Rings",
+    "price": 130,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_6",
+    "name": "Chicken Nuggets (9\")",
+    "price": 185,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_7",
+    "name": "Milkshake (10\")",
+    "price": 125,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_all_8",
+    "name": "Whopper",
+    "price": 103,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_9",
+    "name": "Chicken Whopper (8\")",
+    "price": 153,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_10",
+    "name": "Veg Whopper",
+    "price": 208,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_11",
+    "name": "Crispy Chicken",
+    "price": 202,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_12",
+    "name": "French Fries",
+    "price": 122,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_13",
+    "name": "Onion Rings",
+    "price": 230,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_14",
+    "name": "Chicken Nuggets",
+    "price": 161,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_15",
+    "name": "Milkshake (6\")",
+    "price": 246,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_all_16",
+    "name": "Whopper (10\")",
+    "price": 165,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_17",
+    "name": "Chicken Whopper (10\")",
+    "price": 100,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_18",
+    "name": "Veg Whopper",
+    "price": 223,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_19",
+    "name": "Crispy Chicken",
+    "price": 213,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_20",
+    "name": "French Fries",
+    "price": 200,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_21",
+    "name": "Onion Rings (4\")",
+    "price": 224,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_22",
+    "name": "Chicken Nuggets",
+    "price": 223,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_23",
+    "name": "Milkshake",
+    "price": 118,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_all_24",
+    "name": "Whopper",
+    "price": 108,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_25",
+    "name": "Chicken Whopper",
+    "price": 198,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_26",
+    "name": "Veg Whopper (3\")",
+    "price": 243,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_27",
+    "name": "Crispy Chicken",
+    "price": 147,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_all_28",
+    "name": "French Fries",
+    "price": 243,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_29",
+    "name": "Onion Rings (1\")",
+    "price": 204,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_all_30",
+    "name": "Chicken Nuggets (6\")",
+    "price": 86,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

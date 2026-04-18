@@ -1,0 +1,2212 @@
+{
+  "ordersData": {
+    "4": [
+      {
+        "id": "ORD1775370522083",
+        "userId": "4",
+        "merchant": "swiggy",
+        "merchantName": "Swiggy",
+        "items": [
+          {
+            "id": "item_1775370502514",
+            "name": "Chicken Biryani",
+            "quantity": 2,
+            "price": 286,
+            "total": 572,
+            "unit": "plate",
+            "image": "/images/items/chicken-biryani.png"
+          },
+          {
+            "id": "item_1775370502514",
+            "name": "Paneer Butter Masala",
+            "quantity": 1,
+            "price": 223,
+            "total": 223,
+            "unit": "bowl",
+            "image": "/images/items/paneer-butter-masala.png"
+          }
+        ],
+        "totalAmount": 835,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 41,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "12:43:42 pm",
+        "createdAt": "2026-04-05T06:28:42.083Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "11:58:42 am"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "12:43:42 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-04-05T06:28:42.083Z"
+      },
+      {
+        "id": "ORD1775369897141",
+        "userId": "4",
+        "merchant": "swiggy",
+        "merchantName": "Swiggy",
+        "items": [
+          {
+            "id": "item_1775369296781",
+            "name": "Chicken Biryani",
+            "quantity": 2,
+            "price": 286,
+            "total": 572,
+            "unit": "plate",
+            "image": "/images/items/chicken-biryani.png"
+          },
+          {
+            "id": "item_1775369296781",
+            "name": "Paneer Tikka",
+            "quantity": 1,
+            "price": 299,
+            "total": 299,
+            "unit": "plate",
+            "image": "/images/items/paneer-tikka.png"
+          }
+        ],
+        "totalAmount": 915,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 45,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "12:33:17 pm",
+        "createdAt": "2026-04-05T06:18:17.141Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "11:48:17 am"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "12:33:17 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-04-05T06:18:17.391Z"
+      },
+      {
+        "id": "ORD1774897313220",
+        "userId": "4",
+        "merchant": "zepto",
+        "merchantName": "Zepto",
+        "items": [
+          {
+            "id": "zepto_prod_20",
+            "name": "Onion (Red)",
+            "quantity": 3,
+            "price": 26.92,
+            "total": 80.76,
+            "unit": "kg",
+            "description": "Fresh Red onion from local farms"
+          },
+          {
+            "id": "zepto_prod_18",
+            "name": "Tomato (Local)",
+            "quantity": 1,
+            "price": 34.89,
+            "total": 34.89,
+            "unit": "kg",
+            "description": "Fresh Local tomato from local farms"
+          },
+          {
+            "id": "zepto_prod_56",
+            "name": "Parle Biscuits",
+            "quantity": 2,
+            "price": 16.07,
+            "total": 32.14,
+            "unit": "pack",
+            "description": "Delicious biscuits"
+          }
+        ],
+        "totalAmount": 154.79,
+        "status": "confirmed",
+        "paymentMethod": "UPI",
+        "paymentId": "pay_SXXrLoRItX7dmX",
+        "sabaiGems": 7,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "1:16:53 am",
+        "createdAt": "2026-03-30T19:01:53.220Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "12:31:53 am"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "1:16:53 am"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-30T19:01:53.237Z"
+      },
+      {
+        "id": "ORD1774895213073",
+        "userId": "4",
+        "merchant": "zepto",
+        "merchantName": "Zepto",
+        "items": [
+          {
+            "id": "zepto_prod_20",
+            "name": "Onion (Red)",
+            "quantity": 3,
+            "price": 26.92,
+            "total": 80.76,
+            "unit": "kg",
+            "description": "Fresh Red onion from local farms"
+          },
+          {
+            "id": "zepto_prod_18",
+            "name": "Tomato (Local)",
+            "quantity": 4,
+            "price": 34.89,
+            "total": 139.56,
+            "unit": "kg",
+            "description": "Fresh Local tomato from local farms"
+          },
+          {
+            "id": "zepto_prod_56",
+            "name": "Parle Biscuits",
+            "quantity": 2,
+            "price": 16.07,
+            "total": 32.14,
+            "unit": "pack",
+            "description": "Delicious biscuits"
+          },
+          {
+            "id": "zepto_prod_38",
+            "name": "Mother Dairy Milk",
+            "quantity": 1,
+            "price": 72.27,
+            "total": 72.27,
+            "unit": "liter",
+            "description": "Fresh milk from Mother Dairy"
+          }
+        ],
+        "totalAmount": 340.73,
+        "status": "confirmed",
+        "paymentMethod": "UPI",
+        "paymentId": "pay_SXXGUk4H0mkBh2",
+        "sabaiGems": 17,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "12:41:53 am",
+        "createdAt": "2026-03-30T18:26:53.073Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "11:56:53 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "12:41:53 am"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-30T18:26:53.246Z"
+      },
+      {
+        "id": "ORD1774862567335",
+        "userId": "4",
+        "merchant": "blinkit",
+        "merchantName": "Blinkit",
+        "items": [
+          {
+            "id": "blinkit_prod_1",
+            "name": "Apple (Shimla)",
+            "quantity": 1,
+            "price": 127.49,
+            "total": 127.49,
+            "unit": "kg",
+            "description": "Fresh Shimla apple imported directly from farms"
+          },
+          {
+            "id": "blinkit_prod_6",
+            "name": "Orange (Nagpur)",
+            "quantity": 2,
+            "price": 73.38,
+            "total": 146.76,
+            "unit": "kg",
+            "description": "Fresh Nagpur orange imported directly from farms"
+          }
+        ],
+        "totalAmount": 288.25,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 14,
+        "reserveLimitBefore": 1000,
+        "reserveLimitAfter": 711.75,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "3:37:47 pm",
+        "createdAt": "2026-03-30T09:22:47.335Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "2:52:47 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "3:37:47 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-30T09:22:47.532Z"
+      },
+      {
+        "id": "ORD1774861465527",
+        "userId": "4",
+        "merchant": "swiggy",
+        "merchantName": "Swiggy",
+        "items": [
+          {
+            "id": "swiggy_item_21_3",
+            "name": "Sandwich",
+            "quantity": 1,
+            "price": 474,
+            "total": 474,
+            "unit": "piece",
+            "description": "Delicious rice prepared with authentic spices"
+          },
+          {
+            "id": "swiggy_item_21_2",
+            "name": "Burger",
+            "quantity": 2,
+            "price": 167,
+            "total": 334,
+            "unit": "piece",
+            "description": "Delicious starters prepared with authentic spices"
+          },
+          {
+            "id": "swiggy_item_21_1",
+            "name": "Fries",
+            "quantity": 2,
+            "price": 249,
+            "total": 498,
+            "unit": "piece",
+            "description": "Delicious breads prepared with authentic spices"
+          }
+        ],
+        "totalAmount": 1371,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 68,
+        "reserveLimitBefore": 1926,
+        "reserveLimitAfter": 555,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "3:19:25 pm",
+        "createdAt": "2026-03-30T09:04:25.527Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "2:34:25 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "3:19:25 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-30T09:04:25.527Z"
+      },
+      {
+        "id": "ORD1774861344080",
+        "userId": "4",
+        "merchant": "blinkit",
+        "merchantName": "Blinkit",
+        "items": [
+          {
+            "id": "blinkit_prod_1",
+            "name": "Apple (Shimla)",
+            "quantity": 1,
+            "price": 127.49,
+            "total": 127.49,
+            "unit": "kg",
+            "description": "Fresh Shimla apple imported directly from farms"
+          },
+          {
+            "id": "blinkit_prod_6",
+            "name": "Orange (Nagpur)",
+            "quantity": 2,
+            "price": 73.38,
+            "total": 146.76,
+            "unit": "kg",
+            "description": "Fresh Nagpur orange imported directly from farms"
+          }
+        ],
+        "totalAmount": 288.25,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 14,
+        "reserveLimitBefore": 423.5,
+        "reserveLimitAfter": 135.25,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "3:17:24 pm",
+        "createdAt": "2026-03-30T09:02:24.080Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "2:32:24 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "3:17:24 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-30T09:02:24.080Z"
+      },
+      {
+        "id": "ORD1774861287439",
+        "userId": "4",
+        "merchant": "blinkit",
+        "merchantName": "Blinkit",
+        "items": [
+          {
+            "id": "blinkit_prod_1",
+            "name": "Apple (Shimla)",
+            "quantity": 1,
+            "price": 127.49,
+            "total": 127.49,
+            "unit": "kg",
+            "description": "Fresh Shimla apple imported directly from farms"
+          },
+          {
+            "id": "blinkit_prod_6",
+            "name": "Orange (Nagpur)",
+            "quantity": 2,
+            "price": 73.38,
+            "total": 146.76,
+            "unit": "kg",
+            "description": "Fresh Nagpur orange imported directly from farms"
+          }
+        ],
+        "totalAmount": 288.25,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 14,
+        "reserveLimitBefore": 711.75,
+        "reserveLimitAfter": 423.5,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "3:16:27 pm",
+        "createdAt": "2026-03-30T09:01:27.439Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "2:31:27 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "3:16:27 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-30T09:01:27.439Z"
+      },
+      {
+        "id": "ORD1774861227097",
+        "userId": "4",
+        "merchant": "blinkit",
+        "merchantName": "Blinkit",
+        "items": [
+          {
+            "id": "blinkit_prod_1",
+            "name": "Apple (Shimla)",
+            "quantity": 1,
+            "price": 127.49,
+            "total": 127.49,
+            "unit": "kg",
+            "description": "Fresh Shimla apple imported directly from farms"
+          },
+          {
+            "id": "blinkit_prod_6",
+            "name": "Orange (Nagpur)",
+            "quantity": 2,
+            "price": 73.38,
+            "total": 146.76,
+            "unit": "kg",
+            "description": "Fresh Nagpur orange imported directly from farms"
+          }
+        ],
+        "totalAmount": 288.25,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 14,
+        "reserveLimitBefore": 1000,
+        "reserveLimitAfter": 711.75,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "3:15:27 pm",
+        "createdAt": "2026-03-30T09:00:27.097Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "2:30:27 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "3:15:27 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-30T09:00:27.289Z"
+      },
+      {
+        "id": "ORD1774858235415",
+        "userId": "4",
+        "merchant": "zomato",
+        "merchantName": "Zomato",
+        "items": [
+          {
+            "id": "zomato_item_1_2",
+            "name": "Pizza",
+            "quantity": 2,
+            "price": 302,
+            "total": 604,
+            "unit": "piece",
+            "description": "Delicious breads prepared with authentic spices"
+          },
+          {
+            "id": "zomato_item_1_12",
+            "name": "Sandwich",
+            "quantity": 1,
+            "price": 113,
+            "total": 113,
+            "unit": "piece",
+            "description": "Delicious desserts prepared with authentic spices"
+          },
+          {
+            "id": "zomato_item_1_1",
+            "name": "Burger",
+            "quantity": 2,
+            "price": 80,
+            "total": 160,
+            "unit": "piece",
+            "description": "Delicious main course prepared with authentic spices"
+          },
+          {
+            "id": "zomato_item_1_7",
+            "name": "Fries",
+            "quantity": 2,
+            "price": 193,
+            "total": 386,
+            "unit": "piece",
+            "description": "Delicious rice prepared with authentic spices"
+          }
+        ],
+        "totalAmount": 1326,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 66,
+        "reserveLimitBefore": 2500,
+        "reserveLimitAfter": 1174,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "2:25:35 pm",
+        "createdAt": "2026-03-30T08:10:35.415Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "1:40:35 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "2:25:35 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-30T08:10:35.435Z"
+      },
+      {
+        "id": "ORD1774854693350",
+        "userId": "4",
+        "merchant": "swiggy",
+        "merchantName": "Swiggy",
+        "items": [
+          {
+            "id": "swiggy_item_1_4",
+            "name": "Dal Makhani",
+            "quantity": 1,
+            "price": 275,
+            "total": 275,
+            "unit": "piece",
+            "description": "Delicious desserts prepared with authentic spices"
+          },
+          {
+            "id": "swiggy_item_1_6",
+            "name": "Chole Bhature",
+            "quantity": 2,
+            "price": 374,
+            "total": 748,
+            "unit": "piece",
+            "description": "Delicious beverages prepared with authentic spices"
+          }
+        ],
+        "totalAmount": 1074,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 53,
+        "reserveLimitBefore": 3000,
+        "reserveLimitAfter": 1926,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "1:26:33 pm",
+        "createdAt": "2026-03-30T07:11:33.350Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "12:41:33 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "1:26:33 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-30T07:11:33.488Z"
+      },
+      {
+        "id": "ORD1774786880113",
+        "userId": "4",
+        "merchant": "netmeds",
+        "merchantName": "NetMeds",
+        "items": [
+          {
+            "id": "netmeds_prod_896",
+            "name": "Medical Devices Product 896",
+            "quantity": 3,
+            "price": 251,
+            "total": 753,
+            "unit": "piece",
+            "description": "Pharmaceutical product"
+          },
+          {
+            "id": "netmeds_prod_899",
+            "name": "Personal Care Product 899",
+            "quantity": 2,
+            "price": 231,
+            "total": 462,
+            "unit": "piece",
+            "description": "Pharmaceutical product"
+          },
+          {
+            "id": "netmeds_prod_999",
+            "name": "Medicine Product 999",
+            "quantity": 1,
+            "price": 427,
+            "total": 427,
+            "unit": "piece",
+            "description": "Pharmaceutical product"
+          }
+        ],
+        "totalAmount": 1724,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "coinsEarned": 17,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "6:36:20 pm",
+        "createdAt": "2026-03-29T12:21:20.113Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "5:51:20 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "6:36:20 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-29T12:21:20.306Z"
+      },
+      {
+        "id": "ORD1774769039986",
+        "userId": "4",
+        "merchant": "zepto",
+        "merchantName": "Zepto",
+        "items": [
+          {
+            "id": "zepto_prod_20",
+            "name": "Onion (Red)",
+            "originalName": "Onion (Red)",
+            "price": 26.92,
+            "unit": "kg",
+            "quantity": 3,
+            "total": 80.76,
+            "description": "Fresh Red onion from local farms",
+            "matchScore": 80
+          },
+          {
+            "id": "zepto_prod_18",
+            "name": "Tomato (Local)",
+            "originalName": "Tomato (Local)",
+            "price": 34.89,
+            "unit": "kg",
+            "quantity": 1,
+            "total": 34.89,
+            "description": "Fresh Local tomato from local farms",
+            "matchScore": 80
+          },
+          {
+            "id": "zepto_prod_4",
+            "name": "Banana (Yelakki)",
+            "originalName": "Banana (Yelakki)",
+            "price": 41.9,
+            "unit": "dozen",
+            "quantity": 1,
+            "total": 41.9,
+            "description": "Fresh Yelakki banana imported directly from farms",
+            "matchScore": 20
+          },
+          {
+            "id": "zepto_prod_56",
+            "name": "Parle Biscuits",
+            "originalName": "Parle Biscuits",
+            "price": 16.07,
+            "unit": "pack",
+            "quantity": 2,
+            "total": 32.14,
+            "description": "Delicious biscuits",
+            "matchScore": 20
+          },
+          {
+            "id": "zepto_prod_54",
+            "name": "Kurkure (Masala Munch)",
+            "originalName": "Kurkure (Masala Munch)",
+            "price": 5.47,
+            "unit": "pack",
+            "quantity": 5,
+            "total": 27.35,
+            "description": "Delicious Masala Munch flavor",
+            "matchScore": 80
+          }
+        ],
+        "totalAmount": 228.04,
+        "status": "confirmed",
+        "paymentMethod": "UPI",
+        "paymentId": "pay_SWxR7wthowHCuo",
+        "coinsEarned": 2,
+        "estimatedDelivery": "45 minutes",
+        "createdAt": "2026-03-29T07:23:59.986Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "12:53:59 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-03-29T07:24:00.142Z"
+      }
+    ],
+    "5": [
+      {
+        "id": "ORD1775588836777",
+        "userId": "5",
+        "merchant": "swiggy",
+        "merchantName": "swiggy",
+        "items": [
+          {
+            "id": "swiggy_rest_bangalore_9_item_1",
+            "name": "Paneer Butter Masala",
+            "price": 429,
+            "total": 429,
+            "category": "Main Course",
+            "imageUrl": "/images/items/paneer-butter-masala.png",
+            "quantity": 1
+          },
+          {
+            "id": "swiggy_rest_bangalore_9_item_2",
+            "name": "Roti",
+            "price": 73,
+            "total": 73,
+            "category": "Breads",
+            "imageUrl": "/images/items/roti.png",
+            "quantity": 1
+          }
+        ],
+        "totalAmount": 527,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 26,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "1:22:16 am",
+        "createdAt": "2026-04-07T19:07:16.777Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "12:37:16 am"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "1:22:16 am"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-04-07T19:07:16.952Z"
+      },
+      {
+        "id": "ORD1775549912072",
+        "userId": "5",
+        "merchant": "swiggy",
+        "merchantName": "Swiggy",
+        "items": [
+          {
+            "id": "item_1775549859257",
+            "name": "Chicken Biryani",
+            "unit": "plate",
+            "image": "/images/items/chicken-biryani.png",
+            "price": 286,
+            "total": 572,
+            "quantity": 2
+          },
+          {
+            "id": "item_1775549859257",
+            "name": "Paneer Tikka",
+            "unit": "plate",
+            "image": "/images/items/paneer-tikka.png",
+            "price": 299,
+            "total": 299,
+            "quantity": 1
+          }
+        ],
+        "totalAmount": 915,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 45,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "2:33:32 pm",
+        "createdAt": "2026-04-07T08:18:32.072Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "1:48:32 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "2:33:32 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-04-07T08:18:32.075Z"
+      },
+      {
+        "id": "ORD1775547578216",
+        "userId": "5",
+        "merchant": "swiggy",
+        "merchantName": "Swiggy",
+        "items": [
+          {
+            "id": "item_1775547527785",
+            "name": "Chicken Biryani",
+            "unit": "plate",
+            "image": "/images/items/chicken-biryani.png",
+            "price": 286,
+            "total": 572,
+            "quantity": 2
+          },
+          {
+            "id": "item_1775547527785",
+            "name": "Paneer Tikka",
+            "unit": "plate",
+            "image": "/images/items/paneer-tikka.png",
+            "price": 299,
+            "total": 299,
+            "quantity": 1
+          }
+        ],
+        "totalAmount": 915,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 45,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "1:54:38 pm",
+        "createdAt": "2026-04-07T07:39:38.216Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "1:09:38 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "1:54:38 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-04-07T07:39:38.216Z"
+      },
+      {
+        "id": "ORD1775546044388",
+        "userId": "5",
+        "merchant": "swiggy",
+        "merchantName": "Swiggy",
+        "items": [
+          {
+            "id": "item_1775546040418",
+            "name": "Chicken Biryani",
+            "unit": "plate",
+            "image": "/images/items/chicken-biryani.png",
+            "price": 286,
+            "total": 572,
+            "quantity": 2
+          },
+          {
+            "id": "item_1775546040418",
+            "name": "Paneer Tikka",
+            "unit": "plate",
+            "image": "/images/items/paneer-tikka.png",
+            "price": 299,
+            "total": 299,
+            "quantity": 1
+          }
+        ],
+        "totalAmount": 915,
+        "status": "confirmed",
+        "paymentMethod": "Reserve Pay",
+        "sabaiGems": 45,
+        "estimatedDelivery": "45 minutes",
+        "estimatedDeliveryTime": "1:29:04 pm",
+        "createdAt": "2026-04-07T07:14:04.388Z",
+        "tracking": [
+          {
+            "status": "confirmed",
+            "label": "Order Confirmed",
+            "completed": true,
+            "time": "12:44:04 pm"
+          },
+          {
+            "status": "preparing",
+            "label": "Preparing",
+            "completed": false,
+            "estimatedTime": "1:29:04 pm"
+          },
+          {
+            "status": "out_for_delivery",
+            "label": "Out for Delivery",
+            "completed": false
+          },
+          {
+            "status": "delivered",
+            "label": "Delivered",
+            "completed": false
+          }
+        ],
+        "updatedAt": "2026-04-07T07:14:04.553Z"
+      }
+    ]
+  },
+  "orderByIdData": {
+    "ORD1774769039986": {
+      "id": "ORD1774769039986",
+      "userId": "4",
+      "merchant": "zepto",
+      "merchantName": "Zepto",
+      "items": [
+        {
+          "id": "zepto_prod_20",
+          "name": "Onion (Red)",
+          "originalName": "Onion (Red)",
+          "price": 26.92,
+          "unit": "kg",
+          "quantity": 3,
+          "total": 80.76,
+          "description": "Fresh Red onion from local farms",
+          "matchScore": 80
+        },
+        {
+          "id": "zepto_prod_18",
+          "name": "Tomato (Local)",
+          "originalName": "Tomato (Local)",
+          "price": 34.89,
+          "unit": "kg",
+          "quantity": 1,
+          "total": 34.89,
+          "description": "Fresh Local tomato from local farms",
+          "matchScore": 80
+        },
+        {
+          "id": "zepto_prod_4",
+          "name": "Banana (Yelakki)",
+          "originalName": "Banana (Yelakki)",
+          "price": 41.9,
+          "unit": "dozen",
+          "quantity": 1,
+          "total": 41.9,
+          "description": "Fresh Yelakki banana imported directly from farms",
+          "matchScore": 20
+        },
+        {
+          "id": "zepto_prod_56",
+          "name": "Parle Biscuits",
+          "originalName": "Parle Biscuits",
+          "price": 16.07,
+          "unit": "pack",
+          "quantity": 2,
+          "total": 32.14,
+          "description": "Delicious biscuits",
+          "matchScore": 20
+        },
+        {
+          "id": "zepto_prod_54",
+          "name": "Kurkure (Masala Munch)",
+          "originalName": "Kurkure (Masala Munch)",
+          "price": 5.47,
+          "unit": "pack",
+          "quantity": 5,
+          "total": 27.35,
+          "description": "Delicious Masala Munch flavor",
+          "matchScore": 80
+        }
+      ],
+      "totalAmount": 228.04,
+      "status": "confirmed",
+      "paymentMethod": "UPI",
+      "paymentId": "pay_SWxR7wthowHCuo",
+      "coinsEarned": 2,
+      "estimatedDelivery": "45 minutes",
+      "createdAt": "2026-03-29T07:23:59.986Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "12:53:59 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-29T07:24:00.142Z"
+    },
+    "ORD1774786880113": {
+      "id": "ORD1774786880113",
+      "userId": "4",
+      "merchant": "netmeds",
+      "merchantName": "NetMeds",
+      "items": [
+        {
+          "id": "netmeds_prod_896",
+          "name": "Medical Devices Product 896",
+          "quantity": 3,
+          "price": 251,
+          "total": 753,
+          "unit": "piece",
+          "description": "Pharmaceutical product"
+        },
+        {
+          "id": "netmeds_prod_899",
+          "name": "Personal Care Product 899",
+          "quantity": 2,
+          "price": 231,
+          "total": 462,
+          "unit": "piece",
+          "description": "Pharmaceutical product"
+        },
+        {
+          "id": "netmeds_prod_999",
+          "name": "Medicine Product 999",
+          "quantity": 1,
+          "price": 427,
+          "total": 427,
+          "unit": "piece",
+          "description": "Pharmaceutical product"
+        }
+      ],
+      "totalAmount": 1724,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "coinsEarned": 17,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "6:36:20 pm",
+      "createdAt": "2026-03-29T12:21:20.113Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "5:51:20 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "6:36:20 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-29T12:21:20.306Z"
+    },
+    "ORD1774854693350": {
+      "id": "ORD1774854693350",
+      "userId": "4",
+      "merchant": "swiggy",
+      "merchantName": "Swiggy",
+      "items": [
+        {
+          "id": "swiggy_item_1_4",
+          "name": "Dal Makhani",
+          "quantity": 1,
+          "price": 275,
+          "total": 275,
+          "unit": "piece",
+          "description": "Delicious desserts prepared with authentic spices"
+        },
+        {
+          "id": "swiggy_item_1_6",
+          "name": "Chole Bhature",
+          "quantity": 2,
+          "price": 374,
+          "total": 748,
+          "unit": "piece",
+          "description": "Delicious beverages prepared with authentic spices"
+        }
+      ],
+      "totalAmount": 1074,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 53,
+      "reserveLimitBefore": 3000,
+      "reserveLimitAfter": 1926,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "1:26:33 pm",
+      "createdAt": "2026-03-30T07:11:33.350Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "12:41:33 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "1:26:33 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-30T07:11:33.488Z"
+    },
+    "ORD1774858235415": {
+      "id": "ORD1774858235415",
+      "userId": "4",
+      "merchant": "zomato",
+      "merchantName": "Zomato",
+      "items": [
+        {
+          "id": "zomato_item_1_2",
+          "name": "Pizza",
+          "quantity": 2,
+          "price": 302,
+          "total": 604,
+          "unit": "piece",
+          "description": "Delicious breads prepared with authentic spices"
+        },
+        {
+          "id": "zomato_item_1_12",
+          "name": "Sandwich",
+          "quantity": 1,
+          "price": 113,
+          "total": 113,
+          "unit": "piece",
+          "description": "Delicious desserts prepared with authentic spices"
+        },
+        {
+          "id": "zomato_item_1_1",
+          "name": "Burger",
+          "quantity": 2,
+          "price": 80,
+          "total": 160,
+          "unit": "piece",
+          "description": "Delicious main course prepared with authentic spices"
+        },
+        {
+          "id": "zomato_item_1_7",
+          "name": "Fries",
+          "quantity": 2,
+          "price": 193,
+          "total": 386,
+          "unit": "piece",
+          "description": "Delicious rice prepared with authentic spices"
+        }
+      ],
+      "totalAmount": 1326,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 66,
+      "reserveLimitBefore": 2500,
+      "reserveLimitAfter": 1174,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "2:25:35 pm",
+      "createdAt": "2026-03-30T08:10:35.415Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "1:40:35 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "2:25:35 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-30T08:10:35.435Z"
+    },
+    "ORD1774861227097": {
+      "id": "ORD1774861227097",
+      "userId": "4",
+      "merchant": "blinkit",
+      "merchantName": "Blinkit",
+      "items": [
+        {
+          "id": "blinkit_prod_1",
+          "name": "Apple (Shimla)",
+          "quantity": 1,
+          "price": 127.49,
+          "total": 127.49,
+          "unit": "kg",
+          "description": "Fresh Shimla apple imported directly from farms"
+        },
+        {
+          "id": "blinkit_prod_6",
+          "name": "Orange (Nagpur)",
+          "quantity": 2,
+          "price": 73.38,
+          "total": 146.76,
+          "unit": "kg",
+          "description": "Fresh Nagpur orange imported directly from farms"
+        }
+      ],
+      "totalAmount": 288.25,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 14,
+      "reserveLimitBefore": 1000,
+      "reserveLimitAfter": 711.75,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "3:15:27 pm",
+      "createdAt": "2026-03-30T09:00:27.097Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "2:30:27 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "3:15:27 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-30T09:00:27.289Z"
+    },
+    "ORD1774861287439": {
+      "id": "ORD1774861287439",
+      "userId": "4",
+      "merchant": "blinkit",
+      "merchantName": "Blinkit",
+      "items": [
+        {
+          "id": "blinkit_prod_1",
+          "name": "Apple (Shimla)",
+          "quantity": 1,
+          "price": 127.49,
+          "total": 127.49,
+          "unit": "kg",
+          "description": "Fresh Shimla apple imported directly from farms"
+        },
+        {
+          "id": "blinkit_prod_6",
+          "name": "Orange (Nagpur)",
+          "quantity": 2,
+          "price": 73.38,
+          "total": 146.76,
+          "unit": "kg",
+          "description": "Fresh Nagpur orange imported directly from farms"
+        }
+      ],
+      "totalAmount": 288.25,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 14,
+      "reserveLimitBefore": 711.75,
+      "reserveLimitAfter": 423.5,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "3:16:27 pm",
+      "createdAt": "2026-03-30T09:01:27.439Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "2:31:27 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "3:16:27 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-30T09:01:27.439Z"
+    },
+    "ORD1774861344080": {
+      "id": "ORD1774861344080",
+      "userId": "4",
+      "merchant": "blinkit",
+      "merchantName": "Blinkit",
+      "items": [
+        {
+          "id": "blinkit_prod_1",
+          "name": "Apple (Shimla)",
+          "quantity": 1,
+          "price": 127.49,
+          "total": 127.49,
+          "unit": "kg",
+          "description": "Fresh Shimla apple imported directly from farms"
+        },
+        {
+          "id": "blinkit_prod_6",
+          "name": "Orange (Nagpur)",
+          "quantity": 2,
+          "price": 73.38,
+          "total": 146.76,
+          "unit": "kg",
+          "description": "Fresh Nagpur orange imported directly from farms"
+        }
+      ],
+      "totalAmount": 288.25,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 14,
+      "reserveLimitBefore": 423.5,
+      "reserveLimitAfter": 135.25,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "3:17:24 pm",
+      "createdAt": "2026-03-30T09:02:24.080Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "2:32:24 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "3:17:24 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-30T09:02:24.080Z"
+    },
+    "ORD1774861465527": {
+      "id": "ORD1774861465527",
+      "userId": "4",
+      "merchant": "swiggy",
+      "merchantName": "Swiggy",
+      "items": [
+        {
+          "id": "swiggy_item_21_3",
+          "name": "Sandwich",
+          "quantity": 1,
+          "price": 474,
+          "total": 474,
+          "unit": "piece",
+          "description": "Delicious rice prepared with authentic spices"
+        },
+        {
+          "id": "swiggy_item_21_2",
+          "name": "Burger",
+          "quantity": 2,
+          "price": 167,
+          "total": 334,
+          "unit": "piece",
+          "description": "Delicious starters prepared with authentic spices"
+        },
+        {
+          "id": "swiggy_item_21_1",
+          "name": "Fries",
+          "quantity": 2,
+          "price": 249,
+          "total": 498,
+          "unit": "piece",
+          "description": "Delicious breads prepared with authentic spices"
+        }
+      ],
+      "totalAmount": 1371,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 68,
+      "reserveLimitBefore": 1926,
+      "reserveLimitAfter": 555,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "3:19:25 pm",
+      "createdAt": "2026-03-30T09:04:25.527Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "2:34:25 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "3:19:25 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-30T09:04:25.527Z"
+    },
+    "ORD1774862567335": {
+      "id": "ORD1774862567335",
+      "userId": "4",
+      "merchant": "blinkit",
+      "merchantName": "Blinkit",
+      "items": [
+        {
+          "id": "blinkit_prod_1",
+          "name": "Apple (Shimla)",
+          "quantity": 1,
+          "price": 127.49,
+          "total": 127.49,
+          "unit": "kg",
+          "description": "Fresh Shimla apple imported directly from farms"
+        },
+        {
+          "id": "blinkit_prod_6",
+          "name": "Orange (Nagpur)",
+          "quantity": 2,
+          "price": 73.38,
+          "total": 146.76,
+          "unit": "kg",
+          "description": "Fresh Nagpur orange imported directly from farms"
+        }
+      ],
+      "totalAmount": 288.25,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 14,
+      "reserveLimitBefore": 1000,
+      "reserveLimitAfter": 711.75,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "3:37:47 pm",
+      "createdAt": "2026-03-30T09:22:47.335Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "2:52:47 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "3:37:47 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-30T09:22:47.532Z"
+    },
+    "ORD1774895213073": {
+      "id": "ORD1774895213073",
+      "userId": "4",
+      "merchant": "zepto",
+      "merchantName": "Zepto",
+      "items": [
+        {
+          "id": "zepto_prod_20",
+          "name": "Onion (Red)",
+          "quantity": 3,
+          "price": 26.92,
+          "total": 80.76,
+          "unit": "kg",
+          "description": "Fresh Red onion from local farms"
+        },
+        {
+          "id": "zepto_prod_18",
+          "name": "Tomato (Local)",
+          "quantity": 4,
+          "price": 34.89,
+          "total": 139.56,
+          "unit": "kg",
+          "description": "Fresh Local tomato from local farms"
+        },
+        {
+          "id": "zepto_prod_56",
+          "name": "Parle Biscuits",
+          "quantity": 2,
+          "price": 16.07,
+          "total": 32.14,
+          "unit": "pack",
+          "description": "Delicious biscuits"
+        },
+        {
+          "id": "zepto_prod_38",
+          "name": "Mother Dairy Milk",
+          "quantity": 1,
+          "price": 72.27,
+          "total": 72.27,
+          "unit": "liter",
+          "description": "Fresh milk from Mother Dairy"
+        }
+      ],
+      "totalAmount": 340.73,
+      "status": "confirmed",
+      "paymentMethod": "UPI",
+      "paymentId": "pay_SXXGUk4H0mkBh2",
+      "sabaiGems": 17,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "12:41:53 am",
+      "createdAt": "2026-03-30T18:26:53.073Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "11:56:53 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "12:41:53 am"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-30T18:26:53.246Z"
+    },
+    "ORD1774897313220": {
+      "id": "ORD1774897313220",
+      "userId": "4",
+      "merchant": "zepto",
+      "merchantName": "Zepto",
+      "items": [
+        {
+          "id": "zepto_prod_20",
+          "name": "Onion (Red)",
+          "quantity": 3,
+          "price": 26.92,
+          "total": 80.76,
+          "unit": "kg",
+          "description": "Fresh Red onion from local farms"
+        },
+        {
+          "id": "zepto_prod_18",
+          "name": "Tomato (Local)",
+          "quantity": 1,
+          "price": 34.89,
+          "total": 34.89,
+          "unit": "kg",
+          "description": "Fresh Local tomato from local farms"
+        },
+        {
+          "id": "zepto_prod_56",
+          "name": "Parle Biscuits",
+          "quantity": 2,
+          "price": 16.07,
+          "total": 32.14,
+          "unit": "pack",
+          "description": "Delicious biscuits"
+        }
+      ],
+      "totalAmount": 154.79,
+      "status": "confirmed",
+      "paymentMethod": "UPI",
+      "paymentId": "pay_SXXrLoRItX7dmX",
+      "sabaiGems": 7,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "1:16:53 am",
+      "createdAt": "2026-03-30T19:01:53.220Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "12:31:53 am"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "1:16:53 am"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-03-30T19:01:53.237Z"
+    },
+    "ORD1775369897141": {
+      "id": "ORD1775369897141",
+      "userId": "4",
+      "merchant": "swiggy",
+      "merchantName": "Swiggy",
+      "items": [
+        {
+          "id": "item_1775369296781",
+          "name": "Chicken Biryani",
+          "quantity": 2,
+          "price": 286,
+          "total": 572,
+          "unit": "plate",
+          "image": "/images/items/chicken-biryani.png"
+        },
+        {
+          "id": "item_1775369296781",
+          "name": "Paneer Tikka",
+          "quantity": 1,
+          "price": 299,
+          "total": 299,
+          "unit": "plate",
+          "image": "/images/items/paneer-tikka.png"
+        }
+      ],
+      "totalAmount": 915,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 45,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "12:33:17 pm",
+      "createdAt": "2026-04-05T06:18:17.141Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "11:48:17 am"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "12:33:17 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-04-05T06:18:17.391Z"
+    },
+    "ORD1775370522083": {
+      "id": "ORD1775370522083",
+      "userId": "4",
+      "merchant": "swiggy",
+      "merchantName": "Swiggy",
+      "items": [
+        {
+          "id": "item_1775370502514",
+          "name": "Chicken Biryani",
+          "quantity": 2,
+          "price": 286,
+          "total": 572,
+          "unit": "plate",
+          "image": "/images/items/chicken-biryani.png"
+        },
+        {
+          "id": "item_1775370502514",
+          "name": "Paneer Butter Masala",
+          "quantity": 1,
+          "price": 223,
+          "total": 223,
+          "unit": "bowl",
+          "image": "/images/items/paneer-butter-masala.png"
+        }
+      ],
+      "totalAmount": 835,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 41,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "12:43:42 pm",
+      "createdAt": "2026-04-05T06:28:42.083Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "11:58:42 am"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "12:43:42 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-04-05T06:28:42.083Z"
+    },
+    "ORD1775546044388": {
+      "id": "ORD1775546044388",
+      "userId": "5",
+      "merchant": "swiggy",
+      "merchantName": "Swiggy",
+      "items": [
+        {
+          "id": "item_1775546040418",
+          "name": "Chicken Biryani",
+          "unit": "plate",
+          "image": "/images/items/chicken-biryani.png",
+          "price": 286,
+          "total": 572,
+          "quantity": 2
+        },
+        {
+          "id": "item_1775546040418",
+          "name": "Paneer Tikka",
+          "unit": "plate",
+          "image": "/images/items/paneer-tikka.png",
+          "price": 299,
+          "total": 299,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 915,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 45,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "1:29:04 pm",
+      "createdAt": "2026-04-07T07:14:04.388Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "12:44:04 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "1:29:04 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-04-07T07:14:04.553Z"
+    },
+    "ORD1775547578216": {
+      "id": "ORD1775547578216",
+      "userId": "5",
+      "merchant": "swiggy",
+      "merchantName": "Swiggy",
+      "items": [
+        {
+          "id": "item_1775547527785",
+          "name": "Chicken Biryani",
+          "unit": "plate",
+          "image": "/images/items/chicken-biryani.png",
+          "price": 286,
+          "total": 572,
+          "quantity": 2
+        },
+        {
+          "id": "item_1775547527785",
+          "name": "Paneer Tikka",
+          "unit": "plate",
+          "image": "/images/items/paneer-tikka.png",
+          "price": 299,
+          "total": 299,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 915,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 45,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "1:54:38 pm",
+      "createdAt": "2026-04-07T07:39:38.216Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "1:09:38 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "1:54:38 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-04-07T07:39:38.216Z"
+    },
+    "ORD1775549912072": {
+      "id": "ORD1775549912072",
+      "userId": "5",
+      "merchant": "swiggy",
+      "merchantName": "Swiggy",
+      "items": [
+        {
+          "id": "item_1775549859257",
+          "name": "Chicken Biryani",
+          "unit": "plate",
+          "image": "/images/items/chicken-biryani.png",
+          "price": 286,
+          "total": 572,
+          "quantity": 2
+        },
+        {
+          "id": "item_1775549859257",
+          "name": "Paneer Tikka",
+          "unit": "plate",
+          "image": "/images/items/paneer-tikka.png",
+          "price": 299,
+          "total": 299,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 915,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 45,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "2:33:32 pm",
+      "createdAt": "2026-04-07T08:18:32.072Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "1:48:32 pm"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "2:33:32 pm"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-04-07T08:18:32.075Z"
+    },
+    "ORD1775588836777": {
+      "id": "ORD1775588836777",
+      "userId": "5",
+      "merchant": "swiggy",
+      "merchantName": "swiggy",
+      "items": [
+        {
+          "id": "swiggy_rest_bangalore_9_item_1",
+          "name": "Paneer Butter Masala",
+          "price": 429,
+          "total": 429,
+          "category": "Main Course",
+          "imageUrl": "/images/items/paneer-butter-masala.png",
+          "quantity": 1
+        },
+        {
+          "id": "swiggy_rest_bangalore_9_item_2",
+          "name": "Roti",
+          "price": 73,
+          "total": 73,
+          "category": "Breads",
+          "imageUrl": "/images/items/roti.png",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 527,
+      "status": "confirmed",
+      "paymentMethod": "Reserve Pay",
+      "sabaiGems": 26,
+      "estimatedDelivery": "45 minutes",
+      "estimatedDeliveryTime": "1:22:16 am",
+      "createdAt": "2026-04-07T19:07:16.777Z",
+      "tracking": [
+        {
+          "status": "confirmed",
+          "label": "Order Confirmed",
+          "completed": true,
+          "time": "12:37:16 am"
+        },
+        {
+          "status": "preparing",
+          "label": "Preparing",
+          "completed": false,
+          "estimatedTime": "1:22:16 am"
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for Delivery",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "completed": false
+        }
+      ],
+      "updatedAt": "2026-04-07T19:07:16.952Z"
+    }
+  }
+}

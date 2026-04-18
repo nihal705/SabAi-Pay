@@ -1,0 +1,212 @@
+[
+  {
+    "id": "dominos_item_kolkata_1",
+    "name": "Pepperoni Pizza 7",
+    "price": 380,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_2",
+    "name": "Farmhouse Pizza 9",
+    "price": 172,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_3",
+    "name": "Garlic Bread 5",
+    "price": 374,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_4",
+    "name": "Margherita Pizza",
+    "price": 142,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_5",
+    "name": "Pepperoni Pizza 4",
+    "price": 301,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_6",
+    "name": "Farmhouse Pizza",
+    "price": 347,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_7",
+    "name": "Garlic Bread 1",
+    "price": 101,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_8",
+    "name": "Margherita Pizza 4",
+    "price": 151,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_9",
+    "name": "Pepperoni Pizza",
+    "price": 206,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_10",
+    "name": "Farmhouse Pizza 4",
+    "price": 317,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_11",
+    "name": "Garlic Bread",
+    "price": 335,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_12",
+    "name": "Margherita Pizza 5",
+    "price": 357,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_13",
+    "name": "Pepperoni Pizza 8",
+    "price": 424,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_14",
+    "name": "Farmhouse Pizza",
+    "price": 102,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_15",
+    "name": "Garlic Bread",
+    "price": 196,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_16",
+    "name": "Margherita Pizza",
+    "price": 101,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_17",
+    "name": "Pepperoni Pizza",
+    "price": 454,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_18",
+    "name": "Farmhouse Pizza",
+    "price": 173,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_19",
+    "name": "Garlic Bread",
+    "price": 372,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_20",
+    "name": "Margherita Pizza",
+    "price": 130,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_21",
+    "name": "Pepperoni Pizza",
+    "price": 127,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_22",
+    "name": "Farmhouse Pizza",
+    "price": 218,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_23",
+    "name": "Garlic Bread",
+    "price": 251,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_24",
+    "name": "Margherita Pizza 1",
+    "price": 142,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_25",
+    "name": "Pepperoni Pizza",
+    "price": 136,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_26",
+    "name": "Farmhouse Pizza",
+    "price": 308,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_27",
+    "name": "Garlic Bread",
+    "price": 467,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_28",
+    "name": "Margherita Pizza",
+    "price": 135,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "dominos_item_kolkata_29",
+    "name": "Pepperoni Pizza 4",
+    "price": 472,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "dominos_item_kolkata_30",
+    "name": "Farmhouse Pizza 1",
+    "price": 302,
+    "category": "Main",
+    "isVeg": true
+  }
+]

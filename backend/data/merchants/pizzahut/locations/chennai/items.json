@@ -1,0 +1,212 @@
+[
+  {
+    "id": "pizzahut_item_chennai_1",
+    "name": "Chicken Pizza 5",
+    "price": 298,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_2",
+    "name": "Veg Supreme",
+    "price": 489,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_3",
+    "name": "Breadsticks",
+    "price": 264,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_4",
+    "name": "Cheese Pizza 1",
+    "price": 149,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_5",
+    "name": "Chicken Pizza",
+    "price": 387,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_6",
+    "name": "Veg Supreme",
+    "price": 365,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_7",
+    "name": "Breadsticks",
+    "price": 102,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_8",
+    "name": "Cheese Pizza 4",
+    "price": 321,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_9",
+    "name": "Chicken Pizza 9",
+    "price": 274,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_10",
+    "name": "Veg Supreme",
+    "price": 240,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_11",
+    "name": "Breadsticks",
+    "price": 151,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_12",
+    "name": "Cheese Pizza",
+    "price": 469,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_13",
+    "name": "Chicken Pizza 4",
+    "price": 120,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_14",
+    "name": "Veg Supreme",
+    "price": 407,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_15",
+    "name": "Breadsticks",
+    "price": 183,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_16",
+    "name": "Cheese Pizza",
+    "price": 454,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_17",
+    "name": "Chicken Pizza",
+    "price": 190,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_18",
+    "name": "Veg Supreme",
+    "price": 317,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_19",
+    "name": "Breadsticks",
+    "price": 319,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_20",
+    "name": "Cheese Pizza",
+    "price": 192,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_21",
+    "name": "Chicken Pizza 4",
+    "price": 261,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_22",
+    "name": "Veg Supreme 2",
+    "price": 423,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_23",
+    "name": "Breadsticks 3",
+    "price": 467,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_24",
+    "name": "Cheese Pizza 4",
+    "price": 407,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_25",
+    "name": "Chicken Pizza",
+    "price": 390,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_26",
+    "name": "Veg Supreme",
+    "price": 256,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_27",
+    "name": "Breadsticks",
+    "price": 424,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_28",
+    "name": "Cheese Pizza",
+    "price": 172,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_chennai_29",
+    "name": "Chicken Pizza",
+    "price": 433,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_chennai_30",
+    "name": "Veg Supreme",
+    "price": 322,
+    "category": "Main",
+    "isVeg": true
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "id": "pharmeasy_prod_all_1",
+    "name": "Paracetamol",
+    "price": 61,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_2",
+    "name": "Paracetamol (22 tablets)",
+    "price": 150,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_3",
+    "name": "Dolo 650",
+    "price": 125,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_4",
+    "name": "Dolo 650 (21 tablets)",
+    "price": 200,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_5",
+    "name": "Crocin",
+    "price": 137,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_6",
+    "name": "Crocin (10 tablets)",
+    "price": 52,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_7",
+    "name": "Aspirin",
+    "price": 119,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_8",
+    "name": "Aspirin (25 tablets)",
+    "price": 104,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_9",
+    "name": "Ibuprofen",
+    "price": 208,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_10",
+    "name": "Ibuprofen (27 tablets)",
+    "price": 42,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_11",
+    "name": "Cetrizine",
+    "price": 147,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_12",
+    "name": "Cetrizine (21 tablets)",
+    "price": 167,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_13",
+    "name": "Vitamin C",
+    "price": 373,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_14",
+    "name": "Vitamin C (26 tablets)",
+    "price": 145,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_15",
+    "name": "Vitamin D3",
+    "price": 571,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_16",
+    "name": "Vitamin D3 (16 tablets)",
+    "price": 279,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_17",
+    "name": "Vitamin B12",
+    "price": 176,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_18",
+    "name": "Vitamin B12 (20 tablets)",
+    "price": 446,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_19",
+    "name": "Calcium Tablets",
+    "price": 561,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_20",
+    "name": "Calcium Tablets (15 tablets)",
+    "price": 395,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_21",
+    "name": "Iron Supplement",
+    "price": 199,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_22",
+    "name": "Iron Supplement (27 tablets)",
+    "price": 287,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_23",
+    "name": "Multivitamin",
+    "price": 101,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_24",
+    "name": "Multivitamin (26 tablets)",
+    "price": 164,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_25",
+    "name": "Hand Sanitizer",
+    "price": 312,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_26",
+    "name": "Hand Sanitizer (39 tablets)",
+    "price": 123,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_27",
+    "name": "Face Mask",
+    "price": 285,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_28",
+    "name": "Face Mask (13 tablets)",
+    "price": 104,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_29",
+    "name": "Thermometer",
+    "price": 391,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_30",
+    "name": "Thermometer (13 tablets)",
+    "price": 323,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_31",
+    "name": "Bandages",
+    "price": 449,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_32",
+    "name": "Bandages (16 tablets)",
+    "price": 416,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_33",
+    "name": "Cotton",
+    "price": 131,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_34",
+    "name": "Cotton (25 tablets)",
+    "price": 169,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_35",
+    "name": "First Aid Kit",
+    "price": 439,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_36",
+    "name": "First Aid Kit (36 tablets)",
+    "price": 248,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_37",
+    "name": "Diapers",
+    "price": 380,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_38",
+    "name": "Diapers (33 tablets)",
+    "price": 111,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_39",
+    "name": "Baby Cream",
+    "price": 251,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_40",
+    "name": "Baby Cream (26 tablets)",
+    "price": 288,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_41",
+    "name": "Baby Oil",
+    "price": 97,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_42",
+    "name": "Baby Oil (10 tablets)",
+    "price": 190,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_43",
+    "name": "Baby Shampoo",
+    "price": 417,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_44",
+    "name": "Baby Shampoo (20 tablets)",
+    "price": 76,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_45",
+    "name": "Baby Powder",
+    "price": 182,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_46",
+    "name": "Baby Powder (32 tablets)",
+    "price": 401,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_47",
+    "name": "Ensure",
+    "price": 228,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_48",
+    "name": "Ensure (24 tablets)",
+    "price": 209,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_49",
+    "name": "Horlicks",
+    "price": 129,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_50",
+    "name": "Horlicks (35 tablets)",
+    "price": 146,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_51",
+    "name": "Boost",
+    "price": 135,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_52",
+    "name": "Boost (30 tablets)",
+    "price": 118,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_53",
+    "name": "Complan",
+    "price": 90,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_54",
+    "name": "Complan (37 tablets)",
+    "price": 192,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_55",
+    "name": "Protinex",
+    "price": 308,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_all_56",
+    "name": "Protinex (30 tablets)",
+    "price": 361,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  }
+]

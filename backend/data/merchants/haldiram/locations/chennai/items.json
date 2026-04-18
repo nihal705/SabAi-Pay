@@ -1,0 +1,702 @@
+[
+  {
+    "id": "haldiram_item_chennai_1",
+    "name": "Kachori",
+    "price": 116,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_2",
+    "name": "Pakora (48g)",
+    "price": 144,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_3",
+    "name": "Jalebi",
+    "price": 57,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_4",
+    "name": "Gulab Jamun",
+    "price": 70,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_5",
+    "name": "Rasgulla",
+    "price": 69,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_6",
+    "name": "Samosa",
+    "price": 99,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_7",
+    "name": "Kachori (81g)",
+    "price": 149,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_8",
+    "name": "Pakora (78g)",
+    "price": 153,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_9",
+    "name": "Jalebi",
+    "price": 63,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_10",
+    "name": "Gulab Jamun",
+    "price": 30,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_11",
+    "name": "Rasgulla (241g)",
+    "price": 72,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_12",
+    "name": "Samosa",
+    "price": 26,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_13",
+    "name": "Kachori",
+    "price": 105,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_14",
+    "name": "Pakora",
+    "price": 97,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_15",
+    "name": "Jalebi",
+    "price": 38,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_16",
+    "name": "Gulab Jamun",
+    "price": 166,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_17",
+    "name": "Rasgulla",
+    "price": 150,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_18",
+    "name": "Samosa",
+    "price": 68,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_19",
+    "name": "Kachori (51g)",
+    "price": 65,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_20",
+    "name": "Pakora",
+    "price": 129,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_21",
+    "name": "Jalebi",
+    "price": 150,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_22",
+    "name": "Gulab Jamun",
+    "price": 50,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_23",
+    "name": "Rasgulla",
+    "price": 161,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_24",
+    "name": "Samosa",
+    "price": 57,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_25",
+    "name": "Kachori",
+    "price": 167,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_26",
+    "name": "Pakora",
+    "price": 115,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_27",
+    "name": "Jalebi (118g)",
+    "price": 94,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_28",
+    "name": "Gulab Jamun (190g)",
+    "price": 80,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_29",
+    "name": "Rasgulla",
+    "price": 167,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_30",
+    "name": "Samosa",
+    "price": 132,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_31",
+    "name": "Kachori (36g)",
+    "price": 41,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_32",
+    "name": "Pakora",
+    "price": 86,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_33",
+    "name": "Jalebi",
+    "price": 129,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_34",
+    "name": "Gulab Jamun",
+    "price": 25,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_35",
+    "name": "Rasgulla",
+    "price": 103,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_36",
+    "name": "Samosa (185g)",
+    "price": 46,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_37",
+    "name": "Kachori",
+    "price": 32,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_38",
+    "name": "Pakora",
+    "price": 144,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_39",
+    "name": "Jalebi",
+    "price": 25,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_40",
+    "name": "Gulab Jamun (32g)",
+    "price": 103,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_41",
+    "name": "Rasgulla",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_42",
+    "name": "Samosa",
+    "price": 132,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_43",
+    "name": "Kachori",
+    "price": 90,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_44",
+    "name": "Pakora (3g)",
+    "price": 147,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_45",
+    "name": "Jalebi",
+    "price": 27,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_46",
+    "name": "Gulab Jamun",
+    "price": 88,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_47",
+    "name": "Rasgulla",
+    "price": 97,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_48",
+    "name": "Samosa (5g)",
+    "price": 34,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_49",
+    "name": "Kachori",
+    "price": 96,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_50",
+    "name": "Pakora",
+    "price": 121,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_51",
+    "name": "Jalebi",
+    "price": 67,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_52",
+    "name": "Gulab Jamun",
+    "price": 165,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_53",
+    "name": "Rasgulla",
+    "price": 112,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_54",
+    "name": "Samosa (178g)",
+    "price": 124,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_55",
+    "name": "Kachori",
+    "price": 168,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_56",
+    "name": "Pakora (214g)",
+    "price": 147,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_57",
+    "name": "Jalebi (206g)",
+    "price": 94,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_58",
+    "name": "Gulab Jamun (162g)",
+    "price": 53,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_59",
+    "name": "Rasgulla",
+    "price": 63,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_60",
+    "name": "Samosa (194g)",
+    "price": 33,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_61",
+    "name": "Kachori",
+    "price": 100,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_62",
+    "name": "Pakora",
+    "price": 164,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_63",
+    "name": "Jalebi (18g)",
+    "price": 152,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_64",
+    "name": "Gulab Jamun",
+    "price": 23,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_65",
+    "name": "Rasgulla",
+    "price": 146,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_66",
+    "name": "Samosa (46g)",
+    "price": 81,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_67",
+    "name": "Kachori",
+    "price": 23,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_68",
+    "name": "Pakora",
+    "price": 96,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_69",
+    "name": "Jalebi (107g)",
+    "price": 37,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_70",
+    "name": "Gulab Jamun",
+    "price": 152,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_71",
+    "name": "Rasgulla (93g)",
+    "price": 20,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_72",
+    "name": "Samosa (95g)",
+    "price": 157,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_73",
+    "name": "Kachori",
+    "price": 119,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_74",
+    "name": "Pakora",
+    "price": 68,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_75",
+    "name": "Jalebi",
+    "price": 96,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_76",
+    "name": "Gulab Jamun",
+    "price": 147,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_77",
+    "name": "Rasgulla",
+    "price": 142,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_78",
+    "name": "Samosa",
+    "price": 168,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_79",
+    "name": "Kachori",
+    "price": 107,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_80",
+    "name": "Pakora",
+    "price": 33,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_81",
+    "name": "Jalebi",
+    "price": 25,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_82",
+    "name": "Gulab Jamun (11g)",
+    "price": 165,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_83",
+    "name": "Rasgulla",
+    "price": 25,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_84",
+    "name": "Samosa",
+    "price": 146,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_85",
+    "name": "Kachori",
+    "price": 98,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_86",
+    "name": "Pakora",
+    "price": 154,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_87",
+    "name": "Jalebi (91g)",
+    "price": 27,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_88",
+    "name": "Gulab Jamun",
+    "price": 20,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_89",
+    "name": "Rasgulla",
+    "price": 83,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_90",
+    "name": "Samosa",
+    "price": 99,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_91",
+    "name": "Kachori",
+    "price": 168,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_92",
+    "name": "Pakora",
+    "price": 71,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_93",
+    "name": "Jalebi",
+    "price": 107,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_94",
+    "name": "Gulab Jamun (108g)",
+    "price": 150,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_95",
+    "name": "Rasgulla",
+    "price": 47,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_96",
+    "name": "Samosa",
+    "price": 35,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_97",
+    "name": "Kachori",
+    "price": 121,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_98",
+    "name": "Pakora",
+    "price": 39,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_99",
+    "name": "Jalebi",
+    "price": 116,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "haldiram_item_chennai_100",
+    "name": "Gulab Jamun",
+    "price": 36,
+    "category": "Snacks",
+    "isVeg": true
+  }
+]

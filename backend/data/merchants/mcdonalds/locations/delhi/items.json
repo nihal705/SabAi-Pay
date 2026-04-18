@@ -1,0 +1,272 @@
+[
+  {
+    "id": "mcdonalds_item_delhi_1",
+    "name": "McChicken",
+    "price": 91,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_2",
+    "name": "McVeggie (2\")",
+    "price": 83,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_3",
+    "name": "McSpicy",
+    "price": 82,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_4",
+    "name": "French Fries (3\")",
+    "price": 73,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_5",
+    "name": "McFlurry",
+    "price": 90,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_6",
+    "name": "Chicken McNuggets",
+    "price": 187,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_7",
+    "name": "Happy Meal",
+    "price": 221,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_8",
+    "name": "Big Mac",
+    "price": 71,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_9",
+    "name": "McChicken (8\")",
+    "price": 161,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_10",
+    "name": "McVeggie (8\")",
+    "price": 73,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_11",
+    "name": "McSpicy",
+    "price": 124,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_12",
+    "name": "French Fries (2\")",
+    "price": 193,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_13",
+    "name": "McFlurry (4\")",
+    "price": 57,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_14",
+    "name": "Chicken McNuggets",
+    "price": 76,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_15",
+    "name": "Happy Meal",
+    "price": 157,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_16",
+    "name": "Big Mac",
+    "price": 211,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_17",
+    "name": "McChicken",
+    "price": 175,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_18",
+    "name": "McVeggie (8\")",
+    "price": 62,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_19",
+    "name": "McSpicy",
+    "price": 170,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_20",
+    "name": "French Fries (9\")",
+    "price": 225,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_21",
+    "name": "McFlurry",
+    "price": 132,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_22",
+    "name": "Chicken McNuggets (4\")",
+    "price": 161,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_23",
+    "name": "Happy Meal (3\")",
+    "price": 91,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_24",
+    "name": "Big Mac (9\")",
+    "price": 207,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_25",
+    "name": "McChicken",
+    "price": 206,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_26",
+    "name": "McVeggie",
+    "price": 70,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_27",
+    "name": "McSpicy (4\")",
+    "price": 221,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_28",
+    "name": "French Fries",
+    "price": 211,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_29",
+    "name": "McFlurry (3\")",
+    "price": 56,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_delhi_30",
+    "name": "Chicken McNuggets",
+    "price": 85,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

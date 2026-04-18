@@ -1,0 +1,506 @@
+[
+  {
+    "id": "pharmeasy_prod_delhi_1",
+    "name": "Paracetamol",
+    "price": 188,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_2",
+    "name": "Paracetamol (36 tablets)",
+    "price": 115,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_3",
+    "name": "Dolo 650",
+    "price": 42,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_4",
+    "name": "Dolo 650 (24 tablets)",
+    "price": 27,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_5",
+    "name": "Crocin",
+    "price": 217,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_6",
+    "name": "Crocin (35 tablets)",
+    "price": 194,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_7",
+    "name": "Aspirin",
+    "price": 182,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_8",
+    "name": "Aspirin (30 tablets)",
+    "price": 84,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_9",
+    "name": "Ibuprofen",
+    "price": 29,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_10",
+    "name": "Ibuprofen (28 tablets)",
+    "price": 154,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_11",
+    "name": "Cetrizine",
+    "price": 157,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_12",
+    "name": "Cetrizine (20 tablets)",
+    "price": 198,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_13",
+    "name": "Vitamin C",
+    "price": 234,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_14",
+    "name": "Vitamin C (36 tablets)",
+    "price": 504,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_15",
+    "name": "Vitamin D3",
+    "price": 573,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_16",
+    "name": "Vitamin D3 (38 tablets)",
+    "price": 236,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_17",
+    "name": "Vitamin B12",
+    "price": 312,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_18",
+    "name": "Vitamin B12 (37 tablets)",
+    "price": 287,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_19",
+    "name": "Calcium Tablets",
+    "price": 343,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_20",
+    "name": "Calcium Tablets (23 tablets)",
+    "price": 595,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_21",
+    "name": "Iron Supplement",
+    "price": 439,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_22",
+    "name": "Iron Supplement (36 tablets)",
+    "price": 212,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_23",
+    "name": "Multivitamin",
+    "price": 541,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_24",
+    "name": "Multivitamin (33 tablets)",
+    "price": 360,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_25",
+    "name": "Hand Sanitizer",
+    "price": 82,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_26",
+    "name": "Hand Sanitizer (38 tablets)",
+    "price": 405,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_27",
+    "name": "Face Mask",
+    "price": 210,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_28",
+    "name": "Face Mask (31 tablets)",
+    "price": 301,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_29",
+    "name": "Thermometer",
+    "price": 298,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_30",
+    "name": "Thermometer (10 tablets)",
+    "price": 170,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_31",
+    "name": "Bandages",
+    "price": 317,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_32",
+    "name": "Bandages (22 tablets)",
+    "price": 118,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_33",
+    "name": "Cotton",
+    "price": 295,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_34",
+    "name": "Cotton (28 tablets)",
+    "price": 89,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_35",
+    "name": "First Aid Kit",
+    "price": 229,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_36",
+    "name": "First Aid Kit (26 tablets)",
+    "price": 416,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_37",
+    "name": "Diapers",
+    "price": 416,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_38",
+    "name": "Diapers (35 tablets)",
+    "price": 448,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_39",
+    "name": "Baby Cream",
+    "price": 336,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_40",
+    "name": "Baby Cream (29 tablets)",
+    "price": 185,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_41",
+    "name": "Baby Oil",
+    "price": 292,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_42",
+    "name": "Baby Oil (21 tablets)",
+    "price": 157,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_43",
+    "name": "Baby Shampoo",
+    "price": 166,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_44",
+    "name": "Baby Shampoo (33 tablets)",
+    "price": 244,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_45",
+    "name": "Baby Powder",
+    "price": 295,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_46",
+    "name": "Baby Powder (36 tablets)",
+    "price": 227,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_47",
+    "name": "Ensure",
+    "price": 116,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_48",
+    "name": "Ensure (28 tablets)",
+    "price": 203,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_49",
+    "name": "Horlicks",
+    "price": 142,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_50",
+    "name": "Horlicks (32 tablets)",
+    "price": 290,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_51",
+    "name": "Boost",
+    "price": 334,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_52",
+    "name": "Boost (26 tablets)",
+    "price": 143,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_53",
+    "name": "Complan",
+    "price": 403,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_54",
+    "name": "Complan (36 tablets)",
+    "price": 185,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_55",
+    "name": "Protinex",
+    "price": 272,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  },
+  {
+    "id": "pharmeasy_prod_delhi_56",
+    "name": "Protinex (21 tablets)",
+    "price": 410,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  }
+]

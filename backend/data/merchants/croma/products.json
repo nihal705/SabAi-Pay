@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "croma_item_all_1",
+    "name": "HP Laptops 685",
+    "price": 46036,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_2",
+    "name": "JBL Headphones 781",
+    "price": 10821,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_3",
+    "name": "Marshall Speakers 328",
+    "price": 1116,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_4",
+    "name": "Anker Accessories 172",
+    "price": 2735,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_5",
+    "name": "TCL Smart TVs 958",
+    "price": 70474,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_6",
+    "name": "Samsung Smartphones 518",
+    "price": 13186,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_7",
+    "name": "HP Laptops 731",
+    "price": 99599,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "3.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_8",
+    "name": "JBL Headphones 72",
+    "price": 3903,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "4.6",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_9",
+    "name": "Marshall Speakers 973",
+    "price": 7520,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_10",
+    "name": "Anker Accessories 678",
+    "price": 2589,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_11",
+    "name": "TCL Smart TVs 554",
+    "price": 74422,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_12",
+    "name": "Samsung Smartphones 593",
+    "price": 13750,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_13",
+    "name": "HP Laptops 93",
+    "price": 42606,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_14",
+    "name": "JBL Headphones 692",
+    "price": 4159,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_15",
+    "name": "Marshall Speakers 783",
+    "price": 7484,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_16",
+    "name": "Anker Accessories 130",
+    "price": 10560,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_17",
+    "name": "TCL Smart TVs 259",
+    "price": 42501,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "4.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_18",
+    "name": "Samsung Smartphones 559",
+    "price": 14275,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_19",
+    "name": "HP Laptops 693",
+    "price": 60578,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_20",
+    "name": "JBL Headphones 529",
+    "price": 1867,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_21",
+    "name": "Marshall Speakers 5",
+    "price": 6201,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_22",
+    "name": "Anker Accessories 232",
+    "price": 10886,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_23",
+    "name": "TCL Smart TVs 475",
+    "price": 64770,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_24",
+    "name": "Samsung Smartphones 177",
+    "price": 33492,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_25",
+    "name": "HP Laptops 443",
+    "price": 70455,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_26",
+    "name": "JBL Headphones 397",
+    "price": 3808,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_27",
+    "name": "Marshall Speakers 425",
+    "price": 5080,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "4.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_28",
+    "name": "Anker Accessories 115",
+    "price": 3085,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_29",
+    "name": "TCL Smart TVs 580",
+    "price": 70453,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_30",
+    "name": "Samsung Smartphones 68",
+    "price": 56402,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_31",
+    "name": "HP Laptops 840",
+    "price": 58856,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_32",
+    "name": "JBL Headphones 636",
+    "price": 8989,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_33",
+    "name": "Marshall Speakers 577",
+    "price": 10690,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_34",
+    "name": "Anker Accessories 295",
+    "price": 2668,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_35",
+    "name": "TCL Smart TVs 363",
+    "price": 45188,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_36",
+    "name": "Samsung Smartphones 997",
+    "price": 23897,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_37",
+    "name": "HP Laptops 907",
+    "price": 83287,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_38",
+    "name": "JBL Headphones 18",
+    "price": 7547,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_39",
+    "name": "Marshall Speakers 35",
+    "price": 2718,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_40",
+    "name": "Anker Accessories 620",
+    "price": 7270,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_41",
+    "name": "TCL Smart TVs 367",
+    "price": 57175,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_42",
+    "name": "Samsung Smartphones 254",
+    "price": 12590,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_43",
+    "name": "HP Laptops 610",
+    "price": 43712,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_44",
+    "name": "JBL Headphones 267",
+    "price": 7833,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_45",
+    "name": "Marshall Speakers 405",
+    "price": 3011,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_46",
+    "name": "Anker Accessories 710",
+    "price": 9196,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "3.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_47",
+    "name": "TCL Smart TVs 21",
+    "price": 35082,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "3.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_48",
+    "name": "Samsung Smartphones 18",
+    "price": 47680,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "3.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_49",
+    "name": "HP Laptops 616",
+    "price": 105956,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_50",
+    "name": "JBL Headphones 829",
+    "price": 3355,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "4.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_51",
+    "name": "Marshall Speakers 577",
+    "price": 7774,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_52",
+    "name": "Anker Accessories 740",
+    "price": 5847,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_53",
+    "name": "TCL Smart TVs 675",
+    "price": 62897,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_54",
+    "name": "Samsung Smartphones 443",
+    "price": 59868,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_55",
+    "name": "HP Laptops 111",
+    "price": 30923,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_56",
+    "name": "JBL Headphones 137",
+    "price": 6959,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_57",
+    "name": "Marshall Speakers 877",
+    "price": 8795,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_58",
+    "name": "Anker Accessories 878",
+    "price": 10045,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_59",
+    "name": "TCL Smart TVs 224",
+    "price": 33725,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_60",
+    "name": "Samsung Smartphones 446",
+    "price": 19552,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_61",
+    "name": "HP Laptops 873",
+    "price": 44165,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "3.3",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_62",
+    "name": "JBL Headphones 478",
+    "price": 2230,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_63",
+    "name": "Marshall Speakers 364",
+    "price": 8431,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_64",
+    "name": "Anker Accessories 89",
+    "price": 2476,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_65",
+    "name": "TCL Smart TVs 945",
+    "price": 52618,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_66",
+    "name": "Samsung Smartphones 352",
+    "price": 41161,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "4.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_67",
+    "name": "HP Laptops 434",
+    "price": 36275,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_68",
+    "name": "JBL Headphones 539",
+    "price": 1382,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_69",
+    "name": "Marshall Speakers 752",
+    "price": 4552,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_70",
+    "name": "Anker Accessories 979",
+    "price": 4387,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_71",
+    "name": "TCL Smart TVs 314",
+    "price": 34612,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_72",
+    "name": "Samsung Smartphones 332",
+    "price": 30916,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_73",
+    "name": "HP Laptops 426",
+    "price": 33263,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_74",
+    "name": "JBL Headphones 395",
+    "price": 8405,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_75",
+    "name": "Marshall Speakers 651",
+    "price": 5588,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_76",
+    "name": "Anker Accessories 831",
+    "price": 3022,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_77",
+    "name": "TCL Smart TVs 507",
+    "price": 36541,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_78",
+    "name": "Samsung Smartphones 416",
+    "price": 41524,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_79",
+    "name": "HP Laptops 766",
+    "price": 75815,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_80",
+    "name": "JBL Headphones 503",
+    "price": 2633,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_81",
+    "name": "Marshall Speakers 292",
+    "price": 1933,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_82",
+    "name": "Anker Accessories 369",
+    "price": 10321,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_83",
+    "name": "TCL Smart TVs 547",
+    "price": 28357,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_84",
+    "name": "Samsung Smartphones 787",
+    "price": 33737,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_85",
+    "name": "HP Laptops 887",
+    "price": 48530,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_86",
+    "name": "JBL Headphones 197",
+    "price": 9572,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_87",
+    "name": "Marshall Speakers 698",
+    "price": 3019,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_88",
+    "name": "Anker Accessories 799",
+    "price": 2088,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_89",
+    "name": "TCL Smart TVs 517",
+    "price": 62962,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_90",
+    "name": "Samsung Smartphones 262",
+    "price": 26043,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_91",
+    "name": "HP Laptops 250",
+    "price": 50143,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_92",
+    "name": "JBL Headphones 837",
+    "price": 6855,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_93",
+    "name": "Marshall Speakers 605",
+    "price": 8695,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_94",
+    "name": "Anker Accessories 79",
+    "price": 8381,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_95",
+    "name": "TCL Smart TVs 507",
+    "price": 60220,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_96",
+    "name": "Samsung Smartphones 370",
+    "price": 27653,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_97",
+    "name": "HP Laptops 472",
+    "price": 91497,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "3.4",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_98",
+    "name": "JBL Headphones 169",
+    "price": 7519,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_99",
+    "name": "Marshall Speakers 309",
+    "price": 10093,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "3.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_100",
+    "name": "Anker Accessories 470",
+    "price": 5455,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_101",
+    "name": "TCL Smart TVs 640",
+    "price": 29506,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_102",
+    "name": "Samsung Smartphones 851",
+    "price": 26453,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_103",
+    "name": "HP Laptops 395",
+    "price": 97821,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_104",
+    "name": "JBL Headphones 201",
+    "price": 2242,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_105",
+    "name": "Marshall Speakers 721",
+    "price": 5877,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_106",
+    "name": "Anker Accessories 917",
+    "price": 4312,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "5.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_107",
+    "name": "TCL Smart TVs 992",
+    "price": 58577,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_108",
+    "name": "Samsung Smartphones 600",
+    "price": 10688,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_109",
+    "name": "HP Laptops 886",
+    "price": 70478,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_110",
+    "name": "JBL Headphones 965",
+    "price": 5022,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_111",
+    "name": "Marshall Speakers 542",
+    "price": 5469,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_112",
+    "name": "Anker Accessories 820",
+    "price": 6146,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_113",
+    "name": "TCL Smart TVs 622",
+    "price": 55314,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_114",
+    "name": "Samsung Smartphones 524",
+    "price": 42523,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_115",
+    "name": "HP Laptops 935",
+    "price": 93859,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "3.1",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_116",
+    "name": "JBL Headphones 604",
+    "price": 4817,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_117",
+    "name": "Marshall Speakers 306",
+    "price": 10743,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_118",
+    "name": "Anker Accessories 188",
+    "price": 2162,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_119",
+    "name": "TCL Smart TVs 469",
+    "price": 68415,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_120",
+    "name": "Samsung Smartphones 489",
+    "price": 41097,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_121",
+    "name": "HP Laptops 12",
+    "price": 68174,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_122",
+    "name": "JBL Headphones 807",
+    "price": 8579,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_123",
+    "name": "Marshall Speakers 786",
+    "price": 6554,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_124",
+    "name": "Anker Accessories 48",
+    "price": 9200,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "4.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_125",
+    "name": "TCL Smart TVs 814",
+    "price": 27828,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_126",
+    "name": "Samsung Smartphones 578",
+    "price": 53124,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_127",
+    "name": "HP Laptops 72",
+    "price": 77077,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_128",
+    "name": "JBL Headphones 727",
+    "price": 10822,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_129",
+    "name": "Marshall Speakers 680",
+    "price": 5288,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "5.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_130",
+    "name": "Anker Accessories 972",
+    "price": 8299,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_131",
+    "name": "TCL Smart TVs 818",
+    "price": 21261,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_132",
+    "name": "Samsung Smartphones 514",
+    "price": 36166,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "3.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_133",
+    "name": "HP Laptops 268",
+    "price": 104495,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_134",
+    "name": "JBL Headphones 585",
+    "price": 10019,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_135",
+    "name": "Marshall Speakers 96",
+    "price": 5500,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "4.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_136",
+    "name": "Anker Accessories 696",
+    "price": 4299,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_137",
+    "name": "TCL Smart TVs 182",
+    "price": 49275,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_138",
+    "name": "Samsung Smartphones 495",
+    "price": 51158,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_139",
+    "name": "HP Laptops 935",
+    "price": 52499,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_140",
+    "name": "JBL Headphones 671",
+    "price": 9571,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "4.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_141",
+    "name": "Marshall Speakers 999",
+    "price": 9536,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_142",
+    "name": "Anker Accessories 564",
+    "price": 1533,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_143",
+    "name": "TCL Smart TVs 284",
+    "price": 75227,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_144",
+    "name": "Samsung Smartphones 993",
+    "price": 57227,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_145",
+    "name": "HP Laptops 568",
+    "price": 32156,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "3.8",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_146",
+    "name": "JBL Headphones 581",
+    "price": 10992,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "4.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_147",
+    "name": "Marshall Speakers 962",
+    "price": 1326,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_148",
+    "name": "Anker Accessories 471",
+    "price": 5566,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "4.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_149",
+    "name": "TCL Smart TVs 914",
+    "price": 47360,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_150",
+    "name": "Samsung Smartphones 399",
+    "price": 24739,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_151",
+    "name": "HP Laptops 320",
+    "price": 92000,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_152",
+    "name": "JBL Headphones 868",
+    "price": 7295,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_153",
+    "name": "Marshall Speakers 237",
+    "price": 10462,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_154",
+    "name": "Anker Accessories 657",
+    "price": 8938,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_155",
+    "name": "TCL Smart TVs 225",
+    "price": 52462,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_156",
+    "name": "Samsung Smartphones 21",
+    "price": 36692,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "3.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_157",
+    "name": "HP Laptops 248",
+    "price": 46942,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_158",
+    "name": "JBL Headphones 589",
+    "price": 1530,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "3.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_159",
+    "name": "Marshall Speakers 640",
+    "price": 6909,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_160",
+    "name": "Anker Accessories 64",
+    "price": 3049,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "3.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_161",
+    "name": "TCL Smart TVs 362",
+    "price": 55677,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_162",
+    "name": "Samsung Smartphones 347",
+    "price": 48088,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_163",
+    "name": "HP Laptops 641",
+    "price": 30022,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_164",
+    "name": "JBL Headphones 512",
+    "price": 1523,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_165",
+    "name": "Marshall Speakers 369",
+    "price": 1890,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "3.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_166",
+    "name": "Anker Accessories 183",
+    "price": 8466,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_167",
+    "name": "TCL Smart TVs 153",
+    "price": 70414,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_168",
+    "name": "Samsung Smartphones 868",
+    "price": 24927,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_169",
+    "name": "HP Laptops 503",
+    "price": 92414,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_170",
+    "name": "JBL Headphones 812",
+    "price": 1919,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_171",
+    "name": "Marshall Speakers 279",
+    "price": 9918,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_172",
+    "name": "Anker Accessories 932",
+    "price": 2806,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_173",
+    "name": "TCL Smart TVs 608",
+    "price": 63725,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_174",
+    "name": "Samsung Smartphones 830",
+    "price": 50862,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_175",
+    "name": "HP Laptops 609",
+    "price": 50346,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_176",
+    "name": "JBL Headphones 633",
+    "price": 8040,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_177",
+    "name": "Marshall Speakers 214",
+    "price": 5918,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_178",
+    "name": "Anker Accessories 861",
+    "price": 8960,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_179",
+    "name": "TCL Smart TVs 588",
+    "price": 38587,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "3.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_180",
+    "name": "Samsung Smartphones 218",
+    "price": 18231,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "4.6",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_181",
+    "name": "HP Laptops 708",
+    "price": 36218,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "5.0",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_182",
+    "name": "JBL Headphones 771",
+    "price": 5568,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "4.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_183",
+    "name": "Marshall Speakers 893",
+    "price": 9490,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_184",
+    "name": "Anker Accessories 911",
+    "price": 6983,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_185",
+    "name": "TCL Smart TVs 932",
+    "price": 33477,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_186",
+    "name": "Samsung Smartphones 339",
+    "price": 53609,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "4.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_187",
+    "name": "HP Laptops 257",
+    "price": 68492,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "3.6",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_188",
+    "name": "JBL Headphones 976",
+    "price": 8303,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_189",
+    "name": "Marshall Speakers 182",
+    "price": 5815,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_190",
+    "name": "Anker Accessories 621",
+    "price": 8368,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_191",
+    "name": "TCL Smart TVs 427",
+    "price": 48153,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "3.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_192",
+    "name": "Samsung Smartphones 189",
+    "price": 17756,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_193",
+    "name": "HP Laptops 64",
+    "price": 81717,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "3.8",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_194",
+    "name": "JBL Headphones 691",
+    "price": 9246,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_195",
+    "name": "Marshall Speakers 615",
+    "price": 2323,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "4.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_196",
+    "name": "Anker Accessories 470",
+    "price": 4436,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_197",
+    "name": "TCL Smart TVs 312",
+    "price": 49700,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_all_198",
+    "name": "Samsung Smartphones 79",
+    "price": 17320,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_all_199",
+    "name": "HP Laptops 38",
+    "price": 53993,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_all_200",
+    "name": "JBL Headphones 916",
+    "price": 2869,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  }
+]

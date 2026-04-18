@@ -1,0 +1,362 @@
+[
+  {
+    "id": "starbucks_item_mumbai_1",
+    "name": "Cappuccino",
+    "price": 107,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_2",
+    "name": "Espresso (Cold)",
+    "price": 228,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_3",
+    "name": "Americano",
+    "price": 171,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_4",
+    "name": "Mocha (Cold)",
+    "price": 132,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_5",
+    "name": "Cold Coffee",
+    "price": 204,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_6",
+    "name": "Frappuccino",
+    "price": 87,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_7",
+    "name": "Hot Chocolate (Hot)",
+    "price": 263,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_8",
+    "name": "Caffè Latte",
+    "price": 133,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_9",
+    "name": "Cappuccino",
+    "price": 160,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_10",
+    "name": "Espresso",
+    "price": 174,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_11",
+    "name": "Americano",
+    "price": 125,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_12",
+    "name": "Mocha",
+    "price": 82,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_13",
+    "name": "Cold Coffee (Cold)",
+    "price": 171,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_14",
+    "name": "Frappuccino (Hot)",
+    "price": 98,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_15",
+    "name": "Hot Chocolate",
+    "price": 212,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_16",
+    "name": "Caffè Latte",
+    "price": 238,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_17",
+    "name": "Cappuccino",
+    "price": 170,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_18",
+    "name": "Espresso",
+    "price": 209,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_19",
+    "name": "Americano",
+    "price": 135,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_20",
+    "name": "Mocha",
+    "price": 245,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_21",
+    "name": "Cold Coffee (Hot)",
+    "price": 150,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_22",
+    "name": "Frappuccino",
+    "price": 233,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_23",
+    "name": "Hot Chocolate",
+    "price": 277,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_24",
+    "name": "Caffè Latte",
+    "price": 122,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_25",
+    "name": "Muffin",
+    "price": 187,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_26",
+    "name": "Brownie",
+    "price": 89,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_27",
+    "name": "Cookie",
+    "price": 99,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_28",
+    "name": "Sandwich",
+    "price": 116,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_29",
+    "name": "Cake Slice",
+    "price": 150,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_30",
+    "name": "Bagel",
+    "price": 179,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_31",
+    "name": "Donut",
+    "price": 136,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_32",
+    "name": "Croissant",
+    "price": 138,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_33",
+    "name": "Muffin",
+    "price": 144,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_34",
+    "name": "Brownie",
+    "price": 186,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_35",
+    "name": "Cookie",
+    "price": 57,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_36",
+    "name": "Sandwich",
+    "price": 105,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_37",
+    "name": "Cake Slice",
+    "price": 86,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_38",
+    "name": "Bagel",
+    "price": 112,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_39",
+    "name": "Donut",
+    "price": 53,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_mumbai_40",
+    "name": "Croissant",
+    "price": 174,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

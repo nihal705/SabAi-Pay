@@ -1,0 +1,272 @@
+[
+  {
+    "id": "mcdonalds_item_hyderabad_1",
+    "name": "McChicken",
+    "price": 78,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_2",
+    "name": "McVeggie (3\")",
+    "price": 89,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_3",
+    "name": "McSpicy",
+    "price": 125,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_4",
+    "name": "French Fries (2\")",
+    "price": 144,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_5",
+    "name": "McFlurry",
+    "price": 86,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_6",
+    "name": "Chicken McNuggets",
+    "price": 84,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_7",
+    "name": "Happy Meal",
+    "price": 168,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_8",
+    "name": "Big Mac",
+    "price": 215,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_9",
+    "name": "McChicken",
+    "price": 76,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_10",
+    "name": "McVeggie",
+    "price": 193,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_11",
+    "name": "McSpicy",
+    "price": 111,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_12",
+    "name": "French Fries",
+    "price": 214,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_13",
+    "name": "McFlurry",
+    "price": 59,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_14",
+    "name": "Chicken McNuggets",
+    "price": 143,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_15",
+    "name": "Happy Meal",
+    "price": 162,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_16",
+    "name": "Big Mac",
+    "price": 95,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_17",
+    "name": "McChicken",
+    "price": 84,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_18",
+    "name": "McVeggie",
+    "price": 77,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_19",
+    "name": "McSpicy (1\")",
+    "price": 242,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_20",
+    "name": "French Fries",
+    "price": 71,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_21",
+    "name": "McFlurry",
+    "price": 59,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_22",
+    "name": "Chicken McNuggets",
+    "price": 211,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_23",
+    "name": "Happy Meal",
+    "price": 218,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_24",
+    "name": "Big Mac (3\")",
+    "price": 240,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_25",
+    "name": "McChicken",
+    "price": 70,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_26",
+    "name": "McVeggie",
+    "price": 129,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_27",
+    "name": "McSpicy",
+    "price": 89,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_28",
+    "name": "French Fries",
+    "price": 215,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_29",
+    "name": "McFlurry",
+    "price": 241,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_hyderabad_30",
+    "name": "Chicken McNuggets (10\")",
+    "price": 82,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

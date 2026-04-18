@@ -1,0 +1,362 @@
+[
+  {
+    "id": "ccd_item_hyderabad_1",
+    "name": "Cappuccino",
+    "price": 81,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_2",
+    "name": "Espresso",
+    "price": 143,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_3",
+    "name": "Americano",
+    "price": 140,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_4",
+    "name": "Mocha (Cold)",
+    "price": 151,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_5",
+    "name": "Cold Coffee",
+    "price": 252,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_6",
+    "name": "Frappuccino",
+    "price": 148,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_7",
+    "name": "Hot Chocolate",
+    "price": 239,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_8",
+    "name": "Caffè Latte",
+    "price": 140,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_9",
+    "name": "Cappuccino (Cold)",
+    "price": 184,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_10",
+    "name": "Espresso",
+    "price": 279,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_11",
+    "name": "Americano (Hot)",
+    "price": 158,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_12",
+    "name": "Mocha (Cold)",
+    "price": 99,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_13",
+    "name": "Cold Coffee",
+    "price": 216,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_14",
+    "name": "Frappuccino",
+    "price": 95,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_15",
+    "name": "Hot Chocolate",
+    "price": 185,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_16",
+    "name": "Caffè Latte",
+    "price": 212,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_17",
+    "name": "Cappuccino",
+    "price": 175,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_18",
+    "name": "Espresso",
+    "price": 88,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_19",
+    "name": "Americano",
+    "price": 266,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_20",
+    "name": "Mocha",
+    "price": 174,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_21",
+    "name": "Cold Coffee",
+    "price": 239,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_22",
+    "name": "Frappuccino",
+    "price": 143,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_23",
+    "name": "Hot Chocolate (Cold)",
+    "price": 157,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_24",
+    "name": "Caffè Latte",
+    "price": 170,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_25",
+    "name": "Muffin",
+    "price": 78,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_26",
+    "name": "Brownie",
+    "price": 160,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_27",
+    "name": "Cookie",
+    "price": 55,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_28",
+    "name": "Sandwich",
+    "price": 95,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_29",
+    "name": "Cake Slice",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_30",
+    "name": "Bagel",
+    "price": 139,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_31",
+    "name": "Donut",
+    "price": 62,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_32",
+    "name": "Croissant",
+    "price": 110,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_33",
+    "name": "Muffin",
+    "price": 191,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_34",
+    "name": "Brownie",
+    "price": 120,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_35",
+    "name": "Cookie",
+    "price": 194,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_36",
+    "name": "Sandwich",
+    "price": 120,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_37",
+    "name": "Cake Slice",
+    "price": 176,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_38",
+    "name": "Bagel",
+    "price": 185,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_39",
+    "name": "Donut",
+    "price": 133,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_hyderabad_40",
+    "name": "Croissant",
+    "price": 137,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

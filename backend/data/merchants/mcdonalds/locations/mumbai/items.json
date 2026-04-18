@@ -1,0 +1,272 @@
+[
+  {
+    "id": "mcdonalds_item_mumbai_1",
+    "name": "McChicken (10\")",
+    "price": 80,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_2",
+    "name": "McVeggie",
+    "price": 223,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_3",
+    "name": "McSpicy (9\")",
+    "price": 210,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_4",
+    "name": "French Fries (7\")",
+    "price": 228,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_5",
+    "name": "McFlurry",
+    "price": 224,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_6",
+    "name": "Chicken McNuggets",
+    "price": 190,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_7",
+    "name": "Happy Meal (8\")",
+    "price": 195,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_8",
+    "name": "Big Mac",
+    "price": 234,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_9",
+    "name": "McChicken",
+    "price": 77,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_10",
+    "name": "McVeggie (8\")",
+    "price": 231,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_11",
+    "name": "McSpicy (8\")",
+    "price": 125,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_12",
+    "name": "French Fries",
+    "price": 218,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_13",
+    "name": "McFlurry (2\")",
+    "price": 195,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_14",
+    "name": "Chicken McNuggets",
+    "price": 51,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_15",
+    "name": "Happy Meal",
+    "price": 167,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_16",
+    "name": "Big Mac",
+    "price": 101,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_17",
+    "name": "McChicken",
+    "price": 85,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_18",
+    "name": "McVeggie (6\")",
+    "price": 178,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_19",
+    "name": "McSpicy",
+    "price": 122,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_20",
+    "name": "French Fries (7\")",
+    "price": 160,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_21",
+    "name": "McFlurry",
+    "price": 85,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_22",
+    "name": "Chicken McNuggets",
+    "price": 172,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_23",
+    "name": "Happy Meal",
+    "price": 155,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_24",
+    "name": "Big Mac",
+    "price": 76,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_25",
+    "name": "McChicken",
+    "price": 235,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_26",
+    "name": "McVeggie (9\")",
+    "price": 106,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_27",
+    "name": "McSpicy",
+    "price": 223,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_28",
+    "name": "French Fries",
+    "price": 223,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_29",
+    "name": "McFlurry (1\")",
+    "price": 53,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "mcdonalds_item_mumbai_30",
+    "name": "Chicken McNuggets (6\")",
+    "price": 156,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "id": "netmeds_prod_kolkata_1",
+    "name": "Paracetamol",
+    "price": 199,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_2",
+    "name": "Paracetamol (39 tablets)",
+    "price": 57,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_3",
+    "name": "Dolo 650",
+    "price": 157,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_4",
+    "name": "Dolo 650 (24 tablets)",
+    "price": 106,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_5",
+    "name": "Crocin",
+    "price": 201,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_6",
+    "name": "Crocin (26 tablets)",
+    "price": 161,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_7",
+    "name": "Aspirin",
+    "price": 143,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_8",
+    "name": "Aspirin (28 tablets)",
+    "price": 55,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_9",
+    "name": "Ibuprofen",
+    "price": 147,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_10",
+    "name": "Ibuprofen (12 tablets)",
+    "price": 80,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_11",
+    "name": "Cetrizine",
+    "price": 193,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_12",
+    "name": "Cetrizine (28 tablets)",
+    "price": 200,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_13",
+    "name": "Vitamin C",
+    "price": 412,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_14",
+    "name": "Vitamin C (12 tablets)",
+    "price": 458,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_15",
+    "name": "Vitamin D3",
+    "price": 284,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_16",
+    "name": "Vitamin D3 (16 tablets)",
+    "price": 122,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_17",
+    "name": "Vitamin B12",
+    "price": 238,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_18",
+    "name": "Vitamin B12 (21 tablets)",
+    "price": 170,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_19",
+    "name": "Calcium Tablets",
+    "price": 565,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_20",
+    "name": "Calcium Tablets (35 tablets)",
+    "price": 425,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_21",
+    "name": "Iron Supplement",
+    "price": 244,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_22",
+    "name": "Iron Supplement (14 tablets)",
+    "price": 289,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_23",
+    "name": "Multivitamin",
+    "price": 278,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_24",
+    "name": "Multivitamin (21 tablets)",
+    "price": 313,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_25",
+    "name": "Hand Sanitizer",
+    "price": 282,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_26",
+    "name": "Hand Sanitizer (26 tablets)",
+    "price": 266,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_27",
+    "name": "Face Mask",
+    "price": 383,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_28",
+    "name": "Face Mask (23 tablets)",
+    "price": 283,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_29",
+    "name": "Thermometer",
+    "price": 387,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_30",
+    "name": "Thermometer (34 tablets)",
+    "price": 83,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_31",
+    "name": "Bandages",
+    "price": 400,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_32",
+    "name": "Bandages (38 tablets)",
+    "price": 106,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_33",
+    "name": "Cotton",
+    "price": 136,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_34",
+    "name": "Cotton (31 tablets)",
+    "price": 65,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_35",
+    "name": "First Aid Kit",
+    "price": 325,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_36",
+    "name": "First Aid Kit (25 tablets)",
+    "price": 447,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_37",
+    "name": "Diapers",
+    "price": 117,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_38",
+    "name": "Diapers (36 tablets)",
+    "price": 322,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_39",
+    "name": "Baby Cream",
+    "price": 297,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_40",
+    "name": "Baby Cream (27 tablets)",
+    "price": 295,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_41",
+    "name": "Baby Oil",
+    "price": 234,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_42",
+    "name": "Baby Oil (37 tablets)",
+    "price": 334,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_43",
+    "name": "Baby Shampoo",
+    "price": 338,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_44",
+    "name": "Baby Shampoo (13 tablets)",
+    "price": 404,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_45",
+    "name": "Baby Powder",
+    "price": 294,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_46",
+    "name": "Baby Powder (10 tablets)",
+    "price": 223,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_47",
+    "name": "Ensure",
+    "price": 274,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_48",
+    "name": "Ensure (32 tablets)",
+    "price": 104,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_49",
+    "name": "Horlicks",
+    "price": 111,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_50",
+    "name": "Horlicks (15 tablets)",
+    "price": 267,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_51",
+    "name": "Boost",
+    "price": 162,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_52",
+    "name": "Boost (10 tablets)",
+    "price": 448,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_53",
+    "name": "Complan",
+    "price": 274,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_54",
+    "name": "Complan (32 tablets)",
+    "price": 448,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_55",
+    "name": "Protinex",
+    "price": 246,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  },
+  {
+    "id": "netmeds_prod_kolkata_56",
+    "name": "Protinex (35 tablets)",
+    "price": 358,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  }
+]

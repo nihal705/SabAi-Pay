@@ -1,0 +1,23 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-page);
+}
+
+.main-content {
+  background-color: var(--bg-page);
+}
+
+/* Ensure all page containers have white background */
+.dashboard,
+.homepage,
+.auth-container,
+.send-money-container,
+.request-money-container,
+.bill-payments-container,
+.agent-chat-container,
+.coin-wallet-container,
+.settings-page,
+.help-page,
+.transaction-history-container {
+  background-color: var(--bg-page) !important;
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "zomato_offer_1",
+    "title": "32% Off",
+    "description": "Limited time offer",
+    "code": "SAVE99",
+    "validUntil": "2026-05-01",
+    "minOrder": 328,
+    "maxDiscount": 132
+  },
+  {
+    "id": "zomato_offer_2",
+    "title": "Free Delivery",
+    "description": "Limited time offer",
+    "code": "SAVE68",
+    "validUntil": "2026-05-01",
+    "minOrder": 536,
+    "maxDiscount": 222
+  },
+  {
+    "id": "zomato_offer_3",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE38",
+    "validUntil": "2026-05-01",
+    "minOrder": 517,
+    "maxDiscount": 229
+  },
+  {
+    "id": "zomato_offer_4",
+    "title": "Free Delivery",
+    "description": "Limited time offer",
+    "code": "SAVE93",
+    "validUntil": "2026-05-01",
+    "minOrder": 452,
+    "maxDiscount": 95
+  },
+  {
+    "id": "zomato_offer_5",
+    "title": "14% Off",
+    "description": "Limited time offer",
+    "code": "SAVE85",
+    "validUntil": "2026-05-01",
+    "minOrder": 185,
+    "maxDiscount": 247
+  },
+  {
+    "id": "zomato_offer_6",
+    "title": "24% Off",
+    "description": "Limited time offer",
+    "code": "SAVE56",
+    "validUntil": "2026-05-01",
+    "minOrder": 480,
+    "maxDiscount": 171
+  },
+  {
+    "id": "zomato_offer_7",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE71",
+    "validUntil": "2026-05-01",
+    "minOrder": 199,
+    "maxDiscount": 166
+  },
+  {
+    "id": "zomato_offer_8",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE49",
+    "validUntil": "2026-05-01",
+    "minOrder": 323,
+    "maxDiscount": 92
+  },
+  {
+    "id": "zomato_offer_9",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE57",
+    "validUntil": "2026-05-01",
+    "minOrder": 338,
+    "maxDiscount": 241
+  },
+  {
+    "id": "zomato_offer_10",
+    "title": "28% Off",
+    "description": "Limited time offer",
+    "code": "SAVE92",
+    "validUntil": "2026-05-01",
+    "minOrder": 587,
+    "maxDiscount": 215
+  },
+  {
+    "id": "zomato_offer_11",
+    "title": "32% Off",
+    "description": "Limited time offer",
+    "code": "SAVE10",
+    "validUntil": "2026-05-01",
+    "minOrder": 470,
+    "maxDiscount": 57
+  },
+  {
+    "id": "zomato_offer_12",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE50",
+    "validUntil": "2026-05-01",
+    "minOrder": 592,
+    "maxDiscount": 72
+  },
+  {
+    "id": "zomato_offer_13",
+    "title": "33% Off",
+    "description": "Limited time offer",
+    "code": "SAVE48",
+    "validUntil": "2026-05-01",
+    "minOrder": 263,
+    "maxDiscount": 63
+  },
+  {
+    "id": "zomato_offer_14",
+    "title": "Free Delivery",
+    "description": "Limited time offer",
+    "code": "SAVE93",
+    "validUntil": "2026-05-01",
+    "minOrder": 346,
+    "maxDiscount": 93
+  },
+  {
+    "id": "zomato_offer_15",
+    "title": "Free Delivery",
+    "description": "Limited time offer",
+    "code": "SAVE45",
+    "validUntil": "2026-05-01",
+    "minOrder": 191,
+    "maxDiscount": 212
+  },
+  {
+    "id": "zomato_offer_16",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE89",
+    "validUntil": "2026-05-01",
+    "minOrder": 528,
+    "maxDiscount": 223
+  },
+  {
+    "id": "zomato_offer_17",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE15",
+    "validUntil": "2026-05-01",
+    "minOrder": 516,
+    "maxDiscount": 237
+  },
+  {
+    "id": "zomato_offer_18",
+    "title": "Free Delivery",
+    "description": "Limited time offer",
+    "code": "SAVE49",
+    "validUntil": "2026-05-01",
+    "minOrder": 592,
+    "maxDiscount": 99
+  },
+  {
+    "id": "zomato_offer_19",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE93",
+    "validUntil": "2026-05-01",
+    "minOrder": 405,
+    "maxDiscount": 150
+  },
+  {
+    "id": "zomato_offer_20",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE43",
+    "validUntil": "2026-05-01",
+    "minOrder": 384,
+    "maxDiscount": 165
+  },
+  {
+    "id": "zomato_offer_21",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE24",
+    "validUntil": "2026-05-01",
+    "minOrder": 376,
+    "maxDiscount": 106
+  },
+  {
+    "id": "zomato_offer_22",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE78",
+    "validUntil": "2026-05-01",
+    "minOrder": 510,
+    "maxDiscount": 247
+  },
+  {
+    "id": "zomato_offer_23",
+    "title": "33% Off",
+    "description": "Limited time offer",
+    "code": "SAVE92",
+    "validUntil": "2026-05-01",
+    "minOrder": 275,
+    "maxDiscount": 170
+  },
+  {
+    "id": "zomato_offer_24",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE45",
+    "validUntil": "2026-05-01",
+    "minOrder": 431,
+    "maxDiscount": 89
+  },
+  {
+    "id": "zomato_offer_25",
+    "title": "Free Delivery",
+    "description": "Limited time offer",
+    "code": "SAVE48",
+    "validUntil": "2026-05-01",
+    "minOrder": 130,
+    "maxDiscount": 119
+  },
+  {
+    "id": "zomato_offer_26",
+    "title": "Free Delivery",
+    "description": "Limited time offer",
+    "code": "SAVE55",
+    "validUntil": "2026-05-01",
+    "minOrder": 527,
+    "maxDiscount": 75
+  },
+  {
+    "id": "zomato_offer_27",
+    "title": "37% Off",
+    "description": "Limited time offer",
+    "code": "SAVE62",
+    "validUntil": "2026-05-01",
+    "minOrder": 171,
+    "maxDiscount": 73
+  },
+  {
+    "id": "zomato_offer_28",
+    "title": "23% Off",
+    "description": "Limited time offer",
+    "code": "SAVE61",
+    "validUntil": "2026-05-01",
+    "minOrder": 536,
+    "maxDiscount": 155
+  },
+  {
+    "id": "zomato_offer_29",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE28",
+    "validUntil": "2026-05-01",
+    "minOrder": 365,
+    "maxDiscount": 231
+  },
+  {
+    "id": "zomato_offer_30",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE91",
+    "validUntil": "2026-05-01",
+    "minOrder": 361,
+    "maxDiscount": 193
+  }
+]

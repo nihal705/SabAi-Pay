@@ -1,0 +1,803 @@
+/* Navbar Base Styles */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.dark .navbar {
+  background-color: #1f2937;
+  border-bottom-color: #374151;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo */
+.navbar-logo {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo-text {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logo-highlight {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Desktop Navigation */
+.nav-menu-desktop {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.dark .nav-link {
+  color: #9ca3af;
+}
+
+.nav-link:hover {
+  background-color: #f3f4f6;
+  color: #4f46e5;
+}
+
+.dark .nav-link:hover {
+  background-color: #374151;
+  color: #818cf8;
+}
+
+.nav-link.active {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.dark .nav-link.active {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.nav-icon {
+  font-size: 1.1rem;
+}
+
+/* Profile Menu */
+.profile-menu {
+  position: relative;
+  margin-left: 0.5rem;
+}
+
+.profile-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.2s;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 260px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1000;
+  animation: slideDown 0.2s ease;
+}
+
+.dark .profile-dropdown {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-header {
+  padding: 1rem;
+  background-color: #f9fafb;
+}
+
+.dark .dropdown-header {
+  background-color: #111827;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.dark .user-name {
+  color: #f9fafb;
+}
+
+.user-phone {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.dark .user-phone {
+  color: #9ca3af;
+}
+
+.user-email {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.dark .user-email {
+  color: #9ca3af;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 0.5rem 0;
+}
+
+.dark .dropdown-divider {
+  background-color: #374151;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.dark .dropdown-item {
+  color: #9ca3af;
+}
+
+.dropdown-item:hover {
+  background-color: #f3f4f6;
+  color: #4f46e5;
+}
+
+.dark .dropdown-item:hover {
+  background-color: #374151;
+  color: #818cf8;
+}
+
+.dropdown-item.logout:hover {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.dark .dropdown-item.logout:hover {
+  background-color: #2d1a1a;
+  color: #f87171;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #4b5563;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.dark .mobile-menu-btn {
+  color: #9ca3af;
+}
+
+/* Mobile Navigation */
+.nav-menu-mobile {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease;
+  z-index: 999;
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.dark .nav-menu-mobile {
+  background-color: #1f2937;
+  border-bottom-color: #374151;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.dark .mobile-nav-link {
+  color: #9ca3af;
+}
+
+.mobile-nav-link:hover {
+  background-color: #f3f4f6;
+  color: #4f46e5;
+}
+
+.dark .mobile-nav-link:hover {
+  background-color: #374151;
+  color: #818cf8;
+}
+
+.mobile-nav-link.logout:hover {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.dark .mobile-nav-link.logout:hover {
+  background-color: #2d1a1a;
+  color: #f87171;
+}
+
+.mobile-user-info {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 0.5rem;
+}
+
+.dark .mobile-user-info {
+  border-bottom-color: #374151;
+}
+
+.mobile-user-name {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.dark .mobile-user-name {
+  color: #f9fafb;
+}
+
+.mobile-user-phone {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.dark .mobile-user-phone {
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-menu-desktop {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-menu-mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar-container {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.25rem;
+  }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+  transition: all 0.2s ease;
+  margin: 0 4px;
+}
+
+.dark .theme-toggle {
+  color: #fbbf24;
+}
+
+.theme-toggle:hover {
+  background-color: #f3f4f6;
+  color: #4f46e5;
+  transform: rotate(15deg);
+}
+
+.dark .theme-toggle:hover {
+  background-color: #374151;
+  color: #fbbf24;
+}
+
+.theme-toggle svg {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover svg {
+  transform: rotate(30deg);
+}
+
+/* Icon Button (used for theme toggle) */
+.icon-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-left: 8px;
+}
+
+.dark .icon-button {
+  border-color: #4b5563;
+  color: #9ca3af;
+}
+
+.icon-button:hover {
+  border-color: #4f46e5;
+  color: #4f46e5;
+  background-color: #f3f4f6;
+  transform: scale(1.05);
+}
+
+.dark .icon-button:hover {
+  border-color: #fbbf24;
+  color: #fbbf24;
+  background-color: #374151;
+}
+
+.icon-button svg {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.icon-button:hover svg {
+  transform: rotate(30deg);
+}
+
+/* Mobile Theme Toggle */
+.mobile-theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #4b5563;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.dark .mobile-theme-toggle {
+  color: #9ca3af;
+}
+
+.mobile-theme-toggle:hover {
+  background-color: #f3f4f6;
+  color: #4f46e5;
+}
+
+.dark .mobile-theme-toggle:hover {
+  background-color: #374151;
+  color: #fbbf24;
+}
+
+.mobile-theme-toggle svg {
+  font-size: 1.2rem;
+}
+
+/* Animation for theme transition */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Sun and Moon icons specific styles */
+.icon-button .fa-sun,
+.mobile-theme-toggle .fa-sun {
+  color: #fbbf24;
+}
+
+.icon-button .fa-moon,
+.mobile-theme-toggle .fa-moon {
+  color: #4f46e5;
+}
+
+.dark .icon-button .fa-moon {
+  color: #fbbf24;
+}
+
+/* Navbar Logo Styling - Perfect Alignment with b+A Combination */
+.navbar-logo {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  height: 44px; /* Slightly taller for better vertical space */
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  line-height: 1;
+  position: relative;
+}
+
+.logo-sab {
+  color: #2d3748;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.dark .logo-sab {
+  color: #e2e8f0;
+}
+
+.logo-sab .sa {
+  display: inline-block;
+  line-height: 1;
+  transform: translateY(0);
+}
+
+.logo-sab .b {
+  display: inline-block;
+  line-height: 1;
+  margin-right: -2px; /* Create overlap space for A */
+  position: relative;
+  z-index: 1;
+}
+
+.logo-ai {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #4F46E5 0%, #2563EB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  position: relative;
+  left: -2px; /* Pull left to overlap with b */
+  line-height: 1;
+  z-index: 3;
+  margin-left: -2px; /* Additional negative margin for overlap */
+}
+
+.dark .logo-ai {
+  background: #FBBF24;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+.logo-pay {
+  background: linear-gradient(135deg, #4F46E5 0%, #2563EB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  margin-left: 2px;
+  line-height: 1;
+  position: relative;
+  top: 0;
+}
+
+.dark .logo-pay {
+  background: #FBBF24;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .navbar-logo {
+    font-size: 1.5rem;
+    height: 38px;
+  }
+  
+  .logo-sab .b {
+    margin-right: -6px;
+  }
+  
+  .logo-ai {
+    top: -2px;
+    left: -3px;
+    margin-left: -3px;
+  }
+}
+
+/* Add to your Navbar.css */
+
+.logo-image-container {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.navbar-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(79, 70, 229, 0.2));
+}
+
+.dark .navbar-logo-image {
+  filter: drop-shadow(0 4px 8px rgba(251, 191, 36, 0.3));
+}
+
+/* Animation keyframes for the looping effect */
+@keyframes logoPop {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(2deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(-2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Apply animation on hover as well */
+.navbar-logo:hover .navbar-logo-image {
+  animation: logoPop 0.6s ease-in-out;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .logo-image-container {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+  }
+}
+
+.logo-image-container {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.navbar-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  will-change: transform, filter, opacity; /* Optimize for animations */
+}
+
+.dark .navbar-logo-image {
+  filter: drop-shadow(0 4px 8px rgba(251, 191, 36, 0.2));
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .logo-image-container {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+  }
+}
+
+/* Add to your Navbar.css */
+
+.logo-image-container {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.navbar-logo-lottie {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navbar-logo-fallback {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-logo-fallback.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Dark mode support */
+.dark .navbar-logo-fallback {
+  filter: drop-shadow(0 4px 8px rgba(251, 191, 36, 0.2));
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .logo-image-container {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+  }
+}
+
+/* Add to Navbar.css */
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.2s;
+  overflow: hidden; /* Important for image to stay within circle */
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the circle properly */
+  display: block;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+/* Dark mode support */
+.dark .avatar {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}

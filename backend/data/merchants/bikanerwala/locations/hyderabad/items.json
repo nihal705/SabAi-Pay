@@ -1,0 +1,902 @@
+[
+  {
+    "id": "bikanerwala_item_hyderabad_1",
+    "name": "Kachori",
+    "price": 157,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_2",
+    "name": "Pakora (73g)",
+    "price": 145,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_3",
+    "name": "Jalebi",
+    "price": 127,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_4",
+    "name": "Gulab Jamun",
+    "price": 142,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_5",
+    "name": "Rasgulla",
+    "price": 22,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_6",
+    "name": "Chaat",
+    "price": 109,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_7",
+    "name": "Pani Puri",
+    "price": 27,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_8",
+    "name": "Bhel Puri",
+    "price": 70,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_9",
+    "name": "Dahi Vada",
+    "price": 169,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_10",
+    "name": "Samosa",
+    "price": 103,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_11",
+    "name": "Kachori (203g)",
+    "price": 155,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_12",
+    "name": "Pakora",
+    "price": 48,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_13",
+    "name": "Jalebi",
+    "price": 124,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_14",
+    "name": "Gulab Jamun",
+    "price": 128,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_15",
+    "name": "Rasgulla",
+    "price": 150,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_16",
+    "name": "Chaat",
+    "price": 148,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_17",
+    "name": "Pani Puri",
+    "price": 52,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_18",
+    "name": "Bhel Puri",
+    "price": 55,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_19",
+    "name": "Dahi Vada",
+    "price": 50,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_20",
+    "name": "Samosa",
+    "price": 138,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_21",
+    "name": "Kachori",
+    "price": 65,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_22",
+    "name": "Pakora",
+    "price": 132,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_23",
+    "name": "Jalebi",
+    "price": 48,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_24",
+    "name": "Gulab Jamun (102g)",
+    "price": 24,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_25",
+    "name": "Rasgulla (230g)",
+    "price": 159,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_26",
+    "name": "Chaat",
+    "price": 164,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_27",
+    "name": "Pani Puri",
+    "price": 108,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_28",
+    "name": "Bhel Puri",
+    "price": 101,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_29",
+    "name": "Dahi Vada",
+    "price": 154,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_30",
+    "name": "Samosa",
+    "price": 74,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_31",
+    "name": "Kachori",
+    "price": 163,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_32",
+    "name": "Pakora",
+    "price": 41,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_33",
+    "name": "Jalebi",
+    "price": 71,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_34",
+    "name": "Gulab Jamun",
+    "price": 156,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_35",
+    "name": "Rasgulla",
+    "price": 79,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_36",
+    "name": "Chaat",
+    "price": 123,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_37",
+    "name": "Pani Puri (202g)",
+    "price": 158,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_38",
+    "name": "Bhel Puri",
+    "price": 163,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_39",
+    "name": "Dahi Vada (64g)",
+    "price": 137,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_40",
+    "name": "Samosa",
+    "price": 105,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_41",
+    "name": "Kachori",
+    "price": 67,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_42",
+    "name": "Pakora (78g)",
+    "price": 155,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_43",
+    "name": "Jalebi",
+    "price": 65,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_44",
+    "name": "Gulab Jamun",
+    "price": 53,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_45",
+    "name": "Rasgulla",
+    "price": 135,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_46",
+    "name": "Chaat (142g)",
+    "price": 138,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_47",
+    "name": "Pani Puri",
+    "price": 120,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_48",
+    "name": "Bhel Puri (104g)",
+    "price": 103,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_49",
+    "name": "Dahi Vada",
+    "price": 153,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_50",
+    "name": "Samosa",
+    "price": 161,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_51",
+    "name": "Kachori",
+    "price": 157,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_52",
+    "name": "Pakora",
+    "price": 37,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_53",
+    "name": "Jalebi",
+    "price": 26,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_54",
+    "name": "Gulab Jamun",
+    "price": 112,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_55",
+    "name": "Rasgulla",
+    "price": 89,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_56",
+    "name": "Chaat",
+    "price": 84,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_57",
+    "name": "Pani Puri",
+    "price": 97,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_58",
+    "name": "Bhel Puri",
+    "price": 25,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_59",
+    "name": "Dahi Vada",
+    "price": 156,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_60",
+    "name": "Samosa",
+    "price": 119,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_61",
+    "name": "Kachori",
+    "price": 27,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_62",
+    "name": "Pakora (65g)",
+    "price": 131,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_63",
+    "name": "Jalebi",
+    "price": 58,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_64",
+    "name": "Gulab Jamun",
+    "price": 139,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_65",
+    "name": "Rasgulla",
+    "price": 155,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_66",
+    "name": "Chaat",
+    "price": 45,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_67",
+    "name": "Pani Puri",
+    "price": 66,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_68",
+    "name": "Bhel Puri",
+    "price": 45,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_69",
+    "name": "Dahi Vada (26g)",
+    "price": 74,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_70",
+    "name": "Samosa",
+    "price": 75,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_71",
+    "name": "Kachori (50g)",
+    "price": 44,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_72",
+    "name": "Pakora",
+    "price": 44,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_73",
+    "name": "Jalebi (134g)",
+    "price": 132,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_74",
+    "name": "Gulab Jamun (248g)",
+    "price": 65,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_75",
+    "name": "Rasgulla",
+    "price": 34,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_76",
+    "name": "Chaat",
+    "price": 100,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_77",
+    "name": "Pani Puri",
+    "price": 57,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_78",
+    "name": "Bhel Puri",
+    "price": 42,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_79",
+    "name": "Dahi Vada",
+    "price": 136,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_80",
+    "name": "Samosa",
+    "price": 45,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_81",
+    "name": "Kachori",
+    "price": 45,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_82",
+    "name": "Pakora (131g)",
+    "price": 88,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_83",
+    "name": "Jalebi",
+    "price": 82,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_84",
+    "name": "Gulab Jamun",
+    "price": 23,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_85",
+    "name": "Rasgulla (30g)",
+    "price": 79,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_86",
+    "name": "Chaat (19g)",
+    "price": 73,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_87",
+    "name": "Pani Puri",
+    "price": 51,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_88",
+    "name": "Bhel Puri",
+    "price": 144,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_89",
+    "name": "Dahi Vada",
+    "price": 151,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_90",
+    "name": "Samosa",
+    "price": 87,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_91",
+    "name": "Kachori (52g)",
+    "price": 94,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_92",
+    "name": "Pakora",
+    "price": 130,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_93",
+    "name": "Jalebi",
+    "price": 146,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_94",
+    "name": "Gulab Jamun",
+    "price": 47,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_95",
+    "name": "Rasgulla",
+    "price": 92,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_96",
+    "name": "Chaat",
+    "price": 72,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_97",
+    "name": "Pani Puri",
+    "price": 70,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_98",
+    "name": "Bhel Puri",
+    "price": 58,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_99",
+    "name": "Dahi Vada",
+    "price": 130,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_hyderabad_100",
+    "name": "Samosa",
+    "price": 92,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

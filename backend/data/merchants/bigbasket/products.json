@@ -1,0 +1,632 @@
+[
+  {
+    "id": "bigbasket_prod_all_1",
+    "name": "Basmati Rice",
+    "price": 309,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_2",
+    "name": "Basmati Rice (1kg)",
+    "price": 471,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_3",
+    "name": "Sonamasoori Rice",
+    "price": 142,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_4",
+    "name": "Sonamasoori Rice (1kg)",
+    "price": 297,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_5",
+    "name": "Wheat Flour",
+    "price": 497,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_6",
+    "name": "Wheat Flour (1kg)",
+    "price": 403,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_7",
+    "name": "Sugar",
+    "price": 240,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_8",
+    "name": "Sugar (1kg)",
+    "price": 181,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_9",
+    "name": "Salt",
+    "price": 140,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_10",
+    "name": "Salt (1kg)",
+    "price": 205,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_11",
+    "name": "Cooking Oil",
+    "price": 84,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_12",
+    "name": "Cooking Oil (1kg)",
+    "price": 512,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_13",
+    "name": "Toor Dal",
+    "price": 162,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_14",
+    "name": "Toor Dal (1kg)",
+    "price": 457,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_15",
+    "name": "Masoor Dal",
+    "price": 523,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_16",
+    "name": "Masoor Dal (1kg)",
+    "price": 237,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_17",
+    "name": "Chana Dal",
+    "price": 205,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_18",
+    "name": "Chana Dal (1kg)",
+    "price": 213,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_19",
+    "name": "Besan",
+    "price": 97,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_20",
+    "name": "Besan (1kg)",
+    "price": 173,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_21",
+    "name": "Milk",
+    "price": 292,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_22",
+    "name": "Milk (1kg)",
+    "price": 442,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_23",
+    "name": "Curd",
+    "price": 333,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_24",
+    "name": "Curd (1kg)",
+    "price": 545,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_25",
+    "name": "Butter",
+    "price": 356,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_26",
+    "name": "Butter (1kg)",
+    "price": 413,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_27",
+    "name": "Paneer",
+    "price": 62,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_28",
+    "name": "Paneer (1kg)",
+    "price": 219,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_29",
+    "name": "Ghee",
+    "price": 428,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_30",
+    "name": "Ghee (1kg)",
+    "price": 305,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_31",
+    "name": "Cheese",
+    "price": 514,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_32",
+    "name": "Cheese (1kg)",
+    "price": 351,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_33",
+    "name": "Buttermilk",
+    "price": 416,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_34",
+    "name": "Buttermilk (1kg)",
+    "price": 125,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": false,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_35",
+    "name": "Chips",
+    "price": 296,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_36",
+    "name": "Chips (1kg)",
+    "price": 310,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_37",
+    "name": "Biscuits",
+    "price": 546,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_38",
+    "name": "Biscuits (1kg)",
+    "price": 504,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_39",
+    "name": "Namkeen",
+    "price": 275,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_40",
+    "name": "Namkeen (1kg)",
+    "price": 274,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_41",
+    "name": "Chocolate",
+    "price": 528,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_42",
+    "name": "Chocolate (1kg)",
+    "price": 133,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_43",
+    "name": "Cookies",
+    "price": 190,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_44",
+    "name": "Cookies (1kg)",
+    "price": 87,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_45",
+    "name": "Cakes",
+    "price": 71,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_46",
+    "name": "Cakes (1kg)",
+    "price": 354,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_47",
+    "name": "Tea",
+    "price": 95,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_48",
+    "name": "Tea (1kg)",
+    "price": 153,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_49",
+    "name": "Coffee",
+    "price": 119,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_50",
+    "name": "Coffee (1kg)",
+    "price": 196,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_51",
+    "name": "Juice",
+    "price": 117,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_52",
+    "name": "Juice (1kg)",
+    "price": 369,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_53",
+    "name": "Soft Drink",
+    "price": 424,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_54",
+    "name": "Soft Drink (1kg)",
+    "price": 88,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_55",
+    "name": "Energy Drink",
+    "price": 224,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_56",
+    "name": "Energy Drink (1kg)",
+    "price": 231,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_57",
+    "name": "Coconut Water",
+    "price": 168,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_58",
+    "name": "Coconut Water (1kg)",
+    "price": 548,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_59",
+    "name": "Detergent",
+    "price": 95,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_60",
+    "name": "Detergent (1kg)",
+    "price": 382,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_61",
+    "name": "Soap",
+    "price": 535,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_62",
+    "name": "Soap (1kg)",
+    "price": 417,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_63",
+    "name": "Surface Cleaner",
+    "price": 157,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_64",
+    "name": "Surface Cleaner (1kg)",
+    "price": 273,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_65",
+    "name": "Tissue",
+    "price": 532,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_66",
+    "name": "Tissue (1kg)",
+    "price": 385,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_67",
+    "name": "Aluminum Foil",
+    "price": 204,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_68",
+    "name": "Aluminum Foil (1kg)",
+    "price": 220,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_69",
+    "name": "Cling Wrap",
+    "price": 183,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_all_70",
+    "name": "Cling Wrap (1kg)",
+    "price": 59,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  }
+]

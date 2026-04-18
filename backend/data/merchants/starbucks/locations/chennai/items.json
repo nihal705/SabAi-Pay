@@ -1,0 +1,362 @@
+[
+  {
+    "id": "starbucks_item_chennai_1",
+    "name": "Cappuccino (Hot)",
+    "price": 265,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_2",
+    "name": "Espresso",
+    "price": 225,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_3",
+    "name": "Americano",
+    "price": 123,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_4",
+    "name": "Mocha (Cold)",
+    "price": 267,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_5",
+    "name": "Cold Coffee",
+    "price": 222,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_6",
+    "name": "Frappuccino",
+    "price": 115,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_7",
+    "name": "Hot Chocolate",
+    "price": 191,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_8",
+    "name": "Caffè Latte",
+    "price": 275,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_9",
+    "name": "Cappuccino (Hot)",
+    "price": 255,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_10",
+    "name": "Espresso",
+    "price": 192,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_11",
+    "name": "Americano",
+    "price": 132,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_12",
+    "name": "Mocha (Cold)",
+    "price": 255,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_13",
+    "name": "Cold Coffee (Hot)",
+    "price": 123,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_14",
+    "name": "Frappuccino (Hot)",
+    "price": 215,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_15",
+    "name": "Hot Chocolate",
+    "price": 158,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_16",
+    "name": "Caffè Latte",
+    "price": 163,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_17",
+    "name": "Cappuccino (Hot)",
+    "price": 210,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_18",
+    "name": "Espresso (Cold)",
+    "price": 244,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_19",
+    "name": "Americano",
+    "price": 95,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_20",
+    "name": "Mocha (Hot)",
+    "price": 81,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_21",
+    "name": "Cold Coffee",
+    "price": 264,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_22",
+    "name": "Frappuccino (Cold)",
+    "price": 219,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_23",
+    "name": "Hot Chocolate",
+    "price": 205,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_24",
+    "name": "Caffè Latte",
+    "price": 141,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_25",
+    "name": "Muffin",
+    "price": 81,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_26",
+    "name": "Brownie",
+    "price": 173,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_27",
+    "name": "Cookie",
+    "price": 52,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_28",
+    "name": "Sandwich",
+    "price": 157,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_29",
+    "name": "Cake Slice",
+    "price": 105,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_30",
+    "name": "Bagel",
+    "price": 157,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_31",
+    "name": "Donut",
+    "price": 173,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_32",
+    "name": "Croissant",
+    "price": 181,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_33",
+    "name": "Muffin",
+    "price": 190,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_34",
+    "name": "Brownie",
+    "price": 171,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_35",
+    "name": "Cookie",
+    "price": 102,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_36",
+    "name": "Sandwich",
+    "price": 109,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_37",
+    "name": "Cake Slice",
+    "price": 184,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_38",
+    "name": "Bagel",
+    "price": 191,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_39",
+    "name": "Donut",
+    "price": 176,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_chennai_40",
+    "name": "Croissant",
+    "price": 138,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

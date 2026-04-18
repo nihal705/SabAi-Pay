@@ -1,0 +1,257 @@
+[
+  {
+    "id": "swiggy_rest_ahmedabad_1",
+    "name": "Amritsari Haveli",
+    "cuisine": "South Indian",
+    "rating": 4.4,
+    "ratingCount": 1274,
+    "priceForTwo": 385,
+    "location": {
+      "area": "Satellite",
+      "address": "Shop 1, Satellite, Ahmedabad",
+      "latitude": 23.022231924186325,
+      "longitude": 72.58741708962845
+    },
+    "deliveryTime": "38 min",
+    "isOpen": false,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_2",
+    "name": "Sagar Ratna",
+    "cuisine": "Chinese",
+    "rating": 3.3,
+    "ratingCount": 4143,
+    "priceForTwo": 912,
+    "location": {
+      "area": "Vastrapur",
+      "address": "Shop 2, Vastrapur, Ahmedabad",
+      "latitude": 23.002263199657957,
+      "longitude": 72.57845228523861
+    },
+    "deliveryTime": "56 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_3",
+    "name": "Kanti Sweets Kitchen",
+    "cuisine": "Biryani",
+    "rating": 4.2,
+    "ratingCount": 1198,
+    "priceForTwo": 520,
+    "location": {
+      "area": "Navrangpura",
+      "address": "Shop 3, Navrangpura, Ahmedabad",
+      "latitude": 23.033762039688384,
+      "longitude": 72.5533854237831
+    },
+    "deliveryTime": "37 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_4",
+    "name": "MTR Kitchen",
+    "cuisine": "Fast Food",
+    "rating": 3.4,
+    "ratingCount": 505,
+    "priceForTwo": 840,
+    "location": {
+      "area": "Bodakdev",
+      "address": "Shop 4, Bodakdev, Ahmedabad",
+      "latitude": 23.038703250113194,
+      "longitude": 72.55147666562333
+    },
+    "deliveryTime": "54 min",
+    "isOpen": false,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_5",
+    "name": "CTR Kitchen",
+    "cuisine": "North Indian",
+    "rating": 3.5,
+    "ratingCount": 2998,
+    "priceForTwo": 854,
+    "location": {
+      "area": "Prahlad Nagar",
+      "address": "Shop 5, Prahlad Nagar, Ahmedabad",
+      "latitude": 23.0365827704595,
+      "longitude": 72.58844408868019
+    },
+    "deliveryTime": "54 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_6",
+    "name": "Mainland China",
+    "cuisine": "South Indian",
+    "rating": 4.8,
+    "ratingCount": 571,
+    "priceForTwo": 418,
+    "location": {
+      "area": "Satellite",
+      "address": "Shop 6, Satellite, Ahmedabad",
+      "latitude": 23.012168001545408,
+      "longitude": 72.59608495767385
+    },
+    "deliveryTime": "20 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_7",
+    "name": "Chung Wah",
+    "cuisine": "Chinese",
+    "rating": 3.4,
+    "ratingCount": 3239,
+    "priceForTwo": 1201,
+    "location": {
+      "area": "Vastrapur",
+      "address": "Shop 7, Vastrapur, Ahmedabad",
+      "latitude": 23.029237684560087,
+      "longitude": 72.54943512390416
+    },
+    "deliveryTime": "43 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_8",
+    "name": "Biryani Blues",
+    "cuisine": "Biryani",
+    "rating": 3.2,
+    "ratingCount": 2405,
+    "priceForTwo": 643,
+    "location": {
+      "area": "Navrangpura",
+      "address": "Shop 8, Navrangpura, Ahmedabad",
+      "latitude": 22.99760353404388,
+      "longitude": 72.57540574067309
+    },
+    "deliveryTime": "53 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_9",
+    "name": "Paradise Biryani",
+    "cuisine": "Fast Food",
+    "rating": 3.7,
+    "ratingCount": 689,
+    "priceForTwo": 795,
+    "location": {
+      "area": "Bodakdev",
+      "address": "Shop 9, Bodakdev, Ahmedabad",
+      "latitude": 23.0019827965571,
+      "longitude": 72.5576329323247
+    },
+    "deliveryTime": "25 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_10",
+    "name": "Punjabi Rasoi",
+    "cuisine": "North Indian",
+    "rating": 3.5,
+    "ratingCount": 2851,
+    "priceForTwo": 795,
+    "location": {
+      "area": "Prahlad Nagar",
+      "address": "Shop 10, Prahlad Nagar, Ahmedabad",
+      "latitude": 23.004282226653913,
+      "longitude": 72.55160457194124
+    },
+    "deliveryTime": "44 min",
+    "isOpen": false,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_11",
+    "name": "Amritsari Haveli Kitchen",
+    "cuisine": "South Indian",
+    "rating": 4.1,
+    "ratingCount": 2962,
+    "priceForTwo": 642,
+    "location": {
+      "area": "Satellite",
+      "address": "Shop 11, Satellite, Ahmedabad",
+      "latitude": 23.026000457589912,
+      "longitude": 72.58772042577635
+    },
+    "deliveryTime": "34 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_12",
+    "name": "Sagar Ratna",
+    "cuisine": "Chinese",
+    "rating": 4.3,
+    "ratingCount": 2478,
+    "priceForTwo": 558,
+    "location": {
+      "area": "Vastrapur",
+      "address": "Shop 12, Vastrapur, Ahmedabad",
+      "latitude": 23.01511413350287,
+      "longitude": 72.57545298136424
+    },
+    "deliveryTime": "44 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_13",
+    "name": "Kanti Sweets",
+    "cuisine": "Biryani",
+    "rating": 4.9,
+    "ratingCount": 2629,
+    "priceForTwo": 370,
+    "location": {
+      "area": "Navrangpura",
+      "address": "Shop 13, Navrangpura, Ahmedabad",
+      "latitude": 23.027781472473087,
+      "longitude": 72.55370426124281
+    },
+    "deliveryTime": "56 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_14",
+    "name": "MTR",
+    "cuisine": "Fast Food",
+    "rating": 3,
+    "ratingCount": 2545,
+    "priceForTwo": 763,
+    "location": {
+      "area": "Bodakdev",
+      "address": "Shop 14, Bodakdev, Ahmedabad",
+      "latitude": 23.00065220420379,
+      "longitude": 72.57139905287829
+    },
+    "deliveryTime": "27 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "swiggy_rest_ahmedabad_15",
+    "name": "CTR",
+    "cuisine": "North Indian",
+    "rating": 4.3,
+    "ratingCount": 4942,
+    "priceForTwo": 1126,
+    "location": {
+      "area": "Prahlad Nagar",
+      "address": "Shop 15, Prahlad Nagar, Ahmedabad",
+      "latitude": 23.041664608567654,
+      "longitude": 72.58801850746262
+    },
+    "deliveryTime": "41 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  }
+]

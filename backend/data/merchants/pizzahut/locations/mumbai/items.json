@@ -1,0 +1,272 @@
+[
+  {
+    "id": "pizzahut_item_mumbai_1",
+    "name": "Chicken Supreme",
+    "price": 166,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_2",
+    "name": "Veg Supreme (3\")",
+    "price": 179,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_3",
+    "name": "Pepperoni Feast (7\")",
+    "price": 128,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_4",
+    "name": "Tandoori Paneer",
+    "price": 150,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_5",
+    "name": "Garlic Breadsticks",
+    "price": 100,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_6",
+    "name": "Cheesy Bites",
+    "price": 176,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_7",
+    "name": "Chicken Wings",
+    "price": 161,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_8",
+    "name": "Cheese Pizza",
+    "price": 496,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_9",
+    "name": "Chicken Supreme",
+    "price": 178,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_10",
+    "name": "Veg Supreme (6\")",
+    "price": 176,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_11",
+    "name": "Pepperoni Feast",
+    "price": 205,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_12",
+    "name": "Tandoori Paneer (5\")",
+    "price": 92,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_13",
+    "name": "Garlic Breadsticks (4\")",
+    "price": 116,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_14",
+    "name": "Cheesy Bites (2\")",
+    "price": 216,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_15",
+    "name": "Chicken Wings",
+    "price": 66,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_16",
+    "name": "Cheese Pizza (3\")",
+    "price": 408,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_17",
+    "name": "Chicken Supreme",
+    "price": 136,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_18",
+    "name": "Veg Supreme",
+    "price": 178,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_19",
+    "name": "Pepperoni Feast",
+    "price": 83,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_20",
+    "name": "Tandoori Paneer",
+    "price": 164,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_21",
+    "name": "Garlic Breadsticks",
+    "price": 184,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_22",
+    "name": "Cheesy Bites",
+    "price": 130,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_23",
+    "name": "Chicken Wings (7\")",
+    "price": 203,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_24",
+    "name": "Cheese Pizza",
+    "price": 323,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_25",
+    "name": "Chicken Supreme",
+    "price": 74,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_26",
+    "name": "Veg Supreme (5\")",
+    "price": 126,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_27",
+    "name": "Pepperoni Feast",
+    "price": 188,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_28",
+    "name": "Tandoori Paneer",
+    "price": 122,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_29",
+    "name": "Garlic Breadsticks",
+    "price": 243,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_mumbai_30",
+    "name": "Cheesy Bites",
+    "price": 136,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

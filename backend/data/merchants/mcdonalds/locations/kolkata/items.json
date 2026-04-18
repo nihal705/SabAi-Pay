@@ -1,0 +1,212 @@
+[
+  {
+    "id": "mcdonalds_item_kolkata_1",
+    "name": "McChicken",
+    "price": 267,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_2",
+    "name": "McVeggie 6",
+    "price": 285,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_3",
+    "name": "Fries",
+    "price": 309,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_4",
+    "name": "Big Mac",
+    "price": 343,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_5",
+    "name": "McChicken",
+    "price": 202,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_6",
+    "name": "McVeggie",
+    "price": 311,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_7",
+    "name": "Fries",
+    "price": 350,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_8",
+    "name": "Big Mac",
+    "price": 186,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_9",
+    "name": "McChicken 2",
+    "price": 181,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_10",
+    "name": "McVeggie 7",
+    "price": 488,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_11",
+    "name": "Fries",
+    "price": 465,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_12",
+    "name": "Big Mac",
+    "price": 166,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_13",
+    "name": "McChicken",
+    "price": 381,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_14",
+    "name": "McVeggie 3",
+    "price": 193,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_15",
+    "name": "Fries",
+    "price": 118,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_16",
+    "name": "Big Mac",
+    "price": 306,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_17",
+    "name": "McChicken",
+    "price": 249,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_18",
+    "name": "McVeggie 7",
+    "price": 420,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_19",
+    "name": "Fries",
+    "price": 111,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_20",
+    "name": "Big Mac",
+    "price": 156,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_21",
+    "name": "McChicken 1",
+    "price": 424,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_22",
+    "name": "McVeggie",
+    "price": 195,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_23",
+    "name": "Fries",
+    "price": 379,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_24",
+    "name": "Big Mac",
+    "price": 215,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_25",
+    "name": "McChicken",
+    "price": 238,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_26",
+    "name": "McVeggie 5",
+    "price": 131,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_27",
+    "name": "Fries",
+    "price": 442,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_28",
+    "name": "Big Mac",
+    "price": 409,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_kolkata_29",
+    "name": "McChicken 8",
+    "price": 333,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_kolkata_30",
+    "name": "McVeggie 10",
+    "price": 121,
+    "category": "Main",
+    "isVeg": true
+  }
+]

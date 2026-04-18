@@ -1,0 +1,362 @@
+[
+  {
+    "id": "ccd_item_kolkata_1",
+    "name": "Cappuccino (Hot)",
+    "price": 249,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_2",
+    "name": "Espresso",
+    "price": 213,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_3",
+    "name": "Americano (Hot)",
+    "price": 190,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_4",
+    "name": "Mocha",
+    "price": 165,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_5",
+    "name": "Cold Coffee",
+    "price": 272,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_6",
+    "name": "Frappuccino (Hot)",
+    "price": 165,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_7",
+    "name": "Hot Chocolate",
+    "price": 227,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_8",
+    "name": "Caffè Latte",
+    "price": 175,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_9",
+    "name": "Cappuccino",
+    "price": 208,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_10",
+    "name": "Espresso",
+    "price": 194,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_11",
+    "name": "Americano",
+    "price": 100,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_12",
+    "name": "Mocha",
+    "price": 141,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_13",
+    "name": "Cold Coffee",
+    "price": 213,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_14",
+    "name": "Frappuccino",
+    "price": 190,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_15",
+    "name": "Hot Chocolate",
+    "price": 151,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_16",
+    "name": "Caffè Latte (Cold)",
+    "price": 267,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_17",
+    "name": "Cappuccino",
+    "price": 156,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_18",
+    "name": "Espresso (Hot)",
+    "price": 193,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_19",
+    "name": "Americano",
+    "price": 159,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_20",
+    "name": "Mocha",
+    "price": 177,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_21",
+    "name": "Cold Coffee",
+    "price": 203,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_22",
+    "name": "Frappuccino",
+    "price": 153,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_23",
+    "name": "Hot Chocolate",
+    "price": 221,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_24",
+    "name": "Caffè Latte (Cold)",
+    "price": 87,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_25",
+    "name": "Muffin",
+    "price": 66,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_26",
+    "name": "Brownie",
+    "price": 163,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_27",
+    "name": "Cookie",
+    "price": 102,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_28",
+    "name": "Sandwich",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_29",
+    "name": "Cake Slice",
+    "price": 93,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_30",
+    "name": "Bagel",
+    "price": 59,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_31",
+    "name": "Donut",
+    "price": 190,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_32",
+    "name": "Croissant",
+    "price": 147,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_33",
+    "name": "Muffin",
+    "price": 141,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_34",
+    "name": "Brownie",
+    "price": 175,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_35",
+    "name": "Cookie",
+    "price": 183,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_36",
+    "name": "Sandwich",
+    "price": 97,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_37",
+    "name": "Cake Slice",
+    "price": 143,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_38",
+    "name": "Bagel",
+    "price": 116,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_39",
+    "name": "Donut",
+    "price": 176,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_kolkata_40",
+    "name": "Croissant",
+    "price": 181,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

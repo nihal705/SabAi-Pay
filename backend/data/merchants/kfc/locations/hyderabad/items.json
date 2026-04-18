@@ -1,0 +1,272 @@
+[
+  {
+    "id": "kfc_item_hyderabad_1",
+    "name": "Hot Wings",
+    "price": 217,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_2",
+    "name": "Popcorn Chicken (2\")",
+    "price": 170,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_3",
+    "name": "Zinger Burger",
+    "price": 379,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_4",
+    "name": "French Fries",
+    "price": 120,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_5",
+    "name": "Coleslaw",
+    "price": 205,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_6",
+    "name": "Chicken Strips",
+    "price": 139,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_7",
+    "name": "Chocolate Mousse (1\")",
+    "price": 93,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_8",
+    "name": "Chicken Bucket (9\")",
+    "price": 115,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_9",
+    "name": "Hot Wings (1\")",
+    "price": 182,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_10",
+    "name": "Popcorn Chicken",
+    "price": 184,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_11",
+    "name": "Zinger Burger",
+    "price": 171,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_12",
+    "name": "French Fries",
+    "price": 59,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_13",
+    "name": "Coleslaw",
+    "price": 63,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_14",
+    "name": "Chicken Strips",
+    "price": 182,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_15",
+    "name": "Chocolate Mousse",
+    "price": 210,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_16",
+    "name": "Chicken Bucket",
+    "price": 183,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_17",
+    "name": "Hot Wings",
+    "price": 115,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_18",
+    "name": "Popcorn Chicken",
+    "price": 75,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_19",
+    "name": "Zinger Burger",
+    "price": 340,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_20",
+    "name": "French Fries",
+    "price": 176,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_21",
+    "name": "Coleslaw",
+    "price": 220,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_22",
+    "name": "Chicken Strips",
+    "price": 84,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_23",
+    "name": "Chocolate Mousse",
+    "price": 118,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_24",
+    "name": "Chicken Bucket",
+    "price": 206,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_25",
+    "name": "Hot Wings (4\")",
+    "price": 74,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_26",
+    "name": "Popcorn Chicken",
+    "price": 68,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_27",
+    "name": "Zinger Burger",
+    "price": 263,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/burger.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_28",
+    "name": "French Fries",
+    "price": 113,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_29",
+    "name": "Coleslaw",
+    "price": 215,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "kfc_item_hyderabad_30",
+    "name": "Chicken Strips",
+    "price": 169,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

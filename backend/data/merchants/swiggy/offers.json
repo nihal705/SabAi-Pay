@@ -1,0 +1,272 @@
+[
+  {
+    "id": "swiggy_offer_1",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE27",
+    "validUntil": "2026-05-01",
+    "minOrder": 265,
+    "maxDiscount": 227
+  },
+  {
+    "id": "swiggy_offer_2",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE57",
+    "validUntil": "2026-05-01",
+    "minOrder": 311,
+    "maxDiscount": 203
+  },
+  {
+    "id": "swiggy_offer_3",
+    "title": "39% Off",
+    "description": "Limited time offer",
+    "code": "SAVE98",
+    "validUntil": "2026-05-01",
+    "minOrder": 401,
+    "maxDiscount": 206
+  },
+  {
+    "id": "swiggy_offer_4",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE91",
+    "validUntil": "2026-05-01",
+    "minOrder": 442,
+    "maxDiscount": 57
+  },
+  {
+    "id": "swiggy_offer_5",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE78",
+    "validUntil": "2026-05-01",
+    "minOrder": 444,
+    "maxDiscount": 88
+  },
+  {
+    "id": "swiggy_offer_6",
+    "title": "16% Off",
+    "description": "Limited time offer",
+    "code": "SAVE48",
+    "validUntil": "2026-05-01",
+    "minOrder": 155,
+    "maxDiscount": 83
+  },
+  {
+    "id": "swiggy_offer_7",
+    "title": "11% Off",
+    "description": "Limited time offer",
+    "code": "SAVE42",
+    "validUntil": "2026-05-01",
+    "minOrder": 355,
+    "maxDiscount": 161
+  },
+  {
+    "id": "swiggy_offer_8",
+    "title": "12% Off",
+    "description": "Limited time offer",
+    "code": "SAVE79",
+    "validUntil": "2026-05-01",
+    "minOrder": 575,
+    "maxDiscount": 188
+  },
+  {
+    "id": "swiggy_offer_9",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE64",
+    "validUntil": "2026-05-01",
+    "minOrder": 338,
+    "maxDiscount": 160
+  },
+  {
+    "id": "swiggy_offer_10",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE85",
+    "validUntil": "2026-05-01",
+    "minOrder": 162,
+    "maxDiscount": 182
+  },
+  {
+    "id": "swiggy_offer_11",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE53",
+    "validUntil": "2026-05-01",
+    "minOrder": 508,
+    "maxDiscount": 95
+  },
+  {
+    "id": "swiggy_offer_12",
+    "title": "26% Off",
+    "description": "Limited time offer",
+    "code": "SAVE92",
+    "validUntil": "2026-05-01",
+    "minOrder": 372,
+    "maxDiscount": 103
+  },
+  {
+    "id": "swiggy_offer_13",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE32",
+    "validUntil": "2026-05-01",
+    "minOrder": 229,
+    "maxDiscount": 112
+  },
+  {
+    "id": "swiggy_offer_14",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE74",
+    "validUntil": "2026-05-01",
+    "minOrder": 384,
+    "maxDiscount": 223
+  },
+  {
+    "id": "swiggy_offer_15",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE58",
+    "validUntil": "2026-05-01",
+    "minOrder": 423,
+    "maxDiscount": 75
+  },
+  {
+    "id": "swiggy_offer_16",
+    "title": "33% Off",
+    "description": "Limited time offer",
+    "code": "SAVE39",
+    "validUntil": "2026-05-01",
+    "minOrder": 566,
+    "maxDiscount": 232
+  },
+  {
+    "id": "swiggy_offer_17",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE86",
+    "validUntil": "2026-05-01",
+    "minOrder": 485,
+    "maxDiscount": 116
+  },
+  {
+    "id": "swiggy_offer_18",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE47",
+    "validUntil": "2026-05-01",
+    "minOrder": 197,
+    "maxDiscount": 200
+  },
+  {
+    "id": "swiggy_offer_19",
+    "title": "Free Delivery",
+    "description": "Limited time offer",
+    "code": "SAVE64",
+    "validUntil": "2026-05-01",
+    "minOrder": 399,
+    "maxDiscount": 110
+  },
+  {
+    "id": "swiggy_offer_20",
+    "title": "16% Off",
+    "description": "Limited time offer",
+    "code": "SAVE98",
+    "validUntil": "2026-05-01",
+    "minOrder": 597,
+    "maxDiscount": 99
+  },
+  {
+    "id": "swiggy_offer_21",
+    "title": "36% Off",
+    "description": "Limited time offer",
+    "code": "SAVE23",
+    "validUntil": "2026-05-01",
+    "minOrder": 192,
+    "maxDiscount": 189
+  },
+  {
+    "id": "swiggy_offer_22",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE55",
+    "validUntil": "2026-05-01",
+    "minOrder": 286,
+    "maxDiscount": 217
+  },
+  {
+    "id": "swiggy_offer_23",
+    "title": "31% Off",
+    "description": "Limited time offer",
+    "code": "SAVE47",
+    "validUntil": "2026-05-01",
+    "minOrder": 378,
+    "maxDiscount": 165
+  },
+  {
+    "id": "swiggy_offer_24",
+    "title": "Free Delivery",
+    "description": "Limited time offer",
+    "code": "SAVE61",
+    "validUntil": "2026-05-01",
+    "minOrder": 461,
+    "maxDiscount": 156
+  },
+  {
+    "id": "swiggy_offer_25",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE4",
+    "validUntil": "2026-05-01",
+    "minOrder": 345,
+    "maxDiscount": 162
+  },
+  {
+    "id": "swiggy_offer_26",
+    "title": "Free Delivery",
+    "description": "Limited time offer",
+    "code": "SAVE47",
+    "validUntil": "2026-05-01",
+    "minOrder": 194,
+    "maxDiscount": 95
+  },
+  {
+    "id": "swiggy_offer_27",
+    "title": "Buy 1 Get 1",
+    "description": "Limited time offer",
+    "code": "SAVE20",
+    "validUntil": "2026-05-01",
+    "minOrder": 536,
+    "maxDiscount": 116
+  },
+  {
+    "id": "swiggy_offer_28",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE81",
+    "validUntil": "2026-05-01",
+    "minOrder": 473,
+    "maxDiscount": 183
+  },
+  {
+    "id": "swiggy_offer_29",
+    "title": "Flat ₹100 Off",
+    "description": "Limited time offer",
+    "code": "SAVE79",
+    "validUntil": "2026-05-01",
+    "minOrder": 408,
+    "maxDiscount": 181
+  },
+  {
+    "id": "swiggy_offer_30",
+    "title": "25% Off",
+    "description": "Limited time offer",
+    "code": "SAVE42",
+    "validUntil": "2026-05-01",
+    "minOrder": 148,
+    "maxDiscount": 175
+  }
+]

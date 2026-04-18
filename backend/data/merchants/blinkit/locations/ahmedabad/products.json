@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "blinkit_prod_ahmedabad_1",
+    "name": "Snacks Item 1",
+    "price": 186,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_2",
+    "name": "Beverages Item 2",
+    "price": 226,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_3",
+    "name": "Household Item 3",
+    "price": 502,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_4",
+    "name": "Personal Care Item 4",
+    "price": 402,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_5",
+    "name": "Groceries Item 5",
+    "price": 431,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_6",
+    "name": "Snacks Item 6",
+    "price": 98,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_7",
+    "name": "Beverages Item 7",
+    "price": 92,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_8",
+    "name": "Household Item 8",
+    "price": 309,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_9",
+    "name": "Personal Care Item 9",
+    "price": 109,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_10",
+    "name": "Groceries Item 10",
+    "price": 440,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_11",
+    "name": "Snacks Item 11",
+    "price": 371,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_12",
+    "name": "Beverages Item 12",
+    "price": 78,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_13",
+    "name": "Household Item 13",
+    "price": 538,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_14",
+    "name": "Personal Care Item 14",
+    "price": 467,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_15",
+    "name": "Groceries Item 15",
+    "price": 124,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_16",
+    "name": "Snacks Item 16",
+    "price": 193,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_17",
+    "name": "Beverages Item 17",
+    "price": 226,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_18",
+    "name": "Household Item 18",
+    "price": 490,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_19",
+    "name": "Personal Care Item 19",
+    "price": 74,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_20",
+    "name": "Groceries Item 20",
+    "price": 264,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_21",
+    "name": "Snacks Item 21",
+    "price": 203,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_22",
+    "name": "Beverages Item 22",
+    "price": 313,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_23",
+    "name": "Household Item 23",
+    "price": 453,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_24",
+    "name": "Personal Care Item 24",
+    "price": 173,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_25",
+    "name": "Groceries Item 25",
+    "price": 414,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_26",
+    "name": "Snacks Item 26",
+    "price": 389,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_27",
+    "name": "Beverages Item 27",
+    "price": 305,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_28",
+    "name": "Household Item 28",
+    "price": 270,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_29",
+    "name": "Personal Care Item 29",
+    "price": 210,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_30",
+    "name": "Groceries Item 30",
+    "price": 343,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_31",
+    "name": "Snacks Item 31",
+    "price": 281,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_32",
+    "name": "Beverages Item 32",
+    "price": 364,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_33",
+    "name": "Household Item 33",
+    "price": 448,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_34",
+    "name": "Personal Care Item 34",
+    "price": 434,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_35",
+    "name": "Groceries Item 35",
+    "price": 73,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_36",
+    "name": "Snacks Item 36",
+    "price": 372,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_37",
+    "name": "Beverages Item 37",
+    "price": 218,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_38",
+    "name": "Household Item 38",
+    "price": 51,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_39",
+    "name": "Personal Care Item 39",
+    "price": 442,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_40",
+    "name": "Groceries Item 40",
+    "price": 480,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_41",
+    "name": "Snacks Item 41",
+    "price": 294,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_42",
+    "name": "Beverages Item 42",
+    "price": 141,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_43",
+    "name": "Household Item 43",
+    "price": 291,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_44",
+    "name": "Personal Care Item 44",
+    "price": 507,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_45",
+    "name": "Groceries Item 45",
+    "price": 451,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_46",
+    "name": "Snacks Item 46",
+    "price": 416,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_47",
+    "name": "Beverages Item 47",
+    "price": 219,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_48",
+    "name": "Household Item 48",
+    "price": 478,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_49",
+    "name": "Personal Care Item 49",
+    "price": 447,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_50",
+    "name": "Groceries Item 50",
+    "price": 377,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_51",
+    "name": "Snacks Item 51",
+    "price": 509,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_52",
+    "name": "Beverages Item 52",
+    "price": 198,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_53",
+    "name": "Household Item 53",
+    "price": 160,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_54",
+    "name": "Personal Care Item 54",
+    "price": 68,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_55",
+    "name": "Groceries Item 55",
+    "price": 504,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_56",
+    "name": "Snacks Item 56",
+    "price": 306,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_57",
+    "name": "Beverages Item 57",
+    "price": 345,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_58",
+    "name": "Household Item 58",
+    "price": 213,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_59",
+    "name": "Personal Care Item 59",
+    "price": 392,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_60",
+    "name": "Groceries Item 60",
+    "price": 199,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_61",
+    "name": "Snacks Item 61",
+    "price": 455,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_62",
+    "name": "Beverages Item 62",
+    "price": 519,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_63",
+    "name": "Household Item 63",
+    "price": 312,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_64",
+    "name": "Personal Care Item 64",
+    "price": 459,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_65",
+    "name": "Groceries Item 65",
+    "price": 71,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_66",
+    "name": "Snacks Item 66",
+    "price": 453,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_67",
+    "name": "Beverages Item 67",
+    "price": 86,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_68",
+    "name": "Household Item 68",
+    "price": 463,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_69",
+    "name": "Personal Care Item 69",
+    "price": 534,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_70",
+    "name": "Groceries Item 70",
+    "price": 534,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_71",
+    "name": "Snacks Item 71",
+    "price": 77,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_72",
+    "name": "Beverages Item 72",
+    "price": 341,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_73",
+    "name": "Household Item 73",
+    "price": 354,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_74",
+    "name": "Personal Care Item 74",
+    "price": 494,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_75",
+    "name": "Groceries Item 75",
+    "price": 293,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_76",
+    "name": "Snacks Item 76",
+    "price": 129,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_77",
+    "name": "Beverages Item 77",
+    "price": 353,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_78",
+    "name": "Household Item 78",
+    "price": 330,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_79",
+    "name": "Personal Care Item 79",
+    "price": 399,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_80",
+    "name": "Groceries Item 80",
+    "price": 522,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_81",
+    "name": "Snacks Item 81",
+    "price": 148,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_82",
+    "name": "Beverages Item 82",
+    "price": 503,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_83",
+    "name": "Household Item 83",
+    "price": 476,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_84",
+    "name": "Personal Care Item 84",
+    "price": 476,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_85",
+    "name": "Groceries Item 85",
+    "price": 261,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_86",
+    "name": "Snacks Item 86",
+    "price": 242,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_87",
+    "name": "Beverages Item 87",
+    "price": 267,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_88",
+    "name": "Household Item 88",
+    "price": 261,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_89",
+    "name": "Personal Care Item 89",
+    "price": 487,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_90",
+    "name": "Groceries Item 90",
+    "price": 353,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_91",
+    "name": "Snacks Item 91",
+    "price": 451,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_92",
+    "name": "Beverages Item 92",
+    "price": 537,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_93",
+    "name": "Household Item 93",
+    "price": 389,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_94",
+    "name": "Personal Care Item 94",
+    "price": 489,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_95",
+    "name": "Groceries Item 95",
+    "price": 220,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_96",
+    "name": "Snacks Item 96",
+    "price": 500,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_97",
+    "name": "Beverages Item 97",
+    "price": 294,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_98",
+    "name": "Household Item 98",
+    "price": 124,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_99",
+    "name": "Personal Care Item 99",
+    "price": 236,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_100",
+    "name": "Groceries Item 100",
+    "price": 345,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_101",
+    "name": "Snacks Item 101",
+    "price": 76,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_102",
+    "name": "Beverages Item 102",
+    "price": 465,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_103",
+    "name": "Household Item 103",
+    "price": 495,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_104",
+    "name": "Personal Care Item 104",
+    "price": 373,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_105",
+    "name": "Groceries Item 105",
+    "price": 215,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_106",
+    "name": "Snacks Item 106",
+    "price": 287,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_107",
+    "name": "Beverages Item 107",
+    "price": 497,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_108",
+    "name": "Household Item 108",
+    "price": 391,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_109",
+    "name": "Personal Care Item 109",
+    "price": 94,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_110",
+    "name": "Groceries Item 110",
+    "price": 144,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_111",
+    "name": "Snacks Item 111",
+    "price": 306,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_112",
+    "name": "Beverages Item 112",
+    "price": 288,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_113",
+    "name": "Household Item 113",
+    "price": 222,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_114",
+    "name": "Personal Care Item 114",
+    "price": 524,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_115",
+    "name": "Groceries Item 115",
+    "price": 416,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_116",
+    "name": "Snacks Item 116",
+    "price": 168,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_117",
+    "name": "Beverages Item 117",
+    "price": 452,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_118",
+    "name": "Household Item 118",
+    "price": 364,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_119",
+    "name": "Personal Care Item 119",
+    "price": 138,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_120",
+    "name": "Groceries Item 120",
+    "price": 511,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_121",
+    "name": "Snacks Item 121",
+    "price": 123,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_122",
+    "name": "Beverages Item 122",
+    "price": 233,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_123",
+    "name": "Household Item 123",
+    "price": 245,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_124",
+    "name": "Personal Care Item 124",
+    "price": 339,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_125",
+    "name": "Groceries Item 125",
+    "price": 458,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_126",
+    "name": "Snacks Item 126",
+    "price": 489,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_127",
+    "name": "Beverages Item 127",
+    "price": 75,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_128",
+    "name": "Household Item 128",
+    "price": 470,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_129",
+    "name": "Personal Care Item 129",
+    "price": 52,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_130",
+    "name": "Groceries Item 130",
+    "price": 354,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_131",
+    "name": "Snacks Item 131",
+    "price": 332,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_132",
+    "name": "Beverages Item 132",
+    "price": 437,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_133",
+    "name": "Household Item 133",
+    "price": 332,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_134",
+    "name": "Personal Care Item 134",
+    "price": 411,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_135",
+    "name": "Groceries Item 135",
+    "price": 208,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_136",
+    "name": "Snacks Item 136",
+    "price": 401,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_137",
+    "name": "Beverages Item 137",
+    "price": 401,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_138",
+    "name": "Household Item 138",
+    "price": 309,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_139",
+    "name": "Personal Care Item 139",
+    "price": 275,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_140",
+    "name": "Groceries Item 140",
+    "price": 76,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_141",
+    "name": "Snacks Item 141",
+    "price": 353,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_142",
+    "name": "Beverages Item 142",
+    "price": 317,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_143",
+    "name": "Household Item 143",
+    "price": 193,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_144",
+    "name": "Personal Care Item 144",
+    "price": 451,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_145",
+    "name": "Groceries Item 145",
+    "price": 333,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_146",
+    "name": "Snacks Item 146",
+    "price": 525,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_147",
+    "name": "Beverages Item 147",
+    "price": 253,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_148",
+    "name": "Household Item 148",
+    "price": 51,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_149",
+    "name": "Personal Care Item 149",
+    "price": 403,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_150",
+    "name": "Groceries Item 150",
+    "price": 451,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_151",
+    "name": "Snacks Item 151",
+    "price": 229,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_152",
+    "name": "Beverages Item 152",
+    "price": 105,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_153",
+    "name": "Household Item 153",
+    "price": 365,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_154",
+    "name": "Personal Care Item 154",
+    "price": 496,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_155",
+    "name": "Groceries Item 155",
+    "price": 294,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_156",
+    "name": "Snacks Item 156",
+    "price": 209,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_157",
+    "name": "Beverages Item 157",
+    "price": 207,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_158",
+    "name": "Household Item 158",
+    "price": 150,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_159",
+    "name": "Personal Care Item 159",
+    "price": 533,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_160",
+    "name": "Groceries Item 160",
+    "price": 123,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_161",
+    "name": "Snacks Item 161",
+    "price": 188,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_162",
+    "name": "Beverages Item 162",
+    "price": 422,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_163",
+    "name": "Household Item 163",
+    "price": 453,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_164",
+    "name": "Personal Care Item 164",
+    "price": 450,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_165",
+    "name": "Groceries Item 165",
+    "price": 481,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_166",
+    "name": "Snacks Item 166",
+    "price": 214,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_167",
+    "name": "Beverages Item 167",
+    "price": 207,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_168",
+    "name": "Household Item 168",
+    "price": 306,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_169",
+    "name": "Personal Care Item 169",
+    "price": 222,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_170",
+    "name": "Groceries Item 170",
+    "price": 539,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_171",
+    "name": "Snacks Item 171",
+    "price": 118,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_172",
+    "name": "Beverages Item 172",
+    "price": 408,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_173",
+    "name": "Household Item 173",
+    "price": 499,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_174",
+    "name": "Personal Care Item 174",
+    "price": 267,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_175",
+    "name": "Groceries Item 175",
+    "price": 220,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_176",
+    "name": "Snacks Item 176",
+    "price": 146,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_177",
+    "name": "Beverages Item 177",
+    "price": 344,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_178",
+    "name": "Household Item 178",
+    "price": 362,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_179",
+    "name": "Personal Care Item 179",
+    "price": 422,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_180",
+    "name": "Groceries Item 180",
+    "price": 323,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_181",
+    "name": "Snacks Item 181",
+    "price": 141,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_182",
+    "name": "Beverages Item 182",
+    "price": 91,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_183",
+    "name": "Household Item 183",
+    "price": 58,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_184",
+    "name": "Personal Care Item 184",
+    "price": 329,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_185",
+    "name": "Groceries Item 185",
+    "price": 172,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_186",
+    "name": "Snacks Item 186",
+    "price": 100,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_187",
+    "name": "Beverages Item 187",
+    "price": 205,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_188",
+    "name": "Household Item 188",
+    "price": 73,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_189",
+    "name": "Personal Care Item 189",
+    "price": 255,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_190",
+    "name": "Groceries Item 190",
+    "price": 335,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_191",
+    "name": "Snacks Item 191",
+    "price": 123,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_192",
+    "name": "Beverages Item 192",
+    "price": 234,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_193",
+    "name": "Household Item 193",
+    "price": 166,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_194",
+    "name": "Personal Care Item 194",
+    "price": 312,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_195",
+    "name": "Groceries Item 195",
+    "price": 228,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_196",
+    "name": "Snacks Item 196",
+    "price": 467,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_197",
+    "name": "Beverages Item 197",
+    "price": 395,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_198",
+    "name": "Household Item 198",
+    "price": 173,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_199",
+    "name": "Personal Care Item 199",
+    "price": 150,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_ahmedabad_200",
+    "name": "Groceries Item 200",
+    "price": 275,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  }
+]

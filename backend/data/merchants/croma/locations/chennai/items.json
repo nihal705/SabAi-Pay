@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "croma_item_chennai_1",
+    "name": "Laptops Item 1",
+    "price": 4934,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_2",
+    "name": "Headphones Item 2",
+    "price": 1798,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_3",
+    "name": "Speakers Item 3",
+    "price": 20237,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_4",
+    "name": "Accessories Item 4",
+    "price": 27400,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_5",
+    "name": "Smartphones Item 5",
+    "price": 17687,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_6",
+    "name": "Laptops Item 6",
+    "price": 40508,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_7",
+    "name": "Headphones Item 7",
+    "price": 49899,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_8",
+    "name": "Speakers Item 8",
+    "price": 28600,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_9",
+    "name": "Accessories Item 9",
+    "price": 32038,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_10",
+    "name": "Smartphones Item 10",
+    "price": 42517,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_11",
+    "name": "Laptops Item 11",
+    "price": 28949,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_12",
+    "name": "Headphones Item 12",
+    "price": 11199,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_13",
+    "name": "Speakers Item 13",
+    "price": 37112,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_14",
+    "name": "Accessories Item 14",
+    "price": 11830,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_15",
+    "name": "Smartphones Item 15",
+    "price": 8223,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_16",
+    "name": "Laptops Item 16",
+    "price": 14068,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_17",
+    "name": "Headphones Item 17",
+    "price": 17045,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_18",
+    "name": "Speakers Item 18",
+    "price": 28665,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_19",
+    "name": "Accessories Item 19",
+    "price": 21834,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_20",
+    "name": "Smartphones Item 20",
+    "price": 45650,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_21",
+    "name": "Laptops Item 21",
+    "price": 10044,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_22",
+    "name": "Headphones Item 22",
+    "price": 46452,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_23",
+    "name": "Speakers Item 23",
+    "price": 7114,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_24",
+    "name": "Accessories Item 24",
+    "price": 26764,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_25",
+    "name": "Smartphones Item 25",
+    "price": 29341,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_26",
+    "name": "Laptops Item 26",
+    "price": 13917,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_27",
+    "name": "Headphones Item 27",
+    "price": 49130,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_28",
+    "name": "Speakers Item 28",
+    "price": 12364,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_29",
+    "name": "Accessories Item 29",
+    "price": 49394,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_30",
+    "name": "Smartphones Item 30",
+    "price": 5863,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_31",
+    "name": "Laptops Item 31",
+    "price": 31666,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_32",
+    "name": "Headphones Item 32",
+    "price": 30550,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_33",
+    "name": "Speakers Item 33",
+    "price": 30306,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_34",
+    "name": "Accessories Item 34",
+    "price": 43651,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_35",
+    "name": "Smartphones Item 35",
+    "price": 3054,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_36",
+    "name": "Laptops Item 36",
+    "price": 46406,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_37",
+    "name": "Headphones Item 37",
+    "price": 32457,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_38",
+    "name": "Speakers Item 38",
+    "price": 16206,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_39",
+    "name": "Accessories Item 39",
+    "price": 11799,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_40",
+    "name": "Smartphones Item 40",
+    "price": 25904,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_41",
+    "name": "Laptops Item 41",
+    "price": 22524,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_42",
+    "name": "Headphones Item 42",
+    "price": 9299,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_43",
+    "name": "Speakers Item 43",
+    "price": 4777,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_44",
+    "name": "Accessories Item 44",
+    "price": 10483,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_45",
+    "name": "Smartphones Item 45",
+    "price": 33945,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_46",
+    "name": "Laptops Item 46",
+    "price": 7914,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_47",
+    "name": "Headphones Item 47",
+    "price": 2285,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_48",
+    "name": "Speakers Item 48",
+    "price": 12115,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_49",
+    "name": "Accessories Item 49",
+    "price": 38686,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_50",
+    "name": "Smartphones Item 50",
+    "price": 48999,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_51",
+    "name": "Laptops Item 51",
+    "price": 13283,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_52",
+    "name": "Headphones Item 52",
+    "price": 15618,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_53",
+    "name": "Speakers Item 53",
+    "price": 4277,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_54",
+    "name": "Accessories Item 54",
+    "price": 22502,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_55",
+    "name": "Smartphones Item 55",
+    "price": 30463,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_56",
+    "name": "Laptops Item 56",
+    "price": 6022,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_57",
+    "name": "Headphones Item 57",
+    "price": 49842,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_58",
+    "name": "Speakers Item 58",
+    "price": 3136,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_59",
+    "name": "Accessories Item 59",
+    "price": 45166,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_60",
+    "name": "Smartphones Item 60",
+    "price": 27298,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_61",
+    "name": "Laptops Item 61",
+    "price": 6947,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_62",
+    "name": "Headphones Item 62",
+    "price": 46849,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_63",
+    "name": "Speakers Item 63",
+    "price": 15196,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_64",
+    "name": "Accessories Item 64",
+    "price": 14710,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_65",
+    "name": "Smartphones Item 65",
+    "price": 44644,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_66",
+    "name": "Laptops Item 66",
+    "price": 25471,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_67",
+    "name": "Headphones Item 67",
+    "price": 37813,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_68",
+    "name": "Speakers Item 68",
+    "price": 43795,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_69",
+    "name": "Accessories Item 69",
+    "price": 1196,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_70",
+    "name": "Smartphones Item 70",
+    "price": 5972,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_71",
+    "name": "Laptops Item 71",
+    "price": 9093,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_72",
+    "name": "Headphones Item 72",
+    "price": 46526,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_73",
+    "name": "Speakers Item 73",
+    "price": 39272,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_74",
+    "name": "Accessories Item 74",
+    "price": 33516,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_75",
+    "name": "Smartphones Item 75",
+    "price": 5359,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_76",
+    "name": "Laptops Item 76",
+    "price": 11053,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_77",
+    "name": "Headphones Item 77",
+    "price": 37974,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_78",
+    "name": "Speakers Item 78",
+    "price": 31462,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_79",
+    "name": "Accessories Item 79",
+    "price": 40512,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_80",
+    "name": "Smartphones Item 80",
+    "price": 40616,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_81",
+    "name": "Laptops Item 81",
+    "price": 1958,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_82",
+    "name": "Headphones Item 82",
+    "price": 7629,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_83",
+    "name": "Speakers Item 83",
+    "price": 33273,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_84",
+    "name": "Accessories Item 84",
+    "price": 22427,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_85",
+    "name": "Smartphones Item 85",
+    "price": 4109,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_86",
+    "name": "Laptops Item 86",
+    "price": 1982,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_87",
+    "name": "Headphones Item 87",
+    "price": 44364,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_88",
+    "name": "Speakers Item 88",
+    "price": 23564,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_89",
+    "name": "Accessories Item 89",
+    "price": 6697,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_90",
+    "name": "Smartphones Item 90",
+    "price": 50436,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_91",
+    "name": "Laptops Item 91",
+    "price": 864,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_92",
+    "name": "Headphones Item 92",
+    "price": 36002,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_93",
+    "name": "Speakers Item 93",
+    "price": 26190,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_94",
+    "name": "Accessories Item 94",
+    "price": 8722,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_95",
+    "name": "Smartphones Item 95",
+    "price": 3593,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_96",
+    "name": "Laptops Item 96",
+    "price": 12475,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_97",
+    "name": "Headphones Item 97",
+    "price": 21869,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_98",
+    "name": "Speakers Item 98",
+    "price": 23204,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_99",
+    "name": "Accessories Item 99",
+    "price": 7054,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_100",
+    "name": "Smartphones Item 100",
+    "price": 8202,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_101",
+    "name": "Laptops Item 101",
+    "price": 46810,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_102",
+    "name": "Headphones Item 102",
+    "price": 22859,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_103",
+    "name": "Speakers Item 103",
+    "price": 45356,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_104",
+    "name": "Accessories Item 104",
+    "price": 11590,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_105",
+    "name": "Smartphones Item 105",
+    "price": 27390,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_106",
+    "name": "Laptops Item 106",
+    "price": 5738,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_107",
+    "name": "Headphones Item 107",
+    "price": 24784,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_108",
+    "name": "Speakers Item 108",
+    "price": 43495,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_109",
+    "name": "Accessories Item 109",
+    "price": 25174,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_110",
+    "name": "Smartphones Item 110",
+    "price": 31374,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_111",
+    "name": "Laptops Item 111",
+    "price": 1487,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_112",
+    "name": "Headphones Item 112",
+    "price": 46462,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_113",
+    "name": "Speakers Item 113",
+    "price": 34654,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_114",
+    "name": "Accessories Item 114",
+    "price": 48901,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_115",
+    "name": "Smartphones Item 115",
+    "price": 2826,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_116",
+    "name": "Laptops Item 116",
+    "price": 33178,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_117",
+    "name": "Headphones Item 117",
+    "price": 21567,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_118",
+    "name": "Speakers Item 118",
+    "price": 20323,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_119",
+    "name": "Accessories Item 119",
+    "price": 22736,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_120",
+    "name": "Smartphones Item 120",
+    "price": 7950,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_121",
+    "name": "Laptops Item 121",
+    "price": 22957,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_122",
+    "name": "Headphones Item 122",
+    "price": 25459,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_123",
+    "name": "Speakers Item 123",
+    "price": 14631,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_124",
+    "name": "Accessories Item 124",
+    "price": 26517,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_125",
+    "name": "Smartphones Item 125",
+    "price": 15708,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_126",
+    "name": "Laptops Item 126",
+    "price": 47108,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_127",
+    "name": "Headphones Item 127",
+    "price": 47150,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_128",
+    "name": "Speakers Item 128",
+    "price": 17088,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_129",
+    "name": "Accessories Item 129",
+    "price": 11850,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_130",
+    "name": "Smartphones Item 130",
+    "price": 47595,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_131",
+    "name": "Laptops Item 131",
+    "price": 49677,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_132",
+    "name": "Headphones Item 132",
+    "price": 5887,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_133",
+    "name": "Speakers Item 133",
+    "price": 37388,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_134",
+    "name": "Accessories Item 134",
+    "price": 8247,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_135",
+    "name": "Smartphones Item 135",
+    "price": 15852,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_136",
+    "name": "Laptops Item 136",
+    "price": 3813,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_137",
+    "name": "Headphones Item 137",
+    "price": 31518,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_138",
+    "name": "Speakers Item 138",
+    "price": 1893,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_139",
+    "name": "Accessories Item 139",
+    "price": 41973,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_140",
+    "name": "Smartphones Item 140",
+    "price": 24599,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_141",
+    "name": "Laptops Item 141",
+    "price": 47112,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_142",
+    "name": "Headphones Item 142",
+    "price": 37882,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_143",
+    "name": "Speakers Item 143",
+    "price": 37403,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_144",
+    "name": "Accessories Item 144",
+    "price": 9401,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_145",
+    "name": "Smartphones Item 145",
+    "price": 49877,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_146",
+    "name": "Laptops Item 146",
+    "price": 36648,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_147",
+    "name": "Headphones Item 147",
+    "price": 13614,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_148",
+    "name": "Speakers Item 148",
+    "price": 27868,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_149",
+    "name": "Accessories Item 149",
+    "price": 13336,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_150",
+    "name": "Smartphones Item 150",
+    "price": 13125,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_151",
+    "name": "Laptops Item 151",
+    "price": 35616,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_152",
+    "name": "Headphones Item 152",
+    "price": 4416,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_153",
+    "name": "Speakers Item 153",
+    "price": 11653,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_154",
+    "name": "Accessories Item 154",
+    "price": 49066,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_155",
+    "name": "Smartphones Item 155",
+    "price": 16877,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_156",
+    "name": "Laptops Item 156",
+    "price": 41707,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_157",
+    "name": "Headphones Item 157",
+    "price": 40151,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_158",
+    "name": "Speakers Item 158",
+    "price": 46959,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_159",
+    "name": "Accessories Item 159",
+    "price": 34202,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_160",
+    "name": "Smartphones Item 160",
+    "price": 2828,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_161",
+    "name": "Laptops Item 161",
+    "price": 25497,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_162",
+    "name": "Headphones Item 162",
+    "price": 7879,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_163",
+    "name": "Speakers Item 163",
+    "price": 42594,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_164",
+    "name": "Accessories Item 164",
+    "price": 28612,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_165",
+    "name": "Smartphones Item 165",
+    "price": 4698,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_166",
+    "name": "Laptops Item 166",
+    "price": 27818,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_167",
+    "name": "Headphones Item 167",
+    "price": 37815,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_168",
+    "name": "Speakers Item 168",
+    "price": 15534,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_169",
+    "name": "Accessories Item 169",
+    "price": 6195,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_170",
+    "name": "Smartphones Item 170",
+    "price": 24621,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_171",
+    "name": "Laptops Item 171",
+    "price": 41405,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_172",
+    "name": "Headphones Item 172",
+    "price": 48080,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_173",
+    "name": "Speakers Item 173",
+    "price": 16323,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_174",
+    "name": "Accessories Item 174",
+    "price": 11177,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_175",
+    "name": "Smartphones Item 175",
+    "price": 4068,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_176",
+    "name": "Laptops Item 176",
+    "price": 25875,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_177",
+    "name": "Headphones Item 177",
+    "price": 17863,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_178",
+    "name": "Speakers Item 178",
+    "price": 43710,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_179",
+    "name": "Accessories Item 179",
+    "price": 49140,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_180",
+    "name": "Smartphones Item 180",
+    "price": 2050,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_181",
+    "name": "Laptops Item 181",
+    "price": 33400,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_182",
+    "name": "Headphones Item 182",
+    "price": 34709,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_183",
+    "name": "Speakers Item 183",
+    "price": 13970,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_184",
+    "name": "Accessories Item 184",
+    "price": 44637,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_185",
+    "name": "Smartphones Item 185",
+    "price": 34440,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_186",
+    "name": "Laptops Item 186",
+    "price": 29965,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_187",
+    "name": "Headphones Item 187",
+    "price": 41769,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_188",
+    "name": "Speakers Item 188",
+    "price": 20387,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_189",
+    "name": "Accessories Item 189",
+    "price": 13896,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_190",
+    "name": "Smartphones Item 190",
+    "price": 22798,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_191",
+    "name": "Laptops Item 191",
+    "price": 46490,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_192",
+    "name": "Headphones Item 192",
+    "price": 45568,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_193",
+    "name": "Speakers Item 193",
+    "price": 41794,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_194",
+    "name": "Accessories Item 194",
+    "price": 47877,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "croma_item_chennai_195",
+    "name": "Smartphones Item 195",
+    "price": 24687,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_196",
+    "name": "Laptops Item 196",
+    "price": 47421,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_197",
+    "name": "Headphones Item 197",
+    "price": 23815,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_198",
+    "name": "Speakers Item 198",
+    "price": 28369,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_199",
+    "name": "Accessories Item 199",
+    "price": 6178,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "croma_item_chennai_200",
+    "name": "Smartphones Item 200",
+    "price": 36975,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  }
+]

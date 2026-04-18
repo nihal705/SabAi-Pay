@@ -1,0 +1,282 @@
+[
+  {
+    "id": "starbucks_item_ahmedabad_1",
+    "name": "Cappuccino (Hot)",
+    "price": 109,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_2",
+    "name": "Espresso (Cold)",
+    "price": 238,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_3",
+    "name": "Americano (Cold)",
+    "price": 201,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_4",
+    "name": "Mocha (Hot)",
+    "price": 264,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_5",
+    "name": "Cold Coffee (Cold)",
+    "price": 236,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_6",
+    "name": "Latte (Cold)",
+    "price": 198,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_7",
+    "name": "Cappuccino (Cold)",
+    "price": 129,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_8",
+    "name": "Espresso (Cold)",
+    "price": 235,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_9",
+    "name": "Americano (Cold)",
+    "price": 241,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_10",
+    "name": "Mocha (Cold)",
+    "price": 259,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_11",
+    "name": "Cold Coffee (Cold)",
+    "price": 114,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_12",
+    "name": "Latte (Cold)",
+    "price": 111,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_13",
+    "name": "Cappuccino (Cold)",
+    "price": 209,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_14",
+    "name": "Espresso (Cold)",
+    "price": 97,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_15",
+    "name": "Americano (Hot)",
+    "price": 94,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_16",
+    "name": "Mocha (Cold)",
+    "price": 82,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_17",
+    "name": "Cold Coffee (Cold)",
+    "price": 90,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_18",
+    "name": "Latte (Hot)",
+    "price": 98,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_19",
+    "name": "Cappuccino (Hot)",
+    "price": 208,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_20",
+    "name": "Espresso (Cold)",
+    "price": 137,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_21",
+    "name": "Americano (Cold)",
+    "price": 149,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_22",
+    "name": "Mocha (Cold)",
+    "price": 258,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_23",
+    "name": "Cold Coffee (Cold)",
+    "price": 225,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_24",
+    "name": "Latte (Cold)",
+    "price": 175,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_25",
+    "name": "Cappuccino (Cold)",
+    "price": 181,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_26",
+    "name": "Espresso (Cold)",
+    "price": 200,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_27",
+    "name": "Americano (Cold)",
+    "price": 216,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_28",
+    "name": "Mocha (Hot)",
+    "price": 203,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_29",
+    "name": "Cold Coffee (Cold)",
+    "price": 161,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_30",
+    "name": "Latte (Cold)",
+    "price": 173,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_31",
+    "name": "Cappuccino (Cold)",
+    "price": 95,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_32",
+    "name": "Espresso (Cold)",
+    "price": 102,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_33",
+    "name": "Americano (Cold)",
+    "price": 181,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_34",
+    "name": "Mocha (Cold)",
+    "price": 117,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_35",
+    "name": "Cold Coffee (Cold)",
+    "price": 148,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_36",
+    "name": "Latte (Cold)",
+    "price": 140,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_37",
+    "name": "Cappuccino (Hot)",
+    "price": 113,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_38",
+    "name": "Espresso (Cold)",
+    "price": 94,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_39",
+    "name": "Americano (Cold)",
+    "price": 264,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_ahmedabad_40",
+    "name": "Mocha (Cold)",
+    "price": 232,
+    "category": "Beverages",
+    "isVeg": true
+  }
+]

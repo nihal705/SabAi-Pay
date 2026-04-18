@@ -1,0 +1,212 @@
+[
+  {
+    "id": "mcdonalds_item_chennai_1",
+    "name": "McChicken",
+    "price": 355,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_2",
+    "name": "McVeggie 1",
+    "price": 328,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_3",
+    "name": "Fries",
+    "price": 252,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_4",
+    "name": "Big Mac",
+    "price": 147,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_5",
+    "name": "McChicken 2",
+    "price": 116,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_6",
+    "name": "McVeggie",
+    "price": 324,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_7",
+    "name": "Fries 8",
+    "price": 184,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_8",
+    "name": "Big Mac 4",
+    "price": 141,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_9",
+    "name": "McChicken 5",
+    "price": 172,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_10",
+    "name": "McVeggie 9",
+    "price": 396,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_11",
+    "name": "Fries 7",
+    "price": 496,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_12",
+    "name": "Big Mac",
+    "price": 296,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_13",
+    "name": "McChicken",
+    "price": 354,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_14",
+    "name": "McVeggie",
+    "price": 468,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_15",
+    "name": "Fries 6",
+    "price": 336,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_16",
+    "name": "Big Mac 2",
+    "price": 222,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_17",
+    "name": "McChicken",
+    "price": 374,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_18",
+    "name": "McVeggie 6",
+    "price": 290,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_19",
+    "name": "Fries 9",
+    "price": 411,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_20",
+    "name": "Big Mac 10",
+    "price": 105,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_21",
+    "name": "McChicken",
+    "price": 108,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_22",
+    "name": "McVeggie",
+    "price": 394,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_23",
+    "name": "Fries",
+    "price": 296,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_24",
+    "name": "Big Mac 9",
+    "price": 494,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_25",
+    "name": "McChicken",
+    "price": 122,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_26",
+    "name": "McVeggie",
+    "price": 332,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_27",
+    "name": "Fries",
+    "price": 305,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_28",
+    "name": "Big Mac",
+    "price": 155,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "mcdonalds_item_chennai_29",
+    "name": "McChicken",
+    "price": 365,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "mcdonalds_item_chennai_30",
+    "name": "McVeggie",
+    "price": 478,
+    "category": "Main",
+    "isVeg": true
+  }
+]

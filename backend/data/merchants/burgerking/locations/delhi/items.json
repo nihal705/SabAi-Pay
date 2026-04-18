@@ -1,0 +1,272 @@
+[
+  {
+    "id": "burgerking_item_delhi_1",
+    "name": "Chicken Whopper (3\")",
+    "price": 80,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_2",
+    "name": "Veg Whopper",
+    "price": 202,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_3",
+    "name": "Crispy Chicken (8\")",
+    "price": 222,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_4",
+    "name": "French Fries",
+    "price": 225,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_5",
+    "name": "Onion Rings",
+    "price": 175,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_6",
+    "name": "Chicken Nuggets",
+    "price": 228,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_7",
+    "name": "Milkshake",
+    "price": 143,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_8",
+    "name": "Whopper",
+    "price": 85,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_9",
+    "name": "Chicken Whopper",
+    "price": 94,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_10",
+    "name": "Veg Whopper (7\")",
+    "price": 111,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_11",
+    "name": "Crispy Chicken (3\")",
+    "price": 152,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_12",
+    "name": "French Fries",
+    "price": 204,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_13",
+    "name": "Onion Rings",
+    "price": 97,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_14",
+    "name": "Chicken Nuggets (2\")",
+    "price": 189,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_15",
+    "name": "Milkshake",
+    "price": 135,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_16",
+    "name": "Whopper (5\")",
+    "price": 56,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_17",
+    "name": "Chicken Whopper",
+    "price": 231,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_18",
+    "name": "Veg Whopper",
+    "price": 100,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_19",
+    "name": "Crispy Chicken",
+    "price": 241,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_20",
+    "name": "French Fries",
+    "price": 168,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_21",
+    "name": "Onion Rings",
+    "price": 143,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_22",
+    "name": "Chicken Nuggets",
+    "price": 142,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_23",
+    "name": "Milkshake",
+    "price": 84,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_24",
+    "name": "Whopper",
+    "price": 108,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_25",
+    "name": "Chicken Whopper",
+    "price": 123,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_26",
+    "name": "Veg Whopper",
+    "price": 55,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_27",
+    "name": "Crispy Chicken",
+    "price": 224,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_28",
+    "name": "French Fries",
+    "price": 167,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_29",
+    "name": "Onion Rings (10\")",
+    "price": 151,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_delhi_30",
+    "name": "Chicken Nuggets",
+    "price": 243,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

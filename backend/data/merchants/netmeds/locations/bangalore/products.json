@@ -1,0 +1,506 @@
+[
+  {
+    "id": "netmeds_prod_bangalore_1",
+    "name": "Paracetamol",
+    "price": 181,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_2",
+    "name": "Paracetamol (27 tablets)",
+    "price": 94,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_3",
+    "name": "Dolo 650",
+    "price": 52,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_4",
+    "name": "Dolo 650 (15 tablets)",
+    "price": 114,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_5",
+    "name": "Crocin",
+    "price": 181,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_6",
+    "name": "Crocin (18 tablets)",
+    "price": 177,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_7",
+    "name": "Aspirin",
+    "price": 134,
+    "category": "Medicine",
+    "requiresPrescription": true,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_8",
+    "name": "Aspirin (18 tablets)",
+    "price": 35,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_9",
+    "name": "Ibuprofen",
+    "price": 218,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_10",
+    "name": "Ibuprofen (27 tablets)",
+    "price": 180,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_11",
+    "name": "Cetrizine",
+    "price": 83,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_12",
+    "name": "Cetrizine (37 tablets)",
+    "price": 72,
+    "category": "Medicine",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_13",
+    "name": "Vitamin C",
+    "price": 573,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_14",
+    "name": "Vitamin C (28 tablets)",
+    "price": 194,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_15",
+    "name": "Vitamin D3",
+    "price": 126,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_16",
+    "name": "Vitamin D3 (13 tablets)",
+    "price": 449,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_17",
+    "name": "Vitamin B12",
+    "price": 503,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_18",
+    "name": "Vitamin B12 (10 tablets)",
+    "price": 381,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_19",
+    "name": "Calcium Tablets",
+    "price": 314,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_20",
+    "name": "Calcium Tablets (33 tablets)",
+    "price": 442,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_21",
+    "name": "Iron Supplement",
+    "price": 596,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_22",
+    "name": "Iron Supplement (31 tablets)",
+    "price": 304,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_23",
+    "name": "Multivitamin",
+    "price": 287,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_24",
+    "name": "Multivitamin (25 tablets)",
+    "price": 236,
+    "category": "Vitamins",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_25",
+    "name": "Hand Sanitizer",
+    "price": 278,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_26",
+    "name": "Hand Sanitizer (21 tablets)",
+    "price": 334,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_27",
+    "name": "Face Mask",
+    "price": 267,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_28",
+    "name": "Face Mask (16 tablets)",
+    "price": 119,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_29",
+    "name": "Thermometer",
+    "price": 443,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_30",
+    "name": "Thermometer (11 tablets)",
+    "price": 389,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_31",
+    "name": "Bandages",
+    "price": 71,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_32",
+    "name": "Bandages (15 tablets)",
+    "price": 302,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_33",
+    "name": "Cotton",
+    "price": 325,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_34",
+    "name": "Cotton (15 tablets)",
+    "price": 418,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_35",
+    "name": "First Aid Kit",
+    "price": 222,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_36",
+    "name": "First Aid Kit (20 tablets)",
+    "price": 367,
+    "category": "Personal Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_37",
+    "name": "Diapers",
+    "price": 404,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_38",
+    "name": "Diapers (13 tablets)",
+    "price": 262,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_39",
+    "name": "Baby Cream",
+    "price": 401,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_40",
+    "name": "Baby Cream (34 tablets)",
+    "price": 385,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_41",
+    "name": "Baby Oil",
+    "price": 226,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_42",
+    "name": "Baby Oil (32 tablets)",
+    "price": 413,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_43",
+    "name": "Baby Shampoo",
+    "price": 137,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_44",
+    "name": "Baby Shampoo (19 tablets)",
+    "price": 381,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_45",
+    "name": "Baby Powder",
+    "price": 172,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_46",
+    "name": "Baby Powder (39 tablets)",
+    "price": 347,
+    "category": "Baby Care",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_47",
+    "name": "Ensure",
+    "price": 360,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_48",
+    "name": "Ensure (17 tablets)",
+    "price": 274,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_49",
+    "name": "Horlicks",
+    "price": 425,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_50",
+    "name": "Horlicks (21 tablets)",
+    "price": 124,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_51",
+    "name": "Boost",
+    "price": 101,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_52",
+    "name": "Boost (18 tablets)",
+    "price": 61,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_53",
+    "name": "Complan",
+    "price": 307,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_54",
+    "name": "Complan (38 tablets)",
+    "price": 368,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_55",
+    "name": "Protinex",
+    "price": 430,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": false,
+    "imageUrl": "/images/items/naan.jpg"
+  },
+  {
+    "id": "netmeds_prod_bangalore_56",
+    "name": "Protinex (24 tablets)",
+    "price": 52,
+    "category": "Health Drinks",
+    "requiresPrescription": false,
+    "inStock": true,
+    "imageUrl": "/images/items/naan.jpg"
+  }
+]

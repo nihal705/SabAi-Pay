@@ -1,0 +1,272 @@
+[
+  {
+    "id": "dominos_item_delhi_1",
+    "name": "Pepperoni Pizza",
+    "price": 630,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_2",
+    "name": "Farmhouse Pizza",
+    "price": 464,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_3",
+    "name": "Veg Extravaganza",
+    "price": 115,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_4",
+    "name": "Chicken Dominator",
+    "price": 174,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_5",
+    "name": "Garlic Bread",
+    "price": 173,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_6",
+    "name": "Cheese Burst",
+    "price": 241,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_7",
+    "name": "Stuffed Crust",
+    "price": 89,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_8",
+    "name": "Margherita Pizza (1\")",
+    "price": 314,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_9",
+    "name": "Pepperoni Pizza",
+    "price": 485,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_10",
+    "name": "Farmhouse Pizza",
+    "price": 459,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_11",
+    "name": "Veg Extravaganza",
+    "price": 232,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_12",
+    "name": "Chicken Dominator (3\")",
+    "price": 143,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_13",
+    "name": "Garlic Bread (6\")",
+    "price": 59,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_14",
+    "name": "Cheese Burst",
+    "price": 204,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_15",
+    "name": "Stuffed Crust",
+    "price": 117,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_16",
+    "name": "Margherita Pizza",
+    "price": 392,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_17",
+    "name": "Pepperoni Pizza (5\")",
+    "price": 634,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_18",
+    "name": "Farmhouse Pizza",
+    "price": 464,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_19",
+    "name": "Veg Extravaganza (2\")",
+    "price": 192,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_20",
+    "name": "Chicken Dominator",
+    "price": 55,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_21",
+    "name": "Garlic Bread",
+    "price": 222,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_22",
+    "name": "Cheese Burst (4\")",
+    "price": 68,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_23",
+    "name": "Stuffed Crust",
+    "price": 153,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_24",
+    "name": "Margherita Pizza",
+    "price": 468,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_25",
+    "name": "Pepperoni Pizza",
+    "price": 249,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_26",
+    "name": "Farmhouse Pizza",
+    "price": 312,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_27",
+    "name": "Veg Extravaganza",
+    "price": 233,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_28",
+    "name": "Chicken Dominator (5\")",
+    "price": 139,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_29",
+    "name": "Garlic Bread",
+    "price": 189,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_delhi_30",
+    "name": "Cheese Burst",
+    "price": 112,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

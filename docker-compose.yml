@@ -1,0 +1,111 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: sabai_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: sabai_pay
+      MYSQL_USER: sabai_user
+      MYSQL_PASSWORD: sabai_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - sabai_network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: sabai_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - sabai_network
+    command: redis-server --appendonly yes
+
+  ml_service:
+    build: ./ml_service
+    container_name: sabai_ml
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      CUDA_VISIBLE_DEVICES: ${CUDA_VISIBLE_DEVICES:-}
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./ml_service:/app
+      - ml_models:/app/models
+    networks:
+      - sabai_network
+    depends_on:
+      - redis
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  backend:
+    build: ./backend
+    container_name: sabai_backend
+    environment:
+      NODE_ENV: production
+      DB_HOST: mysql
+      DB_USER: sabai_user
+      DB_PASSWORD: sabai_password
+      DB_NAME: sabai_pay
+      REDIS_HOST: redis
+      ML_API_URL: http://ml_service:5001
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
+      JWT_SECRET: ${JWT_SECRET}
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    networks:
+      - sabai_network
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      ml_service:
+        condition: service_started
+
+  frontend:
+    build: ./frontend
+    container_name: sabai_frontend
+    environment:
+      REACT_APP_API_URL: http://localhost:5000/api
+      REACT_APP_ML_API_URL: http://localhost:5001
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - sabai_network
+    depends_on:
+      - backend
+
+volumes:
+  mysql_data:
+  redis_data:
+  ml_models:
+
+networks:
+  sabai_network:
+    driver: bridge

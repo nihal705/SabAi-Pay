@@ -1,0 +1,222 @@
+[
+  {
+    "id": "swiggy_leopold_cafe_mum",
+    "name": "Leopold Cafe",
+    "cuisine": "Cafe",
+    "rating": 4.3,
+    "ratingCount": 12500,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 800,
+    "area": "Colaba",
+    "landmark": "Colaba Causeway",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Colaba",
+      "address": "Leopold Cafe, Colaba, Mumbai",
+      "coordinates": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    "imageUrl": "/images/restaurants/leopold.jpg"
+  },
+  {
+    "id": "swiggy_bademiyan_mum",
+    "name": "Bademiyan",
+    "cuisine": "Mughlai",
+    "rating": 4.4,
+    "ratingCount": 9800,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 700,
+    "area": "Colaba",
+    "landmark": "Taj Mahal Hotel",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Colaba",
+      "address": "Bademiyan, Colaba, Mumbai",
+      "coordinates": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    "imageUrl": "/images/restaurants/bademiyan.jpg"
+  },
+  {
+    "id": "swiggy_britannia_mum",
+    "name": "Britannia & Co.",
+    "cuisine": "Parsi",
+    "rating": 4.5,
+    "ratingCount": 7200,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 600,
+    "area": "Ballard Estate",
+    "landmark": "Near Regal Cinema",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Ballard Estate",
+      "address": "Britannia & Co., Ballard Estate, Mumbai",
+      "coordinates": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    "imageUrl": "/images/restaurants/britannia.jpg"
+  },
+  {
+    "id": "swiggy_cafe_madras_mum",
+    "name": "Cafe Madras",
+    "cuisine": "South Indian",
+    "rating": 4.4,
+    "ratingCount": 8900,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 300,
+    "area": "Matunga",
+    "landmark": "King's Circle",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Matunga",
+      "address": "Cafe Madras, Matunga, Mumbai",
+      "coordinates": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    "imageUrl": "/images/restaurants/cafe.jpg"
+  },
+  {
+    "id": "swiggy_gajalee_mum",
+    "name": "Gajalee",
+    "cuisine": "Seafood",
+    "rating": 4.3,
+    "ratingCount": 6500,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 900,
+    "area": "Juhu",
+    "landmark": "Juhu Beach",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Juhu",
+      "address": "Gajalee, Juhu, Mumbai",
+      "coordinates": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    "imageUrl": "/images/restaurants/gajalee.jpg"
+  },
+  {
+    "id": "swiggy_trishna_mum",
+    "name": "Trishna",
+    "cuisine": "Seafood",
+    "rating": 4.4,
+    "ratingCount": 7800,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 1000,
+    "area": "Fort",
+    "landmark": "Kala Ghoda",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Fort",
+      "address": "Trishna, Fort, Mumbai",
+      "coordinates": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    "imageUrl": "/images/restaurants/trishna.jpg"
+  },
+  {
+    "id": "swiggy_khyber_mum",
+    "name": "Khyber",
+    "cuisine": "Mughlai",
+    "rating": 4.3,
+    "ratingCount": 6200,
+    "deliveryTime": "40-55 min",
+    "priceForTwo": 850,
+    "area": "Fort",
+    "landmark": "D.N. Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Fort",
+      "address": "Khyber, Fort, Mumbai",
+      "coordinates": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    "imageUrl": "/images/restaurants/khyber.jpg"
+  },
+  {
+    "id": "swiggy_pancham_puri_mum",
+    "name": "Pancham Puriwala",
+    "cuisine": "Vegetarian",
+    "rating": 4.2,
+    "ratingCount": 5400,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 250,
+    "area": "Fort",
+    "landmark": "PNB Building",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Fort",
+      "address": "Pancham Puriwala, Fort, Mumbai",
+      "coordinates": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    "imageUrl": "/images/restaurants/pancham.jpg"
+  },
+  {
+    "id": "swiggy_santosh_bhelpuri_house_mum",
+    "name": "Santosh Bhelpuri House",
+    "cuisine": "Street Food",
+    "rating": 4.1,
+    "ratingCount": 4300,
+    "deliveryTime": "15-25 min",
+    "priceForTwo": 150,
+    "area": "Matunga",
+    "landmark": "Shivaji Park",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Matunga",
+      "address": "Santosh Bhelpuri House, Matunga, Mumbai",
+      "coordinates": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    "imageUrl": "/images/restaurants/santosh.jpg"
+  },
+  {
+    "id": "swiggy_bagdadi_mum",
+    "name": "Bagdadi",
+    "cuisine": "Mughlai",
+    "rating": 4.2,
+    "ratingCount": 5800,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 500,
+    "area": "Bandra",
+    "landmark": "Bandra West",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Bandra",
+      "address": "Bagdadi, Bandra, Mumbai",
+      "coordinates": {
+        "lat": 19.076,
+        "lng": 72.8777
+      }
+    },
+    "imageUrl": "/images/restaurants/bagdadi.jpg"
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "ccd_item_mumbai_1",
+    "name": "Cappuccino",
+    "price": 172,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_2",
+    "name": "Espresso (Cold)",
+    "price": 133,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_3",
+    "name": "Americano",
+    "price": 180,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_4",
+    "name": "Mocha",
+    "price": 142,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_5",
+    "name": "Cold Coffee",
+    "price": 121,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_6",
+    "name": "Frappuccino (Hot)",
+    "price": 200,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_7",
+    "name": "Hot Chocolate (Cold)",
+    "price": 237,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_8",
+    "name": "Caffè Latte",
+    "price": 82,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_9",
+    "name": "Cappuccino (Hot)",
+    "price": 119,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_10",
+    "name": "Espresso (Cold)",
+    "price": 231,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_11",
+    "name": "Americano",
+    "price": 124,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_12",
+    "name": "Mocha",
+    "price": 219,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_13",
+    "name": "Cold Coffee",
+    "price": 126,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_14",
+    "name": "Frappuccino",
+    "price": 144,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_15",
+    "name": "Hot Chocolate",
+    "price": 240,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_16",
+    "name": "Caffè Latte",
+    "price": 224,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_17",
+    "name": "Cappuccino",
+    "price": 261,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_18",
+    "name": "Espresso",
+    "price": 164,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_19",
+    "name": "Americano",
+    "price": 182,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_20",
+    "name": "Mocha (Cold)",
+    "price": 176,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_21",
+    "name": "Cold Coffee",
+    "price": 155,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_22",
+    "name": "Frappuccino",
+    "price": 104,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_23",
+    "name": "Hot Chocolate (Hot)",
+    "price": 100,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_24",
+    "name": "Caffè Latte",
+    "price": 199,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_25",
+    "name": "Muffin",
+    "price": 131,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_26",
+    "name": "Brownie",
+    "price": 169,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_27",
+    "name": "Cookie",
+    "price": 113,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_28",
+    "name": "Sandwich",
+    "price": 81,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_29",
+    "name": "Cake Slice",
+    "price": 165,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_30",
+    "name": "Bagel",
+    "price": 122,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_31",
+    "name": "Donut",
+    "price": 131,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_32",
+    "name": "Croissant",
+    "price": 192,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_33",
+    "name": "Muffin",
+    "price": 176,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_34",
+    "name": "Brownie",
+    "price": 142,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_35",
+    "name": "Cookie",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_36",
+    "name": "Sandwich",
+    "price": 130,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_37",
+    "name": "Cake Slice",
+    "price": 83,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_38",
+    "name": "Bagel",
+    "price": 169,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_39",
+    "name": "Donut",
+    "price": 173,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_mumbai_40",
+    "name": "Croissant",
+    "price": 127,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

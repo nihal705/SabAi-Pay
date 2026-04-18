@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Apple iPhone 15 (128GB)",
+    "price": 79900,
+    "category": "Smartphones",
+    "brand": "Apple",
+    "rating": 4.7,
+    "isPopular": true,
+    "description": "6.1-inch Super Retina XDR display, A16 Bionic chip",
+    "image": "/images/items/iphone.jpg"
+  },
+  {
+    "name": "Samsung Galaxy S24 (256GB)",
+    "price": 74999,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "rating": 4.6,
+    "isPopular": true,
+    "description": "6.2-inch Dynamic AMOLED, Snapdragon 8 Gen 3",
+    "image": "/images/items/samsung-galaxy.jpg"
+  },
+  {
+    "name": "OnePlus 12 (256GB)",
+    "price": 64999,
+    "category": "Smartphones",
+    "brand": "OnePlus",
+    "rating": 4.5,
+    "isPopular": true,
+    "description": "6.82-inch Fluid AMOLED, Snapdragon 8 Gen 3",
+    "image": "/images/items/oneplus-phone.jpg"
+  },
+  {
+    "name": "Google Pixel 8 (128GB)",
+    "price": 75999,
+    "category": "Smartphones",
+    "brand": "Google",
+    "rating": 4.6,
+    "isPopular": true,
+    "description": "6.2-inch OLED, Google Tensor G3",
+    "image": "/images/items/google-pixel.jpg"
+  },
+  {
+    "name": "MacBook Pro 14 (M3)",
+    "price": 169900,
+    "category": "Laptops",
+    "brand": "Apple",
+    "rating": 4.8,
+    "isPopular": true,
+    "description": "14-inch Liquid Retina XDR, M3 chip",
+    "image": "/images/items/macbook.jpg"
+  },
+  {
+    "name": "Dell XPS 15",
+    "price": 159990,
+    "category": "Laptops",
+    "brand": "Dell",
+    "rating": 4.7,
+    "isPopular": true,
+    "description": "15.6-inch OLED, Intel Core i9",
+    "image": "/images/items/dell-laptop.jpg"
+  },
+  {
+    "name": "HP Pavilion 15",
+    "price": 74990,
+    "category": "Laptops",
+    "brand": "HP",
+    "rating": 4.5,
+    "isPopular": true,
+    "description": "15.6-inch FHD, AMD Ryzen 7",
+    "image": "/images/items/hp-laptop.jpg"
+  },
+  {
+    "name": "Sony WH-1000XM5",
+    "price": 29990,
+    "category": "Headphones",
+    "brand": "Sony",
+    "rating": 4.8,
+    "isPopular": true,
+    "description": "Wireless noise cancelling headphones",
+    "image": "/images/items/sony-headphones.jpg"
+  },
+  {
+    "name": "Apple AirPods Pro 2",
+    "price": 24900,
+    "category": "Headphones",
+    "brand": "Apple",
+    "rating": 4.7,
+    "isPopular": true,
+    "description": "Active noise cancellation, Spatial audio",
+    "image": "/images/items/apple-airpods.jpg"
+  },
+  {
+    "name": "Boat Nirvana 525",
+    "price": 3999,
+    "category": "Headphones",
+    "brand": "Boat",
+    "rating": 4.3,
+    "isPopular": true,
+    "description": "Wireless neckband headphones",
+    "image": "/images/items/boat-headphones.jpg"
+  },
+  {
+    "name": "JBL Flip 6 Speaker",
+    "price": 9999,
+    "category": "Speakers",
+    "brand": "JBL",
+    "rating": 4.6,
+    "isPopular": true,
+    "description": "Portable Bluetooth speaker",
+    "image": "/images/items/jbl-speaker.jpg"
+  },
+  {
+    "name": "Samsung 55-inch 4K TV",
+    "price": 54999,
+    "category": "TVs",
+    "brand": "Samsung",
+    "rating": 4.5,
+    "isPopular": true,
+    "description": "55-inch 4K UHD Smart TV",
+    "image": "/images/items/default-electronics.jpg"
+  },
+  {
+    "name": "Men's Cotton T-Shirt",
+    "price": 499,
+    "category": "Men",
+    "brand": "Roadster",
+    "rating": 4.2,
+    "isPopular": true,
+    "description": "100% cotton, round neck",
+    "image": "/images/items/men-tshirt.jpg"
+  },
+  {
+    "name": "Men's Slim Fit Jeans",
+    "price": 1299,
+    "category": "Men",
+    "brand": "Levi's",
+    "rating": 4.4,
+    "isPopular": true,
+    "description": "Slim fit, stretchable denim",
+    "image": "/images/items/men-jeans.jpg"
+  },
+  {
+    "name": "Men's Casual Shirt",
+    "price": 899,
+    "category": "Men",
+    "brand": "Louis Philippe",
+    "rating": 4.3,
+    "isPopular": true,
+    "description": "Cotton casual shirt",
+    "image": "/images/items/men-shirt.jpg"
+  },
+  {
+    "name": "Women's A-Line Kurti",
+    "price": 799,
+    "category": "Women",
+    "brand": "Anouk",
+    "rating": 4.3,
+    "isPopular": true,
+    "description": "Cotton kurti with embroidery",
+    "image": "/images/items/women-kurti.jpg"
+  },
+  {
+    "name": "Women's Saree",
+    "price": 1999,
+    "category": "Women",
+    "brand": "Biba",
+    "rating": 4.4,
+    "isPopular": true,
+    "description": "Banarasi silk saree",
+    "image": "/images/items/women-saree.jpg"
+  },
+  {
+    "name": "Women's High Heels",
+    "price": 1299,
+    "category": "Women",
+    "brand": "Catwalk",
+    "rating": 4.2,
+    "isPopular": true,
+    "description": "4-inch block heels",
+    "image": "/images/items/women-heels.jpg"
+  },
+  {
+    "name": "Kids T-Shirt",
+    "price": 299,
+    "category": "Kids",
+    "brand": "Babyhug",
+    "rating": 4.3,
+    "isPopular": true,
+    "description": "Cotton t-shirt for boys",
+    "image": "/images/items/kids-tshirt.jpg"
+  },
+  {
+    "name": "Kids Running Shoes",
+    "price": 899,
+    "category": "Kids",
+    "brand": "Campus",
+    "rating": 4.2,
+    "isPopular": true,
+    "description": "Lightweight running shoes",
+    "image": "/images/items/kids-shoes.jpg"
+  }
+]

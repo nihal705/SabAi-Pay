@@ -1,0 +1,362 @@
+[
+  {
+    "id": "ccd_item_all_1",
+    "name": "Cappuccino (Cold)",
+    "price": 236,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_2",
+    "name": "Espresso",
+    "price": 217,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_3",
+    "name": "Americano (Hot)",
+    "price": 116,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_4",
+    "name": "Mocha",
+    "price": 272,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_5",
+    "name": "Cold Coffee",
+    "price": 269,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_6",
+    "name": "Frappuccino (Hot)",
+    "price": 215,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_7",
+    "name": "Hot Chocolate (Cold)",
+    "price": 263,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_8",
+    "name": "Caffè Latte",
+    "price": 155,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_9",
+    "name": "Cappuccino",
+    "price": 269,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_10",
+    "name": "Espresso",
+    "price": 93,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_11",
+    "name": "Americano (Hot)",
+    "price": 108,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_12",
+    "name": "Mocha (Hot)",
+    "price": 279,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_13",
+    "name": "Cold Coffee",
+    "price": 157,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_14",
+    "name": "Frappuccino",
+    "price": 266,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_15",
+    "name": "Hot Chocolate (Hot)",
+    "price": 196,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_16",
+    "name": "Caffè Latte (Hot)",
+    "price": 214,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_17",
+    "name": "Cappuccino",
+    "price": 82,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_18",
+    "name": "Espresso",
+    "price": 116,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_19",
+    "name": "Americano",
+    "price": 133,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_20",
+    "name": "Mocha",
+    "price": 171,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_21",
+    "name": "Cold Coffee (Cold)",
+    "price": 210,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_22",
+    "name": "Frappuccino (Hot)",
+    "price": 115,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_23",
+    "name": "Hot Chocolate",
+    "price": 276,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_24",
+    "name": "Caffè Latte",
+    "price": 245,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_25",
+    "name": "Muffin",
+    "price": 142,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_26",
+    "name": "Brownie",
+    "price": 60,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_27",
+    "name": "Cookie",
+    "price": 97,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_28",
+    "name": "Sandwich",
+    "price": 125,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_29",
+    "name": "Cake Slice",
+    "price": 71,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_30",
+    "name": "Bagel",
+    "price": 99,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_31",
+    "name": "Donut",
+    "price": 183,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_32",
+    "name": "Croissant",
+    "price": 139,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_33",
+    "name": "Muffin",
+    "price": 184,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_34",
+    "name": "Brownie",
+    "price": 181,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_35",
+    "name": "Cookie",
+    "price": 138,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_36",
+    "name": "Sandwich",
+    "price": 57,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_37",
+    "name": "Cake Slice",
+    "price": 191,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_38",
+    "name": "Bagel",
+    "price": 137,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_39",
+    "name": "Donut",
+    "price": 155,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "ccd_item_all_40",
+    "name": "Croissant",
+    "price": 153,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

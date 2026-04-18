@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Chicken Biryani (Full)",
+    "price": 349,
+    "category": "Biryani",
+    "isVeg": false,
+    "isPopular": true,
+    "description": "Authentic Hyderabadi chicken biryani with aromatic spices",
+    "prepTime": "15-20 min",
+    "image": "/images/items/chicken-biryani.png",
+    "id": "Chicken_Biryani_(Full)_1775766061301_0o377"
+  },
+  {
+    "name": "Chicken Biryani (Half)",
+    "price": 199,
+    "category": "Biryani",
+    "isVeg": false,
+    "isPopular": false,
+    "description": "Half portion of authentic chicken biryani",
+    "prepTime": "10-15 min",
+    "image": "/images/items/chicken-biryani.png",
+    "id": "Chicken_Biryani_(Half)_1775766061301_u1ahv"
+  },
+  {
+    "name": "Mutton Biryani (Full)",
+    "price": 449,
+    "category": "Biryani",
+    "isVeg": false,
+    "isPopular": true,
+    "description": "Tender mutton biryani with royal spices",
+    "prepTime": "20-25 min",
+    "image": "/images/items/mutton-biryani.jpg",
+    "id": "Mutton_Biryani_(Full)_1775766061301_zw88i"
+  },
+  {
+    "name": "Mutton Biryani (Half)",
+    "price": 249,
+    "category": "Biryani",
+    "isVeg": false,
+    "isPopular": false,
+    "description": "Half portion of mutton biryani",
+    "prepTime": "15-20 min",
+    "image": "/images/items/mutton-biryani.jpg",
+    "id": "Mutton_Biryani_(Half)_1775766061301_vi0ak"
+  },
+  {
+    "name": "Veg Biryani (Full)",
+    "price": 249,
+    "category": "Biryani",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Vegetable biryani with mixed vegetables",
+    "prepTime": "15-20 min",
+    "image": "/images/items/veg-biryani.jpg",
+    "id": "Veg_Biryani_(Full)_1775766061301_chl61"
+  },
+  {
+    "name": "Veg Biryani (Half)",
+    "price": 149,
+    "category": "Biryani",
+    "isVeg": true,
+    "isPopular": false,
+    "description": "Half portion of veg biryani",
+    "prepTime": "10-15 min",
+    "image": "/images/items/veg-biryani.jpg",
+    "id": "Veg_Biryani_(Half)_1775766061301_asyu5"
+  },
+  {
+    "name": "Paneer Biryani",
+    "price": 299,
+    "category": "Biryani",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Cottage cheese biryani",
+    "prepTime": "15-20 min",
+    "image": "/images/items/paneer-biryani.jpg",
+    "id": "Paneer_Biryani_1775766061301_rmrb8"
+  },
+  {
+    "name": "Egg Biryani",
+    "price": 199,
+    "category": "Biryani",
+    "isVeg": false,
+    "isPopular": false,
+    "description": "Egg biryani with boiled eggs",
+    "prepTime": "10-15 min",
+    "image": "/images/items/egg-biryani.jpg",
+    "id": "Egg_Biryani_1775766061301_j4jwh"
+  },
+  {
+    "name": "Prawn Biryani",
+    "price": 399,
+    "category": "Biryani",
+    "isVeg": false,
+    "isPopular": false,
+    "description": "Prawn biryani",
+    "prepTime": "20-25 min",
+    "image": "/images/items/prawn-biryani.jpg",
+    "id": "Prawn_Biryani_1775766061301_mared"
+  },
+  {
+    "name": "Fish Biryani",
+    "price": 379,
+    "category": "Biryani",
+    "isVeg": false,
+    "isPopular": false,
+    "description": "Fish biryani",
+    "prepTime": "20-25 min",
+    "image": "/images/items/fish-biryani.jpg",
+    "id": "Fish_Biryani_1775766061301_50zh6"
+  }
+]

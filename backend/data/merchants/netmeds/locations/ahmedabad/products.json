@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "netmeds_prod_ahmedabad_1",
+    "name": "Dolo 650 71mg",
+    "price": 28,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_2",
+    "name": "Crocin",
+    "price": 30,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_3",
+    "name": "Aspirin 60mg",
+    "price": 347,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_4",
+    "name": "Vitamin C 69mg",
+    "price": 283,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_5",
+    "name": "Calcium Tablets 98mg",
+    "price": 285,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_6",
+    "name": "Paracetamol",
+    "price": 441,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_7",
+    "name": "Dolo 650 7mg",
+    "price": 315,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_8",
+    "name": "Crocin",
+    "price": 141,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_9",
+    "name": "Aspirin 18mg",
+    "price": 456,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_10",
+    "name": "Vitamin C 88mg",
+    "price": 120,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_11",
+    "name": "Calcium Tablets 31mg",
+    "price": 475,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_12",
+    "name": "Paracetamol 80mg",
+    "price": 348,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_13",
+    "name": "Dolo 650",
+    "price": 413,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_14",
+    "name": "Crocin 56mg",
+    "price": 27,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_15",
+    "name": "Aspirin 17mg",
+    "price": 495,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_16",
+    "name": "Vitamin C",
+    "price": 204,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_17",
+    "name": "Calcium Tablets",
+    "price": 400,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_18",
+    "name": "Paracetamol",
+    "price": 360,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_19",
+    "name": "Dolo 650 35mg",
+    "price": 103,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_20",
+    "name": "Crocin 52mg",
+    "price": 216,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_21",
+    "name": "Aspirin",
+    "price": 213,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_22",
+    "name": "Vitamin C 100mg",
+    "price": 121,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_23",
+    "name": "Calcium Tablets 91mg",
+    "price": 499,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_24",
+    "name": "Paracetamol",
+    "price": 399,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_25",
+    "name": "Dolo 650 48mg",
+    "price": 128,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_26",
+    "name": "Crocin 68mg",
+    "price": 173,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_27",
+    "name": "Aspirin",
+    "price": 470,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_28",
+    "name": "Vitamin C",
+    "price": 54,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_29",
+    "name": "Calcium Tablets",
+    "price": 174,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_30",
+    "name": "Paracetamol 72mg",
+    "price": 334,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_31",
+    "name": "Dolo 650",
+    "price": 499,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_32",
+    "name": "Crocin",
+    "price": 94,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_33",
+    "name": "Aspirin 30mg",
+    "price": 401,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_34",
+    "name": "Vitamin C 71mg",
+    "price": 418,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_35",
+    "name": "Calcium Tablets 3mg",
+    "price": 46,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_36",
+    "name": "Paracetamol 59mg",
+    "price": 437,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_37",
+    "name": "Dolo 650 75mg",
+    "price": 265,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_38",
+    "name": "Crocin 11mg",
+    "price": 503,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_39",
+    "name": "Aspirin 43mg",
+    "price": 420,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_40",
+    "name": "Vitamin C 36mg",
+    "price": 242,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_41",
+    "name": "Calcium Tablets 77mg",
+    "price": 192,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_42",
+    "name": "Paracetamol 77mg",
+    "price": 306,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_43",
+    "name": "Dolo 650 65mg",
+    "price": 79,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_44",
+    "name": "Crocin 17mg",
+    "price": 288,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_45",
+    "name": "Aspirin",
+    "price": 279,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_46",
+    "name": "Vitamin C 100mg",
+    "price": 500,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_47",
+    "name": "Calcium Tablets 64mg",
+    "price": 397,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_48",
+    "name": "Paracetamol 13mg",
+    "price": 427,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_49",
+    "name": "Dolo 650",
+    "price": 375,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_50",
+    "name": "Crocin",
+    "price": 177,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_51",
+    "name": "Aspirin",
+    "price": 84,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_52",
+    "name": "Vitamin C 2mg",
+    "price": 353,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_53",
+    "name": "Calcium Tablets",
+    "price": 50,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_54",
+    "name": "Paracetamol",
+    "price": 55,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_55",
+    "name": "Dolo 650",
+    "price": 276,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_56",
+    "name": "Crocin",
+    "price": 421,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_57",
+    "name": "Aspirin",
+    "price": 64,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_58",
+    "name": "Vitamin C",
+    "price": 68,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_59",
+    "name": "Calcium Tablets 43mg",
+    "price": 52,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_60",
+    "name": "Paracetamol 12mg",
+    "price": 128,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_61",
+    "name": "Dolo 650",
+    "price": 491,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_62",
+    "name": "Crocin",
+    "price": 57,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_63",
+    "name": "Aspirin",
+    "price": 184,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_64",
+    "name": "Vitamin C 5mg",
+    "price": 284,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_65",
+    "name": "Calcium Tablets",
+    "price": 66,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_66",
+    "name": "Paracetamol",
+    "price": 141,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_67",
+    "name": "Dolo 650",
+    "price": 155,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_68",
+    "name": "Crocin",
+    "price": 310,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_69",
+    "name": "Aspirin",
+    "price": 445,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_70",
+    "name": "Vitamin C 20mg",
+    "price": 177,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_71",
+    "name": "Calcium Tablets",
+    "price": 351,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_72",
+    "name": "Paracetamol 72mg",
+    "price": 493,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_73",
+    "name": "Dolo 650 86mg",
+    "price": 116,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_74",
+    "name": "Crocin 99mg",
+    "price": 389,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_75",
+    "name": "Aspirin",
+    "price": 436,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_76",
+    "name": "Vitamin C",
+    "price": 469,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_77",
+    "name": "Calcium Tablets 83mg",
+    "price": 236,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_78",
+    "name": "Paracetamol",
+    "price": 150,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_79",
+    "name": "Dolo 650",
+    "price": 171,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_80",
+    "name": "Crocin",
+    "price": 325,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_81",
+    "name": "Aspirin 39mg",
+    "price": 424,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_82",
+    "name": "Vitamin C",
+    "price": 164,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_83",
+    "name": "Calcium Tablets",
+    "price": 437,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_84",
+    "name": "Paracetamol 32mg",
+    "price": 138,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_85",
+    "name": "Dolo 650",
+    "price": 365,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_86",
+    "name": "Crocin 63mg",
+    "price": 295,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_87",
+    "name": "Aspirin",
+    "price": 512,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_88",
+    "name": "Vitamin C",
+    "price": 77,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_89",
+    "name": "Calcium Tablets 87mg",
+    "price": 156,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_90",
+    "name": "Paracetamol",
+    "price": 72,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_91",
+    "name": "Dolo 650",
+    "price": 498,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_92",
+    "name": "Crocin 32mg",
+    "price": 408,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_93",
+    "name": "Aspirin",
+    "price": 143,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_94",
+    "name": "Vitamin C",
+    "price": 241,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_95",
+    "name": "Calcium Tablets",
+    "price": 378,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_96",
+    "name": "Paracetamol",
+    "price": 95,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_97",
+    "name": "Dolo 650 60mg",
+    "price": 195,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_98",
+    "name": "Crocin 79mg",
+    "price": 35,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_99",
+    "name": "Aspirin 32mg",
+    "price": 162,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_100",
+    "name": "Vitamin C",
+    "price": 126,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_101",
+    "name": "Calcium Tablets 95mg",
+    "price": 318,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_102",
+    "name": "Paracetamol",
+    "price": 223,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_103",
+    "name": "Dolo 650",
+    "price": 291,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_104",
+    "name": "Crocin 92mg",
+    "price": 287,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_105",
+    "name": "Aspirin 73mg",
+    "price": 394,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_106",
+    "name": "Vitamin C 99mg",
+    "price": 434,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_107",
+    "name": "Calcium Tablets",
+    "price": 140,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_108",
+    "name": "Paracetamol 86mg",
+    "price": 187,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_109",
+    "name": "Dolo 650",
+    "price": 242,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_110",
+    "name": "Crocin",
+    "price": 475,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_111",
+    "name": "Aspirin 37mg",
+    "price": 494,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_112",
+    "name": "Vitamin C 83mg",
+    "price": 71,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_113",
+    "name": "Calcium Tablets 96mg",
+    "price": 316,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_114",
+    "name": "Paracetamol 93mg",
+    "price": 54,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_115",
+    "name": "Dolo 650",
+    "price": 50,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_116",
+    "name": "Crocin",
+    "price": 509,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_117",
+    "name": "Aspirin 33mg",
+    "price": 368,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_118",
+    "name": "Vitamin C",
+    "price": 416,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_119",
+    "name": "Calcium Tablets",
+    "price": 444,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_120",
+    "name": "Paracetamol",
+    "price": 52,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_121",
+    "name": "Dolo 650 82mg",
+    "price": 502,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_122",
+    "name": "Crocin",
+    "price": 203,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_123",
+    "name": "Aspirin 9mg",
+    "price": 172,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_124",
+    "name": "Vitamin C",
+    "price": 397,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_125",
+    "name": "Calcium Tablets",
+    "price": 217,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_126",
+    "name": "Paracetamol",
+    "price": 469,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_127",
+    "name": "Dolo 650 76mg",
+    "price": 58,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_128",
+    "name": "Crocin 56mg",
+    "price": 482,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_129",
+    "name": "Aspirin 53mg",
+    "price": 59,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_130",
+    "name": "Vitamin C",
+    "price": 509,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_131",
+    "name": "Calcium Tablets",
+    "price": 59,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_132",
+    "name": "Paracetamol 76mg",
+    "price": 290,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_133",
+    "name": "Dolo 650 63mg",
+    "price": 136,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_134",
+    "name": "Crocin",
+    "price": 277,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_135",
+    "name": "Aspirin",
+    "price": 168,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_136",
+    "name": "Vitamin C 83mg",
+    "price": 498,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_137",
+    "name": "Calcium Tablets",
+    "price": 141,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_138",
+    "name": "Paracetamol",
+    "price": 324,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_139",
+    "name": "Dolo 650",
+    "price": 446,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_140",
+    "name": "Crocin",
+    "price": 517,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_141",
+    "name": "Aspirin",
+    "price": 499,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_142",
+    "name": "Vitamin C 81mg",
+    "price": 517,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_143",
+    "name": "Calcium Tablets 88mg",
+    "price": 464,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_144",
+    "name": "Paracetamol 8mg",
+    "price": 86,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_145",
+    "name": "Dolo 650",
+    "price": 329,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_146",
+    "name": "Crocin",
+    "price": 213,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_147",
+    "name": "Aspirin",
+    "price": 514,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_148",
+    "name": "Vitamin C 46mg",
+    "price": 392,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_149",
+    "name": "Calcium Tablets",
+    "price": 45,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_150",
+    "name": "Paracetamol 45mg",
+    "price": 166,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_151",
+    "name": "Dolo 650 11mg",
+    "price": 330,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_152",
+    "name": "Crocin 39mg",
+    "price": 238,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_153",
+    "name": "Aspirin 6mg",
+    "price": 396,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_154",
+    "name": "Vitamin C",
+    "price": 80,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_155",
+    "name": "Calcium Tablets 9mg",
+    "price": 201,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_156",
+    "name": "Paracetamol 50mg",
+    "price": 387,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_157",
+    "name": "Dolo 650",
+    "price": 475,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_158",
+    "name": "Crocin",
+    "price": 386,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_159",
+    "name": "Aspirin 7mg",
+    "price": 197,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_160",
+    "name": "Vitamin C 40mg",
+    "price": 109,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_161",
+    "name": "Calcium Tablets 43mg",
+    "price": 289,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_162",
+    "name": "Paracetamol 69mg",
+    "price": 464,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_163",
+    "name": "Dolo 650",
+    "price": 219,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_164",
+    "name": "Crocin",
+    "price": 226,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_165",
+    "name": "Aspirin",
+    "price": 246,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_166",
+    "name": "Vitamin C 98mg",
+    "price": 504,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_167",
+    "name": "Calcium Tablets 2mg",
+    "price": 26,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_168",
+    "name": "Paracetamol",
+    "price": 381,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_169",
+    "name": "Dolo 650",
+    "price": 63,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_170",
+    "name": "Crocin 99mg",
+    "price": 402,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_171",
+    "name": "Aspirin 54mg",
+    "price": 487,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_172",
+    "name": "Vitamin C 38mg",
+    "price": 350,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_173",
+    "name": "Calcium Tablets",
+    "price": 377,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_174",
+    "name": "Paracetamol 34mg",
+    "price": 157,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_175",
+    "name": "Dolo 650",
+    "price": 435,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_176",
+    "name": "Crocin",
+    "price": 426,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_177",
+    "name": "Aspirin",
+    "price": 448,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_178",
+    "name": "Vitamin C",
+    "price": 310,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_179",
+    "name": "Calcium Tablets",
+    "price": 471,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_180",
+    "name": "Paracetamol 22mg",
+    "price": 471,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_181",
+    "name": "Dolo 650 46mg",
+    "price": 152,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_182",
+    "name": "Crocin",
+    "price": 182,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_183",
+    "name": "Aspirin 92mg",
+    "price": 407,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_184",
+    "name": "Vitamin C",
+    "price": 111,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_185",
+    "name": "Calcium Tablets 87mg",
+    "price": 290,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_186",
+    "name": "Paracetamol",
+    "price": 352,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_187",
+    "name": "Dolo 650 17mg",
+    "price": 202,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_188",
+    "name": "Crocin 75mg",
+    "price": 248,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_189",
+    "name": "Aspirin",
+    "price": 415,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_190",
+    "name": "Vitamin C",
+    "price": 452,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_191",
+    "name": "Calcium Tablets 98mg",
+    "price": 385,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_192",
+    "name": "Paracetamol",
+    "price": 252,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_193",
+    "name": "Dolo 650 53mg",
+    "price": 414,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_194",
+    "name": "Crocin 37mg",
+    "price": 192,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_195",
+    "name": "Aspirin",
+    "price": 190,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_196",
+    "name": "Vitamin C 45mg",
+    "price": 450,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_197",
+    "name": "Calcium Tablets 66mg",
+    "price": 176,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_198",
+    "name": "Paracetamol 53mg",
+    "price": 295,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_199",
+    "name": "Dolo 650 5mg",
+    "price": 142,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_200",
+    "name": "Crocin 72mg",
+    "price": 395,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_201",
+    "name": "Aspirin 46mg",
+    "price": 200,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_202",
+    "name": "Vitamin C",
+    "price": 464,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_203",
+    "name": "Calcium Tablets 55mg",
+    "price": 405,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_204",
+    "name": "Paracetamol 60mg",
+    "price": 496,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_205",
+    "name": "Dolo 650",
+    "price": 471,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_206",
+    "name": "Crocin 42mg",
+    "price": 160,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_207",
+    "name": "Aspirin 3mg",
+    "price": 223,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_208",
+    "name": "Vitamin C 38mg",
+    "price": 413,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_209",
+    "name": "Calcium Tablets",
+    "price": 251,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_210",
+    "name": "Paracetamol 56mg",
+    "price": 291,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_211",
+    "name": "Dolo 650",
+    "price": 299,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_212",
+    "name": "Crocin",
+    "price": 234,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_213",
+    "name": "Aspirin",
+    "price": 388,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_214",
+    "name": "Vitamin C",
+    "price": 309,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_215",
+    "name": "Calcium Tablets 84mg",
+    "price": 203,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_216",
+    "name": "Paracetamol 70mg",
+    "price": 491,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_217",
+    "name": "Dolo 650 77mg",
+    "price": 176,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_218",
+    "name": "Crocin",
+    "price": 295,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_219",
+    "name": "Aspirin",
+    "price": 456,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_220",
+    "name": "Vitamin C 5mg",
+    "price": 496,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_221",
+    "name": "Calcium Tablets 75mg",
+    "price": 110,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_222",
+    "name": "Paracetamol 45mg",
+    "price": 92,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_223",
+    "name": "Dolo 650 39mg",
+    "price": 96,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_224",
+    "name": "Crocin",
+    "price": 457,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_225",
+    "name": "Aspirin",
+    "price": 173,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_226",
+    "name": "Vitamin C",
+    "price": 80,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_227",
+    "name": "Calcium Tablets 75mg",
+    "price": 288,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_228",
+    "name": "Paracetamol",
+    "price": 400,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_229",
+    "name": "Dolo 650",
+    "price": 193,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_230",
+    "name": "Crocin",
+    "price": 496,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_231",
+    "name": "Aspirin 25mg",
+    "price": 161,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_232",
+    "name": "Vitamin C",
+    "price": 403,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_233",
+    "name": "Calcium Tablets 8mg",
+    "price": 323,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_234",
+    "name": "Paracetamol 19mg",
+    "price": 237,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_235",
+    "name": "Dolo 650 45mg",
+    "price": 64,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_236",
+    "name": "Crocin",
+    "price": 243,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_237",
+    "name": "Aspirin",
+    "price": 148,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_238",
+    "name": "Vitamin C 79mg",
+    "price": 105,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_239",
+    "name": "Calcium Tablets",
+    "price": 58,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_240",
+    "name": "Paracetamol 85mg",
+    "price": 68,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_241",
+    "name": "Dolo 650 53mg",
+    "price": 98,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_242",
+    "name": "Crocin",
+    "price": 483,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_243",
+    "name": "Aspirin 65mg",
+    "price": 519,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_244",
+    "name": "Vitamin C",
+    "price": 62,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_245",
+    "name": "Calcium Tablets",
+    "price": 172,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_246",
+    "name": "Paracetamol 83mg",
+    "price": 57,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_247",
+    "name": "Dolo 650 30mg",
+    "price": 416,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_248",
+    "name": "Crocin 5mg",
+    "price": 348,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_249",
+    "name": "Aspirin 57mg",
+    "price": 369,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_250",
+    "name": "Vitamin C",
+    "price": 289,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_251",
+    "name": "Calcium Tablets 56mg",
+    "price": 233,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_252",
+    "name": "Paracetamol",
+    "price": 230,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_253",
+    "name": "Dolo 650 17mg",
+    "price": 355,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_254",
+    "name": "Crocin 71mg",
+    "price": 36,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_255",
+    "name": "Aspirin 91mg",
+    "price": 91,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_256",
+    "name": "Vitamin C",
+    "price": 350,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_257",
+    "name": "Calcium Tablets",
+    "price": 472,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_258",
+    "name": "Paracetamol 15mg",
+    "price": 413,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_259",
+    "name": "Dolo 650",
+    "price": 95,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_260",
+    "name": "Crocin 26mg",
+    "price": 132,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_261",
+    "name": "Aspirin",
+    "price": 114,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_262",
+    "name": "Vitamin C",
+    "price": 319,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_263",
+    "name": "Calcium Tablets",
+    "price": 64,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_264",
+    "name": "Paracetamol 51mg",
+    "price": 199,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_265",
+    "name": "Dolo 650 19mg",
+    "price": 446,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_266",
+    "name": "Crocin 64mg",
+    "price": 359,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_267",
+    "name": "Aspirin 68mg",
+    "price": 427,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_268",
+    "name": "Vitamin C",
+    "price": 77,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_269",
+    "name": "Calcium Tablets",
+    "price": 110,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_270",
+    "name": "Paracetamol",
+    "price": 175,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_271",
+    "name": "Dolo 650 86mg",
+    "price": 131,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_272",
+    "name": "Crocin",
+    "price": 397,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_273",
+    "name": "Aspirin 94mg",
+    "price": 489,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_274",
+    "name": "Vitamin C 11mg",
+    "price": 114,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_275",
+    "name": "Calcium Tablets",
+    "price": 346,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_276",
+    "name": "Paracetamol",
+    "price": 219,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_277",
+    "name": "Dolo 650",
+    "price": 445,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_278",
+    "name": "Crocin 30mg",
+    "price": 50,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_279",
+    "name": "Aspirin 11mg",
+    "price": 77,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_280",
+    "name": "Vitamin C",
+    "price": 209,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_281",
+    "name": "Calcium Tablets",
+    "price": 52,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_282",
+    "name": "Paracetamol",
+    "price": 383,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_283",
+    "name": "Dolo 650 67mg",
+    "price": 314,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_284",
+    "name": "Crocin",
+    "price": 383,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_285",
+    "name": "Aspirin",
+    "price": 463,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_286",
+    "name": "Vitamin C",
+    "price": 502,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_287",
+    "name": "Calcium Tablets",
+    "price": 473,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_288",
+    "name": "Paracetamol 12mg",
+    "price": 47,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_289",
+    "name": "Dolo 650 18mg",
+    "price": 504,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_290",
+    "name": "Crocin 4mg",
+    "price": 355,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_291",
+    "name": "Aspirin",
+    "price": 67,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_292",
+    "name": "Vitamin C",
+    "price": 278,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_293",
+    "name": "Calcium Tablets",
+    "price": 63,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_294",
+    "name": "Paracetamol 84mg",
+    "price": 317,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_295",
+    "name": "Dolo 650",
+    "price": 300,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_296",
+    "name": "Crocin 36mg",
+    "price": 347,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_297",
+    "name": "Aspirin",
+    "price": 201,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_298",
+    "name": "Vitamin C 55mg",
+    "price": 389,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_299",
+    "name": "Calcium Tablets",
+    "price": 392,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_ahmedabad_300",
+    "name": "Paracetamol 70mg",
+    "price": 516,
+    "category": "Medicine",
+    "requiresPrescription": false
+  }
+]

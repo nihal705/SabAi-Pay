@@ -1,0 +1,207 @@
+/* frontend/src/components/common/LoadingScreen.css */
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeOut 0.5s ease-out 2s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loading-content {
+  text-align: center;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.loading-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+}
+
+/* .dark .loading-screen{
+    color:#2d3748;
+} */
+
+.loading-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.loading-tagline {
+  color: #6b7280;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.logo-wrapper-loading {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  line-height: 1;
+  position: relative;
+}
+
+.logo-sab-loading {
+  color: #2d3748;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* .dark .logo-sab-loading {
+  color: #e2e8f0;
+} */
+
+.logo-sab .sa-loading {
+  display: inline-block;
+  line-height: 1;
+  transform: translateY(0);
+}
+
+.logo-sab .b-loading {
+  display: inline-block;
+  line-height: 1;
+  margin-right: -2px; /* Create overlap space for A */
+  position: relative;
+  z-index: 1;
+}
+
+.logo-ai-loading {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #4F46E5 0%, #2563EB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  position: relative;
+  left: -4px; /* Pull left to overlap with b */
+  line-height: 1;
+  z-index: 3;
+  margin-left: -4px; /* Additional negative margin for overlap */
+}
+
+.dark .logo-ai-loading {
+  background: #FBBF24;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+.logo-pay-loading {
+  background: linear-gradient(135deg, #4F46E5 0%, #2563EB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  margin-left: 2px;
+  line-height: 1;
+  position: relative;
+  top: 0;
+}
+
+.dark .logo-pay-loading {
+  background: #FBBF24;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+@media (max-width: 768px) {
+  .loading-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .loading-title {
+    font-size: 2rem;
+  }
+
+  .loading-tagline {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .loading-tittle {
+    font-size: 1.5rem;
+    height: 38px;
+  }
+  
+  .logo-sab .b-loading {
+    margin-right: -6px;
+  }
+  
+  .logo-ai-loading {
+    top: -2px;
+    left: -3px;
+    margin-left: -3px;
+  }
+
+  .loading-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .loading-title {
+    font-size: 1.8rem;
+  }
+}
+

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "starbucks_item_hyderabad_1",
+    "name": "Cappuccino",
+    "price": 264,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_2",
+    "name": "Espresso",
+    "price": 273,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_3",
+    "name": "Americano",
+    "price": 192,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_4",
+    "name": "Mocha",
+    "price": 264,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_5",
+    "name": "Cold Coffee (Cold)",
+    "price": 201,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_6",
+    "name": "Frappuccino",
+    "price": 141,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_7",
+    "name": "Hot Chocolate",
+    "price": 192,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_8",
+    "name": "Caffè Latte",
+    "price": 202,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_9",
+    "name": "Cappuccino",
+    "price": 205,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_10",
+    "name": "Espresso",
+    "price": 124,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_11",
+    "name": "Americano",
+    "price": 231,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_12",
+    "name": "Mocha",
+    "price": 143,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_13",
+    "name": "Cold Coffee",
+    "price": 196,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_14",
+    "name": "Frappuccino",
+    "price": 169,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_15",
+    "name": "Hot Chocolate",
+    "price": 221,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_16",
+    "name": "Caffè Latte (Cold)",
+    "price": 149,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_17",
+    "name": "Cappuccino",
+    "price": 199,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_18",
+    "name": "Espresso",
+    "price": 88,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_19",
+    "name": "Americano",
+    "price": 169,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_20",
+    "name": "Mocha",
+    "price": 170,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_21",
+    "name": "Cold Coffee (Cold)",
+    "price": 201,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_22",
+    "name": "Frappuccino",
+    "price": 160,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_23",
+    "name": "Hot Chocolate (Hot)",
+    "price": 211,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_24",
+    "name": "Caffè Latte",
+    "price": 230,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_25",
+    "name": "Muffin",
+    "price": 85,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_26",
+    "name": "Brownie",
+    "price": 129,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_27",
+    "name": "Cookie",
+    "price": 172,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_28",
+    "name": "Sandwich",
+    "price": 190,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_29",
+    "name": "Cake Slice",
+    "price": 85,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_30",
+    "name": "Bagel",
+    "price": 165,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_31",
+    "name": "Donut",
+    "price": 88,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_32",
+    "name": "Croissant",
+    "price": 61,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_33",
+    "name": "Muffin",
+    "price": 184,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_34",
+    "name": "Brownie",
+    "price": 51,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_35",
+    "name": "Cookie",
+    "price": 95,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_36",
+    "name": "Sandwich",
+    "price": 111,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_37",
+    "name": "Cake Slice",
+    "price": 73,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_38",
+    "name": "Bagel",
+    "price": 111,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_39",
+    "name": "Donut",
+    "price": 120,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_hyderabad_40",
+    "name": "Croissant",
+    "price": 192,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

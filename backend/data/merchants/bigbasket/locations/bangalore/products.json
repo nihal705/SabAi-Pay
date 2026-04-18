@@ -1,0 +1,632 @@
+[
+  {
+    "id": "bigbasket_prod_bangalore_1",
+    "name": "Basmati Rice",
+    "price": 209,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_2",
+    "name": "Basmati Rice (1kg)",
+    "price": 461,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_3",
+    "name": "Sonamasoori Rice",
+    "price": 129,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_4",
+    "name": "Sonamasoori Rice (1kg)",
+    "price": 394,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_5",
+    "name": "Wheat Flour",
+    "price": 323,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_6",
+    "name": "Wheat Flour (1kg)",
+    "price": 402,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_7",
+    "name": "Sugar",
+    "price": 180,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_8",
+    "name": "Sugar (1kg)",
+    "price": 534,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_9",
+    "name": "Salt",
+    "price": 355,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_10",
+    "name": "Salt (1kg)",
+    "price": 291,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_11",
+    "name": "Cooking Oil",
+    "price": 102,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_12",
+    "name": "Cooking Oil (1kg)",
+    "price": 202,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_13",
+    "name": "Toor Dal",
+    "price": 112,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_14",
+    "name": "Toor Dal (1kg)",
+    "price": 360,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_15",
+    "name": "Masoor Dal",
+    "price": 164,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_16",
+    "name": "Masoor Dal (1kg)",
+    "price": 443,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_17",
+    "name": "Chana Dal",
+    "price": 545,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_18",
+    "name": "Chana Dal (1kg)",
+    "price": 456,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_19",
+    "name": "Besan",
+    "price": 534,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_20",
+    "name": "Besan (1kg)",
+    "price": 157,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_21",
+    "name": "Milk",
+    "price": 343,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_22",
+    "name": "Milk (1kg)",
+    "price": 324,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_23",
+    "name": "Curd",
+    "price": 522,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_24",
+    "name": "Curd (1kg)",
+    "price": 478,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_25",
+    "name": "Butter",
+    "price": 288,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_26",
+    "name": "Butter (1kg)",
+    "price": 426,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_27",
+    "name": "Paneer",
+    "price": 343,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_28",
+    "name": "Paneer (1kg)",
+    "price": 324,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_29",
+    "name": "Ghee",
+    "price": 502,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_30",
+    "name": "Ghee (1kg)",
+    "price": 366,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_31",
+    "name": "Cheese",
+    "price": 307,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_32",
+    "name": "Cheese (1kg)",
+    "price": 320,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_33",
+    "name": "Buttermilk",
+    "price": 400,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_34",
+    "name": "Buttermilk (1kg)",
+    "price": 488,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_35",
+    "name": "Chips",
+    "price": 103,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_36",
+    "name": "Chips (1kg)",
+    "price": 182,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_37",
+    "name": "Biscuits",
+    "price": 318,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_38",
+    "name": "Biscuits (1kg)",
+    "price": 254,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_39",
+    "name": "Namkeen",
+    "price": 539,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_40",
+    "name": "Namkeen (1kg)",
+    "price": 359,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_41",
+    "name": "Chocolate",
+    "price": 290,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_42",
+    "name": "Chocolate (1kg)",
+    "price": 254,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_43",
+    "name": "Cookies",
+    "price": 385,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_44",
+    "name": "Cookies (1kg)",
+    "price": 282,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_45",
+    "name": "Cakes",
+    "price": 422,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_46",
+    "name": "Cakes (1kg)",
+    "price": 439,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_47",
+    "name": "Tea",
+    "price": 178,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_48",
+    "name": "Tea (1kg)",
+    "price": 212,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_49",
+    "name": "Coffee",
+    "price": 204,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_50",
+    "name": "Coffee (1kg)",
+    "price": 157,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_51",
+    "name": "Juice",
+    "price": 417,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_52",
+    "name": "Juice (1kg)",
+    "price": 519,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_53",
+    "name": "Soft Drink",
+    "price": 541,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_54",
+    "name": "Soft Drink (1kg)",
+    "price": 412,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_55",
+    "name": "Energy Drink",
+    "price": 76,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_56",
+    "name": "Energy Drink (1kg)",
+    "price": 417,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_57",
+    "name": "Coconut Water",
+    "price": 424,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_58",
+    "name": "Coconut Water (1kg)",
+    "price": 260,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_59",
+    "name": "Detergent",
+    "price": 209,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_60",
+    "name": "Detergent (1kg)",
+    "price": 70,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_61",
+    "name": "Soap",
+    "price": 125,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_62",
+    "name": "Soap (1kg)",
+    "price": 203,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_63",
+    "name": "Surface Cleaner",
+    "price": 171,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_64",
+    "name": "Surface Cleaner (1kg)",
+    "price": 312,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_65",
+    "name": "Tissue",
+    "price": 237,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_66",
+    "name": "Tissue (1kg)",
+    "price": 254,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_67",
+    "name": "Aluminum Foil",
+    "price": 324,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_68",
+    "name": "Aluminum Foil (1kg)",
+    "price": 146,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_69",
+    "name": "Cling Wrap",
+    "price": 531,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_bangalore_70",
+    "name": "Cling Wrap (1kg)",
+    "price": 365,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  }
+]

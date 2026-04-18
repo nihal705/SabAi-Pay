@@ -1,0 +1,272 @@
+[
+  {
+    "id": "dominos_item_mumbai_1",
+    "name": "Pepperoni Pizza (4\")",
+    "price": 572,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_2",
+    "name": "Farmhouse Pizza",
+    "price": 531,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_3",
+    "name": "Veg Extravaganza",
+    "price": 121,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_4",
+    "name": "Chicken Dominator",
+    "price": 171,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_5",
+    "name": "Garlic Bread (2\")",
+    "price": 137,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_6",
+    "name": "Cheese Burst",
+    "price": 132,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_7",
+    "name": "Stuffed Crust",
+    "price": 109,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_8",
+    "name": "Margherita Pizza",
+    "price": 586,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_9",
+    "name": "Pepperoni Pizza (10\")",
+    "price": 407,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_10",
+    "name": "Farmhouse Pizza (6\")",
+    "price": 294,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_11",
+    "name": "Veg Extravaganza",
+    "price": 187,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_12",
+    "name": "Chicken Dominator",
+    "price": 229,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_13",
+    "name": "Garlic Bread",
+    "price": 227,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_14",
+    "name": "Cheese Burst (8\")",
+    "price": 240,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_15",
+    "name": "Stuffed Crust",
+    "price": 113,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_16",
+    "name": "Margherita Pizza",
+    "price": 593,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_17",
+    "name": "Pepperoni Pizza (4\")",
+    "price": 342,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_18",
+    "name": "Farmhouse Pizza",
+    "price": 433,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_19",
+    "name": "Veg Extravaganza",
+    "price": 108,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_20",
+    "name": "Chicken Dominator",
+    "price": 151,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_21",
+    "name": "Garlic Bread (5\")",
+    "price": 162,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_22",
+    "name": "Cheese Burst (10\")",
+    "price": 205,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_23",
+    "name": "Stuffed Crust",
+    "price": 134,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_24",
+    "name": "Margherita Pizza",
+    "price": 257,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_25",
+    "name": "Pepperoni Pizza",
+    "price": 240,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_26",
+    "name": "Farmhouse Pizza",
+    "price": 641,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_27",
+    "name": "Veg Extravaganza (10\")",
+    "price": 175,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_28",
+    "name": "Chicken Dominator (9\")",
+    "price": 75,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_29",
+    "name": "Garlic Bread (1\")",
+    "price": 226,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_mumbai_30",
+    "name": "Cheese Burst",
+    "price": 85,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

@@ -1,0 +1,307 @@
+// backend/routes/bankRoutes.js
+// COMPLETE WORKING VERSION
+
+const express = require('express');
+const bcrypt = require('bcryptjs');
+const router = express.Router();
+const dbService = require('../services/databaseService');
+const { verifyToken } = require('../middleware/auth');
+
+// ============ PIN MANAGEMENT ============
+
+// Check if bank account has PIN
+router.get('/accounts/:id/has-pin', verifyToken, async (req, res) => {
+    try {
+        const accountId = parseInt(req.params.id);
+        const userId = req.user.id;
+        
+        const account = await dbService.getBankAccountById(accountId, userId);
+        if (!account) {
+            return res.status(404).json({ success: false, message: 'Account not found' });
+        }
+        
+        const hasPin = await dbService.hasUpiPin(accountId);
+        res.json({ success: true, data: { hasPin } });
+    } catch (error) {
+        console.error('Check PIN error:', error);
+        res.status(500).json({ success: false, message: 'Failed to check PIN' });
+    }
+});
+
+router.post('/verify-pin', verifyToken, async (req, res) => {
+    const { accountId, pin } = req.body;
+    const userId = req.user.id;
+    
+    console.log('Verify PIN request:', { accountId, userId });
+    
+    if (!pin || pin.length !== 4) {
+        return res.status(400).json({ success: false, message: 'PIN must be 4 digits' });
+    }
+    
+    try {
+        const account = await dbService.getBankAccountById(parseInt(accountId), userId);
+        if (!account) {
+            return res.status(404).json({ success: false, message: 'Account not found' });
+        }
+        
+        const isValid = await dbService.verifyUpiPin(parseInt(accountId), pin);
+        
+        if (!isValid) {
+            return res.status(401).json({ success: false, message: 'Invalid PIN' });
+        }
+        
+        res.json({ success: true, message: 'PIN verified' });
+    } catch (error) {
+        console.error('Verify PIN error:', error);
+        res.status(500).json({ success: false, message: 'Verification failed: ' + error.message });
+    }
+});
+
+// Set UPI PIN
+router.post('/accounts/:id/pin', verifyToken, async (req, res) => {
+    const { pin } = req.body;
+    const accountId = parseInt(req.params.id);
+    const userId = req.user.id;
+    
+    if (!pin || pin.length !== 4 || !/^\d{4}$/.test(pin)) {
+        return res.status(400).json({ success: false, message: 'PIN must be 4 digits' });
+    }
+    
+    try {
+        const account = await dbService.getBankAccountById(accountId, userId);
+        if (!account) {
+            return res.status(404).json({ success: false, message: 'Account not found' });
+        }
+        
+        const pinHash = await bcrypt.hash(pin, 10);
+        await dbService.setUpiPin(accountId, pinHash);
+        
+        res.json({ success: true, message: 'PIN set successfully' });
+    } catch (error) {
+        console.error('Set PIN error:', error);
+        res.status(500).json({ success: false, message: 'Failed to set PIN' });
+    }
+});
+
+// Verify UPI PIN
+router.post('/verify-pin', verifyToken, async (req, res) => {
+    const { accountId, pin } = req.body;
+    const userId = req.user.id;
+    
+    if (!pin || pin.length !== 4) {
+        return res.status(400).json({ success: false, message: 'PIN must be 4 digits' });
+    }
+    
+    try {
+        const account = await dbService.getBankAccountById(parseInt(accountId), userId);
+        if (!account) {
+            return res.status(404).json({ success: false, message: 'Account not found' });
+        }
+        
+        const isValid = await dbService.verifyUpiPin(parseInt(accountId), pin);
+        
+        if (!isValid) {
+            return res.status(401).json({ success: false, message: 'Invalid PIN' });
+        }
+        
+        res.json({ success: true, message: 'PIN verified' });
+    } catch (error) {
+        console.error('Verify PIN error:', error);
+        res.status(500).json({ success: false, message: 'Verification failed' });
+    }
+});
+
+// ============ BANK ACCOUNTS CRUD ============
+
+// Get all bank accounts
+router.get('/accounts', verifyToken, async (req, res) => {
+    try {
+        const accounts = await dbService.getBankAccounts(req.user.id);
+        res.json({ success: true, data: accounts });
+    } catch (error) {
+        console.error('Get accounts error:', error);
+        res.status(500).json({ success: false, message: 'Failed to get accounts' });
+    }
+});
+
+// Add bank account
+router.post('/accounts', verifyToken, async (req, res) => {
+    const { bank_name, account_number, ifsc_code, account_holder_name, upi_id, is_primary } = req.body;
+    
+    try {
+        const account = await dbService.addBankAccount(req.user.id, {
+            bank_name, account_number, ifsc_code, account_holder_name, upi_id, is_primary
+        });
+        res.json({ success: true, data: account });
+    } catch (error) {
+        console.error('Add account error:', error);
+        res.status(500).json({ success: false, message: 'Failed to add account' });
+    }
+});
+
+// Delete bank account
+router.delete('/accounts/:id', verifyToken, async (req, res) => {
+    try {
+        await dbService.deleteBankAccount(parseInt(req.params.id), req.user.id);
+        res.json({ success: true, message: 'Account deleted' });
+    } catch (error) {
+        console.error('Delete account error:', error);
+        res.status(500).json({ success: false, message: 'Failed to delete account' });
+    }
+});
+
+// Set primary bank account
+router.put('/accounts/:id/primary', verifyToken, async (req, res) => {
+    try {
+        await dbService.setPrimaryBankAccount(parseInt(req.params.id), req.user.id);
+        res.json({ success: true, message: 'Primary account updated' });
+    } catch (error) {
+        console.error('Set primary error:', error);
+        res.status(500).json({ success: false, message: 'Failed to set primary' });
+    }
+});
+
+// ============ BALANCE OPERATIONS ============
+
+// Get balance
+router.get('/balance/:accountId', verifyToken, async (req, res) => {
+    try {
+        const account = await dbService.getBankAccountById(parseInt(req.params.accountId), req.user.id);
+        res.json({ success: true, data: { balance: account?.balance || 0 } });
+    } catch (error) {
+        console.error('Get balance error:', error);
+        res.status(500).json({ success: false, message: 'Failed to get balance' });
+    }
+});
+
+// Deposit money
+router.post('/deposit', verifyToken, async (req, res) => {
+    const { accountId, amount } = req.body;
+    
+    if (!amount || amount <= 0) {
+        return res.status(400).json({ success: false, message: 'Invalid amount' });
+    }
+    
+    try {
+        const account = await dbService.getBankAccountById(parseInt(accountId), req.user.id);
+        if (!account) {
+            return res.status(404).json({ success: false, message: 'Account not found' });
+        }
+        
+        const newBalance = await dbService.updateBankBalance(parseInt(accountId), amount, true);
+        
+        const transactionId = `DEP${Date.now()}`;
+        await dbService.createTransaction({
+            transaction_id: transactionId,
+            user_id: req.user.id,
+            type: 'self_transfer',
+            amount: amount,
+            status: 'success',
+            bank_name: account.bank_name,
+            bank_account_id: parseInt(accountId),
+            description: `Deposit of ₹${amount}`
+        });
+        
+        res.json({ success: true, data: { balance: newBalance } });
+    } catch (error) {
+        console.error('Deposit error:', error);
+        res.status(500).json({ success: false, message: error.message || 'Deposit failed' });
+    }
+});
+
+// Withdraw money
+router.post('/withdraw', verifyToken, async (req, res) => {
+    const { accountId, amount } = req.body;
+    
+    console.log('Withdraw request:', { accountId, amount, userId: req.user.id });
+    
+    if (!amount || amount <= 0) {
+        return res.status(400).json({ success: false, message: 'Invalid amount' });
+    }
+    
+    try {
+        const account = await dbService.getBankAccountById(parseInt(accountId), req.user.id);
+        if (!account) {
+            return res.status(404).json({ success: false, message: 'Account not found' });
+        }
+        
+        const currentBalance = account.balance || 0;
+        if (amount > currentBalance) {
+            return res.status(400).json({ success: false, message: 'Insufficient balance' });
+        }
+        
+        const newBalance = await dbService.updateBankBalance(parseInt(accountId), amount, false);
+        
+        const transactionId = `WTD${Date.now()}`;
+        await dbService.createTransaction({
+            transaction_id: transactionId,
+            user_id: req.user.id,
+            type: 'self_transfer',
+            amount: amount,
+            status: 'success',
+            bank_name: account.bank_name,
+            bank_account_id: parseInt(accountId),
+            description: `Withdrawal of ₹${amount} from ${account.bank_name}`,
+            gems_used: 0,
+            reserve_used: 0,
+            bank_used: amount,
+            cashback_earned: 0
+        });
+        
+        res.json({ success: true, data: { balance: newBalance } });
+    } catch (error) {
+        console.error('Withdraw error DETAILS:', error);
+        res.status(500).json({ success: false, message: error.message });
+    }
+});
+
+// ============ COIN MANAGEMENT ============
+
+// Get coin balance
+router.get('/coins/balance', verifyToken, async (req, res) => {
+    try {
+        const balance = await dbService.getCoinBalance(req.user.id);
+        const history = await dbService.getCoinHistory(req.user.id, 10);
+        res.json({ 
+            success: true, 
+            data: { 
+                balance: balance.balance,
+                lifetimeEarned: balance.lifetime_earned,
+                lifetimeUsed: balance.lifetime_used,
+                recentTransactions: history 
+            } 
+        });
+    } catch (error) {
+        console.error('Get coin balance error:', error);
+        res.status(500).json({ success: false, message: 'Failed to get balance' });
+    }
+});
+
+// Update coin balance
+router.post('/coins/update', verifyToken, async (req, res) => {
+    const { amount, isEarning } = req.body;
+    
+    if (!amount || amount <= 0) {
+        return res.status(400).json({ success: false, message: 'Invalid amount' });
+    }
+    
+    try {
+        const newBalance = await dbService.updateCoinBalance(req.user.id, amount, isEarning);
+        
+        await dbService.addCoinTransaction(
+            req.user.id,
+            amount,
+            isEarning ? 'earned' : 'used',
+            isEarning ? 'cashback' : 'redemption',
+            `coin_update_${Date.now()}`,
+            isEarning ? `Earned ${amount} SabAI Gems` : `Used ${amount} SabAI Gems`
+        );
+        
+        res.json({ success: true, data: { newBalance: newBalance.balance } });
+    } catch (error) {
+        console.error('Update coin balance error:', error);
+        res.status(500).json({ success: false, message: 'Failed to update coin balance' });
+    }
+});
+
+module.exports = router;

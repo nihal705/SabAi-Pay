@@ -1,0 +1,272 @@
+[
+  {
+    "id": "pizzahut_item_delhi_1",
+    "name": "Chicken Supreme (10\")",
+    "price": 56,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_2",
+    "name": "Veg Supreme (2\")",
+    "price": 177,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_3",
+    "name": "Pepperoni Feast",
+    "price": 88,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_4",
+    "name": "Tandoori Paneer",
+    "price": 207,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_5",
+    "name": "Garlic Breadsticks",
+    "price": 166,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_6",
+    "name": "Cheesy Bites",
+    "price": 149,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_7",
+    "name": "Chicken Wings",
+    "price": 72,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_8",
+    "name": "Cheese Pizza (3\")",
+    "price": 515,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_9",
+    "name": "Chicken Supreme",
+    "price": 239,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_10",
+    "name": "Veg Supreme",
+    "price": 128,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_11",
+    "name": "Pepperoni Feast",
+    "price": 158,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_12",
+    "name": "Tandoori Paneer",
+    "price": 52,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_13",
+    "name": "Garlic Breadsticks (6\")",
+    "price": 162,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_14",
+    "name": "Cheesy Bites (7\")",
+    "price": 93,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_15",
+    "name": "Chicken Wings",
+    "price": 226,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_16",
+    "name": "Cheese Pizza",
+    "price": 516,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_17",
+    "name": "Chicken Supreme",
+    "price": 94,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_18",
+    "name": "Veg Supreme (8\")",
+    "price": 71,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_19",
+    "name": "Pepperoni Feast (5\")",
+    "price": 120,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_20",
+    "name": "Tandoori Paneer",
+    "price": 132,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_21",
+    "name": "Garlic Breadsticks",
+    "price": 98,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_22",
+    "name": "Cheesy Bites",
+    "price": 171,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_23",
+    "name": "Chicken Wings",
+    "price": 140,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_24",
+    "name": "Cheese Pizza (1\")",
+    "price": 277,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_25",
+    "name": "Chicken Supreme",
+    "price": 141,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_26",
+    "name": "Veg Supreme",
+    "price": 226,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_27",
+    "name": "Pepperoni Feast",
+    "price": 242,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_28",
+    "name": "Tandoori Paneer",
+    "price": 135,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_29",
+    "name": "Garlic Breadsticks (7\")",
+    "price": 50,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_delhi_30",
+    "name": "Cheesy Bites",
+    "price": 105,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

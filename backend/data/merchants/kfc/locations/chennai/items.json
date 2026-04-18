@@ -1,0 +1,212 @@
+[
+  {
+    "id": "kfc_item_chennai_1",
+    "name": "Hot Wings",
+    "price": 404,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_2",
+    "name": "Popcorn Chicken",
+    "price": 154,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_3",
+    "name": "Fries",
+    "price": 283,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_4",
+    "name": "Chicken Bucket",
+    "price": 419,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_5",
+    "name": "Hot Wings 5",
+    "price": 121,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_6",
+    "name": "Popcorn Chicken",
+    "price": 418,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_7",
+    "name": "Fries",
+    "price": 360,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_8",
+    "name": "Chicken Bucket",
+    "price": 284,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_9",
+    "name": "Hot Wings",
+    "price": 141,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_10",
+    "name": "Popcorn Chicken 4",
+    "price": 159,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_11",
+    "name": "Fries 2",
+    "price": 386,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_12",
+    "name": "Chicken Bucket",
+    "price": 362,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_13",
+    "name": "Hot Wings 10",
+    "price": 478,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_14",
+    "name": "Popcorn Chicken",
+    "price": 286,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_15",
+    "name": "Fries",
+    "price": 472,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_16",
+    "name": "Chicken Bucket",
+    "price": 217,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_17",
+    "name": "Hot Wings 9",
+    "price": 291,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_18",
+    "name": "Popcorn Chicken",
+    "price": 177,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_19",
+    "name": "Fries",
+    "price": 280,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_20",
+    "name": "Chicken Bucket",
+    "price": 464,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_21",
+    "name": "Hot Wings 9",
+    "price": 177,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_22",
+    "name": "Popcorn Chicken",
+    "price": 197,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_23",
+    "name": "Fries 1",
+    "price": 151,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_24",
+    "name": "Chicken Bucket",
+    "price": 141,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_25",
+    "name": "Hot Wings",
+    "price": 339,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_26",
+    "name": "Popcorn Chicken",
+    "price": 309,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_27",
+    "name": "Fries",
+    "price": 304,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_28",
+    "name": "Chicken Bucket 5",
+    "price": 381,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "kfc_item_chennai_29",
+    "name": "Hot Wings",
+    "price": 214,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "kfc_item_chennai_30",
+    "name": "Popcorn Chicken",
+    "price": 496,
+    "category": "Main",
+    "isVeg": true
+  }
+]

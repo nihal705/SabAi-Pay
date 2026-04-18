@@ -1,0 +1,498 @@
+[
+  {
+    "id": "zomato_rest_jaipur_1",
+    "name": "Amritsari Haveli",
+    "cuisine": "South Indian",
+    "rating": 4.7,
+    "ratingCount": 661,
+    "priceForTwo": 1250,
+    "location": {
+      "area": "MI Road",
+      "address": "Shop 1, MI Road, Jaipur",
+      "latitude": 26.923510570081195,
+      "longitude": 75.77569288985612
+    },
+    "deliveryTime": "25 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_2",
+    "name": "Sagar Ratna Kitchen",
+    "cuisine": "Chinese",
+    "rating": 4.9,
+    "ratingCount": 3705,
+    "priceForTwo": 1155,
+    "location": {
+      "area": "Malviya Nagar",
+      "address": "Shop 2, Malviya Nagar, Jaipur",
+      "latitude": 26.905569625090692,
+      "longitude": 75.76468068429433
+    },
+    "deliveryTime": "39 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_3",
+    "name": "Kanti Sweets",
+    "cuisine": "Biryani",
+    "rating": 3.9,
+    "ratingCount": 1631,
+    "priceForTwo": 882,
+    "location": {
+      "area": "Jagatpura",
+      "address": "Shop 3, Jagatpura, Jaipur",
+      "latitude": 26.89979748532191,
+      "longitude": 75.78045336324521
+    },
+    "deliveryTime": "58 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_4",
+    "name": "MTR",
+    "cuisine": "Fast Food",
+    "rating": 4.3,
+    "ratingCount": 2599,
+    "priceForTwo": 941,
+    "location": {
+      "area": "Vaishali Nagar",
+      "address": "Shop 4, Vaishali Nagar, Jaipur",
+      "latitude": 26.906925138854586,
+      "longitude": 75.78831983702145
+    },
+    "deliveryTime": "54 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_5",
+    "name": "CTR Kitchen",
+    "cuisine": "Pizza",
+    "rating": 3.8,
+    "ratingCount": 1177,
+    "priceForTwo": 1038,
+    "location": {
+      "area": "C Scheme",
+      "address": "Shop 5, C Scheme, Jaipur",
+      "latitude": 26.888836648083714,
+      "longitude": 75.80422865148243
+    },
+    "deliveryTime": "42 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_6",
+    "name": "Mainland China Kitchen",
+    "cuisine": "Burgers",
+    "rating": 3.3,
+    "ratingCount": 4336,
+    "priceForTwo": 1028,
+    "location": {
+      "area": "MI Road",
+      "address": "Shop 6, MI Road, Jaipur",
+      "latitude": 26.895475548967603,
+      "longitude": 75.80053522515678
+    },
+    "deliveryTime": "41 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_7",
+    "name": "Chung Wah",
+    "cuisine": "North Indian",
+    "rating": 4.8,
+    "ratingCount": 3581,
+    "priceForTwo": 1000,
+    "location": {
+      "area": "Malviya Nagar",
+      "address": "Shop 7, Malviya Nagar, Jaipur",
+      "latitude": 26.923979733964284,
+      "longitude": 75.76625682519807
+    },
+    "deliveryTime": "31 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_8",
+    "name": "Biryani Blues",
+    "cuisine": "South Indian",
+    "rating": 3.5,
+    "ratingCount": 3966,
+    "priceForTwo": 942,
+    "location": {
+      "area": "Jagatpura",
+      "address": "Shop 8, Jagatpura, Jaipur",
+      "latitude": 26.915532706546283,
+      "longitude": 75.79850155782081
+    },
+    "deliveryTime": "34 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_9",
+    "name": "Paradise Biryani",
+    "cuisine": "Chinese",
+    "rating": 3.3,
+    "ratingCount": 623,
+    "priceForTwo": 1183,
+    "location": {
+      "area": "Vaishali Nagar",
+      "address": "Shop 9, Vaishali Nagar, Jaipur",
+      "latitude": 26.905228819984362,
+      "longitude": 75.80392398232769
+    },
+    "deliveryTime": "57 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_10",
+    "name": "Dominos",
+    "cuisine": "Biryani",
+    "rating": 4.2,
+    "ratingCount": 4858,
+    "priceForTwo": 980,
+    "location": {
+      "area": "C Scheme",
+      "address": "Shop 10, C Scheme, Jaipur",
+      "latitude": 26.929219158471632,
+      "longitude": 75.81106495902145
+    },
+    "deliveryTime": "34 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_11",
+    "name": "Pizza Hut Kitchen",
+    "cuisine": "Fast Food",
+    "rating": 3.2,
+    "ratingCount": 951,
+    "priceForTwo": 498,
+    "location": {
+      "area": "MI Road",
+      "address": "Shop 11, MI Road, Jaipur",
+      "latitude": 26.921802284989276,
+      "longitude": 75.77535860728285
+    },
+    "deliveryTime": "45 min",
+    "isOpen": false
+  },
+  {
+    "id": "zomato_rest_jaipur_12",
+    "name": "Burger King",
+    "cuisine": "Pizza",
+    "rating": 4.9,
+    "ratingCount": 1656,
+    "priceForTwo": 618,
+    "location": {
+      "area": "Malviya Nagar",
+      "address": "Shop 12, Malviya Nagar, Jaipur",
+      "latitude": 26.893292020466482,
+      "longitude": 75.80483738276641
+    },
+    "deliveryTime": "20 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_13",
+    "name": "KFC",
+    "cuisine": "Burgers",
+    "rating": 4.8,
+    "ratingCount": 2861,
+    "priceForTwo": 769,
+    "location": {
+      "area": "Jagatpura",
+      "address": "Shop 13, Jagatpura, Jaipur",
+      "latitude": 26.897038933935253,
+      "longitude": 75.77948552183774
+    },
+    "deliveryTime": "44 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_14",
+    "name": "McDonalds Kitchen",
+    "cuisine": "North Indian",
+    "rating": 3.6,
+    "ratingCount": 4742,
+    "priceForTwo": 315,
+    "location": {
+      "area": "Vaishali Nagar",
+      "address": "Shop 14, Vaishali Nagar, Jaipur",
+      "latitude": 26.90507355027241,
+      "longitude": 75.7993273762411
+    },
+    "deliveryTime": "29 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_15",
+    "name": "Subway",
+    "cuisine": "South Indian",
+    "rating": 4.9,
+    "ratingCount": 1866,
+    "priceForTwo": 754,
+    "location": {
+      "area": "C Scheme",
+      "address": "Shop 15, C Scheme, Jaipur",
+      "latitude": 26.93716357753326,
+      "longitude": 75.80182704223239
+    },
+    "deliveryTime": "43 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_16",
+    "name": "Taco Bell Kitchen",
+    "cuisine": "Chinese",
+    "rating": 4.8,
+    "ratingCount": 3412,
+    "priceForTwo": 464,
+    "location": {
+      "area": "MI Road",
+      "address": "Shop 16, MI Road, Jaipur",
+      "latitude": 26.89138329849732,
+      "longitude": 75.80611028334859
+    },
+    "deliveryTime": "21 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_17",
+    "name": "Punjabi Rasoi",
+    "cuisine": "Biryani",
+    "rating": 4.6,
+    "ratingCount": 4528,
+    "priceForTwo": 1107,
+    "location": {
+      "area": "Malviya Nagar",
+      "address": "Shop 17, Malviya Nagar, Jaipur",
+      "latitude": 26.890434389856484,
+      "longitude": 75.77515895408588
+    },
+    "deliveryTime": "25 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_18",
+    "name": "Amritsari Haveli",
+    "cuisine": "Fast Food",
+    "rating": 4.6,
+    "ratingCount": 4336,
+    "priceForTwo": 360,
+    "location": {
+      "area": "Jagatpura",
+      "address": "Shop 18, Jagatpura, Jaipur",
+      "latitude": 26.895543967347614,
+      "longitude": 75.77809466141025
+    },
+    "deliveryTime": "35 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_19",
+    "name": "Sagar Ratna",
+    "cuisine": "Pizza",
+    "rating": 4.1,
+    "ratingCount": 3737,
+    "priceForTwo": 650,
+    "location": {
+      "area": "Vaishali Nagar",
+      "address": "Shop 19, Vaishali Nagar, Jaipur",
+      "latitude": 26.925459175788486,
+      "longitude": 75.80439875047591
+    },
+    "deliveryTime": "23 min",
+    "isOpen": false
+  },
+  {
+    "id": "zomato_rest_jaipur_20",
+    "name": "Kanti Sweets",
+    "cuisine": "Burgers",
+    "rating": 4.8,
+    "ratingCount": 1856,
+    "priceForTwo": 713,
+    "location": {
+      "area": "C Scheme",
+      "address": "Shop 20, C Scheme, Jaipur",
+      "latitude": 26.92699765421733,
+      "longitude": 75.78127756909666
+    },
+    "deliveryTime": "38 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_21",
+    "name": "MTR",
+    "cuisine": "North Indian",
+    "rating": 4.9,
+    "ratingCount": 4694,
+    "priceForTwo": 904,
+    "location": {
+      "area": "MI Road",
+      "address": "Shop 21, MI Road, Jaipur",
+      "latitude": 26.914962773148797,
+      "longitude": 75.80044068335577
+    },
+    "deliveryTime": "22 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_22",
+    "name": "CTR Kitchen",
+    "cuisine": "South Indian",
+    "rating": 3.9,
+    "ratingCount": 1398,
+    "priceForTwo": 466,
+    "location": {
+      "area": "Malviya Nagar",
+      "address": "Shop 22, Malviya Nagar, Jaipur",
+      "latitude": 26.890020067578195,
+      "longitude": 75.80995548603808
+    },
+    "deliveryTime": "36 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_23",
+    "name": "Mainland China",
+    "cuisine": "Chinese",
+    "rating": 5,
+    "ratingCount": 4842,
+    "priceForTwo": 375,
+    "location": {
+      "area": "Jagatpura",
+      "address": "Shop 23, Jagatpura, Jaipur",
+      "latitude": 26.92130091087356,
+      "longitude": 75.8120562065736
+    },
+    "deliveryTime": "27 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_24",
+    "name": "Chung Wah",
+    "cuisine": "Biryani",
+    "rating": 3.4,
+    "ratingCount": 769,
+    "priceForTwo": 348,
+    "location": {
+      "area": "Vaishali Nagar",
+      "address": "Shop 24, Vaishali Nagar, Jaipur",
+      "latitude": 26.92834167946181,
+      "longitude": 75.77207267583557
+    },
+    "deliveryTime": "36 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_25",
+    "name": "Biryani Blues",
+    "cuisine": "Fast Food",
+    "rating": 3.7,
+    "ratingCount": 703,
+    "priceForTwo": 1094,
+    "location": {
+      "area": "C Scheme",
+      "address": "Shop 25, C Scheme, Jaipur",
+      "latitude": 26.897736457971458,
+      "longitude": 75.7891602994765
+    },
+    "deliveryTime": "54 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_26",
+    "name": "Paradise Biryani",
+    "cuisine": "Pizza",
+    "rating": 3.4,
+    "ratingCount": 3216,
+    "priceForTwo": 401,
+    "location": {
+      "area": "MI Road",
+      "address": "Shop 26, MI Road, Jaipur",
+      "latitude": 26.915352671270323,
+      "longitude": 75.76858353186908
+    },
+    "deliveryTime": "54 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_27",
+    "name": "Dominos",
+    "cuisine": "Burgers",
+    "rating": 3.4,
+    "ratingCount": 2458,
+    "priceForTwo": 681,
+    "location": {
+      "area": "Malviya Nagar",
+      "address": "Shop 27, Malviya Nagar, Jaipur",
+      "latitude": 26.929408136541973,
+      "longitude": 75.76918385715794
+    },
+    "deliveryTime": "21 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_28",
+    "name": "Pizza Hut Kitchen",
+    "cuisine": "North Indian",
+    "rating": 3.5,
+    "ratingCount": 1267,
+    "priceForTwo": 949,
+    "location": {
+      "area": "Jagatpura",
+      "address": "Shop 28, Jagatpura, Jaipur",
+      "latitude": 26.91399951499067,
+      "longitude": 75.79498949708767
+    },
+    "deliveryTime": "39 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_29",
+    "name": "Burger King",
+    "cuisine": "South Indian",
+    "rating": 3.3,
+    "ratingCount": 4115,
+    "priceForTwo": 1122,
+    "location": {
+      "area": "Vaishali Nagar",
+      "address": "Shop 29, Vaishali Nagar, Jaipur",
+      "latitude": 26.90464102067466,
+      "longitude": 75.7723595040569
+    },
+    "deliveryTime": "42 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_jaipur_30",
+    "name": "KFC Kitchen",
+    "cuisine": "Chinese",
+    "rating": 4.1,
+    "ratingCount": 4077,
+    "priceForTwo": 689,
+    "location": {
+      "area": "C Scheme",
+      "address": "Shop 30, C Scheme, Jaipur",
+      "latitude": 26.91895705355285,
+      "longitude": 75.77136879856296
+    },
+    "deliveryTime": "46 min",
+    "isOpen": false
+  },
+  {
+    "id": "zomato_rest_jaipur_31",
+    "name": "McDonalds",
+    "cuisine": "Biryani",
+    "rating": 4.7,
+    "ratingCount": 2263,
+    "priceForTwo": 1163,
+    "location": {
+      "area": "MI Road",
+      "address": "Shop 31, MI Road, Jaipur",
+      "latitude": 26.90543304786386,
+      "longitude": 75.7773704550909
+    },
+    "deliveryTime": "34 min",
+    "isOpen": true
+  }
+]

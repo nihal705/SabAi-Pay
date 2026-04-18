@@ -1,0 +1,362 @@
+[
+  {
+    "id": "starbucks_item_delhi_1",
+    "name": "Cappuccino",
+    "price": 240,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_2",
+    "name": "Espresso",
+    "price": 149,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_3",
+    "name": "Americano",
+    "price": 247,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_4",
+    "name": "Mocha",
+    "price": 173,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_5",
+    "name": "Cold Coffee",
+    "price": 168,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_6",
+    "name": "Frappuccino",
+    "price": 141,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_7",
+    "name": "Hot Chocolate (Cold)",
+    "price": 266,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_8",
+    "name": "Caffè Latte",
+    "price": 219,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_9",
+    "name": "Cappuccino",
+    "price": 204,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_10",
+    "name": "Espresso",
+    "price": 255,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_11",
+    "name": "Americano (Hot)",
+    "price": 225,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_12",
+    "name": "Mocha",
+    "price": 143,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_13",
+    "name": "Cold Coffee",
+    "price": 118,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_14",
+    "name": "Frappuccino",
+    "price": 134,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_15",
+    "name": "Hot Chocolate",
+    "price": 234,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_16",
+    "name": "Caffè Latte",
+    "price": 118,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_17",
+    "name": "Cappuccino",
+    "price": 121,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_18",
+    "name": "Espresso",
+    "price": 244,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_19",
+    "name": "Americano",
+    "price": 99,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_20",
+    "name": "Mocha",
+    "price": 112,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_21",
+    "name": "Cold Coffee (Cold)",
+    "price": 87,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_22",
+    "name": "Frappuccino",
+    "price": 172,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_23",
+    "name": "Hot Chocolate (Hot)",
+    "price": 104,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_24",
+    "name": "Caffè Latte",
+    "price": 152,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_25",
+    "name": "Muffin",
+    "price": 129,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_26",
+    "name": "Brownie",
+    "price": 117,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_27",
+    "name": "Cookie",
+    "price": 97,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_28",
+    "name": "Sandwich",
+    "price": 174,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_29",
+    "name": "Cake Slice",
+    "price": 150,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_30",
+    "name": "Bagel",
+    "price": 65,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_31",
+    "name": "Donut",
+    "price": 76,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_32",
+    "name": "Croissant",
+    "price": 135,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_33",
+    "name": "Muffin",
+    "price": 60,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_34",
+    "name": "Brownie",
+    "price": 50,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_35",
+    "name": "Cookie",
+    "price": 112,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_36",
+    "name": "Sandwich",
+    "price": 190,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_37",
+    "name": "Cake Slice",
+    "price": 117,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_38",
+    "name": "Bagel",
+    "price": 117,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_39",
+    "name": "Donut",
+    "price": 145,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_delhi_40",
+    "name": "Croissant",
+    "price": 62,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

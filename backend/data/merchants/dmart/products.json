@@ -1,0 +1,632 @@
+[
+  {
+    "id": "dmart_prod_all_1",
+    "name": "Basmati Rice",
+    "price": 428,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_all_2",
+    "name": "Basmati Rice (1kg)",
+    "price": 524,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_all_3",
+    "name": "Sonamasoori Rice",
+    "price": 323,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_all_4",
+    "name": "Sonamasoori Rice (1kg)",
+    "price": 358,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_all_5",
+    "name": "Wheat Flour",
+    "price": 98,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_6",
+    "name": "Wheat Flour (1kg)",
+    "price": 394,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_7",
+    "name": "Sugar",
+    "price": 350,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_8",
+    "name": "Sugar (1kg)",
+    "price": 338,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_9",
+    "name": "Salt",
+    "price": 519,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_10",
+    "name": "Salt (1kg)",
+    "price": 314,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_11",
+    "name": "Cooking Oil",
+    "price": 259,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_all_12",
+    "name": "Cooking Oil (1kg)",
+    "price": 83,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_all_13",
+    "name": "Toor Dal",
+    "price": 286,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_14",
+    "name": "Toor Dal (1kg)",
+    "price": 82,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_15",
+    "name": "Masoor Dal",
+    "price": 299,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_16",
+    "name": "Masoor Dal (1kg)",
+    "price": 334,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_17",
+    "name": "Chana Dal",
+    "price": 452,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_18",
+    "name": "Chana Dal (1kg)",
+    "price": 545,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_19",
+    "name": "Besan",
+    "price": 251,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_20",
+    "name": "Besan (1kg)",
+    "price": 500,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_21",
+    "name": "Milk",
+    "price": 410,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_all_22",
+    "name": "Milk (1kg)",
+    "price": 462,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_all_23",
+    "name": "Curd",
+    "price": 469,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_24",
+    "name": "Curd (1kg)",
+    "price": 197,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_25",
+    "name": "Butter",
+    "price": 170,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_26",
+    "name": "Butter (1kg)",
+    "price": 279,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_27",
+    "name": "Paneer",
+    "price": 355,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "dmart_prod_all_28",
+    "name": "Paneer (1kg)",
+    "price": 418,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "dmart_prod_all_29",
+    "name": "Ghee",
+    "price": 59,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_30",
+    "name": "Ghee (1kg)",
+    "price": 540,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_31",
+    "name": "Cheese",
+    "price": 346,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_32",
+    "name": "Cheese (1kg)",
+    "price": 413,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_33",
+    "name": "Buttermilk",
+    "price": 220,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_all_34",
+    "name": "Buttermilk (1kg)",
+    "price": 486,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_all_35",
+    "name": "Chips",
+    "price": 308,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_36",
+    "name": "Chips (1kg)",
+    "price": 276,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_37",
+    "name": "Biscuits",
+    "price": 189,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_38",
+    "name": "Biscuits (1kg)",
+    "price": 246,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_39",
+    "name": "Namkeen",
+    "price": 454,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_40",
+    "name": "Namkeen (1kg)",
+    "price": 151,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_41",
+    "name": "Chocolate",
+    "price": 183,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_42",
+    "name": "Chocolate (1kg)",
+    "price": 154,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_43",
+    "name": "Cookies",
+    "price": 424,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_44",
+    "name": "Cookies (1kg)",
+    "price": 70,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_45",
+    "name": "Cakes",
+    "price": 178,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_46",
+    "name": "Cakes (1kg)",
+    "price": 307,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_47",
+    "name": "Tea",
+    "price": 435,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_48",
+    "name": "Tea (1kg)",
+    "price": 173,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_49",
+    "name": "Coffee",
+    "price": 410,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_50",
+    "name": "Coffee (1kg)",
+    "price": 462,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_51",
+    "name": "Juice",
+    "price": 130,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_52",
+    "name": "Juice (1kg)",
+    "price": 547,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_53",
+    "name": "Soft Drink",
+    "price": 512,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_54",
+    "name": "Soft Drink (1kg)",
+    "price": 279,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_55",
+    "name": "Energy Drink",
+    "price": 280,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_56",
+    "name": "Energy Drink (1kg)",
+    "price": 516,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_57",
+    "name": "Coconut Water",
+    "price": 508,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_58",
+    "name": "Coconut Water (1kg)",
+    "price": 116,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_59",
+    "name": "Detergent",
+    "price": 273,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_60",
+    "name": "Detergent (1kg)",
+    "price": 199,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_61",
+    "name": "Soap",
+    "price": 209,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_62",
+    "name": "Soap (1kg)",
+    "price": 267,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_63",
+    "name": "Surface Cleaner",
+    "price": 272,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_64",
+    "name": "Surface Cleaner (1kg)",
+    "price": 530,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_65",
+    "name": "Tissue",
+    "price": 387,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_66",
+    "name": "Tissue (1kg)",
+    "price": 200,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_67",
+    "name": "Aluminum Foil",
+    "price": 182,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_all_68",
+    "name": "Aluminum Foil (1kg)",
+    "price": 63,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_all_69",
+    "name": "Cling Wrap",
+    "price": 370,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_all_70",
+    "name": "Cling Wrap (1kg)",
+    "price": 274,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

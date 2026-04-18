@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ccd_item_pune_1",
+    "name": "Cappuccino (Hot)",
+    "price": 205,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_2",
+    "name": "Espresso (Cold)",
+    "price": 201,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_3",
+    "name": "Americano (Cold)",
+    "price": 271,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_4",
+    "name": "Mocha (Hot)",
+    "price": 230,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_5",
+    "name": "Cold Coffee (Hot)",
+    "price": 129,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_6",
+    "name": "Latte (Cold)",
+    "price": 153,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_7",
+    "name": "Cappuccino (Cold)",
+    "price": 197,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_8",
+    "name": "Espresso (Hot)",
+    "price": 116,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_9",
+    "name": "Americano (Hot)",
+    "price": 170,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_10",
+    "name": "Mocha (Cold)",
+    "price": 153,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_11",
+    "name": "Cold Coffee (Cold)",
+    "price": 98,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_12",
+    "name": "Latte (Cold)",
+    "price": 92,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_13",
+    "name": "Cappuccino (Cold)",
+    "price": 116,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_14",
+    "name": "Espresso (Hot)",
+    "price": 219,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_15",
+    "name": "Americano (Cold)",
+    "price": 248,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_16",
+    "name": "Mocha (Cold)",
+    "price": 107,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_17",
+    "name": "Cold Coffee (Cold)",
+    "price": 279,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_18",
+    "name": "Latte (Hot)",
+    "price": 232,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_19",
+    "name": "Cappuccino (Cold)",
+    "price": 235,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_20",
+    "name": "Espresso (Cold)",
+    "price": 254,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_21",
+    "name": "Americano (Cold)",
+    "price": 199,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_22",
+    "name": "Mocha (Cold)",
+    "price": 224,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_23",
+    "name": "Cold Coffee (Cold)",
+    "price": 257,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_24",
+    "name": "Latte (Hot)",
+    "price": 266,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_25",
+    "name": "Cappuccino (Cold)",
+    "price": 97,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_26",
+    "name": "Espresso (Hot)",
+    "price": 142,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_27",
+    "name": "Americano (Cold)",
+    "price": 80,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_28",
+    "name": "Mocha (Cold)",
+    "price": 173,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_29",
+    "name": "Cold Coffee (Cold)",
+    "price": 150,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_30",
+    "name": "Latte (Hot)",
+    "price": 92,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_31",
+    "name": "Cappuccino (Hot)",
+    "price": 169,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_32",
+    "name": "Espresso (Cold)",
+    "price": 200,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_33",
+    "name": "Americano (Cold)",
+    "price": 178,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_34",
+    "name": "Mocha (Cold)",
+    "price": 176,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_35",
+    "name": "Cold Coffee (Cold)",
+    "price": 126,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_36",
+    "name": "Latte (Cold)",
+    "price": 202,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_37",
+    "name": "Cappuccino (Cold)",
+    "price": 267,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_38",
+    "name": "Espresso (Hot)",
+    "price": 119,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_39",
+    "name": "Americano (Cold)",
+    "price": 263,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "ccd_item_pune_40",
+    "name": "Mocha (Cold)",
+    "price": 131,
+    "category": "Beverages",
+    "isVeg": true
+  }
+]

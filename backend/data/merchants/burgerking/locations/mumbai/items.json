@@ -1,0 +1,272 @@
+[
+  {
+    "id": "burgerking_item_mumbai_1",
+    "name": "Chicken Whopper",
+    "price": 174,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_2",
+    "name": "Veg Whopper",
+    "price": 249,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_3",
+    "name": "Crispy Chicken",
+    "price": 168,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_4",
+    "name": "French Fries (2\")",
+    "price": 66,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_5",
+    "name": "Onion Rings",
+    "price": 153,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_6",
+    "name": "Chicken Nuggets",
+    "price": 75,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_7",
+    "name": "Milkshake (10\")",
+    "price": 179,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_8",
+    "name": "Whopper",
+    "price": 146,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_9",
+    "name": "Chicken Whopper (4\")",
+    "price": 214,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_10",
+    "name": "Veg Whopper",
+    "price": 94,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_11",
+    "name": "Crispy Chicken",
+    "price": 140,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_12",
+    "name": "French Fries",
+    "price": 104,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_13",
+    "name": "Onion Rings (9\")",
+    "price": 188,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_14",
+    "name": "Chicken Nuggets",
+    "price": 142,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_15",
+    "name": "Milkshake",
+    "price": 142,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_16",
+    "name": "Whopper",
+    "price": 231,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_17",
+    "name": "Chicken Whopper",
+    "price": 65,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_18",
+    "name": "Veg Whopper",
+    "price": 218,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_19",
+    "name": "Crispy Chicken",
+    "price": 118,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_20",
+    "name": "French Fries",
+    "price": 75,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_21",
+    "name": "Onion Rings",
+    "price": 158,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_22",
+    "name": "Chicken Nuggets (4\")",
+    "price": 94,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_23",
+    "name": "Milkshake (8\")",
+    "price": 217,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_24",
+    "name": "Whopper (2\")",
+    "price": 210,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_25",
+    "name": "Chicken Whopper",
+    "price": 160,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_26",
+    "name": "Veg Whopper",
+    "price": 86,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_27",
+    "name": "Crispy Chicken",
+    "price": 157,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_28",
+    "name": "French Fries",
+    "price": 75,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_29",
+    "name": "Onion Rings (2\")",
+    "price": 186,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "burgerking_item_mumbai_30",
+    "name": "Chicken Nuggets",
+    "price": 157,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  }
+]

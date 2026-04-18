@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "reliance_digital_item_chennai_1",
+    "name": "Laptops Item 1",
+    "price": 17771,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_2",
+    "name": "Headphones Item 2",
+    "price": 25880,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_3",
+    "name": "Speakers Item 3",
+    "price": 27252,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_4",
+    "name": "Accessories Item 4",
+    "price": 48640,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_5",
+    "name": "Smartphones Item 5",
+    "price": 17940,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_6",
+    "name": "Laptops Item 6",
+    "price": 24824,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_7",
+    "name": "Headphones Item 7",
+    "price": 35644,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_8",
+    "name": "Speakers Item 8",
+    "price": 43882,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_9",
+    "name": "Accessories Item 9",
+    "price": 36248,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_10",
+    "name": "Smartphones Item 10",
+    "price": 16265,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_11",
+    "name": "Laptops Item 11",
+    "price": 49448,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_12",
+    "name": "Headphones Item 12",
+    "price": 47996,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_13",
+    "name": "Speakers Item 13",
+    "price": 40352,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_14",
+    "name": "Accessories Item 14",
+    "price": 32076,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_15",
+    "name": "Smartphones Item 15",
+    "price": 6532,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_16",
+    "name": "Laptops Item 16",
+    "price": 4854,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_17",
+    "name": "Headphones Item 17",
+    "price": 20627,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_18",
+    "name": "Speakers Item 18",
+    "price": 22931,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_19",
+    "name": "Accessories Item 19",
+    "price": 3916,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_20",
+    "name": "Smartphones Item 20",
+    "price": 24278,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_21",
+    "name": "Laptops Item 21",
+    "price": 12317,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_22",
+    "name": "Headphones Item 22",
+    "price": 5946,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_23",
+    "name": "Speakers Item 23",
+    "price": 50384,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_24",
+    "name": "Accessories Item 24",
+    "price": 19845,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_25",
+    "name": "Smartphones Item 25",
+    "price": 44239,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_26",
+    "name": "Laptops Item 26",
+    "price": 10992,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_27",
+    "name": "Headphones Item 27",
+    "price": 8220,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_28",
+    "name": "Speakers Item 28",
+    "price": 22709,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_29",
+    "name": "Accessories Item 29",
+    "price": 18755,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_30",
+    "name": "Smartphones Item 30",
+    "price": 15664,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_31",
+    "name": "Laptops Item 31",
+    "price": 46967,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_32",
+    "name": "Headphones Item 32",
+    "price": 7679,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_33",
+    "name": "Speakers Item 33",
+    "price": 1096,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_34",
+    "name": "Accessories Item 34",
+    "price": 13003,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_35",
+    "name": "Smartphones Item 35",
+    "price": 5902,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_36",
+    "name": "Laptops Item 36",
+    "price": 35125,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_37",
+    "name": "Headphones Item 37",
+    "price": 25844,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_38",
+    "name": "Speakers Item 38",
+    "price": 48689,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_39",
+    "name": "Accessories Item 39",
+    "price": 17584,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_40",
+    "name": "Smartphones Item 40",
+    "price": 41313,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_41",
+    "name": "Laptops Item 41",
+    "price": 47317,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_42",
+    "name": "Headphones Item 42",
+    "price": 39177,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_43",
+    "name": "Speakers Item 43",
+    "price": 2837,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_44",
+    "name": "Accessories Item 44",
+    "price": 18745,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_45",
+    "name": "Smartphones Item 45",
+    "price": 49634,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_46",
+    "name": "Laptops Item 46",
+    "price": 19916,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_47",
+    "name": "Headphones Item 47",
+    "price": 49027,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_48",
+    "name": "Speakers Item 48",
+    "price": 18615,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_49",
+    "name": "Accessories Item 49",
+    "price": 1308,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_50",
+    "name": "Smartphones Item 50",
+    "price": 13432,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_51",
+    "name": "Laptops Item 51",
+    "price": 17490,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_52",
+    "name": "Headphones Item 52",
+    "price": 32707,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_53",
+    "name": "Speakers Item 53",
+    "price": 18770,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_54",
+    "name": "Accessories Item 54",
+    "price": 15920,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_55",
+    "name": "Smartphones Item 55",
+    "price": 29366,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_56",
+    "name": "Laptops Item 56",
+    "price": 49889,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_57",
+    "name": "Headphones Item 57",
+    "price": 24897,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_58",
+    "name": "Speakers Item 58",
+    "price": 48519,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_59",
+    "name": "Accessories Item 59",
+    "price": 34936,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_60",
+    "name": "Smartphones Item 60",
+    "price": 19190,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_61",
+    "name": "Laptops Item 61",
+    "price": 38389,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_62",
+    "name": "Headphones Item 62",
+    "price": 3367,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_63",
+    "name": "Speakers Item 63",
+    "price": 17686,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_64",
+    "name": "Accessories Item 64",
+    "price": 47489,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_65",
+    "name": "Smartphones Item 65",
+    "price": 5709,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_66",
+    "name": "Laptops Item 66",
+    "price": 25743,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_67",
+    "name": "Headphones Item 67",
+    "price": 48413,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_68",
+    "name": "Speakers Item 68",
+    "price": 5557,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_69",
+    "name": "Accessories Item 69",
+    "price": 12016,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_70",
+    "name": "Smartphones Item 70",
+    "price": 7803,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_71",
+    "name": "Laptops Item 71",
+    "price": 27227,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_72",
+    "name": "Headphones Item 72",
+    "price": 8088,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_73",
+    "name": "Speakers Item 73",
+    "price": 18314,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_74",
+    "name": "Accessories Item 74",
+    "price": 23645,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_75",
+    "name": "Smartphones Item 75",
+    "price": 18108,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_76",
+    "name": "Laptops Item 76",
+    "price": 48753,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_77",
+    "name": "Headphones Item 77",
+    "price": 23939,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_78",
+    "name": "Speakers Item 78",
+    "price": 30318,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_79",
+    "name": "Accessories Item 79",
+    "price": 31578,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_80",
+    "name": "Smartphones Item 80",
+    "price": 25641,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_81",
+    "name": "Laptops Item 81",
+    "price": 14584,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_82",
+    "name": "Headphones Item 82",
+    "price": 8776,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_83",
+    "name": "Speakers Item 83",
+    "price": 14275,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_84",
+    "name": "Accessories Item 84",
+    "price": 1883,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_85",
+    "name": "Smartphones Item 85",
+    "price": 35268,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_86",
+    "name": "Laptops Item 86",
+    "price": 47249,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_87",
+    "name": "Headphones Item 87",
+    "price": 19526,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_88",
+    "name": "Speakers Item 88",
+    "price": 17388,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_89",
+    "name": "Accessories Item 89",
+    "price": 15831,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_90",
+    "name": "Smartphones Item 90",
+    "price": 16315,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_91",
+    "name": "Laptops Item 91",
+    "price": 1459,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_92",
+    "name": "Headphones Item 92",
+    "price": 23603,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_93",
+    "name": "Speakers Item 93",
+    "price": 34808,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_94",
+    "name": "Accessories Item 94",
+    "price": 46089,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_95",
+    "name": "Smartphones Item 95",
+    "price": 44191,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_96",
+    "name": "Laptops Item 96",
+    "price": 25839,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_97",
+    "name": "Headphones Item 97",
+    "price": 23504,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_98",
+    "name": "Speakers Item 98",
+    "price": 4905,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_99",
+    "name": "Accessories Item 99",
+    "price": 25444,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_100",
+    "name": "Smartphones Item 100",
+    "price": 49421,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_101",
+    "name": "Laptops Item 101",
+    "price": 44207,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_102",
+    "name": "Headphones Item 102",
+    "price": 3695,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_103",
+    "name": "Speakers Item 103",
+    "price": 8920,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_104",
+    "name": "Accessories Item 104",
+    "price": 3097,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_105",
+    "name": "Smartphones Item 105",
+    "price": 19745,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_106",
+    "name": "Laptops Item 106",
+    "price": 41527,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_107",
+    "name": "Headphones Item 107",
+    "price": 3297,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_108",
+    "name": "Speakers Item 108",
+    "price": 45407,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_109",
+    "name": "Accessories Item 109",
+    "price": 38287,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_110",
+    "name": "Smartphones Item 110",
+    "price": 46797,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_111",
+    "name": "Laptops Item 111",
+    "price": 21796,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_112",
+    "name": "Headphones Item 112",
+    "price": 13049,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_113",
+    "name": "Speakers Item 113",
+    "price": 25783,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_114",
+    "name": "Accessories Item 114",
+    "price": 49183,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_115",
+    "name": "Smartphones Item 115",
+    "price": 45807,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_116",
+    "name": "Laptops Item 116",
+    "price": 28486,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_117",
+    "name": "Headphones Item 117",
+    "price": 32741,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_118",
+    "name": "Speakers Item 118",
+    "price": 47816,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_119",
+    "name": "Accessories Item 119",
+    "price": 30310,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_120",
+    "name": "Smartphones Item 120",
+    "price": 22480,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_121",
+    "name": "Laptops Item 121",
+    "price": 16554,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_122",
+    "name": "Headphones Item 122",
+    "price": 13758,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_123",
+    "name": "Speakers Item 123",
+    "price": 14681,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_124",
+    "name": "Accessories Item 124",
+    "price": 12017,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_125",
+    "name": "Smartphones Item 125",
+    "price": 13053,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_126",
+    "name": "Laptops Item 126",
+    "price": 37127,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_127",
+    "name": "Headphones Item 127",
+    "price": 43556,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_128",
+    "name": "Speakers Item 128",
+    "price": 44344,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_129",
+    "name": "Accessories Item 129",
+    "price": 41867,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_130",
+    "name": "Smartphones Item 130",
+    "price": 12357,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_131",
+    "name": "Laptops Item 131",
+    "price": 41029,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_132",
+    "name": "Headphones Item 132",
+    "price": 24803,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_133",
+    "name": "Speakers Item 133",
+    "price": 45599,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_134",
+    "name": "Accessories Item 134",
+    "price": 20796,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_135",
+    "name": "Smartphones Item 135",
+    "price": 20700,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_136",
+    "name": "Laptops Item 136",
+    "price": 24905,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_137",
+    "name": "Headphones Item 137",
+    "price": 18486,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_138",
+    "name": "Speakers Item 138",
+    "price": 12000,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_139",
+    "name": "Accessories Item 139",
+    "price": 1993,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_140",
+    "name": "Smartphones Item 140",
+    "price": 26486,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_141",
+    "name": "Laptops Item 141",
+    "price": 31390,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_142",
+    "name": "Headphones Item 142",
+    "price": 27741,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_143",
+    "name": "Speakers Item 143",
+    "price": 49674,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_144",
+    "name": "Accessories Item 144",
+    "price": 38989,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_145",
+    "name": "Smartphones Item 145",
+    "price": 43984,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_146",
+    "name": "Laptops Item 146",
+    "price": 35765,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_147",
+    "name": "Headphones Item 147",
+    "price": 42380,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_148",
+    "name": "Speakers Item 148",
+    "price": 19513,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_149",
+    "name": "Accessories Item 149",
+    "price": 45017,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_150",
+    "name": "Smartphones Item 150",
+    "price": 19114,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_151",
+    "name": "Laptops Item 151",
+    "price": 43357,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_152",
+    "name": "Headphones Item 152",
+    "price": 11934,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_153",
+    "name": "Speakers Item 153",
+    "price": 15726,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_154",
+    "name": "Accessories Item 154",
+    "price": 25395,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_155",
+    "name": "Smartphones Item 155",
+    "price": 19893,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_156",
+    "name": "Laptops Item 156",
+    "price": 22970,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_157",
+    "name": "Headphones Item 157",
+    "price": 3363,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_158",
+    "name": "Speakers Item 158",
+    "price": 19059,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_159",
+    "name": "Accessories Item 159",
+    "price": 41647,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_160",
+    "name": "Smartphones Item 160",
+    "price": 36484,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_161",
+    "name": "Laptops Item 161",
+    "price": 1424,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_162",
+    "name": "Headphones Item 162",
+    "price": 42859,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_163",
+    "name": "Speakers Item 163",
+    "price": 39843,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_164",
+    "name": "Accessories Item 164",
+    "price": 25435,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_165",
+    "name": "Smartphones Item 165",
+    "price": 27768,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_166",
+    "name": "Laptops Item 166",
+    "price": 18607,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_167",
+    "name": "Headphones Item 167",
+    "price": 46714,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_168",
+    "name": "Speakers Item 168",
+    "price": 7908,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_169",
+    "name": "Accessories Item 169",
+    "price": 3161,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_170",
+    "name": "Smartphones Item 170",
+    "price": 22769,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_171",
+    "name": "Laptops Item 171",
+    "price": 19299,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_172",
+    "name": "Headphones Item 172",
+    "price": 25880,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_173",
+    "name": "Speakers Item 173",
+    "price": 40899,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_174",
+    "name": "Accessories Item 174",
+    "price": 50192,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_175",
+    "name": "Smartphones Item 175",
+    "price": 11143,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_176",
+    "name": "Laptops Item 176",
+    "price": 10022,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_177",
+    "name": "Headphones Item 177",
+    "price": 27877,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_178",
+    "name": "Speakers Item 178",
+    "price": 34127,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_179",
+    "name": "Accessories Item 179",
+    "price": 46728,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_180",
+    "name": "Smartphones Item 180",
+    "price": 2048,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_181",
+    "name": "Laptops Item 181",
+    "price": 38087,
+    "category": "Laptops",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_182",
+    "name": "Headphones Item 182",
+    "price": 24055,
+    "category": "Headphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_183",
+    "name": "Speakers Item 183",
+    "price": 8133,
+    "category": "Speakers",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_184",
+    "name": "Accessories Item 184",
+    "price": 25256,
+    "category": "Accessories",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_185",
+    "name": "Smartphones Item 185",
+    "price": 16245,
+    "category": "Smartphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_186",
+    "name": "Laptops Item 186",
+    "price": 6229,
+    "category": "Laptops",
+    "brand": "LG",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_187",
+    "name": "Headphones Item 187",
+    "price": 30432,
+    "category": "Headphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_188",
+    "name": "Speakers Item 188",
+    "price": 24492,
+    "category": "Speakers",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_189",
+    "name": "Accessories Item 189",
+    "price": 36284,
+    "category": "Accessories",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_190",
+    "name": "Smartphones Item 190",
+    "price": 33549,
+    "category": "Smartphones",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_191",
+    "name": "Laptops Item 191",
+    "price": 9385,
+    "category": "Laptops",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_192",
+    "name": "Headphones Item 192",
+    "price": 24466,
+    "category": "Headphones",
+    "brand": "Samsung",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_193",
+    "name": "Speakers Item 193",
+    "price": 47463,
+    "category": "Speakers",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_194",
+    "name": "Accessories Item 194",
+    "price": 11514,
+    "category": "Accessories",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_195",
+    "name": "Smartphones Item 195",
+    "price": 30346,
+    "category": "Smartphones",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_196",
+    "name": "Laptops Item 196",
+    "price": 39549,
+    "category": "Laptops",
+    "brand": "Samsung",
+    "inStock": false
+  },
+  {
+    "id": "reliance_digital_item_chennai_197",
+    "name": "Headphones Item 197",
+    "price": 38130,
+    "category": "Headphones",
+    "brand": "Sony",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_198",
+    "name": "Speakers Item 198",
+    "price": 10928,
+    "category": "Speakers",
+    "brand": "LG",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_199",
+    "name": "Accessories Item 199",
+    "price": 34784,
+    "category": "Accessories",
+    "brand": "Boat",
+    "inStock": true
+  },
+  {
+    "id": "reliance_digital_item_chennai_200",
+    "name": "Smartphones Item 200",
+    "price": 28781,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true
+  }
+]

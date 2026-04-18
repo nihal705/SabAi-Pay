@@ -1,0 +1,1058 @@
+[
+  {
+    "id": "zomato_paradise_biryani_blr",
+    "name": "Paradise Biryani",
+    "cuisine": "Biryani",
+    "rating": 4.5,
+    "ratingCount": 12500,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 600,
+    "area": "Koramangala",
+    "landmark": "Near Sony Signal",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Koramangala",
+      "address": "Paradise Biryani, Koramangala, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/paradise.jpg"
+  },
+  {
+    "id": "zomato_meghana_foods_blr",
+    "name": "Meghana Foods",
+    "cuisine": "South Indian",
+    "rating": 4.4,
+    "ratingCount": 9800,
+    "deliveryTime": "40-55 min",
+    "priceForTwo": 550,
+    "area": "Jayanagar",
+    "landmark": "4th Block",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Jayanagar",
+      "address": "Meghana Foods, Jayanagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/meghana.jpg"
+  },
+  {
+    "id": "zomato_biryani_blues_blr",
+    "name": "Biryani Blues",
+    "cuisine": "Biryani",
+    "rating": 4.3,
+    "ratingCount": 7500,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 500,
+    "area": "Indiranagar",
+    "landmark": "100 Feet Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Indiranagar",
+      "address": "Biryani Blues, Indiranagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/biryani.jpg"
+  },
+  {
+    "id": "zomato_behrouz_biryani_blr",
+    "name": "Behrouz Biryani",
+    "cuisine": "Biryani",
+    "rating": 4.4,
+    "ratingCount": 8200,
+    "deliveryTime": "40-55 min",
+    "priceForTwo": 550,
+    "area": "Whitefield",
+    "landmark": "ITPL Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Whitefield",
+      "address": "Behrouz Biryani, Whitefield, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/behrouz.jpg"
+  },
+  {
+    "id": "zomato_pista_house_blr",
+    "name": "Pista House",
+    "cuisine": "Biryani",
+    "rating": 4.3,
+    "ratingCount": 5600,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 480,
+    "area": "Frazer Town",
+    "landmark": "Main Road",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Frazer Town",
+      "address": "Pista House, Frazer Town, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/pista.jpg"
+  },
+  {
+    "id": "zomato_bawarchi_blr",
+    "name": "Bawarchi",
+    "cuisine": "Biryani",
+    "rating": 4.2,
+    "ratingCount": 8900,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 450,
+    "area": "Koramangala",
+    "landmark": "5th Block",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Koramangala",
+      "address": "Bawarchi, Koramangala, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/bawarchi.jpg"
+  },
+  {
+    "id": "zomato_shadab_blr",
+    "name": "Shadab",
+    "cuisine": "Biryani",
+    "rating": 4.1,
+    "ratingCount": 4300,
+    "deliveryTime": "40-55 min",
+    "priceForTwo": 520,
+    "area": "Chickpet",
+    "landmark": "Near Market",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Chickpet",
+      "address": "Shadab, Chickpet, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/shadab.jpg"
+  },
+  {
+    "id": "zomato_nawabs_blr",
+    "name": "Nawabs",
+    "cuisine": "Biryani",
+    "rating": 4.2,
+    "ratingCount": 5100,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 490,
+    "area": "HSR Layout",
+    "landmark": "Sector 1",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "HSR Layout",
+      "address": "Nawabs, HSR Layout, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/nawabs.jpg"
+  },
+  {
+    "id": "zomato_milan_biryani_blr",
+    "name": "Milan Biryani",
+    "cuisine": "Biryani",
+    "rating": 4,
+    "ratingCount": 3200,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 420,
+    "area": "JP Nagar",
+    "landmark": "7th Phase",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "JP Nagar",
+      "address": "Milan Biryani, JP Nagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/milan.jpg"
+  },
+  {
+    "id": "zomato_grand_biryani_blr",
+    "name": "Grand Biryani",
+    "cuisine": "Biryani",
+    "rating": 4.1,
+    "ratingCount": 3800,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 460,
+    "area": "Banashankari",
+    "landmark": "Main Road",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Banashankari",
+      "address": "Grand Biryani, Banashankari, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/grand.jpg"
+  },
+  {
+    "id": "zomato_punjabi_rasoi_blr",
+    "name": "Punjabi Rasoi",
+    "cuisine": "North Indian",
+    "rating": 4.2,
+    "ratingCount": 6800,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 500,
+    "area": "Koramangala",
+    "landmark": "80 Feet Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Koramangala",
+      "address": "Punjabi Rasoi, Koramangala, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/punjabi.jpg"
+  },
+  {
+    "id": "zomato_saffron_blr",
+    "name": "Saffron",
+    "cuisine": "North Indian",
+    "rating": 4.3,
+    "ratingCount": 4500,
+    "deliveryTime": "40-55 min",
+    "priceForTwo": 650,
+    "area": "UB City",
+    "landmark": "Vittal Mallya Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "UB City",
+      "address": "Saffron, UB City, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/saffron.jpg"
+  },
+  {
+    "id": "zomato_naanza_blr",
+    "name": "Naanza",
+    "cuisine": "North Indian",
+    "rating": 4.1,
+    "ratingCount": 3200,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 450,
+    "area": "Indiranagar",
+    "landmark": "100 Feet Road",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Indiranagar",
+      "address": "Naanza, Indiranagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/naanza.jpg"
+  },
+  {
+    "id": "zomato_punjab_grill_blr",
+    "name": "Punjab Grill",
+    "cuisine": "North Indian",
+    "rating": 4.4,
+    "ratingCount": 5200,
+    "deliveryTime": "45-60 min",
+    "priceForTwo": 800,
+    "area": "MG Road",
+    "landmark": "Garuda Mall",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "MG Road",
+      "address": "Punjab Grill, MG Road, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/punjab.jpg"
+  },
+  {
+    "id": "zomato_dhaba_estd_blr",
+    "name": "Dhaba Estd 1986",
+    "cuisine": "North Indian",
+    "rating": 4.2,
+    "ratingCount": 4100,
+    "deliveryTime": "40-55 min",
+    "priceForTwo": 550,
+    "area": "Koramangala",
+    "landmark": "5th Block",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Koramangala",
+      "address": "Dhaba Estd 1986, Koramangala, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/dhaba.jpg"
+  },
+  {
+    "id": "zomato_pind_balluchi_blr",
+    "name": "Pind Balluchi",
+    "cuisine": "North Indian",
+    "rating": 4.1,
+    "ratingCount": 3900,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 520,
+    "area": "Marathahalli",
+    "landmark": "Bridge",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Marathahalli",
+      "address": "Pind Balluchi, Marathahalli, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/pind.jpg"
+  },
+  {
+    "id": "zomato_motimahal_blr",
+    "name": "Moti Mahal",
+    "cuisine": "North Indian",
+    "rating": 4.3,
+    "ratingCount": 4700,
+    "deliveryTime": "40-55 min",
+    "priceForTwo": 580,
+    "area": "Indiranagar",
+    "landmark": "CMH Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Indiranagar",
+      "address": "Moti Mahal, Indiranagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/motimahal.jpg"
+  },
+  {
+    "id": "zomato_bhagwati_blr",
+    "name": "Bhagwati",
+    "cuisine": "North Indian",
+    "rating": 4,
+    "ratingCount": 2800,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 400,
+    "area": "HSR Layout",
+    "landmark": "Sector 2",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "HSR Layout",
+      "address": "Bhagwati, HSR Layout, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/bhagwati.jpg"
+  },
+  {
+    "id": "zomato_sagar_ratna_blr",
+    "name": "Sagar Ratna",
+    "cuisine": "North Indian",
+    "rating": 4.2,
+    "ratingCount": 5500,
+    "deliveryTime": "25-40 min",
+    "priceForTwo": 480,
+    "area": "Koramangala",
+    "landmark": "6th Block",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Koramangala",
+      "address": "Sagar Ratna, Koramangala, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/sagar.jpg"
+  },
+  {
+    "id": "zomato_oh_calcutta_blr",
+    "name": "Oh! Calcutta",
+    "cuisine": "Bengali",
+    "rating": 4.3,
+    "ratingCount": 3400,
+    "deliveryTime": "40-55 min",
+    "priceForTwo": 750,
+    "area": "Indiranagar",
+    "landmark": "12th Main",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Indiranagar",
+      "address": "Oh! Calcutta, Indiranagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/oh.jpg"
+  },
+  {
+    "id": "zomato_mtr_blr",
+    "name": "MTR",
+    "cuisine": "South Indian",
+    "rating": 4.5,
+    "ratingCount": 15000,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 300,
+    "area": "Lalbagh",
+    "landmark": "Lalbagh Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Lalbagh",
+      "address": "MTR, Lalbagh, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/mtr.jpg"
+  },
+  {
+    "id": "zomato_ctr_blr",
+    "name": "CTR",
+    "cuisine": "South Indian",
+    "rating": 4.4,
+    "ratingCount": 9800,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 280,
+    "area": "Malleswaram",
+    "landmark": "Sampige Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Malleswaram",
+      "address": "CTR, Malleswaram, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/ctr.jpg"
+  },
+  {
+    "id": "zomato_vidyarthi_bhavan_blr",
+    "name": "Vidyarthi Bhavan",
+    "cuisine": "South Indian",
+    "rating": 4.6,
+    "ratingCount": 11200,
+    "deliveryTime": "30-40 min",
+    "priceForTwo": 250,
+    "area": "Basavanagudi",
+    "landmark": "Gandhi Bazaar",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Basavanagudi",
+      "address": "Vidyarthi Bhavan, Basavanagudi, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/vidyarthi.jpg"
+  },
+  {
+    "id": "zomato_taaza_thindi_blr",
+    "name": "Taaza Thindi",
+    "cuisine": "South Indian",
+    "rating": 4.3,
+    "ratingCount": 6500,
+    "deliveryTime": "20-30 min",
+    "priceForTwo": 200,
+    "area": "Jayanagar",
+    "landmark": "4th Block",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Jayanagar",
+      "address": "Taaza Thindi, Jayanagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/taaza.jpg"
+  },
+  {
+    "id": "zomato_brahmins_coffee_bar_blr",
+    "name": "Brahmins Coffee Bar",
+    "cuisine": "South Indian",
+    "rating": 4.4,
+    "ratingCount": 7200,
+    "deliveryTime": "20-30 min",
+    "priceForTwo": 180,
+    "area": "Basavanagudi",
+    "landmark": "Shankar Mutt",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Basavanagudi",
+      "address": "Brahmins Coffee Bar, Basavanagudi, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/brahmins.jpg"
+  },
+  {
+    "id": "zomato_upahara_blr",
+    "name": "Upahara",
+    "cuisine": "South Indian",
+    "rating": 4.2,
+    "ratingCount": 4300,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 220,
+    "area": "Koramangala",
+    "landmark": "5th Block",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Koramangala",
+      "address": "Upahara, Koramangala, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/upahara.jpg"
+  },
+  {
+    "id": "zomato_a2b_blr",
+    "name": "A2B - Adyar Ananda Bhavan",
+    "cuisine": "South Indian",
+    "rating": 4.3,
+    "ratingCount": 8900,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 350,
+    "area": "Indiranagar",
+    "landmark": "100 Feet Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Indiranagar",
+      "address": "A2B - Adyar Ananda Bhavan, Indiranagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/a2b.jpg"
+  },
+  {
+    "id": "zomato_kamat_blr",
+    "name": "Kamat",
+    "cuisine": "South Indian",
+    "rating": 4.1,
+    "ratingCount": 3800,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 300,
+    "area": "Jayanagar",
+    "landmark": "9th Block",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Jayanagar",
+      "address": "Kamat, Jayanagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/kamat.jpg"
+  },
+  {
+    "id": "zomato_udupi_garden_blr",
+    "name": "Udupi Garden",
+    "cuisine": "South Indian",
+    "rating": 4.2,
+    "ratingCount": 5100,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 250,
+    "area": "HSR Layout",
+    "landmark": "Sector 1",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "HSR Layout",
+      "address": "Udupi Garden, HSR Layout, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/udupi.jpg"
+  },
+  {
+    "id": "zomato_sri_sagar_blr",
+    "name": "Sri Sagar",
+    "cuisine": "South Indian",
+    "rating": 4.1,
+    "ratingCount": 4200,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 280,
+    "area": "Whitefield",
+    "landmark": "Hopefarm",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Whitefield",
+      "address": "Sri Sagar, Whitefield, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/sri.jpg"
+  },
+  {
+    "id": "zomato_mainland_china_blr",
+    "name": "Mainland China",
+    "cuisine": "Chinese",
+    "rating": 4.4,
+    "ratingCount": 6800,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 800,
+    "area": "Indiranagar",
+    "landmark": "12th Main",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Indiranagar",
+      "address": "Mainland China, Indiranagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/mainland.jpg"
+  },
+  {
+    "id": "zomato_chung_wah_blr",
+    "name": "Chung Wah",
+    "cuisine": "Chinese",
+    "rating": 4.2,
+    "ratingCount": 4500,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 550,
+    "area": "Koramangala",
+    "landmark": "5th Block",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Koramangala",
+      "address": "Chung Wah, Koramangala, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/chung.jpg"
+  },
+  {
+    "id": "zomato_fatty_bao_blr",
+    "name": "Fatty Bao",
+    "cuisine": "Asian",
+    "rating": 4.3,
+    "ratingCount": 5200,
+    "deliveryTime": "35-50 min",
+    "priceForTwo": 700,
+    "area": "Indiranagar",
+    "landmark": "100 Feet Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Indiranagar",
+      "address": "Fatty Bao, Indiranagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/fatty.jpg"
+  },
+  {
+    "id": "zomato_chinita_blr",
+    "name": "Chinita",
+    "cuisine": "Chinese",
+    "rating": 4.1,
+    "ratingCount": 3100,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 480,
+    "area": "HSR Layout",
+    "landmark": "Sector 1",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "HSR Layout",
+      "address": "Chinita, HSR Layout, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/chinita.jpg"
+  },
+  {
+    "id": "zomato_wok_express_blr",
+    "name": "Wok Express",
+    "cuisine": "Chinese",
+    "rating": 4,
+    "ratingCount": 2800,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 350,
+    "area": "Whitefield",
+    "landmark": "ITPL Road",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Whitefield",
+      "address": "Wok Express, Whitefield, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/wok.jpg"
+  },
+  {
+    "id": "zomato_momoz_blr",
+    "name": "Momoz",
+    "cuisine": "Chinese",
+    "rating": 4.2,
+    "ratingCount": 3900,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 300,
+    "area": "Koramangala",
+    "landmark": "80 Feet Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Koramangala",
+      "address": "Momoz, Koramangala, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/momoz.jpg"
+  },
+  {
+    "id": "zomato_dragon_cafe_blr",
+    "name": "Dragon Cafe",
+    "cuisine": "Chinese",
+    "rating": 4.1,
+    "ratingCount": 3400,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 420,
+    "area": "Jayanagar",
+    "landmark": "4th Block",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Jayanagar",
+      "address": "Dragon Cafe, Jayanagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/dragon.jpg"
+  },
+  {
+    "id": "zomato_wangs_kitchen_blr",
+    "name": "Wang's Kitchen",
+    "cuisine": "Chinese",
+    "rating": 4.3,
+    "ratingCount": 4700,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 500,
+    "area": "Indiranagar",
+    "landmark": "CMH Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Indiranagar",
+      "address": "Wang's Kitchen, Indiranagar, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/wangs.jpg"
+  },
+  {
+    "id": "zomato_kfc_blr",
+    "name": "KFC",
+    "cuisine": "Fast Food",
+    "rating": 4.3,
+    "ratingCount": 15000,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 400,
+    "area": "Multiple Locations",
+    "landmark": "Phoenix Mall",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "KFC, Multiple Locations, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/kfc.jpg"
+  },
+  {
+    "id": "zomato_mcdonalds_blr",
+    "name": "McDonald's",
+    "cuisine": "Fast Food",
+    "rating": 4.2,
+    "ratingCount": 18000,
+    "deliveryTime": "20-30 min",
+    "priceForTwo": 350,
+    "area": "Multiple Locations",
+    "landmark": "Forum Mall",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "McDonald's, Multiple Locations, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/mcdonalds.jpg"
+  },
+  {
+    "id": "zomato_burgerking_blr",
+    "name": "Burger King",
+    "cuisine": "Fast Food",
+    "rating": 4,
+    "ratingCount": 12000,
+    "deliveryTime": "20-30 min",
+    "priceForTwo": 300,
+    "area": "Multiple Locations",
+    "landmark": "Garuda Mall",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "Burger King, Multiple Locations, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/burgerking.jpg"
+  },
+  {
+    "id": "zomato_dominos_blr",
+    "name": "Domino's Pizza",
+    "cuisine": "Pizza",
+    "rating": 4.4,
+    "ratingCount": 20000,
+    "deliveryTime": "30-40 min",
+    "priceForTwo": 500,
+    "area": "Multiple Locations",
+    "landmark": "Indiranagar",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "Domino's Pizza, Multiple Locations, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/dominos.jpg"
+  },
+  {
+    "id": "zomato_pizzahut_blr",
+    "name": "Pizza Hut",
+    "cuisine": "Pizza",
+    "rating": 4.1,
+    "ratingCount": 14000,
+    "deliveryTime": "30-40 min",
+    "priceForTwo": 480,
+    "area": "Multiple Locations",
+    "landmark": "Koramangala",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "Pizza Hut, Multiple Locations, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/pizzahut.jpg"
+  },
+  {
+    "id": "zomato_subway_blr",
+    "name": "Subway",
+    "cuisine": "Healthy",
+    "rating": 4.1,
+    "ratingCount": 11000,
+    "deliveryTime": "20-30 min",
+    "priceForTwo": 300,
+    "area": "Multiple Locations",
+    "landmark": "MG Road",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "Subway, Multiple Locations, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/subway.jpg"
+  },
+  {
+    "id": "zomato_tacobell_blr",
+    "name": "Taco Bell",
+    "cuisine": "Mexican",
+    "rating": 4.2,
+    "ratingCount": 8500,
+    "deliveryTime": "25-35 min",
+    "priceForTwo": 350,
+    "area": "Multiple Locations",
+    "landmark": "Phoenix Mall",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "Taco Bell, Multiple Locations, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/tacobell.jpg"
+  },
+  {
+    "id": "zomato_starbucks_blr",
+    "name": "Starbucks",
+    "cuisine": "Cafe",
+    "rating": 4.5,
+    "ratingCount": 22000,
+    "deliveryTime": "15-25 min",
+    "priceForTwo": 400,
+    "area": "Multiple Locations",
+    "landmark": "UB City",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "Starbucks, Multiple Locations, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/starbucks.jpg"
+  },
+  {
+    "id": "zomato_ccd_blr",
+    "name": "Cafe Coffee Day",
+    "cuisine": "Cafe",
+    "rating": 4,
+    "ratingCount": 16000,
+    "deliveryTime": "15-25 min",
+    "priceForTwo": 300,
+    "area": "Multiple Locations",
+    "landmark": "Church Street",
+    "isPopular": false,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "Cafe Coffee Day, Multiple Locations, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/ccd.jpg"
+  },
+  {
+    "id": "zomato_haldiram_blr",
+    "name": "Haldiram's",
+    "cuisine": "Indian",
+    "rating": 4.3,
+    "ratingCount": 13000,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 450,
+    "area": "Multiple Locations",
+    "landmark": "Marathahalli",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Multiple Locations",
+      "address": "Haldiram's, Multiple Locations, Bangalore",
+      "coordinates": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      }
+    },
+    "imageUrl": "/images/restaurants/haldiram.jpg"
+  }
+]

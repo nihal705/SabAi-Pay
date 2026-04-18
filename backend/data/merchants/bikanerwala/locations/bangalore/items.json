@@ -1,0 +1,902 @@
+[
+  {
+    "id": "bikanerwala_item_bangalore_1",
+    "name": "Kachori",
+    "price": 28,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_2",
+    "name": "Pakora",
+    "price": 32,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_3",
+    "name": "Jalebi",
+    "price": 110,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_4",
+    "name": "Gulab Jamun",
+    "price": 49,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_5",
+    "name": "Rasgulla (141g)",
+    "price": 98,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_6",
+    "name": "Chaat",
+    "price": 45,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_7",
+    "name": "Pani Puri",
+    "price": 75,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_8",
+    "name": "Bhel Puri",
+    "price": 95,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_9",
+    "name": "Dahi Vada",
+    "price": 106,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_10",
+    "name": "Samosa",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_11",
+    "name": "Kachori",
+    "price": 59,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_12",
+    "name": "Pakora",
+    "price": 127,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_13",
+    "name": "Jalebi",
+    "price": 117,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_14",
+    "name": "Gulab Jamun (231g)",
+    "price": 90,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_15",
+    "name": "Rasgulla",
+    "price": 90,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_16",
+    "name": "Chaat",
+    "price": 147,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_17",
+    "name": "Pani Puri (156g)",
+    "price": 57,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_18",
+    "name": "Bhel Puri",
+    "price": 51,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_19",
+    "name": "Dahi Vada (84g)",
+    "price": 52,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_20",
+    "name": "Samosa",
+    "price": 78,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_21",
+    "name": "Kachori",
+    "price": 49,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_22",
+    "name": "Pakora (93g)",
+    "price": 165,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_23",
+    "name": "Jalebi",
+    "price": 93,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_24",
+    "name": "Gulab Jamun",
+    "price": 169,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_25",
+    "name": "Rasgulla",
+    "price": 49,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_26",
+    "name": "Chaat",
+    "price": 78,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_27",
+    "name": "Pani Puri",
+    "price": 103,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_28",
+    "name": "Bhel Puri",
+    "price": 59,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_29",
+    "name": "Dahi Vada (39g)",
+    "price": 79,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_30",
+    "name": "Samosa",
+    "price": 160,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_31",
+    "name": "Kachori (96g)",
+    "price": 23,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_32",
+    "name": "Pakora",
+    "price": 42,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_33",
+    "name": "Jalebi (20g)",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_34",
+    "name": "Gulab Jamun (85g)",
+    "price": 141,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_35",
+    "name": "Rasgulla (150g)",
+    "price": 158,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_36",
+    "name": "Chaat",
+    "price": 163,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_37",
+    "name": "Pani Puri",
+    "price": 106,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_38",
+    "name": "Bhel Puri",
+    "price": 139,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_39",
+    "name": "Dahi Vada",
+    "price": 130,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_40",
+    "name": "Samosa",
+    "price": 32,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_41",
+    "name": "Kachori",
+    "price": 129,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_42",
+    "name": "Pakora",
+    "price": 53,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_43",
+    "name": "Jalebi",
+    "price": 62,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_44",
+    "name": "Gulab Jamun",
+    "price": 82,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_45",
+    "name": "Rasgulla",
+    "price": 54,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_46",
+    "name": "Chaat",
+    "price": 21,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_47",
+    "name": "Pani Puri (231g)",
+    "price": 87,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_48",
+    "name": "Bhel Puri",
+    "price": 59,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_49",
+    "name": "Dahi Vada",
+    "price": 121,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_50",
+    "name": "Samosa",
+    "price": 120,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_51",
+    "name": "Kachori (30g)",
+    "price": 93,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_52",
+    "name": "Pakora",
+    "price": 71,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_53",
+    "name": "Jalebi (7g)",
+    "price": 78,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_54",
+    "name": "Gulab Jamun (85g)",
+    "price": 113,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_55",
+    "name": "Rasgulla",
+    "price": 152,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_56",
+    "name": "Chaat",
+    "price": 48,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_57",
+    "name": "Pani Puri (146g)",
+    "price": 157,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_58",
+    "name": "Bhel Puri",
+    "price": 153,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_59",
+    "name": "Dahi Vada",
+    "price": 62,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_60",
+    "name": "Samosa",
+    "price": 45,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_61",
+    "name": "Kachori",
+    "price": 156,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_62",
+    "name": "Pakora",
+    "price": 111,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_63",
+    "name": "Jalebi (227g)",
+    "price": 29,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_64",
+    "name": "Gulab Jamun",
+    "price": 137,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_65",
+    "name": "Rasgulla (6g)",
+    "price": 37,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_66",
+    "name": "Chaat (188g)",
+    "price": 26,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_67",
+    "name": "Pani Puri",
+    "price": 107,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_68",
+    "name": "Bhel Puri",
+    "price": 117,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_69",
+    "name": "Dahi Vada",
+    "price": 75,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_70",
+    "name": "Samosa (28g)",
+    "price": 98,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_71",
+    "name": "Kachori",
+    "price": 28,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_72",
+    "name": "Pakora",
+    "price": 129,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_73",
+    "name": "Jalebi",
+    "price": 137,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_74",
+    "name": "Gulab Jamun (89g)",
+    "price": 128,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_75",
+    "name": "Rasgulla",
+    "price": 104,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_76",
+    "name": "Chaat",
+    "price": 90,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_77",
+    "name": "Pani Puri",
+    "price": 144,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_78",
+    "name": "Bhel Puri",
+    "price": 115,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_79",
+    "name": "Dahi Vada",
+    "price": 105,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_80",
+    "name": "Samosa",
+    "price": 125,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_81",
+    "name": "Kachori",
+    "price": 132,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_82",
+    "name": "Pakora",
+    "price": 100,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_83",
+    "name": "Jalebi",
+    "price": 69,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_84",
+    "name": "Gulab Jamun",
+    "price": 58,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_85",
+    "name": "Rasgulla",
+    "price": 166,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_86",
+    "name": "Chaat",
+    "price": 63,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_87",
+    "name": "Pani Puri",
+    "price": 128,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_88",
+    "name": "Bhel Puri",
+    "price": 118,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_89",
+    "name": "Dahi Vada",
+    "price": 74,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_90",
+    "name": "Samosa",
+    "price": 50,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_91",
+    "name": "Kachori",
+    "price": 156,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_92",
+    "name": "Pakora (134g)",
+    "price": 154,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_93",
+    "name": "Jalebi (241g)",
+    "price": 41,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_94",
+    "name": "Gulab Jamun",
+    "price": 85,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_95",
+    "name": "Rasgulla (218g)",
+    "price": 95,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_96",
+    "name": "Chaat (149g)",
+    "price": 152,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_97",
+    "name": "Pani Puri",
+    "price": 112,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_98",
+    "name": "Bhel Puri",
+    "price": 141,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_99",
+    "name": "Dahi Vada",
+    "price": 48,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "bikanerwala_item_bangalore_100",
+    "name": "Samosa",
+    "price": 25,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

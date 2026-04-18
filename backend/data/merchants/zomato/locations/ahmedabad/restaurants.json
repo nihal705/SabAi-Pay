@@ -1,0 +1,257 @@
+[
+  {
+    "id": "zomato_rest_ahmedabad_1",
+    "name": "Amritsari Haveli",
+    "cuisine": "South Indian",
+    "rating": 3.3,
+    "ratingCount": 228,
+    "priceForTwo": 765,
+    "location": {
+      "area": "Satellite",
+      "address": "Shop 1, Satellite, Ahmedabad",
+      "latitude": 23.00112538926361,
+      "longitude": 72.56604747312504
+    },
+    "deliveryTime": "25 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_2",
+    "name": "Sagar Ratna",
+    "cuisine": "Chinese",
+    "rating": 4.9,
+    "ratingCount": 2588,
+    "priceForTwo": 641,
+    "location": {
+      "area": "Vastrapur",
+      "address": "Shop 2, Vastrapur, Ahmedabad",
+      "latitude": 23.017306726592484,
+      "longitude": 72.58058112168838
+    },
+    "deliveryTime": "46 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_3",
+    "name": "Kanti Sweets",
+    "cuisine": "Biryani",
+    "rating": 4.9,
+    "ratingCount": 707,
+    "priceForTwo": 819,
+    "location": {
+      "area": "Navrangpura",
+      "address": "Shop 3, Navrangpura, Ahmedabad",
+      "latitude": 23.012096651882935,
+      "longitude": 72.55034211326712
+    },
+    "deliveryTime": "31 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_4",
+    "name": "MTR",
+    "cuisine": "Fast Food",
+    "rating": 4.2,
+    "ratingCount": 180,
+    "priceForTwo": 1043,
+    "location": {
+      "area": "Bodakdev",
+      "address": "Shop 4, Bodakdev, Ahmedabad",
+      "latitude": 23.043273871620364,
+      "longitude": 72.56678798472575
+    },
+    "deliveryTime": "43 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_5",
+    "name": "CTR Kitchen",
+    "cuisine": "North Indian",
+    "rating": 3.8,
+    "ratingCount": 2083,
+    "priceForTwo": 521,
+    "location": {
+      "area": "Prahlad Nagar",
+      "address": "Shop 5, Prahlad Nagar, Ahmedabad",
+      "latitude": 23.000903814427968,
+      "longitude": 72.58551987472623
+    },
+    "deliveryTime": "36 min",
+    "isOpen": false,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_6",
+    "name": "Mainland China",
+    "cuisine": "South Indian",
+    "rating": 3.3,
+    "ratingCount": 1307,
+    "priceForTwo": 1235,
+    "location": {
+      "area": "Satellite",
+      "address": "Shop 6, Satellite, Ahmedabad",
+      "latitude": 23.04142724750467,
+      "longitude": 72.55234555181434
+    },
+    "deliveryTime": "55 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_7",
+    "name": "Chung Wah",
+    "cuisine": "Chinese",
+    "rating": 4.8,
+    "ratingCount": 3655,
+    "priceForTwo": 947,
+    "location": {
+      "area": "Vastrapur",
+      "address": "Shop 7, Vastrapur, Ahmedabad",
+      "latitude": 23.032582624110663,
+      "longitude": 72.59388394426864
+    },
+    "deliveryTime": "55 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_8",
+    "name": "Biryani Blues",
+    "cuisine": "Biryani",
+    "rating": 3.3,
+    "ratingCount": 2630,
+    "priceForTwo": 771,
+    "location": {
+      "area": "Navrangpura",
+      "address": "Shop 8, Navrangpura, Ahmedabad",
+      "latitude": 23.041719977295813,
+      "longitude": 72.56654314526543
+    },
+    "deliveryTime": "47 min",
+    "isOpen": false,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_9",
+    "name": "Paradise Biryani",
+    "cuisine": "Fast Food",
+    "rating": 4.8,
+    "ratingCount": 3872,
+    "priceForTwo": 808,
+    "location": {
+      "area": "Bodakdev",
+      "address": "Shop 9, Bodakdev, Ahmedabad",
+      "latitude": 23.033618382116753,
+      "longitude": 72.59467272179056
+    },
+    "deliveryTime": "22 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_10",
+    "name": "Punjabi Rasoi",
+    "cuisine": "North Indian",
+    "rating": 3.2,
+    "ratingCount": 2177,
+    "priceForTwo": 1090,
+    "location": {
+      "area": "Prahlad Nagar",
+      "address": "Shop 10, Prahlad Nagar, Ahmedabad",
+      "latitude": 23.026356362114154,
+      "longitude": 72.58505108853437
+    },
+    "deliveryTime": "51 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_11",
+    "name": "Amritsari Haveli Kitchen",
+    "cuisine": "South Indian",
+    "rating": 3.5,
+    "ratingCount": 4861,
+    "priceForTwo": 612,
+    "location": {
+      "area": "Satellite",
+      "address": "Shop 11, Satellite, Ahmedabad",
+      "latitude": 23.045198309085,
+      "longitude": 72.56222374547606
+    },
+    "deliveryTime": "46 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_12",
+    "name": "Sagar Ratna",
+    "cuisine": "Chinese",
+    "rating": 3.1,
+    "ratingCount": 2834,
+    "priceForTwo": 300,
+    "location": {
+      "area": "Vastrapur",
+      "address": "Shop 12, Vastrapur, Ahmedabad",
+      "latitude": 23.025576177932685,
+      "longitude": 72.57607730816791
+    },
+    "deliveryTime": "30 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_13",
+    "name": "Kanti Sweets",
+    "cuisine": "Biryani",
+    "rating": 4.2,
+    "ratingCount": 2981,
+    "priceForTwo": 1138,
+    "location": {
+      "area": "Navrangpura",
+      "address": "Shop 13, Navrangpura, Ahmedabad",
+      "latitude": 23.032509634264397,
+      "longitude": 72.59298615316904
+    },
+    "deliveryTime": "28 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_14",
+    "name": "MTR",
+    "cuisine": "Fast Food",
+    "rating": 3.2,
+    "ratingCount": 4775,
+    "priceForTwo": 776,
+    "location": {
+      "area": "Bodakdev",
+      "address": "Shop 14, Bodakdev, Ahmedabad",
+      "latitude": 23.018650678234675,
+      "longitude": 72.59160708287958
+    },
+    "deliveryTime": "38 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  },
+  {
+    "id": "zomato_rest_ahmedabad_15",
+    "name": "CTR Kitchen",
+    "cuisine": "North Indian",
+    "rating": 3.5,
+    "ratingCount": 3247,
+    "priceForTwo": 740,
+    "location": {
+      "area": "Prahlad Nagar",
+      "address": "Shop 15, Prahlad Nagar, Ahmedabad",
+      "latitude": 23.008079293402396,
+      "longitude": 72.5607945101492
+    },
+    "deliveryTime": "45 min",
+    "isOpen": true,
+    "imageUrl": "/images/restaurants/restaurant-default.jpg"
+  }
+]

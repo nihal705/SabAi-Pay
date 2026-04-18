@@ -1,0 +1,272 @@
+[
+  {
+    "id": "dominos_item_hyderabad_1",
+    "name": "Pepperoni Pizza",
+    "price": 526,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_2",
+    "name": "Farmhouse Pizza (6\")",
+    "price": 297,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_3",
+    "name": "Veg Extravaganza",
+    "price": 188,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_4",
+    "name": "Chicken Dominator",
+    "price": 122,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_5",
+    "name": "Garlic Bread",
+    "price": 153,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_6",
+    "name": "Cheese Burst",
+    "price": 110,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_7",
+    "name": "Stuffed Crust",
+    "price": 156,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_8",
+    "name": "Margherita Pizza",
+    "price": 458,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_9",
+    "name": "Pepperoni Pizza",
+    "price": 513,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_10",
+    "name": "Farmhouse Pizza (8\")",
+    "price": 249,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_11",
+    "name": "Veg Extravaganza",
+    "price": 117,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_12",
+    "name": "Chicken Dominator",
+    "price": 174,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_13",
+    "name": "Garlic Bread",
+    "price": 137,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_14",
+    "name": "Cheese Burst (7\")",
+    "price": 166,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_15",
+    "name": "Stuffed Crust",
+    "price": 103,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_16",
+    "name": "Margherita Pizza",
+    "price": 441,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_17",
+    "name": "Pepperoni Pizza",
+    "price": 237,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_18",
+    "name": "Farmhouse Pizza",
+    "price": 496,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_19",
+    "name": "Veg Extravaganza",
+    "price": 97,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_20",
+    "name": "Chicken Dominator",
+    "price": 203,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_21",
+    "name": "Garlic Bread (10\")",
+    "price": 186,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_22",
+    "name": "Cheese Burst",
+    "price": 76,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_23",
+    "name": "Stuffed Crust",
+    "price": 87,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_24",
+    "name": "Margherita Pizza (8\")",
+    "price": 403,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_25",
+    "name": "Pepperoni Pizza",
+    "price": 435,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_26",
+    "name": "Farmhouse Pizza (10\")",
+    "price": 240,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_27",
+    "name": "Veg Extravaganza (9\")",
+    "price": 208,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_28",
+    "name": "Chicken Dominator (7\")",
+    "price": 182,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_29",
+    "name": "Garlic Bread (6\")",
+    "price": 248,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "dominos_item_hyderabad_30",
+    "name": "Cheese Burst",
+    "price": 80,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

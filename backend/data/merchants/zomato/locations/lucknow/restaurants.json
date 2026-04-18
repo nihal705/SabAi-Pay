@@ -1,0 +1,642 @@
+[
+  {
+    "id": "zomato_rest_lucknow_1",
+    "name": "Amritsari Haveli",
+    "cuisine": "South Indian",
+    "rating": 3.8,
+    "ratingCount": 3335,
+    "priceForTwo": 862,
+    "location": {
+      "area": "Gomti Nagar",
+      "address": "Shop 1, Gomti Nagar, Lucknow",
+      "latitude": 26.858373799492913,
+      "longitude": 80.96381059132212
+    },
+    "deliveryTime": "34 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_2",
+    "name": "Sagar Ratna",
+    "cuisine": "Chinese",
+    "rating": 4.7,
+    "ratingCount": 4290,
+    "priceForTwo": 791,
+    "location": {
+      "area": "Indira Nagar",
+      "address": "Shop 2, Indira Nagar, Lucknow",
+      "latitude": 26.837021271985584,
+      "longitude": 80.94160232633888
+    },
+    "deliveryTime": "23 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_3",
+    "name": "Kanti Sweets Kitchen",
+    "cuisine": "Biryani",
+    "rating": 3.6,
+    "ratingCount": 2822,
+    "priceForTwo": 336,
+    "location": {
+      "area": "Alambagh",
+      "address": "Shop 3, Alambagh, Lucknow",
+      "latitude": 26.86825038370691,
+      "longitude": 80.92900848117449
+    },
+    "deliveryTime": "40 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_4",
+    "name": "MTR Kitchen",
+    "cuisine": "Fast Food",
+    "rating": 4.9,
+    "ratingCount": 4344,
+    "priceForTwo": 1189,
+    "location": {
+      "area": "Hazratganj",
+      "address": "Shop 4, Hazratganj, Lucknow",
+      "latitude": 26.859130140497737,
+      "longitude": 80.95715880205842
+    },
+    "deliveryTime": "58 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_5",
+    "name": "CTR",
+    "cuisine": "Pizza",
+    "rating": 3.1,
+    "ratingCount": 3506,
+    "priceForTwo": 1099,
+    "location": {
+      "area": "Gomti Nagar",
+      "address": "Shop 5, Gomti Nagar, Lucknow",
+      "latitude": 26.845901995721924,
+      "longitude": 80.94860862506913
+    },
+    "deliveryTime": "31 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_6",
+    "name": "Mainland China",
+    "cuisine": "Burgers",
+    "rating": 4.5,
+    "ratingCount": 1373,
+    "priceForTwo": 916,
+    "location": {
+      "area": "Indira Nagar",
+      "address": "Shop 6, Indira Nagar, Lucknow",
+      "latitude": 26.854905131568007,
+      "longitude": 80.95111014281785
+    },
+    "deliveryTime": "52 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_7",
+    "name": "Chung Wah",
+    "cuisine": "North Indian",
+    "rating": 3.4,
+    "ratingCount": 1452,
+    "priceForTwo": 653,
+    "location": {
+      "area": "Alambagh",
+      "address": "Shop 7, Alambagh, Lucknow",
+      "latitude": 26.821774005866924,
+      "longitude": 80.95459758478222
+    },
+    "deliveryTime": "35 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_8",
+    "name": "Biryani Blues Kitchen",
+    "cuisine": "South Indian",
+    "rating": 4.7,
+    "ratingCount": 3860,
+    "priceForTwo": 904,
+    "location": {
+      "area": "Hazratganj",
+      "address": "Shop 8, Hazratganj, Lucknow",
+      "latitude": 26.84111766872195,
+      "longitude": 80.92740721518136
+    },
+    "deliveryTime": "38 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_9",
+    "name": "Paradise Biryani",
+    "cuisine": "Chinese",
+    "rating": 4,
+    "ratingCount": 1619,
+    "priceForTwo": 815,
+    "location": {
+      "area": "Gomti Nagar",
+      "address": "Shop 9, Gomti Nagar, Lucknow",
+      "latitude": 26.838477906470587,
+      "longitude": 80.95331134938705
+    },
+    "deliveryTime": "29 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_10",
+    "name": "Dominos Kitchen",
+    "cuisine": "Biryani",
+    "rating": 3.1,
+    "ratingCount": 3766,
+    "priceForTwo": 315,
+    "location": {
+      "area": "Indira Nagar",
+      "address": "Shop 10, Indira Nagar, Lucknow",
+      "latitude": 26.87003781888693,
+      "longitude": 80.92691253258414
+    },
+    "deliveryTime": "37 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_11",
+    "name": "Pizza Hut",
+    "cuisine": "Fast Food",
+    "rating": 3.9,
+    "ratingCount": 3165,
+    "priceForTwo": 945,
+    "location": {
+      "area": "Alambagh",
+      "address": "Shop 11, Alambagh, Lucknow",
+      "latitude": 26.850616494120864,
+      "longitude": 80.94869787414456
+    },
+    "deliveryTime": "56 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_12",
+    "name": "Burger King Kitchen",
+    "cuisine": "Pizza",
+    "rating": 4.4,
+    "ratingCount": 2276,
+    "priceForTwo": 834,
+    "location": {
+      "area": "Hazratganj",
+      "address": "Shop 12, Hazratganj, Lucknow",
+      "latitude": 26.85247900693939,
+      "longitude": 80.93132335509787
+    },
+    "deliveryTime": "39 min",
+    "isOpen": false
+  },
+  {
+    "id": "zomato_rest_lucknow_13",
+    "name": "KFC",
+    "cuisine": "Burgers",
+    "rating": 3.1,
+    "ratingCount": 1788,
+    "priceForTwo": 1145,
+    "location": {
+      "area": "Gomti Nagar",
+      "address": "Shop 13, Gomti Nagar, Lucknow",
+      "latitude": 26.86949916095143,
+      "longitude": 80.94204850832882
+    },
+    "deliveryTime": "21 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_14",
+    "name": "McDonalds Kitchen",
+    "cuisine": "North Indian",
+    "rating": 3.4,
+    "ratingCount": 590,
+    "priceForTwo": 301,
+    "location": {
+      "area": "Indira Nagar",
+      "address": "Shop 14, Indira Nagar, Lucknow",
+      "latitude": 26.86033241298673,
+      "longitude": 80.92536743020486
+    },
+    "deliveryTime": "48 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_15",
+    "name": "Subway",
+    "cuisine": "South Indian",
+    "rating": 4.3,
+    "ratingCount": 3668,
+    "priceForTwo": 314,
+    "location": {
+      "area": "Alambagh",
+      "address": "Shop 15, Alambagh, Lucknow",
+      "latitude": 26.848424798930417,
+      "longitude": 80.92893164436373
+    },
+    "deliveryTime": "42 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_16",
+    "name": "Taco Bell",
+    "cuisine": "Chinese",
+    "rating": 3.8,
+    "ratingCount": 680,
+    "priceForTwo": 968,
+    "location": {
+      "area": "Hazratganj",
+      "address": "Shop 16, Hazratganj, Lucknow",
+      "latitude": 26.858963000207446,
+      "longitude": 80.93441479879515
+    },
+    "deliveryTime": "57 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_17",
+    "name": "Punjabi Rasoi",
+    "cuisine": "Biryani",
+    "rating": 3.4,
+    "ratingCount": 3540,
+    "priceForTwo": 1191,
+    "location": {
+      "area": "Gomti Nagar",
+      "address": "Shop 17, Gomti Nagar, Lucknow",
+      "latitude": 26.825266868751445,
+      "longitude": 80.93810635459859
+    },
+    "deliveryTime": "21 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_18",
+    "name": "Amritsari Haveli",
+    "cuisine": "Fast Food",
+    "rating": 3.1,
+    "ratingCount": 4289,
+    "priceForTwo": 624,
+    "location": {
+      "area": "Indira Nagar",
+      "address": "Shop 18, Indira Nagar, Lucknow",
+      "latitude": 26.822279598717426,
+      "longitude": 80.93426529089903
+    },
+    "deliveryTime": "38 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_19",
+    "name": "Sagar Ratna",
+    "cuisine": "Pizza",
+    "rating": 3.7,
+    "ratingCount": 490,
+    "priceForTwo": 758,
+    "location": {
+      "area": "Alambagh",
+      "address": "Shop 19, Alambagh, Lucknow",
+      "latitude": 26.859492972495172,
+      "longitude": 80.94947854836529
+    },
+    "deliveryTime": "22 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_20",
+    "name": "Kanti Sweets Kitchen",
+    "cuisine": "Burgers",
+    "rating": 4.6,
+    "ratingCount": 1201,
+    "priceForTwo": 543,
+    "location": {
+      "area": "Hazratganj",
+      "address": "Shop 20, Hazratganj, Lucknow",
+      "latitude": 26.83637935027238,
+      "longitude": 80.92718006498868
+    },
+    "deliveryTime": "46 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_21",
+    "name": "MTR",
+    "cuisine": "North Indian",
+    "rating": 4.9,
+    "ratingCount": 4909,
+    "priceForTwo": 1247,
+    "location": {
+      "area": "Gomti Nagar",
+      "address": "Shop 21, Gomti Nagar, Lucknow",
+      "latitude": 26.82860910909045,
+      "longitude": 80.93982800453624
+    },
+    "deliveryTime": "48 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_22",
+    "name": "CTR",
+    "cuisine": "South Indian",
+    "rating": 4,
+    "ratingCount": 2451,
+    "priceForTwo": 765,
+    "location": {
+      "area": "Indira Nagar",
+      "address": "Shop 22, Indira Nagar, Lucknow",
+      "latitude": 26.840519817545324,
+      "longitude": 80.96614075185799
+    },
+    "deliveryTime": "37 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_23",
+    "name": "Mainland China",
+    "cuisine": "Chinese",
+    "rating": 3.4,
+    "ratingCount": 4169,
+    "priceForTwo": 804,
+    "location": {
+      "area": "Alambagh",
+      "address": "Shop 23, Alambagh, Lucknow",
+      "latitude": 26.849776063809934,
+      "longitude": 80.93743310665363
+    },
+    "deliveryTime": "46 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_24",
+    "name": "Chung Wah Kitchen",
+    "cuisine": "Biryani",
+    "rating": 3,
+    "ratingCount": 4199,
+    "priceForTwo": 886,
+    "location": {
+      "area": "Hazratganj",
+      "address": "Shop 24, Hazratganj, Lucknow",
+      "latitude": 26.826276935258406,
+      "longitude": 80.96085662295083
+    },
+    "deliveryTime": "21 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_25",
+    "name": "Biryani Blues",
+    "cuisine": "Fast Food",
+    "rating": 4.2,
+    "ratingCount": 724,
+    "priceForTwo": 1099,
+    "location": {
+      "area": "Gomti Nagar",
+      "address": "Shop 25, Gomti Nagar, Lucknow",
+      "latitude": 26.828298275596843,
+      "longitude": 80.94863706334024
+    },
+    "deliveryTime": "38 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_26",
+    "name": "Paradise Biryani",
+    "cuisine": "Pizza",
+    "rating": 4.8,
+    "ratingCount": 1248,
+    "priceForTwo": 1045,
+    "location": {
+      "area": "Indira Nagar",
+      "address": "Shop 26, Indira Nagar, Lucknow",
+      "latitude": 26.830622372240835,
+      "longitude": 80.94939460042076
+    },
+    "deliveryTime": "43 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_27",
+    "name": "Dominos",
+    "cuisine": "Burgers",
+    "rating": 3.1,
+    "ratingCount": 634,
+    "priceForTwo": 778,
+    "location": {
+      "area": "Alambagh",
+      "address": "Shop 27, Alambagh, Lucknow",
+      "latitude": 26.8378891472488,
+      "longitude": 80.93579930171731
+    },
+    "deliveryTime": "36 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_28",
+    "name": "Pizza Hut",
+    "cuisine": "North Indian",
+    "rating": 3.8,
+    "ratingCount": 183,
+    "priceForTwo": 319,
+    "location": {
+      "area": "Hazratganj",
+      "address": "Shop 28, Hazratganj, Lucknow",
+      "latitude": 26.851539131830393,
+      "longitude": 80.94431287474767
+    },
+    "deliveryTime": "45 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_29",
+    "name": "Burger King Kitchen",
+    "cuisine": "South Indian",
+    "rating": 4.2,
+    "ratingCount": 637,
+    "priceForTwo": 335,
+    "location": {
+      "area": "Gomti Nagar",
+      "address": "Shop 29, Gomti Nagar, Lucknow",
+      "latitude": 26.844855971755102,
+      "longitude": 80.95835897053949
+    },
+    "deliveryTime": "59 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_30",
+    "name": "KFC",
+    "cuisine": "Chinese",
+    "rating": 5,
+    "ratingCount": 2880,
+    "priceForTwo": 381,
+    "location": {
+      "area": "Indira Nagar",
+      "address": "Shop 30, Indira Nagar, Lucknow",
+      "latitude": 26.85271105814115,
+      "longitude": 80.96049770407069
+    },
+    "deliveryTime": "24 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_31",
+    "name": "McDonalds Kitchen",
+    "cuisine": "Biryani",
+    "rating": 4.8,
+    "ratingCount": 2383,
+    "priceForTwo": 499,
+    "location": {
+      "area": "Alambagh",
+      "address": "Shop 31, Alambagh, Lucknow",
+      "latitude": 26.847846630993402,
+      "longitude": 80.95619055518503
+    },
+    "deliveryTime": "56 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_32",
+    "name": "Subway",
+    "cuisine": "Fast Food",
+    "rating": 3.5,
+    "ratingCount": 3565,
+    "priceForTwo": 891,
+    "location": {
+      "area": "Hazratganj",
+      "address": "Shop 32, Hazratganj, Lucknow",
+      "latitude": 26.82691125338304,
+      "longitude": 80.93070082981326
+    },
+    "deliveryTime": "34 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_33",
+    "name": "Taco Bell Kitchen",
+    "cuisine": "Pizza",
+    "rating": 5,
+    "ratingCount": 4370,
+    "priceForTwo": 851,
+    "location": {
+      "area": "Gomti Nagar",
+      "address": "Shop 33, Gomti Nagar, Lucknow",
+      "latitude": 26.841490352577026,
+      "longitude": 80.94898376578766
+    },
+    "deliveryTime": "50 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_34",
+    "name": "Punjabi Rasoi",
+    "cuisine": "Burgers",
+    "rating": 3.5,
+    "ratingCount": 4886,
+    "priceForTwo": 350,
+    "location": {
+      "area": "Indira Nagar",
+      "address": "Shop 34, Indira Nagar, Lucknow",
+      "latitude": 26.857472593665214,
+      "longitude": 80.92624556079637
+    },
+    "deliveryTime": "56 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_35",
+    "name": "Amritsari Haveli Kitchen",
+    "cuisine": "North Indian",
+    "rating": 3.7,
+    "ratingCount": 1960,
+    "priceForTwo": 1158,
+    "location": {
+      "area": "Alambagh",
+      "address": "Shop 35, Alambagh, Lucknow",
+      "latitude": 26.826849338364372,
+      "longitude": 80.93407088096346
+    },
+    "deliveryTime": "32 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_36",
+    "name": "Sagar Ratna",
+    "cuisine": "South Indian",
+    "rating": 4.8,
+    "ratingCount": 1427,
+    "priceForTwo": 1206,
+    "location": {
+      "area": "Hazratganj",
+      "address": "Shop 36, Hazratganj, Lucknow",
+      "latitude": 26.824559697618326,
+      "longitude": 80.95522705361888
+    },
+    "deliveryTime": "53 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_37",
+    "name": "Kanti Sweets Kitchen",
+    "cuisine": "Chinese",
+    "rating": 3.2,
+    "ratingCount": 222,
+    "priceForTwo": 1118,
+    "location": {
+      "area": "Gomti Nagar",
+      "address": "Shop 37, Gomti Nagar, Lucknow",
+      "latitude": 26.86685459651561,
+      "longitude": 80.97072888961816
+    },
+    "deliveryTime": "22 min",
+    "isOpen": false
+  },
+  {
+    "id": "zomato_rest_lucknow_38",
+    "name": "MTR",
+    "cuisine": "Biryani",
+    "rating": 3.6,
+    "ratingCount": 2995,
+    "priceForTwo": 818,
+    "location": {
+      "area": "Indira Nagar",
+      "address": "Shop 38, Indira Nagar, Lucknow",
+      "latitude": 26.851199539583035,
+      "longitude": 80.92543670288299
+    },
+    "deliveryTime": "48 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_39",
+    "name": "CTR Kitchen",
+    "cuisine": "Fast Food",
+    "rating": 4.7,
+    "ratingCount": 3816,
+    "priceForTwo": 705,
+    "location": {
+      "area": "Alambagh",
+      "address": "Shop 39, Alambagh, Lucknow",
+      "latitude": 26.855492540165987,
+      "longitude": 80.93226709210408
+    },
+    "deliveryTime": "57 min",
+    "isOpen": true
+  },
+  {
+    "id": "zomato_rest_lucknow_40",
+    "name": "Mainland China",
+    "cuisine": "Pizza",
+    "rating": 4.6,
+    "ratingCount": 1081,
+    "priceForTwo": 875,
+    "location": {
+      "area": "Hazratganj",
+      "address": "Shop 40, Hazratganj, Lucknow",
+      "latitude": 26.82819762452053,
+      "longitude": 80.92430597265975
+    },
+    "deliveryTime": "38 min",
+    "isOpen": true
+  }
+]

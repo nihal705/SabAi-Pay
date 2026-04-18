@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "croma_item_hyderabad_1",
+    "name": "HP Laptops 528",
+    "price": 71826,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_2",
+    "name": "JBL Headphones 337",
+    "price": 10232,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_3",
+    "name": "Marshall Speakers 492",
+    "price": 2905,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_4",
+    "name": "Anker Accessories 56",
+    "price": 5411,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_5",
+    "name": "TCL Smart TVs 358",
+    "price": 29421,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_6",
+    "name": "Samsung Smartphones 597",
+    "price": 35244,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_7",
+    "name": "HP Laptops 63",
+    "price": 34729,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_8",
+    "name": "JBL Headphones 704",
+    "price": 6831,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "3.6",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_9",
+    "name": "Marshall Speakers 914",
+    "price": 4045,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_10",
+    "name": "Anker Accessories 160",
+    "price": 4417,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_11",
+    "name": "TCL Smart TVs 171",
+    "price": 54665,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_12",
+    "name": "Samsung Smartphones 757",
+    "price": 47221,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_13",
+    "name": "HP Laptops 457",
+    "price": 72880,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "4.5",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_14",
+    "name": "JBL Headphones 668",
+    "price": 9625,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_15",
+    "name": "Marshall Speakers 381",
+    "price": 3323,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_16",
+    "name": "Anker Accessories 94",
+    "price": 1948,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_17",
+    "name": "TCL Smart TVs 180",
+    "price": 41169,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_18",
+    "name": "Samsung Smartphones 89",
+    "price": 15745,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_19",
+    "name": "HP Laptops 608",
+    "price": 35597,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "4.3",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_20",
+    "name": "JBL Headphones 613",
+    "price": 10843,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_21",
+    "name": "Marshall Speakers 239",
+    "price": 8694,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_22",
+    "name": "Anker Accessories 722",
+    "price": 5026,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_23",
+    "name": "TCL Smart TVs 54",
+    "price": 46071,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_24",
+    "name": "Samsung Smartphones 265",
+    "price": 37758,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_25",
+    "name": "HP Laptops 730",
+    "price": 70522,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "4.0",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_26",
+    "name": "JBL Headphones 463",
+    "price": 3220,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_27",
+    "name": "Marshall Speakers 484",
+    "price": 5247,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_28",
+    "name": "Anker Accessories 245",
+    "price": 7519,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_29",
+    "name": "TCL Smart TVs 209",
+    "price": 71891,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "4.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_30",
+    "name": "Samsung Smartphones 858",
+    "price": 13793,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_31",
+    "name": "HP Laptops 923",
+    "price": 87928,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "4.8",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_32",
+    "name": "JBL Headphones 555",
+    "price": 7125,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_33",
+    "name": "Marshall Speakers 229",
+    "price": 5314,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_34",
+    "name": "Anker Accessories 470",
+    "price": 8083,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_35",
+    "name": "TCL Smart TVs 543",
+    "price": 47288,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_36",
+    "name": "Samsung Smartphones 616",
+    "price": 27647,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "3.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_37",
+    "name": "HP Laptops 817",
+    "price": 62463,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_38",
+    "name": "JBL Headphones 641",
+    "price": 9229,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "4.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_39",
+    "name": "Marshall Speakers 244",
+    "price": 8634,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_40",
+    "name": "Anker Accessories 205",
+    "price": 2328,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_41",
+    "name": "TCL Smart TVs 439",
+    "price": 26697,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_42",
+    "name": "Samsung Smartphones 480",
+    "price": 46154,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "4.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_43",
+    "name": "HP Laptops 456",
+    "price": 86006,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "4.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_44",
+    "name": "JBL Headphones 6",
+    "price": 1637,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_45",
+    "name": "Marshall Speakers 540",
+    "price": 4625,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "4.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_46",
+    "name": "Anker Accessories 475",
+    "price": 4478,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_47",
+    "name": "TCL Smart TVs 887",
+    "price": 53968,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_48",
+    "name": "Samsung Smartphones 305",
+    "price": 15890,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_49",
+    "name": "HP Laptops 206",
+    "price": 108702,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_50",
+    "name": "JBL Headphones 330",
+    "price": 4283,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_51",
+    "name": "Marshall Speakers 755",
+    "price": 7140,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_52",
+    "name": "Anker Accessories 421",
+    "price": 6893,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_53",
+    "name": "TCL Smart TVs 377",
+    "price": 74834,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_54",
+    "name": "Samsung Smartphones 315",
+    "price": 24956,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_55",
+    "name": "HP Laptops 838",
+    "price": 98995,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_56",
+    "name": "JBL Headphones 886",
+    "price": 6086,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_57",
+    "name": "Marshall Speakers 485",
+    "price": 2093,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_58",
+    "name": "Anker Accessories 57",
+    "price": 1125,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_59",
+    "name": "TCL Smart TVs 30",
+    "price": 61689,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_60",
+    "name": "Samsung Smartphones 721",
+    "price": 52484,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_61",
+    "name": "HP Laptops 183",
+    "price": 50715,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "4.3",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_62",
+    "name": "JBL Headphones 990",
+    "price": 4104,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "3.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_63",
+    "name": "Marshall Speakers 464",
+    "price": 6838,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_64",
+    "name": "Anker Accessories 660",
+    "price": 2547,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "5.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_65",
+    "name": "TCL Smart TVs 800",
+    "price": 64447,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_66",
+    "name": "Samsung Smartphones 62",
+    "price": 41919,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_67",
+    "name": "HP Laptops 702",
+    "price": 97627,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "3.0",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_68",
+    "name": "JBL Headphones 162",
+    "price": 6680,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_69",
+    "name": "Marshall Speakers 647",
+    "price": 8479,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_70",
+    "name": "Anker Accessories 613",
+    "price": 9478,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_71",
+    "name": "TCL Smart TVs 230",
+    "price": 29197,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_72",
+    "name": "Samsung Smartphones 60",
+    "price": 33931,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_73",
+    "name": "HP Laptops 155",
+    "price": 77575,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_74",
+    "name": "JBL Headphones 454",
+    "price": 1139,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_75",
+    "name": "Marshall Speakers 542",
+    "price": 1173,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_76",
+    "name": "Anker Accessories 186",
+    "price": 9399,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_77",
+    "name": "TCL Smart TVs 808",
+    "price": 76446,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_78",
+    "name": "Samsung Smartphones 771",
+    "price": 51139,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_79",
+    "name": "HP Laptops 823",
+    "price": 51970,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_80",
+    "name": "JBL Headphones 8",
+    "price": 8304,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "4.6",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_81",
+    "name": "Marshall Speakers 207",
+    "price": 8646,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_82",
+    "name": "Anker Accessories 392",
+    "price": 9295,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_83",
+    "name": "TCL Smart TVs 138",
+    "price": 56773,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_84",
+    "name": "Samsung Smartphones 878",
+    "price": 54519,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_85",
+    "name": "HP Laptops 326",
+    "price": 79428,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_86",
+    "name": "JBL Headphones 850",
+    "price": 1128,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_87",
+    "name": "Marshall Speakers 428",
+    "price": 5856,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_88",
+    "name": "Anker Accessories 729",
+    "price": 5147,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_89",
+    "name": "TCL Smart TVs 601",
+    "price": 57047,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_90",
+    "name": "Samsung Smartphones 383",
+    "price": 36521,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_91",
+    "name": "HP Laptops 54",
+    "price": 108402,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "4.2",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_92",
+    "name": "JBL Headphones 357",
+    "price": 9320,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_93",
+    "name": "Marshall Speakers 437",
+    "price": 2412,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_94",
+    "name": "Anker Accessories 365",
+    "price": 5325,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_95",
+    "name": "TCL Smart TVs 842",
+    "price": 75996,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_96",
+    "name": "Samsung Smartphones 221",
+    "price": 47405,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_97",
+    "name": "HP Laptops 145",
+    "price": 91618,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_98",
+    "name": "JBL Headphones 736",
+    "price": 5932,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_99",
+    "name": "Marshall Speakers 200",
+    "price": 2842,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_100",
+    "name": "Anker Accessories 200",
+    "price": 8908,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_101",
+    "name": "TCL Smart TVs 255",
+    "price": 71027,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_102",
+    "name": "Samsung Smartphones 494",
+    "price": 17044,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_103",
+    "name": "HP Laptops 817",
+    "price": 65986,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_104",
+    "name": "JBL Headphones 518",
+    "price": 7460,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "3.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_105",
+    "name": "Marshall Speakers 61",
+    "price": 9255,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_106",
+    "name": "Anker Accessories 679",
+    "price": 9493,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_107",
+    "name": "TCL Smart TVs 31",
+    "price": 40675,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_108",
+    "name": "Samsung Smartphones 397",
+    "price": 13966,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_109",
+    "name": "HP Laptops 936",
+    "price": 86334,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_110",
+    "name": "JBL Headphones 189",
+    "price": 7725,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "5.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_111",
+    "name": "Marshall Speakers 468",
+    "price": 4908,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_112",
+    "name": "Anker Accessories 384",
+    "price": 2886,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_113",
+    "name": "TCL Smart TVs 910",
+    "price": 46827,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_114",
+    "name": "Samsung Smartphones 22",
+    "price": 29470,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_115",
+    "name": "HP Laptops 701",
+    "price": 56545,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_116",
+    "name": "JBL Headphones 36",
+    "price": 2141,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "3.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_117",
+    "name": "Marshall Speakers 436",
+    "price": 2973,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "5.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_118",
+    "name": "Anker Accessories 211",
+    "price": 2031,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_119",
+    "name": "TCL Smart TVs 692",
+    "price": 28966,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_120",
+    "name": "Samsung Smartphones 492",
+    "price": 59533,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_121",
+    "name": "HP Laptops 98",
+    "price": 66799,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_122",
+    "name": "JBL Headphones 666",
+    "price": 2256,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_123",
+    "name": "Marshall Speakers 956",
+    "price": 9990,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_124",
+    "name": "Anker Accessories 513",
+    "price": 9017,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_125",
+    "name": "TCL Smart TVs 6",
+    "price": 28332,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_126",
+    "name": "Samsung Smartphones 658",
+    "price": 21959,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_127",
+    "name": "HP Laptops 424",
+    "price": 45421,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_128",
+    "name": "JBL Headphones 637",
+    "price": 1507,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_129",
+    "name": "Marshall Speakers 322",
+    "price": 5969,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_130",
+    "name": "Anker Accessories 765",
+    "price": 6196,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_131",
+    "name": "TCL Smart TVs 146",
+    "price": 34796,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_132",
+    "name": "Samsung Smartphones 707",
+    "price": 42728,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_133",
+    "name": "HP Laptops 743",
+    "price": 47969,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_134",
+    "name": "JBL Headphones 446",
+    "price": 8250,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_135",
+    "name": "Marshall Speakers 880",
+    "price": 3399,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_136",
+    "name": "Anker Accessories 653",
+    "price": 3313,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_137",
+    "name": "TCL Smart TVs 578",
+    "price": 56733,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_138",
+    "name": "Samsung Smartphones 444",
+    "price": 53194,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.5",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_139",
+    "name": "HP Laptops 600",
+    "price": 69016,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "4.9",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_140",
+    "name": "JBL Headphones 206",
+    "price": 3783,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_141",
+    "name": "Marshall Speakers 77",
+    "price": 3225,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "3.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_142",
+    "name": "Anker Accessories 405",
+    "price": 6882,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_143",
+    "name": "TCL Smart TVs 168",
+    "price": 48315,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_144",
+    "name": "Samsung Smartphones 696",
+    "price": 35038,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_145",
+    "name": "HP Laptops 861",
+    "price": 98081,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_146",
+    "name": "JBL Headphones 291",
+    "price": 4220,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_147",
+    "name": "Marshall Speakers 958",
+    "price": 9055,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_148",
+    "name": "Anker Accessories 245",
+    "price": 7508,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_149",
+    "name": "TCL Smart TVs 685",
+    "price": 32122,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_150",
+    "name": "Samsung Smartphones 502",
+    "price": 59820,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "3.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_151",
+    "name": "HP Laptops 228",
+    "price": 54269,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_152",
+    "name": "JBL Headphones 305",
+    "price": 5852,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "5.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_153",
+    "name": "Marshall Speakers 762",
+    "price": 5435,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_154",
+    "name": "Anker Accessories 902",
+    "price": 7377,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_155",
+    "name": "TCL Smart TVs 766",
+    "price": 69829,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "3.0",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_156",
+    "name": "Samsung Smartphones 700",
+    "price": 51154,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_157",
+    "name": "HP Laptops 830",
+    "price": 42144,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "5.0",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_158",
+    "name": "JBL Headphones 289",
+    "price": 10390,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_159",
+    "name": "Marshall Speakers 267",
+    "price": 1435,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_160",
+    "name": "Anker Accessories 708",
+    "price": 4105,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_161",
+    "name": "TCL Smart TVs 796",
+    "price": 31780,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_162",
+    "name": "Samsung Smartphones 504",
+    "price": 50673,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_163",
+    "name": "HP Laptops 128",
+    "price": 100334,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_164",
+    "name": "JBL Headphones 675",
+    "price": 9946,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_165",
+    "name": "Marshall Speakers 935",
+    "price": 1965,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_166",
+    "name": "Anker Accessories 252",
+    "price": 4287,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_167",
+    "name": "TCL Smart TVs 62",
+    "price": 51479,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_168",
+    "name": "Samsung Smartphones 323",
+    "price": 12594,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "4.3",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_169",
+    "name": "HP Laptops 538",
+    "price": 55653,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_170",
+    "name": "JBL Headphones 709",
+    "price": 8058,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_171",
+    "name": "Marshall Speakers 856",
+    "price": 10190,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_172",
+    "name": "Anker Accessories 972",
+    "price": 5477,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_173",
+    "name": "TCL Smart TVs 284",
+    "price": 32234,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_174",
+    "name": "Samsung Smartphones 635",
+    "price": 11691,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_175",
+    "name": "HP Laptops 992",
+    "price": 94055,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_176",
+    "name": "JBL Headphones 994",
+    "price": 3515,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_177",
+    "name": "Marshall Speakers 335",
+    "price": 2847,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": false,
+    "rating": "3.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_178",
+    "name": "Anker Accessories 793",
+    "price": 4810,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.5",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_179",
+    "name": "TCL Smart TVs 691",
+    "price": 37150,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_180",
+    "name": "Samsung Smartphones 53",
+    "price": 43389,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_181",
+    "name": "HP Laptops 955",
+    "price": 32974,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "5.0",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_182",
+    "name": "JBL Headphones 142",
+    "price": 3074,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_183",
+    "name": "Marshall Speakers 456",
+    "price": 6106,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_184",
+    "name": "Anker Accessories 989",
+    "price": 5050,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": false,
+    "rating": "3.2",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_185",
+    "name": "TCL Smart TVs 926",
+    "price": 43551,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": false,
+    "rating": "4.3",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_186",
+    "name": "Samsung Smartphones 387",
+    "price": 18504,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_187",
+    "name": "HP Laptops 496",
+    "price": 39296,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_188",
+    "name": "JBL Headphones 645",
+    "price": 9178,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": false,
+    "rating": "3.9",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_189",
+    "name": "Marshall Speakers 520",
+    "price": 3385,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_190",
+    "name": "Anker Accessories 872",
+    "price": 3787,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.4",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_191",
+    "name": "TCL Smart TVs 228",
+    "price": 32981,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "3.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_192",
+    "name": "Samsung Smartphones 969",
+    "price": 35434,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "3.2",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_193",
+    "name": "HP Laptops 200",
+    "price": 31830,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": false,
+    "rating": "4.7",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_194",
+    "name": "JBL Headphones 463",
+    "price": 8574,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_195",
+    "name": "Marshall Speakers 91",
+    "price": 9699,
+    "category": "Speakers",
+    "brand": "Marshall",
+    "inStock": true,
+    "rating": "4.9",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_196",
+    "name": "Anker Accessories 681",
+    "price": 3820,
+    "category": "Accessories",
+    "brand": "Anker",
+    "inStock": true,
+    "rating": "4.7",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_197",
+    "name": "TCL Smart TVs 597",
+    "price": 57523,
+    "category": "Smart TVs",
+    "brand": "TCL",
+    "inStock": true,
+    "rating": "4.6",
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_198",
+    "name": "Samsung Smartphones 165",
+    "price": 55844,
+    "category": "Smartphones",
+    "brand": "Samsung",
+    "inStock": false,
+    "rating": "4.0",
+    "imageUrl": "/images/items/smartphone.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_199",
+    "name": "HP Laptops 107",
+    "price": 91949,
+    "category": "Laptops",
+    "brand": "HP",
+    "inStock": true,
+    "rating": "4.1",
+    "imageUrl": "/images/items/laptop.jpg"
+  },
+  {
+    "id": "croma_item_hyderabad_200",
+    "name": "JBL Headphones 911",
+    "price": 4468,
+    "category": "Headphones",
+    "brand": "JBL",
+    "inStock": true,
+    "rating": "3.8",
+    "imageUrl": "/images/items/smartphone.jpg"
+  }
+]

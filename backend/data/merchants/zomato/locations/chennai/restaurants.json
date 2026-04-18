@@ -1,0 +1,112 @@
+[
+  {
+    "id": "zomato_anjappar_che",
+    "name": "Anjappar",
+    "cuisine": "Chettinad",
+    "rating": 4.4,
+    "ratingCount": 14500,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 550,
+    "area": "T Nagar",
+    "landmark": "Near Panagal Park",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "T Nagar",
+      "address": "Anjappar, T Nagar, Chennai",
+      "coordinates": {
+        "lat": 13.0827,
+        "lng": 80.2707
+      }
+    },
+    "imageUrl": "/images/restaurants/anjappar.jpg"
+  },
+  {
+    "id": "zomato_saravana_bhavan_che",
+    "name": "Saravana Bhavan",
+    "cuisine": "South Indian",
+    "rating": 4.5,
+    "ratingCount": 22000,
+    "deliveryTime": "20-30 min",
+    "priceForTwo": 300,
+    "area": "T Nagar",
+    "landmark": "Near Pondy Bazaar",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "T Nagar",
+      "address": "Saravana Bhavan, T Nagar, Chennai",
+      "coordinates": {
+        "lat": 13.0827,
+        "lng": 80.2707
+      }
+    },
+    "imageUrl": "/images/restaurants/saravana.jpg"
+  },
+  {
+    "id": "zomato_murugan_idli_che",
+    "name": "Murugan Idli Shop",
+    "cuisine": "South Indian",
+    "rating": 4.3,
+    "ratingCount": 12500,
+    "deliveryTime": "15-25 min",
+    "priceForTwo": 250,
+    "area": "Besant Nagar",
+    "landmark": "Elliot's Beach",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Besant Nagar",
+      "address": "Murugan Idli Shop, Besant Nagar, Chennai",
+      "coordinates": {
+        "lat": 13.0827,
+        "lng": 80.2707
+      }
+    },
+    "imageUrl": "/images/restaurants/murugan.jpg"
+  },
+  {
+    "id": "zomato_ratna_cafe_che",
+    "name": "Ratna Cafe",
+    "cuisine": "South Indian",
+    "rating": 4.4,
+    "ratingCount": 9800,
+    "deliveryTime": "20-30 min",
+    "priceForTwo": 280,
+    "area": "Triplicane",
+    "landmark": "Near Parthasarathy Temple",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Triplicane",
+      "address": "Ratna Cafe, Triplicane, Chennai",
+      "coordinates": {
+        "lat": 13.0827,
+        "lng": 80.2707
+      }
+    },
+    "imageUrl": "/images/restaurants/ratna.jpg"
+  },
+  {
+    "id": "zomato_buhari_che",
+    "name": "Buhari",
+    "cuisine": "Indian",
+    "rating": 4.2,
+    "ratingCount": 8700,
+    "deliveryTime": "30-45 min",
+    "priceForTwo": 450,
+    "area": "Anna Nagar",
+    "landmark": "Tower Park",
+    "isPopular": true,
+    "isOpen": true,
+    "location": {
+      "area": "Anna Nagar",
+      "address": "Buhari, Anna Nagar, Chennai",
+      "coordinates": {
+        "lat": 13.0827,
+        "lng": 80.2707
+      }
+    },
+    "imageUrl": "/images/restaurants/buhari.jpg"
+  }
+]

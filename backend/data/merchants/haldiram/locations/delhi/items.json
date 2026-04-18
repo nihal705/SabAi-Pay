@@ -1,0 +1,902 @@
+[
+  {
+    "id": "haldiram_item_delhi_1",
+    "name": "Kachori",
+    "price": 23,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_2",
+    "name": "Pakora",
+    "price": 47,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_3",
+    "name": "Jalebi",
+    "price": 66,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_4",
+    "name": "Gulab Jamun",
+    "price": 85,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_5",
+    "name": "Rasgulla",
+    "price": 71,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_6",
+    "name": "Chaat",
+    "price": 134,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_7",
+    "name": "Pani Puri (179g)",
+    "price": 57,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_8",
+    "name": "Bhel Puri",
+    "price": 114,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_9",
+    "name": "Dahi Vada",
+    "price": 107,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_10",
+    "name": "Samosa",
+    "price": 25,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_11",
+    "name": "Kachori (1g)",
+    "price": 22,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_12",
+    "name": "Pakora",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_13",
+    "name": "Jalebi",
+    "price": 84,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_14",
+    "name": "Gulab Jamun",
+    "price": 94,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_15",
+    "name": "Rasgulla",
+    "price": 80,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_16",
+    "name": "Chaat",
+    "price": 129,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_17",
+    "name": "Pani Puri",
+    "price": 117,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_18",
+    "name": "Bhel Puri",
+    "price": 156,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_19",
+    "name": "Dahi Vada",
+    "price": 154,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_20",
+    "name": "Samosa",
+    "price": 61,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_21",
+    "name": "Kachori (51g)",
+    "price": 123,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_22",
+    "name": "Pakora (59g)",
+    "price": 152,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_23",
+    "name": "Jalebi",
+    "price": 54,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_24",
+    "name": "Gulab Jamun",
+    "price": 48,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_25",
+    "name": "Rasgulla",
+    "price": 62,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_26",
+    "name": "Chaat (71g)",
+    "price": 56,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_27",
+    "name": "Pani Puri",
+    "price": 23,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_28",
+    "name": "Bhel Puri",
+    "price": 31,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_29",
+    "name": "Dahi Vada",
+    "price": 49,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_30",
+    "name": "Samosa (137g)",
+    "price": 124,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_31",
+    "name": "Kachori",
+    "price": 72,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_32",
+    "name": "Pakora",
+    "price": 84,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_33",
+    "name": "Jalebi",
+    "price": 86,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_34",
+    "name": "Gulab Jamun",
+    "price": 121,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_35",
+    "name": "Rasgulla",
+    "price": 141,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_36",
+    "name": "Chaat",
+    "price": 36,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_37",
+    "name": "Pani Puri",
+    "price": 95,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_38",
+    "name": "Bhel Puri",
+    "price": 160,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_39",
+    "name": "Dahi Vada",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_40",
+    "name": "Samosa",
+    "price": 84,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_41",
+    "name": "Kachori",
+    "price": 111,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_42",
+    "name": "Pakora",
+    "price": 39,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_43",
+    "name": "Jalebi",
+    "price": 48,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_44",
+    "name": "Gulab Jamun (218g)",
+    "price": 161,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_45",
+    "name": "Rasgulla",
+    "price": 105,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_46",
+    "name": "Chaat",
+    "price": 61,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_47",
+    "name": "Pani Puri (128g)",
+    "price": 60,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_48",
+    "name": "Bhel Puri",
+    "price": 113,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_49",
+    "name": "Dahi Vada",
+    "price": 99,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_50",
+    "name": "Samosa",
+    "price": 73,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_51",
+    "name": "Kachori",
+    "price": 87,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_52",
+    "name": "Pakora",
+    "price": 145,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_53",
+    "name": "Jalebi",
+    "price": 108,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_54",
+    "name": "Gulab Jamun",
+    "price": 95,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_55",
+    "name": "Rasgulla",
+    "price": 161,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_56",
+    "name": "Chaat (174g)",
+    "price": 146,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_57",
+    "name": "Pani Puri",
+    "price": 46,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_58",
+    "name": "Bhel Puri",
+    "price": 111,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_59",
+    "name": "Dahi Vada",
+    "price": 40,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_60",
+    "name": "Samosa",
+    "price": 55,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_61",
+    "name": "Kachori",
+    "price": 122,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_62",
+    "name": "Pakora",
+    "price": 45,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_63",
+    "name": "Jalebi",
+    "price": 100,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_64",
+    "name": "Gulab Jamun (34g)",
+    "price": 66,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_65",
+    "name": "Rasgulla",
+    "price": 70,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_66",
+    "name": "Chaat (184g)",
+    "price": 50,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_67",
+    "name": "Pani Puri",
+    "price": 55,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_68",
+    "name": "Bhel Puri",
+    "price": 104,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_69",
+    "name": "Dahi Vada",
+    "price": 30,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_70",
+    "name": "Samosa",
+    "price": 53,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_71",
+    "name": "Kachori",
+    "price": 87,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_72",
+    "name": "Pakora",
+    "price": 139,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_73",
+    "name": "Jalebi",
+    "price": 124,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_74",
+    "name": "Gulab Jamun",
+    "price": 126,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_75",
+    "name": "Rasgulla (7g)",
+    "price": 105,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_76",
+    "name": "Chaat",
+    "price": 151,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_77",
+    "name": "Pani Puri",
+    "price": 40,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_78",
+    "name": "Bhel Puri",
+    "price": 116,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_79",
+    "name": "Dahi Vada",
+    "price": 146,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_80",
+    "name": "Samosa",
+    "price": 74,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_81",
+    "name": "Kachori (69g)",
+    "price": 21,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_82",
+    "name": "Pakora",
+    "price": 139,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_83",
+    "name": "Jalebi",
+    "price": 143,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_84",
+    "name": "Gulab Jamun",
+    "price": 120,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_85",
+    "name": "Rasgulla",
+    "price": 138,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_86",
+    "name": "Chaat",
+    "price": 129,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_87",
+    "name": "Pani Puri",
+    "price": 127,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_88",
+    "name": "Bhel Puri",
+    "price": 21,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_89",
+    "name": "Dahi Vada",
+    "price": 38,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_90",
+    "name": "Samosa",
+    "price": 161,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_91",
+    "name": "Kachori",
+    "price": 100,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_92",
+    "name": "Pakora",
+    "price": 154,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_93",
+    "name": "Jalebi",
+    "price": 39,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_94",
+    "name": "Gulab Jamun",
+    "price": 87,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_95",
+    "name": "Rasgulla",
+    "price": 72,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_96",
+    "name": "Chaat (93g)",
+    "price": 89,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_97",
+    "name": "Pani Puri",
+    "price": 145,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_98",
+    "name": "Bhel Puri",
+    "price": 119,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_99",
+    "name": "Dahi Vada",
+    "price": 159,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "haldiram_item_delhi_100",
+    "name": "Samosa",
+    "price": 92,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

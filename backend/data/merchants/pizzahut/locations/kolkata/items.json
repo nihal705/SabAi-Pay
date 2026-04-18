@@ -1,0 +1,212 @@
+[
+  {
+    "id": "pizzahut_item_kolkata_1",
+    "name": "Chicken Pizza",
+    "price": 147,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_2",
+    "name": "Veg Supreme 8",
+    "price": 307,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_3",
+    "name": "Breadsticks",
+    "price": 207,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_4",
+    "name": "Cheese Pizza",
+    "price": 353,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_5",
+    "name": "Chicken Pizza",
+    "price": 325,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_6",
+    "name": "Veg Supreme 3",
+    "price": 287,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_7",
+    "name": "Breadsticks",
+    "price": 231,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_8",
+    "name": "Cheese Pizza 8",
+    "price": 467,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_9",
+    "name": "Chicken Pizza 8",
+    "price": 243,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_10",
+    "name": "Veg Supreme 6",
+    "price": 170,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_11",
+    "name": "Breadsticks",
+    "price": 385,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_12",
+    "name": "Cheese Pizza",
+    "price": 111,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_13",
+    "name": "Chicken Pizza 8",
+    "price": 372,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_14",
+    "name": "Veg Supreme",
+    "price": 286,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_15",
+    "name": "Breadsticks",
+    "price": 165,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_16",
+    "name": "Cheese Pizza",
+    "price": 314,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_17",
+    "name": "Chicken Pizza",
+    "price": 398,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_18",
+    "name": "Veg Supreme",
+    "price": 282,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_19",
+    "name": "Breadsticks",
+    "price": 357,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_20",
+    "name": "Cheese Pizza 7",
+    "price": 220,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_21",
+    "name": "Chicken Pizza 7",
+    "price": 251,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_22",
+    "name": "Veg Supreme",
+    "price": 175,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_23",
+    "name": "Breadsticks 1",
+    "price": 219,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_24",
+    "name": "Cheese Pizza",
+    "price": 117,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_25",
+    "name": "Chicken Pizza 4",
+    "price": 388,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_26",
+    "name": "Veg Supreme",
+    "price": 185,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_27",
+    "name": "Breadsticks 4",
+    "price": 394,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_28",
+    "name": "Cheese Pizza",
+    "price": 165,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "pizzahut_item_kolkata_29",
+    "name": "Chicken Pizza",
+    "price": 137,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "pizzahut_item_kolkata_30",
+    "name": "Veg Supreme",
+    "price": 128,
+    "category": "Main",
+    "isVeg": true
+  }
+]

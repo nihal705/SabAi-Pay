@@ -1,0 +1,3502 @@
+[
+  {
+    "id": "dmart_prod_kolkata_1",
+    "name": "Wheat Flour",
+    "price": 257,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_2",
+    "name": "Sugar 3kg",
+    "price": 192,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_3",
+    "name": "Salt 3kg",
+    "price": 130,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_4",
+    "name": "Oil 4kg",
+    "price": 247,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_5",
+    "name": "Pulses 4kg",
+    "price": 287,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_6",
+    "name": "Rice",
+    "price": 412,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_7",
+    "name": "Wheat Flour",
+    "price": 90,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_8",
+    "name": "Sugar 4kg",
+    "price": 190,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_9",
+    "name": "Salt 4kg",
+    "price": 409,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_10",
+    "name": "Oil",
+    "price": 340,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_11",
+    "name": "Pulses",
+    "price": 155,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_12",
+    "name": "Rice 3kg",
+    "price": 444,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_13",
+    "name": "Wheat Flour 1kg",
+    "price": 274,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_14",
+    "name": "Sugar 5kg",
+    "price": 295,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_15",
+    "name": "Salt 4kg",
+    "price": 279,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_16",
+    "name": "Oil",
+    "price": 51,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_17",
+    "name": "Pulses 3kg",
+    "price": 409,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_18",
+    "name": "Rice",
+    "price": 105,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_19",
+    "name": "Wheat Flour",
+    "price": 438,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_20",
+    "name": "Sugar",
+    "price": 102,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_21",
+    "name": "Salt",
+    "price": 125,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_22",
+    "name": "Oil 5kg",
+    "price": 445,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_23",
+    "name": "Pulses 3kg",
+    "price": 114,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_24",
+    "name": "Rice 2kg",
+    "price": 141,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_25",
+    "name": "Wheat Flour 2kg",
+    "price": 485,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_26",
+    "name": "Sugar",
+    "price": 134,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_27",
+    "name": "Salt 2kg",
+    "price": 453,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_28",
+    "name": "Oil 5kg",
+    "price": 140,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_29",
+    "name": "Pulses",
+    "price": 448,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_30",
+    "name": "Rice 4kg",
+    "price": 211,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_31",
+    "name": "Wheat Flour",
+    "price": 267,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_32",
+    "name": "Sugar 1kg",
+    "price": 207,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_33",
+    "name": "Salt",
+    "price": 172,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_34",
+    "name": "Oil 4kg",
+    "price": 113,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_35",
+    "name": "Pulses 2kg",
+    "price": 539,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_36",
+    "name": "Rice",
+    "price": 273,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_37",
+    "name": "Wheat Flour",
+    "price": 478,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_38",
+    "name": "Sugar 4kg",
+    "price": 314,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_39",
+    "name": "Salt",
+    "price": 530,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_40",
+    "name": "Oil",
+    "price": 513,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_41",
+    "name": "Pulses",
+    "price": 538,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_42",
+    "name": "Rice 5kg",
+    "price": 80,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_43",
+    "name": "Wheat Flour 5kg",
+    "price": 411,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_44",
+    "name": "Sugar",
+    "price": 343,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_45",
+    "name": "Salt 3kg",
+    "price": 174,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_46",
+    "name": "Oil 4kg",
+    "price": 119,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_47",
+    "name": "Pulses",
+    "price": 531,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_48",
+    "name": "Rice",
+    "price": 345,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_49",
+    "name": "Wheat Flour 4kg",
+    "price": 384,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_50",
+    "name": "Sugar",
+    "price": 97,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_51",
+    "name": "Salt 2kg",
+    "price": 358,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_52",
+    "name": "Oil",
+    "price": 266,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_53",
+    "name": "Pulses 5kg",
+    "price": 220,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_54",
+    "name": "Rice",
+    "price": 473,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_55",
+    "name": "Wheat Flour 2kg",
+    "price": 473,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_56",
+    "name": "Sugar",
+    "price": 246,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_57",
+    "name": "Salt",
+    "price": 407,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_58",
+    "name": "Oil",
+    "price": 404,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_59",
+    "name": "Pulses",
+    "price": 471,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_60",
+    "name": "Rice",
+    "price": 389,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_61",
+    "name": "Wheat Flour 5kg",
+    "price": 55,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_62",
+    "name": "Sugar",
+    "price": 462,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_63",
+    "name": "Salt",
+    "price": 85,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_64",
+    "name": "Oil",
+    "price": 316,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_65",
+    "name": "Pulses 2kg",
+    "price": 179,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_66",
+    "name": "Rice 1kg",
+    "price": 74,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_67",
+    "name": "Wheat Flour",
+    "price": 123,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_68",
+    "name": "Sugar",
+    "price": 392,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_69",
+    "name": "Salt 5kg",
+    "price": 307,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_70",
+    "name": "Oil 1kg",
+    "price": 426,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_71",
+    "name": "Pulses 5kg",
+    "price": 77,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_72",
+    "name": "Rice",
+    "price": 83,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_73",
+    "name": "Wheat Flour 5kg",
+    "price": 50,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_74",
+    "name": "Sugar",
+    "price": 76,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_75",
+    "name": "Salt",
+    "price": 359,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_76",
+    "name": "Oil 4kg",
+    "price": 503,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_77",
+    "name": "Pulses 1kg",
+    "price": 357,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_78",
+    "name": "Rice",
+    "price": 117,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_79",
+    "name": "Wheat Flour 1kg",
+    "price": 170,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_80",
+    "name": "Sugar 4kg",
+    "price": 457,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_81",
+    "name": "Salt 5kg",
+    "price": 502,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_82",
+    "name": "Oil 5kg",
+    "price": 281,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_83",
+    "name": "Pulses",
+    "price": 134,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_84",
+    "name": "Rice 3kg",
+    "price": 402,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_85",
+    "name": "Wheat Flour 3kg",
+    "price": 159,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_86",
+    "name": "Sugar",
+    "price": 368,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_87",
+    "name": "Salt 1kg",
+    "price": 466,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_88",
+    "name": "Oil 1kg",
+    "price": 183,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_89",
+    "name": "Pulses",
+    "price": 465,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_90",
+    "name": "Rice 3kg",
+    "price": 233,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_91",
+    "name": "Wheat Flour",
+    "price": 319,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_92",
+    "name": "Sugar",
+    "price": 512,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_93",
+    "name": "Salt 1kg",
+    "price": 430,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_94",
+    "name": "Oil 5kg",
+    "price": 528,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_95",
+    "name": "Pulses 1kg",
+    "price": 91,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_96",
+    "name": "Rice 2kg",
+    "price": 444,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_97",
+    "name": "Wheat Flour",
+    "price": 293,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_98",
+    "name": "Sugar",
+    "price": 86,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_99",
+    "name": "Salt",
+    "price": 121,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_100",
+    "name": "Oil",
+    "price": 83,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_101",
+    "name": "Pulses",
+    "price": 384,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_102",
+    "name": "Rice",
+    "price": 163,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_103",
+    "name": "Wheat Flour",
+    "price": 343,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_104",
+    "name": "Sugar 5kg",
+    "price": 408,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_105",
+    "name": "Salt 3kg",
+    "price": 492,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_106",
+    "name": "Oil 5kg",
+    "price": 526,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_107",
+    "name": "Pulses",
+    "price": 262,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_108",
+    "name": "Rice 3kg",
+    "price": 304,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_109",
+    "name": "Wheat Flour 4kg",
+    "price": 298,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_110",
+    "name": "Sugar",
+    "price": 50,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_111",
+    "name": "Salt 5kg",
+    "price": 422,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_112",
+    "name": "Oil 4kg",
+    "price": 340,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_113",
+    "name": "Pulses",
+    "price": 485,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_114",
+    "name": "Rice 2kg",
+    "price": 248,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_115",
+    "name": "Wheat Flour",
+    "price": 441,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_116",
+    "name": "Sugar",
+    "price": 184,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_117",
+    "name": "Salt 3kg",
+    "price": 88,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_118",
+    "name": "Oil 2kg",
+    "price": 179,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_119",
+    "name": "Pulses",
+    "price": 181,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_120",
+    "name": "Rice 5kg",
+    "price": 333,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_121",
+    "name": "Wheat Flour 4kg",
+    "price": 458,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_122",
+    "name": "Sugar",
+    "price": 505,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_123",
+    "name": "Salt 3kg",
+    "price": 493,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_124",
+    "name": "Oil",
+    "price": 247,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_125",
+    "name": "Pulses",
+    "price": 269,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_126",
+    "name": "Rice",
+    "price": 287,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_127",
+    "name": "Wheat Flour 5kg",
+    "price": 287,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_128",
+    "name": "Sugar 3kg",
+    "price": 253,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_129",
+    "name": "Salt",
+    "price": 383,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_130",
+    "name": "Oil 2kg",
+    "price": 488,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_131",
+    "name": "Pulses 3kg",
+    "price": 213,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_132",
+    "name": "Rice 2kg",
+    "price": 194,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_133",
+    "name": "Wheat Flour",
+    "price": 57,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_134",
+    "name": "Sugar",
+    "price": 280,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_135",
+    "name": "Salt 3kg",
+    "price": 347,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_136",
+    "name": "Oil 2kg",
+    "price": 101,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_137",
+    "name": "Pulses",
+    "price": 318,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_138",
+    "name": "Rice 4kg",
+    "price": 214,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_139",
+    "name": "Wheat Flour 2kg",
+    "price": 251,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_140",
+    "name": "Sugar 5kg",
+    "price": 344,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_141",
+    "name": "Salt 2kg",
+    "price": 223,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_142",
+    "name": "Oil",
+    "price": 70,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_143",
+    "name": "Pulses 4kg",
+    "price": 426,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_144",
+    "name": "Rice",
+    "price": 343,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_145",
+    "name": "Wheat Flour 2kg",
+    "price": 461,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_146",
+    "name": "Sugar",
+    "price": 534,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_147",
+    "name": "Salt 4kg",
+    "price": 152,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_148",
+    "name": "Oil 5kg",
+    "price": 291,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_149",
+    "name": "Pulses 3kg",
+    "price": 324,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_150",
+    "name": "Rice 2kg",
+    "price": 507,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_151",
+    "name": "Wheat Flour 5kg",
+    "price": 468,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_152",
+    "name": "Sugar",
+    "price": 179,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_153",
+    "name": "Salt",
+    "price": 485,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_154",
+    "name": "Oil 5kg",
+    "price": 161,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_155",
+    "name": "Pulses",
+    "price": 378,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_156",
+    "name": "Rice 5kg",
+    "price": 409,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_157",
+    "name": "Wheat Flour",
+    "price": 505,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_158",
+    "name": "Sugar",
+    "price": 57,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_159",
+    "name": "Salt 5kg",
+    "price": 163,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_160",
+    "name": "Oil 4kg",
+    "price": 102,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_161",
+    "name": "Pulses 5kg",
+    "price": 248,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_162",
+    "name": "Rice",
+    "price": 119,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_163",
+    "name": "Wheat Flour",
+    "price": 272,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_164",
+    "name": "Sugar 1kg",
+    "price": 271,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_165",
+    "name": "Salt 4kg",
+    "price": 55,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_166",
+    "name": "Oil",
+    "price": 217,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_167",
+    "name": "Pulses 4kg",
+    "price": 113,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_168",
+    "name": "Rice 2kg",
+    "price": 86,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_169",
+    "name": "Wheat Flour 3kg",
+    "price": 474,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_170",
+    "name": "Sugar",
+    "price": 238,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_171",
+    "name": "Salt",
+    "price": 388,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_172",
+    "name": "Oil 1kg",
+    "price": 346,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_173",
+    "name": "Pulses 4kg",
+    "price": 256,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_174",
+    "name": "Rice 3kg",
+    "price": 433,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_175",
+    "name": "Wheat Flour",
+    "price": 108,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_176",
+    "name": "Sugar",
+    "price": 489,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_177",
+    "name": "Salt 1kg",
+    "price": 58,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_178",
+    "name": "Oil",
+    "price": 198,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_179",
+    "name": "Pulses",
+    "price": 413,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_180",
+    "name": "Rice",
+    "price": 164,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_181",
+    "name": "Wheat Flour",
+    "price": 237,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_182",
+    "name": "Sugar",
+    "price": 246,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_183",
+    "name": "Salt",
+    "price": 68,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_184",
+    "name": "Oil 1kg",
+    "price": 544,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_185",
+    "name": "Pulses 5kg",
+    "price": 210,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_186",
+    "name": "Rice 2kg",
+    "price": 260,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_187",
+    "name": "Wheat Flour",
+    "price": 528,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_188",
+    "name": "Sugar 1kg",
+    "price": 235,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_189",
+    "name": "Salt 2kg",
+    "price": 55,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_190",
+    "name": "Oil",
+    "price": 283,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_191",
+    "name": "Pulses 3kg",
+    "price": 328,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_192",
+    "name": "Rice",
+    "price": 470,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_193",
+    "name": "Wheat Flour",
+    "price": 421,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_194",
+    "name": "Sugar",
+    "price": 227,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_195",
+    "name": "Salt 5kg",
+    "price": 154,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_196",
+    "name": "Oil",
+    "price": 549,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_197",
+    "name": "Pulses 4kg",
+    "price": 450,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_198",
+    "name": "Rice 4kg",
+    "price": 324,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_199",
+    "name": "Wheat Flour 5kg",
+    "price": 128,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_200",
+    "name": "Sugar",
+    "price": 309,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_201",
+    "name": "Salt 2kg",
+    "price": 505,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_202",
+    "name": "Oil",
+    "price": 186,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_203",
+    "name": "Pulses",
+    "price": 200,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_204",
+    "name": "Rice",
+    "price": 481,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_205",
+    "name": "Wheat Flour",
+    "price": 533,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_206",
+    "name": "Sugar",
+    "price": 135,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_207",
+    "name": "Salt 3kg",
+    "price": 327,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_208",
+    "name": "Oil",
+    "price": 468,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_209",
+    "name": "Pulses",
+    "price": 87,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_210",
+    "name": "Rice",
+    "price": 176,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_211",
+    "name": "Wheat Flour",
+    "price": 373,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_212",
+    "name": "Sugar",
+    "price": 331,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_213",
+    "name": "Salt 5kg",
+    "price": 127,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_214",
+    "name": "Oil 2kg",
+    "price": 130,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_215",
+    "name": "Pulses 2kg",
+    "price": 474,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_216",
+    "name": "Rice 2kg",
+    "price": 520,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_217",
+    "name": "Wheat Flour",
+    "price": 283,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_218",
+    "name": "Sugar 3kg",
+    "price": 441,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_219",
+    "name": "Salt",
+    "price": 87,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_220",
+    "name": "Oil",
+    "price": 469,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_221",
+    "name": "Pulses",
+    "price": 306,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_222",
+    "name": "Rice",
+    "price": 467,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_223",
+    "name": "Wheat Flour 3kg",
+    "price": 226,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_224",
+    "name": "Sugar 1kg",
+    "price": 549,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_225",
+    "name": "Salt",
+    "price": 369,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_226",
+    "name": "Oil 1kg",
+    "price": 224,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_227",
+    "name": "Pulses",
+    "price": 290,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_228",
+    "name": "Rice",
+    "price": 172,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_229",
+    "name": "Wheat Flour",
+    "price": 548,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_230",
+    "name": "Sugar",
+    "price": 189,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_231",
+    "name": "Salt 4kg",
+    "price": 419,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_232",
+    "name": "Oil 4kg",
+    "price": 281,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_233",
+    "name": "Pulses",
+    "price": 184,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_234",
+    "name": "Rice 4kg",
+    "price": 226,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_235",
+    "name": "Wheat Flour 4kg",
+    "price": 258,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_236",
+    "name": "Sugar",
+    "price": 507,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_237",
+    "name": "Salt",
+    "price": 515,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_238",
+    "name": "Oil 3kg",
+    "price": 309,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_239",
+    "name": "Pulses 3kg",
+    "price": 348,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_240",
+    "name": "Rice 2kg",
+    "price": 489,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_241",
+    "name": "Wheat Flour",
+    "price": 167,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_242",
+    "name": "Sugar 1kg",
+    "price": 420,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_243",
+    "name": "Salt",
+    "price": 165,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_244",
+    "name": "Oil",
+    "price": 532,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_245",
+    "name": "Pulses 5kg",
+    "price": 418,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_246",
+    "name": "Rice 3kg",
+    "price": 206,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_247",
+    "name": "Wheat Flour",
+    "price": 327,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_248",
+    "name": "Sugar",
+    "price": 179,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_249",
+    "name": "Salt",
+    "price": 152,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_250",
+    "name": "Oil 5kg",
+    "price": 327,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_251",
+    "name": "Pulses",
+    "price": 156,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_252",
+    "name": "Rice",
+    "price": 345,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_253",
+    "name": "Wheat Flour 3kg",
+    "price": 120,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_254",
+    "name": "Sugar",
+    "price": 81,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_255",
+    "name": "Salt",
+    "price": 225,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_256",
+    "name": "Oil",
+    "price": 326,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_257",
+    "name": "Pulses 3kg",
+    "price": 365,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_258",
+    "name": "Rice",
+    "price": 336,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_259",
+    "name": "Wheat Flour",
+    "price": 300,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_260",
+    "name": "Sugar 1kg",
+    "price": 517,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_261",
+    "name": "Salt 3kg",
+    "price": 323,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_262",
+    "name": "Oil",
+    "price": 538,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_263",
+    "name": "Pulses",
+    "price": 166,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_264",
+    "name": "Rice 3kg",
+    "price": 307,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_265",
+    "name": "Wheat Flour 3kg",
+    "price": 508,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_266",
+    "name": "Sugar 3kg",
+    "price": 502,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_267",
+    "name": "Salt",
+    "price": 202,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_268",
+    "name": "Oil 1kg",
+    "price": 397,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_269",
+    "name": "Pulses",
+    "price": 352,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_270",
+    "name": "Rice",
+    "price": 361,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_271",
+    "name": "Wheat Flour",
+    "price": 288,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_272",
+    "name": "Sugar 5kg",
+    "price": 102,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_273",
+    "name": "Salt",
+    "price": 506,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_274",
+    "name": "Oil 5kg",
+    "price": 441,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_275",
+    "name": "Pulses",
+    "price": 84,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_276",
+    "name": "Rice 2kg",
+    "price": 390,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_277",
+    "name": "Wheat Flour 1kg",
+    "price": 309,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_278",
+    "name": "Sugar 5kg",
+    "price": 197,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_279",
+    "name": "Salt",
+    "price": 247,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_280",
+    "name": "Oil 3kg",
+    "price": 138,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_281",
+    "name": "Pulses 1kg",
+    "price": 124,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_282",
+    "name": "Rice",
+    "price": 120,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_283",
+    "name": "Wheat Flour",
+    "price": 196,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_284",
+    "name": "Sugar 3kg",
+    "price": 52,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_285",
+    "name": "Salt 2kg",
+    "price": 271,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_286",
+    "name": "Oil",
+    "price": 481,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_287",
+    "name": "Pulses",
+    "price": 496,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_288",
+    "name": "Rice 3kg",
+    "price": 453,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_289",
+    "name": "Wheat Flour 5kg",
+    "price": 98,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_290",
+    "name": "Sugar 4kg",
+    "price": 518,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_291",
+    "name": "Salt 2kg",
+    "price": 84,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_292",
+    "name": "Oil",
+    "price": 253,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_293",
+    "name": "Pulses 1kg",
+    "price": 252,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_294",
+    "name": "Rice 5kg",
+    "price": 344,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_295",
+    "name": "Wheat Flour 4kg",
+    "price": 341,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_296",
+    "name": "Sugar",
+    "price": 438,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_297",
+    "name": "Salt",
+    "price": 349,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_298",
+    "name": "Oil 1kg",
+    "price": 93,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_299",
+    "name": "Pulses 4kg",
+    "price": 542,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_300",
+    "name": "Rice 1kg",
+    "price": 545,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_301",
+    "name": "Wheat Flour",
+    "price": 201,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_302",
+    "name": "Sugar",
+    "price": 399,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_303",
+    "name": "Salt 4kg",
+    "price": 182,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_304",
+    "name": "Oil 1kg",
+    "price": 318,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_305",
+    "name": "Pulses",
+    "price": 215,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_306",
+    "name": "Rice 4kg",
+    "price": 319,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_307",
+    "name": "Wheat Flour",
+    "price": 446,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_308",
+    "name": "Sugar 2kg",
+    "price": 549,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_309",
+    "name": "Salt",
+    "price": 415,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_310",
+    "name": "Oil 5kg",
+    "price": 143,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_311",
+    "name": "Pulses",
+    "price": 384,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_312",
+    "name": "Rice",
+    "price": 453,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_313",
+    "name": "Wheat Flour 5kg",
+    "price": 259,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_314",
+    "name": "Sugar",
+    "price": 466,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_315",
+    "name": "Salt 2kg",
+    "price": 70,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_316",
+    "name": "Oil 2kg",
+    "price": 67,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_317",
+    "name": "Pulses 5kg",
+    "price": 499,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_318",
+    "name": "Rice",
+    "price": 312,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_319",
+    "name": "Wheat Flour 5kg",
+    "price": 439,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_320",
+    "name": "Sugar",
+    "price": 240,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_321",
+    "name": "Salt",
+    "price": 171,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_322",
+    "name": "Oil 3kg",
+    "price": 525,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_323",
+    "name": "Pulses 4kg",
+    "price": 533,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_324",
+    "name": "Rice",
+    "price": 264,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_325",
+    "name": "Wheat Flour 4kg",
+    "price": 264,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_326",
+    "name": "Sugar 3kg",
+    "price": 476,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_327",
+    "name": "Salt 1kg",
+    "price": 266,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_328",
+    "name": "Oil",
+    "price": 547,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_329",
+    "name": "Pulses",
+    "price": 137,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_330",
+    "name": "Rice 5kg",
+    "price": 112,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_331",
+    "name": "Wheat Flour",
+    "price": 235,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_332",
+    "name": "Sugar 3kg",
+    "price": 302,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_333",
+    "name": "Salt",
+    "price": 51,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_334",
+    "name": "Oil",
+    "price": 86,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_335",
+    "name": "Pulses",
+    "price": 540,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_336",
+    "name": "Rice",
+    "price": 381,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_337",
+    "name": "Wheat Flour 2kg",
+    "price": 504,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_338",
+    "name": "Sugar",
+    "price": 237,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_339",
+    "name": "Salt 1kg",
+    "price": 90,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_340",
+    "name": "Oil",
+    "price": 381,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_341",
+    "name": "Pulses 2kg",
+    "price": 386,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_342",
+    "name": "Rice 1kg",
+    "price": 281,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_343",
+    "name": "Wheat Flour",
+    "price": 305,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_344",
+    "name": "Sugar",
+    "price": 464,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_345",
+    "name": "Salt",
+    "price": 530,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_346",
+    "name": "Oil 1kg",
+    "price": 396,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_347",
+    "name": "Pulses",
+    "price": 474,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_348",
+    "name": "Rice",
+    "price": 418,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_349",
+    "name": "Wheat Flour",
+    "price": 117,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_350",
+    "name": "Sugar 1kg",
+    "price": 419,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_351",
+    "name": "Salt 3kg",
+    "price": 433,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_352",
+    "name": "Oil 4kg",
+    "price": 374,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_353",
+    "name": "Pulses",
+    "price": 317,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_354",
+    "name": "Rice",
+    "price": 483,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_355",
+    "name": "Wheat Flour",
+    "price": 533,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_356",
+    "name": "Sugar",
+    "price": 354,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_357",
+    "name": "Salt 1kg",
+    "price": 509,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_358",
+    "name": "Oil 3kg",
+    "price": 108,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_359",
+    "name": "Pulses 5kg",
+    "price": 134,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_360",
+    "name": "Rice 4kg",
+    "price": 388,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_361",
+    "name": "Wheat Flour",
+    "price": 82,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_362",
+    "name": "Sugar",
+    "price": 306,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_363",
+    "name": "Salt 2kg",
+    "price": 344,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_364",
+    "name": "Oil",
+    "price": 350,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_365",
+    "name": "Pulses",
+    "price": 307,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_366",
+    "name": "Rice",
+    "price": 361,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_367",
+    "name": "Wheat Flour",
+    "price": 120,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_368",
+    "name": "Sugar",
+    "price": 487,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_369",
+    "name": "Salt 3kg",
+    "price": 104,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_370",
+    "name": "Oil",
+    "price": 118,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_371",
+    "name": "Pulses 1kg",
+    "price": 364,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_372",
+    "name": "Rice 1kg",
+    "price": 433,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_373",
+    "name": "Wheat Flour 5kg",
+    "price": 482,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_374",
+    "name": "Sugar 3kg",
+    "price": 317,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_375",
+    "name": "Salt",
+    "price": 52,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_376",
+    "name": "Oil 2kg",
+    "price": 488,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_377",
+    "name": "Pulses 5kg",
+    "price": 54,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_378",
+    "name": "Rice 5kg",
+    "price": 503,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_379",
+    "name": "Wheat Flour 1kg",
+    "price": 380,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_380",
+    "name": "Sugar 2kg",
+    "price": 400,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_381",
+    "name": "Salt 4kg",
+    "price": 186,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_382",
+    "name": "Oil",
+    "price": 269,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_383",
+    "name": "Pulses",
+    "price": 111,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_384",
+    "name": "Rice 5kg",
+    "price": 101,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_385",
+    "name": "Wheat Flour 5kg",
+    "price": 50,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_386",
+    "name": "Sugar",
+    "price": 272,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_387",
+    "name": "Salt",
+    "price": 549,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_388",
+    "name": "Oil",
+    "price": 536,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_389",
+    "name": "Pulses 4kg",
+    "price": 534,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_390",
+    "name": "Rice 4kg",
+    "price": 243,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_391",
+    "name": "Wheat Flour",
+    "price": 133,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_392",
+    "name": "Sugar 2kg",
+    "price": 226,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_393",
+    "name": "Salt",
+    "price": 169,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_394",
+    "name": "Oil",
+    "price": 175,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_395",
+    "name": "Pulses 5kg",
+    "price": 280,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_396",
+    "name": "Rice",
+    "price": 146,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_397",
+    "name": "Wheat Flour",
+    "price": 117,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_398",
+    "name": "Sugar",
+    "price": 225,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_399",
+    "name": "Salt 1kg",
+    "price": 412,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_400",
+    "name": "Oil",
+    "price": 162,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_401",
+    "name": "Pulses 5kg",
+    "price": 277,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_402",
+    "name": "Rice 5kg",
+    "price": 298,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_403",
+    "name": "Wheat Flour",
+    "price": 473,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_404",
+    "name": "Sugar 5kg",
+    "price": 69,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_405",
+    "name": "Salt 5kg",
+    "price": 269,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_406",
+    "name": "Oil",
+    "price": 335,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_407",
+    "name": "Pulses",
+    "price": 120,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_408",
+    "name": "Rice 2kg",
+    "price": 308,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_409",
+    "name": "Wheat Flour",
+    "price": 365,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_410",
+    "name": "Sugar 4kg",
+    "price": 526,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_411",
+    "name": "Salt 4kg",
+    "price": 102,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_412",
+    "name": "Oil",
+    "price": 119,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_413",
+    "name": "Pulses",
+    "price": 507,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_414",
+    "name": "Rice 5kg",
+    "price": 63,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_415",
+    "name": "Wheat Flour 5kg",
+    "price": 529,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_416",
+    "name": "Sugar",
+    "price": 72,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_417",
+    "name": "Salt",
+    "price": 525,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_418",
+    "name": "Oil 3kg",
+    "price": 224,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_419",
+    "name": "Pulses 4kg",
+    "price": 377,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_420",
+    "name": "Rice",
+    "price": 145,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_421",
+    "name": "Wheat Flour",
+    "price": 457,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_422",
+    "name": "Sugar 2kg",
+    "price": 452,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_423",
+    "name": "Salt 5kg",
+    "price": 317,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_424",
+    "name": "Oil",
+    "price": 357,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_425",
+    "name": "Pulses",
+    "price": 486,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_426",
+    "name": "Rice",
+    "price": 105,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_427",
+    "name": "Wheat Flour 2kg",
+    "price": 514,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_428",
+    "name": "Sugar 2kg",
+    "price": 508,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_429",
+    "name": "Salt",
+    "price": 218,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_430",
+    "name": "Oil",
+    "price": 452,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_431",
+    "name": "Pulses 2kg",
+    "price": 128,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_432",
+    "name": "Rice 5kg",
+    "price": 404,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_433",
+    "name": "Wheat Flour 3kg",
+    "price": 502,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_434",
+    "name": "Sugar",
+    "price": 392,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_435",
+    "name": "Salt",
+    "price": 486,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_436",
+    "name": "Oil",
+    "price": 280,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_437",
+    "name": "Pulses",
+    "price": 79,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_438",
+    "name": "Rice",
+    "price": 201,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_439",
+    "name": "Wheat Flour 5kg",
+    "price": 504,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_440",
+    "name": "Sugar",
+    "price": 96,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_441",
+    "name": "Salt 2kg",
+    "price": 489,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_442",
+    "name": "Oil",
+    "price": 312,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_443",
+    "name": "Pulses 4kg",
+    "price": 541,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_444",
+    "name": "Rice 1kg",
+    "price": 274,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_445",
+    "name": "Wheat Flour 1kg",
+    "price": 193,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_446",
+    "name": "Sugar",
+    "price": 457,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_447",
+    "name": "Salt",
+    "price": 356,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_448",
+    "name": "Oil 3kg",
+    "price": 220,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_449",
+    "name": "Pulses 4kg",
+    "price": 407,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_450",
+    "name": "Rice 1kg",
+    "price": 236,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_451",
+    "name": "Wheat Flour",
+    "price": 352,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_452",
+    "name": "Sugar",
+    "price": 387,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_453",
+    "name": "Salt",
+    "price": 366,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_454",
+    "name": "Oil 3kg",
+    "price": 187,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_455",
+    "name": "Pulses 1kg",
+    "price": 248,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_456",
+    "name": "Rice",
+    "price": 66,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_457",
+    "name": "Wheat Flour",
+    "price": 342,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_458",
+    "name": "Sugar 4kg",
+    "price": 155,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_459",
+    "name": "Salt 3kg",
+    "price": 516,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_460",
+    "name": "Oil 5kg",
+    "price": 374,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_461",
+    "name": "Pulses 2kg",
+    "price": 372,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_462",
+    "name": "Rice 2kg",
+    "price": 512,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_463",
+    "name": "Wheat Flour",
+    "price": 213,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_464",
+    "name": "Sugar",
+    "price": 308,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_465",
+    "name": "Salt",
+    "price": 299,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_466",
+    "name": "Oil 1kg",
+    "price": 377,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_467",
+    "name": "Pulses 3kg",
+    "price": 163,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_468",
+    "name": "Rice",
+    "price": 457,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_469",
+    "name": "Wheat Flour",
+    "price": 494,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_470",
+    "name": "Sugar",
+    "price": 544,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_471",
+    "name": "Salt 2kg",
+    "price": 259,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_472",
+    "name": "Oil 2kg",
+    "price": 239,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_473",
+    "name": "Pulses",
+    "price": 510,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_474",
+    "name": "Rice",
+    "price": 419,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_475",
+    "name": "Wheat Flour",
+    "price": 101,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_476",
+    "name": "Sugar",
+    "price": 260,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_477",
+    "name": "Salt",
+    "price": 442,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_478",
+    "name": "Oil",
+    "price": 253,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_479",
+    "name": "Pulses",
+    "price": 247,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_480",
+    "name": "Rice",
+    "price": 249,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_481",
+    "name": "Wheat Flour 3kg",
+    "price": 342,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_482",
+    "name": "Sugar",
+    "price": 302,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_483",
+    "name": "Salt 4kg",
+    "price": 88,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_484",
+    "name": "Oil",
+    "price": 133,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_485",
+    "name": "Pulses",
+    "price": 368,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_486",
+    "name": "Rice 1kg",
+    "price": 74,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_487",
+    "name": "Wheat Flour",
+    "price": 124,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_488",
+    "name": "Sugar",
+    "price": 118,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_489",
+    "name": "Salt",
+    "price": 82,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_490",
+    "name": "Oil",
+    "price": 358,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_491",
+    "name": "Pulses 2kg",
+    "price": 146,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_492",
+    "name": "Rice 1kg",
+    "price": 148,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_493",
+    "name": "Wheat Flour 3kg",
+    "price": 90,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_494",
+    "name": "Sugar 2kg",
+    "price": 135,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_495",
+    "name": "Salt",
+    "price": 239,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_496",
+    "name": "Oil 5kg",
+    "price": 258,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_497",
+    "name": "Pulses",
+    "price": 418,
+    "unit": "liter",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_498",
+    "name": "Rice 1kg",
+    "price": 546,
+    "unit": "kg",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_499",
+    "name": "Wheat Flour 2kg",
+    "price": 65,
+    "unit": "packet",
+    "category": "Staples"
+  },
+  {
+    "id": "dmart_prod_kolkata_500",
+    "name": "Sugar",
+    "price": 215,
+    "unit": "liter",
+    "category": "Staples"
+  }
+]

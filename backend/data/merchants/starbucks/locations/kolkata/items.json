@@ -1,0 +1,362 @@
+[
+  {
+    "id": "starbucks_item_kolkata_1",
+    "name": "Cappuccino",
+    "price": 202,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_2",
+    "name": "Espresso (Hot)",
+    "price": 227,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_3",
+    "name": "Americano (Cold)",
+    "price": 171,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_4",
+    "name": "Mocha (Hot)",
+    "price": 221,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_5",
+    "name": "Cold Coffee",
+    "price": 233,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_6",
+    "name": "Frappuccino",
+    "price": 251,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_7",
+    "name": "Hot Chocolate (Hot)",
+    "price": 177,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_8",
+    "name": "Caffè Latte (Hot)",
+    "price": 106,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_9",
+    "name": "Cappuccino",
+    "price": 216,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_10",
+    "name": "Espresso",
+    "price": 138,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_11",
+    "name": "Americano",
+    "price": 203,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_12",
+    "name": "Mocha (Hot)",
+    "price": 84,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_13",
+    "name": "Cold Coffee",
+    "price": 84,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_14",
+    "name": "Frappuccino",
+    "price": 202,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_15",
+    "name": "Hot Chocolate",
+    "price": 118,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_16",
+    "name": "Caffè Latte",
+    "price": 191,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_17",
+    "name": "Cappuccino (Hot)",
+    "price": 222,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_18",
+    "name": "Espresso",
+    "price": 186,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_19",
+    "name": "Americano",
+    "price": 207,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_20",
+    "name": "Mocha",
+    "price": 81,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_21",
+    "name": "Cold Coffee",
+    "price": 278,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_22",
+    "name": "Frappuccino",
+    "price": 269,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_23",
+    "name": "Hot Chocolate",
+    "price": 187,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_24",
+    "name": "Caffè Latte",
+    "price": 190,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_25",
+    "name": "Muffin",
+    "price": 126,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_26",
+    "name": "Brownie",
+    "price": 183,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_27",
+    "name": "Cookie",
+    "price": 126,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_28",
+    "name": "Sandwich",
+    "price": 184,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_29",
+    "name": "Cake Slice",
+    "price": 164,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_30",
+    "name": "Bagel",
+    "price": 105,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_31",
+    "name": "Donut",
+    "price": 192,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_32",
+    "name": "Croissant",
+    "price": 82,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_33",
+    "name": "Muffin",
+    "price": 51,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_34",
+    "name": "Brownie",
+    "price": 105,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_35",
+    "name": "Cookie",
+    "price": 97,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_36",
+    "name": "Sandwich",
+    "price": 93,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_37",
+    "name": "Cake Slice",
+    "price": 156,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_38",
+    "name": "Bagel",
+    "price": 180,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_39",
+    "name": "Donut",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "starbucks_item_kolkata_40",
+    "name": "Croissant",
+    "price": 74,
+    "category": "Snacks",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

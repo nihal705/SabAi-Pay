@@ -1,0 +1,272 @@
+[
+  {
+    "id": "pizzahut_item_hyderabad_1",
+    "name": "Chicken Supreme",
+    "price": 178,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_2",
+    "name": "Veg Supreme",
+    "price": 89,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_3",
+    "name": "Pepperoni Feast",
+    "price": 175,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_4",
+    "name": "Tandoori Paneer",
+    "price": 131,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_5",
+    "name": "Garlic Breadsticks",
+    "price": 239,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_6",
+    "name": "Cheesy Bites (4\")",
+    "price": 58,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_7",
+    "name": "Chicken Wings",
+    "price": 84,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_8",
+    "name": "Cheese Pizza",
+    "price": 565,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_9",
+    "name": "Chicken Supreme",
+    "price": 71,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_10",
+    "name": "Veg Supreme",
+    "price": 169,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_11",
+    "name": "Pepperoni Feast",
+    "price": 91,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_12",
+    "name": "Tandoori Paneer",
+    "price": 180,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_13",
+    "name": "Garlic Breadsticks (2\")",
+    "price": 143,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_14",
+    "name": "Cheesy Bites",
+    "price": 136,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_15",
+    "name": "Chicken Wings",
+    "price": 231,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_16",
+    "name": "Cheese Pizza",
+    "price": 372,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_17",
+    "name": "Chicken Supreme",
+    "price": 107,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_18",
+    "name": "Veg Supreme",
+    "price": 145,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_19",
+    "name": "Pepperoni Feast",
+    "price": 118,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_20",
+    "name": "Tandoori Paneer",
+    "price": 89,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_21",
+    "name": "Garlic Breadsticks",
+    "price": 239,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_22",
+    "name": "Cheesy Bites",
+    "price": 172,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_23",
+    "name": "Chicken Wings",
+    "price": 176,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_24",
+    "name": "Cheese Pizza",
+    "price": 219,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/pizza.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_25",
+    "name": "Chicken Supreme",
+    "price": 104,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_26",
+    "name": "Veg Supreme (10\")",
+    "price": 65,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_27",
+    "name": "Pepperoni Feast",
+    "price": 146,
+    "category": "Main",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_28",
+    "name": "Tandoori Paneer",
+    "price": 80,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_29",
+    "name": "Garlic Breadsticks",
+    "price": 132,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/bread.jpg"
+  },
+  {
+    "id": "pizzahut_item_hyderabad_30",
+    "name": "Cheesy Bites",
+    "price": 197,
+    "category": "Main",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

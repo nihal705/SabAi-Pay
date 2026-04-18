@@ -1,0 +1,212 @@
+[
+  {
+    "id": "burgerking_item_chennai_1",
+    "name": "Chicken Burger",
+    "price": 370,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_2",
+    "name": "Veg Burger",
+    "price": 488,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_3",
+    "name": "Fries",
+    "price": 491,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_4",
+    "name": "Whopper",
+    "price": 367,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_5",
+    "name": "Chicken Burger",
+    "price": 161,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_6",
+    "name": "Veg Burger",
+    "price": 146,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_7",
+    "name": "Fries",
+    "price": 445,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_8",
+    "name": "Whopper",
+    "price": 248,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_9",
+    "name": "Chicken Burger 6",
+    "price": 461,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_10",
+    "name": "Veg Burger 1",
+    "price": 354,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_11",
+    "name": "Fries",
+    "price": 410,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_12",
+    "name": "Whopper 5",
+    "price": 306,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_13",
+    "name": "Chicken Burger",
+    "price": 423,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_14",
+    "name": "Veg Burger",
+    "price": 435,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_15",
+    "name": "Fries 10",
+    "price": 193,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_16",
+    "name": "Whopper",
+    "price": 234,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_17",
+    "name": "Chicken Burger 6",
+    "price": 368,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_18",
+    "name": "Veg Burger",
+    "price": 190,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_19",
+    "name": "Fries",
+    "price": 397,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_20",
+    "name": "Whopper",
+    "price": 213,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_21",
+    "name": "Chicken Burger",
+    "price": 499,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_22",
+    "name": "Veg Burger",
+    "price": 189,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_23",
+    "name": "Fries",
+    "price": 206,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_24",
+    "name": "Whopper",
+    "price": 202,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_25",
+    "name": "Chicken Burger",
+    "price": 202,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_26",
+    "name": "Veg Burger 1",
+    "price": 356,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_27",
+    "name": "Fries",
+    "price": 105,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_28",
+    "name": "Whopper",
+    "price": 454,
+    "category": "Main",
+    "isVeg": true
+  },
+  {
+    "id": "burgerking_item_chennai_29",
+    "name": "Chicken Burger",
+    "price": 357,
+    "category": "Main",
+    "isVeg": false
+  },
+  {
+    "id": "burgerking_item_chennai_30",
+    "name": "Veg Burger 8",
+    "price": 113,
+    "category": "Main",
+    "isVeg": true
+  }
+]

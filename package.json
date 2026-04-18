@@ -1,0 +1,20 @@
+{
+  "name": "sabai-pay",
+  "version": "1.0.0",
+  "description": "SabAI Pay - AI-Powered UPI Payment Assistant",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "db:setup": "cd database && mysql -u root -p < schema.sql",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "test": "concurrently \"cd backend && npm test\" \"cd frontend && npm test\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "keywords": ["upi", "payments", "ai", "gemini", "fintech"],
+  "author": "Your Name",
+  "license": "MIT"
+}

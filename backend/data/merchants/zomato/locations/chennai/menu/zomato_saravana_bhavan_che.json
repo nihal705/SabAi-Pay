@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Masala Dosa",
+    "price": 89,
+    "category": "Dosa",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Crispy dosa with potato filling",
+    "prepTime": "10-15 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Masala_Dosa_1775766061526_uvr5n"
+  },
+  {
+    "name": "Plain Dosa",
+    "price": 59,
+    "category": "Dosa",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Crispy plain dosa",
+    "prepTime": "10-15 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Plain_Dosa_1775766061526_aslul"
+  },
+  {
+    "name": "Rava Dosa",
+    "price": 99,
+    "category": "Dosa",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Semolina dosa",
+    "prepTime": "10-15 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Rava_Dosa_1775766061526_4a0zn"
+  },
+  {
+    "name": "Onion Dosa",
+    "price": 99,
+    "category": "Dosa",
+    "isVeg": true,
+    "isPopular": false,
+    "description": "Dosa with onion topping",
+    "prepTime": "10-15 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Onion_Dosa_1775766061526_w9tl0"
+  },
+  {
+    "name": "Paper Dosa",
+    "price": 119,
+    "category": "Dosa",
+    "isVeg": true,
+    "isPopular": false,
+    "description": "Extra thin and crispy dosa",
+    "prepTime": "10-15 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Paper_Dosa_1775766061526_j7mh2"
+  },
+  {
+    "name": "Idli (2 pcs)",
+    "price": 49,
+    "category": "Idli",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Steamed rice cakes",
+    "prepTime": "5-10 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Idli_(2_pcs)_1775766061526_ovebe"
+  },
+  {
+    "name": "Vada (2 pcs)",
+    "price": 49,
+    "category": "Vada",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Crispy lentil donuts",
+    "prepTime": "5-10 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Vada_(2_pcs)_1775766061526_hg99s"
+  },
+  {
+    "name": "Medu Vada",
+    "price": 59,
+    "category": "Vada",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Soft and fluffy lentil vada",
+    "prepTime": "5-10 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Medu_Vada_1775766061526_lym9b"
+  },
+  {
+    "name": "Sambar Rice",
+    "price": 79,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Rice with sambar",
+    "prepTime": "10-15 min",
+    "image": "/images/items/steamed-rice.jpg",
+    "id": "Sambar_Rice_1775766061526_l0ye5"
+  },
+  {
+    "name": "Curd Rice",
+    "price": 69,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Rice with curd",
+    "prepTime": "5-10 min",
+    "image": "/images/items/steamed-rice.jpg",
+    "id": "Curd_Rice_1775766061526_jt1b6"
+  },
+  {
+    "name": "Lemon Rice",
+    "price": 69,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": false,
+    "description": "Rice with lemon tempering",
+    "prepTime": "5-10 min",
+    "image": "/images/items/steamed-rice.jpg",
+    "id": "Lemon_Rice_1775766061526_lhzr2"
+  },
+  {
+    "name": "Tomato Rice",
+    "price": 79,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": false,
+    "description": "Rice with tomato tempering",
+    "prepTime": "10-15 min",
+    "image": "/images/items/steamed-rice.jpg",
+    "id": "Tomato_Rice_1775766061526_2pr10"
+  },
+  {
+    "name": "Pongal",
+    "price": 79,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Rice and lentil porridge",
+    "prepTime": "10-15 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Pongal_1775766061526_42brh"
+  },
+  {
+    "name": "Upma",
+    "price": 59,
+    "category": "Breakfast",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Semolina porridge",
+    "prepTime": "5-10 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Upma_1775766061526_8buzk"
+  },
+  {
+    "name": "Puri Bhaji",
+    "price": 79,
+    "category": "Breakfast",
+    "isVeg": true,
+    "isPopular": true,
+    "description": "Fried bread with potato curry",
+    "prepTime": "10-15 min",
+    "image": "/images/items/default-food.jpg",
+    "id": "Puri_Bhaji_1775766061526_iw6xk"
+  }
+]

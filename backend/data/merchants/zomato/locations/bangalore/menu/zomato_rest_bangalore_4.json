@@ -1,0 +1,302 @@
+[
+  {
+    "id": "zomato_rest_bangalore_4_item_1",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 250,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer-butter-masala.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_2",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 98,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/roti.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_3",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 184,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken-biryani.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_4",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 103,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/gulab-jamun.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_5",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 118,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/cold-coffee.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_6",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 156,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_7",
+    "name": "Chicken Curry",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 399,
+    "category": "Main Course",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken-curry.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_8",
+    "name": "Butter Naan",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 47,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/butter-naan.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_9",
+    "name": "Jeera Rice",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 322,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/jeera-rice.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_10",
+    "name": "Ice Cream",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 145,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/ice-cream.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_11",
+    "name": "Soft Drinks",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 69,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/soft-drink.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_12",
+    "name": "Paneer Tikka",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 234,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer-tikka.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_13",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 343,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer-butter-masala.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_14",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 99,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/roti.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_15",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 318,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken-biryani.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_16",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 188,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/gulab-jamun.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_17",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 167,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/cold-coffee.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_18",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 365,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": true,
+    "imageUrl": "/images/items/default.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_19",
+    "name": "Chicken Curry",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 373,
+    "category": "Main Course",
+    "isVeg": false,
+    "isPopular": true,
+    "imageUrl": "/images/items/chicken-curry.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_20",
+    "name": "Butter Naan",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 72,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/butter-naan.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_21",
+    "name": "Jeera Rice",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 307,
+    "category": "Rice",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/jeera-rice.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_22",
+    "name": "Ice Cream",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 73,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/ice-cream.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_23",
+    "name": "Soft Drinks",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 135,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/soft-drink.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_24",
+    "name": "Paneer Tikka",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 399,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer-tikka.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_25",
+    "name": "Paneer Butter Masala",
+    "description": "Delicious main course prepared with authentic spices",
+    "price": 309,
+    "category": "Main Course",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/paneer-butter-masala.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_26",
+    "name": "Roti",
+    "description": "Delicious breads prepared with authentic spices",
+    "price": 55,
+    "category": "Breads",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/roti.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_27",
+    "name": "Chicken Biryani",
+    "description": "Delicious rice prepared with authentic spices",
+    "price": 209,
+    "category": "Rice",
+    "isVeg": false,
+    "isPopular": false,
+    "imageUrl": "/images/items/chicken-biryani.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_28",
+    "name": "Gulab Jamun",
+    "description": "Delicious desserts prepared with authentic spices",
+    "price": 192,
+    "category": "Desserts",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/gulab-jamun.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_29",
+    "name": "Cold Coffee",
+    "description": "Delicious beverages prepared with authentic spices",
+    "price": 163,
+    "category": "Beverages",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/cold-coffee.png"
+  },
+  {
+    "id": "zomato_rest_bangalore_4_item_30",
+    "name": "Veg Spring Roll",
+    "description": "Delicious starters prepared with authentic spices",
+    "price": 161,
+    "category": "Starters",
+    "isVeg": true,
+    "isPopular": false,
+    "imageUrl": "/images/items/default.png"
+  }
+]

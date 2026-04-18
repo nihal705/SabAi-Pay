@@ -1,0 +1,632 @@
+[
+  {
+    "id": "dmart_prod_hyderabad_1",
+    "name": "Basmati Rice",
+    "price": 115,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_2",
+    "name": "Basmati Rice (1kg)",
+    "price": 318,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_3",
+    "name": "Sonamasoori Rice",
+    "price": 152,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_4",
+    "name": "Sonamasoori Rice (1kg)",
+    "price": 209,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_5",
+    "name": "Wheat Flour",
+    "price": 287,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_6",
+    "name": "Wheat Flour (1kg)",
+    "price": 214,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_7",
+    "name": "Sugar",
+    "price": 276,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_8",
+    "name": "Sugar (1kg)",
+    "price": 81,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_9",
+    "name": "Salt",
+    "price": 218,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_10",
+    "name": "Salt (1kg)",
+    "price": 481,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_11",
+    "name": "Cooking Oil",
+    "price": 391,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_12",
+    "name": "Cooking Oil (1kg)",
+    "price": 105,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_13",
+    "name": "Toor Dal",
+    "price": 106,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_14",
+    "name": "Toor Dal (1kg)",
+    "price": 400,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_15",
+    "name": "Masoor Dal",
+    "price": 313,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_16",
+    "name": "Masoor Dal (1kg)",
+    "price": 140,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_17",
+    "name": "Chana Dal",
+    "price": 257,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_18",
+    "name": "Chana Dal (1kg)",
+    "price": 108,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_19",
+    "name": "Besan",
+    "price": 182,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_20",
+    "name": "Besan (1kg)",
+    "price": 340,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_21",
+    "name": "Milk",
+    "price": 355,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_22",
+    "name": "Milk (1kg)",
+    "price": 288,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_23",
+    "name": "Curd",
+    "price": 482,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_24",
+    "name": "Curd (1kg)",
+    "price": 185,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_25",
+    "name": "Butter",
+    "price": 358,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_26",
+    "name": "Butter (1kg)",
+    "price": 450,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_27",
+    "name": "Paneer",
+    "price": 186,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_28",
+    "name": "Paneer (1kg)",
+    "price": 118,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_29",
+    "name": "Ghee",
+    "price": 178,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_30",
+    "name": "Ghee (1kg)",
+    "price": 241,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_31",
+    "name": "Cheese",
+    "price": 303,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_32",
+    "name": "Cheese (1kg)",
+    "price": 103,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_33",
+    "name": "Buttermilk",
+    "price": 426,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_34",
+    "name": "Buttermilk (1kg)",
+    "price": 103,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_35",
+    "name": "Chips",
+    "price": 326,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_36",
+    "name": "Chips (1kg)",
+    "price": 265,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_37",
+    "name": "Biscuits",
+    "price": 440,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_38",
+    "name": "Biscuits (1kg)",
+    "price": 100,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_39",
+    "name": "Namkeen",
+    "price": 343,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_40",
+    "name": "Namkeen (1kg)",
+    "price": 337,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_41",
+    "name": "Chocolate",
+    "price": 271,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_42",
+    "name": "Chocolate (1kg)",
+    "price": 317,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": false,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_43",
+    "name": "Cookies",
+    "price": 544,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_44",
+    "name": "Cookies (1kg)",
+    "price": 463,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_45",
+    "name": "Cakes",
+    "price": 96,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_46",
+    "name": "Cakes (1kg)",
+    "price": 140,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_47",
+    "name": "Tea",
+    "price": 502,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_48",
+    "name": "Tea (1kg)",
+    "price": 56,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_49",
+    "name": "Coffee",
+    "price": 255,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_50",
+    "name": "Coffee (1kg)",
+    "price": 301,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_51",
+    "name": "Juice",
+    "price": 406,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_52",
+    "name": "Juice (1kg)",
+    "price": 502,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_53",
+    "name": "Soft Drink",
+    "price": 108,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_54",
+    "name": "Soft Drink (1kg)",
+    "price": 256,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_55",
+    "name": "Energy Drink",
+    "price": 102,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_56",
+    "name": "Energy Drink (1kg)",
+    "price": 351,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_57",
+    "name": "Coconut Water",
+    "price": 501,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_58",
+    "name": "Coconut Water (1kg)",
+    "price": 379,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_59",
+    "name": "Detergent",
+    "price": 533,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_60",
+    "name": "Detergent (1kg)",
+    "price": 297,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_61",
+    "name": "Soap",
+    "price": 429,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_62",
+    "name": "Soap (1kg)",
+    "price": 451,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_63",
+    "name": "Surface Cleaner",
+    "price": 228,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_64",
+    "name": "Surface Cleaner (1kg)",
+    "price": 196,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_65",
+    "name": "Tissue",
+    "price": 318,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_66",
+    "name": "Tissue (1kg)",
+    "price": 334,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_67",
+    "name": "Aluminum Foil",
+    "price": 548,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_68",
+    "name": "Aluminum Foil (1kg)",
+    "price": 111,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_69",
+    "name": "Cling Wrap",
+    "price": 50,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  },
+  {
+    "id": "dmart_prod_hyderabad_70",
+    "name": "Cling Wrap (1kg)",
+    "price": 363,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/default.jpg"
+  }
+]

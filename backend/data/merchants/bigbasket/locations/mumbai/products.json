@@ -1,0 +1,632 @@
+[
+  {
+    "id": "bigbasket_prod_mumbai_1",
+    "name": "Basmati Rice",
+    "price": 412,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_2",
+    "name": "Basmati Rice (1kg)",
+    "price": 484,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_3",
+    "name": "Sonamasoori Rice",
+    "price": 179,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_4",
+    "name": "Sonamasoori Rice (1kg)",
+    "price": 234,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/rice.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_5",
+    "name": "Wheat Flour",
+    "price": 309,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_6",
+    "name": "Wheat Flour (1kg)",
+    "price": 147,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_7",
+    "name": "Sugar",
+    "price": 502,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_8",
+    "name": "Sugar (1kg)",
+    "price": 102,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_9",
+    "name": "Salt",
+    "price": 352,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_10",
+    "name": "Salt (1kg)",
+    "price": 98,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_11",
+    "name": "Cooking Oil",
+    "price": 360,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_12",
+    "name": "Cooking Oil (1kg)",
+    "price": 508,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_13",
+    "name": "Toor Dal",
+    "price": 419,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_14",
+    "name": "Toor Dal (1kg)",
+    "price": 355,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_15",
+    "name": "Masoor Dal",
+    "price": 201,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_16",
+    "name": "Masoor Dal (1kg)",
+    "price": 354,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_17",
+    "name": "Chana Dal",
+    "price": 102,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_18",
+    "name": "Chana Dal (1kg)",
+    "price": 77,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_19",
+    "name": "Besan",
+    "price": 418,
+    "unit": "500g",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_20",
+    "name": "Besan (1kg)",
+    "price": 286,
+    "unit": "1kg",
+    "category": "Staples",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_21",
+    "name": "Milk",
+    "price": 258,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_22",
+    "name": "Milk (1kg)",
+    "price": 494,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_23",
+    "name": "Curd",
+    "price": 328,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_24",
+    "name": "Curd (1kg)",
+    "price": 375,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_25",
+    "name": "Butter",
+    "price": 248,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_26",
+    "name": "Butter (1kg)",
+    "price": 183,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_27",
+    "name": "Paneer",
+    "price": 292,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_28",
+    "name": "Paneer (1kg)",
+    "price": 421,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/paneer.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_29",
+    "name": "Ghee",
+    "price": 237,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_30",
+    "name": "Ghee (1kg)",
+    "price": 410,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_31",
+    "name": "Cheese",
+    "price": 141,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_32",
+    "name": "Cheese (1kg)",
+    "price": 257,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_33",
+    "name": "Buttermilk",
+    "price": 82,
+    "unit": "500g",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_34",
+    "name": "Buttermilk (1kg)",
+    "price": 212,
+    "unit": "1kg",
+    "category": "Dairy",
+    "inStock": true,
+    "imageUrl": "/images/items/milk.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_35",
+    "name": "Chips",
+    "price": 263,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_36",
+    "name": "Chips (1kg)",
+    "price": 443,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_37",
+    "name": "Biscuits",
+    "price": 222,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_38",
+    "name": "Biscuits (1kg)",
+    "price": 157,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_39",
+    "name": "Namkeen",
+    "price": 156,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_40",
+    "name": "Namkeen (1kg)",
+    "price": 515,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_41",
+    "name": "Chocolate",
+    "price": 267,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_42",
+    "name": "Chocolate (1kg)",
+    "price": 86,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_43",
+    "name": "Cookies",
+    "price": 173,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_44",
+    "name": "Cookies (1kg)",
+    "price": 81,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_45",
+    "name": "Cakes",
+    "price": 152,
+    "unit": "500g",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_46",
+    "name": "Cakes (1kg)",
+    "price": 146,
+    "unit": "1kg",
+    "category": "Snacks",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_47",
+    "name": "Tea",
+    "price": 62,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_48",
+    "name": "Tea (1kg)",
+    "price": 325,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": false,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_49",
+    "name": "Coffee",
+    "price": 410,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_50",
+    "name": "Coffee (1kg)",
+    "price": 152,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_51",
+    "name": "Juice",
+    "price": 293,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_52",
+    "name": "Juice (1kg)",
+    "price": 307,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_53",
+    "name": "Soft Drink",
+    "price": 60,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_54",
+    "name": "Soft Drink (1kg)",
+    "price": 444,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_55",
+    "name": "Energy Drink",
+    "price": 425,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_56",
+    "name": "Energy Drink (1kg)",
+    "price": 398,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_57",
+    "name": "Coconut Water",
+    "price": 270,
+    "unit": "500g",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_58",
+    "name": "Coconut Water (1kg)",
+    "price": 183,
+    "unit": "1kg",
+    "category": "Beverages",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_59",
+    "name": "Detergent",
+    "price": 265,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_60",
+    "name": "Detergent (1kg)",
+    "price": 76,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_61",
+    "name": "Soap",
+    "price": 285,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_62",
+    "name": "Soap (1kg)",
+    "price": 59,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_63",
+    "name": "Surface Cleaner",
+    "price": 195,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_64",
+    "name": "Surface Cleaner (1kg)",
+    "price": 335,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_65",
+    "name": "Tissue",
+    "price": 161,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_66",
+    "name": "Tissue (1kg)",
+    "price": 141,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_67",
+    "name": "Aluminum Foil",
+    "price": 309,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_68",
+    "name": "Aluminum Foil (1kg)",
+    "price": 148,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": false,
+    "imageUrl": "/images/items/oil.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_69",
+    "name": "Cling Wrap",
+    "price": 153,
+    "unit": "500g",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  },
+  {
+    "id": "bigbasket_prod_mumbai_70",
+    "name": "Cling Wrap (1kg)",
+    "price": 283,
+    "unit": "1kg",
+    "category": "Household",
+    "inStock": true,
+    "imageUrl": "/images/items/grocery-default.jpg"
+  }
+]

@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "blinkit_prod_pune_1",
+    "name": "Snacks Item 1",
+    "price": 52,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_2",
+    "name": "Beverages Item 2",
+    "price": 257,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_3",
+    "name": "Household Item 3",
+    "price": 484,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_4",
+    "name": "Personal Care Item 4",
+    "price": 441,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_5",
+    "name": "Groceries Item 5",
+    "price": 530,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_6",
+    "name": "Snacks Item 6",
+    "price": 536,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_7",
+    "name": "Beverages Item 7",
+    "price": 418,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_8",
+    "name": "Household Item 8",
+    "price": 107,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_9",
+    "name": "Personal Care Item 9",
+    "price": 385,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_10",
+    "name": "Groceries Item 10",
+    "price": 390,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_11",
+    "name": "Snacks Item 11",
+    "price": 162,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_12",
+    "name": "Beverages Item 12",
+    "price": 475,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_13",
+    "name": "Household Item 13",
+    "price": 306,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_14",
+    "name": "Personal Care Item 14",
+    "price": 230,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_15",
+    "name": "Groceries Item 15",
+    "price": 455,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_16",
+    "name": "Snacks Item 16",
+    "price": 216,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_17",
+    "name": "Beverages Item 17",
+    "price": 222,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_18",
+    "name": "Household Item 18",
+    "price": 404,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_19",
+    "name": "Personal Care Item 19",
+    "price": 381,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_20",
+    "name": "Groceries Item 20",
+    "price": 188,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_21",
+    "name": "Snacks Item 21",
+    "price": 472,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_22",
+    "name": "Beverages Item 22",
+    "price": 548,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_23",
+    "name": "Household Item 23",
+    "price": 483,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_24",
+    "name": "Personal Care Item 24",
+    "price": 192,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_25",
+    "name": "Groceries Item 25",
+    "price": 225,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_26",
+    "name": "Snacks Item 26",
+    "price": 134,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_27",
+    "name": "Beverages Item 27",
+    "price": 264,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_28",
+    "name": "Household Item 28",
+    "price": 395,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_29",
+    "name": "Personal Care Item 29",
+    "price": 512,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_30",
+    "name": "Groceries Item 30",
+    "price": 452,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_31",
+    "name": "Snacks Item 31",
+    "price": 160,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_32",
+    "name": "Beverages Item 32",
+    "price": 392,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_33",
+    "name": "Household Item 33",
+    "price": 518,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_34",
+    "name": "Personal Care Item 34",
+    "price": 447,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_35",
+    "name": "Groceries Item 35",
+    "price": 481,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_36",
+    "name": "Snacks Item 36",
+    "price": 379,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_37",
+    "name": "Beverages Item 37",
+    "price": 296,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_38",
+    "name": "Household Item 38",
+    "price": 425,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_39",
+    "name": "Personal Care Item 39",
+    "price": 242,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_40",
+    "name": "Groceries Item 40",
+    "price": 417,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_41",
+    "name": "Snacks Item 41",
+    "price": 54,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_42",
+    "name": "Beverages Item 42",
+    "price": 208,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_43",
+    "name": "Household Item 43",
+    "price": 297,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_44",
+    "name": "Personal Care Item 44",
+    "price": 526,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_45",
+    "name": "Groceries Item 45",
+    "price": 329,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_46",
+    "name": "Snacks Item 46",
+    "price": 148,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_47",
+    "name": "Beverages Item 47",
+    "price": 516,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_48",
+    "name": "Household Item 48",
+    "price": 259,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_49",
+    "name": "Personal Care Item 49",
+    "price": 485,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_50",
+    "name": "Groceries Item 50",
+    "price": 103,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_51",
+    "name": "Snacks Item 51",
+    "price": 196,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_52",
+    "name": "Beverages Item 52",
+    "price": 484,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_53",
+    "name": "Household Item 53",
+    "price": 166,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_54",
+    "name": "Personal Care Item 54",
+    "price": 549,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_55",
+    "name": "Groceries Item 55",
+    "price": 110,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_56",
+    "name": "Snacks Item 56",
+    "price": 277,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_57",
+    "name": "Beverages Item 57",
+    "price": 239,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_58",
+    "name": "Household Item 58",
+    "price": 387,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_59",
+    "name": "Personal Care Item 59",
+    "price": 516,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_60",
+    "name": "Groceries Item 60",
+    "price": 170,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_61",
+    "name": "Snacks Item 61",
+    "price": 153,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_62",
+    "name": "Beverages Item 62",
+    "price": 378,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_63",
+    "name": "Household Item 63",
+    "price": 190,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_64",
+    "name": "Personal Care Item 64",
+    "price": 139,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_65",
+    "name": "Groceries Item 65",
+    "price": 112,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_66",
+    "name": "Snacks Item 66",
+    "price": 366,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_67",
+    "name": "Beverages Item 67",
+    "price": 514,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_68",
+    "name": "Household Item 68",
+    "price": 359,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_69",
+    "name": "Personal Care Item 69",
+    "price": 537,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_70",
+    "name": "Groceries Item 70",
+    "price": 289,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_71",
+    "name": "Snacks Item 71",
+    "price": 325,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_72",
+    "name": "Beverages Item 72",
+    "price": 318,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_73",
+    "name": "Household Item 73",
+    "price": 414,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_74",
+    "name": "Personal Care Item 74",
+    "price": 82,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_75",
+    "name": "Groceries Item 75",
+    "price": 294,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_76",
+    "name": "Snacks Item 76",
+    "price": 538,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_77",
+    "name": "Beverages Item 77",
+    "price": 173,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_78",
+    "name": "Household Item 78",
+    "price": 452,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_79",
+    "name": "Personal Care Item 79",
+    "price": 288,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_80",
+    "name": "Groceries Item 80",
+    "price": 200,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_81",
+    "name": "Snacks Item 81",
+    "price": 452,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_82",
+    "name": "Beverages Item 82",
+    "price": 406,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_83",
+    "name": "Household Item 83",
+    "price": 328,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_84",
+    "name": "Personal Care Item 84",
+    "price": 388,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_85",
+    "name": "Groceries Item 85",
+    "price": 418,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_86",
+    "name": "Snacks Item 86",
+    "price": 542,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_87",
+    "name": "Beverages Item 87",
+    "price": 335,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_88",
+    "name": "Household Item 88",
+    "price": 355,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_89",
+    "name": "Personal Care Item 89",
+    "price": 424,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_90",
+    "name": "Groceries Item 90",
+    "price": 215,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_91",
+    "name": "Snacks Item 91",
+    "price": 462,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_92",
+    "name": "Beverages Item 92",
+    "price": 502,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_93",
+    "name": "Household Item 93",
+    "price": 179,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_94",
+    "name": "Personal Care Item 94",
+    "price": 94,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_95",
+    "name": "Groceries Item 95",
+    "price": 426,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_96",
+    "name": "Snacks Item 96",
+    "price": 218,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_97",
+    "name": "Beverages Item 97",
+    "price": 158,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_98",
+    "name": "Household Item 98",
+    "price": 249,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_99",
+    "name": "Personal Care Item 99",
+    "price": 493,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_100",
+    "name": "Groceries Item 100",
+    "price": 150,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_101",
+    "name": "Snacks Item 101",
+    "price": 204,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_102",
+    "name": "Beverages Item 102",
+    "price": 240,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_103",
+    "name": "Household Item 103",
+    "price": 164,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_104",
+    "name": "Personal Care Item 104",
+    "price": 107,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_105",
+    "name": "Groceries Item 105",
+    "price": 210,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_106",
+    "name": "Snacks Item 106",
+    "price": 384,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_107",
+    "name": "Beverages Item 107",
+    "price": 66,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_108",
+    "name": "Household Item 108",
+    "price": 251,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_109",
+    "name": "Personal Care Item 109",
+    "price": 536,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_110",
+    "name": "Groceries Item 110",
+    "price": 61,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_111",
+    "name": "Snacks Item 111",
+    "price": 416,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_112",
+    "name": "Beverages Item 112",
+    "price": 526,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_113",
+    "name": "Household Item 113",
+    "price": 265,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_114",
+    "name": "Personal Care Item 114",
+    "price": 330,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_115",
+    "name": "Groceries Item 115",
+    "price": 125,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_116",
+    "name": "Snacks Item 116",
+    "price": 175,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_117",
+    "name": "Beverages Item 117",
+    "price": 549,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_118",
+    "name": "Household Item 118",
+    "price": 140,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_119",
+    "name": "Personal Care Item 119",
+    "price": 74,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_120",
+    "name": "Groceries Item 120",
+    "price": 499,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_121",
+    "name": "Snacks Item 121",
+    "price": 374,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_122",
+    "name": "Beverages Item 122",
+    "price": 394,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_123",
+    "name": "Household Item 123",
+    "price": 463,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_124",
+    "name": "Personal Care Item 124",
+    "price": 153,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_125",
+    "name": "Groceries Item 125",
+    "price": 319,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_126",
+    "name": "Snacks Item 126",
+    "price": 132,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_127",
+    "name": "Beverages Item 127",
+    "price": 409,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_128",
+    "name": "Household Item 128",
+    "price": 306,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_129",
+    "name": "Personal Care Item 129",
+    "price": 255,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_130",
+    "name": "Groceries Item 130",
+    "price": 427,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_131",
+    "name": "Snacks Item 131",
+    "price": 410,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_132",
+    "name": "Beverages Item 132",
+    "price": 525,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_133",
+    "name": "Household Item 133",
+    "price": 97,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_134",
+    "name": "Personal Care Item 134",
+    "price": 423,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_135",
+    "name": "Groceries Item 135",
+    "price": 383,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_136",
+    "name": "Snacks Item 136",
+    "price": 210,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_137",
+    "name": "Beverages Item 137",
+    "price": 143,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_138",
+    "name": "Household Item 138",
+    "price": 107,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_139",
+    "name": "Personal Care Item 139",
+    "price": 429,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_140",
+    "name": "Groceries Item 140",
+    "price": 166,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_141",
+    "name": "Snacks Item 141",
+    "price": 445,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_142",
+    "name": "Beverages Item 142",
+    "price": 464,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_143",
+    "name": "Household Item 143",
+    "price": 353,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_144",
+    "name": "Personal Care Item 144",
+    "price": 376,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_145",
+    "name": "Groceries Item 145",
+    "price": 330,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_146",
+    "name": "Snacks Item 146",
+    "price": 365,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_147",
+    "name": "Beverages Item 147",
+    "price": 416,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_148",
+    "name": "Household Item 148",
+    "price": 323,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_149",
+    "name": "Personal Care Item 149",
+    "price": 234,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_150",
+    "name": "Groceries Item 150",
+    "price": 513,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_151",
+    "name": "Snacks Item 151",
+    "price": 432,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_152",
+    "name": "Beverages Item 152",
+    "price": 68,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_153",
+    "name": "Household Item 153",
+    "price": 225,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_154",
+    "name": "Personal Care Item 154",
+    "price": 420,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_155",
+    "name": "Groceries Item 155",
+    "price": 523,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_156",
+    "name": "Snacks Item 156",
+    "price": 422,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_157",
+    "name": "Beverages Item 157",
+    "price": 260,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_158",
+    "name": "Household Item 158",
+    "price": 97,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_159",
+    "name": "Personal Care Item 159",
+    "price": 81,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_160",
+    "name": "Groceries Item 160",
+    "price": 78,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_161",
+    "name": "Snacks Item 161",
+    "price": 261,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_162",
+    "name": "Beverages Item 162",
+    "price": 214,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_163",
+    "name": "Household Item 163",
+    "price": 149,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_164",
+    "name": "Personal Care Item 164",
+    "price": 477,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_165",
+    "name": "Groceries Item 165",
+    "price": 458,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_166",
+    "name": "Snacks Item 166",
+    "price": 221,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_167",
+    "name": "Beverages Item 167",
+    "price": 253,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_168",
+    "name": "Household Item 168",
+    "price": 400,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_169",
+    "name": "Personal Care Item 169",
+    "price": 263,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_170",
+    "name": "Groceries Item 170",
+    "price": 60,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_171",
+    "name": "Snacks Item 171",
+    "price": 172,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_172",
+    "name": "Beverages Item 172",
+    "price": 348,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_173",
+    "name": "Household Item 173",
+    "price": 330,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_174",
+    "name": "Personal Care Item 174",
+    "price": 73,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_175",
+    "name": "Groceries Item 175",
+    "price": 109,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_176",
+    "name": "Snacks Item 176",
+    "price": 330,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_177",
+    "name": "Beverages Item 177",
+    "price": 540,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_178",
+    "name": "Household Item 178",
+    "price": 461,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_179",
+    "name": "Personal Care Item 179",
+    "price": 389,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_180",
+    "name": "Groceries Item 180",
+    "price": 357,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_181",
+    "name": "Snacks Item 181",
+    "price": 540,
+    "unit": "packet",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_182",
+    "name": "Beverages Item 182",
+    "price": 390,
+    "unit": "piece",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_183",
+    "name": "Household Item 183",
+    "price": 295,
+    "unit": "bottle",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_184",
+    "name": "Personal Care Item 184",
+    "price": 98,
+    "unit": "kg",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_185",
+    "name": "Groceries Item 185",
+    "price": 108,
+    "unit": "packet",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_186",
+    "name": "Snacks Item 186",
+    "price": 89,
+    "unit": "piece",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_187",
+    "name": "Beverages Item 187",
+    "price": 113,
+    "unit": "bottle",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_188",
+    "name": "Household Item 188",
+    "price": 212,
+    "unit": "kg",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_189",
+    "name": "Personal Care Item 189",
+    "price": 400,
+    "unit": "packet",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_190",
+    "name": "Groceries Item 190",
+    "price": 165,
+    "unit": "piece",
+    "category": "Groceries",
+    "inStock": false
+  },
+  {
+    "id": "blinkit_prod_pune_191",
+    "name": "Snacks Item 191",
+    "price": 230,
+    "unit": "bottle",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_192",
+    "name": "Beverages Item 192",
+    "price": 429,
+    "unit": "kg",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_193",
+    "name": "Household Item 193",
+    "price": 85,
+    "unit": "packet",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_194",
+    "name": "Personal Care Item 194",
+    "price": 129,
+    "unit": "piece",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_195",
+    "name": "Groceries Item 195",
+    "price": 197,
+    "unit": "bottle",
+    "category": "Groceries",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_196",
+    "name": "Snacks Item 196",
+    "price": 394,
+    "unit": "kg",
+    "category": "Snacks",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_197",
+    "name": "Beverages Item 197",
+    "price": 276,
+    "unit": "packet",
+    "category": "Beverages",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_198",
+    "name": "Household Item 198",
+    "price": 536,
+    "unit": "piece",
+    "category": "Household",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_199",
+    "name": "Personal Care Item 199",
+    "price": 62,
+    "unit": "bottle",
+    "category": "Personal Care",
+    "inStock": true
+  },
+  {
+    "id": "blinkit_prod_pune_200",
+    "name": "Groceries Item 200",
+    "price": 526,
+    "unit": "kg",
+    "category": "Groceries",
+    "inStock": true
+  }
+]

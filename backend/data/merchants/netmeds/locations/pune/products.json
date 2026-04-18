@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "netmeds_prod_pune_1",
+    "name": "Dolo 650 3mg",
+    "price": 517,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_2",
+    "name": "Crocin",
+    "price": 405,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_3",
+    "name": "Aspirin 18mg",
+    "price": 245,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_4",
+    "name": "Vitamin C",
+    "price": 461,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_5",
+    "name": "Calcium Tablets",
+    "price": 145,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_6",
+    "name": "Paracetamol",
+    "price": 480,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_7",
+    "name": "Dolo 650 54mg",
+    "price": 486,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_8",
+    "name": "Crocin",
+    "price": 181,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_9",
+    "name": "Aspirin 19mg",
+    "price": 262,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_10",
+    "name": "Vitamin C 56mg",
+    "price": 485,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_11",
+    "name": "Calcium Tablets 53mg",
+    "price": 329,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_12",
+    "name": "Paracetamol 81mg",
+    "price": 416,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_13",
+    "name": "Dolo 650 20mg",
+    "price": 314,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_14",
+    "name": "Crocin",
+    "price": 372,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_15",
+    "name": "Aspirin",
+    "price": 56,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_16",
+    "name": "Vitamin C",
+    "price": 136,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_17",
+    "name": "Calcium Tablets",
+    "price": 336,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_18",
+    "name": "Paracetamol 34mg",
+    "price": 243,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_19",
+    "name": "Dolo 650 39mg",
+    "price": 385,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_20",
+    "name": "Crocin 5mg",
+    "price": 519,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_21",
+    "name": "Aspirin",
+    "price": 37,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_22",
+    "name": "Vitamin C 87mg",
+    "price": 271,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_23",
+    "name": "Calcium Tablets",
+    "price": 261,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_24",
+    "name": "Paracetamol 94mg",
+    "price": 373,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_25",
+    "name": "Dolo 650",
+    "price": 92,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_26",
+    "name": "Crocin",
+    "price": 214,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_27",
+    "name": "Aspirin",
+    "price": 422,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_28",
+    "name": "Vitamin C 66mg",
+    "price": 456,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_29",
+    "name": "Calcium Tablets 25mg",
+    "price": 382,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_30",
+    "name": "Paracetamol",
+    "price": 490,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_31",
+    "name": "Dolo 650 23mg",
+    "price": 319,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_32",
+    "name": "Crocin 70mg",
+    "price": 242,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_33",
+    "name": "Aspirin 72mg",
+    "price": 105,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_34",
+    "name": "Vitamin C",
+    "price": 182,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_35",
+    "name": "Calcium Tablets",
+    "price": 117,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_36",
+    "name": "Paracetamol",
+    "price": 385,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_37",
+    "name": "Dolo 650",
+    "price": 162,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_38",
+    "name": "Crocin 97mg",
+    "price": 89,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_39",
+    "name": "Aspirin 24mg",
+    "price": 112,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_40",
+    "name": "Vitamin C",
+    "price": 270,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_41",
+    "name": "Calcium Tablets",
+    "price": 329,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_42",
+    "name": "Paracetamol",
+    "price": 341,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_43",
+    "name": "Dolo 650 27mg",
+    "price": 191,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_44",
+    "name": "Crocin",
+    "price": 24,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_45",
+    "name": "Aspirin 5mg",
+    "price": 402,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_46",
+    "name": "Vitamin C 47mg",
+    "price": 94,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_47",
+    "name": "Calcium Tablets",
+    "price": 197,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_48",
+    "name": "Paracetamol",
+    "price": 391,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_49",
+    "name": "Dolo 650",
+    "price": 441,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_50",
+    "name": "Crocin 37mg",
+    "price": 390,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_51",
+    "name": "Aspirin 11mg",
+    "price": 83,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_52",
+    "name": "Vitamin C 84mg",
+    "price": 217,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_53",
+    "name": "Calcium Tablets 12mg",
+    "price": 57,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_54",
+    "name": "Paracetamol 75mg",
+    "price": 143,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_55",
+    "name": "Dolo 650",
+    "price": 391,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_56",
+    "name": "Crocin",
+    "price": 63,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_57",
+    "name": "Aspirin 49mg",
+    "price": 146,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_58",
+    "name": "Vitamin C 49mg",
+    "price": 397,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_59",
+    "name": "Calcium Tablets 71mg",
+    "price": 345,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_60",
+    "name": "Paracetamol 29mg",
+    "price": 250,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_61",
+    "name": "Dolo 650 46mg",
+    "price": 206,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_62",
+    "name": "Crocin",
+    "price": 31,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_63",
+    "name": "Aspirin",
+    "price": 171,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_64",
+    "name": "Vitamin C 49mg",
+    "price": 322,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_65",
+    "name": "Calcium Tablets",
+    "price": 185,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_66",
+    "name": "Paracetamol 12mg",
+    "price": 510,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_67",
+    "name": "Dolo 650 37mg",
+    "price": 512,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_68",
+    "name": "Crocin 20mg",
+    "price": 314,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_69",
+    "name": "Aspirin 38mg",
+    "price": 337,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_70",
+    "name": "Vitamin C",
+    "price": 427,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_71",
+    "name": "Calcium Tablets 81mg",
+    "price": 257,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_72",
+    "name": "Paracetamol",
+    "price": 382,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_73",
+    "name": "Dolo 650 98mg",
+    "price": 36,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_74",
+    "name": "Crocin",
+    "price": 184,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_75",
+    "name": "Aspirin",
+    "price": 215,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_76",
+    "name": "Vitamin C",
+    "price": 90,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_77",
+    "name": "Calcium Tablets",
+    "price": 110,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_78",
+    "name": "Paracetamol",
+    "price": 345,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_79",
+    "name": "Dolo 650 63mg",
+    "price": 504,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_80",
+    "name": "Crocin 29mg",
+    "price": 47,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_81",
+    "name": "Aspirin",
+    "price": 71,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_82",
+    "name": "Vitamin C",
+    "price": 36,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_83",
+    "name": "Calcium Tablets",
+    "price": 270,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_84",
+    "name": "Paracetamol 42mg",
+    "price": 431,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_85",
+    "name": "Dolo 650 55mg",
+    "price": 281,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_86",
+    "name": "Crocin 17mg",
+    "price": 53,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_87",
+    "name": "Aspirin 32mg",
+    "price": 413,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_88",
+    "name": "Vitamin C",
+    "price": 99,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_89",
+    "name": "Calcium Tablets",
+    "price": 406,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_90",
+    "name": "Paracetamol 95mg",
+    "price": 360,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_91",
+    "name": "Dolo 650 42mg",
+    "price": 190,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_92",
+    "name": "Crocin 49mg",
+    "price": 395,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_93",
+    "name": "Aspirin 72mg",
+    "price": 517,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_94",
+    "name": "Vitamin C",
+    "price": 257,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_95",
+    "name": "Calcium Tablets 74mg",
+    "price": 161,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_96",
+    "name": "Paracetamol 8mg",
+    "price": 349,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_97",
+    "name": "Dolo 650",
+    "price": 512,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_98",
+    "name": "Crocin",
+    "price": 97,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_99",
+    "name": "Aspirin",
+    "price": 369,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_100",
+    "name": "Vitamin C",
+    "price": 101,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_101",
+    "name": "Calcium Tablets 15mg",
+    "price": 492,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_102",
+    "name": "Paracetamol",
+    "price": 228,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_103",
+    "name": "Dolo 650",
+    "price": 363,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_104",
+    "name": "Crocin",
+    "price": 354,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_105",
+    "name": "Aspirin",
+    "price": 398,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_106",
+    "name": "Vitamin C",
+    "price": 24,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_107",
+    "name": "Calcium Tablets 100mg",
+    "price": 126,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_108",
+    "name": "Paracetamol 62mg",
+    "price": 129,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_109",
+    "name": "Dolo 650 100mg",
+    "price": 311,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_110",
+    "name": "Crocin 48mg",
+    "price": 467,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_111",
+    "name": "Aspirin 100mg",
+    "price": 285,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_112",
+    "name": "Vitamin C",
+    "price": 477,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_113",
+    "name": "Calcium Tablets 61mg",
+    "price": 30,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_114",
+    "name": "Paracetamol",
+    "price": 519,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_115",
+    "name": "Dolo 650",
+    "price": 38,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_116",
+    "name": "Crocin 89mg",
+    "price": 449,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_117",
+    "name": "Aspirin",
+    "price": 225,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_118",
+    "name": "Vitamin C 76mg",
+    "price": 25,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_119",
+    "name": "Calcium Tablets",
+    "price": 421,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_120",
+    "name": "Paracetamol 84mg",
+    "price": 211,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_121",
+    "name": "Dolo 650 73mg",
+    "price": 43,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_122",
+    "name": "Crocin 42mg",
+    "price": 496,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_123",
+    "name": "Aspirin 19mg",
+    "price": 262,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_124",
+    "name": "Vitamin C",
+    "price": 461,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_125",
+    "name": "Calcium Tablets 44mg",
+    "price": 62,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_126",
+    "name": "Paracetamol",
+    "price": 239,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_127",
+    "name": "Dolo 650",
+    "price": 149,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_128",
+    "name": "Crocin",
+    "price": 217,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_129",
+    "name": "Aspirin",
+    "price": 458,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_130",
+    "name": "Vitamin C",
+    "price": 373,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_131",
+    "name": "Calcium Tablets 30mg",
+    "price": 403,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_132",
+    "name": "Paracetamol 13mg",
+    "price": 118,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_133",
+    "name": "Dolo 650",
+    "price": 321,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_134",
+    "name": "Crocin",
+    "price": 57,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_135",
+    "name": "Aspirin 3mg",
+    "price": 194,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_136",
+    "name": "Vitamin C",
+    "price": 251,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_137",
+    "name": "Calcium Tablets 81mg",
+    "price": 413,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_138",
+    "name": "Paracetamol",
+    "price": 329,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_139",
+    "name": "Dolo 650",
+    "price": 294,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_140",
+    "name": "Crocin",
+    "price": 465,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_141",
+    "name": "Aspirin",
+    "price": 246,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_142",
+    "name": "Vitamin C",
+    "price": 23,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_143",
+    "name": "Calcium Tablets",
+    "price": 50,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_144",
+    "name": "Paracetamol",
+    "price": 420,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_145",
+    "name": "Dolo 650 53mg",
+    "price": 269,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_146",
+    "name": "Crocin",
+    "price": 22,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_147",
+    "name": "Aspirin",
+    "price": 408,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_148",
+    "name": "Vitamin C",
+    "price": 403,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_149",
+    "name": "Calcium Tablets",
+    "price": 118,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_150",
+    "name": "Paracetamol",
+    "price": 336,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_151",
+    "name": "Dolo 650",
+    "price": 148,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_152",
+    "name": "Crocin 18mg",
+    "price": 70,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_153",
+    "name": "Aspirin 98mg",
+    "price": 435,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_154",
+    "name": "Vitamin C",
+    "price": 451,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_155",
+    "name": "Calcium Tablets 64mg",
+    "price": 272,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_156",
+    "name": "Paracetamol 17mg",
+    "price": 422,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_157",
+    "name": "Dolo 650",
+    "price": 255,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_158",
+    "name": "Crocin 53mg",
+    "price": 375,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_159",
+    "name": "Aspirin 84mg",
+    "price": 176,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_160",
+    "name": "Vitamin C 11mg",
+    "price": 141,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_161",
+    "name": "Calcium Tablets",
+    "price": 209,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_162",
+    "name": "Paracetamol",
+    "price": 486,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_163",
+    "name": "Dolo 650 48mg",
+    "price": 73,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_164",
+    "name": "Crocin 61mg",
+    "price": 344,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_165",
+    "name": "Aspirin",
+    "price": 76,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_166",
+    "name": "Vitamin C 78mg",
+    "price": 138,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_167",
+    "name": "Calcium Tablets 95mg",
+    "price": 309,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_168",
+    "name": "Paracetamol 63mg",
+    "price": 108,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_169",
+    "name": "Dolo 650 56mg",
+    "price": 254,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_170",
+    "name": "Crocin",
+    "price": 38,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_171",
+    "name": "Aspirin",
+    "price": 362,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_172",
+    "name": "Vitamin C 2mg",
+    "price": 397,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_173",
+    "name": "Calcium Tablets",
+    "price": 125,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_174",
+    "name": "Paracetamol",
+    "price": 509,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_175",
+    "name": "Dolo 650",
+    "price": 488,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_176",
+    "name": "Crocin",
+    "price": 120,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_177",
+    "name": "Aspirin",
+    "price": 165,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_178",
+    "name": "Vitamin C 65mg",
+    "price": 84,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_179",
+    "name": "Calcium Tablets",
+    "price": 359,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_180",
+    "name": "Paracetamol",
+    "price": 251,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_181",
+    "name": "Dolo 650 10mg",
+    "price": 262,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_182",
+    "name": "Crocin 59mg",
+    "price": 313,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_183",
+    "name": "Aspirin 73mg",
+    "price": 224,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_184",
+    "name": "Vitamin C",
+    "price": 74,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_185",
+    "name": "Calcium Tablets 8mg",
+    "price": 334,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_186",
+    "name": "Paracetamol",
+    "price": 291,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_187",
+    "name": "Dolo 650 82mg",
+    "price": 372,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_188",
+    "name": "Crocin 39mg",
+    "price": 421,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_189",
+    "name": "Aspirin 33mg",
+    "price": 499,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_190",
+    "name": "Vitamin C",
+    "price": 405,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_191",
+    "name": "Calcium Tablets",
+    "price": 496,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_192",
+    "name": "Paracetamol 89mg",
+    "price": 51,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_193",
+    "name": "Dolo 650 70mg",
+    "price": 114,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_194",
+    "name": "Crocin 26mg",
+    "price": 336,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_195",
+    "name": "Aspirin",
+    "price": 98,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_196",
+    "name": "Vitamin C",
+    "price": 250,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_197",
+    "name": "Calcium Tablets 46mg",
+    "price": 40,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_198",
+    "name": "Paracetamol 22mg",
+    "price": 322,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_199",
+    "name": "Dolo 650",
+    "price": 116,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_200",
+    "name": "Crocin",
+    "price": 150,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_201",
+    "name": "Aspirin",
+    "price": 400,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_202",
+    "name": "Vitamin C 63mg",
+    "price": 222,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_203",
+    "name": "Calcium Tablets",
+    "price": 34,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_204",
+    "name": "Paracetamol",
+    "price": 257,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_205",
+    "name": "Dolo 650 33mg",
+    "price": 363,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_206",
+    "name": "Crocin",
+    "price": 183,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_207",
+    "name": "Aspirin",
+    "price": 206,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_208",
+    "name": "Vitamin C",
+    "price": 443,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_209",
+    "name": "Calcium Tablets 22mg",
+    "price": 318,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_210",
+    "name": "Paracetamol",
+    "price": 496,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_211",
+    "name": "Dolo 650",
+    "price": 265,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_212",
+    "name": "Crocin",
+    "price": 357,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_213",
+    "name": "Aspirin",
+    "price": 103,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_214",
+    "name": "Vitamin C",
+    "price": 272,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_215",
+    "name": "Calcium Tablets 44mg",
+    "price": 90,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_216",
+    "name": "Paracetamol 29mg",
+    "price": 198,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_217",
+    "name": "Dolo 650 63mg",
+    "price": 450,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_218",
+    "name": "Crocin 7mg",
+    "price": 187,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_219",
+    "name": "Aspirin 79mg",
+    "price": 441,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_220",
+    "name": "Vitamin C",
+    "price": 263,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_221",
+    "name": "Calcium Tablets",
+    "price": 247,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_222",
+    "name": "Paracetamol 24mg",
+    "price": 267,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_223",
+    "name": "Dolo 650 17mg",
+    "price": 95,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_224",
+    "name": "Crocin 26mg",
+    "price": 432,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_225",
+    "name": "Aspirin",
+    "price": 64,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_226",
+    "name": "Vitamin C",
+    "price": 313,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_227",
+    "name": "Calcium Tablets",
+    "price": 278,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_228",
+    "name": "Paracetamol",
+    "price": 27,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_229",
+    "name": "Dolo 650 70mg",
+    "price": 211,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_230",
+    "name": "Crocin",
+    "price": 468,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_231",
+    "name": "Aspirin",
+    "price": 90,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_232",
+    "name": "Vitamin C 85mg",
+    "price": 486,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_233",
+    "name": "Calcium Tablets",
+    "price": 497,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_234",
+    "name": "Paracetamol 26mg",
+    "price": 325,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_235",
+    "name": "Dolo 650",
+    "price": 339,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_236",
+    "name": "Crocin",
+    "price": 447,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_237",
+    "name": "Aspirin",
+    "price": 259,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_238",
+    "name": "Vitamin C",
+    "price": 66,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_239",
+    "name": "Calcium Tablets",
+    "price": 307,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_240",
+    "name": "Paracetamol 76mg",
+    "price": 115,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_241",
+    "name": "Dolo 650 16mg",
+    "price": 502,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_242",
+    "name": "Crocin 11mg",
+    "price": 243,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_243",
+    "name": "Aspirin 100mg",
+    "price": 479,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_244",
+    "name": "Vitamin C",
+    "price": 458,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_245",
+    "name": "Calcium Tablets",
+    "price": 333,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_246",
+    "name": "Paracetamol 74mg",
+    "price": 379,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_247",
+    "name": "Dolo 650 74mg",
+    "price": 422,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_248",
+    "name": "Crocin 56mg",
+    "price": 266,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_249",
+    "name": "Aspirin",
+    "price": 72,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_250",
+    "name": "Vitamin C",
+    "price": 284,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_251",
+    "name": "Calcium Tablets",
+    "price": 364,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_252",
+    "name": "Paracetamol",
+    "price": 404,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_253",
+    "name": "Dolo 650",
+    "price": 288,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_254",
+    "name": "Crocin",
+    "price": 101,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_255",
+    "name": "Aspirin",
+    "price": 22,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_256",
+    "name": "Vitamin C",
+    "price": 210,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_257",
+    "name": "Calcium Tablets 26mg",
+    "price": 99,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_258",
+    "name": "Paracetamol",
+    "price": 228,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_259",
+    "name": "Dolo 650",
+    "price": 125,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_260",
+    "name": "Crocin",
+    "price": 66,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_261",
+    "name": "Aspirin",
+    "price": 210,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_262",
+    "name": "Vitamin C 77mg",
+    "price": 151,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_263",
+    "name": "Calcium Tablets",
+    "price": 234,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_264",
+    "name": "Paracetamol 98mg",
+    "price": 135,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_265",
+    "name": "Dolo 650 12mg",
+    "price": 229,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_266",
+    "name": "Crocin",
+    "price": 30,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_267",
+    "name": "Aspirin 22mg",
+    "price": 279,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_268",
+    "name": "Vitamin C",
+    "price": 128,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_269",
+    "name": "Calcium Tablets 96mg",
+    "price": 423,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_270",
+    "name": "Paracetamol 19mg",
+    "price": 216,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_271",
+    "name": "Dolo 650",
+    "price": 489,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_272",
+    "name": "Crocin",
+    "price": 208,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_273",
+    "name": "Aspirin 36mg",
+    "price": 84,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_274",
+    "name": "Vitamin C",
+    "price": 187,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_275",
+    "name": "Calcium Tablets 82mg",
+    "price": 28,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_276",
+    "name": "Paracetamol",
+    "price": 354,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_277",
+    "name": "Dolo 650 5mg",
+    "price": 160,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_278",
+    "name": "Crocin",
+    "price": 81,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_279",
+    "name": "Aspirin 4mg",
+    "price": 200,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_280",
+    "name": "Vitamin C",
+    "price": 448,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_281",
+    "name": "Calcium Tablets 83mg",
+    "price": 292,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_282",
+    "name": "Paracetamol",
+    "price": 310,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_283",
+    "name": "Dolo 650",
+    "price": 275,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_284",
+    "name": "Crocin 30mg",
+    "price": 500,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_285",
+    "name": "Aspirin 20mg",
+    "price": 373,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_286",
+    "name": "Vitamin C",
+    "price": 65,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_287",
+    "name": "Calcium Tablets",
+    "price": 283,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_288",
+    "name": "Paracetamol 92mg",
+    "price": 514,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_289",
+    "name": "Dolo 650 23mg",
+    "price": 185,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_290",
+    "name": "Crocin",
+    "price": 225,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_291",
+    "name": "Aspirin 94mg",
+    "price": 331,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_292",
+    "name": "Vitamin C 45mg",
+    "price": 211,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_293",
+    "name": "Calcium Tablets",
+    "price": 423,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_294",
+    "name": "Paracetamol",
+    "price": 264,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_295",
+    "name": "Dolo 650 58mg",
+    "price": 477,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_296",
+    "name": "Crocin 1mg",
+    "price": 153,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_297",
+    "name": "Aspirin",
+    "price": 58,
+    "category": "Medicine",
+    "requiresPrescription": true
+  },
+  {
+    "id": "netmeds_prod_pune_298",
+    "name": "Vitamin C",
+    "price": 230,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_299",
+    "name": "Calcium Tablets",
+    "price": 185,
+    "category": "Medicine",
+    "requiresPrescription": false
+  },
+  {
+    "id": "netmeds_prod_pune_300",
+    "name": "Paracetamol",
+    "price": 419,
+    "category": "Medicine",
+    "requiresPrescription": false
+  }
+]

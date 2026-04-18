@@ -1,0 +1,702 @@
+[
+  {
+    "id": "bikanerwala_item_chennai_1",
+    "name": "Kachori (174g)",
+    "price": 104,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_2",
+    "name": "Pakora",
+    "price": 47,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_3",
+    "name": "Jalebi",
+    "price": 143,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_4",
+    "name": "Gulab Jamun (84g)",
+    "price": 41,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_5",
+    "name": "Rasgulla",
+    "price": 29,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_6",
+    "name": "Samosa",
+    "price": 150,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_7",
+    "name": "Kachori",
+    "price": 38,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_8",
+    "name": "Pakora",
+    "price": 150,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_9",
+    "name": "Jalebi",
+    "price": 45,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_10",
+    "name": "Gulab Jamun (72g)",
+    "price": 78,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_11",
+    "name": "Rasgulla (50g)",
+    "price": 74,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_12",
+    "name": "Samosa",
+    "price": 73,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_13",
+    "name": "Kachori",
+    "price": 96,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_14",
+    "name": "Pakora",
+    "price": 90,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_15",
+    "name": "Jalebi",
+    "price": 84,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_16",
+    "name": "Gulab Jamun",
+    "price": 26,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_17",
+    "name": "Rasgulla",
+    "price": 34,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_18",
+    "name": "Samosa",
+    "price": 73,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_19",
+    "name": "Kachori",
+    "price": 29,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_20",
+    "name": "Pakora",
+    "price": 69,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_21",
+    "name": "Jalebi",
+    "price": 129,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_22",
+    "name": "Gulab Jamun",
+    "price": 123,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_23",
+    "name": "Rasgulla (0g)",
+    "price": 59,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_24",
+    "name": "Samosa",
+    "price": 96,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_25",
+    "name": "Kachori",
+    "price": 122,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_26",
+    "name": "Pakora",
+    "price": 108,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_27",
+    "name": "Jalebi",
+    "price": 94,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_28",
+    "name": "Gulab Jamun",
+    "price": 159,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_29",
+    "name": "Rasgulla (140g)",
+    "price": 161,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_30",
+    "name": "Samosa",
+    "price": 89,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_31",
+    "name": "Kachori",
+    "price": 163,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_32",
+    "name": "Pakora",
+    "price": 77,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_33",
+    "name": "Jalebi",
+    "price": 39,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_34",
+    "name": "Gulab Jamun",
+    "price": 110,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_35",
+    "name": "Rasgulla (62g)",
+    "price": 142,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_36",
+    "name": "Samosa",
+    "price": 51,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_37",
+    "name": "Kachori",
+    "price": 33,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_38",
+    "name": "Pakora (169g)",
+    "price": 155,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_39",
+    "name": "Jalebi",
+    "price": 156,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_40",
+    "name": "Gulab Jamun",
+    "price": 74,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_41",
+    "name": "Rasgulla (243g)",
+    "price": 64,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_42",
+    "name": "Samosa",
+    "price": 71,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_43",
+    "name": "Kachori",
+    "price": 36,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_44",
+    "name": "Pakora (195g)",
+    "price": 88,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_45",
+    "name": "Jalebi",
+    "price": 82,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_46",
+    "name": "Gulab Jamun",
+    "price": 48,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_47",
+    "name": "Rasgulla",
+    "price": 58,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_48",
+    "name": "Samosa",
+    "price": 100,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_49",
+    "name": "Kachori",
+    "price": 168,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_50",
+    "name": "Pakora (16g)",
+    "price": 79,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_51",
+    "name": "Jalebi",
+    "price": 149,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_52",
+    "name": "Gulab Jamun",
+    "price": 159,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_53",
+    "name": "Rasgulla",
+    "price": 91,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_54",
+    "name": "Samosa",
+    "price": 167,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_55",
+    "name": "Kachori (0g)",
+    "price": 112,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_56",
+    "name": "Pakora",
+    "price": 134,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_57",
+    "name": "Jalebi",
+    "price": 33,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_58",
+    "name": "Gulab Jamun (24g)",
+    "price": 57,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_59",
+    "name": "Rasgulla",
+    "price": 149,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_60",
+    "name": "Samosa",
+    "price": 140,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_61",
+    "name": "Kachori",
+    "price": 78,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_62",
+    "name": "Pakora",
+    "price": 112,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_63",
+    "name": "Jalebi",
+    "price": 24,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_64",
+    "name": "Gulab Jamun",
+    "price": 141,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_65",
+    "name": "Rasgulla",
+    "price": 121,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_66",
+    "name": "Samosa",
+    "price": 130,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_67",
+    "name": "Kachori",
+    "price": 25,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_68",
+    "name": "Pakora (68g)",
+    "price": 139,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_69",
+    "name": "Jalebi",
+    "price": 45,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_70",
+    "name": "Gulab Jamun",
+    "price": 107,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_71",
+    "name": "Rasgulla",
+    "price": 38,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_72",
+    "name": "Samosa (148g)",
+    "price": 128,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_73",
+    "name": "Kachori",
+    "price": 22,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_74",
+    "name": "Pakora",
+    "price": 132,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_75",
+    "name": "Jalebi",
+    "price": 105,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_76",
+    "name": "Gulab Jamun",
+    "price": 108,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_77",
+    "name": "Rasgulla",
+    "price": 88,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_78",
+    "name": "Samosa",
+    "price": 119,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_79",
+    "name": "Kachori",
+    "price": 39,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_80",
+    "name": "Pakora",
+    "price": 90,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_81",
+    "name": "Jalebi",
+    "price": 48,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_82",
+    "name": "Gulab Jamun (84g)",
+    "price": 169,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_83",
+    "name": "Rasgulla",
+    "price": 149,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_84",
+    "name": "Samosa",
+    "price": 82,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_85",
+    "name": "Kachori",
+    "price": 126,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_86",
+    "name": "Pakora (13g)",
+    "price": 109,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_87",
+    "name": "Jalebi",
+    "price": 58,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_88",
+    "name": "Gulab Jamun",
+    "price": 128,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_89",
+    "name": "Rasgulla",
+    "price": 41,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_90",
+    "name": "Samosa",
+    "price": 119,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_91",
+    "name": "Kachori",
+    "price": 111,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_92",
+    "name": "Pakora",
+    "price": 115,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_93",
+    "name": "Jalebi (38g)",
+    "price": 34,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_94",
+    "name": "Gulab Jamun",
+    "price": 167,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_95",
+    "name": "Rasgulla",
+    "price": 127,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_96",
+    "name": "Samosa",
+    "price": 24,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_97",
+    "name": "Kachori",
+    "price": 27,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_98",
+    "name": "Pakora",
+    "price": 114,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_99",
+    "name": "Jalebi",
+    "price": 56,
+    "category": "Snacks",
+    "isVeg": true
+  },
+  {
+    "id": "bikanerwala_item_chennai_100",
+    "name": "Gulab Jamun",
+    "price": 165,
+    "category": "Snacks",
+    "isVeg": true
+  }
+]

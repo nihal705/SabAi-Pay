@@ -1,0 +1,282 @@
+[
+  {
+    "id": "starbucks_item_pune_1",
+    "name": "Cappuccino (Hot)",
+    "price": 82,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_2",
+    "name": "Espresso (Cold)",
+    "price": 174,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_3",
+    "name": "Americano (Cold)",
+    "price": 118,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_4",
+    "name": "Mocha (Cold)",
+    "price": 134,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_5",
+    "name": "Cold Coffee (Cold)",
+    "price": 129,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_6",
+    "name": "Latte (Cold)",
+    "price": 143,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_7",
+    "name": "Cappuccino (Cold)",
+    "price": 255,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_8",
+    "name": "Espresso (Hot)",
+    "price": 152,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_9",
+    "name": "Americano (Cold)",
+    "price": 163,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_10",
+    "name": "Mocha (Hot)",
+    "price": 219,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_11",
+    "name": "Cold Coffee (Cold)",
+    "price": 275,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_12",
+    "name": "Latte (Cold)",
+    "price": 124,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_13",
+    "name": "Cappuccino (Cold)",
+    "price": 226,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_14",
+    "name": "Espresso (Cold)",
+    "price": 93,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_15",
+    "name": "Americano (Cold)",
+    "price": 259,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_16",
+    "name": "Mocha (Cold)",
+    "price": 187,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_17",
+    "name": "Cold Coffee (Hot)",
+    "price": 249,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_18",
+    "name": "Latte (Hot)",
+    "price": 234,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_19",
+    "name": "Cappuccino (Cold)",
+    "price": 204,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_20",
+    "name": "Espresso (Hot)",
+    "price": 279,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_21",
+    "name": "Americano (Cold)",
+    "price": 212,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_22",
+    "name": "Mocha (Cold)",
+    "price": 271,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_23",
+    "name": "Cold Coffee (Cold)",
+    "price": 207,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_24",
+    "name": "Latte (Cold)",
+    "price": 204,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_25",
+    "name": "Cappuccino (Hot)",
+    "price": 170,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_26",
+    "name": "Espresso (Cold)",
+    "price": 140,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_27",
+    "name": "Americano (Cold)",
+    "price": 195,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_28",
+    "name": "Mocha (Cold)",
+    "price": 122,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_29",
+    "name": "Cold Coffee (Cold)",
+    "price": 176,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_30",
+    "name": "Latte (Cold)",
+    "price": 265,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_31",
+    "name": "Cappuccino (Cold)",
+    "price": 80,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_32",
+    "name": "Espresso (Cold)",
+    "price": 206,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_33",
+    "name": "Americano (Cold)",
+    "price": 211,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_34",
+    "name": "Mocha (Hot)",
+    "price": 200,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_35",
+    "name": "Cold Coffee (Cold)",
+    "price": 123,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_36",
+    "name": "Latte (Cold)",
+    "price": 277,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_37",
+    "name": "Cappuccino (Cold)",
+    "price": 147,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_38",
+    "name": "Espresso (Cold)",
+    "price": 238,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_39",
+    "name": "Americano (Hot)",
+    "price": 170,
+    "category": "Beverages",
+    "isVeg": true
+  },
+  {
+    "id": "starbucks_item_pune_40",
+    "name": "Mocha (Cold)",
+    "price": 197,
+    "category": "Beverages",
+    "isVeg": true
+  }
+]
