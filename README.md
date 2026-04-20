@@ -1,7 +1,5 @@
 # SabAI Pay - AI-Powered UPI Payments Assistant with Agent Pay and Reserve Pay
 
-![SabAI Pay Banner](https://via.placeholder.com/1200x300/4f46e5/ffffff?text=SabAI+Pay)
-
 ## 🚀 Overview
 
 SabAI Pay is an intelligent AI-powered payment assistant that helps users with UPI payments, bill payments, mobile recharges, food ordering, shopping, and managing Reserve Pay limits. The system features an interactive chatbot interface, multiple payment methods (Bank Account, SabAI Gems, Reserve Pay), real-time order tracking, and scheduled payments with auto-pay.
