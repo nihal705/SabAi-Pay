@@ -259,7 +259,7 @@ Copyright © 2026 G Nihal. All Rights Reserved.
 **You may:**
 - View the source code for reference purposes only
 
-For commercial licensing inquiries, contact: **support@sabai-pay.com**
+For commercial licensing inquiries, contact: **sabaipaycontact@gmail.com**
 
 See the [LICENSE](LICENSE) file for complete terms.
 
@@ -276,4 +276,4 @@ Razorpay for payment integration
 Open source community
 
 📞 Support
-For support, email support@sabai-pay.com or create an issue in the repository.
+For support, email sabaipaycontact@gmail.com or create an issue in the repository.

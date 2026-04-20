@@ -1,4 +1,15 @@
 // backend/controllers/reserveController.js
+
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: sabaipaycontact@gmail.com
+ */
+
 const dbStorage = require('../services/databaseStorageService');
 
 // Helper to get user ID

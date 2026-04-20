@@ -1,6 +1,16 @@
 // backend/services/situationToOrderService.js
 // CONVERTS USER SITUATIONS TO ORDER SUGGESTIONS
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: sabaipaycontact@gmail.com
+ */
+
 class SituationToOrderService {
     constructor() {
         this.situationPatterns = {

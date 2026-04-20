@@ -1,6 +1,16 @@
 // backend/services/geminiChatService.js
 // Pure Gemini for ALL general conversations
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: sabaipaycontact@gmail.com
+ */
+
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 require('dotenv').config();
 

@@ -7,7 +7,7 @@
  * This software is proprietary and confidential.
  * Unauthorized copying, distribution, or use is strictly prohibited.
  * 
- * For licensing inquiries: support@sabai-pay.com
+ * For licensing inquiries: sabaipaycontact@gmail.com
  */
 
 const express = require('express');
