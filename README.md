@@ -203,6 +203,7 @@ Transaction history
 ```
 
 ## API Endpoints
+```text
 Method	Endpoint	Description
 POST	/api/agent/order/process	Process user message
 POST	/api/agent/order/select-items	Add items to cart
@@ -210,6 +211,7 @@ POST	/api/agent/order/process-reserve	Process Reserve Pay payment
 POST	/api/agent/order/schedule-order	Schedule order for future
 GET	/api/agent/order/orders	Get user orders
 POST	/api/agent/order/check-reserve	Check Reserve Pay eligibility
+```
 
 ## Testing
 ```bash
@@ -249,9 +251,11 @@ REACT_APP_ML_API_URL=http://localhost:5001
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 👥 Authors
+
 SabAI Pay - G Nihal
 
 🙏 Acknowledgments
+
 Gemini API for general chat capabilities
 
 Razorpay for payment integration
