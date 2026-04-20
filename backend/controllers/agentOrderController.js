@@ -1,6 +1,16 @@
 // backend/controllers/agentOrderController.js
 // COMPLETE WORKING VERSION - ML Integration with Real Merchant Data
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 const merchantDataService = require('../services/merchantDataService');
 const orderService = require('../services/orderService');
 const paymentService = require('../services/paymentService');

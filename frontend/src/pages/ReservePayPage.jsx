@@ -1,6 +1,16 @@
 // frontend/src/pages/ReservePayPage.jsx
 // COMPLETE FIXED VERSION - Connected to database properly
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';

@@ -1,6 +1,16 @@
 // frontend/src/components/CustomPaymentModal.jsx
 // COMPLETE FIXED VERSION - All functions defined
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 import React, { useState, useEffect } from 'react';
 import { FaTimes, FaCheckCircle, FaInfoCircle, FaUniversity, FaSpinner, FaEye, FaEyeSlash, FaCalendarAlt } from 'react-icons/fa';
 import axios from 'axios';

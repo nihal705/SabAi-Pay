@@ -1,6 +1,16 @@
 // backend/server.js
 // Main server file for SabAI Pay - COMPLETE WORKING VERSION with MySQL Database
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');

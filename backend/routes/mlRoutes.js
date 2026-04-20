@@ -1,4 +1,15 @@
 // backend/routes/mlRoutes.js
+
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 const express = require('express');
 const router = express.Router();
 const mlWebhookController = require('../controllers/mlWebhookController');

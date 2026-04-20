@@ -1,6 +1,16 @@
 // frontend/src/components/EnhancedOrderSummary.jsx
 // COMPLETE ENHANCED ORDER SUMMARY WITH INTERACTIVE SELECTION
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 import React, { useState, useEffect } from 'react';
 import { FaPlus, FaMinus, FaTrash, FaCheckCircle, FaShoppingCart, FaGem, FaClock, FaStar, FaRupeeSign } from 'react-icons/fa';
 import './EnhancedOrderSummary.css';

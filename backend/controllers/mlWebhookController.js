@@ -1,6 +1,16 @@
 // backend/controllers/mlWebhookController.js
 // Webhook for ML service to report model performance
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 const mlService = require('../services/mlService');
 const dbService = require('../services/databaseService');
 

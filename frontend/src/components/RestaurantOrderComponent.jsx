@@ -1,4 +1,15 @@
 // frontend/src/components/RestaurantOrderComponent.jsx
+
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 import React, { useState, useEffect } from 'react';
 import { FaPlus, FaMinus, FaTrash, FaCheckCircle, FaShoppingCart, FaRupeeSign, FaClock, FaStar, FaCreditCard, FaCalendarAlt } from 'react-icons/fa';
 import axios from 'axios';

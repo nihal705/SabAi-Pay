@@ -1,6 +1,16 @@
 // backend/services/scheduledOrderService.js
 // COMPLETE SCHEDULED ORDER SERVICE WITH AUTO-PAY
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 const dbService = require('./databaseService');
 const paymentService = require('./paymentService');
 

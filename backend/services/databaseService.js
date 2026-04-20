@@ -1,6 +1,16 @@
 // backend/services/databaseService.js
 // COMPLETE FIXED VERSION - All SQL queries working
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 const db = require('../config/database');
 const bcrypt = require('bcryptjs');
 

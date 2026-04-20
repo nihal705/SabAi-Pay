@@ -1,4 +1,14 @@
-﻿# ml_service/app.py - FIXED VERSION with proper entity parsing
+﻿﻿# ml_service/app.py - FIXED VERSION with proper entity parsing
+
+"""
+SabAI Pay - AI-Powered UPI Payments Assistant
+Copyright (c) 2026 G Nihal. All Rights Reserved.
+
+This software is proprietary and confidential.
+Unauthorized copying, distribution, or use is strictly prohibited.
+
+For licensing inquiries: support@sabai-pay.com
+"""
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS

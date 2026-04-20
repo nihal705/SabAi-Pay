@@ -1,6 +1,16 @@
 // Create a new component: RestaurantMenuGrid.jsx
 // frontend/src/components/RestaurantMenuGrid.jsx
 
+/**
+ * SabAI Pay - AI-Powered UPI Payments Assistant
+ * Copyright (c) 2026 G Nihal. All Rights Reserved.
+ * 
+ * This software is proprietary and confidential.
+ * Unauthorized copying, distribution, or use is strictly prohibited.
+ * 
+ * For licensing inquiries: support@sabai-pay.com
+ */
+
 import React, { useState } from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
 import toast from 'react-hot-toast';
