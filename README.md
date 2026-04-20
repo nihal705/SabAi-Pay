@@ -245,8 +245,23 @@ REACT_APP_API_URL=http://localhost:5000/api
 REACT_APP_ML_API_URL=http://localhost:5001
 ```
 
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📝 License
+
+This project is **proprietary** and **all rights are reserved**.
+
+Copyright © 2026 G Nihal. All Rights Reserved.
+
+**You may NOT:**
+- Use, copy, modify, or distribute this software
+- Use this software for any commercial purpose
+- Reverse engineer or extract components
+
+**You may:**
+- View the source code for reference purposes only
+
+For commercial licensing inquiries, contact: **support@sabai-pay.com**
+
+See the [LICENSE](LICENSE) file for complete terms.
 
 👥 Authors
 
