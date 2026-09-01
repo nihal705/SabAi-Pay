@@ -1,368 +1,106 @@
-// backend/routes/authRoutes.js
+const crypto = require('crypto');
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const databaseService = require('../services/databaseService');
+const { verifyToken } = require('../middleware/auth');
+
 const router = express.Router();
-const db = require('../config/database');
+const PHONE = /^[6-9]\d{9}$/;
+const PASSWORD = /^(?=.*[A-Za-z])(?=.*\d).{8,128}$/;
 
-// Helper function to generate JWT
-const generateToken = (userId) => {
-    return jwt.sign({ id: userId }, process.env.JWT_SECRET, {
-        expiresIn: '7d'
-    });
-};
+function tokenFor(userId) {
+  if (!process.env.JWT_SECRET) throw new Error('JWT_SECRET is not configured');
+  return jwt.sign({ id: userId }, process.env.JWT_SECRET, { expiresIn: '1h', issuer: 'sabai-pay', audience: 'sabai-pay-web' });
+}
 
-// Helper function to generate OTP
-const generateOTP = () => {
-    return Math.floor(100000 + Math.random() * 900000).toString();
-};
+function publicUser(user) {
+  return { id: user.id, phone_number: user.phone_number, name: user.name, email: user.email, upi_id: user.upi_id, profile_pic: user.profile_pic, date_of_birth: user.date_of_birth, gender: user.gender, is_verified: user.is_verified, created_at: user.created_at };
+}
 
-// Send OTP
-router.post('/send-otp', async (req, res) => {
-    const { phone_number, purpose = 'register' } = req.body;
-    
-    console.log('Send OTP request:', { phone_number, purpose });
-    
-    if (!phone_number || phone_number.length !== 10) {
-        return res.status(400).json({ success: false, message: 'Valid phone number required' });
-    }
-    
-    const otpCode = generateOTP();
-    const expiresAt = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
-    
-    try {
-        // Delete any existing unverified OTPs for this phone and purpose
-        await db.executeQuery(
-            `DELETE FROM otp_verifications 
-             WHERE phone_number = ? AND purpose = ? AND is_verified = FALSE`,
-            [phone_number, purpose]
-        );
-        
-        // Store OTP in database
-        await db.executeQuery(
-            `INSERT INTO otp_verifications (phone_number, otp_code, purpose, expires_at) 
-             VALUES (?, ?, ?, ?)`,
-            [phone_number, otpCode, purpose, expiresAt]
-        );
-        
-        console.log(`📱 OTP for ${phone_number}: ${otpCode}`);
-        
-        // For demo, always return success with OTP
-        res.json({ 
-            success: true, 
-            message: 'OTP sent successfully',
-            dev_otp: otpCode  // Only in development
-        });
-    } catch (error) {
-        console.error('Send OTP error:', error);
-        res.status(500).json({ success: false, message: 'Failed to send OTP' });
-    }
+function validPhone(phone) { return typeof phone === 'string' && PHONE.test(phone); }
+
+router.post('/check-phone', async (req, res, next) => {
+  try {
+    if (!validPhone(req.body.phone_number)) return res.status(400).json({ success: false, message: 'Enter a valid 10-digit Indian phone number' });
+    const user = await databaseService.getUserByPhone(req.body.phone_number);
+    return res.json({ success: true, exists: Boolean(user), message: user ? 'Account exists. Please sign in.' : 'Account not found. Please register.', user: user ? { name: user.name, phone: user.phone_number } : undefined });
+  } catch (error) { return next(error); }
 });
 
-// Verify OTP
-router.post('/verify-otp', async (req, res) => {
-    const { phone_number, otp, purpose = 'register' } = req.body;
-    
-    console.log('Verify OTP request:', { phone_number, otp, purpose });
-    
-    if (!phone_number || !otp) {
-        return res.status(400).json({ success: false, message: 'Phone number and OTP required' });
-    }
-    
-    try {
-        const [rows] = await db.pool.execute(
-            `SELECT * FROM otp_verifications 
-             WHERE phone_number = ? AND otp_code = ? AND purpose = ? 
-             AND is_verified = FALSE AND expires_at > NOW()
-             ORDER BY id DESC LIMIT 1`,
-            [phone_number, otp, purpose]
-        );
-        
-        if (rows.length === 0) {
-            return res.status(400).json({ success: false, message: 'Invalid or expired OTP' });
-        }
-        
-        // Mark OTP as verified
-        await db.executeQuery(
-            `UPDATE otp_verifications SET is_verified = TRUE WHERE id = ?`,
-            [rows[0].id]
-        );
-        
-        res.json({ success: true, message: 'OTP verified successfully' });
-    } catch (error) {
-        console.error('Verify OTP error:', error);
-        res.status(500).json({ success: false, message: 'Failed to verify OTP' });
-    }
+router.post('/send-otp', async (req, res, next) => {
+  try {
+    const { phone_number: phone, purpose = 'register' } = req.body;
+    if (!validPhone(phone) || !['register', 'login', 'reset'].includes(purpose)) return res.status(400).json({ success: false, message: 'Valid phone number and purpose are required' });
+    const user = await databaseService.getUserByPhone(phone);
+    if (purpose === 'register' && user) return res.status(409).json({ success: false, message: 'Phone number is already registered' });
+    if (purpose !== 'register' && !user) return res.status(404).json({ success: false, message: 'Account not found' });
+
+    const otp = String(crypto.randomInt(100000, 1000000));
+    await databaseService.saveOTP(phone, await bcrypt.hash(otp, 12), purpose);
+    // A production deployment must configure a verified SMS provider. Keeping OTPs
+    // out of normal responses prevents anyone who can inspect the browser from logging in.
+    if (process.env.OTP_PROVIDER !== 'twilio' && process.env.NODE_ENV === 'production') return res.status(503).json({ success: false, message: 'SMS verification is not configured' });
+    const payload = { success: true, message: 'Verification code sent' };
+    if (process.env.ENABLE_DEV_OTP === 'true' && process.env.NODE_ENV !== 'production') payload.dev_otp = otp;
+    return res.status(202).json(payload);
+  } catch (error) { return next(error); }
 });
 
-// Check if phone exists
-router.post('/check-phone', async (req, res) => {
-    const { phone_number } = req.body;
-    
-    console.log('Check phone request:', phone_number);
-    
-    if (!phone_number) {
-        return res.status(400).json({ success: false, message: 'Phone number required' });
+router.post('/verify-otp', async (req, res, next) => {
+  try {
+    const { phone_number: phone, otp, purpose = 'register' } = req.body;
+    if (!validPhone(phone) || !/^\d{6}$/.test(String(otp)) || !['register', 'login', 'reset'].includes(purpose)) return res.status(400).json({ success: false, message: 'Invalid verification request' });
+    const record = await databaseService.getLatestOTP(phone, purpose);
+    if (!record || record.attempts >= 5) return res.status(400).json({ success: false, message: 'Verification code is invalid or expired' });
+    if (!(await bcrypt.compare(String(otp), record.otp_hash))) {
+      await databaseService.markOTPAttempt(record.id, false);
+      return res.status(400).json({ success: false, message: 'Verification code is invalid or expired' });
     }
-    
-    try {
-        const user = await db.getOne(
-            `SELECT id, phone_number, name FROM users WHERE phone_number = ?`,
-            [phone_number]
-        );
-        
-        if (user.success && user.data) {
-            return res.json({ 
-                success: true, 
-                exists: true, 
-                message: 'User exists. Please login.',
-                user: { name: user.data.name, phone: user.data.phone_number }
-            });
-        } else {
-            return res.json({ 
-                success: true, 
-                exists: false, 
-                message: 'Account not found. Please register first.' 
-            });
-        }
-    } catch (error) {
-        console.error('Check phone error:', error);
-        res.status(500).json({ success: false, message: 'Server error' });
-    }
+    await databaseService.markOTPAttempt(record.id, true);
+    return res.json({ success: true, message: 'Phone number verified' });
+  } catch (error) { return next(error); }
 });
 
-
-// Register
-router.post('/register', async (req, res) => {
-    const { phone_number, name, email, password } = req.body;
-    
-    console.log('Register request:', { phone_number, name, email });
-    
-    if (!phone_number || !name) {
-        return res.status(400).json({ success: false, message: 'Phone number and name required' });
-    }
-    
-    try {
-        // Check if user exists
-        const existingUser = await db.getOne(
-            `SELECT id FROM users WHERE phone_number = ?`,
-            [phone_number]
-        );
-        
-        if (existingUser.success && existingUser.data) {
-            return res.status(400).json({ success: false, message: 'User already exists' });
-        }
-        
-        // Hash password if provided
-        let passwordHash = null;
-        if (password) {
-            passwordHash = await bcrypt.hash(password, 10);
-        }
-        
-        // Create upi_id
-        const upiId = `${phone_number}@sabai`;
-        
-        // Insert user
-        const [result] = await db.pool.execute(
-            `INSERT INTO users (phone_number, name, email, password_hash, upi_id, is_verified) 
-             VALUES (?, ?, ?, ?, ?, TRUE)`,
-            [phone_number, name, email || null, passwordHash, upiId]
-        );
-        
-        const userId = result.insertId;
-        
-        // Initialize coin balance
-        await db.executeQuery(
-            `INSERT INTO sabai_coins (user_id, balance) VALUES (?, 0)`,
-            [userId]
-        );
-        
-        // Generate token
-        const token = generateToken(userId);
-        
-        // Get user data
-        const user = await db.getOne(
-            `SELECT id, phone_number, name, email, upi_id, profile_pic, is_verified, created_at 
-             FROM users WHERE id = ?`,
-            [userId]
-        );
-        
-        res.json({
-            success: true,
-            data: {
-                token,
-                user: user.data
-            }
-        });
-    } catch (error) {
-        console.error('Register error:', error);
-        res.status(500).json({ success: false, message: 'Registration failed' });
-    }
+router.post('/register', async (req, res, next) => {
+  try {
+    const { phone_number: phone, name, email = null, password } = req.body;
+    if (!validPhone(phone) || typeof name !== 'string' || name.trim().length < 2 || !PASSWORD.test(password || '')) return res.status(400).json({ success: false, message: 'Provide a valid phone number, name, and a password of at least 8 characters containing letters and numbers' });
+    if (!await databaseService.hasVerifiedOTP(phone, 'register')) return res.status(403).json({ success: false, message: 'Verify your phone number before registering' });
+    if (await databaseService.getUserByPhone(phone)) return res.status(409).json({ success: false, message: 'Phone number is already registered' });
+    const user = await databaseService.createUser(phone, name.trim(), email?.trim()?.toLowerCase() || null, await bcrypt.hash(password, 12));
+    return res.status(201).json({ success: true, data: { token: tokenFor(user.id), user: publicUser(user) } });
+  } catch (error) { return next(error); }
 });
 
-// Login
-router.post('/login', async (req, res) => {
-    const { phone_number, password } = req.body;
-    
-    try {
-        const user = await db.getOne(
-            `SELECT id, phone_number, name, email, password_hash, upi_id, profile_pic, is_verified 
-             FROM users WHERE phone_number = ?`,
-            [phone_number]
-        );
-        
-        if (!user.success || !user.data) {
-            return res.status(401).json({ success: false, message: 'Invalid credentials' });
-        }
-        
-        if (user.data.password_hash) {
-            const isValid = await bcrypt.compare(password, user.data.password_hash);
-            if (!isValid) {
-                return res.status(401).json({ success: false, message: 'Invalid credentials' });
-            }
-        }
-        
-        await db.executeQuery(
-            `UPDATE users SET last_login = NOW() WHERE id = ?`,
-            [user.data.id]
-        );
-        
-        const token = generateToken(user.data.id);
-        
-        res.json({
-            success: true,
-            data: { token, user: user.data }
-        });
-    } catch (error) {
-        console.error('Login error:', error);
-        res.status(500).json({ success: false, message: 'Login failed' });
-    }
+router.post('/login', async (req, res, next) => {
+  try {
+    const { phone_number: phone, password } = req.body;
+    if (!validPhone(phone) || typeof password !== 'string') return res.status(400).json({ success: false, message: 'Phone number and password are required' });
+    const user = await databaseService.getUserByPhone(phone);
+    if (!user || !user.is_active || !user.password_hash || !(await bcrypt.compare(password, user.password_hash))) return res.status(401).json({ success: false, message: 'Invalid phone number or password' });
+    await databaseService.updateLastLogin(user.id);
+    return res.json({ success: true, data: { token: tokenFor(user.id), user: publicUser(user) } });
+  } catch (error) { return next(error); }
 });
 
-router.post('/login-with-otp', async (req, res) => {
-    const { phone_number } = req.body;
-    
-    console.log('Login with OTP request for:', phone_number);
-    
-    if (!phone_number) {
-        return res.status(400).json({ success: false, message: 'Phone number required' });
-    }
-    
-    try {
-        const user = await db.getOne(
-            `SELECT id, phone_number, name, email, upi_id, profile_pic, is_verified 
-             FROM users WHERE phone_number = ?`,
-            [phone_number]
-        );
-        
-        if (!user.success || !user.data) {
-            return res.status(404).json({ success: false, message: 'User not found' });
-        }
-        
-        // Update last login
-        await db.executeQuery(
-            `UPDATE users SET last_login = NOW() WHERE id = ?`,
-            [user.data.id]
-        );
-        
-        const token = generateToken(user.data.id);
-        
-        res.json({
-            success: true,
-            data: { token, user: user.data }
-        });
-    } catch (error) {
-        console.error('Login with OTP error:', error);
-        res.status(500).json({ success: false, message: 'Login failed' });
-    }
+router.post('/login-with-otp', async (req, res, next) => {
+  try {
+    const { phone_number: phone } = req.body;
+    if (!validPhone(phone) || !await databaseService.hasVerifiedOTP(phone, 'login')) return res.status(403).json({ success: false, message: 'Verify your phone number first' });
+    const user = await databaseService.getUserByPhone(phone);
+    if (!user || !user.is_active) return res.status(401).json({ success: false, message: 'Account is unavailable' });
+    await databaseService.updateLastLogin(user.id);
+    return res.json({ success: true, data: { token: tokenFor(user.id), user: publicUser(user) } });
+  } catch (error) { return next(error); }
 });
 
-// Get Profile - FIXED
-router.get('/profile', async (req, res) => {
-    const token = req.headers.authorization?.split(' ')[1];
-    
-    if (!token) {
-        return res.status(401).json({ success: false, message: 'No token provided' });
-    }
-    
-    try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        const user = await db.getOne(
-            `SELECT id, phone_number, name, email, upi_id, profile_pic, date_of_birth, gender, is_verified, created_at 
-             FROM users WHERE id = ?`,
-            [decoded.id]
-        );
-        
-        if (!user.success || !user.data) {
-            return res.status(401).json({ success: false, message: 'User not found' });
-        }
-        
-        res.json({ success: true, data: user.data });
-    } catch (error) {
-        console.error('Profile error:', error);
-        // Return 401 for invalid token
-        res.status(401).json({ success: false, message: 'Invalid token' });
-    }
+router.get('/profile', verifyToken, async (req, res, next) => {
+  try { return res.json({ success: true, data: publicUser(await databaseService.getUserById(req.user.id)) }); } catch (error) { return next(error); }
 });
 
-// Update Profile
-router.put('/profile', async (req, res) => {
-    const token = req.headers.authorization?.split(' ')[1];
-    
-    if (!token) {
-        return res.status(401).json({ success: false, message: 'No token provided' });
-    }
-    
-    try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        const { name, email, profile_pic, date_of_birth, gender } = req.body;
-        
-        const updates = [];
-        const values = [];
-        
-        if (name) {
-            updates.push('name = ?');
-            values.push(name);
-        }
-        if (email) {
-            updates.push('email = ?');
-            values.push(email);
-        }
-        if (profile_pic) {
-            updates.push('profile_pic = ?');
-            values.push(profile_pic);
-        }
-        if (date_of_birth) {
-            updates.push('date_of_birth = ?');
-            values.push(date_of_birth);
-        }
-        if (gender) {
-            updates.push('gender = ?');
-            values.push(gender);
-        }
-        
-        if (updates.length === 0) {
-            return res.status(400).json({ success: false, message: 'No updates provided' });
-        }
-        
-        values.push(decoded.id);
-        
-        await db.executeQuery(
-            `UPDATE users SET ${updates.join(', ')} WHERE id = ?`,
-            values
-        );
-        
-        const user = await db.getOne(
-            `SELECT id, phone_number, name, email, upi_id, profile_pic, date_of_birth, gender, is_verified, created_at 
-             FROM users WHERE id = ?`,
-            [decoded.id]
-        );
-        
-        res.json({ success: true, data: user.data });
-    } catch (error) {
-        console.error('Update profile error:', error);
-        res.status(500).json({ success: false, message: 'Failed to update profile' });
-    }
+router.put('/profile', verifyToken, async (req, res, next) => {
+  try { return res.json({ success: true, data: publicUser(await databaseService.updateUserProfile(req.user.id, req.body)) }); } catch (error) { return next(error); }
 });
 
 module.exports = router;

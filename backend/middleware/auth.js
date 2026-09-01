@@ -2,8 +2,7 @@
 // COMPLETE FIXED VERSION
 
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');
-const constants = require('../utils/constants');
+const databaseService = require('../services/databaseService');
 
 class AuthMiddleware {
     
@@ -19,7 +18,10 @@ class AuthMiddleware {
             }
             
             const token = authHeader.split(' ')[1];
-            const decoded = jwt.verify(token, process.env.JWT_SECRET || 'your-secret-key');
+            if (!process.env.JWT_SECRET) {
+                throw new Error('JWT_SECRET is not configured');
+            }
+            const decoded = jwt.verify(token, process.env.JWT_SECRET);
             
             // Handle both possible token structures
             const userId = decoded.userId || decoded.id;
@@ -31,9 +33,9 @@ class AuthMiddleware {
                 });
             }
             
-            const user = await User.findById(userId);
+            const user = await databaseService.getUserById(userId);
             
-            if (!user.success || !user.data || !user.data.is_active) {
+            if (!user || !user.is_active) {
                 return res.status(401).json({
                     success: false,
                     message: 'User not found or inactive'
@@ -41,11 +43,11 @@ class AuthMiddleware {
             }
             
             req.user = {
-                id: user.data.id,
-                phone_number: user.data.phone_number,
-                name: user.data.name,
-                upi_id: user.data.upi_id,
-                is_verified: user.data.is_verified
+                id: user.id,
+                phone_number: user.phone_number,
+                name: user.name,
+                upi_id: user.upi_id,
+                is_verified: user.is_verified
             };
             
             next();
@@ -81,17 +83,18 @@ class AuthMiddleware {
             
             if (authHeader && authHeader.startsWith('Bearer ')) {
                 const token = authHeader.split(' ')[1];
-                const decoded = jwt.verify(token, process.env.JWT_SECRET || 'your-secret-key');
+                if (!process.env.JWT_SECRET) throw new Error('JWT_SECRET is not configured');
+                const decoded = jwt.verify(token, process.env.JWT_SECRET);
                 const userId = decoded.userId || decoded.id;
                 
-                const user = await User.findById(userId);
+                const user = await databaseService.getUserById(userId);
                 
-                if (user.success && user.data && user.data.is_active) {
+                if (user && user.is_active) {
                     req.user = {
-                        id: user.data.id,
-                        phone_number: user.data.phone_number,
-                        name: user.data.name,
-                        upi_id: user.data.upi_id
+                        id: user.id,
+                        phone_number: user.phone_number,
+                        name: user.name,
+                        upi_id: user.upi_id
                     };
                 }
             }
@@ -115,9 +118,8 @@ class AuthMiddleware {
     }
     
     static async requireUpiPin(req, res, next) {
-        const user = await User.findById(req.user.id);
-        
-        if (!user.success || !user.data.pin_hash) {
+        const accountId = req.body?.accountId || req.body?.bank_account_id || req.params?.accountId;
+        if (!accountId || !(await databaseService.hasUpiPin(accountId))) {
             return res.status(403).json({
                 success: false,
                 message: 'UPI PIN not set. Please set your UPI PIN first.'
@@ -176,9 +178,10 @@ class AuthMiddleware {
     }
     
     static generateToken(userId) {
+        if (!process.env.JWT_SECRET) throw new Error('JWT_SECRET is not configured');
         return jwt.sign(
             { id: userId },
-            process.env.JWT_SECRET || 'your-secret-key',
+            process.env.JWT_SECRET,
             { expiresIn: process.env.JWT_EXPIRY || '7d' }
         );
     }
@@ -194,7 +197,8 @@ class AuthMiddleware {
                 });
             }
             
-            const decoded = jwt.verify(refreshToken, process.env.JWT_SECRET || 'your-secret-key');
+            if (!process.env.JWT_SECRET) throw new Error('JWT_SECRET is not configured');
+            const decoded = jwt.verify(refreshToken, process.env.JWT_SECRET);
             const userId = decoded.userId || decoded.id;
             
             const newToken = this.generateToken(userId);
