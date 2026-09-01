@@ -80,8 +80,25 @@ class MerchantDataService {
         
         console.log(`Found ${restaurants.length} restaurants in ${city}`);
         
-        // If search term provided, search within menus
+        // A restaurant name must be resolved before an item-name search. The old
+        // implementation searched only menu items, so "Paradise" could never
+        // find the existing "Paradise Biryani" restaurant.
         if (searchTerm && searchTerm !== 'null' && searchTerm !== 'undefined') {
+            const normalizedQuery = String(searchTerm).toLowerCase().replace(/[^a-z0-9]/g, ' ').trim();
+            const queryWords = normalizedQuery.split(/\s+/).filter(Boolean);
+            const restaurantMatches = restaurants.filter((restaurant) => {
+                const normalizedName = String(restaurant.name || '').toLowerCase().replace(/[^a-z0-9]/g, ' ');
+                return normalizedName.includes(normalizedQuery) || queryWords.every((word) => normalizedName.includes(word));
+            });
+            if (restaurantMatches.length) {
+                const restaurant = restaurantMatches[0];
+                const menu = await this.getRestaurantMenu(merchant, city, restaurant.id);
+                return {
+                    type: 'restaurant_menu', merchant, restaurant,
+                    menu: (menu || []).map((item) => ({ ...item, imageUrl: item.imageUrl || item.image || '/images/items/default.png', restaurantName: restaurant.name, restaurantId: restaurant.id, restaurantRating: restaurant.rating, deliveryTime: restaurant.deliveryTime })),
+                    total: (menu || []).length
+                };
+            }
             const menuResults = await this.searchInMenus(merchant, city, restaurants, searchTerm);
             return {
                 type: 'search_results',
@@ -289,7 +306,12 @@ class MerchantDataService {
         try {
             const menuPath = path.join(this.dataPath, merchant, 'locations', city.toLowerCase(), 'menu', `${restaurantId}.json`);
             const menu = await this.readJSON(menuPath);
-            return menu || [];
+            return (menu || []).map((item) => {
+                const sourceImage = item.imageUrl || item.image || '';
+                // Catalog exports use .jpg while the bundled web assets are PNGs.
+                const imageUrl = sourceImage ? sourceImage.replace(/\.jpe?g$/i, '.png') : '/images/items/default.png';
+                return { ...item, imageUrl };
+            });
         } catch (error) {
             console.error('Error loading menu:', error);
             return [];
