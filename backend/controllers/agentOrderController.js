@@ -226,7 +226,7 @@ class AgentOrderController {
                 name: item.name,
                 price: item.price || 0,
                 id: item.id || `${merchant}_${item.name.replace(/\s/g, '_')}`,
-                imageUrl: item.imageUrl || '/images/items/default.jpg',
+                imageUrl: item.imageUrl || item.image || '/images/items/default.png',
                 category: item.category || 'General',
                 unit: item.unit || 'piece',
                 isVeg: item.isVeg || false,
@@ -396,7 +396,15 @@ class AgentOrderController {
                 return res.json({
                     success: true,
                     data: {
-                        response: merchantData,
+                        response: {
+                            type: 'products_grid',
+                            merchant,
+                            products: merchantData.menu,
+                            restaurantName: merchantData.restaurant?.name,
+                            restaurantRating: merchantData.restaurant?.rating,
+                            deliveryTime: merchantData.restaurant?.deliveryTime,
+                            message: `Menu for ${merchantData.restaurant?.name || restaurantName}`
+                        },
                         requiresAction: 'select_items_grid',
                         sessionId: session.id,
                         merchant: merchant
@@ -473,7 +481,7 @@ class AgentOrderController {
             return res.json({
                 success: true,
                 data: {
-                    response: `I couldn't find a restaurant named "${restaurantName}" on ${merchant}. Please try another restaurant name.\n\nTip: Try "Paradise", "Kanti Sweets", or "McDonald's"`,
+                    response: `I couldn't find a restaurant named "${restaurantName}" on ${merchant}. Please try another restaurant name.\n\nTip: Try "Paradise Biryani", "Meghana Foods", or "McDonald's"`,
                     requiresAction: 'retry'
                 }
             });
@@ -620,7 +628,7 @@ class AgentOrderController {
                     quantity: quantity,
                     total: (matchedItem.price || 0) * quantity,
                     unit: matchedItem.unit || 'piece',
-                    imageUrl: matchedItem.imageUrl || '/images/items/default-food.jpg',
+                imageUrl: matchedItem.imageUrl || matchedItem.image || '/images/items/default.png',
                     category: matchedItem.category || 'General',
                     isVeg: matchedItem.isVeg || false,
                     restaurantName: matchedItem.restaurantName,
@@ -1092,7 +1100,8 @@ class AgentOrderController {
                         success: true,
                         data: {
                             response: geminiResponse.response,
-                            requiresAction: 'general_chat'
+                            sessionId: session.id,
+                            requiresAction: false
                         }
                     });
                 } catch (geminiError) {
@@ -1101,6 +1110,7 @@ class AgentOrderController {
                         success: true,
                         data: {
                             response: "I'm having trouble connecting to my AI. Please try again or rephrase your request.",
+                            sessionId: session.id,
                             requiresAction: 'retry'
                         }
                     });
@@ -1453,7 +1463,7 @@ class AgentOrderController {
                 }
                 
                 if (orderId) {
-                    const order = await orderService.getOrder(orderId);
+                    const order = await orderService.getOrder(orderId, req.user.id);
                     if (order) {
                         return res.json({
                             success: true,
@@ -2102,8 +2112,7 @@ class AgentOrderController {
     
     async getUserOrders(req, res) {
         try {
-            let userId = req.user?.id || req.query.userId || '4';
-            userId = String(userId);
+            const userId = String(req.user.id);
             let orders = await orderService.getUserOrders(userId) || [];
             let scheduled = await dbService.getScheduledOrders(userId) || [];
             const allOrders = [...orders, ...scheduled];
@@ -2118,8 +2127,8 @@ class AgentOrderController {
     async getOrder(req, res) {
         try {
             const { orderId } = req.params;
-            const userId = req.user?.id ? String(req.user.id) : '4';
-            let order = await orderService.getOrder(orderId);
+            const userId = req.user.id;
+            let order = await orderService.getOrder(orderId, userId);
             if (!order) {
                 const scheduled = await dbService.getScheduledOrders(userId);
                 order = scheduled.find(o => o.id === orderId);
@@ -2149,7 +2158,8 @@ class AgentOrderController {
     async getOrderStatus(req, res) {
         try {
             const { orderId } = req.params;
-            let order = await orderService.getOrder(orderId);
+            const userId = req.user.id;
+            let order = await orderService.getOrder(orderId, userId);
             if (!order) return res.status(404).json({ success: false, error: 'Order not found' });
             res.json({ success: true, data: { status: order.status || 'confirmed', tracking: order.tracking || [], estimatedDelivery: order.estimatedDelivery || '45 minutes' } });
         } catch (error) {
@@ -2219,6 +2229,9 @@ class AgentOrderController {
         try {
             const { amount } = req.body;
             const razorpayOrder = await paymentService.createOrder(amount, 'INR', `order_${Date.now()}`);
+            if (!razorpayOrder.success) {
+                return res.status(503).json({ success: false, message: razorpayOrder.error || 'Payment provider is unavailable' });
+            }
             res.json({ success: true, data: { razorpayOrder: razorpayOrder.order } });
         } catch (error) {
             console.error('Create order error:', error);
