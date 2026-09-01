@@ -17,9 +17,8 @@ class PaymentService {
             const keySecret = process.env.RAZORPAY_KEY_SECRET;
             
             if (!keyId || !keySecret) {
-                console.warn('⚠️ Razorpay credentials not found - using demo mode');
-                console.log('💡 To enable real payments, add RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET to .env file');
-                this.demoMode = true;
+                console.warn('⚠️ Razorpay credentials not found - payment creation is disabled');
+                this.demoMode = process.env.PAYMENT_MODE === 'demo' && process.env.NODE_ENV !== 'production';
                 return;
             }
             
@@ -40,8 +39,7 @@ class PaymentService {
     // Create order for payment
     async createOrder(amount, currency = 'INR', receipt = null, notes = {}) {
         try {
-            // Demo mode for testing
-            if (this.demoMode || !this.razorpay) {
+            if (this.demoMode) {
                 console.log(`💰 DEMO MODE: Creating mock payment order for ₹${amount}`);
                 
                 // Generate a realistic looking order ID
@@ -58,6 +56,12 @@ class PaymentService {
                 };
             }
 
+            if (!this.razorpay) {
+                return { success: false, error: 'Payment provider is not configured' };
+            }
+            if (!Number.isFinite(Number(amount)) || Number(amount) <= 0) {
+                return { success: false, error: 'Invalid payment amount' };
+            }
             const options = {
                 amount: Math.round(amount * 100), // Convert to paise and ensure integer
                 currency: currency,
@@ -82,28 +86,18 @@ class PaymentService {
             };
             
         } catch (error) {
-            console.error('❌ Order creation failed:', error.message);
-            
-            // Fallback to demo mode
-            console.log('⚠️ Falling back to demo mode');
-            return {
-                success: true,
-                order: {
-                    id: 'order_' + Date.now(),
-                    amount: amount,
-                    currency: currency,
-                    receipt: receipt || 'receipt_' + Date.now()
-                }
-            };
+            // Razorpay's SDK commonly nests the useful error under `error` rather
+            // than `message`; preserve a safe description for the API response.
+            const providerMessage = error?.error?.description || error?.description || error?.message || 'Razorpay rejected the order request';
+            const providerCode = error?.error?.code || error?.code || error?.statusCode;
+            console.error('❌ Order creation failed:', { code: providerCode, message: providerMessage });
+            return { success: false, error: `Razorpay could not create the verification order: ${providerMessage}` };
         }
     }
 
     // Verify payment signature
     verifyPayment(orderId, paymentId, signature) {
-        if (this.demoMode) {
-            console.log('💰 DEMO MODE: Auto-verifying payment');
-            return true; // Auto-verify in demo mode
-        }
+        if (this.demoMode) return false;
         
         try {
             const body = orderId + '|' + paymentId;
