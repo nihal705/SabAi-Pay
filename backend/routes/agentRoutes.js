@@ -8,9 +8,7 @@ const dbService = require('../services/databaseService');
 const { verifyToken } = require('../middleware/auth');
 
 // Helper to get user ID
-const getUserId = (req) => {
-    return req.user?.id ? String(req.user.id) : '1';
-};
+const getUserId = (req) => String(req.user.id);
 
 // Generate conversation ID
 const generateConversationId = () => `conv_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
