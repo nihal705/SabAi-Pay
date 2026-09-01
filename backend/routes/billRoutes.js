@@ -4,7 +4,6 @@
 const express = require('express');
 const router = express.Router();
 const dbService = require('../services/databaseService');
-const db = require('../config/database');
 const { verifyToken } = require('../middleware/auth');
 
 // Get all bills (pending and paid)
@@ -70,7 +69,7 @@ router.put('/:id', verifyToken, async (req, res) => {
     const { auto_pay, reserve_pay_enabled, reminder_days, bank_account_id, bank_name, bank_account_last4 } = req.body;
     
     try {
-        await dbService.updateBill(parseInt(req.params.id), req.user.id, {
+        await dbService.updateBill(req.params.id, req.user.id, {
             auto_pay, reserve_pay_enabled, reminder_days, bank_account_id, bank_name, bank_account_last4
         });
         
@@ -102,7 +101,7 @@ router.post('/:id/pay', verifyToken, async (req, res) => {
             await dbService.updateCoinBalance(req.user.id, cashback_earned, true);
         }
         
-        await dbService.markBillAsPaid(parseInt(req.params.id), req.user.id, {
+        await dbService.markBillAsPaid(req.params.id, req.user.id, {
             payment_method,
             payment_breakdown,
             cashback_earned,
@@ -119,29 +118,12 @@ router.post('/:id/pay', verifyToken, async (req, res) => {
 // Delete bill - FIXED VERSION
 router.delete('/:id', verifyToken, async (req, res) => {
     try {
-        const billId = parseInt(req.params.id);
+        const billId = req.params.id;
         const userId = req.user.id;
         
         console.log(`Deleting bill ${billId} for user ${userId}`);
         
-        // Use the database connection pool directly
-        const pool = db.pool;
-        
-        // First, delete associated auto-pay orders
-        await pool.execute(
-            `DELETE FROM auto_pay_orders WHERE bill_id = ? AND user_id = ?`,
-            [billId, userId]
-        );
-        
-        // Then delete the bill
-        const [result] = await pool.execute(
-            `DELETE FROM bills WHERE id = ? AND user_id = ?`,
-            [billId, userId]
-        );
-        
-        if (result.affectedRows === 0) {
-            return res.status(404).json({ success: false, message: 'Bill not found' });
-        }
+        await dbService.deleteBill(billId, userId);
         
         console.log(`Bill ${billId} deleted successfully`);
         res.json({ success: true, message: 'Bill deleted successfully' });

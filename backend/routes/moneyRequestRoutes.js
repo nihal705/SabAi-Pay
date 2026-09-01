@@ -46,7 +46,10 @@ router.put('/:requestId/status', verifyToken, async (req, res) => {
     const { status } = req.body;
     
     try {
-        await dbService.updateMoneyRequestStatus(req.params.requestId, status);
+        if (!['accepted', 'declined', 'cancelled'].includes(status)) {
+            return res.status(400).json({ success: false, message: 'Invalid request status' });
+        }
+        await dbService.updateMoneyRequestStatus(req.params.requestId, status, req.user.id);
         res.json({ success: true, message: 'Request updated' });
     } catch (error) {
         console.error('Update request error:', error);

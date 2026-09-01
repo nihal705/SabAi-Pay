@@ -24,6 +24,12 @@ router.post('/', verifyToken, async (req, res) => {
     const { mobile_number, operator, operator_id, amount, circle, transaction_id, cashback_earned, payment_method } = req.body;
     
     try {
+        if (!/^[6-9]\d{9}$/.test(String(mobile_number)) || !operator || !Number.isFinite(Number(amount)) || Number(amount) <= 0 || Number(amount) > 100000) {
+            return res.status(400).json({ success: false, message: 'Provide a valid mobile number, operator, and recharge amount' });
+        }
+        if (!transaction_id) {
+            return res.status(400).json({ success: false, message: 'A server-authorized transaction ID is required' });
+        }
         await dbService.addRecentRecharge(req.user.id, {
             mobileNumber: mobile_number,
             operator,

@@ -119,6 +119,9 @@ router.post('/process-payment', verifyToken, async (req, res) => {
     const { merchant, amount, transactionId, description } = req.body;
     
     try {
+        if (!merchant || !Number.isFinite(Number(amount)) || Number(amount) <= 0 || !transactionId) {
+            return res.status(400).json({ success: false, message: 'Merchant, positive amount, and transaction ID are required' });
+        }
         await dbService.updateReserveLimitSpent(req.user.id, merchant, amount);
         
         await dbService.createTransaction({

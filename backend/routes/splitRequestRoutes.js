@@ -64,8 +64,10 @@ router.put('/:splitId/status', verifyToken, async (req, res) => {
     const { status } = req.body;
     
     try {
-        // Update logic would go here
-        // await dbService.updateSplitRequestStatus(req.params.splitId, status);
+        if (!['pending', 'active', 'completed', 'cancelled'].includes(status)) {
+            return res.status(400).json({ success: false, message: 'Invalid split request status' });
+        }
+        await dbService.updateSplitRequestStatus(req.params.splitId, status, req.user.id);
         res.json({ success: true, message: 'Split request updated' });
     } catch (error) {
         console.error('Update split request error:', error);
@@ -76,7 +78,7 @@ router.put('/:splitId/status', verifyToken, async (req, res) => {
 // Delete split request
 router.delete('/:splitId', verifyToken, async (req, res) => {
     try {
-        // Delete logic would go here
+        await dbService.deleteSplitRequest(req.params.splitId, req.user.id);
         res.json({ success: true, message: 'Split request deleted' });
     } catch (error) {
         console.error('Delete split request error:', error);

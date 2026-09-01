@@ -5,14 +5,19 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const router = express.Router();
 const dbService = require('../services/databaseService');
+const paymentService = require('../services/paymentService');
 const { verifyToken } = require('../middleware/auth');
+
+// Short-lived server-side records bind a Razorpay checkout order to the person
+// who initiated it. They are deliberately not sent to the browser.
+const bankVerificationOrders = new Map();
 
 // ============ PIN MANAGEMENT ============
 
 // Check if bank account has PIN
 router.get('/accounts/:id/has-pin', verifyToken, async (req, res) => {
     try {
-        const accountId = parseInt(req.params.id);
+        const accountId = req.params.id;
         const userId = req.user.id;
         
         const account = await dbService.getBankAccountById(accountId, userId);
@@ -39,18 +44,18 @@ router.post('/verify-pin', verifyToken, async (req, res) => {
     }
     
     try {
-        const account = await dbService.getBankAccountById(parseInt(accountId), userId);
+        const account = await dbService.getBankAccountById(accountId, userId);
         if (!account) {
             return res.status(404).json({ success: false, message: 'Account not found' });
         }
         
-        const isValid = await dbService.verifyUpiPin(parseInt(accountId), pin);
+        const isValid = await dbService.verifyUpiPin(accountId, pin);
         
         if (!isValid) {
             return res.status(401).json({ success: false, message: 'Invalid PIN' });
         }
         
-        res.json({ success: true, message: 'PIN verified' });
+        res.json({ success: true, message: 'PIN set successfully', data: { success: true } });
     } catch (error) {
         console.error('Verify PIN error:', error);
         res.status(500).json({ success: false, message: 'Verification failed: ' + error.message });
@@ -60,7 +65,7 @@ router.post('/verify-pin', verifyToken, async (req, res) => {
 // Set UPI PIN
 router.post('/accounts/:id/pin', verifyToken, async (req, res) => {
     const { pin } = req.body;
-    const accountId = parseInt(req.params.id);
+    const accountId = req.params.id;
     const userId = req.user.id;
     
     if (!pin || pin.length !== 4 || !/^\d{4}$/.test(pin)) {
@@ -93,12 +98,12 @@ router.post('/verify-pin', verifyToken, async (req, res) => {
     }
     
     try {
-        const account = await dbService.getBankAccountById(parseInt(accountId), userId);
+        const account = await dbService.getBankAccountById(accountId, userId);
         if (!account) {
             return res.status(404).json({ success: false, message: 'Account not found' });
         }
         
-        const isValid = await dbService.verifyUpiPin(parseInt(accountId), pin);
+        const isValid = await dbService.verifyUpiPin(accountId, pin);
         
         if (!isValid) {
             return res.status(401).json({ success: false, message: 'Invalid PIN' });
@@ -142,7 +147,7 @@ router.post('/accounts', verifyToken, async (req, res) => {
 // Delete bank account
 router.delete('/accounts/:id', verifyToken, async (req, res) => {
     try {
-        await dbService.deleteBankAccount(parseInt(req.params.id), req.user.id);
+        await dbService.deleteBankAccount(req.params.id, req.user.id);
         res.json({ success: true, message: 'Account deleted' });
     } catch (error) {
         console.error('Delete account error:', error);
@@ -153,7 +158,7 @@ router.delete('/accounts/:id', verifyToken, async (req, res) => {
 // Set primary bank account
 router.put('/accounts/:id/primary', verifyToken, async (req, res) => {
     try {
-        await dbService.setPrimaryBankAccount(parseInt(req.params.id), req.user.id);
+        await dbService.setPrimaryBankAccount(req.params.id, req.user.id);
         res.json({ success: true, message: 'Primary account updated' });
     } catch (error) {
         console.error('Set primary error:', error);
@@ -166,7 +171,7 @@ router.put('/accounts/:id/primary', verifyToken, async (req, res) => {
 // Get balance
 router.get('/balance/:accountId', verifyToken, async (req, res) => {
     try {
-        const account = await dbService.getBankAccountById(parseInt(req.params.accountId), req.user.id);
+        const account = await dbService.getBankAccountById(req.params.accountId, req.user.id);
         res.json({ success: true, data: { balance: account?.balance || 0 } });
     } catch (error) {
         console.error('Get balance error:', error);
@@ -183,12 +188,12 @@ router.post('/deposit', verifyToken, async (req, res) => {
     }
     
     try {
-        const account = await dbService.getBankAccountById(parseInt(accountId), req.user.id);
+        const account = await dbService.getBankAccountById(accountId, req.user.id);
         if (!account) {
             return res.status(404).json({ success: false, message: 'Account not found' });
         }
         
-        const newBalance = await dbService.updateBankBalance(parseInt(accountId), amount, true);
+        const newBalance = await dbService.updateBankBalance(accountId, amount, true);
         
         const transactionId = `DEP${Date.now()}`;
         await dbService.createTransaction({
@@ -198,7 +203,7 @@ router.post('/deposit', verifyToken, async (req, res) => {
             amount: amount,
             status: 'success',
             bank_name: account.bank_name,
-            bank_account_id: parseInt(accountId),
+            bank_account_id: accountId,
             description: `Deposit of ₹${amount}`
         });
         
@@ -220,7 +225,7 @@ router.post('/withdraw', verifyToken, async (req, res) => {
     }
     
     try {
-        const account = await dbService.getBankAccountById(parseInt(accountId), req.user.id);
+        const account = await dbService.getBankAccountById(accountId, req.user.id);
         if (!account) {
             return res.status(404).json({ success: false, message: 'Account not found' });
         }
@@ -230,7 +235,7 @@ router.post('/withdraw', verifyToken, async (req, res) => {
             return res.status(400).json({ success: false, message: 'Insufficient balance' });
         }
         
-        const newBalance = await dbService.updateBankBalance(parseInt(accountId), amount, false);
+        const newBalance = await dbService.updateBankBalance(accountId, amount, false);
         
         const transactionId = `WTD${Date.now()}`;
         await dbService.createTransaction({
@@ -240,7 +245,7 @@ router.post('/withdraw', verifyToken, async (req, res) => {
             amount: amount,
             status: 'success',
             bank_name: account.bank_name,
-            bank_account_id: parseInt(accountId),
+            bank_account_id: accountId,
             description: `Withdrawal of ₹${amount} from ${account.bank_name}`,
             gems_used: 0,
             reserve_used: 0,
@@ -252,6 +257,64 @@ router.post('/withdraw', verifyToken, async (req, res) => {
     } catch (error) {
         console.error('Withdraw error DETAILS:', error);
         res.status(500).json({ success: false, message: error.message });
+    }
+});
+
+// Test-mode bank-link verification. Razorpay credentials stay on the server;
+// the browser receives only the public key and a provider-created order ID.
+router.post('/verification-order', verifyToken, async (req, res) => {
+    try {
+        if (!process.env.RAZORPAY_KEY_ID || !process.env.RAZORPAY_KEY_SECRET || !paymentService.razorpay) {
+            return res.status(503).json({ success: false, message: 'Razorpay test credentials are not configured on the backend' });
+        }
+        const result = await paymentService.createOrder(1, 'INR', `bank_link_${Date.now()}`, { user_id: req.user.id, purpose: 'bank_link_verification' });
+        if (!result.success) return res.status(503).json({ success: false, message: result.error || 'Could not create Razorpay verification order' });
+        bankVerificationOrders.set(result.order.id, { userId: req.user.id, expiresAt: Date.now() + (15 * 60 * 1000) });
+        res.json({ success: true, data: { key: process.env.RAZORPAY_KEY_ID, orderId: result.order.id, amount: 100, currency: 'INR' } });
+    } catch (error) {
+        console.error('Create bank verification order error:', error);
+        res.status(500).json({ success: false, message: 'Could not start bank verification' });
+    }
+});
+
+router.post('/verified-accounts', verifyToken, async (req, res) => {
+    const { razorpay_order_id, razorpay_payment_id, razorpay_signature, account } = req.body;
+    if (!razorpay_order_id || !razorpay_payment_id || !razorpay_signature || !account) return res.status(400).json({ success: false, message: 'Incomplete payment verification' });
+    try {
+        const verification = bankVerificationOrders.get(razorpay_order_id);
+        if (!verification || verification.userId !== req.user.id || verification.expiresAt < Date.now()) {
+            bankVerificationOrders.delete(razorpay_order_id);
+            return res.status(400).json({ success: false, message: 'This bank verification session has expired. Please try again.' });
+        }
+        if (!paymentService.verifyPayment(razorpay_order_id, razorpay_payment_id, razorpay_signature)) return res.status(400).json({ success: false, message: 'Razorpay payment verification failed' });
+        const paymentResult = await paymentService.getPaymentDetails(razorpay_payment_id);
+        if (!paymentResult.success || paymentResult.payment.status !== 'captured' || Number(paymentResult.payment.amount) !== 100) {
+            return res.status(400).json({ success: false, message: 'The ₹1 Razorpay verification payment was not completed' });
+        }
+        const saved = await dbService.addBankAccount(req.user.id, account);
+        bankVerificationOrders.delete(razorpay_order_id);
+        res.json({ success: true, data: saved });
+    } catch (error) {
+        console.error('Verify bank link error:', error);
+        res.status(500).json({ success: false, message: 'Could not save verified bank account' });
+    }
+});
+
+// The SQL function locks both account rows, updates both balances and records the
+// transfer in one database transaction. Never move balances in the browser.
+router.post('/transfer', verifyToken, async (req, res) => {
+    const { fromAccountId, toAccountId, amount, pin } = req.body;
+    if (!fromAccountId || !toAccountId || fromAccountId === toAccountId || !Number.isFinite(Number(amount)) || Number(amount) <= 0) {
+        return res.status(400).json({ success: false, message: 'Provide two different accounts and a valid amount' });
+    }
+    try {
+        const pinIsValid = await dbService.verifyUpiPin(fromAccountId, pin);
+        if (!pinIsValid) return res.status(400).json({ success: false, message: 'Incorrect or unavailable UPI PIN' });
+        const data = await dbService.transferBetweenBankAccounts(req.user.id, fromAccountId, toAccountId, amount);
+        res.json({ success: true, data });
+    } catch (error) {
+        const message = error.message || 'Transfer failed';
+        res.status(/insufficient|not found|does not belong/i.test(message) ? 400 : 500).json({ success: false, message });
     }
 });
 

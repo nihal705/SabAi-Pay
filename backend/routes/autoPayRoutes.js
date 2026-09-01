@@ -20,8 +20,8 @@ router.post('/orders', verifyToken, async (req, res) => {
     const orderData = req.body;
     
     try {
-        const orderId = await dbService.createAutoPayOrder(req.user.id, orderData);
-        res.json({ success: true, data: { orderId } });
+        const order = await dbService.createAutoPayOrder(req.user.id, orderData);
+        res.status(201).json({ success: true, data: { orderId: order.order_id, order } });
     } catch (error) {
         console.error('Create auto-pay order error:', error);
         res.status(500).json({ success: false, message: 'Failed to create auto-pay order' });
@@ -34,7 +34,7 @@ router.put('/orders/:orderId', verifyToken, async (req, res) => {
     const updates = req.body;
     
     try {
-        await dbService.updateAutoPayOrder(orderId, updates);
+        await dbService.updateAutoPayOrder(orderId, req.user.id, updates);
         res.json({ success: true, message: 'Auto-pay order updated' });
     } catch (error) {
         console.error('Update auto-pay order error:', error);
@@ -48,23 +48,7 @@ router.delete('/orders/:orderId', verifyToken, async (req, res) => {
         const { orderId } = req.params;
         const userId = req.user.id;
         
-        console.log(`Deleting auto-pay order ${orderId} for user ${userId}`);
-        
-        // First check if order exists and belongs to user
-        const [orders] = await db.pool.execute(
-            `SELECT * FROM auto_pay_orders WHERE id = ? AND user_id = ?`,
-            [orderId, userId]
-        );
-        
-        if (orders.length === 0) {
-            return res.status(404).json({ success: false, message: 'Order not found' });
-        }
-        
-        // Delete the order
-        await db.pool.execute(
-            `DELETE FROM auto_pay_orders WHERE id = ? AND user_id = ?`,
-            [orderId, userId]
-        );
+        await dbService.deleteAutoPayOrder(orderId, userId);
         
         res.json({ success: true, message: 'Auto-pay order deleted' });
     } catch (error) {
@@ -77,7 +61,7 @@ router.post('/orders/:orderId/cancel', verifyToken, async (req, res) => {
     const { orderId } = req.params;
     
     try {
-        await dbService.updateAutoPayOrderStatus(orderId, 'cancelled');
+        await dbService.updateAutoPayOrderStatus(orderId, 'cancelled', req.user.id);
         res.json({ success: true, message: 'Auto-pay order cancelled' });
     } catch (error) {
         console.error('Cancel auto-pay order error:', error);
@@ -93,7 +77,7 @@ router.get('/history', verifyToken, async (req, res) => {
         
         orders.forEach(order => {
             if (order.execution_history) {
-                const executions = JSON.parse(order.execution_history);
+                const executions = Array.isArray(order.execution_history) ? order.execution_history : JSON.parse(order.execution_history);
                 executions.forEach(exec => {
                     history.push({
                         id: `${order.order_id}_${exec.date}`,

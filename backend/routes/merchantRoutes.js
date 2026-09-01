@@ -126,17 +126,9 @@ router.post('/connect', async (req, res) => {
     
     const result = await merchantConnectionService.connectMerchant(userId, merchantId, connectionData);
     
-    if (location && location.address && result.success) {
-      if (!global.userLocations) global.userLocations = {};
-      if (!global.userLocations[userId]) global.userLocations[userId] = {};
-      global.userLocations[userId][merchantId] = {
-        address: location.address,
-        city: location.city,
-        area: location.area,
-        coordinates: location.coordinates,
-        validatedAt: new Date().toISOString()
-      };
-      result.data.location = global.userLocations[userId][merchantId];
+    if (location?.address && result.success) {
+      const saved = await dbService.updateMerchantLocation(userId, merchantId, location);
+      result.data.location = saved;
     }
     
     res.json(result);
@@ -237,23 +229,13 @@ router.post('/save-location', async (req, res) => {
       });
     }
     
-    if (!global.userLocations) global.userLocations = {};
-    if (!global.userLocations[userId]) global.userLocations[userId] = {};
-    
-    global.userLocations[userId][merchantId] = {
-      address: address,
-      city: city,
-      area: area,
-      coordinates: coordinates,
-      savedAt: new Date().toISOString(),
-      isTemporary: false
-    };
+    const location = await dbService.updateMerchantLocation(userId, merchantId, { address, city, area, coordinates });
     
     res.json({
       success: true,
       data: {
         message: `Location saved for merchant`,
-        location: global.userLocations[userId][merchantId]
+        location
       }
     });
   } catch (error) {
@@ -271,7 +253,7 @@ router.get('/location/:merchantId', async (req, res) => {
     const userId = String(req.user.id);
     const { merchantId } = req.params;
     
-    const location = global.userLocations?.[userId]?.[merchantId] || null;
+    const location = await dbService.getMerchantConnection(userId, merchantId);
     
     res.json({
       success: true,
@@ -292,9 +274,7 @@ router.delete('/location/:merchantId', async (req, res) => {
     const userId = String(req.user.id);
     const { merchantId } = req.params;
     
-    if (global.userLocations && global.userLocations[userId]) {
-      delete global.userLocations[userId][merchantId];
-    }
+    await dbService.updateMerchantLocation(userId, merchantId, { address: null, city: null, area: null, coordinates: null });
     
     res.json({
       success: true,
