@@ -16,10 +16,55 @@ const router = express.Router();
 const agentOrderController = require('../controllers/agentOrderController');
 const dbService = require('../services/databaseService');
 const paymentService = require('../services/paymentService');
+const scheduledOrderService = require('../services/scheduledOrderService');
 const { verifyToken } = require('../middleware/auth');
 
 // Apply auth middleware to all routes
 router.use(verifyToken);
+
+// Never allow legacy fallback IDs to be selected. Every order, schedule and
+// conversation must be tied to the identity verified by the JWT middleware.
+router.use((req, res, next) => {
+    if (!req.user?.id) return res.status(401).json({ success: false, message: 'Authenticated user identity is required' });
+    next();
+});
+
+// Order interactions also belong in Chat History. The controller owns order
+// sessions, while this wrapper stores the corresponding user/assistant turn
+// under that same session ID without changing any payment or order behaviour.
+const persistConversationTurn = (handler) => async (req, res, next) => {
+    const originalJson = res.json.bind(res);
+    res.json = async (payload) => {
+        const data = payload?.data || {};
+        const conversationId = data.sessionId || req.body?.sessionId;
+        const userContent = req.body?.message || req.body?.selection;
+        const assistantContent = data.response;
+        if (payload?.success && conversationId && userContent && assistantContent !== undefined) {
+            try {
+                const existing = await dbService.getConversations(req.user.id);
+                if (!existing.some((conversation) => conversation.conversation_id === conversationId)) {
+                    await dbService.createConversation(req.user.id, conversationId, String(userContent).slice(0, 50));
+                }
+                await dbService.addMessage(conversationId, 'user', String(userContent), conversationId);
+                await dbService.addMessage(
+                    conversationId,
+                    'agent',
+                    typeof assistantContent === 'string' ? assistantContent : JSON.stringify(assistantContent),
+                    conversationId,
+                    data.cart || null,
+                    data.total || null,
+                    Boolean(data.requiresAction),
+                    data.merchant || null
+                );
+            } catch (error) {
+                // History must never block a payment or an order confirmation.
+                console.error('Agent conversation persistence error:', error.message);
+            }
+        }
+        return originalJson(payload);
+    };
+    return handler(req, res, next);
+};
 
 // Logging middleware
 router.use((req, res, next) => {
@@ -32,16 +77,16 @@ router.use((req, res, next) => {
 // ============================================
 
 // Process order - Main entry point for all chat messages
-router.post('/process', agentOrderController.processOrder.bind(agentOrderController));
+router.post('/process', persistConversationTurn(agentOrderController.processOrder.bind(agentOrderController)));
 
 // Select items - For adding items to cart from grid or text
-router.post('/select-items', agentOrderController.selectItems.bind(agentOrderController));
+router.post('/select-items', persistConversationTurn(agentOrderController.selectItems.bind(agentOrderController)));
 
 // Process Reserve Pay payment
-router.post('/process-reserve', agentOrderController.processReservePayment.bind(agentOrderController));
+router.post('/process-reserve', persistConversationTurn(agentOrderController.processReservePayment.bind(agentOrderController)));
 
 // Confirm UPI payment after Razorpay success
-router.post('/confirm-upi', agentOrderController.confirmUPIPayment.bind(agentOrderController));
+router.post('/confirm-upi', persistConversationTurn(agentOrderController.confirmUPIPayment.bind(agentOrderController)));
 
 // Setup Auto-Pay for recurring orders
 router.post('/auto-pay/setup', agentOrderController.confirmAutoPaySetup.bind(agentOrderController));
@@ -82,7 +127,7 @@ router.get('/status/:orderId', agentOrderController.getOrderStatus.bind(agentOrd
 // Save transaction to database
 router.post('/save-transaction', async (req, res) => {
     try {
-        const userId = req.user?.id ? String(req.user.id) : '4';
+        const userId = req.user.id;
         const transaction = req.body;
         
         const transactionId = transaction.transactionId || `TXN${Date.now()}${Math.floor(Math.random() * 1000)}`;
@@ -252,6 +297,9 @@ router.post('/create-order', async (req, res) => {
     try {
         const { amount, sessionId, merchant } = req.body;
         const razorpayOrder = await paymentService.createOrder(amount, 'INR', `order_${Date.now()}`);
+        if (!razorpayOrder.success) {
+            return res.status(503).json({ success: false, message: razorpayOrder.error || 'Payment provider is unavailable' });
+        }
         res.json({ 
             success: true, 
             data: { 
@@ -711,45 +759,16 @@ router.get('/session/:sessionId', async (req, res) => {
 
 router.post('/save-order', async (req, res) => {
     try {
-        const userId = req.user?.id ? String(req.user.id) : '4';
+        const userId = req.user.id;
         const orderData = req.body;
-        
-        // Get existing orders
-        let orders = [];
-        try {
-            const [rows] = await db.pool.execute(
-                `SELECT * FROM agent_orders WHERE user_id = ? ORDER BY created_at DESC`,
-                [userId]
-            );
-            orders = rows;
-        } catch (err) {
-            // Table might not exist yet
+        if (!orderData.id || !orderData.merchant || !Array.isArray(orderData.items) || Number(orderData.totalAmount) <= 0) {
+            return res.status(400).json({ success: false, message: 'A complete order is required' });
         }
-        
-        // Save to database
-        await db.pool.execute(
-            `INSERT INTO agent_orders (order_id, user_id, merchant, merchant_name, items, total_amount, status, payment_method, sabai_gems, created_at, tracking)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-            [
-                orderData.id,
-                userId,
-                orderData.merchant,
-                orderData.merchantName,
-                JSON.stringify(orderData.items),
-                orderData.totalAmount,
-                orderData.status || 'confirmed',
-                orderData.paymentMethod,
-                orderData.sabaiGems || 0,
-                orderData.createdAt || new Date().toISOString(),
-                JSON.stringify(orderData.tracking || [])
-            ]
-        );
-        
-        res.json({ success: true, data: orderData });
+        const order = await dbService.createAgentOrder(userId, orderData);
+        res.status(201).json({ success: true, data: order });
     } catch (error) {
         console.error('Save order error:', error);
-        // Still return success since order is saved locally
-        res.json({ success: true, message: 'Order saved locally' });
+        res.status(500).json({ success: false, message: 'Unable to save order' });
     }
 });
 
@@ -757,7 +776,7 @@ router.post('/save-order', async (req, res) => {
 router.get('/connection/:merchantId', async (req, res) => {
     try {
         const { merchantId } = req.params;
-        const userId = req.user?.id ? String(req.user.id) : '4';
+        const userId = req.user.id;
         
         const connection = await dbService.getMerchantConnection(userId, merchantId);
         res.json({ success: true, data: connection });
