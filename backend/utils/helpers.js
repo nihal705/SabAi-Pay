@@ -43,9 +43,10 @@ class Helpers {
     
     // Generate JWT token
     static generateToken(payload, expiresIn = '7d') {
+        if (!process.env.JWT_SECRET) throw new Error('JWT_SECRET is not configured');
         return jwt.sign(
             payload,
-            process.env.JWT_SECRET || 'your-secret-key',
+            process.env.JWT_SECRET,
             { expiresIn }
         );
     }
@@ -53,7 +54,8 @@ class Helpers {
     // Verify JWT token
     static verifyToken(token) {
         try {
-            return jwt.verify(token, process.env.JWT_SECRET || 'your-secret-key');
+            if (!process.env.JWT_SECRET) return null;
+            return jwt.verify(token, process.env.JWT_SECRET);
         } catch (error) {
             return null;
         }
