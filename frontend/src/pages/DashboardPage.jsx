@@ -1038,7 +1038,7 @@ const handleBusinessClick = (business) => {
     { id: 'qr', name: 'Scan & Pay', icon: MdQrCodeScanner, path: '/send-money', color: '#7c3aed' },
     { id: 'bills', name: 'Pay Bills', icon: FaBolt, path: '/bills', color: '#dc2626' },
     { id: 'recharge', name: 'Recharge', icon: FaMobile, path: '/mobile-recharge', color: '#2563eb' },
-    { id:'qr', name:'QR Code', icon: FaQrcode, path: '/qr-code',  color: '#83a1e4' },
+    { id:'my-qr-code', name:'QR Code', icon: FaQrcode, path: '/qr-code',  color: '#83a1e4' },
     { id: 'connect', name: 'Connect Apps', icon: FaPlug, path: '/connect-apps', color: '#f59e0b' },
     { id: 'agent', name: 'AI Agent', icon: FaRobot, path: '/agent', color: '#9333ea', action: handleAIAgentClick }
   ];
