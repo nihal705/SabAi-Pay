@@ -1,0 +1,85 @@
+/* frontend/src/components/common/BottomNav.css */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
+    border-top: 1px solid #e2e8f0;
+    z-index: 100;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.dark .bottom-nav {
+    background: #1a1a1a;
+    border-top-color: #404040;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    padding: 4px 8px;
+    min-height: 44px;
+    min-width: 44px;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.nav-item.active {
+    color: #4f46e5;
+}
+
+.dark .nav-item.active {
+    color: #818cf8;
+}
+
+.nav-item .nav-icon {
+    font-size: 1.3rem;
+    transition: all 0.2s;
+}
+
+.nav-item.active .nav-icon {
+    transform: scale(1.1);
+}
+
+.nav-item .nav-label {
+    font-size: 0.65rem;
+    font-weight: 500;
+}
+
+.nav-item .nav-badge {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    background: #ef4444;
+    color: white;
+    font-size: 0.6rem;
+    padding: 1px 5px;
+    border-radius: 10px;
+    min-width: 18px;
+    text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .bottom-nav {
+        padding: 6px 0 calc(6px + env(safe-area-inset-bottom));
+    }
+
+    .nav-item .nav-label {
+        font-size: 0.55rem;
+    }
+
+    .nav-item .nav-icon {
+        font-size: 1.1rem;
+    }
+}
