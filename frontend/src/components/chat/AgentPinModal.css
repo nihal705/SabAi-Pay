@@ -1,0 +1,268 @@
+/* AgentPinModal.css */
+
+.agent-pin-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.agent-pin-modal {
+    background: white;
+    border-radius: 28px;
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: pinSlideUp 0.3s ease;
+}
+
+@keyframes pinSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.dark .agent-pin-modal {
+    background: #1a1a1a;
+    border: 1px solid #333;
+}
+
+.agent-pin-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #f1f5f9;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.dark .agent-pin-close {
+    background: #2d2d2d;
+    color: #94a3b8;
+}
+
+.agent-pin-close:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.agent-pin-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.agent-pin-icon {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+.agent-pin-header h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+.dark .agent-pin-header h3 {
+    color: white;
+}
+
+.agent-pin-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4f46e5;
+    margin: 4px 0;
+}
+
+.agent-pin-bank {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 4px;
+}
+
+.dark .agent-pin-bank {
+    color: #94a3b8;
+}
+
+.agent-pin-inputs {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.agent-pin-input {
+    width: 56px;
+    height: 64px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    background: white;
+    color: #1e293b;
+    transition: all 0.2s;
+}
+
+.dark .agent-pin-input {
+    background: #1a1a1a;
+    border-color: #404040;
+    color: white;
+}
+
+.agent-pin-input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.agent-pin-input.filled {
+    border-color: #10b981;
+}
+
+.agent-pin-input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.agent-pin-show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #64748b;
+    font-size: 0.85rem;
+    padding: 8px;
+    border-radius: 30px;
+    background: #f8fafc;
+    transition: all 0.2s;
+    margin-bottom: 8px;
+}
+
+.dark .agent-pin-show {
+    background: #2d2d2d;
+    color: #94a3b8;
+}
+
+.agent-pin-show:hover {
+    background: #f1f5f9;
+}
+
+.dark .agent-pin-show:hover {
+    background: #404040;
+}
+
+.agent-pin-show input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #4f46e5;
+}
+
+.agent-pin-show svg {
+    font-size: 0.9rem;
+}
+
+.agent-pin-error {
+    color: #ef4444;
+    font-size: 0.85rem;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.agent-pin-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.agent-pin-cancel,
+.agent-pin-confirm {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.agent-pin-cancel {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.dark .agent-pin-cancel {
+    background: #2d2d2d;
+    color: #94a3b8;
+}
+
+.agent-pin-cancel:hover:not(:disabled) {
+    background: #e2e8f0;
+}
+
+.agent-pin-confirm {
+    background: #4f46e5;
+    color: white;
+}
+
+.agent-pin-confirm:hover:not(:disabled) {
+    background: #4338ca;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.agent-pin-cancel:disabled,
+.agent-pin-confirm:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.agent-pin-note {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #94a3b8;
+    margin-top: 16px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .agent-pin-modal {
+        padding: 24px;
+    }
+    
+    .agent-pin-input {
+        width: 48px;
+        height: 56px;
+        font-size: 1.5rem;
+    }
+    
+    .agent-pin-inputs {
+        gap: 12px;
+    }
+}

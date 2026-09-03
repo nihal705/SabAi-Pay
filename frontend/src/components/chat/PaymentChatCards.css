@@ -1,0 +1,691 @@
+/* frontend/src/components/chat/PaymentChatCards.css */
+/* Shared styles for all payment chat cards */
+
+/* ============================================
+   BASE PAYMENT CARD
+   ============================================ */
+
+.payment-chat-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    max-width: 460px;
+    margin: 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.dark .payment-chat-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.payment-chat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   CARD HEADER
+   ============================================ */
+
+.payment-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #eef2ff;
+}
+
+.dark .payment-card-header {
+    border-bottom-color: #334155;
+}
+
+.payment-card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4f46e5;
+    color: white;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.payment-card-icon.multi {
+    background: #8b5cf6;
+}
+
+.payment-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+    flex: 1;
+}
+
+.dark .payment-card-title {
+    color: #f1f5f9;
+}
+
+.payment-card-close {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: #f1f5f9;
+    color: #64748b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.dark .payment-card-close {
+    background: #334155;
+    color: #94a3b8;
+}
+
+.payment-card-close:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+/* ============================================
+   CARD BODY
+   ============================================ */
+
+.payment-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* ============================================
+   RECIPIENT / PROVIDER
+   ============================================ */
+
+.payment-recipient {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.dark .payment-recipient {
+    background: #0f172a;
+}
+
+.recipient-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.recipient-info {
+    flex: 1;
+}
+
+.recipient-name {
+    display: block;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.dark .recipient-name {
+    color: #f1f5f9;
+}
+
+.recipient-vpa {
+    font-size: 0.8rem;
+    color: #64748b;
+    font-family: monospace;
+}
+
+/* Bill Provider */
+.bill-provider-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.dark .bill-provider-info {
+    background: #0f172a;
+}
+
+.provider-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.provider-details {
+    flex: 1;
+}
+
+.provider-name {
+    display: block;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.dark .provider-name {
+    color: #f1f5f9;
+}
+
+.customer-id {
+    font-size: 0.8rem;
+    color: #64748b;
+    font-family: monospace;
+}
+
+/* Recharge Number */
+.recharge-number-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.dark .recharge-number-info {
+    background: #0f172a;
+}
+
+.operator-indicator {
+    font-size: 1.8rem;
+}
+
+.number-details {
+    flex: 1;
+}
+
+.mobile-number {
+    display: block;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #1e293b;
+    letter-spacing: 1px;
+}
+
+.dark .mobile-number {
+    color: #f1f5f9;
+}
+
+.operator-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* ============================================
+   AMOUNT DISPLAY
+   ============================================ */
+
+.payment-amount-display {
+    text-align: center;
+    padding: 8px 0;
+}
+
+.amount-currency {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.amount-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #4f46e5;
+    margin-left: 4px;
+}
+
+.dark .amount-value {
+    color: #818cf8;
+}
+
+/* ============================================
+   NOTE
+   ============================================ */
+
+.payment-note {
+    padding: 8px 12px;
+    background: #fef3c7;
+    border-radius: 8px;
+    color: #d97706;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.dark .payment-note {
+    background: #2d2a1a;
+    color: #fbbf24;
+}
+
+/* ============================================
+   RECHARGE PLANS
+   ============================================ */
+
+.recharge-plans {
+    margin: 4px 0;
+}
+
+.plans-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #64748b;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+}
+
+.plan-option {
+    padding: 10px 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.dark .plan-option {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+.plan-option:hover {
+    border-color: #4f46e5;
+    transform: translateY(-2px);
+}
+
+.plan-option.selected {
+    border-color: #4f46e5;
+    background: #eef2ff;
+}
+
+.dark .plan-option.selected {
+    background: #1e1b4b;
+    border-color: #818cf8;
+}
+
+.plan-amount {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.dark .plan-amount {
+    color: #f1f5f9;
+}
+
+.plan-data {
+    display: block;
+    font-size: 0.7rem;
+    color: #10b981;
+}
+
+.plan-validity {
+    display: block;
+    font-size: 0.7rem;
+    color: #64748b;
+}
+
+/* ============================================
+   PAYMENT METHOD
+   ============================================ */
+
+.payment-method-info {
+    padding: 6px 0;
+}
+
+.method-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: #f1f5f9;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    color: #475569;
+}
+
+.dark .method-badge {
+    background: #0f172a;
+    color: #94a3b8;
+}
+
+.method-icon-small {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* ============================================
+   SECURITY STATUS
+   ============================================ */
+
+.security-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+.security-status.pin-required {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.dark .security-status.pin-required {
+    background: #2d1a1a;
+    color: #f87171;
+}
+
+.security-status.pin-free {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.dark .security-status.pin-free {
+    background: #1a3a2e;
+    color: #34d399;
+}
+
+.security-status .status-icon {
+    font-size: 1rem;
+}
+
+.limit-remaining {
+    margin-left: auto;
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+/* ============================================
+   MULTI PAYMENT LIST
+   ============================================ */
+
+.multi-payment-list {
+    max-height: 240px;
+    overflow-y: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.dark .multi-payment-list {
+    border-color: #334155;
+}
+
+.multi-payment-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.multi-payment-list::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+.multi-payment-list::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.multi-payment-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dark .multi-payment-item {
+    border-bottom-color: #334155;
+}
+
+.multi-payment-item:last-child {
+    border-bottom: none;
+}
+
+.item-index {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #64748b;
+    flex-shrink: 0;
+}
+
+.dark .item-index {
+    background: #334155;
+    color: #94a3b8;
+}
+
+.item-icon {
+    color: #4f46e5;
+    font-size: 0.9rem;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.dark .item-label {
+    color: #f1f5f9;
+}
+
+.item-recipient {
+    font-size: 0.7rem;
+    color: #64748b;
+}
+
+.item-amount {
+    font-weight: 600;
+    color: #4f46e5;
+    font-size: 0.9rem;
+}
+
+.item-status {
+    font-size: 0.7rem;
+}
+
+.item-status.ready {
+    color: #f59e0b;
+}
+
+.item-status.completed {
+    color: #10b981;
+}
+
+.item-status.failed {
+    color: #ef4444;
+}
+
+/* Multi Payment Total */
+.multi-payment-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.dark .multi-payment-total {
+    background: #0f172a;
+}
+
+.total-value {
+    font-size: 1.3rem;
+    color: #4f46e5;
+}
+
+.dark .total-value {
+    color: #818cf8;
+}
+
+/* ============================================
+   ACTIONS
+   ============================================ */
+
+.payment-card-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-cancel,
+.btn-confirm {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-cancel {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.dark .btn-cancel {
+    background: #334155;
+    color: #94a3b8;
+}
+
+.btn-cancel:hover:not(:disabled) {
+    background: #e2e8f0;
+}
+
+.btn-confirm {
+    color: white;
+}
+
+.btn-confirm.bank-pay {
+    background: #4f46e5;
+}
+
+.btn-confirm.bank-pay:hover:not(:disabled) {
+    background: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.btn-confirm.reserve-pay {
+    background: #10b981;
+}
+
+.btn-confirm.reserve-pay:hover:not(:disabled) {
+    background: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-confirm.multi {
+    flex: 1.5;
+}
+
+.btn-confirm:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* ============================================
+   SPINNER
+   ============================================ */
+
+.spinner-small {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 480px) {
+    .payment-chat-card {
+        padding: 16px;
+        border-radius: 16px;
+    }
+    
+    .amount-value {
+        font-size: 1.8rem;
+    }
+    
+    .plans-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    
+    .multi-payment-item {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    
+    .item-details {
+        flex: 1;
+        min-width: 80px;
+    }
+    
+    .payment-card-actions {
+        flex-direction: column;
+    }
+}
