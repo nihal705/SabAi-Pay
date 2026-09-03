@@ -25,7 +25,7 @@ import {
     hasUpiPin 
 } from '../services/storageService';
 import toast from 'react-hot-toast';
-import axios from 'axios';
+import { agentOrderAPI } from '../services/apiService';
 
 // Helper function to calculate cashback
 const calculateCashback = (amount) => {
@@ -311,7 +311,6 @@ const processPayment = async () => {
         
         const order = {
             id: orderId,
-            userId: orderData.userId || localStorage.getItem('currentUserId') || '5',
             merchant: orderData.merchant,
             merchantName: orderData.merchantName || orderData.merchant,
             items: orderData.items,
@@ -332,22 +331,7 @@ const processPayment = async () => {
             ]
         };
         
-        // Save order to localStorage
-        const existingOrders = JSON.parse(localStorage.getItem('agentOrders') || '[]');
-        existingOrders.unshift(order);
-        localStorage.setItem('agentOrders', JSON.stringify(existingOrders));
-        
-        // Also save to backend if available
-        try {
-            const token = localStorage.getItem('token');
-            await axios.post(
-                'http://localhost:5000/api/agent/order/save-order',
-                order,
-                { headers: token ? { 'Authorization': `Bearer ${token}` } : {} }
-            );
-        } catch (err) {
-            console.log('Backend save failed, order saved locally');
-        }
+        await agentOrderAPI.saveOrder(order);
         
         onPaymentSuccess({
             ...transaction,

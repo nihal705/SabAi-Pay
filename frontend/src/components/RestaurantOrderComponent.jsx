@@ -359,7 +359,7 @@ const RestaurantOrderComponent = ({
                         {menuItems.map(item => (
                             <div key={item.id} className={`menu-item-card ${selectedItems[item.id] ? 'selected' : ''}`} onClick={() => toggleItemSelection(item.id)}>
                                 <div className="menu-item-image">
-                                    <img src={item.imageUrl || '/images/items/default.png'} alt={item.name} />
+                                    <img src={item.imageUrl || '/images/items/default.png'} alt={item.name} onError={(event) => { event.currentTarget.src = '/images/items/default.png'; }} />
                                     {item.isVeg && <span className="veg-badge">🌱</span>}
                                     {selectedItems[item.id] && <div className="selected-overlay"><FaCheckCircle /></div>}
                                 </div>
@@ -392,7 +392,7 @@ const RestaurantOrderComponent = ({
                                 {cart.map(item => (
                                     <div key={item.id} className="cart-item">
                                         <div className="cart-item-info">
-                                            <img src={item.image || item.imageUrl || '/images/items/default.png'} alt={item.name} />
+                                            <img src={item.image || item.imageUrl || '/images/items/default.png'} alt={item.name} onError={(event) => { event.currentTarget.src = '/images/items/default.png'; }} />
                                             <div>
                                                 <h4>{item.name}</h4>
                                                 <div className="item-price"><FaRupeeSign /> {item.price}</div>
