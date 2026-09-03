@@ -1,6 +1,4 @@
 -- SabAI Pay: PostgreSQL/Supabase schema
--- Apply this in a new Supabase project. Do not apply it over an existing
--- production database without taking a backup and reviewing a migration plan.
 
 create extension if not exists pgcrypto;
 
