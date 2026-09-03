@@ -16,17 +16,16 @@ import {
   FaRupeeSign,
   FaCheckCircle
 } from 'react-icons/fa';
-import axios from 'axios';
 import { MdPhoneAndroid } from 'react-icons/md';
 import { SiRazorpay } from 'react-icons/si';
 import { useAuth } from '../../context/AuthContext';
+import { authAPI } from '../../services/apiService';
 import toast from 'react-hot-toast';
 import './Auth.css';
 
 const Login = () => {
   const navigate = useNavigate();
   const { darkMode } = useTheme();
-  const { login } = useAuth();
   const [step, setStep] = useState('login'); // login, otp
   const [formData, setFormData] = useState({
     phone_number: '',
@@ -133,16 +132,14 @@ const Login = () => {
     setLoading(true);
     
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', {
-        phone_number: formData.phone_number,
-        password: formData.password
-      });
+      const response = await authAPI.login(formData.phone_number, formData.password);
       
       console.log('Login response:', response.data);
       
       if (response.data.success) {
         localStorage.setItem('token', response.data.data.token);
         localStorage.setItem('user', JSON.stringify(response.data.data.user));
+        window.dispatchEvent(new Event('sabai-auth-changed'));
         toast.success('Login successful!');
         navigate('/dashboard');
       }
@@ -178,9 +175,7 @@ const Login = () => {
     
     try {
       // First check if user exists
-      const checkResponse = await axios.post('http://localhost:5000/api/auth/check-phone', {
-        phone_number: formData.phone_number
-      });
+      const checkResponse = await authAPI.checkPhone(formData.phone_number);
       
       if (!checkResponse.data.exists) {
         toast.error('Account not found. Please register first.');
@@ -190,15 +185,12 @@ const Login = () => {
       }
       
       // Send OTP
-      const otpResponse = await axios.post('http://localhost:5000/api/auth/send-otp', {
-        phone_number: formData.phone_number,
-        purpose: 'login'
-      });
+      const otpResponse = await authAPI.sendOTP(formData.phone_number, 'login');
       
       if (otpResponse.data.success) {
         setTempPhoneNumber(formData.phone_number);
         setStep('otp');
-        toast.success('OTP sent to your mobile number!');
+        toast.success(otpResponse.data.dev_otp ? `Development OTP: ${otpResponse.data.dev_otp}` : 'OTP sent to your mobile number!');
         
         // Start timer
         setTimeLeft(60);
@@ -236,11 +228,7 @@ const Login = () => {
     
     try {
         // First verify OTP
-        const verifyResponse = await axios.post('http://localhost:5000/api/auth/verify-otp', {
-            phone_number: tempPhoneNumber,
-            otp: otpValue,
-            purpose: 'login'
-        });
+        const verifyResponse = await authAPI.verifyOTP(tempPhoneNumber, otpValue, 'login');
         
         console.log('Verify OTP response:', verifyResponse.data);
         
@@ -251,15 +239,14 @@ const Login = () => {
         }
         
         // OTP verified, now login
-        const loginResponse = await axios.post('http://localhost:5000/api/auth/login-with-otp', {
-            phone_number: tempPhoneNumber
-        });
+        const loginResponse = await authAPI.loginWithOTP(tempPhoneNumber);
         
         console.log('Login response:', loginResponse.data);
         
         if (loginResponse.data.success) {
             localStorage.setItem('token', loginResponse.data.data.token);
             localStorage.setItem('user', JSON.stringify(loginResponse.data.data.user));
+            window.dispatchEvent(new Event('sabai-auth-changed'));
             toast.success('Login successful!');
             navigate('/dashboard');
         } else {
@@ -283,13 +270,10 @@ const Login = () => {
 
   const handleResendOTP = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/send-otp', {
-        phone_number: tempPhoneNumber,
-        purpose: 'login'
-      });
+      const response = await authAPI.sendOTP(tempPhoneNumber, 'login');
       
       if (response.data.success) {
-        toast.success('OTP resent successfully!');
+        toast.success(response.data.dev_otp ? `Development OTP: ${response.data.dev_otp}` : 'OTP resent successfully!');
         setTimeLeft(60);
         setCanResend(false);
         setOtp(['', '', '', '', '', '']);

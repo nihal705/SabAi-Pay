@@ -22,6 +22,7 @@ import {
 import { MdPhone, MdVerified } from 'react-icons/md';
 import { SiRazorpay } from 'react-icons/si';
 import { useAuth } from '../../context/AuthContext';
+import { authAPI } from '../../services/apiService';
 import { useTheme } from '../../context/ThemeContext';
 import toast from 'react-hot-toast';
 import './Auth.css';
@@ -29,7 +30,6 @@ import './Auth.css';
 const Register = () => {
   const navigate = useNavigate();
   const { darkMode } = useTheme();
-  const { register } = useAuth();
   const [step, setStep] = useState('register');
   const [formData, setFormData] = useState({
     name: '',
@@ -213,13 +213,8 @@ const Register = () => {
         try {
             console.log('Checking phone number:', formData.phone_number);
             
-            const checkResponse = await fetch('http://localhost:5000/api/auth/check-phone', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ phone_number: formData.phone_number })
-            });
-            
-            const checkData = await checkResponse.json();
+            const checkResponse = await authAPI.checkPhone(formData.phone_number);
+            const checkData = checkResponse.data;
             console.log('Check phone response:', checkData);
             
             // Check if the response indicates user exists
@@ -230,19 +225,11 @@ const Register = () => {
             }
             
             // If check failed or user doesn't exist, proceed with OTP
-            const otpResponse = await fetch('http://localhost:5000/api/auth/send-otp', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ 
-                    phone_number: formData.phone_number,
-                    purpose: 'register'
-                })
-            });
-
-            const otpData = await otpResponse.json();
+            const otpResponse = await authAPI.sendOTP(formData.phone_number, 'register');
+            const otpData = otpResponse.data;
             
             if (otpData.success) {
-                toast.success('OTP sent successfully!');
+                toast.success(otpData.dev_otp ? `Development OTP: ${otpData.dev_otp}` : 'OTP sent successfully!');
                 setStep('otp');
                 localStorage.setItem('register_data', JSON.stringify(formData));
                 
@@ -282,33 +269,21 @@ const Register = () => {
             const phoneNumber = savedData.phone_number || formData.phone_number;
             
             // Verify OTP
-            const verifyResponse = await fetch('http://localhost:5000/api/auth/verify-otp', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    phone_number: phoneNumber,
-                    otp: otpValue,
-                    purpose: 'register'
-                })
-            });
-
-            const verifyData = await verifyResponse.json();
+            const verifyResponse = await authAPI.verifyOTP(phoneNumber, otpValue, 'register');
+            const verifyData = verifyResponse.data;
             console.log('Verify OTP response:', verifyData);
 
             if (verifyData.success) {
                 // Complete registration
-                const registerResponse = await fetch('http://localhost:5000/api/auth/register', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(savedData)
-                });
-
-                const registerData = await registerResponse.json();
+                const registerResponse = await authAPI.register(savedData);
+                const registerData = registerResponse.data;
                 console.log('Register response:', registerData);
 
                 if (registerData.success) {
+                    const storedUser = registerData.data.user;
                     localStorage.setItem('token', registerData.data.token);
-                    localStorage.setItem('user', JSON.stringify(registerData.data.user));
+                    localStorage.setItem('user', JSON.stringify(storedUser));
+                    window.dispatchEvent(new Event('sabai-auth-changed'));
                     toast.success('Registration successful!');
                     navigate('/dashboard');
                 } else {
@@ -328,19 +303,11 @@ const Register = () => {
 
   const handleResendOTP = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/send-otp', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          phone_number: formData.phone_number,
-          purpose: 'register'
-        })
-      });
-
-      const data = await response.json();
+      const response = await authAPI.sendOTP(formData.phone_number, 'register');
+      const data = response.data;
       
       if (data.success) {
-        toast.success('OTP resent successfully!');
+        toast.success(data.dev_otp ? `Development OTP: ${data.dev_otp}` : 'OTP resent successfully!');
         setTimeLeft(60);
         setCanResend(false);
         setOtp(['', '', '', '', '', '']);

@@ -46,7 +46,10 @@ export const AuthProvider = ({ children }) => {
                             localStorage.setItem('user', JSON.stringify(mergedUser));
                         }
                     } catch (error) {
-                        console.log('Using cached user data');
+                        localStorage.removeItem('token');
+                        localStorage.removeItem('user');
+                        setToken(null);
+                        setUser(null);
                     }
                 } catch (e) {
                     console.error('Failed to parse stored user');
@@ -59,15 +62,23 @@ export const AuthProvider = ({ children }) => {
         loadUser();
     }, []);
 
+    useEffect(() => {
+        const syncAuthentication = () => {
+            const nextToken = localStorage.getItem('token');
+            const savedUser = localStorage.getItem('user');
+            setToken(nextToken);
+            setUser(nextToken && savedUser ? JSON.parse(savedUser) : null);
+        };
+        window.addEventListener('sabai-auth-changed', syncAuthentication);
+        return () => window.removeEventListener('sabai-auth-changed', syncAuthentication);
+    }, []);
+
     // Send OTP
     const sendOTP = async (phoneNumber, purpose = 'register') => {
         try {
             const response = await authAPI.sendOTP(phoneNumber, purpose);
             if (response.data.success) {
                 toast.success(`OTP sent to ${phoneNumber}`);
-                if (response.data.dev_otp) {
-                    console.log(`Dev OTP: ${response.data.dev_otp}`);
-                }
                 return { success: true, dev_otp: response.data.dev_otp };
             }
         } catch (error) {
