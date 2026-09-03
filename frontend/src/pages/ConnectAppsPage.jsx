@@ -16,12 +16,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { 
-    getConnectedMerchants, 
-    connectMerchant, 
-    disconnectMerchant,
-    getCurrentUserId
-} from '../services/storageService';
-import { 
   FaArrowLeft,
   FaSearch,
   FaCheckCircle,
@@ -54,7 +48,7 @@ import { MdLocalGroceryStore } from 'react-icons/md';
 import { availableMerchants, categoryNames, merchantsByCategory, getCategoryIcon } from '../services/merchantConnectionService';
 import merchantConnectionService from '../services/merchantConnectionService';
 import toast from 'react-hot-toast';
-import axios from 'axios';
+import { merchantAPI } from '../services/apiService';
 import './ConnectAppsPage.css';
 
 const ConnectAppsPage = () => {
@@ -73,6 +67,7 @@ const ConnectAppsPage = () => {
   const [locationPincode, setLocationPincode] = useState('');
   const [currentUserId, setCurrentUserIdState] = useState(null);
   const [locationValidation, setLocationValidation] = useState(null);
+  const [pendingLocation, setPendingLocation] = useState(null);
   const [validatingLocation, setValidatingLocation] = useState(false);
   const [loginData, setLoginData] = useState({
     email: '',
@@ -91,17 +86,7 @@ const ConnectAppsPage = () => {
   // Get current user ID
   const getUserId = () => {
     if (user?.id) return user.id.toString();
-    const storedUserId = localStorage.getItem('currentUserId');
-    if (storedUserId) return storedUserId;
-    const token = localStorage.getItem('token');
-    if (token) {
-      try {
-        const payload = JSON.parse(atob(token.split('.')[1]));
-        if (payload.id) return payload.id.toString();
-        if (payload.userId) return payload.userId.toString();
-      } catch (e) {}
-    }
-    return '1';
+    return null;
   };
 
   // Initialize currentUserId
@@ -119,7 +104,7 @@ const ConnectAppsPage = () => {
   const loadConnectedMerchants = async () => {
     try {
       setLoading(true);
-      const connected = await getConnectedMerchants();
+      const connected = await merchantConnectionService.getConnectedMerchants();
       console.log('Loaded connected merchants:', connected);
       setConnectedMerchants(connected || []);
     } catch (error) {
@@ -195,20 +180,14 @@ const ConnectAppsPage = () => {
     
     try {
       // Validate location with backend
-      const response = await axios.post(
-        'http://localhost:5000/api/merchant/validate-location',
-        {
-          merchantId: selectedMerchant.id,
-          address: `${locationAddress}, ${locationArea}, ${locationCity}${locationPincode ? ', ' + locationPincode : ''}`,
-          city: locationCity
-        }
+      const response = await merchantAPI.validateLocation(
+        selectedMerchant.id,
+        `${locationAddress}, ${locationArea}, ${locationCity}${locationPincode ? ', ' + locationPincode : ''}`,
+        locationCity
       );
       
       if (response.data.success && response.data.data.valid) {
-        // Save location to localStorage
-        const userId = getUserId();
-        const savedLocations = JSON.parse(localStorage.getItem(`merchant_locations_${userId}`) || '{}');
-        savedLocations[selectedMerchant.id] = {
+        const location = {
           address: locationAddress,
           area: locationArea,
           city: response.data.data.city,
@@ -216,23 +195,7 @@ const ConnectAppsPage = () => {
           coordinates: response.data.data.coordinates,
           validatedAt: new Date().toISOString()
         };
-        localStorage.setItem(`merchant_locations_${userId}`, JSON.stringify(savedLocations));
-        
-        // Also save to backend
-        const token = localStorage.getItem('token');
-        await axios.post(
-          'http://localhost:5000/api/merchant/update-location',
-          {
-            merchantId: selectedMerchant.id,
-            location: {
-              city: locationCity.toLowerCase(),
-              area: locationArea,
-              address: locationAddress,
-              pincode: locationPincode
-            }
-          },
-          { headers: token ? { 'Authorization': `Bearer ${token}` } : {} }
-        );
+        setPendingLocation(location);
         
         toast.success(`Location saved! ${response.data.data.message}`);
         
@@ -330,8 +293,9 @@ const ConnectAppsPage = () => {
             {
               email: loginData.email,
               phone: loginData.phone,
-              name: 'User'
-            }
+              name: selectedMerchant.name
+            },
+            pendingLocation
           );
           
           setLoading(false);
@@ -345,6 +309,7 @@ const ConnectAppsPage = () => {
               setShowLoginModal(false);
               setLoginStep('credentials');
               setOtp(['', '', '', '', '', '']);
+              setPendingLocation(null);
             }, 2000);
           } else {
             toast.error(result?.message || 'Connection failed');

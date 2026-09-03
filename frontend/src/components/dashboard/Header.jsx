@@ -20,7 +20,7 @@ import {
   FaUserCircle
 } from 'react-icons/fa';
 import { MdDashboard } from 'react-icons/md';
-import axios from 'axios';
+import { notificationAPI } from '../../services/apiService';
 import toast from 'react-hot-toast';
 import './DashboardHeader.css';
 
@@ -71,7 +71,7 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
 
   const fetchNotifications = async () => {
     try {
-      const response = await axios.get(`${process.env.REACT_APP_API_URL}/auth/notifications?limit=5`);
+      const response = await notificationAPI.getAll(5);
       if (response.data.success) {
         setNotifications(response.data.data.notifications);
       }
@@ -82,7 +82,7 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
 
   const fetchUnreadCount = async () => {
     try {
-      const response = await axios.get(`${process.env.REACT_APP_API_URL}/auth/notifications?limit=1`);
+      const response = await notificationAPI.getAll(1);
       if (response.data.success) {
         setUnreadCount(response.data.data.unread_count);
       }
@@ -93,7 +93,7 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
 
   const markAsRead = async (notificationId) => {
     try {
-      await axios.put(`${process.env.REACT_APP_API_URL}/auth/notifications/${notificationId}/read`);
+      await notificationAPI.markRead(notificationId);
       fetchNotifications();
       fetchUnreadCount();
     } catch (error) {
@@ -103,7 +103,7 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
 
   const markAllAsRead = async () => {
     try {
-      await axios.put(`${process.env.REACT_APP_API_URL}/auth/notifications/read-all`);
+      await notificationAPI.markAllRead();
       fetchNotifications();
       fetchUnreadCount();
       toast.success('All notifications marked as read');
