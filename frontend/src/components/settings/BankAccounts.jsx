@@ -49,6 +49,7 @@ import { SiGooglepay, SiPhonepe, SiPaytm } from 'react-icons/si';
 import { MdVerified } from 'react-icons/md';
 import toast from 'react-hot-toast';
 import axios from 'axios';
+import { bankAPI } from '../../services/apiService';
 import './SettingsStyles.css';
 
 // Helper function to get bank logo URL
@@ -280,13 +281,6 @@ const BankAccounts = () => {
     loadAccounts();
     loadBalances();
     
-    // Load Razorpay script
-    if (!document.querySelector('script[src="https://checkout.razorpay.com/v1/checkout.js"]')) {
-      const script = document.createElement('script');
-      script.src = 'https://checkout.razorpay.com/v1/checkout.js';
-      script.async = true;
-      document.body.appendChild(script);
-    }
   }, []);
 
   const generateRealisticAccountNumber = () => {
@@ -448,11 +442,6 @@ const loadBalances = async () => {
 
   // Original working add bank function - MODIFIED to show selection modal first
   const handleAddBank = () => {
-    if (!window.Razorpay) {
-      toast.error('Razorpay SDK not loaded');
-      return;
-    }
-    
     if (!upiIdInput) {
       toast.error('Please enter your UPI ID (e.g., name@bankhandle)');
       return;
@@ -486,17 +475,51 @@ const loadBalances = async () => {
     setShowBankSelectionModal(true);
   };
 
-  // Initiate Razorpay payment from selection modal - USING ORIGINAL WORKING LOGIC
-  const initiateRazorpayPayment = () => {
+  // Link a bank only after a server-created Razorpay test order succeeds.
+  const initiateRazorpayPayment = async () => {
   if (!selectedBankForAdd || !pendingBankData) {
-    toast.error('Please select a payment method');
+    toast.error('Please select a bank');
     return;
   }
-  
-  if (!window.Razorpay) {
-    toast.error('Razorpay SDK not loaded. Please refresh the page.');
-    return;
-  }
+  const detectedBank = pendingBankData.detectedBank;
+  if (bankAlreadyExists(detectedBank.name)) { toast.error(`You already have a ${detectedBank.name} account linked.`); return; }
+  try {
+    if (!window.Razorpay) {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script'); script.src = 'https://checkout.razorpay.com/v1/checkout.js'; script.onload = resolve; script.onerror = reject; document.body.appendChild(script);
+      });
+    }
+    const orderResponse = await bankAPI.createVerificationOrder();
+    const order = orderResponse.data.data;
+    const account = {
+      bank_name: detectedBank.name,
+      account_number: generateRealisticAccountNumber(),
+      ifsc_code: `${detectedBank.ifsc_prefix}0${Math.floor(Math.random() * 10000).toString().padStart(4, '0')}`,
+      account_holder_name: user?.name || 'Account Holder',
+      is_primary: accounts.length === 0,
+      upi_id: pendingBankData.upiId
+    };
+    const checkout = new window.Razorpay({
+      key: order.key, order_id: order.orderId, amount: order.amount, currency: order.currency,
+      name: 'SabAI Pay', description: 'Test bank-link verification (₹1)',
+      prefill: { name: user?.name || '', email: user?.email || '', contact: user?.phone_number || '' },
+      theme: { color: '#4f46e5' },
+      handler: async (response) => {
+        try {
+          const saved = await bankAPI.createVerifiedAccount({ ...response, account });
+          const addedAccount = saved.data.data;
+          await loadAccounts(); await loadBalances();
+          setShowBankSelectionModal(false); setPendingBankData(null); setSelectedBankForAdd(null); setUpiIdInput(''); setShowAddModal(false);
+          setSelectedAccount(addedAccount); setPinChangeStep(2); setNewPinDigits(['', '', '', '']); setConfirmPinDigits(['', '', '', '']); setPinChangeError(''); setShowPinSetupModal(true);
+          window.dispatchEvent(new Event('bankAccountsUpdated'));
+          toast.success(`${detectedBank.name} linked. Set its UPI PIN to begin using it.`);
+        } catch (error) { toast.error(error.response?.data?.message || 'Razorpay payment could not be verified'); }
+      },
+      modal: { ondismiss: () => toast('Bank verification cancelled') }
+    });
+    checkout.open();
+  } catch (error) { console.error('Failed to link bank account:', error); toast.error(error.response?.data?.message || 'Failed to link bank account'); }
+  return;
   
   // Check if this bank was previously removed and has saved balance
   const removedBalances = JSON.parse(localStorage.getItem('removedBankBalances') || '{}');
@@ -1544,7 +1567,7 @@ const handleWithdraw = async () => {
                 onClick={initiateRazorpayPayment}
                 disabled={!selectedBankForAdd}
               >
-                Continue to Pay ₹1
+                Link selected bank
               </button>
             </div>
           </div>
