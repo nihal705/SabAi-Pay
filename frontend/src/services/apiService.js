@@ -1,7 +1,9 @@
 // frontend/src/services/apiService.js
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+// Same-origin is the safe deployment default; local development can opt in with
+// REACT_APP_API_URL rather than shipping a localhost dependency to users.
+const API_BASE_URL = process.env.REACT_APP_API_URL || '/api';
 
 const api = axios.create({
     baseURL: API_BASE_URL,
@@ -32,6 +34,7 @@ api.interceptors.response.use(
 
 // ============ AUTH API ============
 export const authAPI = {
+    checkPhone: (phoneNumber) => api.post('/auth/check-phone', { phone_number: phoneNumber }),
     sendOTP: (phoneNumber, purpose = 'register') => 
         api.post('/auth/send-otp', { phone_number: phoneNumber, purpose }),
     
@@ -42,11 +45,14 @@ export const authAPI = {
     
     login: (phoneNumber, password) => 
         api.post('/auth/login', { phone_number: phoneNumber, password }),
+    loginWithOTP: (phoneNumber) => api.post('/auth/login-with-otp', { phone_number: phoneNumber }),
     
     getProfile: () => api.get('/auth/profile'),
     
     updateProfile: (data) => api.put('/auth/profile', data)
 };
+
+export { api };
 
 // ============ BANK API ============
 export const bankAPI = {
@@ -58,7 +64,10 @@ export const bankAPI = {
     setUpiPin: (accountId, pin) => api.post(`/bank/accounts/${accountId}/pin`, { pin }),
     verifyPin: (accountId, pin) => api.post('/bank/verify-pin', { accountId, pin }),
     deposit: (accountId, amount) => api.post('/bank/deposit', { accountId, amount }),
-    withdraw: (accountId, amount) => api.post('/bank/withdraw', { accountId, amount })
+    withdraw: (accountId, amount) => api.post('/bank/withdraw', { accountId, amount }),
+    transfer: (fromAccountId, toAccountId, amount, pin) => api.post('/bank/transfer', { fromAccountId, toAccountId, amount, pin }),
+    createVerificationOrder: () => api.post('/bank/verification-order'),
+    createVerifiedAccount: (payload) => api.post('/bank/verified-accounts', payload)
 };
 
 // ============ TRANSACTION API ============
@@ -178,7 +187,21 @@ export const agentOrderAPI = {
     // Transactions
     saveTransaction: (transaction) => api.post('/agent/order/save-transaction', transaction),
     
-    getTransactions: () => api.get('/agent/order/transactions')
+    getTransactions: () => api.get('/agent/order/transactions'),
+    saveOrder: (order) => api.post('/agent/order/save-order', order)
+};
+
+export const splitRequestAPI = {
+    getAll: () => api.get('/split-requests'),
+    create: (splitData) => api.post('/split-requests', splitData),
+    updateStatus: (splitId, status) => api.put(`/split-requests/${splitId}/status`, { status }),
+    remove: (splitId) => api.delete(`/split-requests/${splitId}`)
+};
+
+export const notificationAPI = {
+    getAll: (limit = 20) => api.get('/notifications', { params: { limit } }),
+    markRead: (notificationId) => api.put(`/notifications/${notificationId}/read`),
+    markAllRead: () => api.put('/notifications/read-all')
 };
 
 // ============ MERCHANT API ============
@@ -194,6 +217,7 @@ export const merchantAPI = {
         api.post('/merchant/connect', { merchantId, connectionData, location }),
     
     disconnectMerchant: (merchantId) => api.post('/merchant/disconnect', { merchantId }),
+    updateLastUsed: (merchantId) => api.post('/merchant/update-last-used', { merchantId }),
     
     getConnections: () => api.get('/merchant/connections'),
     
@@ -219,6 +243,68 @@ export const merchantAPI = {
         api.get(`/merchant/${merchantId}/suggestions?city=${city}&area=${area || ''}&limit=${limit}`),
     
     checkCity: (merchantId, city) => api.get(`/merchant/${merchantId}/city/${city}/check`)
+};
+
+export const agentPaymentAPI = {
+    // Send Money
+    resolveRecipient: (text) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/send-money/resolve-recipient`, { text });
+    },
+    sendMoney: (recipient, amount, note) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/send-money`, { recipient, amount, note });
+    },
+    confirmSendMoney: (paymentData, pin) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/send-money/confirm`, { paymentData, pin });
+    },
+    
+    // Request Money
+    requestMoney: (recipient, amount, note) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/request-money`, { recipient, amount, note });
+    },
+    
+    // Bills
+    listBillers: (category) => {
+        return axios.get(`${API_BASE_URL}/api/agent/payment/bills/list-billers`, { params: { category } });
+    },
+    fetchBillAmount: (billerId, customerId) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/bills/fetch-amount`, { billerId, customerId });
+    },
+    payBill: (billType, provider, customerId, amount) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/bills/pay`, { billType, provider, customerId, amount });
+    },
+    confirmBillPayment: (paymentData, pin) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/bills/confirm`, { paymentData, pin });
+    },
+    
+    // Recharge
+    detectOperator: (mobileNumber) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/recharge/detect-operator`, { mobileNumber });
+    },
+    listRechargePlans: (operatorId) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/recharge/list-plans`, { operatorId });
+    },
+    rechargeMobile: (mobileNumber, amount, plan) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/recharge/pay`, { mobileNumber, amount, plan });
+    },
+    confirmRecharge: (paymentData, pin) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/recharge/confirm`, { paymentData, pin });
+    },
+    
+    // Multi Payment
+    multiPayment: (payments) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/multi-payment/build`, { payments });
+    },
+    confirmMultiPayment: (payments, pin) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/multi-payment/confirm`, { payments, pin });
+    },
+    
+    // Security
+    checkSabAIPayLite: (amount) => {
+        return axios.post(`${API_BASE_URL}/api/agent/payment/security/check-limit`, { amount });
+    },
+    getSabAIPayLite: () => {
+        return axios.get(`${API_BASE_URL}/api/agent/payment/security/sabai-pay-lite`);
+    }
 };
 
 export default api;

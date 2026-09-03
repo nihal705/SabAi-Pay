@@ -1,9 +1,7 @@
 // frontend/src/services/storageService.js
-// COMPLETE REWRITE - All data goes to backend database
-
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || '/api';
 
 // Helper to get auth headers
 const getAuthHeaders = () => {
@@ -14,7 +12,7 @@ const getAuthHeaders = () => {
 // Helper to handle API responses
 const handleResponse = async (apiCall) => {
     try {
-        const response = await apiCall;
+        const response = await apiCall();
         if (response.data && response.data.success) {
             return response.data.data;
         }
@@ -23,6 +21,60 @@ const handleResponse = async (apiCall) => {
         console.error('API Error:', error);
         throw error;
     }
+};
+
+export const getBankLogoUrl = (bankName) => {
+  const bankLogoMap = {
+    'State Bank of India': 'sbi.png',
+    'SBI': 'sbi.png',
+    'HDFC Bank': 'hdfc.png',
+    'HDFC': 'hdfc.png',
+    'ICICI Bank': 'icici.png',
+    'ICICI': 'icici.png',
+    'Axis Bank': 'axis.png',
+    'Axis': 'axis.png',
+    'Bank of Baroda': 'bob.png',
+    'BOB': 'bob.png',
+    'Punjab National Bank': 'pnb.png',
+    'PNB': 'pnb.png',
+    'Canara Bank': 'canara.png',
+    'Canara': 'canara.png',
+    'Union Bank of India': 'union.png',
+    'Union Bank': 'union.png',
+    'Kotak Mahindra Bank': 'kotak.png',
+    'Kotak': 'kotak.png',
+    'IndusInd Bank': 'indusind.png',
+    'IndusInd': 'indusind.png',
+    'Yes Bank': 'yesbank.png',
+    'Yes': 'yesbank.png',
+    'IDFC First Bank': 'idfc.png',
+    'IDFC': 'idfc.png',
+    'Karnataka Bank': 'karnataka.png',
+    'Indian Bank': 'indianbank.png',
+    'Indian Overseas Bank': 'iob.png',
+    'IOB': 'iob.png',
+    'Federal Bank': 'federal.png',
+    'South Indian Bank': 'sib.png',
+    'SIB': 'sib.png'
+  };
+  const fileName = bankLogoMap[bankName];
+  if (fileName) return `/images/banks/${fileName}`;
+  return null;
+};
+
+// Helper to get contact color
+const getContactColor = (name) => {
+    const colors = [
+        '#4f46e5', '#10b981', '#f59e0b', '#ef4444', '#ec4899', 
+        '#8b5cf6', '#06b6d4', '#84cc16', '#f97316', '#d946ef',
+        '#3b82f6', '#14b8a6', '#a855f7', '#e11d48', '#f43f5e'
+    ];
+    let hash = 0;
+    for (let i = 0; i < name?.length; i++) {
+        hash = ((hash << 5) - hash) + name.charCodeAt(i);
+        hash |= 0;
+    }
+    return colors[Math.abs(hash) % colors.length];
 };
 
 // ============ USER ID MANAGEMENT ============
@@ -53,7 +105,7 @@ export const clearUserCache = () => {
     const cacheKeys = [
         'cached_bankAccounts', 'cached_bankBalances', 'cached_coinBalance',
         'cached_transactions', 'cached_bills', 'cached_reserveLimits',
-        'cached_autoPayOrders', 'cached_contacts'
+        'cached_autoPayOrders', 'cached_contacts', 'cached_connectedMerchants'
     ];
     cacheKeys.forEach(key => localStorage.removeItem(key));
     clearPinCache();
@@ -80,14 +132,12 @@ export const getBankAccounts = async () => {
     try {
         const response = await axios.get(`${API_BASE_URL}/bank/accounts`, { headers: getAuthHeaders() });
         if (response.data.success) {
-            localStorage.setItem('cached_bankAccounts', JSON.stringify(response.data.data));
             return response.data.data;
         }
         return [];
     } catch (error) {
         console.error('Failed to get bank accounts:', error);
-        const cached = localStorage.getItem('cached_bankAccounts');
-        return cached ? JSON.parse(cached) : [];
+        throw error;
     }
 };
 
@@ -122,12 +172,10 @@ export const getBankBalances = async () => {
                 balances[account.id] = response.data.data.balance;
             }
         }
-        localStorage.setItem('cached_bankBalances', JSON.stringify(balances));
         return balances;
     } catch (error) {
         console.error('Failed to get bank balances:', error);
-        const cached = localStorage.getItem('cached_bankBalances');
-        return cached ? JSON.parse(cached) : {};
+        throw error;
     }
 };
 
@@ -136,13 +184,11 @@ export const updateBankBalance = async (accountId, amount, isDeposit = true) => 
         const endpoint = isDeposit ? `${API_BASE_URL}/bank/deposit` : `${API_BASE_URL}/bank/withdraw`;
         const response = await axios.post(endpoint, { accountId, amount }, { headers: getAuthHeaders() });
         if (response.data && response.data.success) {
-            localStorage.removeItem('cached_bankBalances');
             return response.data.data.balance;
         }
         throw new Error(response.data?.message || 'Transaction failed');
     } catch (error) {
         console.error('Update bank balance error:', error);
-        // Don't throw for PIN errors, just return current balance
         if (error.response?.status === 401) {
             return null;
         }
@@ -167,10 +213,10 @@ export const verifyBankPin = async (bankAccountId, pin) => {
         return response.data.success;
     } catch (error) {
         console.error('PIN verification error:', error.response?.data || error.message);
-        // Return false for any error (401, 500, etc.)
         return false;
     }
 };
+
 export const hasUpiPin = async (bankAccountId) => {
     const cached = pinStatusCache.get(bankAccountId);
     const timestamp = pinCacheTimestamp.get(bankAccountId);
@@ -195,40 +241,29 @@ export const hasUpiPin = async (bankAccountId) => {
 
 // ============ SABAI COINS ============
 
-// Add this new function to get lifetime earned
-
 export const getLifetimeEarned = async () => {
     try {
         const transactions = await getTransactions();
-        // Only successful transactions
         const successfulTransactions = (transactions || []).filter(t => t.status === 'success');
         
         let totalEarned = 0;
         successfulTransactions.forEach(t => {
-            // SEND transactions NEVER earn cashback
             if (t.type === 'send' || t.type === 'sent') return;
             if (t.type === 'self_transfer') return;
             if (t.type === 'receive' || t.type === 'received') return;
             
-            // Check if this transaction earns cashback
-            // Cashback is earned for: bill, recharge, merchant_order, auto_pay_execution, reserve_pay
             const isEarningType = t.type === 'bill_payment' || t.type === 'bill' ||
                                   t.type === 'recharge' || t.type === 'auto_pay_execution' ||
                                   t.type === 'reserve_pay' || t.type === 'spending' ||
                                   t.type === 'merchant_order' || t.type === 'challenge_reward';
             
-            // Check if gems were used - if gems used, NO cashback
             const gemsUsed = (t.payment_breakdown && t.payment_breakdown.gemsAmount > 0) ||
                              (t.gems_used === true) || (t.gems_used > 0);
             
-            // Challenge rewards are special
             if (t.type === 'challenge_reward') {
                 totalEarned += (t.cashback_earned || t.amount || 0);
-            } 
-            // For earning type transactions, ONLY add cashback if NO gems were used
-            else if (isEarningType && !gemsUsed) {
+            } else if (isEarningType && !gemsUsed) {
                 let gemsEarned = t.cashback_earned || 0;
-                // If no cashback_earned, calculate from amount (5% max 100)
                 if (gemsEarned === 0 && t.amount) {
                     gemsEarned = Math.floor(parseFloat(t.amount) * 0.05);
                     gemsEarned = Math.min(gemsEarned, 100);
@@ -237,9 +272,7 @@ export const getLifetimeEarned = async () => {
             }
         });
         
-        // Cache for quick access
         localStorage.setItem('cached_lifetimeEarned', totalEarned.toString());
-        
         return totalEarned;
     } catch (error) {
         console.error('Failed to get lifetime earned:', error);
@@ -248,39 +281,17 @@ export const getLifetimeEarned = async () => {
     }
 };
 
-// Get coin balance (remaining = earned - used)
 export const getCoinBalance = async () => {
     try {
-        const totalEarned = await getLifetimeEarned();
-        
-        // Calculate total used from ALL successful transactions
-        const transactions = await getTransactions();
-        const successfulTransactions = (transactions || []).filter(t => t.status === 'success');
-        
-        let totalUsed = 0;
-        successfulTransactions.forEach(t => {
-            // Check payment_breakdown for gems used
-            if (t.payment_breakdown && t.payment_breakdown.gemsAmount > 0) {
-                totalUsed += t.payment_breakdown.gemsAmount;
-            }
-            // Check gems_used field
-            else if (t.gems_used && t.gems_used > 0) {
-                totalUsed += t.gems_used;
-            }
-        });
-        
-        const balance = totalEarned - totalUsed;
-        localStorage.setItem('cached_coinBalance', balance.toString());
-        
-        return Math.max(0, balance);
+        const response = await axios.get(`${API_BASE_URL}/coins/balance`, { headers: getAuthHeaders() });
+        if (!response.data.success) throw new Error(response.data?.message || 'Failed to load SabAI Gems');
+        return Number(response.data.data.balance || 0);
     } catch (error) {
         console.error('Failed to get coin balance:', error);
-        const cached = localStorage.getItem('cached_coinBalance');
-        return cached ? parseInt(cached) : 0;
+        throw error;
     }
 };
 
-// Update coin balance with proper logging
 export const updateCoinBalance = async (amount, isEarning = true) => {
     try {
         console.log(`updateCoinBalance: amount=${amount}, isEarning=${isEarning}`);
@@ -291,7 +302,6 @@ export const updateCoinBalance = async (amount, isEarning = true) => {
         );
         
         if (response.data && response.data.success) {
-            // Invalidate caches
             localStorage.removeItem('cached_coinBalance');
             localStorage.removeItem('cached_lifetimeEarned');
             console.log(`Coin balance updated successfully, new balance: ${response.data.data.newBalance}`);
@@ -300,7 +310,6 @@ export const updateCoinBalance = async (amount, isEarning = true) => {
         throw new Error(response.data?.message || 'Failed to update coin balance');
     } catch (error) {
         console.error('Update coin balance error:', error);
-        // Fallback: update cache manually
         const currentBalance = await getCoinBalance();
         const newBalance = isEarning ? currentBalance + amount : currentBalance - amount;
         localStorage.setItem('cached_coinBalance', Math.max(0, newBalance).toString());
@@ -341,21 +350,14 @@ export const getTransactions = async () => {
         return [];
     } catch (error) {
         console.error('Failed to get transactions:', error);
-        const cached = localStorage.getItem('cached_transactions');
-        return cached ? JSON.parse(cached) : [];
+        throw error;
     }
 };
-
-// In storageService.js, update the addTransaction function
-
-// frontend/src/services/storageService.js
-// Replace the addTransaction function with this fixed version:
 
 export const addTransaction = async (transaction) => {
     try {
         console.log('addTransaction called with:', transaction);
         
-        // Prepare transaction data - DON'T send created_at, let MySQL use DEFAULT
         const transactionData = {
             transaction_id: transaction.transactionId || transaction.transaction_id || `TXN${Date.now()}`,
             user_id: getCurrentUserId(),
@@ -380,10 +382,8 @@ export const addTransaction = async (transaction) => {
             circle: transaction.circle || null,
             failure_reason: transaction.failure_reason || null,
             payment_method_display: transaction.payment_method_display || null
-            // Remove created_at - let MySQL handle it with DEFAULT CURRENT_TIMESTAMP
         };
         
-        // Remove any undefined values
         Object.keys(transactionData).forEach(key => {
             if (transactionData[key] === undefined) {
                 delete transactionData[key];
@@ -397,7 +397,6 @@ export const addTransaction = async (transaction) => {
         });
         
         if (response.data && response.data.success) {
-            // Clear caches
             localStorage.removeItem('cached_transactions');
             localStorage.removeItem('cached_coinBalance');
             localStorage.removeItem('cached_lifetimeEarned');
@@ -432,8 +431,7 @@ export const getBills = async () => {
         return [];
     } catch (error) {
         console.error('Failed to get bills:', error);
-        const cached = localStorage.getItem('cached_bills');
-        return cached ? JSON.parse(cached) : [];
+        throw error;
     }
 };
 
@@ -467,7 +465,6 @@ export const updateBill = async (billId, updates) => {
 
 export const deleteBill = async (billId) => {
     try {
-        // First, delete any auto-pay orders associated with this bill
         const autoPayOrders = await getAutoPayOrders();
         const associatedOrders = autoPayOrders.filter(order => order.bill_id === billId);
         
@@ -482,10 +479,8 @@ export const deleteBill = async (billId) => {
             }
         }
         
-        // Then delete the bill
         await axios.delete(`${API_BASE_URL}/bills/${billId}`, { headers: getAuthHeaders() });
         
-        // Clear caches
         localStorage.removeItem('cached_bills');
         localStorage.removeItem('cached_autoPayOrders');
         
@@ -528,8 +523,7 @@ export const getReserveLimits = async () => {
         return [];
     } catch (error) {
         console.error('Failed to get reserve limits:', error);
-        const cached = localStorage.getItem('cached_reserveLimits');
-        return cached ? JSON.parse(cached) : [];
+        throw error;
     }
 };
 
@@ -541,12 +535,10 @@ export const setReserveLimits = async (limits) => {
             contributionsCount: l.contributions?.length || 0
         })));
         
-        // First, get existing limits to know what to delete
         const existingLimits = await getReserveLimits();
         const existingMerchants = existingLimits.map(l => l.merchant);
         const newMerchants = limits.map(l => l.merchant);
         
-        // Delete limits that are no longer present
         const merchantsToDelete = existingMerchants.filter(m => !newMerchants.includes(m));
         
         for (const merchant of merchantsToDelete) {
@@ -560,7 +552,6 @@ export const setReserveLimits = async (limits) => {
             }
         }
         
-        // Save/update remaining limits
         for (const limit of limits) {
             const limitData = {
                 merchant: limit.merchant,
@@ -588,17 +579,6 @@ export const setReserveLimits = async (limits) => {
         throw error;
     }
 };
-export const addReserveLimit = async (limitData) => {
-    await axios.post(`${API_BASE_URL}/reserve/limits`, limitData, { headers: getAuthHeaders() });
-    localStorage.removeItem('cached_reserveLimits');
-    return true;
-};
-
-export const deleteReserveLimit = async (merchant) => {
-    await axios.delete(`${API_BASE_URL}/reserve/limits/${merchant}`, { headers: getAuthHeaders() });
-    localStorage.removeItem('cached_reserveLimits');
-    return true;
-};
 
 // ============ AUTO PAY ORDERS ============
 
@@ -607,7 +587,6 @@ export const getAutoPayOrders = async () => {
         const response = await axios.get(`${API_BASE_URL}/auto-pay/orders`, { headers: getAuthHeaders() });
         if (response.data.success) {
             const orders = response.data.data || [];
-            // Map database field names to frontend field names
             const mappedOrders = orders.map(order => ({
                 id: order.id,
                 orderId: order.order_id,
@@ -647,8 +626,7 @@ export const getAutoPayOrders = async () => {
         return [];
     } catch (error) {
         console.error('Failed to get auto-pay orders:', error);
-        const cached = localStorage.getItem('cached_autoPayOrders');
-        return cached ? JSON.parse(cached) : [];
+        throw error;
     }
 };
 
@@ -664,7 +642,6 @@ export const addAutoPayOrder = async (orderData) => {
             localStorage.removeItem('cached_autoPayOrders');
             console.log('Auto-pay order added successfully');
             
-            // Return the created order with ID
             const createdOrder = {
                 ...orderData,
                 id: response.data.data?.orderId || orderData.orderId
@@ -700,21 +677,41 @@ export const deleteAutoPayOrder = async (orderId) => {
 
 export const getContacts = async () => {
     try {
-        const response = await axios.get(`${API_BASE_URL}/contacts`, { 
-            headers: getAuthHeaders() 
+        const token = localStorage.getItem('token');
+        if (!token) {
+            const saved = localStorage.getItem('contacts');
+            return saved ? JSON.parse(saved) : [];
+        }
+        
+        const response = await axios.get(`${API_BASE_URL}/contacts`, {
+            headers: getAuthHeaders()
         });
         if (response.data.success) {
             const contacts = response.data.data || [];
-            // Cache for sync access
-            localStorage.setItem('cached_contacts', JSON.stringify(contacts));
-            return contacts;
+            const mappedContacts = contacts.map(c => ({
+                id: c.id,
+                name: c.name,
+                vpa: c.vpa,
+                phone: c.phone,
+                color: c.color || getContactColor(c.name),
+                avatar: c.avatar || c.name?.charAt(0)?.toUpperCase() || 'U',
+                total_sent: c.total_sent || 0,
+                total_received: c.total_received || 0,
+                sent_count: c.sent_count || 0,
+                received_count: c.received_count || 0,
+                last_transaction_at: c.last_transaction_at,
+                favorite: c.favorite || false,
+                created_at: c.created_at
+            }));
+            localStorage.setItem('contacts', JSON.stringify(mappedContacts));
+            localStorage.setItem('cached_contacts', JSON.stringify(mappedContacts));
+            return mappedContacts;
         }
         return [];
     } catch (error) {
         console.error('Failed to get contacts:', error);
-        // Fallback to cached data
-        const cached = localStorage.getItem('cached_contacts');
-        return cached ? JSON.parse(cached) : [];
+        const saved = localStorage.getItem('contacts');
+        return saved ? JSON.parse(saved) : [];
     }
 };
 
@@ -729,7 +726,6 @@ export const addContact = async (contact) => {
         }, { headers: getAuthHeaders() });
         
         if (response.data.success) {
-            // Clear cache to force refresh
             localStorage.removeItem('cached_contacts');
             return true;
         }
@@ -742,54 +738,73 @@ export const addContact = async (contact) => {
 
 // ============ MONEY REQUESTS ============
 
-// In storageService.js, add these functions if not present:
-
 export const getMoneyRequests = async () => {
     try {
-        const response = await axios.get(`${API_BASE_URL}/money-requests`, { 
-            headers: getAuthHeaders() 
+        const token = localStorage.getItem('token');
+        if (!token) {
+            const saved = localStorage.getItem('moneyRequests');
+            return saved ? JSON.parse(saved) : [];
+        }
+        
+        const response = await axios.get(`${API_BASE_URL}/money-requests`, {
+            headers: getAuthHeaders()
         });
-        if (response.data.success) {
-            return response.data.data || [];
+        if (response.data && response.data.success) {
+            const data = response.data.data || [];
+            localStorage.setItem('moneyRequests', JSON.stringify(data));
+            return data;
         }
         return [];
     } catch (error) {
         console.error('Failed to get money requests:', error);
-        // Fallback to localStorage
-        const cached = localStorage.getItem('moneyRequests');
-        return cached ? JSON.parse(cached) : [];
+        const saved = localStorage.getItem('moneyRequests');
+        return saved ? JSON.parse(saved) : [];
     }
 };
 
 export const setMoneyRequests = async (requests) => {
     try {
-        // For now, store in localStorage as fallback
-        // This function should be replaced with actual API call when backend is ready
+        const token = localStorage.getItem('token');
+        if (token) {
+            const response = await axios.put(`${API_BASE_URL}/money-requests`, { requests }, {
+                headers: getAuthHeaders()
+            });
+            if (response.data && response.data.success) {
+                return response.data.data;
+            }
+        }
         localStorage.setItem('moneyRequests', JSON.stringify(requests));
-        return true;
+        return requests;
     } catch (error) {
         console.error('Failed to set money requests:', error);
-        return false;
+        localStorage.setItem('moneyRequests', JSON.stringify(requests));
+        return requests;
     }
 };
 
 export const addMoneyRequest = async (requestData) => {
     try {
-        const response = await axios.post(`${API_BASE_URL}/money-requests`, requestData, { 
-            headers: getAuthHeaders() 
+        const token = localStorage.getItem('token');
+        const response = await axios.post(`${API_BASE_URL}/money-requests`, requestData, {
+            headers: getAuthHeaders()
         });
-        if (response.data.success) {
-            return response.data.data;
+        if (response.data && response.data.success) {
+            return response.data.data || requestData;
         }
-        throw new Error(response.data.message);
+        const saved = localStorage.getItem('moneyRequests');
+        const requests = saved ? JSON.parse(saved) : [];
+        const newRequest = {
+            ...requestData,
+            id: requestData.id || Date.now(),
+            requestId: requestData.requestId || `REQ${Date.now()}`,
+            created_at: new Date().toISOString()
+        };
+        requests.push(newRequest);
+        localStorage.setItem('moneyRequests', JSON.stringify(requests));
+        return newRequest;
     } catch (error) {
         console.error('Failed to add money request:', error);
-        // Fallback: save to localStorage
-        const existing = await getMoneyRequests();
-        const requests = Array.isArray(existing) ? existing : [];
-        requests.unshift(requestData);
-        localStorage.setItem('moneyRequests', JSON.stringify(requests));
-        return requestData;
+        throw error;
     }
 };
 
@@ -815,7 +830,7 @@ export const addRecentRecharge = async (rechargeData) => {
             operator: rechargeData.operator,
             operator_id: rechargeData.operator_id,
             amount: rechargeData.amount,
-            circle: rechargeData.circle,  // ← Make sure this line exists
+            circle: rechargeData.circle,
             transaction_id: rechargeData.transaction_id,
             cashback_earned: rechargeData.cashback_earned || 0,
             payment_method: rechargeData.payment_method
@@ -824,62 +839,6 @@ export const addRecentRecharge = async (rechargeData) => {
     } catch (error) {
         console.error('Failed to add recent recharge:', error);
         return false;
-    }
-};
-
-// ============ AGENT CHAT ============
-
-export const getAgentConversations = async () => {
-    try {
-        const response = await axios.get(`${API_BASE_URL}/agent/conversations`, { headers: getAuthHeaders() });
-        if (response.data.success) {
-            return response.data.data || [];
-        }
-        return [];
-    } catch (error) {
-        console.error('Failed to get conversations:', error);
-        return [];
-    }
-};
-
-export const getAgentMessages = async (conversationId) => {
-    try {
-        const response = await axios.get(`${API_BASE_URL}/agent/conversations/${conversationId}`, { headers: getAuthHeaders() });
-        if (response.data.success) {
-            return response.data.data || [];
-        }
-        return [];
-    } catch (error) {
-        console.error('Failed to get messages:', error);
-        return [];
-    }
-};
-
-export const saveAgentMessage = async (conversationId, role, content, sessionId = null, cart = null, total = null, requiresAction = false, merchant = null) => {
-    await axios.post(`${API_BASE_URL}/agent/messages`, 
-        { conversationId, role, content, sessionId, cart, total, requiresAction, merchant }, 
-        { headers: getAuthHeaders() }
-    );
-    return true;
-};
-
-export const deleteAgentConversation = async (conversationId) => {
-    await axios.delete(`${API_BASE_URL}/agent/conversations/${conversationId}`, { headers: getAuthHeaders() });
-    return true;
-};
-
-// ============ AGENT ORDERS ============
-
-export const getAgentOrders = async () => {
-    try {
-        const response = await axios.get(`${API_BASE_URL}/agent/order/orders`, { headers: getAuthHeaders() });
-        if (response.data.success) {
-            return response.data.data || [];
-        }
-        return [];
-    } catch (error) {
-        console.error('Failed to get agent orders:', error);
-        return [];
     }
 };
 
@@ -894,7 +853,6 @@ export const getConnectedMerchants = async () => {
             const merchants = response.data.data || [];
             console.log('Connected merchants from API:', merchants);
             
-            // Normalize the data structure
             const normalizedMerchants = merchants.map(m => ({
                 merchantId: m.merchantId || m.merchant_id,
                 merchant_id: m.merchantId || m.merchant_id,
@@ -960,14 +918,6 @@ export const verifyBankPinHelper = verifyBankPin;
 export const updateBankBalanceHelper = updateBankBalance;
 export const updateCoinBalanceHelper = updateCoinBalance;
 
-// These are kept for backward compatibility with older components
-export const setBankAccounts = async () => true;
-export const setBankBalances = async () => true;
-export const setAutoPayOrders = async () => true;
-// export const setMoneyRequests = async () => true;
-export const getBankUpiPins = async () => ({});
-export const addPaidBill = async () => true;
-
 // Sync versions for components that haven't been updated yet
 export const getBankAccountsSync = () => {
     const cached = localStorage.getItem('cached_bankAccounts');
@@ -1009,9 +959,61 @@ export const getContactsSync = () => {
     return cached ? JSON.parse(cached) : [];
 };
 
-export const getMoneyRequestsSync = () => [];
-export const getRecentRechargesSync = () => [];
-export const getPaidBillsSync = () => [];
+// ============ AGENT CHAT ============
+
+export const getAgentConversations = async () => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/agent/conversations`, { headers: getAuthHeaders() });
+        if (response.data.success) {
+            return response.data.data || [];
+        }
+        return [];
+    } catch (error) {
+        console.error('Failed to get conversations:', error);
+        return [];
+    }
+};
+
+export const getAgentMessages = async (conversationId) => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/agent/conversations/${conversationId}`, { headers: getAuthHeaders() });
+        if (response.data.success) {
+            return response.data.data || [];
+        }
+        return [];
+    } catch (error) {
+        console.error('Failed to get messages:', error);
+        return [];
+    }
+};
+
+export const saveAgentMessage = async (conversationId, role, content, sessionId = null, cart = null, total = null, requiresAction = false, merchant = null) => {
+    await axios.post(`${API_BASE_URL}/agent/messages`, 
+        { conversationId, role, content, sessionId, cart, total, requiresAction, merchant }, 
+        { headers: getAuthHeaders() }
+    );
+    return true;
+};
+
+export const deleteAgentConversation = async (conversationId) => {
+    await axios.delete(`${API_BASE_URL}/agent/conversations/${conversationId}`, { headers: getAuthHeaders() });
+    return true;
+};
+
+// ============ AGENT ORDERS ============
+
+export const getAgentOrders = async () => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/agent/order/orders`, { headers: getAuthHeaders() });
+        if (response.data.success) {
+            return response.data.data || [];
+        }
+        return [];
+    } catch (error) {
+        console.error('Failed to get agent orders:', error);
+        return [];
+    }
+};
 
 // ============ DEFAULT EXPORT ============
 
@@ -1022,18 +1024,19 @@ const storageService = {
     setBankUpiPin, verifyBankPin, hasUpiPin, hasUpiPinHelper, verifyBankPinHelper,
     updateBankBalanceHelper, updateCoinBalanceHelper,
     getTransactions, addTransaction,
-    getCoinBalance, updateCoinBalance,
+    getLifetimeEarned, getCoinBalance, updateCoinBalance,
     getBills, addBill, updateBill, deleteBill, markBillAsPaid, getPaidBills,
-    getReserveLimits, setReserveLimits, addReserveLimit, deleteReserveLimit,
+    getReserveLimits, setReserveLimits,
     getAutoPayOrders, addAutoPayOrder, deleteAutoPayOrder,
     getContacts, addContact,
-    getMoneyRequests, addMoneyRequest,
+    getMoneyRequests, setMoneyRequests, addMoneyRequest,
     getRecentRecharges, addRecentRecharge,
     getAgentConversations, getAgentMessages, saveAgentMessage, deleteAgentConversation, getAgentOrders,
     getConnectedMerchants, connectMerchant, disconnectMerchant,
     getClaimedChallenges, claimChallenge,
-    // Legacy exports
-    setBankAccounts, setBankBalances, setAutoPayOrders, setMoneyRequests, getBankUpiPins, addPaidBill
+    // Sync versions
+    getBankAccountsSync, getBankBalancesSync, getCoinBalanceSync, getTransactionsSync,
+    getBillsSync, getReserveLimitsSync, getAutoPayOrdersSync, getContactsSync
 };
 
 export default storageService;
