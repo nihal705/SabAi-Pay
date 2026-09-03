@@ -1,86 +1,32 @@
 // frontend/src/pages/SendMoneyPage.jsx
-// Complete with Split Payment (Fixed saving), Self Transfer (PopUPI success), Contact Modal
-
-/**
- * SabAI Pay - AI-Powered UPI Payments Assistant
- * Copyright (c) 2026 G Nihal. All Rights Reserved.
- * 
- * This software is proprietary and confidential.
- * Unauthorized copying, distribution, or use is strictly prohibited.
- * 
- * For licensing inquiries: sabaipaycontact@gmail.com
- */
-
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { bankAPI, agentOrderAPI, coinAPI } from '../services/apiService';
 import storageService, {
-    getBankAccounts,
-    getBankBalances,
-    updateContactAfterTransaction,
-    getCoinBalance,
-    getTransactions,
-    getMoneyRequests,
-    setMoneyRequests,
-    getContacts,
-    addContact,
-    verifyBankPin,
-    hasUpiPin,
-    updateBankBalance,
-    updateCoinBalance,
-    addTransaction,
+    getBankAccounts, getBankBalances, updateContactAfterTransaction,
+    getCoinBalance, getTransactions, getMoneyRequests, setMoneyRequests,
+    getContacts, addContact, verifyBankPin, hasUpiPin,
+    updateBankBalance, updateCoinBalance, addTransaction,
     refreshCurrentUserId,
 } from '../services/storageService';
 import { 
-  FaArrowLeft, FaSearch, FaUser, FaRupeeSign, FaArrowRight,
+  FaArrowLeft, FaSearch, FaUser, FaFolderOpen, FaRupeeSign, FaArrowRight,
   FaQrcode, FaCamera, FaUserCircle, FaCheckCircle, FaExclamationCircle,
-  FaUniversity, FaWallet, FaTimes, FaEye, FaEyeSlash, FaLock, FaMoneyBillWave,
-  FaCopy, FaInfoCircle, FaMobile, FaEnvelope, FaPhone, FaBuilding, FaTimesCircle,
-  FaSpinner, FaChevronRight, FaClock, FaCalendarAlt, FaStar, FaChartLine,
-  FaTrash, FaEdit, FaHistory, FaWhatsapp, FaLink, FaShare, FaSave,
-  FaGooglePay, FaAmazonPay, FaApplePay, FaCreditCard as FaCreditCardIcon,
-  FaEdit as FaEditIcon, FaUsers, FaUserPlus, FaPlus, FaMinus, FaFolderOpen,
-  FaExchangeAlt, FaArrowUp, FaArrowDown, FaBalanceScale, FaGift, FaCopy as FaCopyIcon
+  FaUniversity, FaWallet, FaTimes, FaMobile, FaSpinner, FaChevronRight, 
+  FaTrash, FaEdit, FaUsers, FaUserPlus, FaExchangeAlt, FaArrowDown, FaBalanceScale, FaGift,
+  FaTimesCircle, FaChartLine
 } from 'react-icons/fa';
 import { MdQrCodeScanner, MdVerified, MdGroups } from 'react-icons/md';
-import { SiGooglepay, SiPhonepe, SiPaytm } from 'react-icons/si';
 import toast from 'react-hot-toast';
-import './SendMoneyPage.css';
 
-// Helper function to get bank logo URL
-const getBankLogoUrl = (bankName) => {
-  const bankLogoMap = {
-    'State Bank of India': 'sbi.png', 'SBI': 'sbi.png',
-    'HDFC Bank': 'hdfc.png', 'HDFC': 'hdfc.png',
-    'ICICI Bank': 'icici.png', 'ICICI': 'icici.png',
-    'Axis Bank': 'axis.png', 'Axis': 'axis.png',
-    'Bank of Baroda': 'bob.png', 'BOB': 'bob.png',
-    'Punjab National Bank': 'pnb.png', 'PNB': 'pnb.png',
-    'Canara Bank': 'canara.png', 'Canara': 'canara.png',
-    'Union Bank of India': 'union.png', 'Union Bank': 'union.png',
-    'Kotak Mahindra Bank': 'kotak.png', 'Kotak': 'kotak.png',
-    'IndusInd Bank': 'indusind.png', 'IndusInd': 'indusind.png',
-    'Yes Bank': 'yesbank.png', 'Yes': 'yesbank.png',
-    'IDFC First Bank': 'idfc.png', 'IDFC': 'idfc.png',
-    'Karnataka Bank': 'karnataka.png',
-    'Indian Bank': 'indianbank.png',
-    'Indian Overseas Bank': 'iob.png', 'IOB': 'iob.png',
-    'Federal Bank': 'federal.png',
-    'South Indian Bank': 'sib.png', 'SIB': 'sib.png'
-  };
-  const fileName = bankLogoMap[bankName];
-  if (fileName) return `/images/banks/${fileName}`;
-  return null;
-};
+// ============================================
+// HELPER FUNCTIONS
+// ============================================
 
-// Helper function to get contact color
 const getContactColor = (name) => {
-  const colors = [
-    '#4f46e5', '#10b981', '#f59e0b', '#ef4444', '#ec4899', '#8b5cf6', '#06b6d4', '#84cc16', '#f97316', '#d946ef',
-    '#3b82f6', '#14b8a6', '#a855f7', '#e11d48', '#f43f5e'
-  ];
+  const colors = ['#4f46e5', '#10b981', '#f59e0b', '#ef4444', '#ec4899', '#8b5cf6', '#06b6d4', '#84cc16', '#f97316', '#d946ef'];
   let hash = 0;
   for (let i = 0; i < name?.length; i++) {
     hash = ((hash << 5) - hash) + name.charCodeAt(i);
@@ -89,327 +35,24 @@ const getContactColor = (name) => {
   return colors[Math.abs(hash) % colors.length];
 };
 
-// Helper function to calculate cashback (5% of amount)
-// const calculateCashback = (amount) => {
-//   return Math.floor(amount * 0.05);
-// };
-
-// PopUPI Style Success Animation Component
-const PopUpiSuccessAnimation = ({ onComplete, transactionData, onNewPayment, onViewTransaction }) => {
-  const [animationStage, setAnimationStage] = useState(0);
-  const [showOptions, setShowOptions] = useState(false);
-  
-  useEffect(() => {
-    const timer1 = setTimeout(() => setAnimationStage(1), 300);
-    const timer2 = setTimeout(() => setAnimationStage(2), 800);
-    const timer3 = setTimeout(() => setAnimationStage(3), 1300);
-    const timer4 = setTimeout(() => setShowOptions(true), 1800);
-    
-    return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
-      clearTimeout(timer3);
-      clearTimeout(timer4);
-    };
-  }, []);
-  
-  return (
-    <motion.div 
-      className="popupi-animation"
-      initial={{ scale: 0.8, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 0.3 }}
-    >
-      <div className="popupi-content">
-        <motion.div 
-          className="popupi-logo"
-          animate={{ 
-            scale: animationStage >= 1 ? [1, 1.2, 1] : 1,
-            rotate: animationStage >= 1 ? [0, 360, 0] : 0
-          }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="logo-inner">
-            <img src="/images/merchants/sabailogo.png" alt="SabAI Pay" onError={(e) => { e.target.style.display = 'none'; }} />
-          </div>
-          <div className="logo-ring"></div>
-        </motion.div>
-        
-        <motion.div 
-          className="popupi-check"
-          initial={{ scale: 0 }}
-          animate={{ scale: animationStage >= 2 ? 1 : 0 }}
-          transition={{ type: "spring", stiffness: 500, damping: 15, delay: 0.2 }}
-        >
-          <FaCheckCircle />
-        </motion.div>
-        
-        <motion.div 
-          className="popupi-text"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: animationStage >= 2 ? 0 : 20, opacity: animationStage >= 2 ? 1 : 0 }}
-        >
-          <h2>Payment Successful!</h2>
-          <p className="amount-paid">₹{transactionData?.amount?.toLocaleString()}</p>
-          <p className="to-text">to {transactionData?.receiver_name || transactionData?.receiver_vpa}</p>
-        </motion.div>
-        
-        <motion.div 
-          className="popupi-details"
-          initial={{ height: 0, opacity: 0 }}
-          animate={{ height: animationStage >= 3 ? 'auto' : 0, opacity: animationStage >= 3 ? 1 : 0 }}
-        >
-          <div className="detail-item">
-            <span>Transaction ID</span>
-            <span className="txn-id">{transactionData?.transactionId}</span>
-          </div>
-          <div className="detail-item">
-            <span>From</span>
-            <span>{transactionData?.bank_name}</span>
-          </div>
-          {/* <div className="detail-item highlight">
-            <span>SabAI Gems Earned</span>
-            <span>+{transactionData?.cashback} 🪙</span>
-          </div> */}
-          <div className="detail-item">
-            <span>Date & Time</span>
-            <span>{new Date().toLocaleString()}</span>
-          </div>
-        </motion.div>
-        
-        {showOptions && (
-          <motion.div 
-            className="popupi-options"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <button className="popupi-btn primary" onClick={onViewTransaction}>
-              <FaHistory /> View Transaction
-            </button>
-            <button className="popupi-btn secondary" onClick={onNewPayment}>
-              <FaArrowRight /> New Payment
-            </button>
-          </motion.div>
-        )}
-      </div>
-    </motion.div>
-  );
+const getBankLogoUrl = (bankName) => {
+  const map = {
+    'State Bank of India': 'sbi.png', 'SBI': 'sbi.png',
+    'HDFC Bank': 'hdfc.png', 'HDFC': 'hdfc.png',
+    'ICICI Bank': 'icici.png', 'ICICI': 'icici.png',
+    'Axis Bank': 'axis.png', 'Axis': 'axis.png',
+    'Bank of Baroda': 'bob.png', 'BOB': 'bob.png',
+    'Punjab National Bank': 'pnb.png', 'PNB': 'pnb.png',
+    'Canara Bank': 'canara.png', 'Canara': 'canara.png',
+    'Kotak Mahindra Bank': 'kotak.png', 'Kotak': 'kotak.png',
+  };
+  return map[bankName] ? `/images/banks/${map[bankName]}` : null;
 };
 
-  // Failed Payment Modal Component
-const FailedPaymentModal = ({ transactionData, onClose, onRetry }) => {
-  const [animationStage, setAnimationStage] = useState(0);
-  const [showOptions, setShowOptions] = useState(false);
-  
-  useEffect(() => {
-    const timer1 = setTimeout(() => setAnimationStage(1), 300);
-    const timer2 = setTimeout(() => setAnimationStage(2), 800);
-    const timer3 = setTimeout(() => setAnimationStage(3), 1300);
-    const timer4 = setTimeout(() => setShowOptions(true), 1800);
-    
-    return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
-      clearTimeout(timer3);
-      clearTimeout(timer4);
-    };
-  }, []);
-  
-  return (
-    <motion.div 
-      className="popupi-overlay"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      onClick={onClose}
-    >
-      <motion.div 
-        className="popupi-animation failed"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.3 }}
-      >
-        <div className="popupi-content">
-          <motion.div 
-            className="popupi-logo"
-            animate={{ 
-              scale: animationStage >= 1 ? [1, 1.2, 1] : 1,
-              rotate: animationStage >= 1 ? [0, 360, 0] : 0
-            }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="logo-inner failed">
-              <FaTimesCircle style={{ fontSize: '2rem', color: '#ef4444' }} />
-            </div>
-            <div className="logo-ring failed"></div>
-          </motion.div>
-          
-          <motion.div 
-            className="popupi-check failed"
-            initial={{ scale: 0 }}
-            animate={{ scale: animationStage >= 2 ? 1 : 0 }}
-            transition={{ type: "spring", stiffness: 500, damping: 15, delay: 0.2 }}
-          >
-            <FaTimesCircle style={{ color: '#ef4444', fontSize: '2rem' }} />
-          </motion.div>
-          
-          <motion.div 
-            className="popupi-text"
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: animationStage >= 2 ? 0 : 20, opacity: animationStage >= 2 ? 1 : 0 }}
-          >
-            <h2 style={{ color: '#ef4444' }}>Payment Failed!</h2>
-            <p className="amount-paid">₹{transactionData?.amount?.toLocaleString()}</p>
-            <p className="to-text">to {transactionData?.receiver_name || transactionData?.receiver_vpa}</p>
-          </motion.div>
-          
-          <motion.div 
-            className="popupi-details"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: animationStage >= 3 ? 'auto' : 0, opacity: animationStage >= 3 ? 1 : 0 }}
-          >
-            <div className="detail-item">
-              <span>Transaction ID</span>
-              <span className="txn-id">{transactionData?.transactionId}</span>
-            </div>
-            <div className="detail-item">
-              <span>From</span>
-              <span>{transactionData?.bank_name}</span>
-            </div>
-            <div className="detail-item highlight failed">
-              <span>Failure Reason</span>
-              <span style={{ color: '#ef4444' }}>{transactionData?.failure_reason || 'Insufficient balance'}</span>
-            </div>
-            <div className="detail-item">
-              <span>Date & Time</span>
-              <span>{new Date().toLocaleString()}</span>
-            </div>
-          </motion.div>
-          
-          {showOptions && (
-            <motion.div 
-              className="popupi-options"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              <button className="popupi-btn primary" onClick={onRetry}>
-                <FaArrowRight /> Try Again
-              </button>
-              <button className="popupi-btn secondary" onClick={onClose}>
-                Close
-              </button>
-            </motion.div>
-          )}
-        </div>
-      </motion.div>
-    </motion.div>
-  );
-};
+// ============================================
+// SPLIT PAYMENT MODAL - FULL VERSION
+// ============================================
 
-// Split Success Modal
-const SplitSuccessModal = ({ onClose, splitData }) => {
-  return (
-    <motion.div 
-      className="split-success-modal"
-      initial={{ scale: 0.9, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      exit={{ scale: 0.9, opacity: 0 }}
-    >
-      <div className="split-success-icon">
-        <FaCheckCircle />
-      </div>
-      <h3>Split Request Created!</h3>
-      <p>Total Amount: <strong>₹{splitData?.totalAmount?.toLocaleString()}</strong></p>
-      <p>Split among <strong>{splitData?.splits?.length}</strong> people</p>
-      <div className="split-success-preview">
-        {splitData?.splits?.filter(s => !s.isSelf && s.amount > 0).map((split, idx) => (
-          <div key={idx} className="split-success-item">
-            <span>{split.contact?.name || split.contact?.name}</span>
-            <span>₹{split.amount.toLocaleString()}</span>
-          </div>
-        ))}
-      </div>
-      <button className="split-success-btn" onClick={onClose}>Done</button>
-    </motion.div>
-  );
-};
-
-// Contact Details Modal (Similar to Dashboard)
-const ContactDetailsModal = ({ contact, onClose, onPay, onRequest, formatDate, contactTransactions, contactTotalReceived }) => {
-  return (
-    <motion.div className="contact-details-modal" initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} onClick={e => e.stopPropagation()}>
-      <button className="modal-close" onClick={onClose}><FaTimes /></button>
-      
-      <div className="contact-modal-header">
-        <div className="contact-large-circle" style={{ backgroundColor: contact.color || getContactColor(contact.name) }}>
-          {contact.name?.charAt(0).toUpperCase()}
-        </div>
-        <div className="contact-header-info">
-          <h2>{contact.name}</h2>
-          <p className="contact-vpa-large">{contact.vpa}</p>
-          <div className="contact-stats">
-            <div className="contact-stats">
-            <div className="contact-stats">
-    <div className="contact-stat">
-        <span className="stat-value">₹{(contact.totalSent || 0).toLocaleString()}</span>
-        <span className="stat-label">TOTAL SENT</span>
-    </div>
-    <div className="contact-stat">
-        <span className="stat-value">{contact.transactionCount || 0}</span>
-        <span className="stat-label">TRANSACTIONS</span>
-    </div>
-    <div className="contact-stat">
-        <span className="stat-value">₹{(contactTotalReceived || 0).toLocaleString()}</span>
-        <span className="stat-label">TOTAL RECEIVED</span>
-    </div>
-</div>
-        </div>
-          </div>
-        </div>
-        <div className="contact-actions-large">
-          <button className="contact-pay-btn-large" onClick={() => onPay(contact)}>
-            <FaMoneyBillWave /> Pay
-          </button>
-          <button className="contact-request-btn-large" onClick={() => onRequest(contact)}>
-            <FaArrowDown /> Request
-          </button>
-        </div>
-      </div>
-
-      <div className="contact-transactions-section">
-        <h3>Transaction History</h3>
-        <div className="transactions-list-scroll">
-          {contactTransactions?.length > 0 ? (
-            contactTransactions.map(tx => (
-              <div key={tx.id} className="transaction-item">
-                <div className="transaction-icon">
-                  {tx.type === 'sent' ? <FaArrowUp className="sent" /> : <FaArrowDown className="received" />}
-                </div>
-                <div className="transaction-info">
-                  <p className="transaction-desc">{tx.description || 'Payment'}</p>
-                  <p className="transaction-date">{formatDate(tx.date)}</p>
-                </div>
-                <div className="transaction-amount">
-                  <span className={tx.type === 'sent' ? 'amount-sent' : 'amount-received'}>
-                    {tx.type === 'sent' ? '-' : '+'}₹{tx.amount}
-                  </span>
-                </div>
-              </div>
-            ))
-          ) : (
-            <div className="no-transactions">
-              <p>No transactions with this contact yet</p>
-            </div>
-          )}
-        </div>
-      </div>
-    </motion.div>
-  );
-};
-
-// Split Payment Component with Fixed Saving
 const SplitPaymentModal = ({ onClose, onSplitComplete, contacts, user, bankBalances, linkedBanks }) => {
   const [step, setStep] = useState(1);
   const [totalAmount, setTotalAmount] = useState('');
@@ -434,7 +77,6 @@ const SplitPaymentModal = ({ onClose, onSplitComplete, contacts, user, bankBalan
     isSelf: true
   };
   
-  // Load saved groups on mount
   useEffect(() => {
     const groups = JSON.parse(localStorage.getItem('splitGroups') || '[]');
     setSavedGroups(groups);
@@ -536,12 +178,10 @@ const SplitPaymentModal = ({ onClose, onSplitComplete, contacts, user, bankBalan
       status: 'pending'
     };
     
-    // Save split request to localStorage
     const existingRequests = JSON.parse(localStorage.getItem('splitRequests') || '[]');
     existingRequests.unshift(splitRequestData);
     localStorage.setItem('splitRequests', JSON.stringify(existingRequests.slice(0, 50)));
     
-    // Save group if name provided
     if (groupName) {
       const groups = JSON.parse(localStorage.getItem('splitGroups') || '[]');
       const existingGroupIndex = groups.findIndex(g => g.name === groupName);
@@ -565,7 +205,6 @@ const SplitPaymentModal = ({ onClose, onSplitComplete, contacts, user, bankBalan
       toast.success(`Group "${groupName}" saved!`);
     }
     
-    // For each participant, create a money request
     allSplits.forEach(split => {
       if (!split.isSelf && split.amount > 0) {
         const moneyRequest = {
@@ -593,19 +232,6 @@ const SplitPaymentModal = ({ onClose, onSplitComplete, contacts, user, bankBalan
     setShowSplitSuccess(true);
   };
   
-  const updateCustomAmount = (contactId, value) => {
-    setCustomAmounts(prev => ({ ...prev, [contactId]: value }));
-  };
-  
-  const updateCustomPercentage = (contactId, value) => {
-    const percentage = parseFloat(value);
-    if (percentage > 100) {
-      toast.error('Percentage cannot exceed 100%');
-      return;
-    }
-    setCustomPercentages(prev => ({ ...prev, [contactId]: value }));
-  };
-  
   const loadSavedGroups = () => {
     const groups = JSON.parse(localStorage.getItem('splitGroups') || '[]');
     setSavedGroups(groups);
@@ -622,20 +248,14 @@ const SplitPaymentModal = ({ onClose, onSplitComplete, contacts, user, bankBalan
     toast.success(`Loaded group: ${group.name}`);
   };
   
-  const getTotalAllocated = () => {
+  const getRemainingAmount = () => {
     const amount = parseFloat(totalAmount);
     if (isNaN(amount)) return 0;
     let total = 0;
     selectedContacts.forEach(contact => {
       total += parseFloat(customAmounts[contact.id] || 0);
     });
-    return total;
-  };
-  
-  const getRemainingAmount = () => {
-    const amount = parseFloat(totalAmount);
-    if (isNaN(amount)) return 0;
-    return amount - getTotalAllocated();
+    return amount - total;
   };
   
   const getRemainingPercentage = () => {
@@ -646,273 +266,155 @@ const SplitPaymentModal = ({ onClose, onSplitComplete, contacts, user, bankBalan
     return 100 - total;
   };
   
-  const handleSplitSuccessClose = () => {
-    setShowSplitSuccess(false);
-    onSplitComplete(createdSplitData);
-    onClose();
-  };
-  
   return (
-    <>
-      <div className="split-modal">
-        <div className="split-modal-header">
-          <h3>Split Payment</h3>
-          <button className="modal-close" onClick={onClose}><FaTimes /></button>
-        </div>
-        
-        <div className="split-modal-body">
-          {step === 1 && (
-            <>
-              <div className="form-group">
-                <label>Total Amount (₹)</label>
-                <div className="amount-wrapper">
-                  <span className="currency">₹</span>
-                  <input
-                    type="number"
-                    value={totalAmount}
-                    onChange={(e) => setTotalAmount(e.target.value)}
-                    placeholder="Enter total bill amount"
-                    autoFocus
-                  />
-                </div>
-              </div>
-              
-              <div className="form-group">
-                <label>Split Type</label>
-                <div className="split-type-buttons">
-                  <button className={`split-type-btn ${splitType === 'equal' ? 'active' : ''}`} onClick={() => setSplitType('equal')}>
-                    <FaBalanceScale /> Equal
-                  </button>
-                  <button className={`split-type-btn ${splitType === 'custom' ? 'active' : ''}`} onClick={() => setSplitType('custom')}>
-                    <FaEdit /> Custom Amount
-                  </button>
-                  <button className={`split-type-btn ${splitType === 'percentage' ? 'active' : ''}`} onClick={() => setSplitType('percentage')}>
-                    <FaChartLine /> Percentage
-                  </button>
-                </div>
-              </div>
-              
-              <div className="form-group">
-                <label>Group Name (Optional)</label>
-                <div className="group-input-wrapper">
-                  <input
-                    type="text"
-                    value={groupName}
-                    onChange={(e) => setGroupName(e.target.value)}
-                    placeholder="e.g., Dinner with Friends, Trip Expenses"
-                  />
-                  <button className="save-group-btn" onClick={loadSavedGroups}>
-                    <FaFolderOpen /> Load Group
-                  </button>
-                </div>
-              </div>
-              
-              <div className="form-group">
-                <label>Note (Optional)</label>
-                <textarea
-                  value={splitNote}
-                  onChange={(e) => setSplitNote(e.target.value)}
-                  placeholder="Add a note about this split (e.g., Dinner at Restaurant, Movie tickets)"
-                  rows={2}
-                  className="form-input"
-                />
-              </div>
-              
-              <button className="next-btn" onClick={() => setStep(2)} disabled={!totalAmount}>
-                Next <FaArrowRight />
-              </button>
-            </>
-          )}
-          
-          {step === 2 && (
-            <>
-              <div className="split-summary">
-                <div className="summary-header">
-                  <span>Total Bill: ₹{parseFloat(totalAmount || 0).toLocaleString()}</span>
-                  <span>{selectedContacts.length + 1} people including you</span>
-                </div>
-                {splitType === 'equal' && totalAmount && (
-                  <div className="per-person">
-                    Each person pays: ₹{(parseFloat(totalAmount) / (selectedContacts.length + 1)).toLocaleString()}
-                  </div>
-                )}
-                {splitType === 'custom' && totalAmount && (
-                  <div className="per-person">
-                    You pay: ₹{getRemainingAmount().toLocaleString()} (remaining)
-                  </div>
-                )}
-                {splitType === 'percentage' && totalAmount && (
-                  <div className="per-person">
-                    You pay: {getRemainingPercentage().toFixed(1)}% (₹{((getRemainingPercentage() / 100) * parseFloat(totalAmount)).toLocaleString()})
-                  </div>
-                )}
-              </div>
-              
-              <div className="search-contacts-split">
-                <div className="search-box">
-                  <FaSearch className="search-icon" />
-                  <input
-                    type="text"
-                    placeholder="Search contacts to add..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                  />
-                </div>
-              </div>
-              
-              <div className="contacts-list-split">
-                {filteredContacts.map(contact => (
-                  <div key={contact.id} className={`contact-split-item ${selectedContacts.find(c => c.id === contact.id) ? 'selected' : ''}`}>
-                    <div className="contact-info-left">
-                      <div className="contact-avatar-small" style={{ backgroundColor: contact.color || '#4f46e5' }}>
-                        {contact.avatar || contact.name?.charAt(0)}
-                      </div>
-                      <div>
-                        <span className="contact-name">{contact.name}</span>
-                        <span className="contact-vpa-small">{contact.vpa}</span>
-                      </div>
-                    </div>
-                    <div className="contact-split-actions">
-                      {selectedContacts.find(c => c.id === contact.id) && (
-                        <>
-                          {splitType === 'custom' && (
-                            <div className="custom-amount-input">
-                              <span>₹</span>
-                              <input
-                                type="number"
-                                value={customAmounts[contact.id] || ''}
-                                onChange={(e) => updateCustomAmount(contact.id, e.target.value)}
-                                placeholder="Amount"
-                              />
-                            </div>
-                          )}
-                          {splitType === 'percentage' && (
-                            <div className="custom-amount-input">
-                              <input
-                                type="number"
-                                value={customPercentages[contact.id] || ''}
-                                onChange={(e) => updateCustomPercentage(contact.id, e.target.value)}
-                                placeholder="%"
-                                style={{ width: '60px' }}
-                              />
-                              <span>%</span>
-                            </div>
-                          )}
-                        </>
-                      )}
-                      <button 
-                        className={`select-contact-btn ${selectedContacts.find(c => c.id === contact.id) ? 'selected' : ''}`}
-                        onClick={() => toggleContact(contact)}
-                      >
-                        {selectedContacts.find(c => c.id === contact.id) ? <FaCheckCircle /> : <FaUserPlus />}
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              
-              {/* Split Preview */}
-              {allParticipants.length > 0 && totalAmount && (
-                <div className="split-preview">
-                  <h4>Split Preview</h4>
-                  <div className="preview-list">
-                    {allParticipants.map((participant, idx) => {
-                      let amount = 0;
-                      let percentage = 0;
-                      if (splitType === 'equal') {
-                        amount = parseFloat(totalAmount) / allParticipants.length;
-                        percentage = (amount / parseFloat(totalAmount)) * 100;
-                      } else if (splitType === 'custom') {
-                        if (participant.isSelf) {
-                          amount = getRemainingAmount();
-                        } else {
-                          amount = parseFloat(customAmounts[participant.id] || 0);
-                        }
-                        percentage = (amount / parseFloat(totalAmount)) * 100;
-                      } else {
-                        if (participant.isSelf) {
-                          percentage = getRemainingPercentage();
-                        } else {
-                          percentage = parseFloat(customPercentages[participant.id] || 0);
-                        }
-                        amount = (percentage / 100) * parseFloat(totalAmount);
-                      }
-                      return (
-                        <div key={participant.id || idx} className="preview-item">
-                          <div className="preview-avatar" style={{ backgroundColor: participant.color || '#1eac2a' }}>
-                            {participant.avatar || participant.name?.charAt(0)}
-                          </div>
-                          <div className="preview-info">
-                            <span className="preview-name">{participant.name} {participant.isSelf && '(You)'}</span>
-                            <span className="preview-amount">₹{amount.toLocaleString()}</span>
-                          </div>
-                          <span className="preview-percentage">{percentage.toFixed(1)}%</span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-              
-              <div className="split-actions">
-                <button className="btn-secondary" onClick={() => setStep(1)}>Back</button>
-                <button className="btn-primary" onClick={calculateSplit} disabled={selectedContacts.length === 0}>
-                  Create Split Request
-                </button>
-              </div>
-            </>
-          )}
-        </div>
-        
-        {/* Group Selection Modal */}
-        <AnimatePresence>
-          {showGroupSelect && (
-            <div className="group-select-overlay" onClick={() => setShowGroupSelect(false)}>
-              <div className="group-select-modal" onClick={e => e.stopPropagation()}>
-                <div className="group-select-header">
-                  <h4>Saved Groups</h4>
-                  <button onClick={() => setShowGroupSelect(false)}><FaTimes /></button>
-                </div>
-                <div className="group-select-list">
-                  {savedGroups.length === 0 ? (
-                    <p className="no-groups">No saved groups yet</p>
-                  ) : (
-                    savedGroups.map(group => (
-                      <div key={group.id} className="group-item" onClick={() => loadGroup(group)}>
-                        <div className="group-icon"><MdGroups /></div>
-                        <div className="group-info">
-                          <span className="group-name">{group.name}</span>
-                          <span className="group-members">{group.contacts.length} members</span>
-                        </div>
-                        <FaChevronRight />
-                      </div>
-                    ))
-                  )}
-                </div>
-              </div>
-            </div>
-          )}
-        </AnimatePresence>
+    <div className="p-4 max-h-[80vh] overflow-y-auto">
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="font-bold text-lg">Split Payment</h3>
+        <button onClick={onClose} className="text-gray-400 hover:text-gray-600"><FaTimes /></button>
       </div>
+      
+      {step === 1 && (
+        <>
+          <div className="mb-3">
+            <label className="text-xs font-medium block mb-1">Total Amount (₹)</label>
+            <div className="relative">
+              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">₹</span>
+              <input type="number" value={totalAmount} onChange={(e) => setTotalAmount(e.target.value)} placeholder="Enter total bill amount" className="w-full pl-7 pr-3 py-2 text-sm border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" autoFocus />
+            </div>
+          </div>
+          
+          <div className="mb-3">
+            <label className="text-xs font-medium block mb-1">Split Type</label>
+            <div className="flex gap-2">
+              <button className={`flex-1 py-1.5 text-xs font-medium rounded-xl transition-all ${splitType === 'equal' ? 'bg-primary-500 text-white' : 'bg-gray-100 dark:bg-gray-700'}`} onClick={() => setSplitType('equal')}><FaBalanceScale className="inline mr-1" /> Equal</button>
+              <button className={`flex-1 py-1.5 text-xs font-medium rounded-xl transition-all ${splitType === 'custom' ? 'bg-primary-500 text-white' : 'bg-gray-100 dark:bg-gray-700'}`} onClick={() => setSplitType('custom')}><FaEdit className="inline mr-1" /> Custom</button>
+              <button className={`flex-1 py-1.5 text-xs font-medium rounded-xl transition-all ${splitType === 'percentage' ? 'bg-primary-500 text-white' : 'bg-gray-100 dark:bg-gray-700'}`} onClick={() => setSplitType('percentage')}><FaChartLine className="inline mr-1" /> %</button>
+            </div>
+          </div>
+          
+          <div className="mb-3">
+            <label className="text-xs font-medium block mb-1">Group Name (Optional)</label>
+            <div className="flex gap-2">
+              <input type="text" value={groupName} onChange={(e) => setGroupName(e.target.value)} placeholder="e.g., Dinner with Friends" className="flex-1 px-3 py-1.5 text-sm border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" />
+              <button onClick={loadSavedGroups} className="px-3 py-1.5 text-sm bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-gray-200 transition-all"><FaFolderOpen /></button>
+            </div>
+          </div>
+          
+          <div className="mb-3">
+            <label className="text-xs font-medium block mb-1">Note (Optional)</label>
+            <input type="text" value={splitNote} onChange={(e) => setSplitNote(e.target.value)} placeholder="Add a note" className="w-full px-3 py-1.5 text-sm border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" />
+          </div>
+          
+          <button onClick={() => setStep(2)} disabled={!totalAmount} className="w-full py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all disabled:opacity-50">Next</button>
+        </>
+      )}
+      
+      {step === 2 && (
+        <>
+          <div className="text-center mb-3">
+            <p className="text-sm font-medium">Total: ₹{parseFloat(totalAmount || 0).toLocaleString()}</p>
+            <p className="text-xs text-gray-500">{selectedContacts.length + 1} people including you</p>
+            {splitType === 'equal' && totalAmount && (
+              <p className="text-xs text-green-600">Each: ₹{(parseFloat(totalAmount) / (selectedContacts.length + 1)).toFixed(2)}</p>
+            )}
+            {splitType === 'custom' && totalAmount && (
+              <p className="text-xs text-orange-500">You pay: ₹{getRemainingAmount().toFixed(2)}</p>
+            )}
+            {splitType === 'percentage' && totalAmount && (
+              <p className="text-xs text-purple-500">You pay: {getRemainingPercentage().toFixed(1)}%</p>
+            )}
+          </div>
+          
+          <div className="relative mb-2">
+            <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm" />
+            <input type="text" placeholder="Search contacts..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="w-full pl-9 pr-3 py-1.5 text-sm border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" />
+          </div>
+          
+          <div className="max-h-40 overflow-y-auto space-y-1 mb-3">
+            {filteredContacts.map(contact => {
+              const isSelected = selectedContacts.find(c => c.id === contact.id);
+              return (
+                <div key={contact.id} className={`flex items-center justify-between p-1.5 rounded-xl border ${isSelected ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20' : 'border-gray-200 dark:border-gray-700'}`}>
+                  <div className="flex items-center gap-2">
+                    <div className="w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold" style={{ backgroundColor: getContactColor(contact.name) }}>{contact.name?.charAt(0)?.toUpperCase()}</div>
+                    <span className="text-sm">{contact.name}</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    {isSelected && splitType === 'custom' && (
+                      <input type="number" placeholder="₹" value={customAmounts[contact.id] || ''} onChange={(e) => setCustomAmounts(prev => ({...prev, [contact.id]: e.target.value}))} className="w-16 px-1.5 py-0.5 text-xs border border-gray-200 rounded-lg" />
+                    )}
+                    {isSelected && splitType === 'percentage' && (
+                      <input type="number" placeholder="%" value={customPercentages[contact.id] || ''} onChange={(e) => setCustomPercentages(prev => ({...prev, [contact.id]: e.target.value}))} className="w-14 px-1.5 py-0.5 text-xs border border-gray-200 rounded-lg" />
+                    )}
+                    <button onClick={() => toggleContact(contact)} className={`p-1 rounded-lg ${isSelected ? 'text-primary-500' : 'text-gray-400 hover:text-primary-500'}`}>
+                      {isSelected ? <FaCheckCircle /> : <FaUserPlus />}
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          
+          <div className="flex gap-2">
+            <button onClick={() => setStep(1)} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-gray-200">Back</button>
+            <button onClick={calculateSplit} disabled={selectedContacts.length === 0} className="flex-1 py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all disabled:opacity-50">Create Split</button>
+          </div>
+        </>
+      )}
+      
+      {/* Group Select Modal */}
+      <AnimatePresence>
+        {showGroupSelect && (
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full p-4">
+              <div className="flex justify-between items-center mb-3">
+                <h4 className="font-bold">Saved Groups</h4>
+                <button onClick={() => setShowGroupSelect(false)} className="text-gray-400 hover:text-gray-600"><FaTimes /></button>
+              </div>
+              {savedGroups.length === 0 ? (
+                <p className="text-sm text-gray-500 text-center py-4">No saved groups yet</p>
+              ) : (
+                savedGroups.map(group => (
+                  <button key={group.id} onClick={() => loadGroup(group)} className="w-full flex items-center gap-3 p-2 border border-gray-200 dark:border-gray-700 rounded-xl mb-1.5 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+                    <MdGroups className="text-primary-500 text-lg" />
+                    <div className="flex-1 text-left"><p className="text-sm font-medium">{group.name}</p><p className="text-xs text-gray-500">{group.contacts.length} members</p></div>
+                    <FaChevronRight className="text-gray-400 text-sm" />
+                  </button>
+                ))
+              )}
+            </div>
+          </div>
+        )}
+      </AnimatePresence>
       
       {/* Split Success Modal */}
       <AnimatePresence>
         {showSplitSuccess && createdSplitData && (
-          <div className="modal-overlay" onClick={handleSplitSuccessClose}>
-            <SplitSuccessModal 
-              splitData={createdSplitData}
-              onClose={handleSplitSuccessClose}
-            />
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full p-5 text-center">
+              <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2"><FaCheckCircle className="text-white text-2xl" /></div>
+              <h3 className="font-bold text-lg">Split Created!</h3>
+              <p className="text-2xl font-bold text-green-600">₹{createdSplitData.totalAmount.toLocaleString()}</p>
+              <p className="text-sm text-gray-500">Split among {createdSplitData.splits.length} people</p>
+              <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-2.5 mt-2 text-left text-sm max-h-32 overflow-y-auto">
+                {createdSplitData.splits.filter(s => !s.isSelf && s.amount > 0).slice(0, 5).map((s, i) => (
+                  <div key={i} className="flex justify-between py-0.5 border-b border-gray-100 dark:border-gray-600"><span>{s.contact.name}</span><span>₹{s.amount.toFixed(2)}</span></div>
+                ))}
+              </div>
+              <button onClick={() => { setShowSplitSuccess(false); onSplitComplete(createdSplitData); onClose(); }} className="w-full mt-3 py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600">Done</button>
+            </motion.div>
           </div>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 };
 
-// Self Transfer Component with PopUPI Success
-// Self Transfer Component with PopUPI Success and Failed Modals
-const SelfTransferModal = ({ onClose, onTransferComplete, linkedBanks, bankBalances, updateBankBalance, hasUpiPin, verifyBankPin }) => {
+// ============================================
+// SELF TRANSFER MODAL - FULL VERSION
+// ============================================
+
+const SelfTransferModal = ({ onClose, onTransferComplete, linkedBanks, bankBalances }) => {
   const [step, setStep] = useState(1);
   const [fromBank, setFromBank] = useState(null);
   const [toBank, setToBank] = useState(null);
@@ -924,11 +426,11 @@ const SelfTransferModal = ({ onClose, onTransferComplete, linkedBanks, bankBalan
   const [loading, setLoading] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [successData, setSuccessData] = useState(null);
-  const [showFailedModal, setShowFailedModal] = useState(false);
-  const [failedData, setFailedData] = useState(null);
   const pinInputRefs = useRef([]);
   
-  const availableBanks = linkedBanks.filter(b => hasUpiPin(b.id));
+  const availableBanks = linkedBanks.filter(b => {
+    try { return hasUpiPin(b.id); } catch { return false; }
+  });
   
   const handlePinChange = (index, value) => {
     if (value && !/^\d$/.test(value)) return;
@@ -941,482 +443,258 @@ const SelfTransferModal = ({ onClose, onTransferComplete, linkedBanks, bankBalan
     if (value && index < 3) pinInputRefs.current[index + 1]?.focus();
   };
   
-  const handleTransfer = () => {
+  const handleTransfer = async () => {
     const pinString = pin.join('');
     if (pinString.length !== 4) {
       setPinError('Please enter complete PIN');
       return;
     }
-    if (!verifyBankPin(fromBank.id, pinString)) {
-      setPinError('Incorrect PIN. Please try again.');
-      setPin(['', '', '', '']);
-      setPinFilled([false, false, false, false]);
-      pinInputRefs.current[0]?.focus();
-      return;
-    }
     
-    const transferAmount = parseFloat(amount);
-    
-    setLoading(true);
-    
-    setTimeout(() => {
-      try {
-        // Check balance DURING processing (not before)
-        const currentBalance = bankBalances[fromBank.id] || 0;
-        const availableBalance = currentBalance;
-        
-        // If insufficient balance, record failed transaction and show failed modal
-        if (transferAmount > currentBalance) {
-          const failureReason = `Insufficient balance in ${fromBank.bank_name}`;
-          
-          // Create failed transaction record
-          const failedTransaction = {
-            id: Date.now(),
-            transactionId: `TRF_FAILED_${Date.now()}`,
-            type: 'self_transfer',
-            amount: transferAmount,
-            description: `Self transfer from ${fromBank.bank_name} to ${toBank.bank_name} - FAILED`,
-            from_bank: fromBank.bank_name,
-            to_bank: toBank.bank_name,
-            date: new Date().toISOString(),
-            status: 'failed',
-            failure_reason: failureReason,
-            available_balance: availableBalance
-          };
-          
-          const transactions = JSON.parse(localStorage.getItem('transactions') || '[]');
-          transactions.unshift(failedTransaction);
-          localStorage.setItem('transactions', JSON.stringify(transactions.slice(0, 200)));
-          
-          setFailedData({
-            amount: transferAmount,
-            fromBank: fromBank.bank_name,
-            toBank: toBank.bank_name,
-            transactionId: failedTransaction.transactionId,
-            failure_reason: failureReason
-          });
-          
-          setLoading(false);
-          setShowFailedModal(true);
-          
-          return;
-        }
-        
-        // Process successful transfer
-        // Update balances
-        const balances = JSON.parse(localStorage.getItem('bankBalances') || '{}');
-        balances[fromBank.id] = (balances[fromBank.id] || 0) - transferAmount;
-        balances[toBank.id] = (balances[toBank.id] || 0) + transferAmount;
-        localStorage.setItem('bankBalances', JSON.stringify(balances));
-        updateBankBalance(fromBank.id, transferAmount);
-        
-        // Save transaction
-        const transactionId = `TRF${Date.now()}${Math.floor(Math.random() * 1000)}`;
-        const transaction = {
-          id: Date.now(),
-          transactionId: transactionId,
-          type: 'self_transfer',
-          amount: transferAmount,
-          description: `Self transfer from ${fromBank.bank_name} to ${toBank.bank_name}`,
-          from_bank: fromBank.bank_name,
-          to_bank: toBank.bank_name,
-          date: new Date().toISOString(),
-          status: 'success'
-        };
-        const transactions = JSON.parse(localStorage.getItem('transactions') || '[]');
-        transactions.unshift(transaction);
-        localStorage.setItem('transactions', JSON.stringify(transactions.slice(0, 200)));
-        
-        setSuccessData({
-          amount: transferAmount,
-          fromBank: fromBank.bank_name,
-          toBank: toBank.bank_name,
-          transactionId: transactionId,
-          date: new Date()
-        });
-        setShowSuccess(true);
-        setLoading(false);
-        
-      } catch (error) {
-        console.error('Transfer error:', error);
-        toast.error('Transfer failed. Please try again.');
-        setLoading(false);
+    try {
+      const isValid = await verifyBankPin(fromBank.id, pinString);
+      if (!isValid) {
+        setPinError('Incorrect PIN. Please try again.');
+        setPin(['', '', '', '']);
+        setPinFilled([false, false, false, false]);
+        pinInputRefs.current[0]?.focus();
+        return;
       }
-    }, 1000);
-  };
-  
-  const handleSuccessClose = () => {
-    setShowSuccess(false);
-    onTransferComplete(successData);
-    onClose();
-  };
-  
-  const getBankLogoComponent = (bank) => {
-    const logoUrl = getBankLogoUrl(bank.bank_name);
-    if (logoUrl) {
-      return <img src={logoUrl} alt={bank.bank_name} className="bank-logo-img" />;
-    }
-    return <span className="bank-logo-fallback">🏦</span>;
-  };
-  
-  // Self Transfer Failed Modal Component (inside SelfTransferModal)
-  const SelfTransferFailedModal = ({ transactionData, onClose, onRetry }) => {
-    const [animationStage, setAnimationStage] = useState(0);
-    const [showOptions, setShowOptions] = useState(false);
-    
-    useEffect(() => {
-      const timer1 = setTimeout(() => setAnimationStage(1), 300);
-      const timer2 = setTimeout(() => setAnimationStage(2), 800);
-      const timer3 = setTimeout(() => setAnimationStage(3), 1300);
-      const timer4 = setTimeout(() => setShowOptions(true), 1800);
       
-      return () => {
-        clearTimeout(timer1);
-        clearTimeout(timer2);
-        clearTimeout(timer3);
-        clearTimeout(timer4);
-      };
-    }, []);
-    
-    return (
-      <motion.div 
-        className="popupi-overlay"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        onClick={onClose}
-      >
-        <motion.div 
-          className="popupi-animation failed"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.3 }}
-        >
-          <div className="popupi-content">
-            <motion.div 
-              className="popupi-logo"
-              animate={{ 
-                scale: animationStage >= 1 ? [1, 1.2, 1] : 1,
-                rotate: animationStage >= 1 ? [0, 360, 0] : 0
-              }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="logo-inner failed">
-                <FaTimesCircle style={{ fontSize: '2rem', color: '#ef4444' }} />
-              </div>
-              <div className="logo-ring failed"></div>
-            </motion.div>
-            
-            <motion.div 
-              className="popupi-check failed"
-              initial={{ scale: 0 }}
-              animate={{ scale: animationStage >= 2 ? 1 : 0 }}
-              transition={{ type: "spring", stiffness: 500, damping: 15, delay: 0.2 }}
-            >
-              <FaTimesCircle style={{ color: '#ef4444', fontSize: '2rem' }} />
-            </motion.div>
-            
-            <motion.div 
-              className="popupi-text"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: animationStage >= 2 ? 0 : 20, opacity: animationStage >= 2 ? 1 : 0 }}
-            >
-              <h2 style={{ color: '#ef4444' }}>Transfer Failed!</h2>
-              <p className="amount-paid">₹{transactionData?.amount?.toLocaleString()}</p>
-              <p className="to-text">from {transactionData?.fromBank} to {transactionData?.toBank}</p>
-            </motion.div>
-            
-            <motion.div 
-              className="popupi-details"
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: animationStage >= 3 ? 'auto' : 0, opacity: animationStage >= 3 ? 1 : 0 }}
-            >
-              <div className="detail-item">
-                <span>Transaction ID</span>
-                <span className="txn-id">{transactionData?.transactionId}</span>
-              </div>
-              <div className="detail-item highlight failed">
-                <span>Failure Reason</span>
-                <span style={{ color: '#ef4444' }}>{transactionData?.failure_reason || 'Insufficient balance'}</span>
-              </div>
-              <div className="detail-item">
-                <span>Date & Time</span>
-                <span>{new Date().toLocaleString()}</span>
-              </div>
-            </motion.div>
-            
-            {showOptions && (
-              <motion.div 
-                className="popupi-options"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <button className="popupi-btn primary" onClick={onRetry}>
-                  <FaArrowRight /> Try Again
-                </button>
-                <button className="popupi-btn secondary" onClick={onClose}>
-                  Close
-                </button>
-              </motion.div>
-            )}
-          </div>
-        </motion.div>
-      </motion.div>
-    );
+      const transferAmount = parseFloat(amount);
+      const fromBalance = bankBalances[fromBank.id] || 0;
+      
+      if (transferAmount > fromBalance) {
+        toast.error(`Insufficient balance. Available: ₹${fromBalance.toLocaleString()}`);
+        return;
+      }
+      
+      setLoading(true);
+      
+      await updateBankBalance(fromBank.id, transferAmount, false);
+      await updateBankBalance(toBank.id, transferAmount, true);
+      
+      // Save transaction
+      await addTransaction({
+        transactionId: `SELF${Date.now()}`,
+        type: 'self_transfer',
+        amount: transferAmount,
+        description: `Self transfer from ${fromBank.bank_name} to ${toBank.bank_name}`,
+        bank_name: fromBank.bank_name,
+        bank_id: fromBank.id,
+        status: 'success',
+        date: new Date().toISOString()
+      });
+      
+      setSuccessData({
+        amount: transferAmount,
+        fromBank: fromBank.bank_name,
+        toBank: toBank.bank_name,
+        transactionId: `SELF${Date.now()}`
+      });
+      setShowSuccess(true);
+      setLoading(false);
+      
+      toast.success(`₹${transferAmount.toLocaleString()} transferred successfully!`);
+      
+    } catch (error) {
+      toast.error('Transfer failed');
+      setLoading(false);
+    }
+  };
+  
+  const getBankLogo = (bank) => {
+    const url = getBankLogoUrl(bank.bank_name);
+    if (url) return <img src={url} alt={bank.bank_name} className="w-8 h-8 object-contain rounded" />;
+    return <FaUniversity className="text-gray-400" />;
   };
   
   return (
-    <>
-      <div className="self-transfer-modal">
-        <div className="self-transfer-header">
-          <h3>Self Transfer</h3>
-          <button className="modal-close" onClick={onClose}><FaTimes /></button>
-        </div>
-        
-        <div className="self-transfer-body">
-          {step === 1 && (
-            <>
-              <div className="transfer-direction">
-                <div className="from-section">
-                  <label>From Account</label>
-                  <div className="bank-selector">
-                    {availableBanks.map(bank => (
-                      <div key={bank.id} className={`bank-option-transfer ${fromBank?.id === bank.id ? 'selected' : ''}`} onClick={() => setFromBank(bank)}>
-                        <div className="bank-icon-small">{getBankLogoComponent(bank)}</div>
-                        <div className="bank-info-small">
-                          <strong>{bank.bank_name}</strong>
-                          <span>xxxx{bank.account_number.slice(-4)}</span>
-                        </div>
-                        {fromBank?.id === bank.id && <FaCheckCircle className="selected-icon" />}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="transfer-arrow">
-                  <FaArrowDown />
-                </div>
-                
-                <div className="to-section">
-                  <label>To Account</label>
-                  <div className="bank-selector">
-                    {availableBanks.filter(b => b.id !== fromBank?.id).map(bank => (
-                      <div key={bank.id} className={`bank-option-transfer ${toBank?.id === bank.id ? 'selected' : ''}`} onClick={() => setToBank(bank)}>
-                        <div className="bank-icon-small">{getBankLogoComponent(bank)}</div>
-                        <div className="bank-info-small">
-                          <strong>{bank.bank_name}</strong>
-                          <span>xxxx{bank.account_number.slice(-4)}</span>
-                        </div>
-                        {toBank?.id === bank.id && <FaCheckCircle className="selected-icon" />}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              
-              <div className="form-group">
-                <label>Amount (₹)</label>
-                <div className="amount-wrapper">
-                  <span className="currency">₹</span>
-                  <input
-                    type="number"
-                    value={amount}
-                    onChange={(e) => setAmount(e.target.value)}
-                    placeholder="0.00"
-                  />
-                </div>
-              </div>
-              
-              <button className="next-btn" onClick={() => setStep(2)} disabled={!fromBank || !toBank || !amount}>
-                Next <FaArrowRight />
-              </button>
-            </>
-          )}
-          
-          {step === 2 && (
-            <>
-              <div className="transfer-summary">
-                <div className="summary-row">
-                  <span>Amount</span>
-                  <strong>₹{parseFloat(amount || 0).toLocaleString()}</strong>
-                </div>
-                <div className="summary-row">
-                  <span>From</span>
-                  <span>{fromBank?.bank_name} (xxxx{fromBank?.account_number.slice(-4)})</span>
-                </div>
-                <div className="summary-row">
-                  <span>To</span>
-                  <span>{toBank?.bank_name} (xxxx{toBank?.account_number.slice(-4)})</span>
-                </div>
-              </div>
-              
-              <div className="pin-input-group">
-                <label>Enter UPI PIN for {fromBank?.bank_name}</label>
-                <div className="pin-inputs">
-                  {pin.map((digit, index) => (
-                    <input
-                      key={index}
-                      ref={el => pinInputRefs.current[index] = el}
-                      type={showPin ? 'text' : 'password'}
-                      maxLength="1"
-                      value={digit}
-                      onChange={(e) => handlePinChange(index, e.target.value)}
-                      className={pinFilled[index] ? 'filled' : ''}
-                      autoFocus={index === 0}
-                      inputMode="numeric"
-                    />
-                  ))}
-                </div>
-                <label className="show-pin">
-                  <input type="checkbox" checked={showPin} onChange={() => setShowPin(!showPin)} />
-                  Show PIN
-                </label>
-                {pinError && <p className="pin-error">{pinError}</p>}
-              </div>
-              
-              <div className="transfer-actions">
-                <button className="btn-secondary" onClick={() => setStep(1)}>Back</button>
-                <button className="btn-primary" onClick={handleTransfer} disabled={loading}>
-                  {loading ? <FaSpinner className="spinner" /> : `Transfer ₹${parseFloat(amount || 0).toLocaleString()}`}
-                </button>
-              </div>
-            </>
-          )}
-        </div>
+    <div className="p-4 max-h-[80vh] overflow-y-auto">
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="font-bold text-lg">Self Transfer</h3>
+        <button onClick={onClose} className="text-gray-400 hover:text-gray-600"><FaTimes /></button>
       </div>
       
-      {/* Self Transfer Success Modal - PopUPI Style */}
+      {step === 1 ? (
+        <>
+          <div className="mb-3">
+            <label className="text-xs font-medium block mb-1">From Account</label>
+            <div className="space-y-1">
+              {availableBanks.map(bank => (
+                <button key={bank.id} onClick={() => setFromBank(bank)} className={`w-full flex items-center gap-3 p-2 border rounded-xl transition-all ${fromBank?.id === bank.id ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20' : 'border-gray-200 dark:border-gray-700'}`}>
+                  <div className="w-8 h-8 rounded-lg bg-white dark:bg-gray-800 flex items-center justify-center border border-gray-200 overflow-hidden">{getBankLogo(bank)}</div>
+                  <div className="flex-1 text-left"><p className="text-sm font-medium">{bank.bank_name}</p><p className="text-xs text-gray-500">xxxx{bank.account_number?.slice(-4)}</p></div>
+                  {fromBank?.id === bank.id && <FaCheckCircle className="text-primary-500" />}
+                </button>
+              ))}
+            </div>
+          </div>
+          
+          <div className="text-center my-2"><FaArrowDown className="text-gray-400 text-lg" /></div>
+          
+          <div className="mb-3">
+            <label className="text-xs font-medium block mb-1">To Account</label>
+            <div className="space-y-1">
+              {availableBanks.filter(b => b.id !== fromBank?.id).map(bank => (
+                <button key={bank.id} onClick={() => setToBank(bank)} className={`w-full flex items-center gap-3 p-2 border rounded-xl transition-all ${toBank?.id === bank.id ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20' : 'border-gray-200 dark:border-gray-700'}`}>
+                  <div className="w-8 h-8 rounded-lg bg-white dark:bg-gray-800 flex items-center justify-center border border-gray-200 overflow-hidden">{getBankLogo(bank)}</div>
+                  <div className="flex-1 text-left"><p className="text-sm font-medium">{bank.bank_name}</p><p className="text-xs text-gray-500">xxxx{bank.account_number?.slice(-4)}</p></div>
+                  {toBank?.id === bank.id && <FaCheckCircle className="text-primary-500" />}
+                </button>
+              ))}
+            </div>
+          </div>
+          
+          <div className="mb-3">
+            <label className="text-xs font-medium block mb-1">Amount (₹)</label>
+            <div className="relative"><span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">₹</span><input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="0" className="w-full pl-7 pr-3 py-2 text-sm border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" /></div>
+          </div>
+          
+          <button onClick={() => setStep(2)} disabled={!fromBank || !toBank || !amount} className="w-full py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all disabled:opacity-50">Next</button>
+        </>
+      ) : (
+        <>
+          <div className="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-3 mb-3 text-sm space-y-1">
+            <div className="flex justify-between"><span className="text-gray-500">Amount</span><strong>₹{parseFloat(amount || 0).toLocaleString()}</strong></div>
+            <div className="flex justify-between"><span className="text-gray-500">From</span><span>{fromBank?.bank_name}</span></div>
+            <div className="flex justify-between"><span className="text-gray-500">To</span><span>{toBank?.bank_name}</span></div>
+          </div>
+          
+          <div className="text-center mb-3">
+            <label className="text-xs font-medium block mb-1.5">Enter UPI PIN</label>
+            <div className="flex justify-center gap-2">
+              {pin.map((digit, i) => (
+                <input key={i} ref={el => pinInputRefs.current[i] = el} type={showPin ? 'text' : 'password'} maxLength="1" value={digit} onChange={(e) => handlePinChange(i, e.target.value)} className={`w-10 h-12 text-center text-lg font-bold border-2 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200 ${pinFilled[i] ? 'border-primary-500' : 'border-gray-200 dark:border-gray-700'}`} autoFocus={i === 0} inputMode="numeric" />
+              ))}
+            </div>
+            <label className="flex items-center justify-center gap-1.5 mt-1 text-xs text-gray-500 cursor-pointer"><input type="checkbox" checked={showPin} onChange={() => setShowPin(!showPin)} className="accent-primary-500" /> Show PIN</label>
+            {pinError && <p className="text-xs text-red-500 mt-1">{pinError}</p>}
+          </div>
+          
+          <div className="flex gap-2">
+            <button onClick={() => setStep(1)} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-gray-200">Back</button>
+            <button onClick={handleTransfer} disabled={loading} className="flex-1 py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all disabled:opacity-50 flex items-center justify-center gap-2">
+              {loading ? <FaSpinner className="animate-spin" /> : `Transfer ₹${parseFloat(amount || 0).toLocaleString()}`}
+            </button>
+          </div>
+        </>
+      )}
+      
+      {/* Success Modal */}
       <AnimatePresence>
         {showSuccess && successData && (
-          <motion.div 
-            className="popupi-overlay"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <motion.div 
-              className="popupi-animation"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.3 }}
-            >
-              <div className="popupi-content">
-                <div className="popupi-logo">
-                  <div className="logo-inner">
-                    <FaExchangeAlt style={{ fontSize: '2rem', color: '#1eac2a' }} />
-                  </div>
-                </div>
-                <div className="popupi-check">
-                  <FaCheckCircle />
-                </div>
-                <div className="popupi-text">
-                  <h2>Transfer Successful!</h2>
-                  <p className="amount-paid">₹{successData.amount.toLocaleString()}</p>
-                  <p className="to-text">from {successData.fromBank} to {successData.toBank}</p>
-                </div>
-                <div className="popupi-details">
-                  <div className="detail-item">
-                    <span>Transaction ID</span>
-                    <span className="txn-id">{successData.transactionId}</span>
-                  </div>
-                  <div className="detail-item">
-                    <span>Date & Time</span>
-                    <span>{new Date().toLocaleString()}</span>
-                  </div>
-                </div>
-                <div className="popupi-options">
-                  <button className="popupi-btn primary" onClick={handleSuccessClose}>
-                    Done
-                  </button>
-                </div>
-              </div>
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full p-5 text-center">
+              <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2"><FaCheckCircle className="text-white text-2xl" /></div>
+              <h3 className="font-bold">Transfer Successful!</h3>
+              <p className="text-2xl font-bold text-green-600">₹{successData.amount.toLocaleString()}</p>
+              <p className="text-sm text-gray-500">from {successData.fromBank} to {successData.toBank}</p>
+              <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-2.5 mt-2 text-left text-sm"><span className="text-gray-500">Txn ID:</span> {successData.transactionId}</div>
+              <button onClick={() => { setShowSuccess(false); onTransferComplete(successData); onClose(); }} className="w-full mt-3 py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600">Done</button>
             </motion.div>
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
-      
-      {/* Self Transfer Failed Modal */}
-      <AnimatePresence>
-        {showFailedModal && failedData && (
-          <SelfTransferFailedModal
-            transactionData={failedData}
-            onClose={() => {
-              setShowFailedModal(false);
-              setFailedData(null);
-              onClose(); // Close the transfer modal
-            }}
-            onRetry={() => {
-              setShowFailedModal(false);
-              setFailedData(null);
-              setStep(1);
-              setFromBank(null);
-              setToBank(null);
-              setAmount('');
-              setPin(['', '', '', '']);
-              setPinFilled([false, false, false, false]);
-              setPinError('');
-            }}
-          />
-        )}
-      </AnimatePresence>
-    </>
+    </div>
   );
 };
 
-// QR Scanner Component
+// ============================================
+// QR SCANNER COMPONENT
+// ============================================
+
 const QRScannerComponent = ({ onScan, onClose }) => {
   const [scanning, setScanning] = useState(true);
-  
-  const simulateScan = () => {
-    const mockQRCodes = [
-      'upi://pay?pa=merchant@okhdfcbank&pn=Merchant Store&am=500&tn=Payment for order',
-      'upi://pay?pa=shopkeeper@ybl&pn=Shop Keeper&am=1200&tn=Bill payment',
-    ];
-    const randomQR = mockQRCodes[Math.floor(Math.random() * mockQRCodes.length)];
+  const simulate = () => {
+    const mock = 'upi://pay?pa=merchant@okhdfcbank&pn=Merchant&am=500';
     setScanning(false);
-    setTimeout(() => {
-      onScan(randomQR);
-      onClose();
-    }, 1500);
+    setTimeout(() => { onScan(mock); onClose(); }, 1000);
   };
-  
   return (
-    <div className="scanner-container">
-      <div className="scanner-viewport">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 max-w-sm w-full">
+      <div className="flex justify-between items-center mb-3">
+        <h3 className="font-bold text-sm">Scan QR Code</h3>
+        <button onClick={onClose} className="text-gray-400 hover:text-gray-600"><FaTimes /></button>
+      </div>
+      <div className="bg-gray-100 dark:bg-gray-700 rounded-xl h-56 flex items-center justify-center relative overflow-hidden">
         {scanning ? (
           <>
-            <div className="scanner-overlay">
-              <div className="scanner-frame">
-                <div className="scanner-line"></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-40 h-40 border-2 border-primary-500 rounded-lg relative">
+                <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-primary-500"></div>
+                <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-primary-500"></div>
+                <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-primary-500"></div>
+                <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-primary-500"></div>
+                <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-primary-500 animate-pulse"></div>
               </div>
             </div>
-            <div className="scanner-message">
-              <p>Position QR code within the frame</p>
-            </div>
+            <p className="absolute bottom-4 text-xs text-gray-500">Position QR in frame</p>
           </>
         ) : (
-          <div className="scanner-result">
-            <FaCheckCircle />
-            <p>QR Code Scanned!</p>
+          <div className="text-center">
+            <FaCheckCircle className="text-3xl text-green-500 mx-auto mb-2" />
+            <p className="text-sm font-medium">QR Scanned!</p>
           </div>
         )}
       </div>
-      <div className="scanner-actions">
-        <button className="btn-secondary" onClick={onClose}>Cancel</button>
-        <button className="btn-primary" onClick={simulateScan}>Simulate Scan</button>
+      <div className="flex gap-2 mt-3">
+        <button onClick={onClose} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 rounded-xl">Cancel</button>
+        <button onClick={simulate} className="flex-1 py-2 text-sm font-medium bg-primary-500 text-white rounded-xl">Simulate</button>
       </div>
     </div>
   );
 };
+
+// ============================================
+// CONTACT DETAILS MODAL
+// ============================================
+
+const ContactDetailsModal = ({ contact, onClose, onPay, onRequest, formatDate, contactTransactions, contactTotalReceived }) => {
+  return (
+    <div className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full max-h-[80vh] overflow-y-auto p-4">
+      <button onClick={onClose} className="float-right text-gray-400 hover:text-gray-600"><FaTimes /></button>
+      <div className="text-center mb-3">
+        <div className="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto" style={{ backgroundColor: getContactColor(contact.name) }}>{contact.name?.charAt(0)?.toUpperCase()}</div>
+        <h3 className="font-bold text-lg mt-1">{contact.name}</h3>
+        <p className="text-xs text-gray-500">{contact.vpa}</p>
+        <div className="flex justify-center gap-4 mt-2 text-xs">
+          <div><div className="font-bold">₹{(contact.totalSent || 0).toLocaleString()}</div><div className="text-gray-400">Sent</div></div>
+          <div><div className="font-bold">{contact.transactionCount || 0}</div><div className="text-gray-400">Txn</div></div>
+          <div><div className="font-bold">₹{(contactTotalReceived || 0).toLocaleString()}</div><div className="text-gray-400">Received</div></div>
+        </div>
+      </div>
+      <div className="flex gap-2 mb-3">
+        <button onClick={() => onPay(contact)} className="flex-1 py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all">Pay</button>
+        <button onClick={() => onRequest(contact)} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl hover:bg-gray-200 transition-all">Request</button>
+      </div>
+      {contactTransactions.length > 0 && (
+        <div>
+          <p className="text-xs font-medium text-gray-500 mb-1.5">History</p>
+          <div className="space-y-1 max-h-32 overflow-y-auto">
+            {contactTransactions.slice(0, 5).map(tx => (
+              <div key={tx.id} className="flex justify-between items-center text-xs py-1 border-b border-gray-100 dark:border-gray-700">
+                <div><span className="font-medium">{tx.description || 'Payment'}</span><span className="text-gray-400 ml-1">{formatDate(tx.date)}</span></div>
+                <span className="text-red-500">-₹{tx.amount}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+// ============================================
+// MAIN SENDMONEY PAGE
+// ============================================
 
 const SendMoneyPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { user } = useAuth();
   
+  // State
   const [step, setStep] = useState(1);
-  const [upiId, setUpiId] = useState('');
   const [loading, setLoading] = useState(false);
   const [showScanner, setShowScanner] = useState(false);
   const [showSplitModal, setShowSplitModal] = useState(false);
@@ -1427,31 +705,14 @@ const SendMoneyPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredContacts, setFilteredContacts] = useState([]);
   const [showContactsModal, setShowContactsModal] = useState(false);
-  const [imageErrors, setImageErrors] = useState({});
   const [bankBalances, setBankBalances] = useState({});
-  const [successData, setSuccessData] = useState(null);
-  const [showSuccessModal, setShowSuccessModal] = useState(false);
-  const [cashbackEarned, setCashbackEarned] = useState(0);
   const [showSuccessAnimation, setShowSuccessAnimation] = useState(false);
   const [transactionResult, setTransactionResult] = useState(null);
-  const [noteFocused, setNoteFocused] = useState(false);
-  const [contacts, setContacts] = useState([]); 
-  const [paymentMode, setPaymentMode] = useState('single');
-  const [showRequestModal, setShowRequestModal] = useState(false);
-const [requestAmount, setRequestAmount] = useState('');
-const [requestNote, setRequestNote] = useState('');
-const [requestLoading, setRequestLoading] = useState(false);
-const [showRequestSuccessModal, setShowRequestSuccessModal] = useState(false);
-const [requestSuccessData, setRequestSuccessData] = useState(null);
-  
-  // Contact modal state
+  const [contacts, setContacts] = useState([]);
+  const [showContactModal, setShowContactModal] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
-  const [showContactModal, setShowContactModal] = useState(false); 
-  const [showContactDetailsModal, setShowContactDetailsModal] = useState(false);
   const [contactTransactions, setContactTransactions] = useState([]);
   const [contactTotalReceived, setContactTotalReceived] = useState(0);
-  
-  // Payment states
   const [showPayModal, setShowPayModal] = useState(false);
   const [payAmount, setPayAmount] = useState('');
   const [payNote, setPayNote] = useState('');
@@ -1464,12 +725,18 @@ const [requestSuccessData, setRequestSuccessData] = useState(null);
   const [payLoading, setPayLoading] = useState(false);
   const [showFailedAnimation, setShowFailedAnimation] = useState(false);
   const [failedTransactionResult, setFailedTransactionResult] = useState(null);
+  const [showRequestModal, setShowRequestModal] = useState(false);
+  const [requestAmount, setRequestAmount] = useState('');
+  const [requestNote, setRequestNote] = useState('');
+  const [requestLoading, setRequestLoading] = useState(false);
+  const [showRequestSuccessModal, setShowRequestSuccessModal] = useState(false);
+  const [requestSuccessData, setRequestSuccessData] = useState(null);
+  const [imageErrors, setImageErrors] = useState({});
   
   // Form data
   const [formData, setFormData] = useState({
     receiver_vpa: location.state?.contact?.vpa || '',
     receiver_name: location.state?.contact?.name || '',
-    receiver_avatar: location.state?.contact?.avatar || '',
     amount: '',
     note: ''
   });
@@ -1481,248 +748,86 @@ const [requestSuccessData, setRequestSuccessData] = useState(null);
   const [pinError, setPinError] = useState('');
   const [showPin, setShowPin] = useState(false);
   const pinInputRefs = useRef([]);
+  const payPinInputRefs = useRef([]);
 
-  // Load data on mount
+  const quickAmounts = [100, 200, 500, 1000, 2000, 5000];
+
+  // Load data
   useEffect(() => {
-    loadLinkedBanks();
-    loadRecentContacts();
-    loadContacts();
-    loadBankBalances();
+    loadData();
   }, []);
 
-  // Filter contacts when search term changes
-  useEffect(() => {
-    if (searchTerm) {
-      const filtered = recentContacts.filter(contact => 
-        contact.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        contact.vpa?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        contact.phone?.includes(searchTerm)
+  const loadData = async () => {
+    try {
+      const [banks, contactsList] = await Promise.all([
+        getBankAccounts(),
+        getContacts()
+      ]);
+      setLinkedBanks(banks || []);
+      const primary = banks?.find(b => b.is_primary);
+      if (primary) setSelectedBank(primary);
+      
+      setContacts(contactsList || []);
+      const sorted = [...(contactsList || [])].sort((a, b) => 
+        new Date(b.last_transaction_at || 0) - new Date(a.last_transaction_at || 0)
       );
-      setFilteredContacts(filtered);
-    } else {
-      setFilteredContacts(recentContacts);
-    }
-  }, [searchTerm, recentContacts]);
-
-  // Calculate cashback when amount changes
-  useEffect(() => {
-    const amount = parseFloat(formData.amount);
-    if (!isNaN(amount) && amount > 0) {
-      setCashbackEarned(Math.floor(amount * 0.05));
-    } else {
-      setCashbackEarned(0);
-    }
-  }, [formData.amount]);
-
-  // REPLACE loadLinkedBanks
-const loadLinkedBanks = async () => {
-    try {
-        const response = await bankAPI.getAccounts();
-        if (response.data.success) {
-            setLinkedBanks(response.data.data);
-            const primary = response.data.data.find(acc => acc.is_primary);
-            if (primary) setSelectedBank(primary);
-        }
+      setRecentContacts(sorted.slice(0, 8));
+      
+      const balances = {};
+      for (const bank of (banks || [])) {
+        try {
+          const resp = await bankAPI.getBalance(bank.id);
+          if (resp.data.success) balances[bank.id] = resp.data.data.balance;
+        } catch (e) {}
+      }
+      setBankBalances(balances);
     } catch (error) {
-        console.error('Failed to load banks:', error);
+      console.error('Load data error:', error);
     }
-};
+  };
 
-// Replace loadBankBalances
-const loadBankBalances = async () => {
+  const handleContactClick = async (contact) => {
     try {
-        const accounts = linkedBanks;
-        const balancesMap = {};
-        for (const account of accounts) {
-            try {
-                const response = await bankAPI.getBalance(account.id);
-                if (response.data.success) {
-                    balancesMap[account.id] = response.data.data.balance;
-                }
-            } catch (err) {
-                console.error(`Failed to load balance for account ${account.id}:`, err);
-                balancesMap[account.id] = 0;
-            }
-        }
-        setBankBalances(balancesMap);
-    } catch (error) {
-        console.error('Failed to load balances:', error);
-    }
-};
-
-const loadContacts = async () => {
-    try {
-        const contactsList = await getContacts();
-        console.log('Loaded contacts:', contactsList); // Debug log
-        setContacts(contactsList);
-        
-        // Also update recent contacts for the people section
-        const sortedContacts = [...contactsList].sort((a, b) => 
-            new Date(b.last_transaction) - new Date(a.last_transaction)
-        );
-        setRecentContacts(sortedContacts.slice(0, 10));
-    } catch (error) {
-        console.error('Failed to load contacts:', error);
-    }
-};
-
-// Replace loadRecentContacts
-const loadRecentContacts = async () => {
-    try {
-        const contactsList = await getContacts();
-        const sorted = [...contactsList].sort((a, b) => 
-            new Date(b.last_transaction) - new Date(a.last_transaction)
-        );
-        setRecentContacts(sorted.slice(0, 10));
-    } catch (error) {
-        console.error('Failed to load recent contacts:', error);
-    }
-};
-
-// In SendMoneyPage.jsx, add this function after loadRecentContacts:
-
-const loadContactTransactions = async (contact) => {
-    try {
-        const allTransactions = await getTransactions();
-        
-        // Filter ALL send transactions to this contact (successful ones)
-        const sentTransactions = allTransactions.filter(tx => 
-            (tx.type === 'send' || tx.type === 'sent') && 
-            tx.receiver_vpa === contact.vpa && 
-            tx.status === 'success'
-        );
-        
-        console.log('Sent transactions found:', sentTransactions.length);
-        
-        // Map to transaction items for display
-        const contactTx = sentTransactions.map(tx => ({
-            id: tx.id,
-            amount: Number(tx.amount), // Convert to number
-            date: tx.date,
-            type: 'sent',
-            description: tx.description,
-            transactionId: tx.transactionId,
-            status: tx.status
-        }));
-        
-        contactTx.sort((a, b) => new Date(b.date) - new Date(a.date));
-        setContactTransactions(contactTx);
-        
-        // Calculate total sent using Number() to ensure numeric addition
-        let totalSent = 0;
-        sentTransactions.forEach(tx => {
-            totalSent += Number(tx.amount);
-        });
-        
-        console.log('Total sent calculated:', totalSent);
-        
-        // Update the selected contact with correct totals
-        setSelectedContact(prev => ({
-            ...prev,
-            totalSent: totalSent,
-            transactionCount: sentTransactions.length
-        }));
-        
-        setContactTotalReceived(contact.totalReceived || 0);
-        
-    } catch (error) {
-        console.error('Failed to load contact transactions:', error);
-        setContactTransactions([]);
-        setContactTotalReceived(0);
-    }
-};
-// REPLACE getBankBalance
-const getBankBalance = (bankId) => {
-    const balances = getBankBalances();
-    return balances[bankId] || 0;
-};
-
-// REPLACE hasUpiPin
-const hasUpiPinFunc = (bankId) => hasUpiPin(bankId);
-
-// REPLACE verifyBankPin
-const verifyBankPinFunc = (bankId, enteredPin) => verifyBankPin(bankId, enteredPin);
-
-// REPLACE updateBankBalance
-const updateBankBalanceFunc = (bankId, amount) => {
-    const newBalance = updateBankBalance(bankId, amount, true);
-    setBankBalances(prev => ({ ...prev, [bankId]: newBalance }));
-    return newBalance;
-};
-
-// REPLACE updateCoinBalance
-const updateCoinBalanceFunc = (cashback) => {
-    const newBalance = updateCoinBalance(cashback, true);
-    return newBalance;
-};
-
-// REPLACE saveTransaction
-const saveTransactionFunc = (txnData) => {
-    const newTransaction = {
-        transactionId: `TXN${Date.now()}${Math.floor(Math.random() * 1000)}`,
-        type: 'sent',
-        amount: txnData.amount,
-        description: txnData.note || `Payment to ${txnData.receiver_name || txnData.receiver_vpa}`,
-        merchant: txnData.receiver_name || txnData.receiver_vpa,
-        receiver_vpa: txnData.receiver_vpa,
-        receiver_name: txnData.receiver_name,
-        bank_name: txnData.bank_name,
-        bank_id: txnData.bank_id,
-        account_suffix: txnData.account_suffix,
-        date: new Date().toISOString(),
-        status: 'success',
-        cashback: txnData.cashback || 0,
-        gems_used: txnData.gems_used || false,
-        gems_amount: txnData.gems_amount || 0
-    };
-    addTransaction(newTransaction);
-    updateContactsFunc(txnData);
-    return newTransaction;
-};
-
-// REPLACE updateContacts
-const updateContactsFunc = (txnData) => {
-    const contact = {
-        name: txnData.receiver_name || txnData.receiver_vpa.split('@')[0],
-        vpa: txnData.receiver_vpa,
-        phone: txnData.receiver_vpa.replace('@', '').replace(/\D/g, ''),
-        avatar: txnData.receiver_name?.charAt(0) || txnData.receiver_vpa.charAt(0),
-        color: getContactColor(txnData.receiver_name || txnData.receiver_vpa),
-        lastTransaction: 'Just now',
-        lastAmount: txnData.amount,
-        transactionCount: 1,
-        totalSent: txnData.amount
-    };
-    addContact(contact);
-    loadRecentContacts();
-};
-
-  // Handle contact click - open details modal
-const handleContactClick = async (contact) => {
-    console.log('Contact clicked:', contact);
-    
-    try {
-        const latestContacts = await getContacts();
-        const latestContact = latestContacts.find(c => c.id === contact.id || c.vpa === contact.vpa);
-        
-        if (latestContact) {
-            setSelectedContact(latestContact);
-            await loadContactTransactions(latestContact);
-            setShowContactModal(true);  // This opens the modal
-        } else {
-            setSelectedContact(contact);
-            await loadContactTransactions(contact);
-            setShowContactModal(true);  // This opens the modal
-        }
-    } catch (error) {
-        console.error('Error opening contact:', error);
-        setSelectedContact(contact);
+      const allContacts = await getContacts();
+      const latest = allContacts.find(c => c.id === contact.id || c.vpa === contact.vpa);
+      if (latest) {
+        setSelectedContact(latest);
+        await loadContactTransactions(latest);
         setShowContactModal(true);
+      }
+    } catch (error) {
+      console.error('Contact click error:', error);
     }
-};
+  };
 
-  // Handle pay from contact modal
-  const handlePayFromContactModal = (contact) => {
+  const loadContactTransactions = async (contact) => {
+    try {
+      const allTx = await getTransactions();
+      const sentTx = allTx.filter(tx => 
+        (tx.type === 'send' || tx.type === 'sent') && 
+        tx.receiver_vpa === contact.vpa && 
+        tx.status === 'success'
+      );
+      
+      const mapped = sentTx.map(tx => ({
+        id: tx.id,
+        amount: Number(tx.amount),
+        date: tx.created_at || tx.date,
+        type: 'sent',
+        description: tx.description,
+        transactionId: tx.transactionId
+      }));
+      
+      setContactTransactions(mapped.sort((a, b) => new Date(b.date) - new Date(a.date)));
+      const totalSent = sentTx.reduce((sum, tx) => sum + Number(tx.amount), 0);
+      setSelectedContact(prev => ({ ...prev, totalSent, transactionCount: sentTx.length }));
+      setContactTotalReceived(contact.total_received || 0);
+    } catch (error) {
+      console.error('Load contact transactions error:', error);
+    }
+  };
+
+  const handlePayFromContact = (contact) => {
     setSelectedContact(contact);
     setPayAmount('');
     setPayNote('');
@@ -1730,166 +835,84 @@ const handleContactClick = async (contact) => {
     setSelectedBankForPay(null);
     setPayPinDigits(['', '', '', '']);
     setPayPinFilled([false, false, false, false]);
-    setPayPinError('');
     setShowPayModal(true);
-    setShowContactDetailsModal(false);
+    setShowContactModal(false);
   };
 
-  // Handle request from contact modal
-// Handle request from contact modal
-const handleRequestFromContactModal = (contact) => {
-  console.log('Request button clicked for contact:', contact);
-  setSelectedContact(contact);
-  setRequestAmount('');
-  setRequestNote('');
-  setShowContactModal(false);  // Close contact modal first
-  // Small delay to ensure contact modal closes before opening request modal
-  setTimeout(() => {
-    setShowRequestModal(true);
-  }, 100);
-};
-
-const processRequest = async () => {
-  const amount = parseFloat(requestAmount);
-  if (isNaN(amount) || amount <= 0) {
-    toast.error('Please enter a valid amount');
-    return;
-  }
-  
-  setRequestLoading(true);
-  
-  try {
-    const requestId = `REQ${Date.now()}`;
-    const newRequest = {
-      id: Date.now(),
-      requestId: requestId,
-      amount: amount,
-      note: requestNote || `Money request from ${selectedContact.name}`,
-      requester_name: user?.name || 'User',
-      requester_vpa: upiId,
-      recipient_name: selectedContact.name,
-      recipient_vpa: selectedContact.vpa,
-      date: new Date().toISOString(),
-      status: 'pending'
-    };
-    
-    // Get existing requests
-    const existingRequests = await getMoneyRequests();
-    const requestsArray = Array.isArray(existingRequests) ? existingRequests : [];
-    requestsArray.unshift(newRequest);
-    
-    // Save back
-    await setMoneyRequests(requestsArray);
-    
-    setRequestSuccessData({
-      amount: amount,
-      contactName: selectedContact.name,
-      requestId: requestId,
-      date: new Date()
-    });
-    setShowRequestSuccessModal(true);
-    setShowRequestModal(false);
-    
-    // Reset form
+  const handleRequestFromContact = (contact) => {
+    setSelectedContact(contact);
     setRequestAmount('');
     setRequestNote('');
-    
-    toast.success(`Request sent to ${selectedContact.name} for ₹${amount.toLocaleString()}`);
-    
-  } catch (error) {
-    console.error('Request error:', error);
-    toast.error('Failed to send request. Please try again.');
-  } finally {
-    setRequestLoading(false);
-  }
-};
-  // QR Code scan handler
-  const handleQRScan = (scannedData) => {
-    let vpa = scannedData;
-    let amount = '';
-    let name = '';
-    let note = '';
-    
-    if (scannedData.startsWith('upi://')) {
-      try {
-        const paMatch = scannedData.match(/[&?]pa=([^&]+)/);
-        const pnMatch = scannedData.match(/[&?]pn=([^&]+)/);
-        const amMatch = scannedData.match(/[&?]am=([^&]+)/);
-        const tnMatch = scannedData.match(/[&?]tn=([^&]+)/);
-        
-        if (paMatch) vpa = decodeURIComponent(paMatch[1]);
-        if (pnMatch) name = decodeURIComponent(pnMatch[1]);
-        if (amMatch) amount = decodeURIComponent(amMatch[1]);
-        if (tnMatch) note = decodeURIComponent(tnMatch[1]);
-      } catch (e) {
-        console.log('Error parsing UPI URL:', e);
-      }
-    }
-    
-    setFormData(prev => ({
-      ...prev,
-      receiver_vpa: vpa,
-      receiver_name: name || prev.receiver_name,
-      amount: amount || prev.amount,
-      note: note || prev.note
-    }));
-    
-    toast.success(`QR scanned: ${name || vpa}`);
-    
-    if (amount && vpa) {
-      setTimeout(() => setStep(2), 500);
-    }
+    setShowContactModal(false);
+    setTimeout(() => setShowRequestModal(true), 150);
   };
 
-  // Validate form
-  const validateForm = () => {
-    const newErrors = {};
-
-    if (!formData.receiver_vpa) {
-      newErrors.receiver_vpa = 'UPI ID / Mobile number is required';
-    } else if (!/^[\w.-]+@[\w.-]+$/.test(formData.receiver_vpa) && !/^[6-9]\d{9}$/.test(formData.receiver_vpa)) {
-      newErrors.receiver_vpa = 'Enter a valid UPI ID or mobile number';
-    }
-
-    if (!formData.amount) {
-      newErrors.amount = 'Amount is required';
-    } else if (isNaN(formData.amount) || formData.amount <= 0) {
-      newErrors.amount = 'Enter a valid amount';
-    } else if (formData.amount > 100000) {
-      newErrors.amount = 'Maximum amount per transaction is ₹1,00,000';
-    }
-
-    if (formData.note && formData.note.length > 100) {
-      newErrors.note = 'Note cannot exceed 100 characters';
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    if (errors[name]) setErrors(prev => ({ ...prev, [name]: '' }));
-  };
-
-  const handleContactSelect = (contact) => {
-    setFormData(prev => ({
-      ...prev,
-      receiver_vpa: contact.vpa || contact.phone,
-      receiver_name: contact.name,
-      receiver_avatar: contact.avatar
-    }));
-    setShowContactsModal(false);
-    setSearchTerm('');
-  };
-
-  const handleBankSelect = (bank) => {
-    if (!hasUpiPin(bank.id)) {
-      toast.error(`Please set UPI PIN for ${bank.bank_name} in Settings first`);
+  const processRequest = async () => {
+    const amount = parseFloat(requestAmount);
+    if (isNaN(amount) || amount <= 0) {
+      toast.error('Enter a valid amount');
       return;
     }
-    setSelectedBank(bank);
+    
+    setRequestLoading(true);
+    try {
+      const newRequest = {
+        id: Date.now(),
+        requestId: `REQ${Date.now()}`,
+        amount,
+        description: requestNote || `Money request from ${selectedContact.name}`,
+        requester_name: user?.name || 'User',
+        requester_vpa: user?.phone_number ? `${user.phone_number}@sabai` : '',
+        recipient_name: selectedContact.name,
+        recipient_vpa: selectedContact.vpa,
+        date: new Date().toISOString(),
+        status: 'pending'
+      };
+      
+      const existing = await getMoneyRequests();
+      const arr = Array.isArray(existing) ? existing : [];
+      arr.unshift(newRequest);
+      await setMoneyRequests(arr);
+      
+      setRequestSuccessData({ amount, contactName: selectedContact.name, requestId: newRequest.requestId });
+      setShowRequestSuccessModal(true);
+      setShowRequestModal(false);
+      toast.success(`Request sent to ${selectedContact.name}`);
+    } catch (error) {
+      toast.error('Failed to send request');
+    } finally {
+      setRequestLoading(false);
+    }
+  };
+
+  const handleQRScan = (data) => {
+    let vpa = data, amount = '', name = '';
+    if (data.startsWith('upi://')) {
+      try {
+        const pa = data.match(/[&?]pa=([^&]+)/);
+        const pn = data.match(/[&?]pn=([^&]+)/);
+        const am = data.match(/[&?]am=([^&]+)/);
+        if (pa) vpa = decodeURIComponent(pa[1]);
+        if (pn) name = decodeURIComponent(pn[1]);
+        if (am) amount = decodeURIComponent(am[1]);
+      } catch (e) {}
+    }
+    setFormData({ ...formData, receiver_vpa: vpa, receiver_name: name, amount: amount || formData.amount });
+    toast.success(`QR scanned: ${name || vpa}`);
+    if (amount && vpa) setTimeout(() => setStep(2), 400);
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.receiver_vpa) newErrors.receiver_vpa = 'UPI ID is required';
+    else if (!/^[\w.-]+@[\w.-]+$/.test(formData.receiver_vpa) && !/^[6-9]\d{9}$/.test(formData.receiver_vpa)) {
+      newErrors.receiver_vpa = 'Enter valid UPI ID or mobile';
+    }
+    if (!formData.amount) newErrors.amount = 'Amount is required';
+    else if (isNaN(formData.amount) || formData.amount <= 0) newErrors.amount = 'Enter valid amount';
+    else if (formData.amount > 100000) newErrors.amount = 'Max ₹1,00,000';
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleNext = () => {
@@ -1897,182 +920,147 @@ const processRequest = async () => {
       if (!validateForm()) return;
       setStep(2);
     } else if (step === 2) {
-      if (!selectedBank) {
-        toast.error('Please select a bank account');
-        return;
-      }
+      if (!selectedBank) { toast.error('Select a bank account'); return; }
       setStep(3);
-      setTimeout(() => {
-        pinInputRefs.current[0]?.focus();
-      }, 100);
+      setTimeout(() => pinInputRefs.current[0]?.focus(), 100);
     }
   };
 
-  const handleBack = () => {
-    if (step > 1) {
-      setStep(step - 1);
-    } else {
-      navigate(-1);
-    }
-  };
-
-  // PIN handlers
-  const handlePinChange = (index, value) => {
-    if (value && !/^\d$/.test(value)) return;
-    
-    const newPin = [...pin];
-    newPin[index] = value || '';
-    setPin(newPin);
-    
-    const newFilled = [...pinFilled];
-    newFilled[index] = value !== '';
-    setPinFilled(newFilled);
-    
-    if (value && index < 3) {
-      pinInputRefs.current[index + 1]?.focus();
-    }
-  };
-
-  const handlePinKeyDown = (e, index) => {
-    if (e.key === 'Backspace' && !pin[index] && index > 0) {
-      pinInputRefs.current[index - 1]?.focus();
-    }
-  };
-
-  // Process payment
   const handleSendMoney = async () => {
-    const pinString = pin.join('');
-    if (pinString.length !== 4) {
-        setPinError('Please enter complete PIN');
-        return;
-    }
+    const pinStr = pin.join('');
+    if (pinStr.length !== 4) { setPinError('Enter complete PIN'); return; }
     
     const amount = parseFloat(formData.amount);
+    try {
+      const isValid = await verifyBankPin(selectedBank.id, pinStr);
+      if (!isValid) { setPinError('Incorrect PIN'); setPin(['','','','']); return; }
+      
+      const balance = bankBalances[selectedBank.id] || 0;
+      if (amount > balance) { toast.error(`Insufficient balance: ₹${balance.toLocaleString()}`); return; }
+      
+      setLoading(true);
+      await updateBankBalance(selectedBank.id, amount, false);
+      
+      const tx = {
+        transactionId: `TXN${Date.now()}`,
+        type: 'send',
+        amount,
+        description: formData.note || `Payment to ${formData.receiver_name || formData.receiver_vpa}`,
+        receiver_vpa: formData.receiver_vpa,
+        receiver_name: formData.receiver_name,
+        bank_name: selectedBank.bank_name,
+        bank_id: selectedBank.id,
+        cashback_earned: 0,
+        status: 'success',
+        date: new Date().toISOString()
+      };
+      
+      await addTransaction(tx);
+      await addContact({ name: formData.receiver_name || formData.receiver_vpa.split('@')[0], vpa: formData.receiver_vpa, amount, is_received: false });
+      
+      setTransactionResult(tx);
+      setShowSuccessAnimation(true);
+      setLoading(false);
+      await loadData();
+    } catch (error) {
+      toast.error('Payment failed');
+      setLoading(false);
+    }
+  };
+
+  const processPaymentFromModal = async () => {
+    const amount = parseFloat(payAmount);
+    if (isNaN(amount) || amount <= 0) { toast.error('Enter valid amount'); return; }
+    
+    const pinStr = payPinDigits.join('');
+    if (pinStr.length !== 4) { setPayPinError('Enter complete PIN'); return; }
     
     try {
-        // Verify PIN
-        const verifyResponse = await bankAPI.verifyPin(selectedBank.id, pinString);
-        if (!verifyResponse.data.success) {
-            setPinError('Incorrect PIN. Please try again.');
-            setPin(['', '', '', '']);
-            return;
-        }
-        
-        // Check balance
-        const balanceResponse = await bankAPI.getBalance(selectedBank.id);
-        const currentBalance = balanceResponse.data.data.balance;
-        
-        if (amount > currentBalance) {
-            toast.error(`Insufficient balance. Available: ₹${currentBalance.toLocaleString()}`);
-            return;
-        }
-        
-        setLoading(true);
-        
-        // Process withdrawal
-        await bankAPI.withdraw(selectedBank.id, amount);
-        
-        const cashback = Math.floor(amount * 0.05);
-        
-        // Save transaction
-        const transaction = {
-            transactionId: `TXN${Date.now()}`,
-            type: 'send',
-            amount: amount,
-            description: formData.note || `Payment to ${formData.receiver_name || formData.receiver_vpa}`,
-            receiver_vpa: formData.receiver_vpa,
-            receiver_name: formData.receiver_name,
-            bank_name: selectedBank.bank_name,
-            bank_id: selectedBank.id,
-            cashback: cashback,
-            date: new Date().toISOString(),
-            status: 'success'
-        };
-        
-        await agentOrderAPI.saveTransaction(transaction);
-        
-        // Update coin balance
-        await coinAPI.getBalance();
-        
-        setTransactionResult(transaction);
-        setShowSuccessAnimation(true);
-        setLoading(false);
-        
+      const isValid = await verifyBankPin(selectedBankForPay.id, pinStr);
+      if (!isValid) { setPayPinError('Incorrect PIN'); setPayPinDigits(['','','','']); return; }
+      
+      const balance = bankBalances[selectedBankForPay.id] || 0;
+      if (amount > balance) { toast.error(`Insufficient balance`); return; }
+      
+      setPayLoading(true);
+      await updateBankBalance(selectedBankForPay.id, amount, false);
+      
+      const tx = {
+        transactionId: `TXN${Date.now()}`,
+        type: 'send',
+        amount,
+        description: payNote || `Payment to ${selectedContact.name}`,
+        receiver_vpa: selectedContact.vpa,
+        receiver_name: selectedContact.name,
+        bank_name: selectedBankForPay.bank_name,
+        bank_id: selectedBankForPay.id,
+        cashback_earned: 0,
+        status: 'success',
+        date: new Date().toISOString()
+      };
+      
+      await addTransaction(tx);
+      await addContact({ name: selectedContact.name, vpa: selectedContact.vpa, amount, is_received: false });
+      
+      setTransactionResult(tx);
+      setShowSuccessAnimation(true);
+      setShowPayModal(false);
+      setPayLoading(false);
+      await loadData();
+      toast.success(`₹${amount.toLocaleString()} sent to ${selectedContact.name}`);
     } catch (error) {
-        console.error('Payment error:', error);
-        toast.error(error.response?.data?.message || 'Payment failed');
-        setLoading(false);
+      toast.error('Payment failed');
+      setPayLoading(false);
     }
-};
+  };
 
-// Simple Contact Details Modal component inside SendMoneyPage
-const ContactDetailsModal = ({ contact, onClose, onPay, onRequest, formatDate, contactTransactions, contactTotalReceived }) => {
-    return (
-        <motion.div className="contact-details-modal" initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} onClick={e => e.stopPropagation()}>
-            <button className="modal-close" onClick={onClose}><FaTimes /></button>
-            
-            <div className="contact-modal-header">
-                <div className="contact-large-circle" style={{ backgroundColor: contact.color || getContactColor(contact.name) }}>
-                    {contact.name?.charAt(0).toUpperCase()}
-                </div>
-                <div className="contact-header-info">
-                    <h2>{contact.name}</h2>
-                    <p className="contact-vpa-large">{contact.vpa}</p>
-                    <div className="contact-stats">
-                        <div className="contact-stat">
-                            <span className="stat-value">₹{(contact.totalSent || 0).toLocaleString()}</span>
-                            <span className="stat-label">TOTAL SENT</span>
-                        </div>
-                        <div className="contact-stat">
-                            <span className="stat-value">{contact.transactionCount || 0}</span>
-                            <span className="stat-label">TRANSACTIONS</span>
-                        </div>
-                        <div className="contact-stat">
-                            <span className="stat-value">₹{(contactTotalReceived || 0).toLocaleString()}</span>
-                            <span className="stat-label">TOTAL RECEIVED</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="contact-actions-large">
-                    <button className="contact-pay-btn-large" onClick={() => onPay(contact)}>
-                        <FaMoneyBillWave /> Pay
-                    </button>
-                    <button className="contact-request-btn-large" onClick={() => onRequest(contact)}>
-                        <FaArrowDown /> Request
-                    </button>
-                </div>
-            </div>
+  const handleBankSelectForPay = (bank) => {
+    try {
+      if (!hasUpiPin(bank.id)) {
+        toast.error(`Set UPI PIN for ${bank.bank_name} in Settings`);
+        return;
+      }
+      setSelectedBankForPay(bank);
+      setPayStep(2);
+      setTimeout(() => payPinInputRefs.current[0]?.focus(), 100);
+    } catch (error) {
+      toast.error('Error selecting bank');
+    }
+  };
 
-            <div className="contact-transactions-section">
-                <h3>Transaction History</h3>
-                <div className="transactions-list-scroll">
-                    {contactTransactions?.length > 0 ? (
-                        contactTransactions.map(tx => (
-                            <div key={tx.id} className="transaction-item">
-                                <div className="transaction-icon">
-                                    {tx.type === 'sent' ? <FaArrowUp className="sent" /> : <FaArrowDown className="received" />}
-                                </div>
-                                <div className="transaction-info">
-                                    <p className="transaction-desc">{tx.description || 'Payment'}</p>
-                                    <p className="transaction-date">{formatDate(tx.date)}</p>
-                                </div>
-                                <div className="transaction-amount">
-                                    <span className={tx.type === 'sent' ? 'amount-sent' : 'amount-received'}>
-                                        {tx.type === 'sent' ? '-' : '+'}₹{tx.amount}
-                                    </span>
-                                </div>
-                            </div>
-                        ))
-                    ) : (
-                        <div className="no-transactions">
-                            <p>No transactions with this contact yet</p>
-                        </div>
-                    )}
-                </div>
-            </div>
-        </motion.div>
-    );
-};
+  const handlePayPinChange = (index, value) => {
+    if (value && !/^\d$/.test(value)) return;
+    const newPin = [...payPinDigits];
+    newPin[index] = value || '';
+    setPayPinDigits(newPin);
+    const newFilled = [...payPinFilled];
+    newFilled[index] = value !== '';
+    setPayPinFilled(newFilled);
+    if (value && index < 3) {
+      const next = document.getElementById(`pay-pin-${index + 1}`);
+      if (next) next.focus();
+    }
+  };
+
+  const handlePayPinKeyDown = (e, index) => {
+    if (e.key === 'Backspace' && !payPinDigits[index] && index > 0) {
+      const prev = document.getElementById(`pay-pin-${index - 1}`);
+      if (prev) prev.focus();
+    }
+  };
+
+  const getBankLogo = (bank) => {
+    const url = getBankLogoUrl(bank.bank_name);
+    if (url && !imageErrors[bank.id]) {
+      return <img src={url} alt={bank.bank_name} className="w-8 h-8 object-contain rounded" onError={() => setImageErrors(prev => ({...prev, [bank.id]: true}))} />;
+    }
+    return <FaUniversity className="text-gray-400" />;
+  };
+
+  const formatDate = (dateStr) => {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+  };
 
   const handleViewTransaction = () => {
     setShowSuccessAnimation(false);
@@ -2085,7 +1073,6 @@ const ContactDetailsModal = ({ contact, onClose, onPay, onRequest, formatDate, c
     setFormData({
       receiver_vpa: '',
       receiver_name: '',
-      receiver_avatar: '',
       amount: '',
       note: ''
     });
@@ -2094,1125 +1081,462 @@ const ContactDetailsModal = ({ contact, onClose, onPay, onRequest, formatDate, c
     setSelectedBank(null);
   };
 
-  const handleSplitComplete = (splitData) => {
-    const splits = JSON.parse(localStorage.getItem('splitRequests') || '[]');
-    splits.unshift({
-      id: Date.now(),
-      ...splitData,
-      status: 'pending',
-      createdAt: new Date().toISOString()
-    });
-    localStorage.setItem('splitRequests', JSON.stringify(splits.slice(0, 50)));
-    toast.success(`Split request created for ₹${splitData.totalAmount.toLocaleString()}`);
+  const handleSplitComplete = (data) => {
+    toast.success(`Split created for ₹${data.totalAmount.toLocaleString()}`);
     setShowSplitModal(false);
   };
 
-  const handleSelfTransferComplete = (transaction) => {
-    loadBankBalances();
-    loadLinkedBanks();
-    toast.success(`₹${transaction.amount.toLocaleString()} transferred successfully!`);
+  const handleSelfTransferComplete = (data) => {
+    toast.success(`₹${data.amount.toLocaleString()} transferred!`);
     setShowSelfTransferModal(false);
+    loadData();
   };
 
-  // Pay from modal handlers - FIXED: No toast for PIN not set
-  const handleBankSelectForPay = (bank) => {
-    // Check if bank has UPI PIN set
-    if (!hasUpiPin(bank.id)) {
-        toast.error(`Please set UPI PIN for ${bank.bank_name} in Settings first`);
-        return;
-    }
-    setSelectedBankForPay(bank);
-    setPayStep(2);
-    // Focus on first PIN input after a short delay
-    setTimeout(() => {
-        const firstPinInput = document.getElementById('pay-pin-0');
-        if (firstPinInput) firstPinInput.focus();
-    }, 100);
-};
+  // Progress Steps Component
+  const ProgressSteps = ({ step }) => (
+    <div className="flex items-center justify-between mb-4 px-1">
+      {[1, 2, 3].map((s) => (
+        <React.Fragment key={s}>
+          <div className="flex flex-col items-center gap-0.5">
+            <div className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
+              step >= s ? 'bg-primary-500 text-white shadow-md' : 'bg-gray-200 dark:bg-gray-700 text-gray-500'
+            }`}>
+              {step > s ? <FaCheckCircle className="text-xs" /> : s}
+            </div>
+            <span className={`text-[9px] font-medium ${step >= s ? 'text-primary-500' : 'text-gray-400'}`}>
+              {s === 1 ? 'Details' : s === 2 ? 'Bank' : 'Pay'}
+            </span>
+          </div>
+          {s < 3 && <div className={`flex-1 h-0.5 mx-1 ${step > s ? 'bg-primary-500' : 'bg-gray-200 dark:bg-gray-700'}`} />}
+        </React.Fragment>
+      ))}
+    </div>
+  );
 
-  const handlePayPinChange = (index, value) => {
-    if (isNaN(value) && value !== '') return;
-    const newPin = [...payPinDigits];
-    newPin[index] = value;
-    setPayPinDigits(newPin);
-    
-    const newFilled = [...payPinFilled];
-    newFilled[index] = value !== '';
-    setPayPinFilled(newFilled);
-
-    if (value && index < 3) {
-      const nextInput = document.getElementById(`pay-pin-${index + 1}`);
-      if (nextInput) nextInput.focus();
-    }
-  };
-
-  const handlePayPinKeyDown = (e, index) => {
-    if (e.key === 'Backspace' && !payPinDigits[index] && index > 0) {
-      const prevInput = document.getElementById(`pay-pin-${index - 1}`);
-      if (prevInput) prevInput.focus();
-    }
-  };
-
-  // In SendMoneyPage.jsx, replace the entire processPayment function with this:
-
-const processPayment = async () => {
-    const amount = parseFloat(payAmount);
-    if (isNaN(amount) || amount <= 0) {
-        toast.error('Please enter a valid amount');
-        return;
-    }
-    
-    const pinString = payPinDigits.join('');
-    if (pinString.length !== 4) {
-        setPayPinError('Please enter complete PIN');
-        return;
-    }
-    
-    try {
-        const isValid = await verifyBankPin(selectedBankForPay.id, pinString);
-        if (!isValid) {
-            setPayPinError('Incorrect PIN. Please try again.');
-            setPayPinDigits(['', '', '', '']);
-            setPayPinFilled([false, false, false, false]);
-            return;
-        }
-        
-        const currentBalance = bankBalances[selectedBankForPay.id] || 0;
-        if (amount > currentBalance) {
-            toast.error(`Insufficient balance. Available: ₹${currentBalance.toLocaleString()}`);
-            return;
-        }
-        
-        setPayLoading(true);
-        
-        // Process withdrawal
-        await updateBankBalance(selectedBankForPay.id, amount, false);
-        
-        // NO CASHBACK for send money
-        const cashbackEarned = 0;
-        
-        const transactionId = `TXN${Date.now()}`;
-        const transactionData = {
-            transactionId: transactionId,
-            type: 'send',
-            amount: amount,
-            description: payNote || `Payment to ${selectedContact.name}`,
-            receiver_vpa: selectedContact.vpa,
-            receiver_name: selectedContact.name,
-            bank_name: selectedBankForPay.bank_name,
-            bank_id: selectedBankForPay.id,
-            cashback_earned: cashbackEarned,
-            gems_used: 0,
-            status: 'success',
-            date: new Date().toISOString()
-        };
-        
-        // Save transaction to database
-        const savedTransaction = await addTransaction(transactionData);
-        
-        // Update local bank balances
-        const newBalance = bankBalances[selectedBankForPay.id] - amount;
-        setBankBalances(prev => ({ ...prev, [selectedBankForPay.id]: newBalance }));
-        
-        // IMPORTANT: Update the contact's transaction history
-        // Reload contacts to get updated transaction data
-        await loadRecentContacts();
-        
-        // Also update the specific contact's transactions if the modal is open
-        if (selectedContact && showContactDetailsModal) {
-            // Refresh the contact's transactions
-            const updatedContact = await getContactByVpa(selectedContact.vpa);
-            if (updatedContact) {
-                setSelectedContact(updatedContact);
-                loadContactTransactions(updatedContact);
-            }
-        }
-        
-        // Show success modal
-        const successData = {
-            amount: amount,
-            contactName: selectedContact.name,
-            bank_name: selectedBankForPay.bank_name,
-            transactionId: transactionId,
-            cashback: cashbackEarned
-        };
-        
-        setSuccessData(successData);
-        setShowSuccessModal(true);
-        setShowPayModal(false);
-        setPayLoading(false);
-        
-        toast.success(`₹${amount.toLocaleString()} sent to ${selectedContact.name}!`);
-        
-    } catch (error) {
-        console.error('Payment error:', error);
-        toast.error(error.response?.data?.message || 'Payment failed');
-        setPayLoading(false);
-    }
-};
-
-// Add this function in SendMoneyPage component
-
-const getContactByVpa = async (vpa) => {
-    try {
-        const allContacts = await getContacts();
-        return allContacts.find(c => c.vpa === vpa);
-    } catch (error) {
-        console.error('Failed to get contact:', error);
-        return null;
-    }
-};
-
-  // In SendMoneyPage.jsx, update the processPaymentFromModal function
-
-const processPaymentFromModal = async () => {
-    const amount = parseFloat(payAmount);
-    if (isNaN(amount) || amount <= 0) {
-        toast.error('Please enter a valid amount');
-        return;
-    }
-    
-    const pinString = payPinDigits.join('');
-    if (pinString.length !== 4) {
-        setPayPinError('Please enter complete PIN');
-        return;
-    }
-
-    const isValid = await verifyBankPin(selectedBankForPay.id, pinString);
-    if (!isValid) {
-        setPayPinError('Incorrect PIN. Please try again.');
-        setPayPinDigits(['', '', '', '']);
-        setPayPinFilled([false, false, false, false]);
-        return;
-    }
-
-    setPayLoading(true);
-    
-    try {
-        const currentBalance = bankBalances[selectedBankForPay.id] || 0;
-        
-        if (amount > currentBalance) {
-            toast.error(`Insufficient balance. Available: ₹${currentBalance.toLocaleString()}`);
-            setPayLoading(false);
-            return;
-        }
-        
-        // Process withdrawal
-        await updateBankBalance(selectedBankForPay.id, amount, false);
-        
-        const cashbackEarned = 0;
-        
-        const transactionId = `TXN${Date.now()}`;
-        const now = new Date().toISOString();
-        
-        const transaction = {
-            transactionId: transactionId,
-            type: 'send',
-            amount: amount,
-            description: payNote || `Payment to ${selectedContact.name}`,
-            receiver_vpa: selectedContact.vpa,
-            receiver_name: selectedContact.name,
-            bank_name: selectedBankForPay.bank_name,
-            bank_id: selectedBankForPay.id,
-            cashback_earned: cashbackEarned,
-            gems_used: 0,
-            status: 'success',
-            date: now,
-            created_at: now
-        };
-        
-        await addTransaction(transaction);
-        
-        // IMPORTANT: Create or update contact with correct total sent
-        // First get existing contact to calculate new total
-        const existingContacts = await getContacts();
-        const existingContact = existingContacts.find(c => c.vpa === selectedContact.vpa);
-        
-        const newTotalSent = (existingContact?.total_sent || 0) + amount;
-        
-        await addContact({
-            name: selectedContact.name,
-            vpa: selectedContact.vpa,
-            phone: selectedContact.phone || selectedContact.vpa.split('@')[0],
-            amount: amount,
-            is_received: false,
-            total_sent: newTotalSent  // Pass the updated total
-        });
-        
-        // Wait for database to update
-        await new Promise(resolve => setTimeout(resolve, 500));
-        
-        // Refresh contacts list
-        await loadContacts();
-        await loadRecentContacts();
-        
-        // Get the updated contact
-        const updatedContactsList = await getContacts();
-        const updatedContact = updatedContactsList.find(c => c.vpa === selectedContact.vpa);
-        
-        if (updatedContact) {
-            setSelectedContact(updatedContact);
-            // Update contact transactions
-            const allTransactions = await getTransactions();
-            const contactTx = allTransactions.filter(tx => 
-                (tx.type === 'send' || tx.type === 'sent') && 
-                (tx.receiver_vpa === selectedContact.vpa || tx.receiver_name === selectedContact.name) &&
-                tx.status === 'success'
-            ).map(tx => ({
-                id: tx.id,
-                amount: tx.amount,
-                date: tx.created_at || tx.date,
-                type: 'sent',
-                description: tx.description,
-                transactionId: tx.transactionId,
-                status: tx.status
-            }));
-            setContactTransactions(contactTx.sort((a, b) => new Date(b.date) - new Date(a.date)));
-            setContactTotalReceived(updatedContact.total_received || 0);
-        }
-        
-        // Refresh balances
-        await loadBankBalances();
-        
-        // Show success animation
-        setTransactionResult({
-            amount: amount,
-            receiver_name: selectedContact.name,
-            receiver_vpa: selectedContact.vpa,
-            bank_name: selectedBankForPay.bank_name,
-            transactionId: transactionId,
-            cashback: cashbackEarned
-        });
-        setShowSuccessAnimation(true);
-        setShowPayModal(false);
-        setPayLoading(false);
-        
-        // Reset payment state
-        setPayAmount('');
-        setPayNote('');
-        setPayStep(1);
-        setSelectedBankForPay(null);
-        setPayPinDigits(['', '', '', '']);
-        setPayPinFilled([false, false, false, false]);
-        
-        toast.success(`₹${amount.toLocaleString()} sent to ${selectedContact.name} successfully!`);
-        
-    } catch (error) {
-        console.error('Payment error:', error);
-        
-        const failedTransaction = {
-            transactionId: `TXN_FAILED_${Date.now()}`,
-            type: 'send',
-            amount: amount,
-            description: `Payment to ${selectedContact.name} - FAILED`,
-            receiver_vpa: selectedContact.vpa,
-            receiver_name: selectedContact.name,
-            bank_name: selectedBankForPay.bank_name,
-            bank_id: selectedBankForPay.id,
-            status: 'failed',
-            failure_reason: error.response?.data?.message || error.message || 'Payment failed',
-            date: new Date().toISOString()
-        };
-        
-        await addTransaction(failedTransaction);
-        
-        setFailedTransactionResult({
-            amount: amount,
-            receiver_name: selectedContact.name,
-            receiver_vpa: selectedContact.vpa,
-            bank_name: selectedBankForPay.bank_name,
-            transactionId: failedTransaction.transactionId,
-            failure_reason: failedTransaction.failure_reason
-        });
-        setShowFailedAnimation(true);
-        setShowPayModal(false);
-        setPayLoading(false);
-    }
-};
-
-  const formatDate = (dateString) => {
-    const date = new Date(dateString);
-    const today = new Date();
-    const yesterday = new Date(today);
-    yesterday.setDate(yesterday.getDate() - 1);
-    
-    if (date.toDateString() === today.toDateString()) {
-      return `Today, ${date.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' })}`;
-    } else if (date.toDateString() === yesterday.toDateString()) {
-      return `Yesterday, ${date.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' })}`;
-    }
-    return date.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
-  };
-
-  const quickAmounts = [100, 200, 500, 1000, 2000, 5000];
-
-  const getBankLogoComponent = (bank) => {
-    const logoUrl = getBankLogoUrl(bank.bank_name);
-    const hasError = imageErrors[`bank_${bank.id}`];
-    
-    if (logoUrl && !hasError) {
-      return (
-        <img 
-          src={logoUrl} 
-          alt={bank.bank_name}
-          className="bank-logo-img"
-          onError={() => setImageErrors(prev => ({ ...prev, [`bank_${bank.id}`]: true }))}
-        />
-      );
-    }
-    return <span className="bank-logo-fallback">🏦</span>;
-  };
-
+  // Main Render
   return (
-    <div className="send-money-page">
-      <button className="back-button" onClick={handleBack}>
-        <FaArrowLeft /> Back
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-1 md:p-4">
+      {/* Back Button */}
+      <button 
+        onClick={() => step > 1 ? setStep(step - 1) : navigate(-1)}
+        className="flex items-center gap-2 text-primary-500 hover:bg-primary-50 dark:hover:bg-gray-800 px-3 py-0 rounded-full text-sm font-medium transition-all mb-0"
+      >
+        <FaArrowLeft className="text-xs" /> Back
       </button>
 
-      <div className="send-money-header">
-        <h1>Send Money</h1>
-        <p className="subtitle">Fast, secure payments with SabAI Pay</p>
-        <AnimatedProgressBar step={step} totalSteps={3} />
+      <div className="max-w-2xl mx-auto">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-4">
+          
+          {/* Header */}
+          <div className="text-center mb-3">
+            <h1 className="text-xl font-bold bg-gradient-to-r from-primary-500 to-purple-600 bg-clip-text text-transparent">
+              Send Money
+            </h1>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Fast & secure payments</p>
+          </div>
+
+          {/* Progress */}
+          <ProgressSteps step={step} />
+
+          {/* STEP 1: Details */}
+          {step === 1 && (
+            <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }}>
+              {/* Action Buttons */}
+              <div className="grid grid-cols-3 gap-2 mb-3">
+                <button onClick={() => setShowScanner(true)} className="flex items-center justify-center gap-1.5 py-2 bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 text-xs font-medium rounded-xl hover:bg-primary-100 transition-all">
+                  <MdQrCodeScanner className="text-sm" /> Scan
+                </button>
+                <button onClick={() => setShowSplitModal(true)} className="flex items-center justify-center gap-1.5 py-2 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-xl hover:bg-gray-200 transition-all">
+                  <FaUsers className="text-sm" /> Split
+                </button>
+                <button onClick={() => setShowSelfTransferModal(true)} className="flex items-center justify-center gap-1.5 py-2 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-xl hover:bg-gray-200 transition-all">
+                  <FaExchangeAlt className="text-sm" /> Transfer
+                </button>
+              </div>
+
+              {/* Search */}
+              <div className="relative mb-3">
+                <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm" />
+                <input
+                  type="text"
+                  placeholder="Search contacts..."
+                  value={searchTerm}
+                  onChange={(e) => {
+                    setSearchTerm(e.target.value);
+                    const filtered = contacts.filter(c => 
+                      c.name?.toLowerCase().includes(e.target.value.toLowerCase()) ||
+                      c.vpa?.toLowerCase().includes(e.target.value.toLowerCase())
+                    );
+                    setFilteredContacts(filtered);
+                    setShowContactsModal(true);
+                  }}
+                  onFocus={() => setShowContactsModal(true)}
+                  className="w-full pl-9 pr-3 py-2 text-sm border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200"
+                />
+                {showContactsModal && searchTerm && filteredContacts.length > 0 && (
+                  <div className="absolute top-full left-0 right-0 mt-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg max-h-48 overflow-y-auto z-10">
+                    {filteredContacts.slice(0, 8).map(c => (
+                      <button key={c.id} onClick={() => { setFormData({...formData, receiver_vpa: c.vpa, receiver_name: c.name}); setSearchTerm(''); setShowContactsModal(false); }} className="w-full flex items-center gap-3 px-3 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-left">
+                        <div className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0" style={{ backgroundColor: getContactColor(c.name) }}>{c.name?.charAt(0)?.toUpperCase()}</div>
+                        <div className="flex-1 min-w-0"><p className="text-sm font-medium truncate">{c.name}</p><p className="text-xs text-gray-500 truncate">{c.vpa}</p></div>
+                      </button>
+                    ))}
+                    <button onClick={() => setShowContactsModal(false)} className="w-full py-1.5 text-xs text-center text-primary-500 border-t border-gray-200 dark:border-gray-700 hover:bg-gray-50">Close</button>
+                  </div>
+                )}
+              </div>
+
+              {/* Recent Contacts */}
+              {recentContacts.length > 0 && !showContactsModal && (
+                <div className="mb-3">
+                  <p className="text-[9px] font-medium text-gray-400 uppercase tracking-wider mb-1.5">Recent</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {recentContacts.slice(0, 8).map(c => (
+                      <button key={c.id} onClick={() => handleContactClick(c)} className="flex flex-col items-center gap-0.5 p-1 min-w-[44px]">
+                        <div className="w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold shadow-sm" style={{ backgroundColor: getContactColor(c.name) }}>{c.name?.charAt(0)?.toUpperCase()}</div>
+                        <span className="text-[8px] text-gray-500 dark:text-gray-400 truncate max-w-[44px]">{c.name}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Form */}
+              <div className="space-y-2.5">
+                <div>
+                  <label className="text-xs font-medium text-gray-700 dark:text-gray-300">UPI ID / Mobile <span className="text-red-500">*</span></label>
+                  <div className="relative mt-0.5">
+                    <FaMobile className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm" />
+                    <input type="text" value={formData.receiver_vpa} onChange={(e) => setFormData({...formData, receiver_vpa: e.target.value})} placeholder="name@okhdfcbank" className={`w-full pl-9 pr-3 py-2 text-sm border rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 ${errors.receiver_vpa ? 'border-red-500 focus:ring-red-200' : 'border-gray-200 dark:border-gray-700 focus:ring-primary-200'}`} />
+                  </div>
+                  {errors.receiver_vpa && <p className="text-[10px] text-red-500 mt-0.5">{errors.receiver_vpa}</p>}
+                </div>
+
+                <div>
+                  <label className="text-xs font-medium text-gray-700 dark:text-gray-300">Recipient Name</label>
+                  <div className="relative mt-0.5">
+                    <FaUser className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm" />
+                    <input type="text" value={formData.receiver_name} onChange={(e) => setFormData({...formData, receiver_name: e.target.value})} placeholder="Enter name" className="w-full pl-9 pr-3 py-2 text-sm border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="text-xs font-medium text-gray-700 dark:text-gray-300">Amount (₹) <span className="text-red-500">*</span></label>
+                  <div className="relative mt-0.5">
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 font-medium text-sm">₹</span>
+                    <input type="number" value={formData.amount} onChange={(e) => setFormData({...formData, amount: e.target.value})} placeholder="0" className={`w-full pl-7 pr-3 py-2 text-sm border rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 ${errors.amount ? 'border-red-500 focus:ring-red-200' : 'border-gray-200 dark:border-gray-700 focus:ring-primary-200'}`} />
+                  </div>
+                  {errors.amount && <p className="text-[10px] text-red-500 mt-0.5">{errors.amount}</p>}
+                  <div className="flex flex-wrap gap-1 mt-1.5">
+                    {quickAmounts.map(amt => (
+                      <button key={amt} onClick={() => setFormData({...formData, amount: amt})} className={`px-2.5 py-0.5 text-[10px] rounded-full border transition-all ${parseFloat(formData.amount) === amt ? 'bg-primary-500 text-white border-primary-500' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-700 hover:bg-gray-200'}`}>₹{amt}</button>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="text-xs font-medium text-gray-700 dark:text-gray-300">Note</label>
+                  <div className="relative mt-0.5">
+                    <FaEdit className="absolute left-3 top-2.5 text-gray-400 text-sm" />
+                    <input type="text" value={formData.note} onChange={(e) => setFormData({...formData, note: e.target.value})} placeholder="What's it for?" maxLength={100} className="w-full pl-9 pr-3 py-2 text-sm border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" />
+                  </div>
+                  <div className="flex justify-between text-[9px] text-gray-400 mt-0.5">
+                    <span>{formData.note?.length || 0}/100</span>
+                    <span>💡 Helps track payments</span>
+                  </div>
+                </div>
+
+                <button onClick={handleNext} className="w-full py-2.5 text-sm font-medium bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                  Continue <FaArrowRight className="text-xs" />
+                </button>
+              </div>
+            </motion.div>
+          )}
+
+          {/* STEP 2: Bank Selection */}
+          {step === 2 && (
+            <motion.div initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }}>
+              <div className="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-3 mb-3">
+                <div className="flex justify-between text-sm"><span className="text-gray-500">Amount</span><strong>₹{parseFloat(formData.amount || 0).toLocaleString()}</strong></div>
+                <div className="flex justify-between text-sm"><span className="text-gray-500">To</span><span>{formData.receiver_name || formData.receiver_vpa}</span></div>
+                {formData.note && <div className="flex justify-between text-sm"><span className="text-gray-500">Note</span><span className="text-xs truncate max-w-[120px]">{formData.note}</span></div>}
+              </div>
+
+              <p className="text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">Select Bank Account</p>
+              <div className="space-y-1.5 max-h-52 overflow-y-auto">
+                {linkedBanks.length > 0 ? linkedBanks.map(bank => {
+                  const hasPin = hasUpiPin(bank.id);
+                  return (
+                    <button key={bank.id} onClick={() => { if (hasPin) setSelectedBank(bank); else toast.error(`Set UPI PIN for ${bank.bank_name}`); }} className={`w-full flex items-center gap-3 p-2.5 border rounded-xl transition-all ${selectedBank?.id === bank.id ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20' : 'border-gray-200 dark:border-gray-700 hover:border-gray-300'} ${!hasPin ? 'opacity-50' : ''}`}>
+                      <div className="w-8 h-8 rounded-lg bg-white dark:bg-gray-800 flex items-center justify-center border border-gray-200 dark:border-gray-600 flex-shrink-0 overflow-hidden">{getBankLogo(bank)}</div>
+                      <div className="flex-1 text-left"><p className="text-sm font-medium">{bank.bank_name}</p><p className="text-xs text-gray-500">xxxx{bank.account_number?.slice(-4)}</p></div>
+                      {!hasPin && <span className="text-[9px] text-red-500 bg-red-50 dark:bg-red-900/20 px-1.5 py-0.5 rounded">No PIN</span>}
+                      {selectedBank?.id === bank.id && <FaCheckCircle className="text-primary-500 text-sm" />}
+                    </button>
+                  );
+                }) : (
+                  <div className="text-center py-4"><FaUniversity className="text-2xl text-gray-300 mx-auto mb-1" /><p className="text-sm text-gray-500">No banks linked</p><button onClick={() => navigate('/settings?tab=bank')} className="text-xs text-primary-500 mt-1">Add Bank</button></div>
+                )}
+              </div>
+
+              <div className="flex gap-2 mt-3">
+                <button onClick={() => setStep(1)} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-xl hover:bg-gray-200 transition-all">Back</button>
+                <button onClick={handleNext} disabled={!selectedBank} className="flex-1 py-2 text-sm font-medium bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-xl hover:shadow-lg transition-all disabled:opacity-50">Continue</button>
+              </div>
+            </motion.div>
+          )}
+
+          {/* STEP 3: PIN */}
+          {step === 3 && selectedBank && (
+            <motion.div initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }}>
+              <div className="flex items-center gap-3 bg-gray-50 dark:bg-gray-700/50 rounded-xl p-2.5 mb-3">
+                <div className="w-10 h-10 rounded-lg bg-white dark:bg-gray-800 flex items-center justify-center border border-gray-200 dark:border-gray-600 overflow-hidden">{getBankLogo(selectedBank)}</div>
+                <div className="flex-1"><p className="text-sm font-medium">{selectedBank.bank_name}</p><p className="text-xs text-gray-500">xxxx{selectedBank.account_number?.slice(-4)}</p></div>
+              </div>
+
+              <div className="text-center mb-3">
+                <div className="text-2xl font-bold">₹{parseFloat(formData.amount).toLocaleString()}</div>
+                <div className="text-xs text-gray-500">to {formData.receiver_name || formData.receiver_vpa}</div>
+              </div>
+
+              <div className="text-center mb-3">
+                <label className="text-xs font-medium text-gray-700 dark:text-gray-300 block mb-1.5">Enter UPI PIN</label>
+                <div className="flex justify-center gap-2">
+                  {pin.map((digit, i) => (
+                    <input key={i} ref={el => pinInputRefs.current[i] = el} type={showPin ? 'text' : 'password'} maxLength="1" value={digit} onChange={(e) => { const val = e.target.value; if (val && !/^\d$/.test(val)) return; const newPin = [...pin]; newPin[i] = val || ''; setPin(newPin); const newFilled = [...pinFilled]; newFilled[i] = val !== ''; setPinFilled(newFilled); if (val && i < 3) pinInputRefs.current[i+1]?.focus(); }} onKeyDown={(e) => { if (e.key === 'Backspace' && !pin[i] && i > 0) pinInputRefs.current[i-1]?.focus(); }} className={`w-10 h-12 text-center text-lg font-bold border-2 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200 ${pinFilled[i] ? 'border-primary-500' : 'border-gray-200 dark:border-gray-700'}`} autoFocus={i === 0} inputMode="numeric" />
+                  ))}
+                </div>
+                <label className="flex items-center justify-center gap-1.5 mt-1.5 text-xs text-gray-500 cursor-pointer"><input type="checkbox" checked={showPin} onChange={() => setShowPin(!showPin)} className="accent-primary-500" /> Show PIN</label>
+                {pinError && <p className="text-xs text-red-500 mt-1">{pinError}</p>}
+              </div>
+
+              <div className="flex gap-2">
+                <button onClick={() => setStep(2)} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-xl hover:bg-gray-200 transition-all">Back</button>
+                <button onClick={handleSendMoney} disabled={loading} className="flex-1 py-2 text-sm font-medium bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-xl hover:shadow-lg transition-all disabled:opacity-50 flex items-center justify-center gap-2">
+                  {loading ? <FaSpinner className="animate-spin" /> : <>Pay ₹{parseFloat(formData.amount || 0).toLocaleString()}</>}
+                </button>
+              </div>
+              <button onClick={() => navigate('/settings?tab=bank')} className="text-center w-full mt-2 text-xs text-primary-500 hover:underline">Forgot PIN?</button>
+            </motion.div>
+          )}
+        </div>
       </div>
 
-      {/* STEP 1: Enter Details */}
-      {step === 1 && (
-        <motion.div
-          className="step-content"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-        >
-          {/* Payment Mode Selection */}
-          <div className="payment-modes">
-            <button className={`mode-btn ${paymentMode === 'single' ? 'active' : ''}`} onClick={() => setPaymentMode('single')}>
-              <FaUser /> Single Payment
-            </button>
-            <button className={`mode-btn ${paymentMode === 'split' ? 'active' : ''}`} onClick={() => setShowSplitModal(true)}>
-              <FaUsers /> Split Payment
-            </button>
-            <button className={`mode-btn ${paymentMode === 'self-transfer' ? 'active' : ''}`} onClick={() => setShowSelfTransferModal(true)}>
-              <FaExchangeAlt /> Self Transfer
-            </button>
-          </div>
+      {/* ============================================ */}
+      {/* MODALS */}
+      {/* ============================================ */}
 
-          {/* Scan QR Button */}
-          <div className="scan-qr-section">
-            <button className="scan-qr-btn" onClick={() => setShowScanner(true)}>
-              <div className="scan-icon">
-                <MdQrCodeScanner />
-              </div>
-              <div className="scan-text">
-                <span className="scan-title">Scan QR Code</span>
-                <span className="scan-subtitle">Pay by scanning any UPI QR</span>
-              </div>
-              <FaArrowRight className="scan-arrow" />
-            </button>
-          </div>
-
-          {/* Search Contact */}
-          <div className="search-section">
-            <div className="search-box">
-              <FaSearch className="search-icon" />
-              <input
-                type="text"
-                placeholder="Search by name, UPI ID or phone number..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                onFocus={() => setShowContactsModal(true)}
-              />
-            </div>
-            
-            {showContactsModal && searchTerm && (
-              <div className="contacts-dropdown">
-                {filteredContacts.length > 0 ? (
-                  filteredContacts.map(contact => (
-                    <div key={contact.id} className="contact-item" onClick={() => handleContactClick(contact)}>
-                      <div className="contact-avatar" style={{ backgroundColor: contact.color || '#4f46e5' }}>
-                        {contact.avatar || contact.name?.charAt(0)}
-                      </div>
-                      <div className="contact-info">
-                        <span className="contact-name">{contact.name}</span>
-                        <span className="contact-vpa">{contact.vpa || contact.phone}</span>
-                      </div>
-                      {contact.lastAmount && <span className="contact-amount">₹{contact.lastAmount}</span>}
-                    </div>
-                  ))
-                ) : (
-                  <div className="no-contacts">No contacts found</div>
-                )}
-                <button className="close-dropdown" onClick={() => setShowContactsModal(false)}>Close</button>
-              </div>
-            )}
-          </div>
-
-          {/* Recent Contacts - Click opens contact modal */}
-{recentContacts.length > 0 && !showContactsModal && (
-    <div className="recent-section">
-        <div className="section-header">
-            <h3>Recent Contacts</h3>
-            <button className="view-all" onClick={() => {
-                setShowContactsModal(true);
-                setSearchTerm('');
-            }}>View All</button>
-        </div>
-        <div className="recent-contacts-scroll-container">
-            <div className="recent-contacts-grid">
-                {recentContacts.slice(0, 8).map(contact => (
-                    <button 
-                        key={contact.id} 
-                        className="recent-contact" 
-                        onClick={() => handleContactClick(contact)}  // Make sure this is correct
-                    >
-                        <div className="contact-circle" style={{ backgroundColor: contact.color || getContactColor(contact.name) }}>
-                            {contact.avatar || contact.name?.charAt(0)}
-                        </div>
-                        <span>{contact.name}</span>
-                    </button>
-                ))}
-            </div>
-        </div>
-    </div>
-)}
-
-          {/* Payment Form */}
-          <div className="payment-form">
-            <div className="form-group">
-              <label>To (UPI ID / Mobile Number)</label>
-              <div className="input-wrapper">
-                <FaMobile className="input-icon" />
-                <input
-                  type="text"
-                  name="receiver_vpa"
-                  value={formData.receiver_vpa}
-                  onChange={handleChange}
-                  placeholder="e.g., name@okhdfcbank"
-                  className={errors.receiver_vpa ? 'error' : ''}
-                />
-              </div>
-              {errors.receiver_vpa && <span className="error-text">{errors.receiver_vpa}</span>}
-            </div>
-
-            <div className="form-group">
-              <label>Recipient Name (Optional)</label>
-              <div className="input-wrapper">
-                <FaUser className="input-icon" />
-                <input
-                  type="text"
-                  name="receiver_name"
-                  value={formData.receiver_name}
-                  onChange={handleChange}
-                  placeholder="Enter name"
-                />
-              </div>
-            </div>
-
-            <div className="form-group">
-              <label>Amount (₹)</label>
-              <div className="amount-wrapper">
-                <span className="currency">₹</span>
-                <input
-                  type="number"
-                  name="amount"
-                  value={formData.amount}
-                  onChange={handleChange}
-                  placeholder="0"
-                  className={errors.amount ? 'error' : ''}
-                />
-              </div>
-              {errors.amount && <span className="error-text">{errors.amount}</span>}
-              
-              <div className="quick-amounts">
-                {quickAmounts.map(amt => (
-                  <button key={amt} onClick={() => setFormData(prev => ({ ...prev, amount: amt }))}>
-                    ₹{amt}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Enhanced Note Input Section */}
-            <div className={`form-group note-group ${noteFocused ? 'focused' : ''}`}>
-              <label>Add a note (Optional)</label>
-              <div className="note-wrapper">
-                <div className="note-icon">
-                  <FaEditIcon />
-                </div>
-                <textarea
-                  name="note"
-                  value={formData.note}
-                  onChange={handleChange}
-                  onFocus={() => setNoteFocused(true)}
-                  onBlur={() => setNoteFocused(false)}
-                  placeholder="What's this for? (e.g., Dinner payment, Rent, Shopping)"
-                  rows={noteFocused ? 3 : 1}
-                />
-                {formData.note && (
-                  <button className="clear-note" onClick={() => setFormData(prev => ({ ...prev, note: '' }))}>
-                    <FaTimes />
-                  </button>
-                )}
-              </div>
-              <div className="note-hint">
-                <span>{formData.note?.length || 0}/100 characters</span>
-                <span>💡 Adding a note helps you track payments</span>
-              </div>
-            </div>
-
-            <button className="continue-btn" onClick={handleNext}>
-              Continue <FaArrowRight />
-            </button>
-          </div>
-        </motion.div>
-      )}
-
-      {/* STEP 2: Bank Selection */}
-      {step === 2 && (
-        <motion.div
-          className="step-content"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-        >
-          <div className="bank-selection-section">
-            <div className="payment-summary">
-              <h3>Payment Summary</h3>
-              <div className="summary-row">
-                <span>Amount</span>
-                <strong>₹{parseFloat(formData.amount || 0).toLocaleString()}</strong>
-              </div>
-              <div className="summary-row">
-                <span>To</span>
-                <span>{formData.receiver_name || formData.receiver_vpa}</span>
-              </div>
-              {/* <div className="summary-row cashback">
-                <span>Cashback (5%)</span>
-                <span className="cashback-value">+{cashbackEarned} 🪙</span>
-              </div> */}
-              {formData.note && (
-                <div className="summary-row">
-                  <span>Note</span>
-                  <span className="note-preview">{formData.note}</span>
-                </div>
-              )}
-            </div>
-
-            <h3 className="banks-title">Select Bank Account</h3>
-            <div className="banks-grid">
-              {linkedBanks.length > 0 ? (
-                linkedBanks.map(bank => {
-                  const hasPin = hasUpiPin(bank.id);
-                  
-                  return (
-                    <div
-                      key={bank.id}
-                      className={`bank-card ${selectedBank?.id === bank.id ? 'selected' : ''} ${!hasPin ? 'no-pin' : ''}`}
-                      onClick={() => handleBankSelect(bank)}
-                    >
-                      <div className="bank-logo">
-                        {getBankLogoComponent(bank)}
-                      </div>
-                      <div className="bank-info">
-                        <h4>{bank.bank_name}</h4>
-                        <p className="account-number">xxxx{bank.account_number.slice(-4)}</p>
-                      </div>
-                      {!hasPin && <span className="pin-badge">PIN not set</span>}
-                      {selectedBank?.id === bank.id && <FaCheckCircle className="selected-icon" />}
-                    </div>
-                  );
-                })
-              ) : (
-                <div className="no-banks">
-                  <FaUniversity />
-                  <p>No bank accounts linked</p>
-                  <button onClick={() => navigate('/settings?tab=bank')}>Link Bank Account</button>
-                </div>
-              )}
-            </div>
-
-            <div className="form-actions">
-              <button className="btn-secondary" onClick={handleBack}>Back</button>
-              <button className="btn-primary" onClick={handleNext} disabled={!selectedBank}>
-                Continue <FaArrowRight />
-              </button>
-            </div>
-          </div>
-        </motion.div>
-      )}
-
-      {/* STEP 3: PIN Entry */}
-      {step === 3 && (
-        <motion.div
-          className="step-content"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-        >
-          <div className="pin-section">
-            <div className="selected-bank">
-              <div className="bank-icon">
-                {getBankLogoComponent(selectedBank)}
-              </div>
-              <div>
-                <h4>{selectedBank?.bank_name}</h4>
-                <p>xxxx{selectedBank?.account_number?.slice(-4)}</p>
-              </div>
-            </div>
-
-            <div className="payment-details">
-              <div className="amount-large">₹{parseFloat(formData.amount).toLocaleString()}</div>
-              <div className="recipient">to {formData.receiver_name || formData.receiver_vpa}</div>
-              {/* <div className="cashback-info">You'll earn {cashbackEarned} SabAI Gems</div> */}
-            </div>
-
-            <div className="pin-input-group">
-              <label>Enter UPI PIN</label>
-              <div className="pin-inputs">
-                {pin.map((digit, index) => (
-                  <input
-                    key={index}
-                    ref={el => pinInputRefs.current[index] = el}
-                    type={showPin ? 'text' : 'password'}
-                    maxLength="1"
-                    value={digit}
-                    onChange={(e) => handlePinChange(index, e.target.value)}
-                    onKeyDown={(e) => handlePinKeyDown(e, index)}
-                    className={pinFilled[index] ? 'filled' : ''}
-                    autoFocus={index === 0}
-                    inputMode="numeric"
-                  />
-                ))}
-              </div>
-              <label className="show-pin">
-                <input type="checkbox" checked={showPin} onChange={() => setShowPin(!showPin)} />
-                Show PIN
-              </label>
-              {pinError && <p className="pin-error">{pinError}</p>}
-            </div>
-
-            <div className="pin-actions">
-              <button className="btn-secondary" onClick={handleBack}>Back</button>
-              <button className="btn-primary" onClick={handleSendMoney} disabled={loading}>
-                {loading ? <FaSpinner className="spinner" /> : `Pay ₹${parseFloat(formData.amount || 0).toLocaleString()}`}
-              </button>
-            </div>
-
-            <button className="forgot-pin" onClick={() => navigate('/settings?tab=bank')}>
-              Forgot PIN?
-            </button>
-          </div>
-        </motion.div>
-      )}
-
-      {/* Request Modal */}
-<AnimatePresence>
-  {showRequestModal && selectedContact && (
-    <motion.div className="modal-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowRequestModal(false)}>
-      <motion.div className="request-modal" initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} onClick={e => e.stopPropagation()}>
-        <button className="modal-close" onClick={() => setShowRequestModal(false)}><FaTimes /></button>
-        {console.log('Request Modal should be visible')}
-        
-        <div className="request-modal-header">
-          <div className="request-recipient-circle" style={{ backgroundColor: selectedContact.color || getContactColor(selectedContact.name) }}>
-            {selectedContact.name?.charAt(0).toUpperCase()}
-          </div>
-          <h3>Request from {selectedContact.name}</h3>
-          <p>{selectedContact.vpa}</p>
-        </div>
-
-        <div className="request-amount-section">
-          <div className="request-amount-input">
-            <span className="currency-symbol">₹</span>
-            <input
-              type="number"
-              placeholder="0"
-              value={requestAmount}
-              onChange={(e) => setRequestAmount(e.target.value)}
-              className="request-amount-field"
-              autoFocus
-            />
-          </div>
-          <div className="quick-amounts-request">
-            {[100, 200, 500, 1000, 2000].map(amt => (
-              <button key={amt} className="quick-amount-request" onClick={() => setRequestAmount(amt)}>₹{amt}</button>
-            ))}
-          </div>
-          <div className="request-note-input">
-            <input
-              type="text"
-              placeholder="Add a note (optional)"
-              value={requestNote}
-              onChange={(e) => setRequestNote(e.target.value)}
-              className="request-note-field"
-            />
-          </div>
-        </div>
-
-        <div className="request-modal-footer">
-          <button className="cancel-request-btn" onClick={() => setShowRequestModal(false)}>Cancel</button>
-          <button 
-            className="send-request-btn" 
-            onClick={processRequest} 
-            disabled={requestLoading || !requestAmount || parseFloat(requestAmount) <= 0}
-          >
-            {requestLoading ? <FaSpinner className="spinner" /> : `Request ₹${requestAmount ? parseFloat(requestAmount).toLocaleString() : '0'}`}
-          </button>
-        </div>
-      </motion.div>
-    </motion.div>
-  )}
-</AnimatePresence>
-
-{/* Request Success Modal */}
-<AnimatePresence>
-  {showRequestSuccessModal && requestSuccessData && (
-    <motion.div className="modal-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowRequestSuccessModal(false)}>
-      <motion.div className="success-modal request-success" initial={{ scale: 0.8, opacity: 0, y: 50 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.8, opacity: 0, y: 50 }} onClick={e => e.stopPropagation()}>
-        <div className="success-icon">
-          <FaArrowDown />
-        </div>
-        <h2>Request Sent!</h2>
-        <div className="success-details">
-          <div className="success-row">
-            <span>Amount</span>
-            <strong>₹{requestSuccessData.amount.toLocaleString()}</strong>
-          </div>
-          <div className="success-row">
-            <span>To</span>
-            <span>{requestSuccessData.contactName}</span>
-          </div>
-          <div className="success-row">
-            <span>Request ID</span>
-            <span className="txn-id">{requestSuccessData.requestId}</span>
-          </div>
-        </div>
-        <button className="success-close-btn" onClick={() => setShowRequestSuccessModal(false)}>Done</button>
-      </motion.div>
-    </motion.div>
-  )}
-</AnimatePresence>
-
-      {/* QR Scanner Modal */}
+      {/* QR Scanner */}
       <AnimatePresence>
         {showScanner && (
-          <motion.div className="modal-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowScanner(false)}>
-            <motion.div className="scanner-modal" initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} onClick={e => e.stopPropagation()}>
-              <button className="modal-close" onClick={() => setShowScanner(false)}><FaTimes /></button>
-              <h3>Scan QR Code</h3>
-              <QRScannerComponent onScan={handleQRScan} onClose={() => setShowScanner(false)} />
-            </motion.div>
-          </motion.div>
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <QRScannerComponent onScan={handleQRScan} onClose={() => setShowScanner(false)} />
+          </div>
         )}
       </AnimatePresence>
 
-      {/* Split Payment Modal */}
+      {/* Contact Modal */}
+      <AnimatePresence>
+        {showContactModal && selectedContact && (
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <ContactDetailsModal 
+              contact={selectedContact}
+              onClose={() => setShowContactModal(false)}
+              onPay={handlePayFromContact}
+              onRequest={handleRequestFromContact}
+              formatDate={formatDate}
+              contactTransactions={contactTransactions}
+              contactTotalReceived={contactTotalReceived}
+            />
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Pay Modal */}
+      <AnimatePresence>
+        {showPayModal && selectedContact && (
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full p-4 max-h-[90vh] overflow-y-auto">
+              <button onClick={() => { setShowPayModal(false); setPayStep(1); }} className="float-right text-gray-400 hover:text-gray-600"><FaTimes /></button>
+              <div className="text-center mb-3">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold text-white mx-auto" style={{ backgroundColor: getContactColor(selectedContact.name) }}>{selectedContact.name?.charAt(0)?.toUpperCase()}</div>
+                <h4 className="font-bold">Pay {selectedContact.name}</h4>
+                <p className="text-xs text-gray-500">{selectedContact.vpa}</p>
+              </div>
+
+              {payStep === 1 ? (
+                <>
+                  <div className="mb-3">
+                    <div className="relative"><span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 font-medium">₹</span><input type="number" value={payAmount} onChange={(e) => setPayAmount(e.target.value)} placeholder="0" className="w-full pl-7 pr-3 py-2.5 text-lg font-bold border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" autoFocus /></div>
+                    <div className="flex flex-wrap gap-1 mt-1.5 justify-center">{quickAmounts.map(a => <button key={a} onClick={() => setPayAmount(a)} className="px-2.5 py-0.5 text-[10px] rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 transition-all">₹{a}</button>)}</div>
+                    <input type="text" value={payNote} onChange={(e) => setPayNote(e.target.value)} placeholder="Add a note" maxLength={100} className="w-full mt-1.5 px-3 py-1.5 text-sm border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" />
+                  </div>
+                  <p className="text-xs font-medium text-gray-700 dark:text-gray-300 mb-1.5">Select Bank</p>
+                  <div className="space-y-1.5 max-h-32 overflow-y-auto">
+                    {linkedBanks.filter(b => hasUpiPin(b.id)).map(bank => (
+                      <button key={bank.id} onClick={() => handleBankSelectForPay(bank)} className={`w-full flex items-center gap-2 p-2 border rounded-xl transition-all ${selectedBankForPay?.id === bank.id ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20' : 'border-gray-200 dark:border-gray-700'}`}>
+                        <div className="w-7 h-7 rounded-lg bg-white dark:bg-gray-800 flex items-center justify-center border border-gray-200 overflow-hidden flex-shrink-0">{getBankLogo(bank)}</div>
+                        <div className="flex-1 text-left"><p className="text-sm font-medium">{bank.bank_name}</p><p className="text-xs text-gray-500">xxxx{bank.account_number?.slice(-4)}</p></div>
+                        {selectedBankForPay?.id === bank.id && <FaCheckCircle className="text-primary-500 text-sm" />}
+                      </button>
+                    ))}
+                  </div>
+                  <div className="flex gap-2 mt-3">
+                    <button onClick={() => setShowPayModal(false)} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-xl hover:bg-gray-200">Cancel</button>
+                    <button onClick={() => { if (!selectedBankForPay) { toast.error('Select bank'); return; } if (!payAmount || parseFloat(payAmount) <= 0) { toast.error('Enter amount'); return; } setPayStep(2); }} className="flex-1 py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all">Next</button>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-2.5 mb-3 text-sm space-y-1">
+                    <div className="flex justify-between"><span className="text-gray-500">Amount</span><strong>₹{parseFloat(payAmount || 0).toLocaleString()}</strong></div>
+                    <div className="flex justify-between"><span className="text-gray-500">To</span><span>{selectedContact.name}</span></div>
+                    <div className="flex justify-between"><span className="text-gray-500">From</span><span>{selectedBankForPay?.bank_name}</span></div>
+                  </div>
+                  <div className="text-center mb-3">
+                    <label className="text-xs font-medium block mb-1.5">Enter UPI PIN</label>
+                    <div className="flex justify-center gap-2">
+                      {payPinDigits.map((d, i) => (
+                        <input key={i} id={`pay-pin-${i}`} ref={el => payPinInputRefs.current[i] = el} type={showPayPin ? 'text' : 'password'} maxLength="1" value={d} onChange={(e) => handlePayPinChange(i, e.target.value)} onKeyDown={(e) => handlePayPinKeyDown(e, i)} className={`w-10 h-12 text-center text-lg font-bold border-2 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200 ${payPinFilled[i] ? 'border-primary-500' : 'border-gray-200 dark:border-gray-700'}`} autoFocus={i === 0} inputMode="numeric" />
+                      ))}
+                    </div>
+                    <label className="flex items-center justify-center gap-1.5 mt-1 text-xs text-gray-500 cursor-pointer"><input type="checkbox" checked={showPayPin} onChange={() => setShowPayPin(!showPayPin)} className="accent-primary-500" /> Show PIN</label>
+                    {payPinError && <p className="text-xs text-red-500 mt-1">{payPinError}</p>}
+                  </div>
+                  <div className="flex gap-2">
+                    <button onClick={() => setPayStep(1)} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-xl hover:bg-gray-200">Back</button>
+                    <button onClick={processPaymentFromModal} disabled={payLoading} className="flex-1 py-2 text-sm font-medium bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-xl hover:shadow-lg transition-all disabled:opacity-50 flex items-center justify-center gap-2">
+                      {payLoading ? <FaSpinner className="animate-spin" /> : <>Pay ₹{parseFloat(payAmount || 0).toLocaleString()}</>}
+                    </button>
+                  </div>
+                </>
+              )}
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Request Modal */}
+      <AnimatePresence>
+        {showRequestModal && selectedContact && (
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full p-4">
+              <button onClick={() => setShowRequestModal(false)} className="float-right text-gray-400 hover:text-gray-600"><FaTimes /></button>
+              <div className="text-center mb-3">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold text-white mx-auto" style={{ backgroundColor: getContactColor(selectedContact.name) }}>{selectedContact.name?.charAt(0)?.toUpperCase()}</div>
+                <h4 className="font-bold">Request from {selectedContact.name}</h4>
+              </div>
+              <div className="relative mb-2"><span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 font-medium">₹</span><input type="number" value={requestAmount} onChange={(e) => setRequestAmount(e.target.value)} placeholder="0" className="w-full pl-7 pr-3 py-2.5 text-lg font-bold border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" autoFocus /></div>
+              <div className="flex flex-wrap gap-1 mb-2 justify-center">{quickAmounts.slice(0, 5).map(a => <button key={a} onClick={() => setRequestAmount(a)} className="px-2.5 py-0.5 text-[10px] rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200">₹{a}</button>)}</div>
+              <input type="text" value={requestNote} onChange={(e) => setRequestNote(e.target.value)} placeholder="Add a note" className="w-full mb-3 px-3 py-1.5 text-sm border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-200" />
+              <div className="flex gap-2">
+                <button onClick={() => setShowRequestModal(false)} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-xl hover:bg-gray-200">Cancel</button>
+                <button onClick={processRequest} disabled={requestLoading || !requestAmount} className="flex-1 py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all disabled:opacity-50 flex items-center justify-center gap-2">
+                  {requestLoading ? <FaSpinner className="animate-spin" /> : <>Request ₹{requestAmount ? parseFloat(requestAmount).toLocaleString() : '0'}</>}
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Request Success */}
+      <AnimatePresence>
+        {showRequestSuccessModal && requestSuccessData && (
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full p-5 text-center">
+              <div className="w-14 h-14 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-2"><FaArrowDown className="text-white text-xl" /></div>
+              <h3 className="font-bold text-lg">Request Sent!</h3>
+              <p className="text-2xl font-bold text-green-600">₹{requestSuccessData.amount.toLocaleString()}</p>
+              <p className="text-sm text-gray-500">to {requestSuccessData.contactName}</p>
+              <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-2.5 mt-2 text-left text-sm space-y-1">
+                <div className="flex justify-between"><span className="text-gray-500">Request ID</span><span className="font-mono text-xs">{requestSuccessData.requestId}</span></div>
+                <div className="flex justify-between"><span className="text-gray-500">Expires</span><span>7 days</span></div>
+              </div>
+              <button onClick={() => setShowRequestSuccessModal(false)} className="w-full mt-3 py-2.5 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all">Done</button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Split Modal - FULL VERSION */}
       <AnimatePresence>
         {showSplitModal && (
-          <motion.div className="modal-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowSplitModal(false)}>
-            <motion.div className="split-modal-container" initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} onClick={e => e.stopPropagation()}>
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full max-h-[85vh] overflow-y-auto">
               <SplitPaymentModal 
                 onClose={() => setShowSplitModal(false)}
                 onSplitComplete={handleSplitComplete}
-                contacts={recentContacts}
+                contacts={contacts}
                 user={user}
                 bankBalances={bankBalances}
                 linkedBanks={linkedBanks}
               />
             </motion.div>
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
 
-      {/* Self Transfer Modal */}
+      {/* Self Transfer Modal - FULL VERSION */}
       <AnimatePresence>
         {showSelfTransferModal && (
-          <motion.div className="modal-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowSelfTransferModal(false)}>
-            <motion.div className="self-transfer-modal-container" initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} onClick={e => e.stopPropagation()}>
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full max-h-[85vh] overflow-y-auto">
               <SelfTransferModal 
                 onClose={() => setShowSelfTransferModal(false)}
                 onTransferComplete={handleSelfTransferComplete}
                 linkedBanks={linkedBanks}
                 bankBalances={bankBalances}
-                updateBankBalance={updateBankBalance}
-                hasUpiPin={hasUpiPin}
-                verifyBankPin={verifyBankPin}
               />
             </motion.div>
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
 
-      {/* Contact Details Modal - Opens when clicking on contact */}
-<AnimatePresence>
-    {showContactModal && selectedContact && (
-        <motion.div className="modal-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowContactModal(false)}>
-            <ContactDetailsModal 
-                contact={selectedContact}
-                onClose={() => setShowContactModal(false)}
-                onPay={handlePayFromContactModal}
-                onRequest={handleRequestFromContactModal}
-                formatDate={formatDate}
-                contactTransactions={contactTransactions}
-                contactTotalReceived={contactTotalReceived}
-            />
-        </motion.div>
-    )}
-</AnimatePresence>
-
-      {/* Payment Modal (from contact click) - FIXED: Only shows banks with PIN set */}
-      <AnimatePresence>
-        {showPayModal && selectedContact && (
-          <motion.div className="modal-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowPayModal(false)}>
-            <motion.div className="payment-large-modal" initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} onClick={e => e.stopPropagation()}>
-              <button className="modal-close" onClick={() => setShowPayModal(false)}><FaTimes /></button>
-              
-              <div className="payment-modal-header">
-                <div className="payment-recipient-circle" style={{ backgroundColor: selectedContact.color || getContactColor(selectedContact.name) }}>
-                  {selectedContact.name?.charAt(0).toUpperCase()}
-                </div>
-                <h3>Pay {selectedContact.name}</h3>
-                <p className="payment-vpa">{selectedContact.vpa}</p>
-              </div>
-
-              {payStep === 1 && (
-                <>
-                  <div className="payment-amount-section">
-                    <div className="payment-amount-input-large">
-                      <span className="currency-symbol-large">₹</span>
-                      <input
-                        type="number"
-                        placeholder="0"
-                        value={payAmount}
-                        onChange={(e) => setPayAmount(e.target.value)}
-                        className="payment-amount-field-large"
-                        autoFocus
-                      />
-                    </div>
-                    <div className="quick-amounts-payment-large">
-                      {[100, 200, 500, 1000, 2000].map(amt => (
-                        <button key={amt} className="quick-amount-payment-large" onClick={() => setPayAmount(amt)}>₹{amt}</button>
-                      ))}
-                    </div>
-                    <div className="payment-note-input-large">
-                      <input
-                        type="text"
-                        placeholder="Add a note (optional)"
-                        value={payNote}
-                        onChange={(e) => setPayNote(e.target.value)}
-                        className="payment-note-field-large"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="bank-selection-section">
-                    <h4>Select Bank Account</h4>
-                    <div className="bank-list-pay">
-                      {linkedBanks.length > 0 ? (
-                        linkedBanks.filter(bank => hasUpiPin(bank.id)).map(bank => (
-                          <button
-                            key={bank.id}
-                            className={`bank-option-pay ${selectedBankForPay?.id === bank.id ? 'selected' : ''}`}
-                            onClick={() => handleBankSelectForPay(bank)}
-                          >
-                            <div className="bank-icon-small-pay">
-                              {(() => {
-                                const bankLogo = getBankLogoUrl(bank.bank_name);
-                                const hasError = imageErrors[`pay_bank_${bank.id}`];
-                                if (bankLogo && !hasError) {
-                                  return <img src={bankLogo} alt={bank.bank_name} className="bank-logo-small" onError={() => setImageErrors(prev => ({ ...prev, [`pay_bank_${bank.id}`]: true }))} />;
-                                }
-                                return <FaUniversity />;
-                              })()}
-                            </div>
-                            <div className="bank-info-pay">
-                              <span className="bank-name-pay">{bank.bank_name}</span>
-                              <span className="bank-account-pay">xxxx{bank.account_number?.slice(-4)}</span>
-                            </div>
-                            {selectedBankForPay?.id === bank.id && <FaCheckCircle className="selected-icon-pay" />}
-                          </button>
-                        ))
-                      ) : (
-                        <div className="no-banks-pay">
-                          <p>No bank accounts linked</p>
-                          <button onClick={() => navigate('/settings?tab=bank')}>Add Bank Account</button>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="payment-modal-footer">
-                    <button className="cancel-pay-btn" onClick={() => setShowPayModal(false)}>Cancel</button>
-                    <button 
-                      className="next-pay-btn" 
-                      onClick={() => {
-                        if (!selectedBankForPay) {
-                          toast.error('Please select a bank account');
-                          return;
-                        }
-                        if (!payAmount || parseFloat(payAmount) <= 0) {
-                          toast.error('Please enter an amount');
-                          return;
-                        }
-                        setPayStep(2);
-                      }}
-                      disabled={!selectedBankForPay || !payAmount}
-                    >
-                      Next
-                    </button>
-                  </div>
-                </>
-              )}
-
-              {payStep === 2 && (
-                <>
-                  <div className="payment-summary-section">
-                    <div className="summary-row">
-                      <span>Amount</span>
-                      <strong>₹{parseFloat(payAmount || 0).toLocaleString()}</strong>
-                    </div>
-                    <div className="summary-row">
-                      <span>To</span>
-                      <span>{selectedContact.name}</span>
-                    </div>
-                    <div className="summary-row">
-                      <span>From</span>
-                      <span>{selectedBankForPay?.bank_name} (xxxx{selectedBankForPay?.account_number?.slice(-4)})</span>
-                    </div>
-                    {/* <div className="summary-row">
-                      <span>Cashback (5%)</span>
-                      <span className="cashback-amount">+{calculateCashback(parseFloat(payAmount || 0))} 🪙</span>
-                    </div> */}
-                    {payNote && (
-                      <div className="summary-row">
-                        <span>Note</span>
-                        <span>{payNote}</span>
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="pin-section-pay">
-                    <label>Enter UPI PIN</label>
-                    <div className="pin-inputs-pay">
-                      {payPinDigits.map((digit, index) => (
-                        <input
-                          key={index}
-                          id={`pay-pin-${index}`}
-                          type={showPayPin ? 'text' : 'password'}
-                          maxLength="1"
-                          value={digit}
-                          onChange={(e) => handlePayPinChange(index, e.target.value)}
-                          onKeyDown={(e) => handlePayPinKeyDown(e, index)}
-                          className={`pin-input-pay ${payPinFilled[index] ? 'filled' : ''}`}
-                          autoFocus={index === 0}
-                        />
-                      ))}
-                    </div>
-                    <label className="show-pin-checkbox-pay">
-                      <input type="checkbox" checked={showPayPin} onChange={() => setShowPayPin(!showPayPin)} />
-                      <span>Show PIN</span>
-                    </label>
-                    {payPinError && <p className="pin-error-pay">{payPinError}</p>}
-                  </div>
-
-                  <div className="payment-modal-footer">
-                    <button className="back-pay-btn" onClick={() => setPayStep(1)}>Back</button>
-                    <button className="confirm-pay-btn" onClick={processPaymentFromModal} disabled={payLoading}>
-                      {payLoading ? <FaSpinner className="spinner" /> : `Pay ₹${parseFloat(payAmount || 0).toLocaleString()}`}
-                    </button>
-                  </div>
-                </>
-              )}
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* PopUPI Style Success Animation */}
+      {/* Success Animation */}
       <AnimatePresence>
         {showSuccessAnimation && transactionResult && (
-          <motion.div 
-            className="popupi-overlay"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <PopUpiSuccessAnimation 
-              onComplete={() => {}}
-              onViewTransaction={handleViewTransaction}
-              onNewPayment={handleNewPayment}
-              transactionData={transactionResult}
-            />
-          </motion.div>
+          <div className="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-50 p-4">
+            <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full p-5 text-center">
+              <div className="relative w-16 h-16 mx-auto mb-2">
+                <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mx-auto shadow-lg"><img src="/images/merchants/sabailogo.png" alt="SabAI" className="w-8 h-8 object-contain" /></div>
+                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-5 h-5 bg-white rounded-full flex items-center justify-center shadow"><FaCheckCircle className="text-green-500 text-sm" /></div>
+              </div>
+              <h3 className="font-bold">Payment Successful!</h3>
+              <p className="text-2xl font-bold text-green-600">₹{transactionResult.amount.toLocaleString()}</p>
+              <p className="text-sm text-gray-500">to {transactionResult.receiver_name || transactionResult.receiver_vpa}</p>
+              <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-2.5 mt-2 text-left text-sm space-y-1">
+                <div className="flex justify-between"><span className="text-gray-500">Txn ID</span><span className="font-mono text-xs">{transactionResult.transactionId}</span></div>
+                <div className="flex justify-between"><span className="text-gray-500">From</span><span>{transactionResult.bank_name}</span></div>
+                <div className="flex justify-between"><span className="text-gray-500">Time</span><span>{new Date().toLocaleString()}</span></div>
+              </div>
+              <div className="flex gap-2 mt-3">
+                <button onClick={handleViewTransaction} className="flex-1 py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all">View Transaction</button>
+                <button onClick={handleNewPayment} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-xl hover:bg-gray-200 transition-all">New Payment</button>
+              </div>
+            </motion.div>
+          </div>
         )}
       </AnimatePresence>
 
-      {/* Failed Payment Modal */}
-<AnimatePresence>
-  {showFailedAnimation && failedTransactionResult && (
-    <motion.div 
-      className="popupi-overlay"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <FailedPaymentModal 
-        transactionData={failedTransactionResult}
-        onClose={() => {
-          setShowFailedAnimation(false);
-          setFailedTransactionResult(null);
-        }}
-        onRetry={() => {
-          setShowFailedAnimation(false);
-          setFailedTransactionResult(null);
-          // Reset and allow user to try again
-          setStep(2);
-          setPayStep(1);
-          setSelectedBankForPay(null);
-          setPayPinDigits(['', '', '', '']);
-          setPayPinFilled([false, false, false, false]);
-        }}
-      />
-    </motion.div>
-  )}
-</AnimatePresence>
-    </div>
-  );
-};
-
-// Animated Progress Bar Component
-const AnimatedProgressBar = ({ step, totalSteps = 3 }) => {
-  const progress = (step / totalSteps) * 100;
-  
-  return (
-    <div className="progress-container">
-      <div className="progress-bar-bg">
-        <motion.div 
-          className="progress-bar-fill"
-          initial={{ width: 0 }}
-          animate={{ width: `${progress}%` }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-        />
-      </div>
-      <div className="progress-steps">
-        <div className={`progress-step ${step >= 1 ? 'active' : ''} ${step > 1 ? 'completed' : ''}`}>
-          <div className="step-circle">
-            {step > 1 ? <FaCheckCircle /> : <span>1</span>}
+      {/* Failed Animation */}
+      <AnimatePresence>
+        {showFailedAnimation && failedTransactionResult && (
+          <div className="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-50 p-4">
+            <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} className="bg-white dark:bg-gray-800 rounded-2xl max-w-sm w-full p-5 text-center">
+              <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-2"><FaTimesCircle className="text-red-500 text-3xl" /></div>
+              <h3 className="font-bold text-red-500">Payment Failed!</h3>
+              <p className="text-2xl font-bold">₹{failedTransactionResult.amount.toLocaleString()}</p>
+              <p className="text-sm text-gray-500">to {failedTransactionResult.receiver_name}</p>
+              <div className="bg-red-50 dark:bg-red-900/20 rounded-xl p-2.5 mt-2 text-sm"><span className="text-red-500">⚠️</span> {failedTransactionResult.failure_reason}</div>
+              <div className="flex gap-2 mt-3">
+                <button onClick={() => { setShowFailedAnimation(false); setFailedTransactionResult(null); }} className="flex-1 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-xl hover:bg-gray-200">Close</button>
+                <button onClick={() => { setShowFailedAnimation(false); setFailedTransactionResult(null); setStep(2); }} className="flex-1 py-2 text-sm font-medium bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all">Retry</button>
+              </div>
+            </motion.div>
           </div>
-          <span className="step-label">Details</span>
-        </div>
-        <div className={`progress-step ${step >= 2 ? 'active' : ''} ${step > 2 ? 'completed' : ''}`}>
-          <div className="step-circle">
-            {step > 2 ? <FaCheckCircle /> : <span>2</span>}
-          </div>
-          <span className="step-label">Bank</span>
-        </div>
-        <div className={`progress-step ${step >= 3 ? 'active' : ''} ${step > 3 ? 'completed' : ''}`}>
-          <div className="step-circle">
-            {step > 3 ? <FaCheckCircle /> : <span>3</span>}
-          </div>
-          <span className="step-label">Pay</span>
-        </div>
-      </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
