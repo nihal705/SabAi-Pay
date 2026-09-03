@@ -14,15 +14,16 @@
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
 const dotenv = require('dotenv');
 const http = require('http');
+const WebSocketService = require('./services/websocketService');
+const agentPaymentRoutes = require('./routes/agentPaymentRoutes');
 
 // Load environment variables
 dotenv.config();
 
-// Import database connection
-const db = require('./config/database');
-const { verifyConfig: verifyRazorpay } = require('./config/razorpay');
+const { getSupabase } = require('./config/supabase');
 
 // Import routes
 const authRoutes = require('./routes/authRoutes');
@@ -41,6 +42,7 @@ const agentRoutes = require('./routes/agentRoutes');
 const agentOrderRoutes = require('./routes/agentOrderRoutes');
 const merchantRoutes = require('./routes/merchantRoutes');
 const mlRoutes = require('./routes/mlRoutes');
+const notificationRoutes = require('./routes/notificationRoutes');
 
 // Import middleware
 const { errorHandler } = require('./middleware/errorHandler');
@@ -51,9 +53,24 @@ const cronService = require('./services/cronService');
 
 // Initialize Express app
 const app = express();
+app.use('/api/agent/payment', agentPaymentRoutes);
+if (process.env.TRUST_PROXY === 'true') app.set('trust proxy', 1);
+
+const apiLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 300, standardHeaders: true, legacyHeaders: false, message: { success: false, message: 'Too many requests. Please try again shortly.' } });
+const authLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 20, standardHeaders: true, legacyHeaders: false, message: { success: false, message: 'Too many authentication attempts. Please try again later.' } });
 
 // Create HTTP server
 const server = http.createServer(app);
+const wsService = new WebSocketService(server);
+app.set('wsService', wsService);
+
+app.get('/ws-status', (req, res) => {
+    res.json({
+        success: true,
+        clients: wsService.clients.size,
+        totalConnections: Array.from(wsService.clients.values()).reduce((acc, set) => acc + set.size, 0)
+    });
+});
 
 // ============================================
 // Middleware Configuration
@@ -91,8 +108,9 @@ if (process.env.NODE_ENV === 'development') {
 // API Routes
 // ============================================
 
-// Auth routes
-app.use('/api/auth', authRoutes);
+// Auth routes are intentionally stricter than normal authenticated API traffic.
+app.use('/api/auth', authLimiter, authRoutes);
+app.use('/api', apiLimiter);
 
 // Bank routes
 app.use('/api/bank', bankRoutes);
@@ -135,46 +153,10 @@ app.use('/api/agent/order', agentOrderRoutes);
 app.use('/api/merchant', merchantRoutes);
 
 app.use('/api/ml', mlRoutes);
+app.use('/api/notifications', notificationRoutes);
 
-// ============================================
-// TEST ROUTES
-// ============================================
-
-// Simple test route
-app.get('/test', (req, res) => {
-    res.json({ success: true, message: 'Server is working!' });
-});
-
-// Gemini test route
-app.get('/test-gemini', async (req, res) => {
-    try {
-        const result = await geminiService.processMessage('test-user', 'Say "Hello from Gemini!" in one sentence');
-        res.json({ 
-            success: true, 
-            message: 'Gemini is working!',
-            response: result.response
-        });
-    } catch (error) {
-        res.json({ 
-            success: false, 
-            message: 'Gemini error',
-            error: error.message 
-        });
-    }
-});
-
-// Database test route
-app.get('/test-db', async (req, res) => {
-    try {
-        const [result] = await db.pool.execute('SELECT 1 as test');
-        res.json({ success: true, message: 'Database connected', data: result });
-    } catch (error) {
-        res.status(500).json({ success: false, error: error.message });
-    }
-});
-
-// Debug merchants route
-app.get('/debug-merchants', async (req, res) => {
+if (process.env.NODE_ENV !== 'production') {
+app.get('/debug/merchants', async (req, res) => {
     try {
         const merchantService = require('./services/merchantService');
         const merchants = merchantService.getAllMerchants();
@@ -201,11 +183,12 @@ app.get('/debug-merchants', async (req, res) => {
         res.json({ success: false, error: error.message });
     }
 });
+}
 
 // ============================================
 // Health Check Route
 // ============================================
-app.get('/health', (req, res) => {
+app.get('/health', async (req, res) => {
     let merchantStatus = 'unknown';
     try {
         const merchantService = require('./services/merchantService');
@@ -214,12 +197,20 @@ app.get('/health', (req, res) => {
         merchantStatus = 'unavailable';
     }
 
-    res.json({
+    let database = 'unavailable';
+    try {
+        const { error } = await getSupabase().from('users').select('id', { head: true, count: 'exact' }).limit(1);
+        database = error ? 'unhealthy' : 'healthy';
+    } catch (error) {
+        database = 'unavailable';
+    }
+    const status = database === 'healthy' ? 200 : 503;
+    res.status(status).json({
         success: true,
         status: 'OK',
         timestamp: new Date().toISOString(),
         services: {
-            database: db.pool ? 'connected' : 'disconnected',
+            database,
             server: 'running',
             gemini: geminiService.isAvailable ? geminiService.isAvailable() : 'unknown',
             merchantData: merchantStatus
@@ -293,8 +284,8 @@ const startServer = async () => {
 ║  📍 Status:    ✅ RUNNING                                    ║
 ║  📍 Port:      ${availablePort.toString().padEnd(35)}║
 ║  📍 Env:       ${(process.env.NODE_ENV || 'development').padEnd(35)}║
-║  🤖 Gemini:    ${geminiService.isAvailable ? '✅ ONLINE' : '❌ OFFLINE'}                    ║
-║  🗄️  Database:  ${db.pool ? '✅ CONNECTED' : '❌ DISCONNECTED'}                 ║
+║  🤖 Gemini:    ${geminiService.isAvailable ? '✅ CONFIGURED' : '❌ NOT CONFIGURED'}          ║
+║  🗄️  Database:  Supabase                                                  ║
 ║                                                              ║
 ║  📁 Test Endpoints:                                          ║
 ║     • http://localhost:${availablePort}/test                  ║

@@ -1,38 +1,38 @@
 // backend/config/gemini.js
 // Google Gemini AI configuration for SabAI
 
-const { GoogleGenerativeAI } = require('@google/generative-ai');
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // Initialize Gemini with API key
 let genAI;
 let model;
 
 try {
-    if (!process.env.GEMINI_API_KEY) {
-        throw new Error('GEMINI_API_KEY not found in environment variables');
-    }
-    
-    genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    
-    // Get the model (using flash for faster responses)
-    model = genAI.getGenerativeModel({ 
-        model: process.env.GEMINI_MODEL || "gemini-1.5-flash",
-    });
-    
-    console.log('✅ Gemini AI configured successfully');
+  if (!process.env.GEMINI_API_KEY) {
+    throw new Error("GEMINI_API_KEY not found in environment variables");
+  }
+
+  genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+
+  // Get the model (using flash for faster responses)
+  model = genAI.getGenerativeModel({
+    model: process.env.GEMINI_MODEL || "gemini-2.5-flash",
+  });
+
+  console.log("✅ Gemini AI configured successfully");
 } catch (error) {
-    console.error('❌ Gemini AI configuration failed:', error.message);
+  console.error("❌ Gemini AI configuration failed:", error.message);
 }
 
 // System instruction for SabAI personality
 const getSystemInstruction = (userContext = {}) => {
-    return `You are SabAI, an AI payment assistant for SabAI Pay - an AI-powered UPI payment platform in India.
+  return `You are SabAI, an AI payment assistant for SabAI Pay - an AI-powered UPI payment platform in India.
 
 User Context:
-- Name: ${userContext.name || 'User'}
+- Name: ${userContext.name || "User"}
 - Monthly Limit: ₹${userContext.monthlyLimit || 5000}
 - Spent this month: ₹${userContext.currentSpent || 0}
-- Available: ₹${(userContext.monthlyLimit - userContext.currentSpent) || 5000}
+- Available: ₹${userContext.monthlyLimit - userContext.currentSpent || 5000}
 
 Your role:
 1. Help users with UPI payments, bill payments, and recharges
@@ -61,40 +61,40 @@ Format responses with clear sections and suggestions for next steps.`;
 
 // Generation configuration
 const generationConfig = {
-    temperature: 0.7,
-    topP: 0.95,
-    topK: 40,
-    maxOutputTokens: 300,
+  temperature: 0.7,
+  topP: 0.95,
+  topK: 40,
+  maxOutputTokens: 300,
 };
 
 // Helper function to create a chat session with history
 const createChatSession = (history = []) => {
-    if (!model) {
-        throw new Error('Gemini model not initialized');
-    }
-    return model.startChat({
-        history: history,
-        generationConfig,
-    });
+  if (!model) {
+    throw new Error("Gemini model not initialized");
+  }
+  return model.startChat({
+    history: history,
+    generationConfig,
+  });
 };
 
 // Helper function to validate API key
 const validateApiKey = async () => {
-    try {
-        if (!model) return false;
-        // Simple test prompt
-        const result = await model.generateContent('Test connection');
-        return result ? true : false;
-    } catch (error) {
-        console.error('Gemini API key validation failed:', error.message);
-        return false;
-    }
+  try {
+    if (!model) return false;
+    // Simple test prompt
+    const result = await model.generateContent("Test connection");
+    return result ? true : false;
+  } catch (error) {
+    console.error("Gemini API key validation failed:", error.message);
+    return false;
+  }
 };
 
 module.exports = {
-    model,
-    generationConfig,
-    createChatSession,
-    getSystemInstruction,
-    validateApiKey
+  model,
+  generationConfig,
+  createChatSession,
+  getSystemInstruction,
+  validateApiKey,
 };
