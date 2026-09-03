@@ -23,6 +23,7 @@ import {
   FaTachometerAlt,
   FaCog,
   FaBell,
+  FaQuestionCircle,
   FaUserCircle
 } from 'react-icons/fa';
 import './Navbar.css';
@@ -70,6 +71,7 @@ const Navbar = () => {
       { path: '/reserve-pay', icon: FaCreditCard, label: 'Reserve', public: false },
       { path: '/coins', icon: FaCoins, label: 'Coins', public: false },
       { path: '/transactions', icon: FaHistory, label: 'History', public: false },
+      { path: '/guide', icon: FaQuestionCircle, label: 'Guide', public: false },
     ] : [
       { path: '/login', icon: FaUser, label: 'Login', public: true },
       { path: '/register', icon: FaUser, label: 'Register', public: true }
@@ -155,6 +157,9 @@ const Navbar = () => {
                   <div className="dropdown-divider"></div>
                   <Link to="/settings" className="dropdown-item" onClick={() => setProfileMenuOpen(false)}>
                     <FaCog /> Settings
+                  </Link>
+                  <Link to="/guide" className="dropdown-item" onClick={() => setProfileMenuOpen(false)}>
+                    <FaQuestionCircle /> How to use SabAI Pay
                   </Link>
                   <div className="dropdown-divider"></div>
                   <button onClick={handleLogout} className="dropdown-item logout">
