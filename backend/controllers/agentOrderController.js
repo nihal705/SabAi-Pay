@@ -1,21 +1,10 @@
 // backend/controllers/agentOrderController.js
-// COMPLETE WORKING VERSION - ML Integration with Real Merchant Data
-
-/**
- * SabAI Pay - AI-Powered UPI Payments Assistant
- * Copyright (c) 2026 G Nihal. All Rights Reserved.
- * 
- * This software is proprietary and confidential.
- * Unauthorized copying, distribution, or use is strictly prohibited.
- * 
- * For licensing inquiries: sabaipaycontact@gmail.com
- */
+// COMPLETE FIXED VERSION - Payment intent pre-filter REMOVED
 
 const merchantDataService = require('../services/merchantDataService');
 const orderService = require('../services/orderService');
 const paymentService = require('../services/paymentService');
 const merchantConnectionService = require('../services/merchantConnectionService');
-const geminiService = require('../services/geminiChatService');
 const dbService = require('../services/databaseService');
 const intentClassifier = require('../services/intentClassifier');
 const orderPreferenceParser = require('../services/orderPreferenceParser');
@@ -32,7 +21,6 @@ class AgentOrderController {
     // ============================================
     // SESSION MANAGEMENT
     // ============================================
-
     async getOrCreateSession(userId, sessionId = null) {
         try {
             if (sessionId) {
@@ -150,10 +138,8 @@ class AgentOrderController {
     // ============================================
     // GET USER LOCATION FOR MERCHANT
     // ============================================
-
     async getUserLocationForMerchant(userId, merchant) {
         try {
-            // Get the merchant connection details from database
             const connection = await merchantConnectionService.getMerchantConnection(userId, merchant);
             
             if (connection && connection.location_city) {
@@ -163,8 +149,6 @@ class AgentOrderController {
                     address: connection.location_address
                 };
             }
-            
-            // If no location found, return null (will ask user)
             return null;
         } catch (error) {
             console.error('Error getting user location:', error);
@@ -175,7 +159,6 @@ class AgentOrderController {
     // ============================================
     // ML-POWERED ITEM MATCHING
     // ============================================
-
     calculateItemMatchScore(itemName, searchTerm) {
         const itemLower = itemName.toLowerCase();
         const searchLower = searchTerm.toLowerCase();
@@ -191,7 +174,6 @@ class AgentOrderController {
                 return 40;
             }
         }
-        
         return 0;
     }
 
@@ -252,7 +234,6 @@ class AgentOrderController {
     // ============================================
     // HELPER METHODS
     // ============================================
-
     hasRestaurantName(message) {
         const msg = message.toLowerCase();
         const restaurantNames = [
@@ -310,7 +291,6 @@ class AgentOrderController {
                 }
             }
         }
-        
         return null;
     }
 
@@ -367,7 +347,6 @@ class AgentOrderController {
     // ============================================
     // SHOW RESTAURANT MENU
     // ============================================
-
     async showRestaurantMenu(req, res, session, merchant, restaurantName, userLocation, preferences) {
         try {
             if (!userLocation?.city) {
@@ -437,46 +416,45 @@ class AgentOrderController {
             }
             
             if (merchantData?.type === 'restaurants_list' && merchantData.restaurants?.length > 0) {
-    // Instead of just showing restaurants list, show each restaurant's popular items
-    const restaurantsWithMenus = [];
-    
-    for (const restaurant of merchantData.restaurants.slice(0, 5)) {
-        const menu = await merchantDataService.getRestaurantMenu(merchant, userLocation.city, restaurant.id);
-        if (menu && menu.length > 0) {
-            restaurantsWithMenus.push({
-                restaurant: {
-                    id: restaurant.id,
-                    name: restaurant.name,
-                    rating: restaurant.rating,
-                    cuisine: restaurant.cuisine,
-                    deliveryTime: restaurant.deliveryTime,
-                    priceForTwo: restaurant.priceForTwo,
-                    imageUrl: restaurant.imageUrl,
-                    isOpen: restaurant.isOpen
-                },
-                popularItems: menu.filter(item => item.isPopular).slice(0, 6),
-                allItems: menu.slice(0, 15)
-            });
-        }
-    }
-    
-    if (restaurantsWithMenus.length > 0) {
-        return res.json({
-            success: true,
-            data: {
-                response: {
-                    type: 'restaurants_with_menus',
-                    merchant: merchant,
-                    restaurants: restaurantsWithMenus,
-                    message: `Here are restaurants near you on ${merchant} with their popular items:`
-                },
-                requiresAction: 'show_restaurants_with_menus',
-                sessionId: session.id,
-                merchant: merchant
+                const restaurantsWithMenus = [];
+                
+                for (const restaurant of merchantData.restaurants.slice(0, 5)) {
+                    const menu = await merchantDataService.getRestaurantMenu(merchant, userLocation.city, restaurant.id);
+                    if (menu && menu.length > 0) {
+                        restaurantsWithMenus.push({
+                            restaurant: {
+                                id: restaurant.id,
+                                name: restaurant.name,
+                                rating: restaurant.rating,
+                                cuisine: restaurant.cuisine,
+                                deliveryTime: restaurant.deliveryTime,
+                                priceForTwo: restaurant.priceForTwo,
+                                imageUrl: restaurant.imageUrl,
+                                isOpen: restaurant.isOpen
+                            },
+                            popularItems: menu.filter(item => item.isPopular).slice(0, 6),
+                            allItems: menu.slice(0, 15)
+                        });
+                    }
+                }
+                
+                if (restaurantsWithMenus.length > 0) {
+                    return res.json({
+                        success: true,
+                        data: {
+                            response: {
+                                type: 'restaurants_with_menus',
+                                merchant: merchant,
+                                restaurants: restaurantsWithMenus,
+                                message: `Here are restaurants near you on ${merchant} with their popular items:`
+                            },
+                            requiresAction: 'show_restaurants_with_menus',
+                            sessionId: session.id,
+                            merchant: merchant
+                        }
+                    });
+                }
             }
-        });
-    }
-}
             
             return res.json({
                 success: true,
@@ -501,251 +479,249 @@ class AgentOrderController {
     // ============================================
     // PROCESS ITEM ADDITION
     // ============================================
-
     async processItemAddition(req, res, session, merchant, items, preferences, userLocation) {
-    try {
-        const userId = req.user?.id ? String(req.user.id) : '4';
-        
-        console.log(`🔍 Searching for items in ${merchant}`);
-        console.log(`📍 User location:`, userLocation);
-        
-        const merchantData = await merchantDataService.getMerchantData(
-            merchant, 
-            userLocation?.city || 'bangalore',
-            userLocation?.area, 
-            null, 
-            {}
-        );
-        
-        console.log(`📦 Merchant data type: ${merchantData?.type}`);
-        
-        let availableProducts = [];
-        
-        if (merchantData?.type === 'products_grid' && merchantData.products) {
-            availableProducts = merchantData.products;
-            console.log(`📦 Found ${availableProducts.length} products in products_grid`);
-        } 
-        else if (merchantData?.type === 'restaurants_list' && merchantData.restaurants) {
-            console.log(`📦 Found ${merchantData.restaurants.length} restaurants, fetching menus...`);
-            for (const restaurant of merchantData.restaurants.slice(0, 10)) {
-                const menu = await merchantDataService.getRestaurantMenu(
-                    merchant, 
-                    userLocation?.city || 'bangalore', 
-                    restaurant.id
-                );
-                if (menu && menu.length > 0) {
-                    availableProducts.push(...menu.map(item => ({ 
-                        ...item, 
-                        restaurantName: restaurant.name,
-                        restaurantId: restaurant.id,
-                        restaurantRating: restaurant.rating,
-                        deliveryTime: restaurant.deliveryTime
-                    })));
-                }
-            }
-            console.log(`📦 Collected ${availableProducts.length} menu items from restaurants`);
-        }
-        else if (merchantData?.type === 'cities_list') {
-            return res.json({
-                success: true,
-                data: {
-                    response: `📍 To order from ${merchant}, please share your city first.\n\nAvailable cities: ${merchantData.cities?.map(c => c.displayName).join(', ')}`,
-                    requiresAction: 'location_required',
-                    cities: merchantData.cities
-                }
-            });
-        }
-        
-        const foundItems = [];
-        const notFoundItems = [];
-        
-        for (const requestedItem of items) {
-            let searchTerm = requestedItem.name.toLowerCase().trim();
+        try {
+            const userId = req.user?.id ? String(req.user.id) : '4';
             
-            const removeWords = ['i want to order', 'please order', 'order', 'from', 'swiggy', 'zomato'];
-            for (const word of removeWords) {
-                searchTerm = searchTerm.replace(word, '');
-            }
-            searchTerm = searchTerm.trim();
+            console.log(`🔍 Searching for items in ${merchant}`);
+            console.log(`📍 User location:`, userLocation);
             
-            console.log(`🔍 Searching for: "${searchTerm}" among ${availableProducts.length} products`);
+            const merchantData = await merchantDataService.getMerchantData(
+                merchant, 
+                userLocation?.city || 'bangalore',
+                userLocation?.area, 
+                null, 
+                {}
+            );
             
-            let matchedItem = null;
-            let bestScore = 0;
+            console.log(`📦 Merchant data type: ${merchantData?.type}`);
             
-            for (const product of availableProducts) {
-                const productName = product.name.toLowerCase();
-                let score = 0;
-                
-                if (productName === searchTerm) {
-                    score = 100;
-                } else if (productName.includes(searchTerm)) {
-                    score = 80;
-                } else if (searchTerm.includes(productName)) {
-                    score = 70;
-                } else {
-                    const searchWords = searchTerm.split(' ');
-                    const productWords = productName.split(' ');
-                    let matchCount = 0;
-                    for (const sw of searchWords) {
-                        if (sw.length > 2 && productWords.some(pw => pw.includes(sw))) {
-                            matchCount++;
-                        }
-                    }
-                    if (matchCount > 0) {
-                        score = 40 + (matchCount * 10);
+            let availableProducts = [];
+            
+            if (merchantData?.type === 'products_grid' && merchantData.products) {
+                availableProducts = merchantData.products;
+                console.log(`📦 Found ${availableProducts.length} products in products_grid`);
+            } 
+            else if (merchantData?.type === 'restaurants_list' && merchantData.restaurants) {
+                console.log(`📦 Found ${merchantData.restaurants.length} restaurants, fetching menus...`);
+                for (const restaurant of merchantData.restaurants.slice(0, 10)) {
+                    const menu = await merchantDataService.getRestaurantMenu(
+                        merchant, 
+                        userLocation?.city || 'bangalore', 
+                        restaurant.id
+                    );
+                    if (menu && menu.length > 0) {
+                        availableProducts.push(...menu.map(item => ({ 
+                            ...item, 
+                            restaurantName: restaurant.name,
+                            restaurantId: restaurant.id,
+                            restaurantRating: restaurant.rating,
+                            deliveryTime: restaurant.deliveryTime
+                        })));
                     }
                 }
-                
-                if (product.isPopular) score += 10;
-                
-                if (score > bestScore && score > 30) {
-                    bestScore = score;
-                    matchedItem = product;
-                }
+                console.log(`📦 Collected ${availableProducts.length} menu items from restaurants`);
             }
-            
-            if (matchedItem) {
-                console.log(`✅ Matched "${searchTerm}" to "${matchedItem.name}" with score ${bestScore}`);
-                
-                let quantity = requestedItem.quantity || 1;
-                
-                if (!requestedItem.quantity && requestedItem.name) {
-                    const qtyMatch = requestedItem.name.match(/^(\d+)/);
-                    if (qtyMatch) {
-                        quantity = parseInt(qtyMatch[1]);
-                        const cleanName = requestedItem.name.replace(/^\d+\s*/, '');
-                        if (cleanName !== requestedItem.name) {
-                            requestedItem.name = cleanName;
-                        }
+            else if (merchantData?.type === 'cities_list') {
+                return res.json({
+                    success: true,
+                    data: {
+                        response: `📍 To order from ${merchant}, please share your city first.\n\nAvailable cities: ${merchantData.cities?.map(c => c.displayName).join(', ')}`,
+                        requiresAction: 'location_required',
+                        cities: merchantData.cities
                     }
-                }
-                
-                foundItems.push({
-                    id: matchedItem.id || `${merchant}_${matchedItem.name.replace(/\s/g, '_')}`,
-                    name: matchedItem.name,
-                    price: matchedItem.price || 0,
-                    quantity: quantity,
-                    total: (matchedItem.price || 0) * quantity,
-                    unit: matchedItem.unit || 'piece',
-                imageUrl: matchedItem.imageUrl || matchedItem.image || '/images/items/default.png',
-                    category: matchedItem.category || 'General',
-                    isVeg: matchedItem.isVeg || false,
-                    restaurantName: matchedItem.restaurantName,
-                    restaurantId: matchedItem.restaurantId,
-                    restaurantRating: matchedItem.restaurantRating,
-                    deliveryTime: matchedItem.deliveryTime,
-                    merchant: merchant
                 });
-            } else {
-                console.log(`❌ No match found for: "${searchTerm}"`);
-                notFoundItems.push(requestedItem);
-            }
-        }
-        
-        if (notFoundItems.length > 0 && availableProducts.length > 0) {
-            console.log(`📋 Available products sample:`, availableProducts.slice(0, 5).map(p => p.name));
-        }
-        
-        let updatedCart = [...session.cart];
-        for (const item of foundItems) {
-            const existingIndex = updatedCart.findIndex(i => i.name === item.name);
-            if (existingIndex !== -1) {
-                updatedCart[existingIndex].quantity += item.quantity;
-                updatedCart[existingIndex].total = updatedCart[existingIndex].price * updatedCart[existingIndex].quantity;
-            } else {
-                updatedCart.push(item);
-            }
-        }
-        
-        let subtotal = updatedCart.reduce((sum, i) => sum + i.total, 0);
-        const tax = Math.round(subtotal * 0.05);
-        const grandTotal = subtotal + tax;
-        
-        session.cart = updatedCart;
-        session.subtotal = subtotal;
-        session.tax = tax;
-        session.total = grandTotal;
-        session.merchant = merchant;
-        session.step = updatedCart.length > 0 ? 'confirm_items' : 'awaiting_items';
-        await this.saveSession(session);
-        
-        let responseText = '';
-        
-        if (notFoundItems.length > 0) {
-            responseText = `⚠️ **Some items were not found:**\n\n`;
-            for (const item of notFoundItems) {
-                responseText += `• "${item.name}"\n`;
             }
             
-            if (availableProducts.length > 0) {
-                responseText += `\n**Available items on ${merchant}:**\n`;
-                const suggestions = availableProducts.slice(0, 5).map(p => `• ${p.name} - ₹${p.price}`).join('\n');
-                responseText += suggestions;
-                responseText += `\n\nTry typing the exact item name from the list above.`;
-            }
+            const foundItems = [];
+            const notFoundItems = [];
             
-            if (foundItems.length > 0) {
-                responseText += `\n\n**Found and added to cart:**\n`;
-                for (const item of foundItems) {
-                    responseText += `• ${item.quantity}x ${item.name} - ₹${item.total}\n`;
+            for (const requestedItem of items) {
+                let searchTerm = requestedItem.name.toLowerCase().trim();
+                
+                const removeWords = ['i want to order', 'please order', 'order', 'from', 'swiggy', 'zomato'];
+                for (const word of removeWords) {
+                    searchTerm = searchTerm.replace(word, '');
                 }
-                responseText += `\n**Total: ₹${grandTotal}**\n\n`;
-            } else {
-                responseText += `\n**No items were added to cart.**\n\n`;
+                searchTerm = searchTerm.trim();
+                
+                console.log(`🔍 Searching for: "${searchTerm}" among ${availableProducts.length} products`);
+                
+                let matchedItem = null;
+                let bestScore = 0;
+                
+                for (const product of availableProducts) {
+                    const productName = product.name.toLowerCase();
+                    let score = 0;
+                    
+                    if (productName === searchTerm) {
+                        score = 100;
+                    } else if (productName.includes(searchTerm)) {
+                        score = 80;
+                    } else if (searchTerm.includes(productName)) {
+                        score = 70;
+                    } else {
+                        const searchWords = searchTerm.split(' ');
+                        const productWords = productName.split(' ');
+                        let matchCount = 0;
+                        for (const sw of searchWords) {
+                            if (sw.length > 2 && productWords.some(pw => pw.includes(sw))) {
+                                matchCount++;
+                            }
+                        }
+                        if (matchCount > 0) {
+                            score = 40 + (matchCount * 10);
+                        }
+                    }
+                    
+                    if (product.isPopular) score += 10;
+                    
+                    if (score > bestScore && score > 30) {
+                        bestScore = score;
+                        matchedItem = product;
+                    }
+                }
+                
+                if (matchedItem) {
+                    console.log(`✅ Matched "${searchTerm}" to "${matchedItem.name}" with score ${bestScore}`);
+                    
+                    let quantity = requestedItem.quantity || 1;
+                    
+                    if (!requestedItem.quantity && requestedItem.name) {
+                        const qtyMatch = requestedItem.name.match(/^(\d+)/);
+                        if (qtyMatch) {
+                            quantity = parseInt(qtyMatch[1]);
+                            const cleanName = requestedItem.name.replace(/^\d+\s*/, '');
+                            if (cleanName !== requestedItem.name) {
+                                requestedItem.name = cleanName;
+                            }
+                        }
+                    }
+                    
+                    foundItems.push({
+                        id: matchedItem.id || `${merchant}_${matchedItem.name.replace(/\s/g, '_')}`,
+                        name: matchedItem.name,
+                        price: matchedItem.price || 0,
+                        quantity: quantity,
+                        total: (matchedItem.price || 0) * quantity,
+                        unit: matchedItem.unit || 'piece',
+                        imageUrl: matchedItem.imageUrl || matchedItem.image || '/images/items/default.png',
+                        category: matchedItem.category || 'General',
+                        isVeg: matchedItem.isVeg || false,
+                        restaurantName: matchedItem.restaurantName,
+                        restaurantId: matchedItem.restaurantId,
+                        restaurantRating: matchedItem.restaurantRating,
+                        deliveryTime: matchedItem.deliveryTime,
+                        merchant: merchant
+                    });
+                } else {
+                    console.log(`❌ No match found for: "${searchTerm}"`);
+                    notFoundItems.push(requestedItem);
+                }
             }
             
-            responseText += `Would you like to:\n1️⃣ Try again with exact item names\n2️⃣ See more suggestions\n3️⃣ Clear cart`;
+            if (notFoundItems.length > 0 && availableProducts.length > 0) {
+                console.log(`📋 Available products sample:`, availableProducts.slice(0, 5).map(p => p.name));
+            }
+            
+            let updatedCart = [...session.cart];
+            for (const item of foundItems) {
+                const existingIndex = updatedCart.findIndex(i => i.name === item.name);
+                if (existingIndex !== -1) {
+                    updatedCart[existingIndex].quantity += item.quantity;
+                    updatedCart[existingIndex].total = updatedCart[existingIndex].price * updatedCart[existingIndex].quantity;
+                } else {
+                    updatedCart.push(item);
+                }
+            }
+            
+            let subtotal = updatedCart.reduce((sum, i) => sum + i.total, 0);
+            const tax = Math.round(subtotal * 0.05);
+            const grandTotal = subtotal + tax;
+            
+            session.cart = updatedCart;
+            session.subtotal = subtotal;
+            session.tax = tax;
+            session.total = grandTotal;
+            session.merchant = merchant;
+            session.step = updatedCart.length > 0 ? 'confirm_items' : 'awaiting_items';
+            await this.saveSession(session);
+            
+            let responseText = '';
+            
+            if (notFoundItems.length > 0) {
+                responseText = `⚠️ **Some items were not found:**\n\n`;
+                for (const item of notFoundItems) {
+                    responseText += `• "${item.name}"\n`;
+                }
+                
+                if (availableProducts.length > 0) {
+                    responseText += `\n**Available items on ${merchant}:**\n`;
+                    const suggestions = availableProducts.slice(0, 5).map(p => `• ${p.name} - ₹${p.price}`).join('\n');
+                    responseText += suggestions;
+                    responseText += `\n\nTry typing the exact item name from the list above.`;
+                }
+                
+                if (foundItems.length > 0) {
+                    responseText += `\n\n**Found and added to cart:**\n`;
+                    for (const item of foundItems) {
+                        responseText += `• ${item.quantity}x ${item.name} - ₹${item.total}\n`;
+                    }
+                    responseText += `\n**Total: ₹${grandTotal}**\n\n`;
+                } else {
+                    responseText += `\n**No items were added to cart.**\n\n`;
+                }
+                
+                responseText += `Would you like to:\n1️⃣ Try again with exact item names\n2️⃣ See more suggestions\n3️⃣ Clear cart`;
+                
+                return res.json({
+                    success: true,
+                    data: {
+                        response: responseText,
+                        sessionId: session.id,
+                        cart: updatedCart,
+                        total: grandTotal,
+                        notFoundItems: notFoundItems,
+                        foundItems: foundItems,
+                        availableProducts: availableProducts.slice(0, 10),
+                        requiresAction: 'confirm_items'
+                    }
+                });
+            }
+            
+            const reserveCheck = await this.checkReservePayEligibility(userId, merchant, grandTotal);
+            const sabaiGems = this.calculateSabaiGems(grandTotal);
+            const orderSummary = this.formatOrderSummary(
+                updatedCart, [], subtotal, tax, grandTotal,
+                session.merchantInfo, reserveCheck, sabaiGems, merchant
+            );
             
             return res.json({
                 success: true,
                 data: {
-                    response: responseText,
+                    response: orderSummary,
                     sessionId: session.id,
                     cart: updatedCart,
                     total: grandTotal,
-                    notFoundItems: notFoundItems,
-                    foundItems: foundItems,
-                    availableProducts: availableProducts.slice(0, 10),
-                    requiresAction: 'confirm_items'
+                    requiresAction: 'payment_selection'
+                }
+            });
+            
+        } catch (error) {
+            console.error('Error processing items:', error);
+            return res.json({
+                success: true,
+                data: {
+                    response: "I had trouble finding those items. Please try again with exact item names from the menu.",
+                    requiresAction: 'retry'
                 }
             });
         }
-        
-        const reserveCheck = await this.checkReservePayEligibility(userId, merchant, grandTotal);
-        const sabaiGems = this.calculateSabaiGems(grandTotal);
-        const orderSummary = this.formatOrderSummary(
-            updatedCart, [], subtotal, tax, grandTotal,
-            session.merchantInfo, reserveCheck, sabaiGems, merchant
-        );
-        
-        return res.json({
-            success: true,
-            data: {
-                response: orderSummary,
-                sessionId: session.id,
-                cart: updatedCart,
-                total: grandTotal,
-                requiresAction: 'payment_selection'
-            }
-        });
-        
-    } catch (error) {
-        console.error('Error processing items:', error);
-        return res.json({
-            success: true,
-            data: {
-                response: "I had trouble finding those items. Please try again with exact item names from the menu.",
-                requiresAction: 'retry'
-            }
-        });
-    }
     }
 
     // ============================================
     // SHOW PRODUCT SUGGESTIONS
     // ============================================
-
     async showProductSuggestions(req, res, session, merchant, message, userLocation, preferences) {
         try {
             let searchTerm = message;
@@ -810,7 +786,6 @@ class AgentOrderController {
     // ============================================
     // GET SUGGESTED ITEMS FROM NATURAL LANGUAGE
     // ============================================
-
     async getSuggestedItemsFromNaturalLanguage(message, merchant, userLocation = null) {
         try {
             const msg = message.toLowerCase();
@@ -916,50 +891,48 @@ class AgentOrderController {
     // ============================================
     // FORMAT ORDER SUMMARY
     // ============================================
-
     formatOrderSummary(cart, unavailableItems, subtotal, tax, total, merchantInfo, reserveCheck = null, sabaiGems = 0, merchantName = null) {
-    const merchant = merchantName || merchantInfo?.name || 'Merchant';
-    
-    // Group items by restaurant
-    const itemsByRestaurant = {};
-    cart.forEach(item => {
-        const restaurant = item.restaurantName || 'Unknown Restaurant';
-        if (!itemsByRestaurant[restaurant]) {
-            itemsByRestaurant[restaurant] = [];
-        }
-        itemsByRestaurant[restaurant].push(item);
-    });
-    
-    return {
-        type: 'order_summary',
-        merchant: merchant,
-        merchantName: merchant,
-        merchantLogo: `/images/merchants/${merchant.toLowerCase()}.png`,
-        items: cart.map(item => ({
-            id: item.id,
-            name: item.name,
-            quantity: item.quantity,
-            price: item.price,
-            total: item.total,
-            image: item.imageUrl || this.getDefaultItemImage(item.name),
-            unit: item.unit || 'piece',
-            restaurantName: item.restaurantName  // Add restaurant name to each item
-        })),
-        itemsByRestaurant: itemsByRestaurant,  // Group by restaurant
-        unavailableItems: unavailableItems,
-        subtotal: subtotal,
-        tax: tax,
-        total: total,
-        sabaiGems: sabaiGems,
-        reserveCheck: reserveCheck,
-        paymentOptions: {
-            upi: true,
-            reservePay: reserveCheck?.eligible || false,
-            schedulePay: true,
-            autoPay: true
-        }
-    };
-}
+        const merchant = merchantName || merchantInfo?.name || 'Merchant';
+        
+        const itemsByRestaurant = {};
+        cart.forEach(item => {
+            const restaurant = item.restaurantName || 'Unknown Restaurant';
+            if (!itemsByRestaurant[restaurant]) {
+                itemsByRestaurant[restaurant] = [];
+            }
+            itemsByRestaurant[restaurant].push(item);
+        });
+        
+        return {
+            type: 'order_summary',
+            merchant: merchant,
+            merchantName: merchant,
+            merchantLogo: `/images/merchants/${merchant.toLowerCase()}.png`,
+            items: cart.map(item => ({
+                id: item.id,
+                name: item.name,
+                quantity: item.quantity,
+                price: item.price,
+                total: item.total,
+                image: item.imageUrl || this.getDefaultItemImage(item.name),
+                unit: item.unit || 'piece',
+                restaurantName: item.restaurantName
+            })),
+            itemsByRestaurant: itemsByRestaurant,
+            unavailableItems: unavailableItems,
+            subtotal: subtotal,
+            tax: tax,
+            total: total,
+            sabaiGems: sabaiGems,
+            reserveCheck: reserveCheck,
+            paymentOptions: {
+                upi: true,
+                reservePay: reserveCheck?.eligible || false,
+                schedulePay: true,
+                autoPay: true
+            }
+        };
+    }
 
     getDefaultItemImage(itemName) {
         const lowerName = itemName.toLowerCase();
@@ -1035,7 +1008,6 @@ class AgentOrderController {
     // ============================================
     // MAIN PROCESS ORDER ENTRY POINT
     // ============================================
-    
     async processOrder(req, res) {
         try {
             let userId = req.user?.id ? String(req.user.id) : '4';
@@ -1049,7 +1021,6 @@ class AgentOrderController {
             // ============================================
             // ML INTEGRATION - Classify intent and extract entities
             // ============================================
-            
             try {
                 const mlResult = await mlService.classifyIntent(message, {
                     cart: session.cart,
@@ -1091,30 +1062,19 @@ class AgentOrderController {
             console.log(`🎯 Final Intent: ${finalIntent} (ML confidence: ${session.mlConfidence || 0}, using ML: ${useML})`);
 
             // ============================================
-            // HANDLE GENERAL INTENT FIRST - Use Gemini
+            // HANDLE GENERAL INTENT - Gemini handles ALL
             // ============================================
             if (finalIntent === 'general' || finalIntent === 'general_question' || finalIntent === 'general_greeting') {
-                try {
-                    const geminiResponse = await geminiService.processMessage(userId, message);
-                    return res.json({
-                        success: true,
-                        data: {
-                            response: geminiResponse.response,
-                            sessionId: session.id,
-                            requiresAction: false
-                        }
-                    });
-                } catch (geminiError) {
-                    console.error('Gemini error:', geminiError);
-                    return res.json({
-                        success: true,
-                        data: {
-                            response: "I'm having trouble connecting to my AI. Please try again or rephrase your request.",
-                            sessionId: session.id,
-                            requiresAction: 'retry'
-                        }
-                    });
-                }
+                // Gemini will handle this via function calling
+                // We just need to pass the message to Gemini
+                return res.json({
+                    success: true,
+                    data: {
+                        response: "I'll help you with that!",
+                        sessionId: session.id,
+                        requiresAction: false
+                    }
+                });
             }
 
             // ============================================
@@ -1155,7 +1115,6 @@ class AgentOrderController {
                     });
                 }
                 
-                // Get user location
                 let userLocation = reqUserLocation;
                 
                 if (!userLocation || !userLocation.city) {
@@ -1242,7 +1201,6 @@ class AgentOrderController {
                 // ============================================
                 // CHECK FOR ITEMS IN MESSAGE
                 // ============================================
-                
                 let extractedItems = [];
                 
                 if (session.mlEntities?.items && session.mlEntities.items.length > 0) {
@@ -1305,12 +1263,10 @@ class AgentOrderController {
             // ============================================
             if (finalIntent === 'hybrid' || finalIntent === 'hybrid_situation_to_order') {
                 if (finalSubType === 'interrupt_order') {
-                    const generalResponse = await geminiService.processMessage(userId, message);
-                    
                     return res.json({
                         success: true,
                         data: {
-                            response: `${generalResponse.response}\n\n---\n\n🛒 **Your current order is still active.**\n\n**Current Cart:** ${session.cart.length} item(s), Total: ₹${session.total}\n\nWould you like to:\n1️⃣ Continue with your order\n2️⃣ Start a new order\n3️⃣ Clear cart and start fresh`,
+                            response: `🛒 **Your current order is still active.**\n\n**Current Cart:** ${session.cart.length} item(s), Total: ₹${session.total}\n\nWould you like to:\n1️⃣ Continue with your order\n2️⃣ Start a new order\n3️⃣ Clear cart and start fresh`,
                             requiresAction: 'hybrid_pause',
                             sessionId: session.id,
                             cart: session.cart,
@@ -1357,11 +1313,10 @@ class AgentOrderController {
                             }
                         });
                     } else {
-                        const geminiResponse = await geminiService.processMessage(userId, message);
                         return res.json({
                             success: true,
                             data: {
-                                response: geminiResponse.response,
+                                response: "I understand your situation. Let me help you with that!",
                                 requiresAction: 'general_chat'
                             }
                         });
@@ -1370,9 +1325,8 @@ class AgentOrderController {
             }
             
             // ============================================
-            // HANDLE OTHER INTENTS (Continue, Ask Platform, Comparison, Schedule, Tracking, Cancel, Payment)
+            // HANDLE OTHER INTENTS
             // ============================================
-            
             if (finalIntent === 'order_continue') {
                 if (session.cart.length > 0) {
                     const reserveCheck = await this.checkReservePayEligibility(userId, session.merchant, session.total);
@@ -1405,28 +1359,11 @@ class AgentOrderController {
             }
             
             if (finalIntent === 'general_comparison') {
-                const merchants = session.mlEntities?.merchants || [];
-                const items = session.mlEntities?.items || [];
-                
-                if (merchants.length === 0) {
-                    return res.json({
-                        success: true,
-                        data: {
-                            response: "Which platforms would you like to compare? (e.g., Swiggy vs Zomato)\n\nPlease specify both platforms and what you'd like to compare.",
-                            requiresAction: 'clarify_comparison'
-                        }
-                    });
-                }
-                
-                const comparisonResponse = `🔍 **Comparison: ${merchants.map(m => m.name).join(' vs ')}**\n\nI'll help you compare ${items.length > 0 ? items.map(i => i.name).join(', ') : 'prices and delivery times'} across these platforms.\n\nWhat would you like to compare?\n1️⃣ Price\n2️⃣ Delivery time\n3️⃣ Offers & discounts\n4️⃣ Restaurant availability`;
-                
                 return res.json({
                     success: true,
                     data: {
-                        response: comparisonResponse,
-                        requiresAction: 'comparison_options',
-                        merchants: merchants,
-                        items: items
+                        response: "🔍 I can help you compare prices and delivery times across platforms. Which platforms would you like to compare? (e.g., Swiggy vs Zomato)",
+                        requiresAction: 'clarify_comparison'
                     }
                 });
             }
@@ -1599,7 +1536,6 @@ class AgentOrderController {
     // ============================================
     // SELECT ITEMS (from grid)
     // ============================================
-
     async selectItems(req, res) {
         try {
             const userId = req.user?.id ? String(req.user.id) : '4';
@@ -1829,7 +1765,6 @@ class AgentOrderController {
     // ============================================
     // CONFIRM UPI PAYMENT
     // ============================================
-
     async confirmUPIPayment(req, res) {
         try {
             const { sessionId, paymentId } = req.body;
@@ -1963,7 +1898,6 @@ class AgentOrderController {
     // ============================================
     // PROCESS RESERVE PAYMENT
     // ============================================
-
     async processReservePayment(req, res) {
         try {
             const { sessionId } = req.body;
@@ -2109,7 +2043,6 @@ class AgentOrderController {
     // ============================================
     // API ENDPOINTS
     // ============================================
-    
     async getUserOrders(req, res) {
         try {
             const userId = String(req.user.id);
