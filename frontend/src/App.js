@@ -44,6 +44,7 @@ import TransactionHistoryPage from './pages/TransactionHistoryPage';
 import QRCodePage from './pages/QRCodePage';
 import MobileRechargePage from './pages/MobileRechargePage';
 import ConnectAppsPage from './pages/ConnectAppsPage';
+import UserGuidePage from './pages/UserGuidePage';
 
 // Styles
 import './index.css';
@@ -87,18 +88,6 @@ function App() {
       </div>
     );
   }
-
-  const token = localStorage.getItem('token');
-if (token) {
-    // Verify token validity by making a profile request
-    fetch('http://localhost:5000/api/auth/profile', {
-        headers: { 'Authorization': `Bearer ${token}` }
-    }).catch(() => {
-        // If fails, clear token
-        localStorage.removeItem('token');
-        localStorage.removeItem('user');
-    });
-}
 
   return (
     <PaymentProvider>
@@ -177,6 +166,7 @@ if (token) {
                     <MobileRechargePage />
                 </PrivateRoute>
             } />
+            <Route path="/guide" element={<PrivateRoute><UserGuidePage /></PrivateRoute>} />
 
             {/* 404 Route */}
             <Route path="*" element={<Navigate to="/" />} />
