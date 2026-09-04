@@ -1,15 +1,4 @@
 // frontend/src/components/SituationSuggestionsCard.jsx
-// DISPLAYS SITUATION-BASED SUGGESTIONS
-
-/**
- * SabAI Pay - AI-Powered UPI Payments Assistant
- * Copyright (c) 2026 G Nihal. All Rights Reserved.
- * 
- * This software is proprietary and confidential.
- * Unauthorized copying, distribution, or use is strictly prohibited.
- * 
- * For licensing inquiries: sabaipaycontact@gmail.com
- */
 
 import React, { useState } from 'react';
 import { FaRupeeSign, FaCheckCircle, FaShoppingCart, FaLightbulb, FaBoxes } from 'react-icons/fa';
