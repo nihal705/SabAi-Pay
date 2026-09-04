@@ -218,3 +218,8 @@ $RECYCLE.BIN/
 secrets/
 credentials/
 *.secret
+
+DEPLOYMENT.md
+USER_GUIDE.md
+export_sabai_pay.ps1
+sabai_pay_export.txt
