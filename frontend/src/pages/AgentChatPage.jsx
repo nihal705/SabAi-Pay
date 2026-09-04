@@ -1,5 +1,4 @@
 // frontend/src/pages/AgentChatPage.jsx
-// COMPLETE WORKING VERSION - With ALL Features (Ordering + Payments + Voice)
 
 /**
  * SabAI Pay - AI-Powered UPI Payments Assistant
@@ -23,15 +22,15 @@ import RestaurantMenuGrid from "../components/RestaurantMenuGrid";
 // ============================================
 // NEW IMPORTS
 // ============================================
-import VoiceInputButton from '../components/chat/VoiceInputButton';
-import AgentPinModal from '../components/chat/AgentPinModal';
-import { agentPaymentAPI } from '../services/apiService';
+import VoiceInputButton from "../components/chat/VoiceInputButton";
+import AgentPinModal from "../components/chat/AgentPinModal";
+import { agentPaymentAPI } from "../services/apiService";
 
 // Payment Chat Cards
-import SendMoneyChatCard from '../components/chat/SendMoneyChatCard';
-import BillPayChatCard from '../components/chat/BillPayChatCard';
-import RechargeChatCard from '../components/chat/RechargeChatCard';
-import MultiPaymentChatCard from '../components/chat/MultiPaymentChatCard';
+import SendMoneyChatCard from "../components/chat/SendMoneyChatCard";
+import BillPayChatCard from "../components/chat/BillPayChatCard";
+import RechargeChatCard from "../components/chat/RechargeChatCard";
+import MultiPaymentChatCard from "../components/chat/MultiPaymentChatCard";
 
 // ============================================
 
@@ -419,6 +418,7 @@ const CustomPaymentModal = ({
   onScheduleSuccess,
 }) => {
   const [linkedBanks, setLinkedBanks] = useState([]);
+  const [banksWithPin, setBanksWithPin] = useState([]);
   const [bankBalances, setBankBalances] = useState({});
   const [sabaiGems, setSabaiGems] = useState(0);
   const [universalReserveLimit, setUniversalReserveLimit] = useState(null);
@@ -426,7 +426,12 @@ const CustomPaymentModal = ({
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
   const [payStep, setPayStep] = useState(1);
   const [payPinDigits, setPayPinDigits] = useState(["", "", "", ""]);
-  const [payPinFilled, setPayPinFilled] = useState([false, false, false, false]);
+  const [payPinFilled, setPayPinFilled] = useState([
+    false,
+    false,
+    false,
+    false,
+  ]);
   const [payPinError, setPayPinError] = useState("");
   const [showPayPin, setShowPayPin] = useState(false);
   const [payLoading, setPayLoading] = useState(false);
@@ -479,7 +484,9 @@ const CustomPaymentModal = ({
   const loadUniversalReserveLimit = async () => {
     try {
       const limits = await getReserveLimits();
-      const universalLimit = limits.find((l) => l.merchant === "sabai-pay-lite");
+      const universalLimit = limits.find(
+        (l) => l.merchant === "sabai-pay-lite",
+      );
       setUniversalReserveLimit(universalLimit);
     } catch (error) {
       console.error("Failed to load reserve limits:", error);
@@ -532,7 +539,7 @@ const CustomPaymentModal = ({
           paymentMethod,
           bankAccountId,
         },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
       if (response.data.success) {
         onScheduleSuccess({ scheduledTime: orderData.scheduledTime });
@@ -550,7 +557,11 @@ const CustomPaymentModal = ({
 
   const updateBankBalance = async (bankId, amount) => {
     try {
-      const newBalance = await storageService.updateBankBalance(bankId, amount, false);
+      const newBalance = await storageService.updateBankBalance(
+        bankId,
+        amount,
+        false,
+      );
       setBankBalances((prev) => ({ ...prev, [bankId]: newBalance }));
       return newBalance;
     } catch (error) {
@@ -595,7 +606,10 @@ const CustomPaymentModal = ({
 
   const getAvailableReserveLimit = () => {
     if (!universalReserveLimit) return 0;
-    return universalReserveLimit.monthly_limit - (universalReserveLimit.current_spent || 0);
+    return (
+      universalReserveLimit.monthly_limit -
+      (universalReserveLimit.current_spent || 0)
+    );
   };
 
   const handleGemsAmountChange = (gemsToUse) => {
@@ -674,7 +688,9 @@ const CustomPaymentModal = ({
     const orderAmount = orderData.total;
     const { gemsAmount, bankAmount, reserveAmount } = breakdown;
     const cashbackEarned =
-      gemsAmount === 0 && reserveAmount === 0 ? calculateCashback(orderAmount) : 0;
+      gemsAmount === 0 && reserveAmount === 0
+        ? calculateCashback(orderAmount)
+        : 0;
 
     setPayLoading(true);
 
@@ -875,14 +891,18 @@ const CustomPaymentModal = ({
         setShowConfirmModal(true);
       } else {
         toast.error(
-          `Insufficient Reserve Pay limit. Available: ₹${availableReserveLimit.toLocaleString()}`
+          `Insufficient Reserve Pay limit. Available: ₹${availableReserveLimit.toLocaleString()}`,
         );
         setSelectedPaymentType(null);
       }
     } else if (type === "gems_and_lite") {
       const gemsToUse = paymentBreakdown.gemsAmount;
       const remaining = orderAmount - gemsToUse;
-      if (gemsToUse > 0 && remaining > 0 && availableReserveLimit >= remaining) {
+      if (
+        gemsToUse > 0 &&
+        remaining > 0 &&
+        availableReserveLimit >= remaining
+      ) {
         setPendingPaymentData({
           type: "gems_and_lite",
           method: null,
@@ -897,7 +917,7 @@ const CustomPaymentModal = ({
         setShowConfirmModal(true);
       } else {
         toast.error(
-          `Insufficient Reserve Pay limit for remaining amount. Available: ₹${availableReserveLimit.toLocaleString()}`
+          `Insufficient Reserve Pay limit for remaining amount. Available: ₹${availableReserveLimit.toLocaleString()}`,
         );
         setSelectedPaymentType(null);
       }
@@ -909,7 +929,7 @@ const CustomPaymentModal = ({
       const hasPin = await hasUpiPin(method.id);
       if (!hasPin) {
         toast.error(
-          `Please set UPI PIN for ${method.bank_name} in Settings first`
+          `Please set UPI PIN for ${method.bank_name} in Settings first`,
         );
         setSelectedPaymentType(null);
         setSelectedPaymentMethod(null);
@@ -929,7 +949,7 @@ const CustomPaymentModal = ({
       const hasPin = await hasUpiPin(method.id);
       if (!hasPin) {
         toast.error(
-          `Please set UPI PIN for ${method.bank_name} in Settings first`
+          `Please set UPI PIN for ${method.bank_name} in Settings first`,
         );
         setSelectedPaymentType(null);
         setSelectedPaymentMethod(null);
@@ -949,12 +969,23 @@ const CustomPaymentModal = ({
     }
   };
 
-  const banksWithPin = Promise.all(
-    linkedBanks.map(async (bank) => ({
-      ...bank,
-      hasPin: await hasUpiPin(bank.id),
-    }))
-  ).then((banks) => banks.filter((b) => b.hasPin));
+  useEffect(() => {
+    let cancelled = false;
+    const loadBanksWithPin = async () => {
+      const banks = await Promise.all(
+        linkedBanks.map(async (bank) => ({
+          ...bank,
+          hasPin: await hasUpiPin(bank.id),
+        })),
+      );
+      if (!cancelled) setBanksWithPin(banks.filter((bank) => bank.hasPin));
+    };
+    if (linkedBanks.length) loadBanksWithPin();
+    else setBanksWithPin([]);
+    return () => {
+      cancelled = true;
+    };
+  }, [linkedBanks]);
 
   const availableReserveLimit = getAvailableReserveLimit();
   const remainingAfterGems = paymentBreakdown.remainingAfterGems;
@@ -1042,7 +1073,7 @@ const CustomPaymentModal = ({
                       className="gems-max"
                       onClick={() =>
                         handleGemsAmountChange(
-                          Math.min(sabaiGems, orderData.total)
+                          Math.min(sabaiGems, orderData.total),
                         )
                       }
                     >
@@ -1256,7 +1287,7 @@ const CustomPaymentModal = ({
                         paymentBreakdown.remainingAfterGems
                     ) {
                       toast.error(
-                        "Insufficient Reserve Pay limit for remaining amount"
+                        "Insufficient Reserve Pay limit for remaining amount",
                       );
                       return;
                     }
@@ -1302,7 +1333,7 @@ const CustomPaymentModal = ({
                         setPayStep(2);
                       } else {
                         toast.error(
-                          "Please enter gems amount and select a bank account"
+                          "Please enter gems amount and select a bank account",
                         );
                       }
                       return;
@@ -1485,7 +1516,7 @@ const CustomPaymentModal = ({
                       pendingPaymentData.type === "gems_and_bank"
                     ) {
                       processPaymentWithBreakdown(
-                        pendingPaymentData.paymentBreakdown
+                        pendingPaymentData.paymentBreakdown,
                       );
                     } else {
                       processPaymentWithBreakdown(paymentBreakdown);
@@ -1586,10 +1617,10 @@ const CustomPaymentModal = ({
                       {pendingPaymentData.type === "gems_only"
                         ? `You are about to pay ₹${orderData.total} using ${orderData.total} SabAI Gems. No cashback will be earned.`
                         : pendingPaymentData.type === "gems_and_lite"
-                        ? `You are about to pay ${pendingPaymentData.paymentBreakdown.gemsAmount} Gems + ₹${pendingPaymentData.paymentBreakdown.reserveAmount} using SabAI Pay Lite. No cashback will be earned.`
-                        : pendingPaymentData.type === "reserve_pay"
-                        ? `You are about to pay ₹${orderData.total} using SabAI Pay Lite. You will earn ${calculateCashback(orderData.total)} 🪙 cashback!`
-                        : `You are about to pay ₹${orderData.total} via bank transfer. You will earn ${calculateCashback(orderData.total)} 🪙 cashback!`}
+                          ? `You are about to pay ${pendingPaymentData.paymentBreakdown.gemsAmount} Gems + ₹${pendingPaymentData.paymentBreakdown.reserveAmount} using SabAI Pay Lite. No cashback will be earned.`
+                          : pendingPaymentData.type === "reserve_pay"
+                            ? `You are about to pay ₹${orderData.total} using SabAI Pay Lite. You will earn ${calculateCashback(orderData.total)} 🪙 cashback!`
+                            : `You are about to pay ₹${orderData.total} via bank transfer. You will earn ${calculateCashback(orderData.total)} 🪙 cashback!`}
                     </p>
                   </div>
                 </div>
@@ -1694,7 +1725,7 @@ const AutoPaySetupModal = ({ orderData, onConfirm, onCancel }) => {
     const selectedBank = bankAccounts.find((b) => b.id === selectedBankId);
     if (!hasUpiPin(selectedBankId)) {
       toast.error(
-        `Please set UPI PIN for ${selectedBank?.bank_name} in Settings first`
+        `Please set UPI PIN for ${selectedBank?.bank_name} in Settings first`,
       );
       return;
     }
@@ -1710,7 +1741,7 @@ const AutoPaySetupModal = ({ orderData, onConfirm, onCancel }) => {
           dayOfMonth: dayOfMonth,
           bankAccountId: selectedBankId,
         },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
 
       if (response.data.success) {
@@ -2071,10 +2102,10 @@ const ItemSelectionGrid = ({ gridData, onContinue, onCancel }) => {
 
   const handleContinue = () => {
     const selectedItemIds = Object.keys(selectedItems).filter(
-      (id) => selectedItems[id]
+      (id) => selectedItems[id],
     );
     const selectedItemsData = gridData.items.filter((item) =>
-      selectedItemIds.includes(item.id)
+      selectedItemIds.includes(item.id),
     );
     onContinue(selectedItemsData);
   };
@@ -2215,6 +2246,7 @@ const AgentChatPage = () => {
   const [pinModalData, setPinModalData] = useState(null);
   const [pendingPaymentData, setPendingPaymentData] = useState(null);
   const [voiceTranscript, setVoiceTranscript] = useState("");
+  const voiceRequestRef = useRef(false);
 
   // Track which merchants are connected
   const [connectedMerchants, setConnectedMerchants] = useState([]);
@@ -2306,7 +2338,7 @@ const AgentChatPage = () => {
         (response.data?.data || []).map((conversation) => ({
           ...conversation,
           id: conversation.conversation_id || conversation.id,
-        }))
+        })),
       );
     } catch (error) {
       console.error("Failed to load conversations:", error);
@@ -2465,7 +2497,7 @@ const AgentChatPage = () => {
             price: item.price,
           })),
         },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
       if (response.data.success) {
         const data = response.data.data;
@@ -2545,7 +2577,7 @@ const AgentChatPage = () => {
       const response = await axios.post(
         "http://localhost:5000/api/agent/order/process-reserve",
         { sessionId: orderData.sessionId },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
 
       if (response.data && response.data.success) {
@@ -2745,21 +2777,24 @@ const AgentChatPage = () => {
       let result;
       const paymentData = pendingPaymentData;
 
-      if (paymentCardType === "send_money") {
+      const paymentType = paymentCardType?.replace("_card", "");
+
+      if (paymentType === "send_money") {
         result = await agentPaymentAPI.confirmSendMoney(paymentData, pin);
-      } else if (paymentCardType === "pay_bill") {
+      } else if (paymentType === "pay_bill") {
         result = await agentPaymentAPI.confirmBillPayment(paymentData, pin);
-      } else if (paymentCardType === "recharge") {
+      } else if (paymentType === "recharge") {
         result = await agentPaymentAPI.confirmRecharge(paymentData, pin);
-      } else if (paymentCardType === "multi_payment") {
+      } else if (paymentType === "multi_payment") {
         result = await agentPaymentAPI.confirmMultiPayment(paymentData, pin);
       }
 
-      if (result.success) {
+      const confirmation = result?.data;
+      if (confirmation?.success) {
         const successMessage = {
           id: Date.now(),
           role: "agent",
-          content: result.message || "✅ Payment completed successfully!",
+          content: confirmation.message || "✅ Payment completed successfully!",
           timestamp: new Date().toISOString(),
         };
         saveMessages([...messages, successMessage]);
@@ -2774,7 +2809,7 @@ const AgentChatPage = () => {
 
         toast.success("Payment successful!");
       } else {
-        toast.error(result.error || "Payment failed");
+        toast.error(confirmation?.error || "Payment failed");
       }
     } catch (error) {
       console.error("Payment confirmation error:", error);
@@ -2789,21 +2824,24 @@ const AgentChatPage = () => {
     try {
       let result;
 
-      if (paymentCardType === "send_money") {
+      const paymentType = paymentCardType?.replace("_card", "");
+
+      if (paymentType === "send_money") {
         result = await agentPaymentAPI.confirmSendMoney(paymentData);
-      } else if (paymentCardType === "pay_bill") {
+      } else if (paymentType === "pay_bill") {
         result = await agentPaymentAPI.confirmBillPayment(paymentData);
-      } else if (paymentCardType === "recharge") {
+      } else if (paymentType === "recharge") {
         result = await agentPaymentAPI.confirmRecharge(paymentData);
-      } else if (paymentCardType === "multi_payment") {
+      } else if (paymentType === "multi_payment") {
         result = await agentPaymentAPI.confirmMultiPayment(paymentData);
       }
 
-      if (result.success) {
+      const confirmation = result?.data;
+      if (confirmation?.success) {
         const successMessage = {
           id: Date.now(),
           role: "agent",
-          content: result.message || "✅ Payment completed successfully!",
+          content: confirmation.message || "✅ Payment completed successfully!",
           timestamp: new Date().toISOString(),
         };
         saveMessages([...messages, successMessage]);
@@ -2815,7 +2853,7 @@ const AgentChatPage = () => {
         loadReserveLimits();
         toast.success("Payment successful!");
       } else {
-        toast.error(result.error || "Payment failed");
+        toast.error(confirmation?.error || "Payment failed");
       }
     } catch (error) {
       console.error("Direct confirm error:", error);
@@ -2831,7 +2869,7 @@ const AgentChatPage = () => {
     const msg = {
       id: Date.now(),
       role: "agent",
-      content: `I found multiple contacts matching that name. Please specify:\n\n${candidates.map((c, i) => `${i+1}. ${c.name} (${c.vpa})`).join('\n')}\n\nReply with the number.`,
+      content: `I found multiple contacts matching that name. Please specify:\n\n${candidates.map((c, i) => `${i + 1}. ${c.name} (${c.vpa})`).join("\n")}\n\nReply with the number.`,
       timestamp: new Date().toISOString(),
     };
     saveMessages([...messages, msg]);
@@ -2840,6 +2878,8 @@ const AgentChatPage = () => {
   const handleVoiceTranscript = (transcript) => {
     setInput(transcript);
     setVoiceTranscript(transcript);
+    voiceRequestRef.current = true;
+    setTimeout(() => handleSendMessage(transcript), 250);
   };
 
   // ============================================
@@ -2859,7 +2899,7 @@ const AgentChatPage = () => {
             price: item.price,
           })),
         },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
       if (response.data.success) {
         const data = response.data.data;
@@ -2896,10 +2936,11 @@ const AgentChatPage = () => {
   const checkMerchantConnection = async (merchant) => {
     try {
       const merchantId = String(merchant).trim().toLowerCase();
-      const locallyLoaded = connectedMerchants.some((connection) =>
-        String(connection.merchant_id || connection.merchantId || "")
-          .trim()
-          .toLowerCase() === merchantId
+      const locallyLoaded = connectedMerchants.some(
+        (connection) =>
+          String(connection.merchant_id || connection.merchantId || "")
+            .trim()
+            .toLowerCase() === merchantId,
       );
       if (locallyLoaded) return true;
       const response = await agentOrderAPI.checkMerchantConnection(merchantId);
@@ -2934,7 +2975,7 @@ const AgentChatPage = () => {
       for (const keyword of keywords) {
         if (msg.includes(keyword)) {
           console.log(
-            `🎯 Frontend detected merchant: ${merchant} from keyword: "${keyword}"`
+            `🎯 Frontend detected merchant: ${merchant} from keyword: "${keyword}"`,
           );
           return merchant;
         }
@@ -2997,14 +3038,14 @@ const AgentChatPage = () => {
 
     try {
       console.log(
-        `🔍 Checking Reserve Pay for merchant: ${merchant}, amount: ${amount}`
+        `🔍 Checking Reserve Pay for merchant: ${merchant}, amount: ${amount}`,
       );
 
       const token = localStorage.getItem("token");
       const response = await axios.post(
         "http://localhost:5000/api/agent/order/check-reserve",
         { merchant: merchant, amount: amount },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
 
       if (response.data && response.data.success) {
@@ -3053,15 +3094,14 @@ const AgentChatPage = () => {
   };
 
   const clearChat = () => {
-    if (window.confirm("Start a new chat? Current chat will be saved.")) {
-      startNewChat();
-      toast.success("New chat started");
-    }
+    startNewChat();
+    toast.success("New chat started");
   };
 
   const formatTime = (timestamp) => {
     try {
       const date = new Date(timestamp);
+      if (Number.isNaN(date.getTime())) return "";
       return date.toLocaleTimeString("en-IN", {
         hour: "2-digit",
         minute: "2-digit",
@@ -3074,6 +3114,7 @@ const AgentChatPage = () => {
   const formatDate = (timestamp) => {
     try {
       const date = new Date(timestamp);
+      if (Number.isNaN(date.getTime())) return "";
       const today = new Date();
       const yesterday = new Date(today);
       yesterday.setDate(yesterday.getDate() - 1);
@@ -3139,7 +3180,7 @@ const AgentChatPage = () => {
         "http://localhost:5000/api/agent/order/reserve-limits",
         {
           headers: token ? { Authorization: `Bearer ${token}` } : {},
-        }
+        },
       );
       if (response.data.success) {
         const limitsMap = {};
@@ -3167,7 +3208,7 @@ const AgentChatPage = () => {
       const orderResponse = await axios.post(
         "http://localhost:5000/api/agent/order/create-order",
         { amount: total, sessionId },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
 
       if (orderResponse.data.success) {
@@ -3184,7 +3225,7 @@ const AgentChatPage = () => {
             const confirmResponse = await axios.post(
               "http://localhost:5000/api/agent/order/confirm-upi",
               { sessionId, paymentId: response.razorpay_payment_id },
-              { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+              { headers: token ? { Authorization: `Bearer ${token}` } : {} },
             );
 
             if (confirmResponse.data.success) {
@@ -3252,7 +3293,8 @@ const AgentChatPage = () => {
     ) {
       const products = content.products || [];
       const merchant = content.merchant;
-      const restaurantName = products[0]?.restaurantName || content.restaurantName || "";
+      const restaurantName =
+        products[0]?.restaurantName || content.restaurantName || "";
       const restaurantRating = products[0]?.restaurantRating;
       const deliveryTime = products[0]?.deliveryTime;
       const reserveCheck = content.reserveCheck || null;
@@ -3273,7 +3315,7 @@ const AgentChatPage = () => {
             setCart(updatedCart);
             const total = updatedCart.reduce(
               (sum, item) => sum + item.price * item.quantity,
-              0
+              0,
             );
             setCartTotal(total);
 
@@ -3349,14 +3391,14 @@ const AgentChatPage = () => {
             handleAddMultipleItemsToCart(
               items,
               content.merchant,
-              message.sessionId
+              message.sessionId,
             )
           }
           onSelectItems={(items) =>
             handleAddMultipleItemsToCart(
               items,
               content.merchant,
-              message.sessionId
+              message.sessionId,
             )
           }
           onCustomize={() =>
@@ -3378,7 +3420,9 @@ const AgentChatPage = () => {
         <EnhancedOrderSummary
           initialItems={message.cart || []}
           suggestedItems={content.items || []}
-          merchant={content.merchantName || content.merchant || message.merchant}
+          merchant={
+            content.merchantName || content.merchant || message.merchant
+          }
           merchantLogo={content.merchantLogo}
           onCartUpdate={(cart) => updateCartInSession(cart, message.sessionId)}
           onCheckout={(cart, total) =>
@@ -3429,7 +3473,10 @@ const AgentChatPage = () => {
                         "/images/merchants/swiggy.png"
                       }
                       alt={restData.restaurant.name}
-                      onError={(event) => { event.currentTarget.src = "/images/merchants/swiggy.png"; }}
+                      onError={(event) => {
+                        event.currentTarget.src =
+                          "/images/merchants/swiggy.png";
+                      }}
                     />
                   </div>
                   <div className="restaurant-info">
@@ -3460,7 +3507,7 @@ const AgentChatPage = () => {
                         handleViewFullMenu(
                           restData.restaurant,
                           merchant,
-                          message.sessionId
+                          message.sessionId,
                         )
                       }
                     >
@@ -3476,7 +3523,7 @@ const AgentChatPage = () => {
                           handleAddSingleItemToCart(
                             item,
                             merchant,
-                            message.sessionId
+                            message.sessionId,
                           )
                         }
                       >
@@ -3524,7 +3571,7 @@ const AgentChatPage = () => {
                   handleSelectRestaurant(
                     restaurant,
                     content.merchant,
-                    message.sessionId
+                    message.sessionId,
                   )
                 }
               >
@@ -3532,7 +3579,9 @@ const AgentChatPage = () => {
                   <img
                     src={restaurant.imageUrl || "/images/merchants/swiggy.png"}
                     alt={restaurant.name}
-                    onError={(event) => { event.currentTarget.src = "/images/merchants/swiggy.png"; }}
+                    onError={(event) => {
+                      event.currentTarget.src = "/images/merchants/swiggy.png";
+                    }}
                   />
                 </div>
                 <div className="restaurant-info">
@@ -3584,7 +3633,11 @@ const AgentChatPage = () => {
     // ============================================
     // PAYMENT CARDS (NEW)
     // ============================================
-    if (content && typeof content === "object" && content.type === "send_money_card") {
+    if (
+      content &&
+      typeof content === "object" &&
+      content.type === "send_money_card"
+    ) {
       return (
         <SendMoneyChatCard
           key={message.id}
@@ -3595,7 +3648,11 @@ const AgentChatPage = () => {
       );
     }
 
-    if (content && typeof content === "object" && content.type === "bill_pay_card") {
+    if (
+      content &&
+      typeof content === "object" &&
+      content.type === "bill_pay_card"
+    ) {
       return (
         <BillPayChatCard
           key={message.id}
@@ -3606,7 +3663,11 @@ const AgentChatPage = () => {
       );
     }
 
-    if (content && typeof content === "object" && content.type === "recharge_card") {
+    if (
+      content &&
+      typeof content === "object" &&
+      content.type === "recharge_card"
+    ) {
       return (
         <RechargeChatCard
           key={message.id}
@@ -3617,7 +3678,11 @@ const AgentChatPage = () => {
       );
     }
 
-    if (content && typeof content === "object" && content.type === "multi_payment_card") {
+    if (
+      content &&
+      typeof content === "object" &&
+      content.type === "multi_payment_card"
+    ) {
       return (
         <MultiPaymentChatCard
           key={message.id}
@@ -3657,7 +3722,7 @@ const AgentChatPage = () => {
           restaurantId: restaurant.id,
           restaurantName: restaurant.name,
         },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
 
       if (response.data.success) {
@@ -3691,7 +3756,7 @@ const AgentChatPage = () => {
           restaurantId: restaurant.id,
           restaurantName: restaurant.name,
         },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
 
       if (response.data.success) {
@@ -3732,7 +3797,7 @@ const AgentChatPage = () => {
             },
           ],
         },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
 
       if (response.data.success) {
@@ -3775,7 +3840,7 @@ const AgentChatPage = () => {
             category: item.category,
           })),
         },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
 
       if (response.data.success) {
@@ -3808,10 +3873,11 @@ const AgentChatPage = () => {
 
       const sessionResponse = await axios.get(
         `http://localhost:5000/api/agent/order/session/${sessionId}`,
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
       const merchant = sessionResponse.data.data?.merchant;
-      const merchantName = sessionResponse.data.data?.merchantInfo?.name || merchant;
+      const merchantName =
+        sessionResponse.data.data?.merchantInfo?.name || merchant;
 
       const paymentMethod = await showPaymentMethodSelectionModal();
       if (!paymentMethod) {
@@ -3843,7 +3909,7 @@ const AgentChatPage = () => {
           paymentMethod,
           bankAccountId,
         },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
       );
 
       if (response.data.success) {
@@ -3862,8 +3928,8 @@ const AgentChatPage = () => {
           paymentMethod === "reserve_pay"
             ? "SabAI Pay Lite"
             : paymentMethod === "gems"
-            ? "SabAI Gems"
-            : "Bank Account";
+              ? "SabAI Gems"
+              : "Bank Account";
 
         const aiMessageObj = {
           id: Date.now(),
@@ -3932,7 +3998,9 @@ const AgentChatPage = () => {
       modal.querySelectorAll(".payment-option").forEach((btn) => {
         btn.addEventListener("click", handleSelect);
       });
-      modal.querySelector(".cancel-btn").addEventListener("click", handleCancel);
+      modal
+        .querySelector(".cancel-btn")
+        .addEventListener("click", handleCancel);
     });
   };
 
@@ -3958,7 +4026,7 @@ const AgentChatPage = () => {
                             <span>xxxx${account.account_number?.slice(-4)}</span>
                             <small>Balance: ₹${account.balance || 0}</small>
                         </button>
-                    `
+                    `,
                       )
                       .join("")}
                 </div>
@@ -3987,180 +4055,332 @@ const AgentChatPage = () => {
       modal.querySelectorAll(".bank-option").forEach((btn) => {
         btn.addEventListener("click", handleSelect);
       });
-      modal.querySelector(".cancel-btn").addEventListener("click", handleCancel);
+      modal
+        .querySelector(".cancel-btn")
+        .addEventListener("click", handleCancel);
     });
   };
 
   const updateCartInSession = async (cart, sessionId) => {
     setCart(cart);
-    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const total = cart.reduce(
+      (sum, item) => sum + item.price * item.quantity,
+      0,
+    );
     setCartTotal(total);
   };
 
-// ============================================
-// MAIN SEND MESSAGE HANDLER - COMPLETE FIXED
-// ============================================
-const handleSendMessage = async () => {
-  if (!input.trim() || loading) return;
-  const userMessage = input.trim();
-  setInput("");
-  const userMessageObj = {
-    id: Date.now(),
-    role: "user",
-    content: userMessage,
-    timestamp: new Date().toISOString(),
-  };
-  const updatedMessages = [...messages, userMessageObj];
-  saveMessages(updatedMessages);
-  setLoading(true);
-
-  console.log("📤 Sending message:", userMessage);
-  console.log("📤 Current sessionId:", sessionId);
-  console.log("📤 Current pendingAction:", pendingAction);
-
-  try {
-    const token = localStorage.getItem("token");
-    let userLocationForMerchant = null;
-    const detectedMerchant = detectMerchantFromMessage(userMessage);
-
-    if (detectedMerchant && ['swiggy', 'zomato', 'zepto', 'blinkit'].includes(detectedMerchant)) {
-      const isConnected = await checkMerchantConnection(detectedMerchant);
-      if (!isConnected) {
-        const notConnectedMsg = {
-          id: Date.now() + 1,
-          role: 'agent',
-          content: `🔗 **${detectedMerchant} is not connected.**\n\nPlease go to **Dashboard → Connect Apps** and connect your ${detectedMerchant} account first. Then I can help you order!`,
-          timestamp: new Date().toISOString()
-        };
-        saveMessages([...updatedMessages, notConnectedMsg]);
-        setLoading(false);
-        return;
-      }
-      userLocationForMerchant = getUserLocationForMerchant(detectedMerchant);
+  // MAIN SEND MESSAGE HANDLER
+  const handleSendMessage = async (messageOverride = null, cardData = null) => {
+    if (messageOverride && typeof messageOverride === "object") {
+      cardData = messageOverride;
+      messageOverride = null;
     }
+    if ((!input.trim() && !messageOverride && !cardData) || loading) return;
+    const userMessage =
+      messageOverride?.trim() ||
+      input.trim() ||
+      "Continue with the selected details";
+    setInput("");
+    const userMessageObj = {
+      id: Date.now(),
+      role: "user",
+      content: userMessage,
+      timestamp: new Date().toISOString(),
+    };
+    const updatedMessages = [...messages, userMessageObj];
+    saveMessages(updatedMessages);
+    setLoading(true);
 
-    let response;
+    console.log("📤 Sending message:", userMessage);
+    console.log("📤 Current sessionId:", sessionId);
+    console.log("📤 Current pendingAction:", pendingAction);
 
-    const selectionActions = ["confirm_items", "select_items", "awaiting_items"];
-    const startsNewOrderStep = /\b(order|restaurant|menu|from\s+(swiggy|zomato|zepto|blinkit|amazon|flipkart))\b/i.test(userMessage);
+    try {
+      const token = localStorage.getItem("token");
+      let userLocationForMerchant = null;
+      const detectedMerchant = detectMerchantFromMessage(userMessage);
 
-    // ============================================
-    // FIX: SEPARATE PAYMENT KEYWORDS FROM ORDER KEYWORDS
-    // ============================================
-    
-    // PAYMENT KEYWORDS - Route to /chat (Gemini function-calling)
-    const paymentKeywords = [
-      "recharge", "mobile recharge", "phone recharge", "top up", "talktime", "data pack",
-      "send money", "send to", "pay to", "transfer to", "pay money",
-      "bill", "electricity bill", "water bill", "gas bill", "broadband bill",
-      "upi payment", "pay bill", "pay my bill"
-    ];
-
-    const isPayment = paymentKeywords.some((keyword) =>
-      userMessage.toLowerCase().includes(keyword)
-    );
-
-    // ORDER KEYWORDS - Route to /order/process
-    const orderKeywords = [
-      "order", "buy", "pizza", "burger", "biryani", "food", "grocery",
-      "zepto", "swiggy", "zomato", "amazon", "flipkart", "myntra", "ajio",
-      "show me menu", "list menu", "menu from", "items from", "suggest food", "recommend food"
-    ];
-
-    const isOrder = orderKeywords.some((keyword) =>
-      userMessage.toLowerCase().includes(keyword)
-    );
-
-    console.log(`🔍 Intent check: isPayment=${isPayment}, isOrder=${isOrder}, pendingAction=${pendingAction}`);
-
-    // ============================================
-    // ROUTE TO CORRECT ENDPOINT
-    // ============================================
-    
-    // 1. Handle selection actions (cart, confirm items, etc.)
-    if (sessionId && selectionActions.includes(pendingAction) && !startsNewOrderStep) {
-      console.log("📤 Sending to select-items with sessionId:", sessionId);
-      response = await axios.post(
-        "http://localhost:5000/api/agent/order/select-items",
-        {
-          sessionId: sessionId,
-          selection: userMessage,
-          userLocation: userLocationForMerchant,
-        },
-        {
-          headers: token ? { Authorization: `Bearer ${token}` } : {},
-          timeout: 30000,
-        }
-      );
-    }
-    // 2. Payment intents → /chat (Gemini function-calling)
-    else if (isPayment) {
-      console.log("💰 Payment intent detected, sending to /chat (Gemini function-calling)");
-      response = await agentChatAPI.sendMessage(userMessage, sessionId || null);
-    }
-    // 3. Order intents → /order/process
-    else if (isOrder) {
-      console.log("🛒 Order intent detected, sending to /order/process");
-      response = await axios.post(
-        "http://localhost:5000/api/agent/order/process",
-        {
-          message: userMessage,
-          sessionId: sessionId,
-          userLocation: userLocationForMerchant,
-        },
-        {
-          headers: token ? { Authorization: `Bearer ${token}` } : {},
-          timeout: 30000,
-        }
-      );
-    }
-    // 4. General chat → /chat
-    else {
-      console.log("💬 General chat, sending to /chat");
-      response = await agentChatAPI.sendMessage(userMessage, sessionId || null);
-    }
-
-    if (response && response.data && response.data.success) {
-      const data = response.data.data;
-
-      if (data.sessionId) {
-        console.log("📥 Received sessionId:", data.sessionId);
-        setSessionId(data.sessionId);
-        setPendingAction(data.requiresAction);
-      }
-
-      // ============================================
-      // HANDLE PAYMENT CARD RESPONSES
-      // ============================================
-      if (data.response && typeof data.response === "object") {
-        if (data.response.type === "send_money_card" ||
-            data.response.type === "bill_pay_card" ||
-            data.response.type === "recharge_card" ||
-            data.response.type === "multi_payment_card") {
-          console.log(`📇 Rendering payment card: ${data.response.type}`);
-          const aiMessageObj = {
+      if (
+        detectedMerchant &&
+        ["swiggy", "zomato", "zepto", "blinkit"].includes(detectedMerchant)
+      ) {
+        const isConnected = await checkMerchantConnection(detectedMerchant);
+        if (!isConnected) {
+          const notConnectedMsg = {
             id: Date.now() + 1,
             role: "agent",
-            content: data.response,
+            content: `🔗 **${detectedMerchant} is not connected.**\n\nPlease go to **Dashboard → Connect Apps** and connect your ${detectedMerchant} account first. Then I can help you order!`,
             timestamp: new Date().toISOString(),
-            sessionId: data.sessionId,
-            requiresAction: data.requiresAction,
-            isStructured: true,
           };
-          saveMessages([...updatedMessages, aiMessageObj]);
-          setShowPaymentCard(true);
-          setPaymentCardData(data.response);
-          setPaymentCardType(data.response.type);
+          saveMessages([...updatedMessages, notConnectedMsg]);
+          setLoading(false);
+          return;
         }
+        userLocationForMerchant = getUserLocationForMerchant(detectedMerchant);
       }
 
+      let response;
+
+      const selectionActions = [
+        "confirm_items",
+        "select_items",
+        "awaiting_items",
+      ];
+      const orderContinuationActions = [
+        "specify_items",
+        "select_items_grid",
+        "show_restaurants_with_menus",
+        "payment_selection",
+        "confirm_items",
+        "select_items",
+        "awaiting_items",
+      ];
+      const startsNewOrderStep =
+        /\b(order|restaurant|menu|from\s+(swiggy|zomato|zepto|blinkit|amazon|flipkart))\b/i.test(
+          userMessage,
+        );
+
       // ============================================
-      // HANDLE ORDERING RESPONSES
+      // FIX: SEPARATE PAYMENT KEYWORDS FROM ORDER KEYWORDS
       // ============================================
-      if (data.response && typeof data.response === "object") {
-        if (data.response.type === "order_summary") {
-          data.response.sessionId = data.sessionId;
-          data.response.merchant = data.merchant || data.response.merchant;
+
+      // PAYMENT KEYWORDS - Route to /chat (Gemini function-calling)
+      const paymentKeywords = [
+        "recharge",
+        "mobile recharge",
+        "phone recharge",
+        "top up",
+        "talktime",
+        "data pack",
+        "send money",
+        "send to",
+        "pay to",
+        "transfer to",
+        "pay money",
+        "bill",
+        "electricity bill",
+        "water bill",
+        "gas bill",
+        "broadband bill",
+        "upi payment",
+        "pay bill",
+        "pay my bill",
+      ];
+
+      const isPayment = paymentKeywords.some((keyword) =>
+        userMessage.toLowerCase().includes(keyword),
+      );
+
+      // ORDER KEYWORDS - Route to /order/process
+      const orderKeywords = [
+        "order",
+        "buy",
+        "pizza",
+        "burger",
+        "biryani",
+        "food",
+        "grocery",
+        "zepto",
+        "swiggy",
+        "zomato",
+        "amazon",
+        "flipkart",
+        "myntra",
+        "ajio",
+        "show me menu",
+        "list menu",
+        "menu from",
+        "items from",
+        "suggest food",
+        "recommend food",
+      ];
+
+      const isOrder = orderKeywords.some((keyword) =>
+        userMessage.toLowerCase().includes(keyword),
+      );
+
+      console.log(
+        `🔍 Intent check: isPayment=${isPayment}, isOrder=${isOrder}, pendingAction=${pendingAction}`,
+      );
+
+      // ============================================
+      // ROUTE TO CORRECT ENDPOINT
+      // ============================================
+
+      // 1. Handle selection actions (cart, confirm items, etc.)
+      if (
+        sessionId &&
+        selectionActions.includes(pendingAction) &&
+        !startsNewOrderStep
+      ) {
+        console.log("📤 Sending to select-items with sessionId:", sessionId);
+        response = await axios.post(
+          "http://localhost:5000/api/agent/order/select-items",
+          {
+            sessionId: sessionId,
+            selection: userMessage,
+            userLocation: userLocationForMerchant,
+          },
+          {
+            headers: token ? { Authorization: `Bearer ${token}` } : {},
+            timeout: 30000,
+          },
+        );
+      }
+      // Continue active order sessions for item, restaurant, and payment replies.
+      else if (
+        sessionId &&
+        orderContinuationActions.includes(pendingAction) &&
+        !isPayment &&
+        !startsNewOrderStep
+      ) {
+        console.log("🛒 Continuing active order session:", pendingAction);
+        response = await agentOrderAPI.processOrder(
+          userMessage,
+          sessionId,
+          userLocationForMerchant,
+        );
+      }
+      // 2. Payment intents → /chat (Gemini function-calling)
+      else if (isPayment) {
+        console.log(
+          "💰 Payment intent detected, sending to /chat (Gemini function-calling)",
+        );
+        response = await agentChatAPI.sendMessage(
+          userMessage,
+          sessionId || null,
+          cardData,
+        );
+      }
+      // 3. Order intents → /order/process
+      else if (isOrder) {
+        console.log("🛒 Order intent detected, sending to /order/process");
+        response = await axios.post(
+          "http://localhost:5000/api/agent/order/process",
+          {
+            message: userMessage,
+            sessionId: sessionId,
+            userLocation: userLocationForMerchant,
+          },
+          {
+            headers: token ? { Authorization: `Bearer ${token}` } : {},
+            timeout: 30000,
+          },
+        );
+      }
+      // 4. General chat → /chat
+      else {
+        console.log("💬 General chat, sending to /chat");
+        response = await agentChatAPI.sendMessage(
+          userMessage,
+          sessionId || null,
+          cardData,
+        );
+      }
+
+      if (response && response.data && response.data.success) {
+        const data = response.data.data;
+        if (voiceRequestRef.current && window.speechSynthesis) {
+          const responseText =
+            typeof data.response === "string"
+              ? data.response
+              : data.response?.message ||
+                (data.response?.type === "order_summary"
+                  ? `Your order total is rupees ${data.total || data.response.total || 0}. Please confirm your order.`
+                  : "I have prepared the details for you. Please review and confirm.");
+          window.speechSynthesis.cancel();
+          window.speechSynthesis.speak(
+            new SpeechSynthesisUtterance(responseText.replace(/[*_#]/g, "")),
+          );
+          voiceRequestRef.current = false;
+        }
+
+        if (data.sessionId) {
+          console.log("📥 Received sessionId:", data.sessionId);
+          setSessionId(data.sessionId);
+          setPendingAction(data.requiresAction);
+        }
+
+        // ============================================
+        // HANDLE PAYMENT CARD RESPONSES
+        // ============================================
+        if (data.response && typeof data.response === "object") {
+          if (
+            data.response.type === "send_money_card" ||
+            data.response.type === "bill_pay_card" ||
+            data.response.type === "recharge_card" ||
+            data.response.type === "multi_payment_card"
+          ) {
+            console.log(`📇 Rendering payment card: ${data.response.type}`);
+            const aiMessageObj = {
+              id: Date.now() + 1,
+              role: "agent",
+              content: data.response,
+              timestamp: new Date().toISOString(),
+              sessionId: data.sessionId,
+              requiresAction: data.requiresAction,
+              isStructured: true,
+            };
+            saveMessages([...updatedMessages, aiMessageObj]);
+            setShowPaymentCard(true);
+            setPaymentCardData(data.response);
+            setPaymentCardType(data.response.type);
+          }
+        }
+
+        // ============================================
+        // HANDLE ORDERING RESPONSES
+        // ============================================
+        if (data.response && typeof data.response === "object") {
+          if (data.response.type === "order_summary") {
+            data.response.sessionId = data.sessionId;
+            data.response.merchant = data.merchant || data.response.merchant;
+            const aiMessageObj = {
+              id: Date.now() + 1,
+              role: "agent",
+              content: data.response,
+              timestamp: new Date().toISOString(),
+              sessionId: data.sessionId,
+              cart: data.cart,
+              total: data.total,
+              requiresAction: data.requiresAction,
+              isStructured: true,
+            };
+            saveMessages([...updatedMessages, aiMessageObj]);
+          } else if (data.response.type === "item_list") {
+            data.response.sessionId = data.sessionId;
+            const aiMessageObj = {
+              id: Date.now() + 1,
+              role: "agent",
+              content: data.response,
+              timestamp: new Date().toISOString(),
+              sessionId: data.sessionId,
+              isStructured: true,
+            };
+            saveMessages([...updatedMessages, aiMessageObj]);
+          } else if (data.response.type === "auto_pay_setup") {
+            setAutoPaySetup(data.response);
+            setShowAutoPayModal(true);
+          } else if (
+            data.response.type !== "send_money_card" &&
+            data.response.type !== "bill_pay_card" &&
+            data.response.type !== "recharge_card" &&
+            data.response.type !== "multi_payment_card"
+          ) {
+            const aiMessageObj = {
+              id: Date.now() + 1,
+              role: "agent",
+              content: JSON.stringify(data.response),
+              timestamp: new Date().toISOString(),
+              sessionId: data.sessionId,
+              isStructured: true,
+            };
+            saveMessages([...updatedMessages, aiMessageObj]);
+          }
+        }
+
+        if (data.requiresAction === "confirm_items") {
           const aiMessageObj = {
             id: Date.now() + 1,
             role: "agent",
@@ -4170,160 +4390,127 @@ const handleSendMessage = async () => {
             cart: data.cart,
             total: data.total,
             requiresAction: data.requiresAction,
+            notFoundItems: data.notFoundItems,
+            foundItems: data.foundItems,
+          };
+          saveMessages([...updatedMessages, aiMessageObj]);
+        } else if (data.requiresAction === "payment_selection" && data.total) {
+          let merchantName = data.merchant || data.merchantName;
+
+          if (!merchantName || merchantName === "Merchant") {
+            if (data.cart && data.cart.length > 0) {
+              merchantName =
+                data.cart[0].merchant ||
+                data.cart[0].restaurantName ||
+                "Swiggy";
+            }
+            const mlMerchant =
+              data.mlMerchant || (data.cart && data.cart[0]?.merchant);
+            if ((!merchantName || merchantName === "Merchant") && mlMerchant) {
+              merchantName = mlMerchant;
+            }
+            if (!merchantName || merchantName === "Merchant") {
+              merchantName = "Swiggy";
+            }
+          }
+
+          console.log("📝 Creating order summary for merchant:", merchantName);
+
+          const reserveCheck = await checkReservePayAvailability(
+            merchantName,
+            data.total,
+          );
+
+          const orderSummary = {
+            type: "order_summary",
+            sessionId: data.sessionId,
+            merchant: merchantName,
+            merchantName: merchantName,
+            items: data.cart,
+            subtotal: data.total,
+            tax: Math.round(data.total * 0.05),
+            total: data.total,
+            sabaiGems: Math.min(Math.floor(data.total * 0.05), 100),
+            reserveCheck: reserveCheck,
+          };
+
+          const aiMessageObj = {
+            id: Date.now() + 1,
+            role: "agent",
+            content: orderSummary,
+            timestamp: new Date().toISOString(),
+            sessionId: data.sessionId,
+            cart: data.cart,
+            total: data.total,
+            requiresAction: data.requiresAction,
             isStructured: true,
           };
           saveMessages([...updatedMessages, aiMessageObj]);
-        } else if (data.response.type === "item_list") {
-          data.response.sessionId = data.sessionId;
+        } else if (typeof data.response === "string") {
           const aiMessageObj = {
             id: Date.now() + 1,
             role: "agent",
             content: data.response,
             timestamp: new Date().toISOString(),
             sessionId: data.sessionId,
-            isStructured: true,
-          };
-          saveMessages([...updatedMessages, aiMessageObj]);
-        } else if (data.response.type === "auto_pay_setup") {
-          setAutoPaySetup(data.response);
-          setShowAutoPayModal(true);
-        } else if (data.response.type !== "send_money_card" &&
-                   data.response.type !== "bill_pay_card" &&
-                   data.response.type !== "recharge_card" &&
-                   data.response.type !== "multi_payment_card") {
-          const aiMessageObj = {
-            id: Date.now() + 1,
-            role: "agent",
-            content: JSON.stringify(data.response),
-            timestamp: new Date().toISOString(),
-            sessionId: data.sessionId,
-            isStructured: true,
-          };
-          saveMessages([...updatedMessages, aiMessageObj]);
-        }
-      }
-
-      if (data.requiresAction === "confirm_items") {
-        const aiMessageObj = {
-          id: Date.now() + 1,
-          role: "agent",
-          content: data.response,
-          timestamp: new Date().toISOString(),
-          sessionId: data.sessionId,
-          cart: data.cart,
-          total: data.total,
-          requiresAction: data.requiresAction,
-          notFoundItems: data.notFoundItems,
-          foundItems: data.foundItems,
-        };
-        saveMessages([...updatedMessages, aiMessageObj]);
-      } else if (data.requiresAction === "payment_selection" && data.total) {
-        let merchantName = data.merchant || data.merchantName;
-
-        if (!merchantName || merchantName === "Merchant") {
-          if (data.cart && data.cart.length > 0) {
-            merchantName = data.cart[0].merchant || data.cart[0].restaurantName || "Swiggy";
-          }
-          const mlMerchant = data.mlMerchant || (data.cart && data.cart[0]?.merchant);
-          if ((!merchantName || merchantName === "Merchant") && mlMerchant) {
-            merchantName = mlMerchant;
-          }
-          if (!merchantName || merchantName === "Merchant") {
-            merchantName = "Swiggy";
-          }
-        }
-
-        console.log("📝 Creating order summary for merchant:", merchantName);
-
-        const reserveCheck = await checkReservePayAvailability(merchantName, data.total);
-
-        const orderSummary = {
-          type: "order_summary",
-          sessionId: data.sessionId,
-          merchant: merchantName,
-          merchantName: merchantName,
-          items: data.cart,
-          subtotal: data.total,
-          tax: Math.round(data.total * 0.05),
-          total: data.total,
-          sabaiGems: Math.min(Math.floor(data.total * 0.05), 100),
-          reserveCheck: reserveCheck,
-        };
-
-        const aiMessageObj = {
-          id: Date.now() + 1,
-          role: "agent",
-          content: orderSummary,
-          timestamp: new Date().toISOString(),
-          sessionId: data.sessionId,
-          cart: data.cart,
-          total: data.total,
-          requiresAction: data.requiresAction,
-          isStructured: true,
-        };
-        saveMessages([...updatedMessages, aiMessageObj]);
-      } else if (typeof data.response === "string") {
-        const aiMessageObj = {
-          id: Date.now() + 1,
-          role: "agent",
-          content: data.response,
-          timestamp: new Date().toISOString(),
-          sessionId: data.sessionId,
-          cart: data.cart,
-          total: data.total,
-          requiresAction: data.requiresAction,
-          merchant: data.merchant,
-        };
-        saveMessages([...updatedMessages, aiMessageObj]);
-      }
-
-      if (data.cart) {
-        setCart(data.cart);
-        setCartTotal(data.total);
-      }
-
-      if (data.requiresAction === "complete") {
-        refreshOrders();
-        loadReserveLimits();
-
-        const autoPayIntent = detectAutoPayIntent(userMessage);
-        if (autoPayIntent && data.cart && data.cart.length > 0) {
-          const autoPayMerchant = data.merchant || (data.cart && data.cart[0]?.merchant) || "Merchant";
-          setPendingAutoPayOrder({
-            sessionId: data.sessionId,
+            cart: data.cart,
             total: data.total,
-            merchant: autoPayMerchant,
-            items: data.cart,
-          });
-          setShowAutoPaySetupModal(true);
+            requiresAction: data.requiresAction,
+            merchant: data.merchant,
+          };
+          saveMessages([...updatedMessages, aiMessageObj]);
+        }
+
+        if (data.cart) {
+          setCart(data.cart);
+          setCartTotal(data.total);
+        }
+
+        if (data.requiresAction === "complete") {
+          refreshOrders();
+          loadReserveLimits();
+
+          const autoPayIntent = detectAutoPayIntent(userMessage);
+          if (autoPayIntent && data.cart && data.cart.length > 0) {
+            const autoPayMerchant =
+              data.merchant ||
+              (data.cart && data.cart[0]?.merchant) ||
+              "Merchant";
+            setPendingAutoPayOrder({
+              sessionId: data.sessionId,
+              total: data.total,
+              merchant: autoPayMerchant,
+              items: data.cart,
+            });
+            setShowAutoPaySetupModal(true);
+          }
+        }
+        loadConversations();
+        if (data.sessionId) {
+          setCurrentConversationId(data.sessionId);
         }
       }
-      loadConversations();
-      if (data.sessionId) {
-        setCurrentConversationId(data.sessionId);
-      }
+    } catch (error) {
+      console.error("Send message error:", error);
+      let errorMessage = "I'm having trouble connecting. ";
+      if (error.code === "ECONNABORTED")
+        errorMessage = "Request timeout. Please try again.";
+      else if (error.response?.status === 500)
+        errorMessage = "Server error. Please try again.";
+      else if (error.response?.data?.message)
+        errorMessage = error.response.data.message;
+      else errorMessage = "Please try again.";
+      const errorMessageObj = {
+        id: Date.now() + 1,
+        role: "agent",
+        content: `❌ ${errorMessage}`,
+        timestamp: new Date().toISOString(),
+      };
+      saveMessages([...updatedMessages, errorMessageObj]);
+    } finally {
+      setLoading(false);
     }
-  } catch (error) {
-    console.error("Send message error:", error);
-    let errorMessage = "I'm having trouble connecting. ";
-    if (error.code === "ECONNABORTED")
-      errorMessage = "Request timeout. Please try again.";
-    else if (error.response?.status === 500)
-      errorMessage = "Server error. Please try again.";
-    else if (error.response?.data?.message)
-      errorMessage = error.response.data.message;
-    else errorMessage = "Please try again.";
-    const errorMessageObj = {
-      id: Date.now() + 1,
-      role: "agent",
-      content: `❌ ${errorMessage}`,
-      timestamp: new Date().toISOString(),
-    };
-    saveMessages([...updatedMessages, errorMessageObj]);
-  } finally {
-    setLoading(false);
-  }
-};
+  };
 
   // ============================================
   // RENDER
@@ -4434,19 +4621,11 @@ const handleSendMessage = async () => {
                 animate={{ opacity: 1, y: 0 }}
               >
                 <div className="message-avatar">
-                  {message.role === "agent" ? (
-                    <img
-                      src="/images/sabaiassistant.png"
-                      alt="SabAI Assistant"
-                      className="assistant-logo-medium"
-                    />
-                  ) : (
-                    <img
-                      src={user.profile_pic}
-                      alt="Profile"
-                      className="profile-image"
-                    />
-                  )}
+                  <img
+                    src="/images/sabaiassistant.png"
+                    alt="SabAI Assistant"
+                    className="assistant-logo-medium"
+                  />
                 </div>
                 <div className="message-content">
                   <div className={`message-bubble ${message.role}`}>
@@ -4524,6 +4703,12 @@ const handleSendMessage = async () => {
             >
               <FaPaperPlane />
             </button>
+          </div>
+          <div className="chat-footer-note">
+            <span className="footer-note-text">
+              SabAI Pay is AI-powered and may occasionally make mistakes. 
+              Please double-check all payment details before confirming.
+            </span>
           </div>
         </div>
 
