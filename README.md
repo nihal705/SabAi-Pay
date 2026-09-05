@@ -1,25 +1,52 @@
-# SabAI Pay - AI-Powered UPI Payments Assistant with Agent Pay and Reserve Pay
+# SabAI Pay
 
-## 🚀 Overview
+<div align="center">
+  <img src="https://img.shields.io/badge/AI-Powered-blueviolet?style=for-the-badge" alt="AI-Powered"/>
+  <img src="https://img.shields.io/badge/UPI-Integrated-brightgreen?style=for-the-badge" alt="UPI-Integrated"/>
+  <img src="https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge" alt="Prototype"/>
+  <img src="https://img.shields.io/badge/Built%20With-React%20%26%20Node-61DAFB?style=for-the-badge" alt="Built With"/>
+</div>
 
-SabAI Pay is an intelligent AI-powered payment assistant that helps users with UPI payments, bill payments, mobile recharges, food ordering, shopping, and managing Reserve Pay limits. The system features an interactive chatbot interface, multiple payment methods (Bank Account, SabAI Gems, Reserve Pay), real-time order tracking, and scheduled payments with auto-pay.
+<br>
 
-## ✨ Features
+<p align="center">
+  <b>An AI-powered UPI payment assistant with Agent Pay and Reserve Pay.</b>
+</p>
 
-### 🤖 AI Assistant
-- **Intent Classification** - ML-powered understanding of user requests
-- **Entity Extraction** - Automatically detects items, quantities, restaurants
-- **Context-Aware Responses** - Maintains conversation context
-- **Hybrid Intent Handling** - Understands situations and converts to orders
+<p align="center">
+  <i>Built as a demonstration of AI-driven financial interactions in the Indian UPI ecosystem.</i>
+</p>
 
-### 🛒 Order Management
-- Restaurant menu browsing with interactive grid
-- Cart management (add, remove, update quantities)
-- Multiple payment methods (UPI, Bank, SabAI Gems, Reserve Pay)
-- Real-time order tracking with status updates
-- Scheduled orders with auto-pay
+---
 
-### 💳 Payment Methods
+## 📋 Overview
+
+SabAI Pay is a prototype AI-powered UPI payment assistant that explores the convergence of conversational AI and digital payments. The system demonstrates:
+
+- **Agent Pay** - AI-driven payment assistance through natural language conversations
+- **Reserve Pay** - Pre-approved spending limits for frictionless transactions
+- **Multi-Modal Payments** - Support for UPI, Bank Accounts, SabAI Gems, and Reserve Pay
+- **Voice-First Interaction** - Hands-free payment assistance
+- **Real-Time Order Tracking** - Live status updates for food and bill payments
+
+---
+
+## Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **AI Chat Interface** | Natural language conversations for UPI payments, mobile recharges, bill payments, and food ordering |
+| **Mobile Recharge** | Voice/text-based mobile recharge with operator detection |
+| **Bill Payments** | Utility bill payments with auto-pay scheduling |
+| **Food Ordering** | Restaurant discovery and ordering through conversation |
+| **Reserve Pay** | Spending limits with PIN-less payments within limits |
+| **SabAI Gems** | 5% cashback rewards system |
+| **Voice Input** | Speech-to-text for hands-free operation |
+| **Multi-Payment** | Combine multiple payments in a single action |
+
+---
+
+### Payment Methods
 |     Method   |     Description     | Cashback |
 |--------------|---------------------|----------|
 | SabAI Gems   | Use earned gems     |    0%    |
@@ -27,253 +54,120 @@ SabAI Pay is an intelligent AI-powered payment assistant that helps users with U
 | Bank Account | Direct debit        |    5%    |
 | UPI          | Instant payment     |    5%    |
 
-### 📅 Auto-Pay & Scheduling
+---
+
+### Auto-Pay & Scheduling
 - Schedule orders for future delivery
 - Set up recurring auto-pay
 - Payment method selection for auto-pay
 - Execution history and notifications
 
-### 🔄 Real-Time Tracking
-- Order confirmed → Preparing → Out for delivery → Delivered
-- Estimated delivery time
-- Live status updates every 10 seconds
+---
 
-## 🏗️ Architecture
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│ React Frontend (Port 3000)                                      │
-│         ┌─────────────┐ ┌─────────────┐ ┌─────────────┐         │
-│         │AgentChatPage│ │BillPayments │ │ReservePay │ │         |
-│         └─────────────┘ └─────────────┘ └─────────────┘         │
-└─────────────────────────────┬───────────────────────────────────┘
-                              │ API Calls
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│ Node.js Backend (Port 5000)                                     │
-│ ┌─────────────────────────────────────────────────────────┐     │
-│ │ AgentOrderController                                    │     │
-│ │   ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐   │     │
-│ │   │Intent    │ │Payment   │ │Scheduled │ │Order     │   │     │
-│ │   │Classifier│ │Service   │ │Service   │ │Service   │   │     │
-│ │   └──────────┘ └──────────┘ └──────────┘ └──────────┘   │     │
-│ └─────────────────────────────────────────────────────────┘     │
-└─────────────────────────────┬───────────────────────────────────┘
-                              │
-          ┌───────────────────┼───────────────────┐
-          ▼                   ▼                   ▼
-┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
-│ MySQL DB        │ │ Redis Cache     │ │ ML Service      │
-│ (Port 3306)     │ │ (Port 6379)     │ │ (Port 5001)     │
-└─────────────────┘ └─────────────────┘ └─────────────────┘
-```
+## Technology Stack
 
-## 📋 Prerequisites
+### Frontend
+- **React** - UI Framework
+- **Framer Motion** - Animations & Transitions
+- **Axios** - API Client
+- **Web Speech API** - Voice Input
 
-- **Node.js** 18+ 
-- **Python** 3.11+ (for ML service)
-- **MySQL** 8.0+
-- **Redis** 7.0+
-- **Docker** (optional, for containerized deployment)
+### Backend
+- **Node.js + Express** - Server Framework
+- **Supabase PostgreSQL** - Database
+- **Google Gemini AI** - Natural Language Processing
+- **Razorpay** - Payment Gateway Integration
+- **JWT** - Authentication
 
-## 🔧 Installation
+### Development Tools
+- **Docker** - Containerization
+- **Redis** - Caching Layer
 
-### 1. Clone the Repository
+---
 
-```bash
-git clone https://github.com/nihalmohammad705-debug/SabAi-Pay.git
-cd sabai-pay
+## Contributing
+#### Contributions are welcome!
 
-## Backend run guide
-cd backend
-npm install
-node backend.js
+1. Fork the repository
+2. Create a feature branch (git checkout -b feature/amazing-feature)
+3. Commit your changes (git commit -m 'Add amazing feature')
+4. Push to the branch (git push origin feature/amazing-feature)
+5. Open a Pull Request
 
-## Frontend run guide
-cd frontend
-npm install
-npm start
+#### Contribution Guidelines
+- Follow the existing code style
+- Write clear commit messages
+- Test your changes
+- Update documentation if needed
 
-## ML Service run guide
-cd ml_service
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python app.py
+---
 
-## Create Database
-CREATE DATABASE sabai_pay;
-USE sabai_pay;
--- Run the schema.sql file
+## 📄 License
 
-## 🐳 Docker Deployment
-```bash
-# Build and run all services
-docker-compose up -d
+This project is licensed under the **MIT License**.
 
-# Check status
-docker-compose ps
-
-# View logs
-docker-compose logs -f
-
-# Stop services
-docker-compose down
-```
-
-## 📁 Project Structure (NOTE : This is not complete structure, follow codes to see complete structure)
-```text
-sabai-pay/
-├── backend/
-│   ├── controllers/
-│   │   ├── agentOrderController.js
-│   │   └── paymentController.js
-│   ├── services/
-│   │   ├── databaseService.js
-│   │   ├── merchantDataService.js
-│   │   ├── scheduledOrderService.js
-│   │   └── mlService.js
-│   ├── routes/
-│   │   └── agentOrderRoutes.js
-│   └── data/merchants/
-│       ├── swiggy/
-│       ├── zomato/
-│       └── zepto/
-├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── AgentChatPage.jsx
-│   │   │   ├── BillPaymentsPage.jsx
-│   │   │   └── ReservePayPage.jsx
-│   │   ├── components/
-│   │   │   ├── CustomPaymentModal.jsx
-│   │   │   ├── EnhancedOrderSummary.jsx
-│   │   │   └── RestaurantOrderComponent.jsx
-│   │   └── services/
-│   │       └── storageService.js
-│   └── public/
-├── ml_service/
-│   ├── models/
-│   ├── training/
-│   └── app.py
-├── docker-compose.yml
-└── README.md
-```
-
-🎯 Key Features in Detail
-```text
-Agent Chat Page
-Real-time conversation with AI assistant
-
-Restaurant menu display with interactive cards
-
-Cart management with quantity controls
-
-Multiple payment method selection
-
-Order confirmation and tracking
-
-Payment Modal
-SabAI Gems: Use earned gems for payment (no cashback)
-
-Reserve Pay: Monthly limit based payment (5% cashback)
-
-Bank Account: Direct debit with UPI PIN (5% cashback)
-
-Combined Payments: Gems + Reserve Pay, Gems + Bank
-
-Scheduled Orders
-Pick date and time for future delivery
-
-Select payment method for auto-pay
-
-View scheduled orders in Auto Pay section
-
-Cancel or modify scheduled orders
-
-Bill Payments
-Add bills for electricity, water, mobile, broadband
-
-Schedule auto-pay with bank or Reserve Pay
-
-Real-time payment processing
-
-Transaction history
-```
-
-## API Endpoints
-```text
-Method	Endpoint	Description
-POST	/api/agent/order/process	Process user message
-POST	/api/agent/order/select-items	Add items to cart
-POST	/api/agent/order/process-reserve	Process Reserve Pay payment
-POST	/api/agent/order/schedule-order	Schedule order for future
-GET	/api/agent/order/orders	Get user orders
-POST	/api/agent/order/check-reserve	Check Reserve Pay eligibility
-```
-
-## Testing
-```bash
-# Backend tests
-cd backend
-npm test
-
-# Frontend tests
-cd frontend
-npm test
-
-# ML service tests
-cd ml_service
-pytest
-```
-
-## Environment Variables
-```text
-Backend (.env)
-NODE_ENV=development
-PORT=5000
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=sabai_pay
-JWT_SECRET=your_jwt_secret
-GEMINI_API_KEY=your_gemini_key
-REDIS_HOST=localhost
-ML_API_URL=http://localhost:5001
-
-Frontend (.env)
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_ML_API_URL=http://localhost:5001
-```
-
-## 📝 License
-
-This project is **proprietary** and **all rights are reserved**.
-
-Copyright © 2026 G Nihal. All Rights Reserved.
-
-**You may NOT:**
-- Use, copy, modify, or distribute this software
-- Use this software for any commercial purpose
-- Reverse engineer or extract components
-
-**You may:**
-- View the source code for reference purposes only
-
-For commercial licensing inquiries, contact: **sabaipaycontact@gmail.com**
+- ✅ View the source code
+- ✅ Understand the architecture and approach
+- ✅ Use for learning and inspiration
+- ✅ Fork and modify
+- ⚠️ This is a prototype – not production-ready
 
 See the [LICENSE](LICENSE) file for complete terms.
 
-👥 Authors
+---
 
-SabAI Pay - G Nihal
+## 🛡️ Security Disclaimer
 
-🙏 Acknowledgments
+SabAI Pay is a **prototype/demonstration project**. It is:
+- **Not PCI-DSS compliant**
+- **Not intended for production use**
+- **Not holding real user funds**
+- **Not audited for security vulnerabilities**
 
-Gemini API for general chat capabilities
+Do not use this software with real financial data or in any production environment.
 
-Razorpay for payment integration
+---
 
-Open source community
+## Developer
 
-📞 Support
-For support, email sabaipaycontact@gmail.com or create an issue in the repository.
+**G Nihal**
+- [Email](mailto:nihalmohammad705@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/g-nihal)
+- [GitHub](https://github.com/nihal705)
+
+---
+
+## Acknowledgments
+
+- **Google Gemini AI** - Core AI capabilities
+- **Razorpay** - Payment gateway integration
+- **Open Source Community** - Tools and libraries
+
+---
+
+## Project Status
+
+| Component | Status |
+|-----------|--------|
+| Agent Chat | ⚠️ Prototype |
+| Reserve Pay | ⚠️ Prototype |
+| Mobile Recharge | ⚠️ Prototype |
+| Bill Payments | ⚠️ Prototype |
+| Food Ordering | ⚠️ Prototype |
+| SabAI Gems | ⚠️ Prototype |
+
+*Status Legend: ✅ Production Ready | ⚠️ Prototype | 🚧 In Development*
+
+---
+
+## 📞 Contact
+
+For inquiries, collaboration, or licensing:
+- 📧 **sabaipaycontact@gmail.com**
+
+---
+
+<div align="center">
+  <p><b>Made with ❤️ in India</b></p>
+  <p><sub>This project is a demonstration of AI-driven fintech innovation.</sub></p>
+</div>
