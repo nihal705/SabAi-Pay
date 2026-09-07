@@ -38,8 +38,6 @@ router.post('/send-otp', async (req, res, next) => {
 
     const otp = String(crypto.randomInt(100000, 1000000));
     await databaseService.saveOTP(phone, await bcrypt.hash(otp, 12), purpose);
-    // A production deployment must configure a verified SMS provider. Keeping OTPs
-    // out of normal responses prevents anyone who can inspect the browser from logging in.
     if (process.env.OTP_PROVIDER !== 'twilio' && process.env.NODE_ENV === 'production') return res.status(503).json({ success: false, message: 'SMS verification is not configured' });
     const payload = { success: true, message: 'Verification code sent' };
     if (process.env.ENABLE_DEV_OTP === 'true' && process.env.NODE_ENV !== 'production') payload.dev_otp = otp;
@@ -65,12 +63,64 @@ router.post('/verify-otp', async (req, res, next) => {
 router.post('/register', async (req, res, next) => {
   try {
     const { phone_number: phone, name, email = null, password } = req.body;
-    if (!validPhone(phone) || typeof name !== 'string' || name.trim().length < 2 || !PASSWORD.test(password || '')) return res.status(400).json({ success: false, message: 'Provide a valid phone number, name, and a password of at least 8 characters containing letters and numbers' });
-    if (!await databaseService.hasVerifiedOTP(phone, 'register')) return res.status(403).json({ success: false, message: 'Verify your phone number before registering' });
-    if (await databaseService.getUserByPhone(phone)) return res.status(409).json({ success: false, message: 'Phone number is already registered' });
-    const user = await databaseService.createUser(phone, name.trim(), email?.trim()?.toLowerCase() || null, await bcrypt.hash(password, 12));
-    return res.status(201).json({ success: true, data: { token: tokenFor(user.id), user: publicUser(user) } });
-  } catch (error) { return next(error); }
+
+    if (!validPhone(phone)) {
+      return res.status(400).json({ 
+        success: false, 
+        message: 'Enter a valid 10-digit Indian phone number' 
+      });
+    }
+    
+    if (typeof name !== 'string' || name.trim().length < 2) {
+      return res.status(400).json({ 
+        success: false, 
+        message: 'Name must be at least 2 characters' 
+      });
+    }
+
+    if (!password || password.length < 6) {
+      return res.status(400).json({ 
+        success: false, 
+        message: 'Password must be at least 6 characters' 
+      });
+    }
+    
+    // Check if phone is verified
+    if (!await databaseService.hasVerifiedOTP(phone, 'register')) {
+      return res.status(403).json({ 
+        success: false, 
+        message: 'Verify your phone number before registering' 
+      });
+    }
+    
+    // Check if user exists
+    if (await databaseService.getUserByPhone(phone)) {
+      return res.status(409).json({ 
+        success: false, 
+        message: 'Phone number is already registered' 
+      });
+    }
+    
+    // Create user - email is optional
+    const user = await databaseService.createUser(
+      phone, 
+      name.trim(), 
+      email?.trim()?.toLowerCase() || null, 
+      await bcrypt.hash(password, 10)
+    );
+    
+    return res.status(201).json({
+      success: true,
+      data: {
+        token: tokenFor(user.id),
+        user: publicUser(user)
+      }
+    });
+    
+  } catch (error) {
+    console.error('Registration error:', error);
+    return next(error);
+  }
 });
 
 router.post('/login', async (req, res, next) => {

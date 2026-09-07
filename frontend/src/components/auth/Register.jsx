@@ -16,7 +16,6 @@ import {
   FaExchangeAlt,
   FaCheckCircle,
   FaGift,
-  darkMode,
   FaMobile
 } from 'react-icons/fa';
 import { MdPhone, MdVerified } from 'react-icons/md';
