@@ -402,4 +402,8 @@ export const agentPaymentAPI = {
   },
 };
 
+export const coinsAPI = coinAPI; 
+
+export const transactionsAPI = transactionAPI; 
+
 export default api;
