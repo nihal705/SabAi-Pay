@@ -32,8 +32,8 @@ import {
   FaExchangeAlt, FaCreditCard, FaHome, FaPlane, FaCar, FaHeart,
   FaLeaf, FaShieldAlt, FaLock, FaUnlockAlt, FaSync, FaDownload,
   FaUpload, FaMoneyBillWave, FaHandHoldingUsd, FaBullhorn,
-  FaAward, FaMedal as FaMedalIcon, FaCertificate, FaDiamond,
-  FaGem as FaGemIcon, FaSparkles, FaMagic, FaZap, FaInfinity
+  FaAward, FaMedal as FaMedalIcon, FaCertificate,
+  FaGem as FaGemIcon, FaMagic
 } from 'react-icons/fa';
 import { 
   LineChart, Line, AreaChart, Area, BarChart, Bar, 

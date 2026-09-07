@@ -19,11 +19,7 @@ import {
   FaGlobe,
   FaExclamationTriangle,
   FaSpinner,
-  FaInfoCircle,
-  FaExclamationCircle,
-  FaCheckDouble,
-  FaArrowRight,
-  FaShield
+  FaArrowRight
 } from 'react-icons/fa';
 import { MdDevices, MdSecurity, MdVerifiedUser } from 'react-icons/md';
 import { IoPhonePortraitOutline, IoTabletLandscapeOutline } from 'react-icons/io5';
