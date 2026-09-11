@@ -546,16 +546,17 @@ class DatabaseService {
     );
   }
   async updateReserveLimitSpent(userId, merchant, amount) {
-    const data = await unwrap(
-      this.db.rpc("spend_reserve_limit", {
-        p_user_id: userId,
-        p_merchant: merchant,
-        p_amount: numeric(amount),
-      }),
-      "Spend Reserve Pay",
-    );
-    return Array.isArray(data) ? data[0] : data;
+  const { data, error } = await this.db.rpc('spend_reserve_limit', {
+    p_user_id: userId,
+    p_merchant: merchant,
+    p_amount: amount
+  });
+  if (error) {
+    console.error('spend_reserve_limit error:', error);
+    throw new Error(`Spend Reserve Pay: ${error.message}`);
   }
+  return data;
+}
 
   async getBills(userId) {
     return unwrap(
@@ -899,6 +900,43 @@ class DatabaseService {
       "Delete order session",
     );
   }
+
+async getUsualOrder(userId, mealSlot) {
+  const { data, error } = await this.db
+    .from('user_order_preferences')
+    .select('*')
+    .eq('user_id', userId)
+    .eq('meal_slot', mealSlot)
+    .maybeSingle();
+  if (error) throw new Error(`Get usual order: ${error.message}`);
+  return data;
+}
+
+async saveUsualOrder(userId, mealSlot, items) {
+  const { data, error } = await this.db
+    .from('user_order_preferences')
+    .upsert({
+      user_id: userId,
+      meal_slot: mealSlot,
+      items: items,
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id, meal_slot' })
+    .select()
+    .single();
+  if (error) throw new Error(`Save usual order: ${error.message}`);
+  return data;
+}
+
+  async getUserOrders(userId, limit = 50) {
+  const { data, error } = await this.db
+    .from('agent_orders')
+    .select('*')
+    .eq('user_id', userId)
+    .order('created_at', { ascending: false })
+    .limit(limit);
+  if (error) throw new Error(`Get user orders: ${error.message}`);
+  return data || [];
+}
 
   async createAutoPayOrder(userId, order) {
     return unwrap(
