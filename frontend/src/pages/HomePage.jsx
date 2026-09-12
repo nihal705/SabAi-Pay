@@ -8,6 +8,7 @@ import { FaRobot, FaShieldAlt, FaCoins, FaArrowRight, FaGooglePay, FaQrcode, FaR
   FaStore, FaUserFriends, FaCheckCircle, FaStar, FaClock, FaLock, FaThumbsUp } from 'react-icons/fa';
 import { SiPhonepe, SiPaytm } from 'react-icons/si';
 import './HomePage.css';
+import RobotCompanion from '../components/robot/RobotCompanion';
 
 const HomePage = () => {
   const { user } = useAuth();
@@ -493,6 +494,8 @@ const HomePage = () => {
           <div className="cta-background"></div>
         </motion.section>
       )}
+
+      <RobotCompanion />
     </div>
   );
 };

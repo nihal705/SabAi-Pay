@@ -1,15 +1,5 @@
 // frontend/src/pages/DashboardPage.jsx
 
-/**
- * SabAI Pay - AI-Powered UPI Payments Assistant
- * Copyright (c) 2026 G Nihal. All Rights Reserved.
- * 
- * This software is proprietary and confidential.
- * Unauthorized copying, distribution, or use is strictly prohibited.
- * 
- * For licensing inquiries: sabaipaycontact@gmail.com
- */
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
@@ -72,6 +62,7 @@ import { MdQrCodeScanner, MdLocalGasStation, MdElectricalServices, MdWaterDrop }
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import './DashboardPage.css';
+import RobotCompanion from '../components/robot/RobotCompanion';
 
 // Helper function to get bank logo URL
 const getBankLogoUrl = (bankName) => {
@@ -1888,6 +1879,7 @@ const handleBusinessClick = (business) => {
           </motion.div>
         )}
       </AnimatePresence>
+      <RobotCompanion />
     </div>
   );
 };
