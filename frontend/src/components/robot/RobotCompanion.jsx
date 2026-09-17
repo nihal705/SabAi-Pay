@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useDragControls } from 'framer-motion';
 import { useFooterDetection } from './hooks/useFooterDetection';
 import { useReducedMotion } from './hooks/useReducedMotion';
@@ -18,6 +18,7 @@ export default function RobotCompanion() {
   const { isFooterVisible } = useFooterDetection();
   const reducedMotion = useReducedMotion();
   const dragControls = useDragControls();
+  const companionRef = useRef(null);
 
   const [sceneIndex, setSceneIndex] = useState(0);
   const [blinking, setBlinking] = useState(false);
@@ -67,6 +68,9 @@ export default function RobotCompanion() {
   }, [reducedMotion]);
 
   useEffect(() => {
+    // Only glance freely during idle chatter — every other scene already
+    // has its own directed glance above, and letting the random glance fire
+    // mid-scene fights with whatever that scene is showing.
     if (reducedMotion || sceneGlance) return;
     const interval = setInterval(() => {
       const dir = Math.random() > 0.5 ? 'left' : 'right';
@@ -77,18 +81,22 @@ export default function RobotCompanion() {
   }, [reducedMotion, sceneGlance]);
 
   useEffect(() => {
-    if (reducedMotion) return;
+    // Only wave during idle — every named scene owns the arms' screen space
+    // for its own animation (a phone card, a parcel landing, etc.), so an
+    // arm-wave firing mid-scene visually collides with it.
+    if (reducedMotion || currentScene.id !== 'idle') return;
     const interval = setInterval(() => {
       setWaving(true);
       setTimeout(() => setWaving(false), 1300);
     }, 11000);
     return () => clearInterval(interval);
-  }, [reducedMotion]);
+  }, [reducedMotion, currentScene.id]);
 
   const isActive = (id) => currentScene.id === id;
 
   return (
     <motion.div
+      ref={companionRef}
       className={`robot-companion ${reducedMotion ? 'robot-companion-static' : ''}`}
       data-hidden={isFooterVisible}
       aria-hidden="true"
@@ -144,10 +152,10 @@ export default function RobotCompanion() {
           <CoinOverlay active={isActive('coin') || isActive('idle')} />
           <AgentPayFlowOverlay active={isActive('agentPayFlow')} />
           <AgentAskOverlay active={isActive('agentAsk')} />
+          <DeliveryOverlay active={isActive('delivery')} containerRef={companionRef} />
           <ReserveLimitOverlay active={isActive('reserveLimit')} />
           <ReservePayOverlay active={isActive('reservePay')} />
           <SecurityOverlay active={isActive('security')} />
-          <DeliveryOverlay active={isActive('delivery')} />
           <ScamAwareOverlay active={isActive('scamAware')} />
         </motion.div>
       </div>

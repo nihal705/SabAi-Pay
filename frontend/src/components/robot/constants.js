@@ -23,9 +23,9 @@ export const SCENES = [
   { id: 'coin',          duration: 2400, bubble: 'Handling your money securely' },
   { id: 'agentPayFlow',  duration: 7800, bubble: 'Just ask me — I do the work' },
   { id: 'agentAsk',      duration: 6400, bubble: 'Found it! Ready to order 🍛' },
+  { id: 'delivery',      duration: 6200, bubble: 'Delivered! ⭐ 5.0' },
   { id: 'reserveLimit',  duration: 6900, bubble: 'Set your monthly limit 🎚️' },
   { id: 'reservePay',    duration: 7200, bubble: 'Reserve Pay — no PIN needed' },
   { id: 'security',      duration: 5500, bubble: 'Protected payments 🛡️' },
-  { id: 'delivery',      duration: 6200, bubble: 'Delivered! ⭐ 5.0' },
   { id: 'scamAware',     duration: 5100, bubble: 'Stay alert. Stay safe.' },
 ];
