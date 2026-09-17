@@ -7,12 +7,12 @@ export default function AgentAskOverlay({ active }) {
       {active && (
         <motion.div
           key="menu"
-          initial={{ opacity: 0, x: 30, scale: 0.85 }}
+          initial={{ opacity: 0, x: -30, scale: 0.85 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
-          exit={{ opacity: 0, x: 30, scale: 0.85 }}
+          exit={{ opacity: 0, x: -30, scale: 0.85 }}
           transition={{ duration: 0.45, ease: [0.2, 0.8, 0.2, 1] }}
           style={{
-            position: 'absolute', top: 60, left: -24, width: 150,
+            position: 'absolute', top: 60, left: -104, width: 150,
             background: '#fff', borderRadius: 14,
             padding: '11px 13px',
             boxShadow: '0 10px 28px rgba(10,14,26,0.14), 0 2px 6px rgba(10,14,26,0.05)',
