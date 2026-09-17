@@ -9,9 +9,9 @@ export default function ReservePayOverlay({ active }) {
     if (!active) { setCount(5000); return; }
     const ts = [
       setTimeout(() => setCount(4980), 2400),
-      setTimeout(() => setCount(4940), 3800),
-      setTimeout(() => setCount(4870), 5200),
-      setTimeout(() => setCount(4790), 6400),
+      setTimeout(() => setCount(4900), 3800),
+      setTimeout(() => setCount(4770), 5200),
+      setTimeout(() => setCount(4290), 6400),
     ];
     return () => ts.forEach(clearTimeout);
   }, [active]);
