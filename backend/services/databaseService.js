@@ -49,12 +49,34 @@ class DatabaseService {
         .single(),
       "Create user",
     );
+
+    // Welcome bonus: 50 SabAI Gems on signup.
     await unwrap(
-      this.db.from("sabai_coins").upsert({ user_id: user.id }),
+      this.db.from("sabai_coins").upsert({
+        user_id: user.id,
+        balance: 50,
+        lifetime_earned: 50,
+        lifetime_used: 0,
+      }),
       "Create coin wallet",
     );
+
+    // Audit the welcome bonus so it's not double-awarded.
+    await unwrap(
+      this.db.from("coin_transactions").insert({
+        user_id: user.id,
+        amount: 50,
+        type: "earned",
+        source_type: "referral",
+        source_id: "WELCOME_BONUS",
+        description: "Welcome bonus — 50 SabAI Gems",
+      }),
+      "Create welcome bonus transaction",
+    );
+
     return user;
-  }
+}
+
   async updateLastLogin(id) {
     return unwrap(
       this.db
