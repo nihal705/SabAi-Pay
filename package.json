@@ -12,9 +12,17 @@
     "test": "concurrently \"cd backend && npm test\" \"cd frontend && npm test\""
   },
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "@supabase/supabase-js": "^2.115.0",
+    "concurrently": "^8.2.0",
+    "dotenv": "^17.4.2"
   },
-  "keywords": ["upi", "payments", "ai", "gemini", "fintech"],
+  "keywords": [
+    "upi",
+    "payments",
+    "ai",
+    "gemini",
+    "fintech"
+  ],
   "author": "Your Name",
   "license": "MIT"
 }
