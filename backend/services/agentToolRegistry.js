@@ -5,7 +5,7 @@ class AgentToolRegistry {
   constructor() {
     this.tools = this.buildToolRegistry();
     this.toolMap = new Map();
-    this.tools.forEach(tool => this.toolMap.set(tool.name, tool));
+    this.tools.forEach((tool) => this.toolMap.set(tool.name, tool));
   }
 
   buildToolRegistry() {
@@ -15,13 +15,27 @@ class AgentToolRegistry {
       // ============================================
       {
         name: "search_restaurants",
-        description: "Search for restaurants on a merchant platform",
+        description:
+          "Search for restaurants on a merchant platform. Use max_price when the user specifies a budget.",
         parameters: {
           type: "object",
           properties: {
-            merchant: { type: "string", enum: ["swiggy", "zomato", "zepto", "blinkit"], description: "The merchant platform" },
-            location: { type: "string", description: "City name (optional – will use saved location if not provided)" },
+            merchant: {
+              type: "string",
+              enum: ["swiggy", "zomato", "zepto", "blinkit"],
+              description: "The merchant platform",
+            },
+            location: {
+              type: "string",
+              description:
+                "City name (optional – will use saved location if not provided)",
+            },
             cuisine: { type: "string", description: "Cuisine type (optional)" },
+            max_price: {
+              type: "number",
+              description:
+                "Maximum price per item in INR. Set this whenever the user says 'under ₹X'.",
+            },
           },
           required: ["merchant"],
         },
@@ -67,7 +81,11 @@ class AgentToolRegistry {
           type: "object",
           properties: {
             sessionId: { type: "string", description: "Order session ID" },
-            paymentMethod: { type: "string", enum: ["upi", "reserve"], description: "Payment method" },
+            paymentMethod: {
+              type: "string",
+              enum: ["upi", "reserve"],
+              description: "Payment method",
+            },
           },
           required: ["sessionId"],
         },
@@ -76,12 +94,40 @@ class AgentToolRegistry {
       // SEND MONEY
       // ============================================
       {
+        name: "send_to_bank_account",
+        description:
+          "Send money to a bank account number with IFSC code. Use only when the user explicitly mentions a bank account, account number, or IFSC.",
+        parameters: {
+          type: "object",
+          properties: {
+            accountNumber: {
+              type: "string",
+              description: "Bank account number (6-18 digits)",
+            },
+            ifsc: {
+              type: "string",
+              description: "IFSC code (e.g., HDFC0001234)",
+            },
+            amount: { type: "number", description: "Amount in INR" },
+            recipientName: {
+              type: "string",
+              description: "Optional recipient name",
+            },
+            note: { type: "string", description: "Optional note" },
+          },
+          required: ["accountNumber", "ifsc", "amount"],
+        },
+      },
+      {
         name: "send_money",
         description: "Send money to a recipient",
         parameters: {
           type: "object",
           properties: {
-            recipient: { type: "string", description: "UPI ID, phone number, or contact name" },
+            recipient: {
+              type: "string",
+              description: "UPI ID, phone number, or contact name",
+            },
             amount: { type: "number", description: "Amount in INR" },
             note: { type: "string", description: "Optional note" },
           },
@@ -94,7 +140,10 @@ class AgentToolRegistry {
         parameters: {
           type: "object",
           properties: {
-            recipient: { type: "string", description: "UPI ID or phone number" },
+            recipient: {
+              type: "string",
+              description: "UPI ID or phone number",
+            },
             amount: { type: "number", description: "Amount in INR" },
             note: { type: "string", description: "Optional note" },
           },
@@ -121,10 +170,16 @@ class AgentToolRegistry {
         parameters: {
           type: "object",
           properties: {
-            mobileNumber: { type: "string", description: "10-digit mobile number" },
+            mobileNumber: {
+              type: "string",
+              description: "10-digit mobile number",
+            },
             amount: { type: "number", description: "Recharge amount" },
             plan: { type: "string", description: "Optional plan name" },
-            operator: { type: "string", description: "Operator name (airtel, jio, vi, bsnl)" },
+            operator: {
+              type: "string",
+              description: "Operator name (airtel, jio, vi, bsnl)",
+            },
           },
           required: ["mobileNumber", "amount"],
         },
@@ -135,7 +190,10 @@ class AgentToolRegistry {
         parameters: {
           type: "object",
           properties: {
-            mobileNumber: { type: "string", description: "10-digit mobile number" },
+            mobileNumber: {
+              type: "string",
+              description: "10-digit mobile number",
+            },
           },
           required: ["mobileNumber"],
         },
@@ -160,9 +218,23 @@ class AgentToolRegistry {
         parameters: {
           type: "object",
           properties: {
-            billType: { type: "string", enum: ["electricity", "mobile", "broadband", "gas", "credit_card", "water"], description: "Type of bill" },
+            billType: {
+              type: "string",
+              enum: [
+                "electricity",
+                "mobile",
+                "broadband",
+                "gas",
+                "credit_card",
+                "water",
+              ],
+              description: "Type of bill",
+            },
             provider: { type: "string", description: "Provider name" },
-            customerId: { type: "string", description: "Customer ID or account number" },
+            customerId: {
+              type: "string",
+              description: "Customer ID or account number",
+            },
             amount: { type: "number", description: "Bill amount" },
           },
           required: ["billType", "provider", "customerId", "amount"],
@@ -203,13 +275,20 @@ class AgentToolRegistry {
               type: "object",
               description: "Action to schedule (recharge, bill, send_money)",
               properties: {
-                type: { type: "string", enum: ["recharge", "bill", "send_money"] },
+                type: {
+                  type: "string",
+                  enum: ["recharge", "bill", "send_money"],
+                },
                 data: { type: "object" },
               },
               required: ["type", "data"],
             },
             datetime: { type: "string", description: "ISO datetime string" },
-            paymentMethod: { type: "string", enum: ["upi", "reserve", "bank"], description: "Payment method" },
+            paymentMethod: {
+              type: "string",
+              enum: ["upi", "reserve", "bank"],
+              description: "Payment method",
+            },
           },
           required: ["action", "datetime"],
         },
@@ -227,13 +306,24 @@ class AgentToolRegistry {
               type: "object",
               description: "Action to repeat",
               properties: {
-                type: { type: "string", enum: ["recharge", "bill", "send_money"] },
+                type: {
+                  type: "string",
+                  enum: ["recharge", "bill", "send_money"],
+                },
                 data: { type: "object" },
               },
               required: ["type", "data"],
             },
-            schedule: { type: "string", enum: ["monthly", "weekly", "daily"], description: "Recurrence schedule" },
-            paymentMethod: { type: "string", enum: ["upi", "reserve", "bank"], description: "Payment method" },
+            schedule: {
+              type: "string",
+              enum: ["monthly", "weekly", "daily"],
+              description: "Recurrence schedule",
+            },
+            paymentMethod: {
+              type: "string",
+              enum: ["upi", "reserve", "bank"],
+              description: "Payment method",
+            },
           },
           required: ["action", "schedule"],
         },
@@ -250,19 +340,33 @@ class AgentToolRegistry {
         },
       },
       {
-  name: "get_usual",
-  description: "Get user's usual order and optionally place it",
-  parameters: {
-    type: "object",
-    properties: {
-      mealSlot: { type: "string", enum: ["breakfast", "lunch", "dinner", "snacks"], description: "Meal slot" },
-      merchant: { type: "string", description: "Optional merchant to order from" },
-      paymentMethod: { type: "string", enum: ["upi", "reserve", "gems"], description: "Payment method (if placing order)" },
-      sessionId: { type: "string", description: "Existing order session ID (optional)" },
-    },
-    required: ["mealSlot"],
-  },
-},
+        name: "get_usual",
+        description: "Get user's usual order and optionally place it",
+        parameters: {
+          type: "object",
+          properties: {
+            mealSlot: {
+              type: "string",
+              enum: ["breakfast", "lunch", "dinner", "snacks"],
+              description: "Meal slot",
+            },
+            merchant: {
+              type: "string",
+              description: "Optional merchant to order from",
+            },
+            paymentMethod: {
+              type: "string",
+              enum: ["upi", "reserve", "gems"],
+              description: "Payment method (if placing order)",
+            },
+            sessionId: {
+              type: "string",
+              description: "Existing order session ID (optional)",
+            },
+          },
+          required: ["mealSlot"],
+        },
+      },
       // ============================================
       // MULTI-PAYMENT (must define 'items' for array)
       // ============================================
@@ -299,7 +403,7 @@ class AgentToolRegistry {
   }
 
   getToolDefinitions() {
-    return this.tools.map(tool => ({
+    return this.tools.map((tool) => ({
       name: tool.name,
       description: tool.description,
       parameters: tool.parameters,
