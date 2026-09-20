@@ -81,6 +81,50 @@ class AgentPaymentController {
     }
   }
 
+  // ============================================
+  // SEND TO BANK ACCOUNT
+  // ============================================
+  async sendToBankAccount(
+    userId,
+    accountNumber,
+    ifsc,
+    amount,
+    recipientName = null,
+    note = "",
+  ) {
+    try {
+      const bankTransferService = require("../services/bankTransferService");
+      return await bankTransferService.prepareTransfer(userId, {
+        accountNumber,
+        ifsc,
+        amount,
+        recipientName,
+        note,
+      });
+    } catch (error) {
+      console.error("❌ sendToBankAccount error:", error);
+      return { error: error.message, status: "failed" };
+    }
+  }
+
+  async confirmBankTransfer(userId, paymentData, pin = null) {
+    try {
+      if (paymentData.requiresPin) {
+        if (!pin) return { error: "PIN required", status: "failed" };
+        const isValid = await dbService.verifyUpiPin(
+          paymentData.bankAccount.id,
+          pin,
+        );
+        if (!isValid) return { error: "Invalid PIN", status: "failed" };
+      }
+      const bankTransferService = require("../services/bankTransferService");
+      return await bankTransferService.executeTransfer(userId, paymentData);
+    } catch (error) {
+      console.error("❌ confirmBankTransfer error:", error);
+      return { error: error.message, status: "failed" };
+    }
+  }
+
   buildSendMoneyMessage(recipient, amount, security) {
     let message = `💸 **Send Money**\n\n`;
     message += `**To:** ${recipient.displayName || recipient.vpa}\n`;
