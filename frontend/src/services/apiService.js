@@ -19,6 +19,28 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
+// Global 401 interceptor — fires an event that AuthContext listens for.
+axios.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error?.response?.status === 401) {
+      // Only fire if this isn't a login/register/check-phone call
+      const url = error.config?.url || "";
+      const isAuthCall =
+        url.includes("/auth/login") ||
+        url.includes("/auth/register") ||
+        url.includes("/auth/check-phone") ||
+        url.includes("/auth/send-otp") ||
+        url.includes("/auth/verify-otp");
+
+      if (!isAuthCall) {
+        window.dispatchEvent(new Event("sabai-token-expired"));
+      }
+    }
+    return Promise.reject(error);
+  }
+);
+
 // Handle response errors
 api.interceptors.response.use(
   (response) => response,
@@ -148,31 +170,15 @@ export const moneyRequestAPI = {
 
 // ============ AGENT CHAT API ============
 export const agentChatAPI = {
-  /**
-   * Send a message to the AI agent
-   * @param {string} message - The user's message text
-   * @param {string} sessionId - Optional conversation session ID
-   * @param {object} cardData - Optional card data from UI components (e.g., mobile number, amount, etc.)
-   * @returns {Promise} Axios response
-   */
-  sendMessage: (message, sessionId = null, cardData = null) => {
-    const payload = { message, sessionId };
-    if (cardData) {
-      payload.cardData = cardData;
-    }
-    return api.post("/agent/chat", payload);
+  sendMessage: (message, sessionId = null, cardData = null, voice = false) => {
+    return api.post("/agent/chat", { message, sessionId, cardData, voice });
   },
-
   getConversations: () => api.get("/agent/conversations"),
-
-  getMessages: (conversationId) =>
-    api.get(`/agent/conversations/${conversationId}`),
-
-  deleteConversation: (conversationId) =>
-    api.delete(`/agent/conversations/${conversationId}`),
-
+  getMessages: (conversationId) => api.get(`/agent/conversations/${conversationId}`),
+  deleteConversation: (conversationId) => api.delete(`/agent/conversations/${conversationId}`),
   clearChat: () => api.post("/agent/clear"),
 };
+
 
 // ============ AGENT ORDER API ============
 export const agentOrderAPI = {
