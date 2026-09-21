@@ -13,7 +13,8 @@ import {
   FaMobile,
   FaCreditCard,
   FaHistory,
-  FaSignOutAlt
+  FaSignOutAlt,
+  FaFlask
 } from 'react-icons/fa';
 import { useAuth } from '../context/AuthContext';
 import Profile from '../components/settings/Profile';
@@ -22,6 +23,7 @@ import Security from '../components/settings/Security';
 import Notifications from '../components/settings/Notifications';
 import Appearance from '../components/settings/Appearance';
 import HelpSupport from '../components/settings/HelpSupport';
+import PrototypeDocs from '../components/settings/PrototypeDocs';
 import './SettingsPage.css';
 
 const SettingsPage = () => {
@@ -71,6 +73,12 @@ const SettingsPage = () => {
       label: 'Help & Support', 
       icon: FaQuestionCircle,
       component: HelpSupport
+    },
+    { 
+      id: 'prototype', 
+      label: 'About This Prototype', 
+      icon: FaFlask,
+      component: PrototypeDocs
     }
   ];
 
