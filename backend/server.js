@@ -1,15 +1,5 @@
 // backend/server.js
-// Main server file for SabAI Pay - COMPLETE WORKING VERSION with MySQL Database
-
-/**
- * SabAI Pay - AI-Powered UPI Payments Assistant
- * Copyright (c) 2026 G Nihal. All Rights Reserved.
- * 
- * This software is proprietary and confidential.
- * Unauthorized copying, distribution, or use is strictly prohibited.
- * 
- * For licensing inquiries: support@sabai-pay.com
- */
+// Main server file for SabAI Pay
 
 const express = require('express');
 const cors = require('cors');
@@ -41,7 +31,6 @@ const autoPayRoutes = require('./routes/autoPayRoutes');
 const agentRoutes = require('./routes/agentRoutes');
 const agentOrderRoutes = require('./routes/agentOrderRoutes');
 const merchantRoutes = require('./routes/merchantRoutes');
-const mlRoutes = require('./routes/mlRoutes');
 const notificationRoutes = require('./routes/notificationRoutes');
 
 // Import middleware
@@ -77,12 +66,7 @@ app.get('/ws-status', (req, res) => {
 // ============================================
 
 // CORS configuration
-app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
+app.use(cors());
 
 // Handle preflight requests
 app.options('*', cors());
@@ -152,7 +136,6 @@ app.use('/api/agent/order', agentOrderRoutes);
 // Merchant routes
 app.use('/api/merchant', merchantRoutes);
 
-app.use('/api/ml', mlRoutes);
 app.use('/api/notifications', notificationRoutes);
 
 if (process.env.NODE_ENV !== 'production') {
@@ -261,39 +244,22 @@ const startServer = async () => {
     try {
         const availablePort = await tryPort(PORT);
         
-        server.listen(availablePort, async () => {
+        server.listen(availablePort, '0.0.0.0', async () => {
             console.log(`
-╔══════════════════════════════════════════════════════════════╗
-║                                                              ║
-║   ███████╗ █████╗ ██████╗  █████╗ ██╗                      ║
-║   ██╔════╝██╔══██╗██╔══██╗██╔══██╗██║                      ║
-║   ███████╗███████║██████╔╝███████║██║                      ║
-║   ╚════██║██╔══██║██╔══██╗██╔══██║██║                      ║
-║   ███████║██║  ██║██████╔╝██║  ██║██║                      ║
-║   ╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝                      ║
-║                                                              ║
-║              ██████╗  █████╗ ██╗   ██╗                      ║
-║              ██╔══██╗██╔══██╗╚██╗ ██╔╝                      ║
-║              ██████╔╝███████║ ╚████╔╝                       ║
-║              ██╔═══╝ ██╔══██║  ╚██╔╝                        ║
-║              ██║     ██║  ██║   ██║                         ║
-║              ╚═╝     ╚═╝  ╚═╝   ╚═╝                         ║
-║                                                              ║
-╠══════════════════════════════════════════════════════════════╣
-║                                                              ║
-║  📍 Status:    ✅ RUNNING                                    ║
-║  📍 Port:      ${availablePort.toString().padEnd(35)}║
-║  📍 Env:       ${(process.env.NODE_ENV || 'development').padEnd(35)}║
-║  🤖 Gemini:    ${geminiService.isAvailable ? '✅ CONFIGURED' : '❌ NOT CONFIGURED'}          ║
-║  🗄️  Database:  Supabase                                                  ║
-║                                                              ║
-║  📁 Test Endpoints:                                          ║
-║     • http://localhost:${availablePort}/test                  ║
-║     • http://localhost:${availablePort}/test-db               ║
-║     • http://localhost:${availablePort}/test-gemini           ║
-║     • http://localhost:${availablePort}/health                ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
+
+  📍 Status:    ✅ RUNNING                                    
+  📍 Port:      ${availablePort.toString().padEnd(35)}
+  📍 Env:       ${(process.env.NODE_ENV || 'development').padEnd(35)}║
+  🤖 Gemini:    ${geminiService.isAvailable ? '✅ CONFIGURED' : '❌ NOT CONFIGURED'}          
+  🗄️  Database:  Supabase                                                  
+                                                              
+  📁 Test Endpoints:                                          
+     • http://localhost:${availablePort}/test                  
+     • http://localhost:${availablePort}/test-db               
+     • http://localhost:${availablePort}/test-gemini           
+     • http://localhost:${availablePort}/health                
+
+
             `);
             
             // Initialize cron jobs
