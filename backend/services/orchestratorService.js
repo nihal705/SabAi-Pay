@@ -8,6 +8,7 @@ const rechargeAgent = require("../agents/rechargeAgent");
 const billAgent = require("../agents/billAgent");
 const schedulerAgent = require("../agents/schedulerAgent");
 const autoPayAgent = require("../agents/autoPayAgent");
+const agentPaymentController = require("../controllers/agentPaymentController");
 const preferencesAgent = require("../agents/preferencesAgent");
 
 class OrchestratorService {
@@ -15,7 +16,10 @@ class OrchestratorService {
     try {
       // Step 1: If pending intent exists and is complete, force function call
       if (pendingIntent && pendingIntentService.isComplete(userId)) {
-        const result = await geminiService.forceFunctionCall(userId, pendingIntent);
+        const result = await geminiService.forceFunctionCall(
+          userId,
+          pendingIntent,
+        );
         return this.formatResult(result);
       }
 
@@ -27,7 +31,10 @@ class OrchestratorService {
       });
 
       // Step 3: If Gemini returned function results, process them
-      if (geminiResult.functionResults && geminiResult.functionResults.length > 0) {
+      if (
+        geminiResult.functionResults &&
+        geminiResult.functionResults.length > 0
+      ) {
         const funcResult = geminiResult.functionResults[0];
         // If the agent returned an error with a message, pass it as text
         if (funcResult.response && funcResult.response.status === "failed") {
@@ -41,12 +48,18 @@ class OrchestratorService {
           return this.formatResult(funcResult.response);
         }
         // If it's a payment card (status: ready) or a list card, return it
-        if (funcResult.response && (funcResult.response.status === "ready" || funcResult.response.type)) {
+        if (
+          funcResult.response &&
+          (funcResult.response.status === "ready" || funcResult.response.type)
+        ) {
           return this.formatResult(funcResult.response);
         }
         // If we got a function result but it's not a card, treat as text
         if (funcResult.response && funcResult.response.message) {
-          return { response: funcResult.response.message, requiresAction: false };
+          return {
+            response: funcResult.response.message,
+            requiresAction: false,
+          };
         }
         return this.formatResult(geminiResult);
       }
@@ -58,13 +71,15 @@ class OrchestratorService {
 
       // Fallback – ensure we always return something
       return {
-        response: "I'm not sure how to help with that. Could you please rephrase?",
+        response:
+          "I'm not sure how to help with that. Could you please rephrase?",
         requiresAction: false,
       };
     } catch (error) {
       console.error("Orchestrator error:", error);
       return {
-        response: "I'm having trouble processing your request. Please try again.",
+        response:
+          "I'm having trouble processing your request. Please try again.",
         requiresAction: false,
       };
     }
@@ -82,29 +97,66 @@ class OrchestratorService {
             userId,
             args.merchant,
             args.location,
-            args.cuisine
+            args.cuisine,
+            args.max_price,
           );
           return result;
         }
         case "get_menu": {
-          const result = await orderAgent.getMenu(userId, args.merchant, args.restaurantId);
+          const result = await orderAgent.getMenu(
+            userId,
+            args.merchant,
+            args.restaurantId,
+          );
           return result;
         }
         case "add_to_cart": {
-          const result = await orderAgent.addToCart(userId, args.sessionId, args.items);
+          const result = await orderAgent.addToCart(
+            userId,
+            args.sessionId,
+            args.items,
+          );
           return result;
         }
         case "checkout": {
-          const result = await orderAgent.checkout(userId, args.sessionId, args.paymentMethod);
+          const result = await orderAgent.checkout(
+            userId,
+            args.sessionId,
+            args.paymentMethod,
+          );
           return result;
         }
 
         // Send Money Agent
         case "send_money": {
-          return await sendMoneyAgent.sendMoney(userId, args.recipient, args.amount, args.note);
+          return await sendMoneyAgent.sendMoney(
+            userId,
+            args.recipient,
+            args.amount,
+            args.note,
+          );
         }
+
+        // Bank transfer
+        case "send_to_bank_account": {
+          const result = await agentPaymentController.sendToBankAccount(
+            userId,
+            args.accountNumber,
+            args.ifsc,
+            args.amount,
+            args.recipientName,
+            args.note,
+          );
+          return result;
+        }
+
         case "request_money": {
-          return await sendMoneyAgent.requestMoney(userId, args.recipient, args.amount, args.note);
+          return await sendMoneyAgent.requestMoney(
+            userId,
+            args.recipient,
+            args.amount,
+            args.note,
+          );
         }
         case "resolve_recipient": {
           return await sendMoneyAgent.resolveRecipient(userId, args.text);
@@ -117,7 +169,7 @@ class OrchestratorService {
             args.mobileNumber,
             args.amount,
             args.plan,
-            args.operator
+            args.operator,
           );
         }
         case "detect_operator": {
@@ -134,14 +186,17 @@ class OrchestratorService {
             args.billType,
             args.provider,
             args.customerId,
-            args.amount
+            args.amount,
           );
         }
         case "list_billers": {
           return await billAgent.listBillers(args.category);
         }
         case "fetch_bill_amount": {
-          return await billAgent.fetchBillAmount(args.billerId, args.customerId);
+          return await billAgent.fetchBillAmount(
+            args.billerId,
+            args.customerId,
+          );
         }
 
         // Scheduler Agent
@@ -150,7 +205,7 @@ class OrchestratorService {
             userId,
             args.action,
             args.datetime,
-            args.paymentMethod
+            args.paymentMethod,
           );
         }
 
@@ -160,7 +215,7 @@ class OrchestratorService {
             userId,
             args.action,
             args.schedule,
-            args.paymentMethod
+            args.paymentMethod,
           );
         }
         case "cancel_autopay": {
@@ -174,7 +229,7 @@ class OrchestratorService {
             args.mealSlot,
             args.merchant,
             args.paymentMethod,
-            args.sessionId || null
+            args.sessionId || null,
           );
           return result;
         }
@@ -183,13 +238,16 @@ class OrchestratorService {
             userId,
             args.mealSlot,
             args.items,
-            args.merchant || null
+            args.merchant || null,
           );
           return result;
-        } 
+        }
 
         default:
-          return { error: `Unknown function: ${functionName}`, status: "failed" };
+          return {
+            error: `Unknown function: ${functionName}`,
+            status: "failed",
+          };
       }
     } catch (error) {
       console.error(`Function ${functionName} error:`, error);
@@ -202,9 +260,10 @@ class OrchestratorService {
   // ============================================
   formatResult(result) {
     // Ensure we always return an object
-    if (!result || typeof result !== 'object') {
+    if (!result || typeof result !== "object") {
       return {
-        response: "I've processed your request but couldn't find a proper response.",
+        response:
+          "I've processed your request but couldn't find a proper response.",
         requiresAction: false,
       };
     }
@@ -217,7 +276,13 @@ class OrchestratorService {
     // If result has a 'response' field, we're good.
     // If it has a type that's a card or summary, set requiresAction
     let requiresAction = false;
-    if (result.type && (result.type.includes("_card") || result.type === "order_summary" || result.type === "restaurants_list" || result.type === "products_grid")) {
+    if (
+      result.type &&
+      (result.type.includes("_card") ||
+        result.type === "order_summary" ||
+        result.type === "restaurants_list" ||
+        result.type === "products_grid")
+    ) {
       requiresAction = true;
     }
     if (result.status === "ready") {
@@ -236,7 +301,8 @@ class OrchestratorService {
       } else if (result.type === "order_summary") {
         result.response = `Your order total is ₹${result.total || 0}. Please confirm your payment method.`;
       } else {
-        result.response = "I've prepared the details for you. Please review and confirm.";
+        result.response =
+          "I've prepared the details for you. Please review and confirm.";
       }
     }
 
