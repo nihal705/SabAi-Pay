@@ -51,7 +51,8 @@ class GeminiChatService {
   async processMessage(userId, message, context = {}) {
     try {
       const sessionKey = `func_${userId}`;
-      let pendingIntent = context.pendingIntent || pendingIntentService.get(userId);
+      let pendingIntent =
+        context.pendingIntent || pendingIntentService.get(userId);
       const cardData = context.cardData || {};
 
       // Extract slots from message if we have a pending intent
@@ -79,7 +80,11 @@ class GeminiChatService {
       }
 
       // Build system instruction
-      const systemInstruction = this.buildSystemInstruction(userId, pendingIntent, context);
+      const systemInstruction = this.buildSystemInstruction(
+        userId,
+        pendingIntent,
+        context,
+      );
 
       // Get or create chat session
       let chat;
@@ -89,7 +94,11 @@ class GeminiChatService {
             { role: "user", parts: [{ text: systemInstruction }] },
             {
               role: "model",
-              parts: [{ text: "I understand. I'm SabAI, your AI payment assistant. I have access to all SabAI Pay tools. How can I help you today?" }],
+              parts: [
+                {
+                  text: "I understand. I'm SabAI, your AI payment assistant. I have access to all SabAI Pay tools. How can I help you today?",
+                },
+              ],
             },
           ],
         });
@@ -112,7 +121,9 @@ class GeminiChatService {
         userMessage = `[Card Data: ${JSON.stringify(cardData)}] ${userMessage}`;
       }
 
-      console.log(`📤 Sending to Gemini: "${userMessage.substring(0, 100)}..."`);
+      console.log(
+        `📤 Sending to Gemini: "${userMessage.substring(0, 100)}..."`,
+      );
 
       const result = await chat.sendMessage(userMessage);
       const response = await result.response;
@@ -120,14 +131,19 @@ class GeminiChatService {
       // Extract function calls correctly
       let functionCalls = [];
       if (response.candidates && response.candidates.length > 0) {
-          const candidate = response.candidates[0];
-          if (candidate && candidate.content && candidate.content.parts && Array.isArray(candidate.content.parts)) {
-              for (const part of candidate.content.parts) {
-                  if (part.functionCall) {
-                      functionCalls.push(part.functionCall);
-                  }
-              }
+        const candidate = response.candidates[0];
+        if (
+          candidate &&
+          candidate.content &&
+          candidate.content.parts &&
+          Array.isArray(candidate.content.parts)
+        ) {
+          for (const part of candidate.content.parts) {
+            if (part.functionCall) {
+              functionCalls.push(part.functionCall);
+            }
           }
+        }
       }
 
       let requiresAction = false;
@@ -137,10 +153,17 @@ class GeminiChatService {
       if (functionCalls.length > 0) {
         console.log(`🔧 Gemini called ${functionCalls.length} function(s)`);
         for (const call of functionCalls) {
-          const funcResult = await this.handleFunctionCall(userId, call, context);
+          const funcResult = await this.handleFunctionCall(
+            userId,
+            call,
+            context,
+          );
           functionResults.push(funcResult);
           // If result is a payment card, set requiresAction and clear pending intent
-          if (funcResult.response?.type?.includes("_card") || funcResult.response?.status === "ready") {
+          if (
+            funcResult.response?.type?.includes("_card") ||
+            funcResult.response?.status === "ready"
+          ) {
             requiresAction = true;
             pendingIntentService.clear(userId);
             updatedPendingIntent = null;
@@ -150,7 +173,7 @@ class GeminiChatService {
         return {
           success: true,
           response: functionResults[0]?.response?.message || "Processing...",
-          functionCalls: functionCalls.map(c => c.name),
+          functionCalls: functionCalls.map((c) => c.name),
           functionResults,
           requiresAction,
           pendingIntent: updatedPendingIntent,
@@ -158,10 +181,16 @@ class GeminiChatService {
       }
 
       // No function calls – get text response
-      const responseText = response.text ? response.text() : "Processing your request...";
+      const responseText = response.text
+        ? response.text()
+        : "Processing your request...";
 
       // Update pending intent if needed
-      const updatedIntent = this.extractPendingIntentFromResponse(responseText, userId, pendingIntent);
+      const updatedIntent = this.extractPendingIntentFromResponse(
+        responseText,
+        userId,
+        pendingIntent,
+      );
       if (updatedIntent) {
         pendingIntentService.set(userId, updatedIntent);
         updatedPendingIntent = updatedIntent;
@@ -175,9 +204,33 @@ class GeminiChatService {
       };
     } catch (error) {
       console.error("❌ Gemini error:", error.message);
+
+      // Rate-limit detection (429 from Google)
+      const isRateLimit =
+        error.message?.includes("429") ||
+        error.message?.toLowerCase().includes("quota") ||
+        error.message?.toLowerCase().includes("rate limit") ||
+        error?.status === 429;
+
+      if (isRateLimit) {
+        return {
+          success: true,
+          response:
+            "⏳ **SabAI is temporarily at capacity.**\n\n" +
+            "The AI service has hit its free-tier usage limit. " +
+            "Please wait 15–60 minutes and try again.\n\n" +
+            "**Meanwhile, you can still use:**\n" +
+            "• Send Money\n• Pay Bills\n• Mobile Recharge\n• Reserve Pay limits\n• Check Gems & Transactions\n\n" +
+            "Sorry for the inconvenience — this is a known limitation of the free-tier Gemini API.",
+          requiresAction: false,
+          pendingIntent: pendingIntentService.get(userId),
+        };
+      }
+
       return {
         success: true,
-        response: "I'm having trouble connecting right now. Please try again or rephrase your request.",
+        response:
+          "I'm having trouble connecting right now. Please try again or rephrase your request.",
         requiresAction: false,
         pendingIntent: pendingIntentService.get(userId),
       };
@@ -188,7 +241,9 @@ class GeminiChatService {
 
   buildOfflineResponse(pendingIntent) {
     if (pendingIntent?.flow) {
-      const missing = pendingIntentService.getMissingSlots(pendingIntent.userId);
+      const missing = pendingIntentService.getMissingSlots(
+        pendingIntent.userId,
+      );
       if (missing.length) {
         const prompts = {
           mobileNumber: "What 10-digit mobile number should I recharge?",
@@ -209,26 +264,45 @@ class GeminiChatService {
     const slots = {};
     const text = message.trim();
     const numberMatch = text.match(/\b[6-9]\d{9}\b/);
-    const amountMatch = text.match(/(?:₹|rs\.?|inr|rupees?)\s*([0-9,]+)|\b([0-9]{2,6})\b/i);
-    const amount = amountMatch && Number((amountMatch[1] || amountMatch[2]).replace(/,/g, ""));
+    const amountMatch = text.match(
+      /(?:₹|rs\.?|inr|rupees?)\s*([0-9,]+)|\b([0-9]{2,6})\b/i,
+    );
+    const amount =
+      amountMatch &&
+      Number((amountMatch[1] || amountMatch[2]).replace(/,/g, ""));
 
     if (flow === "recharge") {
       if (numberMatch) slots.mobileNumber = numberMatch[0];
       const operatorMatch = text.match(/\b(airtel|jio|vi|vodafone|bsnl)\b/i);
-      if (operatorMatch) slots.operator = operatorMatch[1].toLowerCase() === "vodafone" ? "vi" : operatorMatch[1].toLowerCase();
+      if (operatorMatch)
+        slots.operator =
+          operatorMatch[1].toLowerCase() === "vodafone"
+            ? "vi"
+            : operatorMatch[1].toLowerCase();
       if (amount && amount >= 10) slots.amount = amount;
     } else if (flow === "send_money") {
       if (amount && amount >= 1) slots.amount = amount;
-      const recipientMatch = text.match(/\b(?:to|for)\s+([a-z][a-z .'-]{1,40})/i);
-      if (recipientMatch) slots.recipient = recipientMatch[1].trim().replace(/[.,!?]+$/, "");
+      const recipientMatch = text.match(
+        /\b(?:to|for)\s+([a-z][a-z .'-]{1,40})/i,
+      );
+      if (recipientMatch)
+        slots.recipient = recipientMatch[1].trim().replace(/[.,!?]+$/, "");
     } else if (flow === "pay_bill") {
-      const billType = text.match(/\b(electricity|mobile|broadband|gas|credit\s*card|water)\b/i);
-      if (billType) slots.billType = billType[1].toLowerCase().replace(/\s+/g, "_");
+      const billType = text.match(
+        /\b(electricity|mobile|broadband|gas|credit\s*card|water)\b/i,
+      );
+      if (billType)
+        slots.billType = billType[1].toLowerCase().replace(/\s+/g, "_");
       if (amount && amount >= 10) slots.amount = amount;
-      const customerMatch = text.match(/\b(?:customer\s*id|account\s*(?:no|number)?|consumer\s*no)\s*[:#-]?\s*([a-z0-9-]{4,})\b/i);
+      const customerMatch = text.match(
+        /\b(?:customer\s*id|account\s*(?:no|number)?|consumer\s*no)\s*[:#-]?\s*([a-z0-9-]{4,})\b/i,
+      );
       if (customerMatch) slots.customerId = customerMatch[1];
-      const providerMatch = text.match(/\b(?:provider|with|to)\s+([a-z][a-z .'-]{2,30})/i);
-      if (providerMatch) slots.provider = providerMatch[1].trim().replace(/[.,!?]+$/, "");
+      const providerMatch = text.match(
+        /\b(?:provider|with|to)\s+([a-z][a-z .'-]{2,30})/i,
+      );
+      if (providerMatch)
+        slots.provider = providerMatch[1].trim().replace(/[.,!?]+$/, "");
     }
     return slots;
   }
@@ -247,7 +321,7 @@ class GeminiChatService {
           slots.mobileNumber,
           slots.amount,
           slots.plan || null,
-          slots.operator || null
+          slots.operator || null,
         );
         result = this.formatPaymentResult(result, "recharge_mobile");
       } else if (flow === "send_money") {
@@ -255,7 +329,7 @@ class GeminiChatService {
           userId,
           slots.recipient,
           slots.amount,
-          slots.note || null
+          slots.note || null,
         );
         result = this.formatPaymentResult(result, "send_money");
       } else if (flow === "pay_bill") {
@@ -264,7 +338,7 @@ class GeminiChatService {
           slots.billType,
           slots.provider,
           slots.customerId,
-          slots.amount
+          slots.amount,
         );
         result = this.formatPaymentResult(result, "pay_bill");
       } else {
@@ -280,13 +354,14 @@ class GeminiChatService {
 
   formatPaymentResult(result, type) {
     if (result && result.status === "ready") {
-      const cardType = {
-        send_money: "send_money_card",
-        request_money: "send_money_card",
-        pay_bill: "bill_pay_card",
-        recharge_mobile: "recharge_card",
-        multi_payment: "multi_payment_card",
-      }[type] || "payment_card";
+      const cardType =
+        {
+          send_money: "send_money_card",
+          request_money: "send_money_card",
+          pay_bill: "bill_pay_card",
+          recharge_mobile: "recharge_card",
+          multi_payment: "multi_payment_card",
+        }[type] || "payment_card";
       return {
         type: cardType,
         status: "ready",
@@ -307,7 +382,11 @@ class GeminiChatService {
     try {
       let result = null;
       const orchestrator = require("./orchestratorService");
-      result = await orchestrator.handleFunctionCall(userId, functionName, args);
+      result = await orchestrator.handleFunctionCall(
+        userId,
+        functionName,
+        args,
+      );
       return { name: functionName, response: result };
     } catch (error) {
       console.error(`Function ${functionName} error:`, error);
@@ -322,7 +401,7 @@ CURRENT PENDING INTENT:
 - Flow: ${pendingIntent.flow || "none"}
 - Slots filled: ${JSON.stringify(pendingIntent.slots || {})}
 - Required slots: ${JSON.stringify(pendingIntent.requiredSlots || [])}
-- Missing slots: ${JSON.stringify((pendingIntent.requiredSlots || []).filter(s => !pendingIntent.slots?.[s]))}
+- Missing slots: ${JSON.stringify((pendingIntent.requiredSlots || []).filter((s) => !pendingIntent.slots?.[s]))}
 `
       : "No pending intent.";
 
@@ -357,6 +436,15 @@ IMPORTANT RULES:
 3. If the user says "yes" or "confirm" and all slots are filled, call the function.
 4. Do NOT ask for information that has already been provided.
 
+TOOL SELECTION HINTS:
+- If the user mentions "schedule", "later", "tomorrow", "at [time]", "on [date]",
+  "recurring", or "auto-pay" → call schedule_payment or setup_autopay.
+- If the user says "under ₹X" or "below ₹X" or "max ₹X" while ordering →
+  pass max_price: X to search_restaurants. Do NOT ignore the budget.
+- If the user says "bank account", "account number", "IFSC", or gives a raw
+  number that looks like an account number → call send_to_bank_account.
+- If the user says "send money" without a bank account → call send_money.
+
 User ID: ${userId}
 
 Be conversational but efficient. Call functions when ready.`;
@@ -369,25 +457,58 @@ Be conversational but efficient. Call functions when ready.`;
     const lowerText = responseText.toLowerCase();
 
     // Check if user is confirming
-    const confirmWords = ["yes", "ok", "okay", "sure", "go ahead", "proceed", "confirm", "correct"];
-    if (confirmWords.some(w => lowerText.includes(w)) && currentPendingIntent) {
+    const confirmWords = [
+      "yes",
+      "ok",
+      "okay",
+      "sure",
+      "go ahead",
+      "proceed",
+      "confirm",
+      "correct",
+    ];
+    if (
+      confirmWords.some((w) => lowerText.includes(w)) &&
+      currentPendingIntent
+    ) {
       return currentPendingIntent;
     }
 
     // Check if user is canceling
-    const cancelWords = ["no", "cancel", "stop", "abort", "nevermind", "forget it"];
-    if (cancelWords.some(w => lowerText.includes(w))) {
+    const cancelWords = [
+      "no",
+      "cancel",
+      "stop",
+      "abort",
+      "nevermind",
+      "forget it",
+    ];
+    if (cancelWords.some((w) => lowerText.includes(w))) {
       return null;
     }
 
     const flowPatterns = {
-      recharge: ["mobile number", "recharge", "number", "operator", "plan", "amount"],
+      recharge: [
+        "mobile number",
+        "recharge",
+        "number",
+        "operator",
+        "plan",
+        "amount",
+      ],
       send_money: ["send money", "recipient", "who", "amount", "upi", "phone"],
-      pay_bill: ["bill", "electricity", "water", "gas", "broadband", "provider"],
+      pay_bill: [
+        "bill",
+        "electricity",
+        "water",
+        "gas",
+        "broadband",
+        "provider",
+      ],
     };
 
     for (const [flow, keywords] of Object.entries(flowPatterns)) {
-      if (keywords.some(k => lowerText.includes(k))) {
+      if (keywords.some((k) => lowerText.includes(k))) {
         if (currentPendingIntent && currentPendingIntent.flow === flow) {
           return currentPendingIntent;
         }
