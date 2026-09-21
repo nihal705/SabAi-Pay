@@ -1,0 +1,63 @@
+/* frontend/src/components/common/PrototypeBanner.css */
+
+.prototype-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #fef3c7 0%, #fde68a 100%);
+  color: #78350f;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #fcd34d;
+  position: relative;
+  z-index: 50;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.prototype-banner .pb-emoji {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.prototype-banner .pb-text {
+  flex: 1;
+  max-width: 900px;
+}
+
+.prototype-banner .pb-tag {
+  display: inline-block;
+  background: #92400e;
+  color: #fef3c7;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-right: 6px;
+}
+
+.dark .prototype-banner {
+  background: linear-gradient(90deg, #422006 0%, #78350f 100%);
+  color: #fde68a;
+  border-bottom-color: #92400e;
+}
+
+.dark .prototype-banner .pb-tag {
+  background: #fde68a;
+  color: #78350f;
+}
+
+@media (max-width: 640px) {
+  .prototype-banner {
+    font-size: 0.72rem;
+    padding: 6px 10px;
+    gap: 6px;
+  }
+  .prototype-banner .pb-tag {
+    font-size: 0.6rem;
+    padding: 1px 6px;
+  }
+}
