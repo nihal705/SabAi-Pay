@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { FaPlus, FaMinus, FaTrash, FaCheckCircle, FaShoppingCart, FaRupeeSign, FaClock, FaStar, FaCreditCard, FaCalendarAlt } from 'react-icons/fa';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import CustomPaymentModal from './CustomPaymentModal'; // assuming it's in the same folder
+import CustomPaymentModal from './CustomPaymentModal'; 
 
 const RestaurantOrderComponent = ({ 
     restaurant, 
@@ -16,7 +16,7 @@ const RestaurantOrderComponent = ({
     onClose,
     onProceedToPayment,
     handlePaymentFailure,
-    onScheduleSuccess,   // <-- renamed from onScheduleOrder
+    onScheduleSuccess,  
     initialCart = [],
     reserveCheck = null
 }) => {
