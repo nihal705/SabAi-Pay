@@ -18,6 +18,7 @@ import EnhancedOrderSummary from "../components/EnhancedOrderSummary";
 import SituationSuggestionsCard from "../components/SituationSuggestionsCard";
 import RestaurantOrderComponent from "../components/RestaurantOrderComponent";
 import RestaurantMenuGrid from "../components/RestaurantMenuGrid";
+import PrototypeBanner from "../components/common/PrototypeBanner";
 
 // ============================================
 // NEW IMPORTS
@@ -34,9 +35,6 @@ import MultiPaymentChatCard from "../components/chat/MultiPaymentChatCard";
 
 // ============================================
 
-import merchantConnectionService, {
-  availableMerchants,
-} from "../services/merchantConnectionService";
 import { agentChatAPI, agentOrderAPI } from "../services/apiService";
 import storageService, {
   getCurrentUserId,
@@ -77,9 +75,6 @@ import {
   FaCheck,
   FaTruck,
   FaArrowRight,
-  FaStore,
-  FaShoppingCart,
-  FaCheckDouble,
   FaTimes,
   FaPlay,
   FaPause,
@@ -1902,288 +1897,6 @@ const AutoPaySetupModal = ({ orderData, onConfirm, onCancel }) => {
 };
 
 // ============================================
-// ENHANCED ORDER SUMMARY CARD (Existing)
-// ============================================
-const OrderSummaryCard = ({
-  orderData,
-  onUPIPayment,
-  onReservePay,
-  onAddItems,
-  onClearCart,
-  isAlreadyConfirmed,
-}) => {
-  const [imageErrors, setImageErrors] = useState({});
-
-  if (isAlreadyConfirmed) {
-    return null;
-  }
-
-  const getMerchantLogo = () => {
-    const merchantName = orderData.merchant?.toLowerCase();
-    const logoMap = {
-      swiggy: "/images/merchants/swiggy.png",
-      zomato: "/images/merchants/zomato.png",
-      zepto: "/images/merchants/zepto.png",
-      blinkit: "/images/merchants/blinkit.png",
-      amazon: "/images/merchants/amazon.png",
-      flipkart: "/images/merchants/flipkart.png",
-      myntra: "/images/merchants/myntra.png",
-      ajio: "/images/merchants/ajio.png",
-      netmeds: "/images/merchants/netmeds.png",
-      pharmeasy: "/images/merchants/pharmeasy.png",
-    };
-    return logoMap[merchantName] || orderData.merchantLogo;
-  };
-
-  const merchantLogo = getMerchantLogo();
-  const isReservePayAvailable = orderData.reserveCheck?.eligible || false;
-  const merchantName = orderData.merchantName || orderData.merchant;
-
-  return (
-    <div className="order-summary-card-enhanced">
-      <div className="order-header-enhanced">
-        {merchantLogo && !imageErrors.merchant && (
-          <div className="merchant-logo-container">
-            <img
-              src={merchantLogo}
-              alt={merchantName}
-              className="merchant-logo-enhanced"
-              onError={(e) => {
-                e.target.style.display = "none";
-                setImageErrors((prev) => ({ ...prev, merchant: true }));
-              }}
-            />
-          </div>
-        )}
-        <h3>Order Summary from {merchantName}</h3>
-      </div>
-
-      <div className="order-items-grid">
-        {orderData.items &&
-          orderData.items.map((item, idx) => (
-            <div key={item.id || idx} className="item-circle-card">
-              <div className="item-image-circle">
-                <img
-                  src={item.image || "/images/items/default.png"}
-                  alt={item.name}
-                  className="item-circle-image"
-                  onError={(e) => {
-                    e.target.src = "/images/items/default.png";
-                  }}
-                />
-              </div>
-              <div className="item-circle-name">{item.name}</div>
-              <div className="item-circle-price">₹{item.price}</div>
-              <div className="item-circle-quantity">{item.quantity}x</div>
-            </div>
-          ))}
-      </div>
-
-      {orderData.unavailableItems && orderData.unavailableItems.length > 0 && (
-        <div className="unavailable-items">
-          <h4>❌ Not Available:</h4>
-          {orderData.unavailableItems.map((item, idx) => (
-            <div key={idx} className="unavailable-item">
-              <span>
-                {item.quantity}x {item.name}
-              </span>
-              {item.suggestions && item.suggestions.length > 0 && (
-                <div className="suggestions">
-                  Try: {item.suggestions.map((s) => s.name).join(", ")}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      )}
-
-      <div className="order-totals-enhanced">
-        <div className="totals-row">
-          <span>Subtotal:</span>
-          <span>₹{orderData.subtotal}</span>
-        </div>
-        <div className="totals-row">
-          <span>Tax (5%):</span>
-          <span>₹{orderData.tax}</span>
-        </div>
-        <div className="totals-row total">
-          <span>Total:</span>
-          <span>₹{orderData.total}</span>
-        </div>
-        <div className="totals-row gems">
-          <span>SabAI Gems Earned:</span>
-          <span>+{orderData.sabaiGems} 🪙</span>
-        </div>
-      </div>
-
-      {orderData.reserveCheck && (
-        <div className="reserve-info-enhanced">
-          <h4>Reserve Pay Status</h4>
-          <div className="reserve-details">
-            <div className="detail-row">
-              <span>Monthly Limit:</span>
-              <span>
-                ₹{orderData.reserveCheck.limit?.toLocaleString() || 0}
-              </span>
-            </div>
-            <div className="detail-row">
-              <span>Already Spent:</span>
-              <span>
-                ₹{orderData.reserveCheck.spent?.toLocaleString() || 0}
-              </span>
-            </div>
-            <div className="detail-row">
-              <span>Remaining:</span>
-              <span>
-                ₹{orderData.reserveCheck.remaining?.toLocaleString() || 0}
-              </span>
-            </div>
-            <div className="detail-row">
-              <span>This Payment:</span>
-              <span>₹{orderData.total.toLocaleString()}</span>
-            </div>
-            {orderData.reserveCheck.eligible ? (
-              <div className="eligible">
-                ✅ Within Reserve Pay Limit! Click "Pay with Reserve Pay" to
-                complete payment instantly.
-              </div>
-            ) : (
-              <div className="not-eligible">
-                ❌{" "}
-                {orderData.reserveCheck.message ||
-                  "Insufficient Reserve Pay limit"}
-              </div>
-            )}
-          </div>
-        </div>
-      )}
-
-      <div className="payment-options-enhanced">
-        <button
-          className="pay-upi-btn-enhanced"
-          onClick={() => onUPIPayment(orderData)}
-        >
-          💳 Pay with UPI
-        </button>
-        {isReservePayAvailable && (
-          <button
-            className="pay-reserve-btn-enhanced"
-            onClick={() => onReservePay(orderData)}
-          >
-            💰 Pay with Reserve Pay
-          </button>
-        )}
-      </div>
-
-      <div className="order-actions-enhanced">
-        <button className="add-items-btn" onClick={() => onAddItems()}>
-          ➕ Add Items
-        </button>
-        <button className="clear-cart-btn" onClick={() => onClearCart()}>
-          🗑️ Clear Cart
-        </button>
-      </div>
-    </div>
-  );
-};
-
-// ============================================
-// ITEM SELECTION GRID (Existing)
-// ============================================
-const ItemSelectionGrid = ({ gridData, onContinue, onCancel }) => {
-  const [selectedItems, setSelectedItems] = useState({});
-
-  const toggleItem = (itemId) => {
-    setSelectedItems((prev) => ({ ...prev, [itemId]: !prev[itemId] }));
-  };
-
-  const getSelectedCount = () =>
-    Object.values(selectedItems).filter((v) => v).length;
-
-  const handleContinue = () => {
-    const selectedItemIds = Object.keys(selectedItems).filter(
-      (id) => selectedItems[id],
-    );
-    const selectedItemsData = gridData.items.filter((item) =>
-      selectedItemIds.includes(item.id),
-    );
-    onContinue(selectedItemsData);
-  };
-
-  return (
-    <div className="item-selection-grid-enhanced">
-      <div className="grid-header">
-        <h3>{gridData.title || "Select Items"}</h3>
-        <p className="grid-subtitle">Click on items to select/deselect</p>
-      </div>
-      <div className="items-grid-enhanced">
-        {gridData.items.map((item) => (
-          <div
-            key={item.id}
-            className={`grid-item-card ${selectedItems[item.id] ? "selected" : ""}`}
-            onClick={() => toggleItem(item.id)}
-          >
-            <div className="grid-item-image">
-              <img
-                src={item.image || "/images/items/default.jpg"}
-                alt={item.name}
-                onError={(e) => {
-                  e.target.src = "/images/items/default.jpg";
-                }}
-              />
-              {selectedItems[item.id] && (
-                <div className="selected-overlay">
-                  <FaCheckCircle className="selected-icon" />
-                </div>
-              )}
-            </div>
-            <div className="grid-item-info">
-              <h4>{item.name}</h4>
-              <div className="grid-item-price">₹{item.price}</div>
-              <div className="grid-item-unit">{item.unit}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="grid-actions">
-        <button
-          className="continue-selection-btn"
-          onClick={handleContinue}
-          disabled={getSelectedCount() === 0}
-        >
-          Continue with {getSelectedCount()} item(s)
-        </button>
-        <button className="cancel-selection-btn" onClick={onCancel}>
-          Cancel
-        </button>
-      </div>
-    </div>
-  );
-};
-
-// ============================================
-// AUTO-PAY CONFIRMATION (Existing)
-// ============================================
-const AutoPayConfirmation = ({ confirmationData, onNavigate }) => {
-  return (
-    <div className="auto-pay-confirmation">
-      <div className="confirmation-icon">🎉</div>
-      <h3>{confirmationData.title}</h3>
-      <p>{confirmationData.message}</p>
-      <div className="auto-pay-details-summary">
-        <div>Items: {confirmationData.items.length} item(s)</div>
-        <div>Total: ₹{confirmationData.total}</div>
-        <div>Schedule: {confirmationData.schedule}</div>
-        <div>Next Payment: {confirmationData.nextPayment}</div>
-      </div>
-      <button className="view-auto-pay-btn" onClick={onNavigate}>
-        View in Auto Pay Section
-      </button>
-    </div>
-  );
-};
-
-// ============================================
 // MAIN COMPONENT: AgentChatPage
 // ============================================
 const AgentChatPage = () => {
@@ -2281,11 +1994,6 @@ const AgentChatPage = () => {
     const userId = getUserId();
     const savedLocations = localStorage.getItem(`merchant_locations_${userId}`);
     if (savedLocations) setUserLocation(JSON.parse(savedLocations));
-  };
-
-  const getUserLocationForMerchant = (merchant) => {
-    if (userLocation && userLocation[merchant]) return userLocation[merchant];
-    return null;
   };
 
   // Load Reserve Pay limits
@@ -2459,100 +2167,6 @@ const AgentChatPage = () => {
     setMessages(newMessages);
   };
 
-  const detectAutoPayIntent = (message) => {
-    const msg = message.toLowerCase();
-    const autoPayKeywords = [
-      "auto order",
-      "auto-order",
-      "auto pay",
-      "autopay",
-      "recurring",
-      "every month",
-      "monthly",
-      "set up auto",
-      "schedule",
-      "repeat",
-      "auto every",
-      "automatically every",
-      "on every",
-    ];
-    return autoPayKeywords.some((keyword) => msg.includes(keyword));
-  };
-
-  // ============================================
-  // HANDLE ADD ITEMS FROM GRID
-  // ============================================
-  const handleAddSelectedItemsToCart = async (selectedItems, menuData) => {
-    setLoading(true);
-    try {
-      const token = localStorage.getItem("token");
-      const response = await axios.post(
-        "http://localhost:5000/api/agent/order/select-items",
-        {
-          sessionId: menuData.sessionId,
-          selectedItems: selectedItems.map((item) => ({
-            id: item.id,
-            name: item.name,
-            quantity: 1,
-            price: item.price,
-          })),
-        },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
-      );
-      if (response.data.success) {
-        const data = response.data.data;
-        const aiMessageObj = {
-          id: Date.now(),
-          role: "agent",
-          content: data.response,
-          timestamp: new Date().toISOString(),
-          sessionId: data.sessionId,
-          cart: data.cart,
-          total: data.total,
-          requiresAction: data.requiresAction,
-          merchant: data.merchant,
-        };
-        saveMessages([...messages, aiMessageObj]);
-        if (data.cart) {
-          setCart(data.cart);
-          setCartTotal(data.total);
-        }
-        if (data.sessionId) {
-          setSessionId(data.sessionId);
-          setPendingAction(data.requiresAction);
-        }
-        toast.success(`Added ${selectedItems.length} items to cart!`);
-      }
-    } catch (error) {
-      console.error("Failed to add items to cart:", error);
-      toast.error("Failed to add items to cart");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleAddItems = () => {
-    setInput("Add items");
-    setTimeout(() => handleSendMessage(), 100);
-  };
-
-  const handleClearCart = () => {
-    setInput("Clear cart");
-    setTimeout(() => handleSendMessage(), 100);
-  };
-
-  // Handle UPI Payment - Open Custom Payment Modal
-  const handleUPIPayment = (orderData) => {
-    setPendingOrderForPayment(orderData);
-    setShowPaymentModal(true);
-  };
-
-  // Handle Reserve Payment - Also Open Custom Payment Modal
-  const handleReservePayment = (orderData) => {
-    setPendingOrderForPayment(orderData);
-    setShowPaymentModal(true);
-  };
-
   const handleViewTransaction = () => {
     setShowSuccessAnimation(false);
     navigate("/transactions");
@@ -2564,94 +2178,6 @@ const AgentChatPage = () => {
     setCartTotal(0);
     setSessionId(null);
     setPendingAction(null);
-  };
-
-  // ============================================
-  // HANDLE RESERVE PAY PAYMENT - DIRECT
-  // ============================================
-  const handleReservePayPayment = async (orderData) => {
-    setLoading(true);
-
-    try {
-      const token = localStorage.getItem("token");
-      const response = await axios.post(
-        "http://localhost:5000/api/agent/order/process-reserve",
-        { sessionId: orderData.sessionId },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
-      );
-
-      if (response.data && response.data.success) {
-        const result = response.data.data;
-
-        const updatedMessages = [...messages];
-        let orderSummaryIndex = -1;
-        for (let i = updatedMessages.length - 1; i >= 0; i--) {
-          const msg = updatedMessages[i];
-          if (
-            msg.role === "agent" &&
-            msg.content &&
-            typeof msg.content === "object" &&
-            msg.content.type === "order_summary"
-          ) {
-            orderSummaryIndex = i;
-            break;
-          }
-        }
-
-        if (orderSummaryIndex !== -1) {
-          updatedMessages[orderSummaryIndex] = {
-            id: Date.now(),
-            role: "agent",
-            content: result.response,
-            timestamp: new Date().toISOString(),
-          };
-        } else {
-          const successMessageObj = {
-            id: Date.now(),
-            role: "agent",
-            content: result.response,
-            timestamp: new Date().toISOString(),
-          };
-          updatedMessages.push(successMessageObj);
-        }
-
-        saveMessages(updatedMessages);
-
-        setTransactionResult({
-          amount: orderData.total,
-          merchant: orderData.merchant || orderData.merchantName,
-          cashback: result.order?.sabaiGems || 0,
-          payment_method_display: "Reserve Pay",
-          transactionId: result.orderId,
-        });
-        setShowSuccessAnimation(true);
-
-        refreshOrders();
-        setCart([]);
-        setCartTotal(0);
-        setSessionId(null);
-        setPendingAction(null);
-
-        toast.success(`Payment successful via Reserve Pay!`);
-      } else {
-        throw new Error(response.data?.message || "Reserve Pay failed");
-      }
-    } catch (error) {
-      console.error("Reserve Pay payment failed:", error);
-      const failedData = {
-        amount: orderData.total,
-        merchant: orderData.merchant || orderData.merchantName || "Unknown",
-        failure_reason:
-          error.response?.data?.message ||
-          error.message ||
-          "Reserve Pay failed. Please try UPI payment.",
-        payment_method_display: `Reserve Pay`,
-      };
-      setFailedTransactionResult(failedData);
-      setShowFailedAnimation(true);
-    } finally {
-      setLoading(false);
-    }
   };
 
   // Handle Payment Success
@@ -2933,159 +2459,6 @@ const AgentChatPage = () => {
     }
   };
 
-  const checkMerchantConnection = async (merchant) => {
-    try {
-      const merchantId = String(merchant).trim().toLowerCase();
-      const locallyLoaded = connectedMerchants.some(
-        (connection) =>
-          String(connection.merchant_id || connection.merchantId || "")
-            .trim()
-            .toLowerCase() === merchantId,
-      );
-      if (locallyLoaded) return true;
-      const response = await agentOrderAPI.checkMerchantConnection(merchantId);
-      return Boolean(response.data?.data?.connected);
-    } catch (error) {
-      console.error("Connection check error:", error);
-      return false;
-    }
-  };
-
-  const detectMerchantFromMessage = (message) => {
-    const msg = message.toLowerCase();
-    const merchantMap = {
-      swiggy: [
-        "swiggy",
-        "food delivery",
-        "order food",
-        "food from swiggy",
-        "order from swiggy",
-        "i want to order from swiggy",
-      ],
-      zomato: ["zomato", "order from zomato", "food from zomato"],
-      zepto: ["zepto", "grocery", "groceries", "order from zepto"],
-      blinkit: ["blinkit", "order from blinkit"],
-      amazon: ["amazon", "amzn", "shop", "shopping", "order from amazon"],
-      flipkart: ["flipkart", "fk", "order from flipkart"],
-      netmeds: ["netmeds", "medicine", "order from netmeds"],
-      pharmeasy: ["pharmeasy", "pharmacy", "order from pharmeasy"],
-    };
-
-    for (const [merchant, keywords] of Object.entries(merchantMap)) {
-      for (const keyword of keywords) {
-        if (msg.includes(keyword)) {
-          console.log(
-            `🎯 Frontend detected merchant: ${merchant} from keyword: "${keyword}"`,
-          );
-          return merchant;
-        }
-      }
-    }
-
-    const orderFromMatch = msg.match(/order\s+from\s+(\w+)/i);
-    if (orderFromMatch) {
-      const merchant = orderFromMatch[1].toLowerCase();
-      if (availableMerchants.some((m) => m.id === merchant)) {
-        return merchant;
-      }
-    }
-
-    return null;
-  };
-
-  const isMerchantSupported = (merchant) =>
-    availableMerchants.map((m) => m.id).includes(merchant);
-
-  const getMerchantInfo = (merchantId) =>
-    availableMerchants.find((m) => m.id === merchantId) || {
-      id: merchantId,
-      name: merchantId.charAt(0).toUpperCase() + merchantId.slice(1),
-    };
-
-  const checkReservePayLimit = (merchant, amount) => {
-    const limit = reserveLimits[merchant];
-    if (!limit)
-      return {
-        eligible: false,
-        remaining: 0,
-        message: "No Reserve Pay limit set for this merchant",
-      };
-    const remaining = limit.monthly_limit - (limit.current_spent || 0);
-    const eligible = amount <= remaining;
-    return {
-      eligible,
-      remaining,
-      limit: limit.monthly_limit,
-      spent: limit.current_spent || 0,
-      message: eligible
-        ? `✅ Within Reserve Pay limit! ₹${remaining} remaining.`
-        : `❌ Exceeds Reserve Pay limit by ₹${amount - remaining}`,
-    };
-  };
-
-  const checkReservePayAvailability = async (merchant, amount) => {
-    if (!merchant) {
-      console.error("❌ Merchant is undefined in checkReservePayAvailability");
-      return {
-        available: false,
-        eligible: false,
-        limit: 0,
-        spent: 0,
-        remaining: 0,
-        message: "No merchant specified. Please try again.",
-      };
-    }
-
-    try {
-      console.log(
-        `🔍 Checking Reserve Pay for merchant: ${merchant}, amount: ${amount}`,
-      );
-
-      const token = localStorage.getItem("token");
-      const response = await axios.post(
-        "http://localhost:5000/api/agent/order/check-reserve",
-        { merchant: merchant, amount: amount },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
-      );
-
-      if (response.data && response.data.success) {
-        console.log("✅ Reserve Pay check result:", response.data.data);
-        return response.data.data;
-      }
-
-      return {
-        available: false,
-        eligible: false,
-        limit: 0,
-        spent: 0,
-        remaining: 0,
-        message: "Unable to check Reserve Pay limit",
-      };
-    } catch (error) {
-      console.error("❌ Error checking Reserve Pay:", error);
-      return {
-        available: false,
-        eligible: false,
-        limit: 0,
-        spent: 0,
-        remaining: 0,
-        message: "Error checking Reserve Pay limit",
-      };
-    }
-  };
-
-  const getGuideMessageForMerchant = (merchant) => {
-    const guides = {
-      uber: "**How to book an Uber ride:**\n1. Download the Uber app\n2. Create an account or log in\n3. Enter your pickup and drop locations\n4. Select your ride type\n5. Confirm your booking",
-      ola: "**How to book an Ola ride:**\n1. Download the Ola app\n2. Sign up or log in\n3. Enter your pickup location\n4. Choose your destination\n5. Select a cab type\n6. Confirm your booking",
-      irctc:
-        "**How to book train tickets:**\n1. Visit irctc.co.in or download the IRCTC app\n2. Login with your IRCTC credentials\n3. Search for trains\n4. Select your train and class\n5. Add passenger details\n6. Complete payment",
-      default:
-        "**How to book on the app:**\n1. Download the official app\n2. Create an account\n3. Follow in-app instructions\n4. Complete your booking",
-    };
-    return guides[merchant] || guides.default;
-  };
-
   const handleKeyPress = (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
@@ -3265,447 +2638,445 @@ const AgentChatPage = () => {
     }
   };
 
+  const handleClearCart = () => {
+  setCart([]);
+  setCartTotal(0);
+  setSessionId(null);
+  setPendingAction(null);
+  toast.info("Cart cleared");
+};
+
   // ============================================
   // RENDER MESSAGE CONTENT
   // ============================================
   const renderMessageContent = (message) => {
-    let content = message.content;
+  let content = message.content;
 
-    if (typeof content === "string") {
-      if (content.trim().startsWith("{") || content.trim().startsWith("[")) {
-        try {
-          const parsed = JSON.parse(content);
-          console.log("Parsed JSON content:", parsed);
-          content = parsed;
-        } catch (e) {
-          console.log("Not valid JSON, keeping as string");
-        }
+  // If content is a string that looks like JSON, parse it
+  if (typeof content === "string") {
+    if (content.trim().startsWith("{") || content.trim().startsWith("[")) {
+      try {
+        const parsed = JSON.parse(content);
+        content = parsed;
+      } catch (e) {
+        // Not valid JSON, keep as string
       }
     }
+  }
 
-    // ============================================
-    // ORDERING: Products Grid (Restaurant Menu)
-    // ============================================
-    if (
-      content &&
-      typeof content === "object" &&
-      content.type === "products_grid"
-    ) {
-      const products = content.products || [];
-      const merchant = content.merchant;
-      const restaurantName =
-        products[0]?.restaurantName || content.restaurantName || "";
-      const restaurantRating = products[0]?.restaurantRating;
-      const deliveryTime = products[0]?.deliveryTime;
-      const reserveCheck = content.reserveCheck || null;
+  // ============================================
+  // ORDERING: Products Grid (Restaurant Menu)
+  // ============================================
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "products_grid"
+  ) {
+    const products = content.products || [];
+    const merchant = content.merchant;
+    const restaurantName =
+      products[0]?.restaurantName || content.restaurantName || "";
+    const restaurantRating = products[0]?.restaurantRating;
+    const deliveryTime = products[0]?.deliveryTime;
+    const reserveCheck = content.reserveCheck || null;
 
-      return (
-        <RestaurantOrderComponent
-          key={message.sessionId}
-          restaurant={{
-            name: restaurantName,
-            rating: restaurantRating,
-            deliveryTime: deliveryTime,
-          }}
-          menuItems={products}
-          merchant={merchant}
-          sessionId={message.sessionId}
-          onCartUpdate={(updatedCart) => {
-            console.log("Cart updated in parent:", updatedCart);
-            setCart(updatedCart);
-            const total = updatedCart.reduce(
-              (sum, item) => sum + item.price * item.quantity,
-              0,
-            );
-            setCartTotal(total);
+    return (
+      <RestaurantOrderComponent
+        key={message.sessionId}
+        restaurant={{
+          name: restaurantName,
+          rating: restaurantRating,
+          deliveryTime: deliveryTime,
+        }}
+        menuItems={products}
+        merchant={merchant}
+        sessionId={message.sessionId}
+        onCartUpdate={(updatedCart) => {
+          console.log("Cart updated in parent:", updatedCart);
+          setCart(updatedCart);
+          const total = updatedCart.reduce(
+            (sum, item) => sum + item.price * item.quantity,
+            0,
+          );
+          setCartTotal(total);
 
-            const updatedMessages = messages.map((msg) => {
-              if (
-                msg.id === message.id &&
-                msg.content &&
-                msg.content.type === "products_grid"
-              ) {
-                return {
-                  ...msg,
-                  cart: updatedCart,
-                  total: total,
-                };
-              }
-              return msg;
-            });
-            saveMessages(updatedMessages);
-          }}
-          onProceedToPayment={(cart, total) => {
-            initiateCheckout(cart, total, message.sessionId);
-          }}
-          onScheduleSuccess={(cart, total, scheduledTime) => {
-            const scheduledDate = new Date(scheduledTime);
-            const formattedDate = scheduledDate.toLocaleDateString("en-IN", {
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            });
-            const formattedTime = scheduledDate.toLocaleTimeString("en-IN", {
-              hour: "2-digit",
-              minute: "2-digit",
-            });
-            const confirmationMessage = {
-              id: Date.now(),
-              role: "agent",
-              content: `📅 **Order Scheduled!**\n\nYour order has been scheduled for **${formattedDate} at ${formattedTime}**.\n\n**Items:** ${cart.length} item(s)\n**Total:** ₹${total}\n\nYou can view and manage this scheduled order in **Reserve Pay → Auto Pay** section.`,
-              timestamp: new Date().toISOString(),
-            };
-            saveMessages([...messages, confirmationMessage]);
-            setCart([]);
-            setCartTotal(0);
-            setSessionId(null);
-            setPendingAction(null);
-            refreshOrders();
-          }}
-        />
-      );
-    }
+          const updatedMessages = messages.map((msg) => {
+            if (
+              msg.id === message.id &&
+              msg.content &&
+              msg.content.type === "products_grid"
+            ) {
+              return {
+                ...msg,
+                cart: updatedCart,
+                total: total,
+              };
+            }
+            return msg;
+          });
+          saveMessages(updatedMessages);
+        }}
+        onProceedToPayment={(cart, total) => {
+          initiateCheckout(cart, total, message.sessionId);
+        }}
+        onScheduleSuccess={(cart, total, scheduledTime) => {
+          const scheduledDate = new Date(scheduledTime);
+          const formattedDate = scheduledDate.toLocaleDateString("en-IN", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          });
+          const formattedTime = scheduledDate.toLocaleTimeString("en-IN", {
+            hour: "2-digit",
+            minute: "2-digit",
+          });
+          const confirmationMessage = {
+            id: Date.now(),
+            role: "agent",
+            content: `📅 **Order Scheduled!**\n\nYour order has been scheduled for **${formattedDate} at ${formattedTime}**.\n\n**Items:** ${cart.length} item(s)\n**Total:** ₹${total}\n\nYou can view and manage this scheduled order in **Reserve Pay → Auto Pay** section.`,
+            timestamp: new Date().toISOString(),
+          };
+          saveMessages([...messages, confirmationMessage]);
+          setCart([]);
+          setCartTotal(0);
+          setSessionId(null);
+          setPendingAction(null);
+          refreshOrders();
+        }}
+      />
+    );
+  }
 
-    // ============================================
-    // ORDERING: Situation Suggestions
-    // ============================================
-    if (
-      content &&
-      typeof content === "object" &&
-      content.type === "situation_suggestions"
-    ) {
-      return (
-        <SituationSuggestionsCard
-          situation={content.situation}
-          explanation={content.explanation}
-          essentialItems={content.essentialItems || []}
-          otherItems={content.otherItems || []}
-          allItems={content.allItems || []}
-          categories={content.categories}
-          merchant={content.merchant}
-          totalEstimatedCost={content.totalEstimatedCost}
-          onItemSelect={(item) =>
-            handleAddSingleItemToCart(item, content.merchant, message.sessionId)
-          }
-          onOrderEssentials={(items) =>
-            handleAddMultipleItemsToCart(
-              items,
-              content.merchant,
-              message.sessionId,
-            )
-          }
-          onSelectItems={(items) =>
-            handleAddMultipleItemsToCart(
-              items,
-              content.merchant,
-              message.sessionId,
-            )
-          }
-          onCustomize={() =>
-            setInput(`I want to customize my ${content.situation} order`)
-          }
-        />
-      );
-    }
+  // ============================================
+  // ORDERING: Situation Suggestions
+  // ============================================
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "situation_suggestions"
+  ) {
+    return (
+      <SituationSuggestionsCard
+        situation={content.situation}
+        explanation={content.explanation}
+        essentialItems={content.essentialItems || []}
+        otherItems={content.otherItems || []}
+        allItems={content.allItems || []}
+        categories={content.categories}
+        merchant={content.merchant}
+        totalEstimatedCost={content.totalEstimatedCost}
+        onItemSelect={(item) =>
+          handleAddSingleItemToCart(item, content.merchant, message.sessionId)
+        }
+        onOrderEssentials={(items) =>
+          handleAddMultipleItemsToCart(
+            items,
+            content.merchant,
+            message.sessionId,
+          )
+        }
+        onSelectItems={(items) =>
+          handleAddMultipleItemsToCart(
+            items,
+            content.merchant,
+            message.sessionId,
+          )
+        }
+        onCustomize={() =>
+          setInput(`I want to customize my ${content.situation} order`)
+        }
+      />
+    );
+  }
 
-    // ============================================
-    // ORDERING: Enhanced Order Summary
-    // ============================================
-    if (
-      content &&
-      typeof content === "object" &&
-      content.type === "order_summary"
-    ) {
-      return (
-        <EnhancedOrderSummary
-          initialItems={message.cart || []}
-          suggestedItems={content.items || []}
-          merchant={
-            content.merchantName || content.merchant || message.merchant
-          }
-          merchantLogo={content.merchantLogo}
-          onCartUpdate={(cart) => updateCartInSession(cart, message.sessionId)}
-          onCheckout={(cart, total) =>
-            initiateCheckout(cart, total, message.sessionId)
-          }
-          onClearCart={() => handleClearCart()}
-          onScheduleOrder={(cart, total, scheduledTime) =>
-            handleScheduleOrder(cart, total, scheduledTime, message.sessionId)
-          }
-          reserveCheck={content.reserveCheck}
-          sabaiGems={content.sabaiGems}
-          isInteractable={true}
-          showSuggestions={false}
-        />
-      );
-    }
+  // ============================================
+  // ORDERING: Enhanced Order Summary
+  // ============================================
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "order_summary"
+  ) {
+    return (
+      <EnhancedOrderSummary
+        initialItems={message.cart || []}
+        suggestedItems={content.items || []}
+        merchant={
+          content.merchantName || content.merchant || message.merchant
+        }
+        merchantLogo={content.merchantLogo}
+        onCartUpdate={(cart) => updateCartInSession(cart, message.sessionId)}
+        onCheckout={(cart, total) =>
+          initiateCheckout(cart, total, message.sessionId)
+        }
+        onClearCart={() => handleClearCart()}
+        onScheduleOrder={(cart, total, scheduledTime) =>
+          handleScheduleOrder(cart, total, scheduledTime, message.sessionId)
+        }
+        reserveCheck={content.reserveCheck}
+        sabaiGems={content.sabaiGems}
+        isInteractable={true}
+        showSuggestions={false}
+      />
+    );
+  }
 
-    // ============================================
-    // ORDERING: Restaurants with Menus
-    // ============================================
-    if (
-      content &&
-      typeof content === "object" &&
-      content.type === "restaurants_with_menus"
-    ) {
-      const restaurants = content.restaurants || [];
-      const merchant = content.merchant;
+  // ============================================
+  // ORDERING: Restaurants with Menus
+  // ============================================
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "restaurants_with_menus"
+  ) {
+    const restaurants = content.restaurants || [];
+    const merchant = content.merchant;
 
-      return (
-        <div className="restaurants-with-menus-container">
-          <div className="restaurants-header">
-            <h3>🍽️ Restaurants near you</h3>
-            <p className="restaurants-subtitle">
-              Click on any restaurant to view full menu
-            </p>
-          </div>
-          <div className="restaurants-list-horizontal">
-            {restaurants.map((restData, idx) => (
-              <div
-                key={restData.restaurant.id}
-                className="restaurant-card-horizontal"
-              >
-                <div className="restaurant-header-info">
-                  <div className="restaurant-image">
-                    <img
-                      src={
-                        restData.restaurant.imageUrl ||
-                        "/images/merchants/swiggy.png"
-                      }
-                      alt={restData.restaurant.name}
-                      onError={(event) => {
-                        event.currentTarget.src =
-                          "/images/merchants/swiggy.png";
-                      }}
-                    />
+    return (
+      <div className="restaurants-with-menus-container">
+        <div className="restaurants-header">
+          <h3>🍽️ Restaurants near you</h3>
+          <p className="restaurants-subtitle">
+            Click on any restaurant to view full menu
+          </p>
+        </div>
+        <div className="restaurants-list-horizontal">
+          {restaurants.map((restData, idx) => (
+            <div
+              key={restData.restaurant.id}
+              className="restaurant-card-horizontal"
+            >
+              <div className="restaurant-header-info">
+                <div className="restaurant-info">
+                  <h4>{restData.restaurant.name}</h4>
+                  <div className="restaurant-meta">
+                    <span className="rating">
+                      ⭐ {restData.restaurant.rating}
+                    </span>
+                    <span className="cuisine">
+                      {restData.restaurant.cuisine}
+                    </span>
+                    <span className="delivery">
+                      ⏱️ {restData.restaurant.deliveryTime || '30-40 min'}
+                    </span>
                   </div>
-                  <div className="restaurant-info">
-                    <h4>{restData.restaurant.name}</h4>
-                    <div className="restaurant-meta">
-                      <span className="rating">
-                        ⭐ {restData.restaurant.rating}
-                      </span>
-                      <span className="cuisine">
-                        {restData.restaurant.cuisine}
-                      </span>
-                      <span className="delivery">
-                        ⏱️ {restData.restaurant.deliveryTime}
-                      </span>
-                    </div>
-                    <div className="restaurant-price">
-                      ₹{restData.restaurant.priceForTwo} for two
-                    </div>
+                  <div className="restaurant-price">
+                    ₹{restData.restaurant.deliveryTime || '30-40 min'} average for two
                   </div>
                 </div>
+              </div>
 
-                <div className="popular-items-section">
-                  <div className="popular-items-header">
-                    <span>🔥 Popular Items</span>
-                    <button
-                      className="view-full-menu-btn"
+              <div className="popular-items-section">
+                <div className="popular-items-header">
+                  <span>🔥 Popular Items</span>
+                  <button
+                    className="view-full-menu-btn"
+                    onClick={() =>
+                      handleViewFullMenu(
+                        restData.restaurant,
+                        merchant,
+                        message.sessionId,
+                      )
+                    }
+                  >
+                    View Full Menu →
+                  </button>
+                </div>
+                <div className="popular-items-grid">
+                  {restData.popularItems.map((item) => (
+                    <div
+                      key={item.id}
+                      className="popular-item-card"
                       onClick={() =>
-                        handleViewFullMenu(
-                          restData.restaurant,
+                        handleAddSingleItemToCart(
+                          item,
                           merchant,
                           message.sessionId,
                         )
                       }
                     >
-                      View Full Menu →
-                    </button>
-                  </div>
-                  <div className="popular-items-grid">
-                    {restData.popularItems.map((item) => (
-                      <div
-                        key={item.id}
-                        className="popular-item-card"
-                        onClick={() =>
-                          handleAddSingleItemToCart(
-                            item,
-                            merchant,
-                            message.sessionId,
-                          )
-                        }
-                      >
-                        <div className="popular-item-image">
-                          <img
-                            src={item.imageUrl || "/images/items/default.jpg"}
-                            alt={item.name}
-                          />
-                        </div>
-                        <div className="popular-item-info">
-                          <div className="popular-item-name">{item.name}</div>
-                          <div className="popular-item-price">
-                            ₹{item.price}
-                          </div>
-                          <button className="add-item-btn">+ Add</button>
-                        </div>
+                      <div className="popular-item-image">
+                        <img
+                          src={item.imageUrl || "/images/items/default.jpg"}
+                          alt={item.name}
+                        />
                       </div>
-                    ))}
-                  </div>
+                      <div className="popular-item-info">
+                        <div className="popular-item-name">{item.name}</div>
+                        <div className="popular-item-price">
+                          ₹{item.price}
+                        </div>
+                        <button className="add-item-btn">+ Add</button>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      );
-    }
+      </div>
+    );
+  }
 
-    // ============================================
-    // ORDERING: Restaurants List
-    // ============================================
-    if (
-      content &&
-      typeof content === "object" &&
-      content.type === "restaurants_list"
-    ) {
-      return (
-        <div className="restaurants-list-container">
-          <h3>Restaurants near you</h3>
-          <div className="restaurants-grid">
-            {content.restaurants?.map((restaurant) => (
-              <div
-                key={restaurant.id}
-                className="restaurant-card"
-                onClick={() =>
-                  handleSelectRestaurant(
-                    restaurant,
-                    content.merchant,
-                    message.sessionId,
-                  )
-                }
-              >
-                <div className="restaurant-image">
-                  <img
-                    src={restaurant.imageUrl || "/images/merchants/swiggy.png"}
-                    alt={restaurant.name}
-                    onError={(event) => {
-                      event.currentTarget.src = "/images/merchants/swiggy.png";
-                    }}
-                  />
+  // ============================================
+  // ORDERING: Restaurants List
+  // ============================================
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "restaurants_list"
+  ) {
+    return (
+      <div className="restaurants-list-container">
+        <h3>Restaurants near you</h3>
+        <div className="restaurants-grid">
+          {content.restaurants?.map((restaurant) => (
+            <div
+              key={restaurant.id}
+              className="restaurant-card"
+              onClick={() =>
+                handleSelectRestaurant(
+                  restaurant,
+                  content.merchant,
+                  message.sessionId,
+                )
+              }
+            >
+              <div className="restaurant-info">
+                <h4>{restaurant.name}</h4>
+                <div className="restaurant-cuisine">{restaurant.cuisine}</div>
+                <div className="restaurant-rating">
+                  ⭐ {restaurant.rating} ({restaurant.ratingCount}+)
                 </div>
-                <div className="restaurant-info">
-                  <h4>{restaurant.name}</h4>
-                  <div className="restaurant-cuisine">{restaurant.cuisine}</div>
-                  <div className="restaurant-rating">
-                    ⭐ {restaurant.rating} ({restaurant.ratingCount}+)
-                  </div>
-                  <div className="restaurant-delivery">
-                    ⏱️ {restaurant.deliveryTime}
-                  </div>
-                  <div className="restaurant-price">
-                    ₹{restaurant.priceForTwo} for two
-                  </div>
+                <div className="restaurant-delivery">
+                  ⏱️ {restaurant.deliveryTime}
+                </div>
+                <div className="restaurant-price">
+                  ₹{restaurant.priceForTwo} for two
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      );
-    }
+      </div>
+    );
+  }
 
-    // ============================================
-    // AUTO-PAY Confirmation
-    // ============================================
-    if (
-      content &&
-      typeof content === "object" &&
-      content.type === "auto_pay_confirmed"
-    ) {
-      return (
-        <div className="auto-pay-confirmation">
-          <div className="confirmation-icon">🎉</div>
-          <h3>{content.title}</h3>
-          <p>{content.message}</p>
-          <div className="auto-pay-details">
-            <div>Items: {content.items?.length} item(s)</div>
-            <div>Total: ₹{content.total}</div>
-            <div>Schedule: {content.schedule}</div>
-            <div>Next Payment: {content.nextPayment}</div>
-          </div>
-          <button onClick={() => navigate("/reserve-pay")}>
-            View in Auto Pay Section
-          </button>
+  // ============================================
+  // AUTO-PAY Confirmation
+  // ============================================
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "auto_pay_confirmed"
+  ) {
+    return (
+      <div className="auto-pay-confirmation">
+        <div className="confirmation-icon">🎉</div>
+        <h3>{content.title}</h3>
+        <p>{content.message}</p>
+        <div className="auto-pay-details">
+          <div>Items: {content.items?.length} item(s)</div>
+          <div>Total: ₹{content.total}</div>
+          <div>Schedule: {content.schedule}</div>
+          <div>Next Payment: {content.nextPayment}</div>
         </div>
-      );
-    }
+        <button onClick={() => navigate("/reserve-pay")}>
+          View in Auto Pay Section
+        </button>
+      </div>
+    );
+  }
 
-    // ============================================
-    // PAYMENT CARDS (NEW)
-    // ============================================
-    if (
-      content &&
-      typeof content === "object" &&
-      content.type === "send_money_card"
-    ) {
-      return (
-        <SendMoneyChatCard
-          key={message.id}
-          data={content}
-          onAction={(action, data) => handlePaymentCardAction(action, data)}
-          onClose={() => setShowPaymentCard(false)}
-        />
-      );
-    }
+  // ============================================
+  // PAYMENT CARDS
+  // ============================================
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "send_money_card"
+  ) {
+    return (
+      <SendMoneyChatCard
+        key={message.id}
+        data={content}
+        onAction={(action, data) => handlePaymentCardAction(action, data)}
+        onClose={() => setShowPaymentCard(false)}
+      />
+    );
+  }
 
-    if (
-      content &&
-      typeof content === "object" &&
-      content.type === "bill_pay_card"
-    ) {
-      return (
-        <BillPayChatCard
-          key={message.id}
-          data={content}
-          onAction={(action, data) => handlePaymentCardAction(action, data)}
-          onClose={() => setShowPaymentCard(false)}
-        />
-      );
-    }
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "bill_pay_card"
+  ) {
+    return (
+      <BillPayChatCard
+        key={message.id}
+        data={content}
+        onAction={(action, data) => handlePaymentCardAction(action, data)}
+        onClose={() => setShowPaymentCard(false)}
+      />
+    );
+  }
 
-    if (
-      content &&
-      typeof content === "object" &&
-      content.type === "recharge_card"
-    ) {
-      return (
-        <RechargeChatCard
-          key={message.id}
-          data={content}
-          onAction={(action, data) => handlePaymentCardAction(action, data)}
-          onClose={() => setShowPaymentCard(false)}
-        />
-      );
-    }
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "recharge_card"
+  ) {
+    return (
+      <RechargeChatCard
+        key={message.id}
+        data={content}
+        onAction={(action, data) => handlePaymentCardAction(action, data)}
+        onClose={() => setShowPaymentCard(false)}
+      />
+    );
+  }
 
-    if (
-      content &&
-      typeof content === "object" &&
-      content.type === "multi_payment_card"
-    ) {
-      return (
-        <MultiPaymentChatCard
-          key={message.id}
-          data={content}
-          onAction={(action, data) => handlePaymentCardAction(action, data)}
-          onClose={() => setShowPaymentCard(false)}
-        />
-      );
-    }
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "multi_payment_card"
+  ) {
+    return (
+      <MultiPaymentChatCard
+        key={message.id}
+        data={content}
+        onAction={(action, data) => handlePaymentCardAction(action, data)}
+        onClose={() => setShowPaymentCard(false)}
+      />
+    );
+  }
 
-    // ============================================
-    // DEFAULT: Markdown for string content
-    // ============================================
-    if (typeof content === "string") {
-      return <ReactMarkdown>{content}</ReactMarkdown>;
-    }
+  // ============================================
+  // NEW: Handle plain object with 'response' string (BUT ONLY AFTER TYPE CHECKS)
+  // ============================================
+  if (content && typeof content === "object" && content.response && typeof content.response === "string") {
+    return <ReactMarkdown>{content.response}</ReactMarkdown>;
+  }
 
-    if (typeof content === "object") {
-      return <pre>{JSON.stringify(content, null, 2)}</pre>;
-    }
+  // ============================================
+  // DEFAULT: Markdown for string content
+  // ============================================
+  if (typeof content === "string") {
+    return <ReactMarkdown>{content}</ReactMarkdown>;
+  }
 
-    return <ReactMarkdown>{String(content)}</ReactMarkdown>;
-  };
+  // ============================================
+  // FALLBACK: If still an object, try to extract message
+  // ============================================
+  if (typeof content === "object") {
+    if (content.message) return <ReactMarkdown>{content.message}</ReactMarkdown>;
+    if (content.response) return <ReactMarkdown>{content.response}</ReactMarkdown>;
+    return <pre>{JSON.stringify(content, null, 2)}</pre>;
+  }
+
+  return <ReactMarkdown>{String(content)}</ReactMarkdown>;
+};
 
   // ============================================
   // HELPER FUNCTIONS (Existing)
@@ -3768,6 +3139,7 @@ const AgentChatPage = () => {
           timestamp: new Date().toISOString(),
           sessionId: data.sessionId,
           requiresAction: data.requiresAction,
+          merchant: data.merchant,
         };
         saveMessages([...messages, aiMessageObj]);
       }
@@ -4071,452 +3443,160 @@ const AgentChatPage = () => {
   };
 
   // MAIN SEND MESSAGE HANDLER
-  const handleSendMessage = async (messageOverride = null, cardData = null) => {
-    if (messageOverride && typeof messageOverride === "object") {
-      cardData = messageOverride;
-      messageOverride = null;
+const handleSendMessage = async (messageOverride = null, cardData = null) => {
+  if (messageOverride && typeof messageOverride === "object") {
+    cardData = messageOverride;
+    messageOverride = null;
+  }
+  if ((!input.trim() && !messageOverride && !cardData) || loading) return;
+  const userMessage = messageOverride?.trim() || input.trim() || "Continue with the selected details";
+  setInput("");
+  const userMessageObj = {
+    id: Date.now(),
+    role: "user",
+    content: userMessage,
+    timestamp: new Date().toISOString(),
+  };
+  const updatedMessages = [...messages, userMessageObj];
+  saveMessages(updatedMessages);
+  setLoading(true);
+
+  console.log("📤 Sending message:", userMessage);
+  console.log("📤 Current sessionId:", sessionId);
+
+  try {
+    const token = localStorage.getItem("token");
+    const voiceUsed = voiceRequestRef.current || false;
+
+    // ============================================
+    // SANITIZE cardData – remove circular references
+    // ============================================
+    let sanitizedCardData = null;
+    if (cardData && typeof cardData === "object") {
+      try {
+        // First attempt: standard JSON serialization
+        sanitizedCardData = JSON.parse(JSON.stringify(cardData));
+      } catch (e) {
+        // If that fails, manually extract known fields
+        console.warn("⚠️ cardData contains circular refs – extracting safe fields");
+        sanitizedCardData = {};
+        const safeFields = [
+          "mobileNumber", "amount", "recipient", "billType", "provider",
+          "customerId", "note", "plan", "operator", "sessionId",
+          "paymentData", "recipientType", "upiId", "bankName"
+        ];
+        if (cardData && typeof cardData === "object") {
+          for (const key of safeFields) {
+            if (cardData[key] !== undefined && cardData[key] !== null) {
+              // Ensure the value is primitive or plain object
+              const val = cardData[key];
+              if (typeof val === "string" || typeof val === "number" || typeof val === "boolean") {
+                sanitizedCardData[key] = val;
+              } else if (val && typeof val === "object" && !val.$$typeof && !val._owner) {
+                // Simple object without React internals
+                try {
+                  sanitizedCardData[key] = JSON.parse(JSON.stringify(val));
+                } catch (_) {
+                  // ignore
+                }
+              }
+            }
+          }
+        }
+        // If still empty, fallback to a generic object with just amount if possible
+        if (Object.keys(sanitizedCardData).length === 0 && cardData.amount) {
+          sanitizedCardData = { amount: cardData.amount };
+        }
+      }
     }
-    if ((!input.trim() && !messageOverride && !cardData) || loading) return;
-    const userMessage =
-      messageOverride?.trim() ||
-      input.trim() ||
-      "Continue with the selected details";
-    setInput("");
-    const userMessageObj = {
-      id: Date.now(),
-      role: "user",
-      content: userMessage,
-      timestamp: new Date().toISOString(),
-    };
-    const updatedMessages = [...messages, userMessageObj];
-    saveMessages(updatedMessages);
-    setLoading(true);
 
-    console.log("📤 Sending message:", userMessage);
-    console.log("📤 Current sessionId:", sessionId);
-    console.log("📤 Current pendingAction:", pendingAction);
+    // ============================================
+    // Always call the single chat endpoint with sanitized data
+    // ============================================
+    const response = await axios.post(
+      "http://localhost:5000/api/agent/chat",
+      {
+        message: userMessage,
+        sessionId: sessionId,
+        cardData: sanitizedCardData,
+        voice: voiceUsed,
+      },
+      {
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
+        timeout: 30000,
+      }
+    );
 
-    try {
-      const token = localStorage.getItem("token");
-      let userLocationForMerchant = null;
-      const detectedMerchant = detectMerchantFromMessage(userMessage);
-
-      if (
-        detectedMerchant &&
-        ["swiggy", "zomato", "zepto", "blinkit"].includes(detectedMerchant)
-      ) {
-        const isConnected = await checkMerchantConnection(detectedMerchant);
-        if (!isConnected) {
-          const notConnectedMsg = {
-            id: Date.now() + 1,
-            role: "agent",
-            content: `🔗 **${detectedMerchant} is not connected.**\n\nPlease go to **Dashboard → Connect Apps** and connect your ${detectedMerchant} account first. Then I can help you order!`,
-            timestamp: new Date().toISOString(),
-          };
-          saveMessages([...updatedMessages, notConnectedMsg]);
-          setLoading(false);
-          return;
-        }
-        userLocationForMerchant = getUserLocationForMerchant(detectedMerchant);
+    if (response.data && response.data.success) {
+      const data = response.data.data;
+      if (voiceUsed && window.speechSynthesis) {
+        const responseText = typeof data.response === "string"
+          ? data.response
+          : data.response?.message || (data.response?.type === "order_summary"
+              ? `Your order total is rupees ${data.total || data.response.total || 0}. Please confirm your order.`
+              : "I have prepared the details for you. Please review and confirm.");
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(new SpeechSynthesisUtterance(responseText.replace(/[*_#]/g, "")));
+        voiceRequestRef.current = false;
       }
 
-      let response;
-
-      const selectionActions = [
-        "confirm_items",
-        "select_items",
-        "awaiting_items",
-      ];
-      const orderContinuationActions = [
-        "specify_items",
-        "select_items_grid",
-        "show_restaurants_with_menus",
-        "payment_selection",
-        "confirm_items",
-        "select_items",
-        "awaiting_items",
-      ];
-      const startsNewOrderStep =
-        /\b(order|restaurant|menu|from\s+(swiggy|zomato|zepto|blinkit|amazon|flipkart))\b/i.test(
-          userMessage,
-        );
-
-      // ============================================
-      // FIX: SEPARATE PAYMENT KEYWORDS FROM ORDER KEYWORDS
-      // ============================================
-
-      // PAYMENT KEYWORDS - Route to /chat (Gemini function-calling)
-      const paymentKeywords = [
-        "recharge",
-        "mobile recharge",
-        "phone recharge",
-        "top up",
-        "talktime",
-        "data pack",
-        "send money",
-        "send to",
-        "pay to",
-        "transfer to",
-        "pay money",
-        "bill",
-        "electricity bill",
-        "water bill",
-        "gas bill",
-        "broadband bill",
-        "upi payment",
-        "pay bill",
-        "pay my bill",
-      ];
-
-      const isPayment = paymentKeywords.some((keyword) =>
-        userMessage.toLowerCase().includes(keyword),
-      );
-
-      // ORDER KEYWORDS - Route to /order/process
-      const orderKeywords = [
-        "order",
-        "buy",
-        "pizza",
-        "burger",
-        "biryani",
-        "food",
-        "grocery",
-        "zepto",
-        "swiggy",
-        "zomato",
-        "amazon",
-        "flipkart",
-        "myntra",
-        "ajio",
-        "show me menu",
-        "list menu",
-        "menu from",
-        "items from",
-        "suggest food",
-        "recommend food",
-      ];
-
-      const isOrder = orderKeywords.some((keyword) =>
-        userMessage.toLowerCase().includes(keyword),
-      );
-
-      console.log(
-        `🔍 Intent check: isPayment=${isPayment}, isOrder=${isOrder}, pendingAction=${pendingAction}`,
-      );
-
-      // ============================================
-      // ROUTE TO CORRECT ENDPOINT
-      // ============================================
-
-      // 1. Handle selection actions (cart, confirm items, etc.)
-      if (
-        sessionId &&
-        selectionActions.includes(pendingAction) &&
-        !startsNewOrderStep
-      ) {
-        console.log("📤 Sending to select-items with sessionId:", sessionId);
-        response = await axios.post(
-          "http://localhost:5000/api/agent/order/select-items",
-          {
-            sessionId: sessionId,
-            selection: userMessage,
-            userLocation: userLocationForMerchant,
-          },
-          {
-            headers: token ? { Authorization: `Bearer ${token}` } : {},
-            timeout: 30000,
-          },
-        );
-      }
-      // Continue active order sessions for item, restaurant, and payment replies.
-      else if (
-        sessionId &&
-        orderContinuationActions.includes(pendingAction) &&
-        !isPayment &&
-        !startsNewOrderStep
-      ) {
-        console.log("🛒 Continuing active order session:", pendingAction);
-        response = await agentOrderAPI.processOrder(
-          userMessage,
-          sessionId,
-          userLocationForMerchant,
-        );
-      }
-      // 2. Payment intents → /chat (Gemini function-calling)
-      else if (isPayment) {
-        console.log(
-          "💰 Payment intent detected, sending to /chat (Gemini function-calling)",
-        );
-        response = await agentChatAPI.sendMessage(
-          userMessage,
-          sessionId || null,
-          cardData,
-        );
-      }
-      // 3. Order intents → /order/process
-      else if (isOrder) {
-        console.log("🛒 Order intent detected, sending to /order/process");
-        response = await axios.post(
-          "http://localhost:5000/api/agent/order/process",
-          {
-            message: userMessage,
-            sessionId: sessionId,
-            userLocation: userLocationForMerchant,
-          },
-          {
-            headers: token ? { Authorization: `Bearer ${token}` } : {},
-            timeout: 30000,
-          },
-        );
-      }
-      // 4. General chat → /chat
-      else {
-        console.log("💬 General chat, sending to /chat");
-        response = await agentChatAPI.sendMessage(
-          userMessage,
-          sessionId || null,
-          cardData,
-        );
+      if (data.sessionId) {
+        setSessionId(data.sessionId);
+        setPendingAction(data.requiresAction);
       }
 
-      if (response && response.data && response.data.success) {
-        const data = response.data.data;
-        if (voiceRequestRef.current && window.speechSynthesis) {
-          const responseText =
-            typeof data.response === "string"
-              ? data.response
-              : data.response?.message ||
-                (data.response?.type === "order_summary"
-                  ? `Your order total is rupees ${data.total || data.response.total || 0}. Please confirm your order.`
-                  : "I have prepared the details for you. Please review and confirm.");
-          window.speechSynthesis.cancel();
-          window.speechSynthesis.speak(
-            new SpeechSynthesisUtterance(responseText.replace(/[*_#]/g, "")),
-          );
-          voiceRequestRef.current = false;
-        }
-
-        if (data.sessionId) {
-          console.log("📥 Received sessionId:", data.sessionId);
-          setSessionId(data.sessionId);
-          setPendingAction(data.requiresAction);
-        }
-
-        // ============================================
-        // HANDLE PAYMENT CARD RESPONSES
-        // ============================================
-        if (data.response && typeof data.response === "object") {
-          if (
-            data.response.type === "send_money_card" ||
-            data.response.type === "bill_pay_card" ||
-            data.response.type === "recharge_card" ||
-            data.response.type === "multi_payment_card"
-          ) {
-            console.log(`📇 Rendering payment card: ${data.response.type}`);
-            const aiMessageObj = {
-              id: Date.now() + 1,
-              role: "agent",
-              content: data.response,
-              timestamp: new Date().toISOString(),
-              sessionId: data.sessionId,
-              requiresAction: data.requiresAction,
-              isStructured: true,
-            };
-            saveMessages([...updatedMessages, aiMessageObj]);
-            setShowPaymentCard(true);
-            setPaymentCardData(data.response);
-            setPaymentCardType(data.response.type);
-          }
-        }
-
-        // ============================================
-        // HANDLE ORDERING RESPONSES
-        // ============================================
-        if (data.response && typeof data.response === "object") {
-          if (data.response.type === "order_summary") {
-            data.response.sessionId = data.sessionId;
-            data.response.merchant = data.merchant || data.response.merchant;
-            const aiMessageObj = {
-              id: Date.now() + 1,
-              role: "agent",
-              content: data.response,
-              timestamp: new Date().toISOString(),
-              sessionId: data.sessionId,
-              cart: data.cart,
-              total: data.total,
-              requiresAction: data.requiresAction,
-              isStructured: true,
-            };
-            saveMessages([...updatedMessages, aiMessageObj]);
-          } else if (data.response.type === "item_list") {
-            data.response.sessionId = data.sessionId;
-            const aiMessageObj = {
-              id: Date.now() + 1,
-              role: "agent",
-              content: data.response,
-              timestamp: new Date().toISOString(),
-              sessionId: data.sessionId,
-              isStructured: true,
-            };
-            saveMessages([...updatedMessages, aiMessageObj]);
-          } else if (data.response.type === "auto_pay_setup") {
-            setAutoPaySetup(data.response);
-            setShowAutoPayModal(true);
-          } else if (
-            data.response.type !== "send_money_card" &&
-            data.response.type !== "bill_pay_card" &&
-            data.response.type !== "recharge_card" &&
-            data.response.type !== "multi_payment_card"
-          ) {
-            const aiMessageObj = {
-              id: Date.now() + 1,
-              role: "agent",
-              content: JSON.stringify(data.response),
-              timestamp: new Date().toISOString(),
-              sessionId: data.sessionId,
-              isStructured: true,
-            };
-            saveMessages([...updatedMessages, aiMessageObj]);
-          }
-        }
-
-        if (data.requiresAction === "confirm_items") {
-          const aiMessageObj = {
-            id: Date.now() + 1,
-            role: "agent",
-            content: data.response,
-            timestamp: new Date().toISOString(),
-            sessionId: data.sessionId,
-            cart: data.cart,
-            total: data.total,
-            requiresAction: data.requiresAction,
-            notFoundItems: data.notFoundItems,
-            foundItems: data.foundItems,
-          };
-          saveMessages([...updatedMessages, aiMessageObj]);
-        } else if (data.requiresAction === "payment_selection" && data.total) {
-          let merchantName = data.merchant || data.merchantName;
-
-          if (!merchantName || merchantName === "Merchant") {
-            if (data.cart && data.cart.length > 0) {
-              merchantName =
-                data.cart[0].merchant ||
-                data.cart[0].restaurantName ||
-                "Swiggy";
-            }
-            const mlMerchant =
-              data.mlMerchant || (data.cart && data.cart[0]?.merchant);
-            if ((!merchantName || merchantName === "Merchant") && mlMerchant) {
-              merchantName = mlMerchant;
-            }
-            if (!merchantName || merchantName === "Merchant") {
-              merchantName = "Swiggy";
-            }
-          }
-
-          console.log("📝 Creating order summary for merchant:", merchantName);
-
-          const reserveCheck = await checkReservePayAvailability(
-            merchantName,
-            data.total,
-          );
-
-          const orderSummary = {
-            type: "order_summary",
-            sessionId: data.sessionId,
-            merchant: merchantName,
-            merchantName: merchantName,
-            items: data.cart,
-            subtotal: data.total,
-            tax: Math.round(data.total * 0.05),
-            total: data.total,
-            sabaiGems: Math.min(Math.floor(data.total * 0.05), 100),
-            reserveCheck: reserveCheck,
-          };
-
-          const aiMessageObj = {
-            id: Date.now() + 1,
-            role: "agent",
-            content: orderSummary,
-            timestamp: new Date().toISOString(),
-            sessionId: data.sessionId,
-            cart: data.cart,
-            total: data.total,
-            requiresAction: data.requiresAction,
-            isStructured: true,
-          };
-          saveMessages([...updatedMessages, aiMessageObj]);
-        } else if (typeof data.response === "string") {
-          const aiMessageObj = {
-            id: Date.now() + 1,
-            role: "agent",
-            content: data.response,
-            timestamp: new Date().toISOString(),
-            sessionId: data.sessionId,
-            cart: data.cart,
-            total: data.total,
-            requiresAction: data.requiresAction,
-            merchant: data.merchant,
-          };
-          saveMessages([...updatedMessages, aiMessageObj]);
-        }
-
-        if (data.cart) {
-          setCart(data.cart);
-          setCartTotal(data.total);
-        }
-
-        if (data.requiresAction === "complete") {
-          refreshOrders();
-          loadReserveLimits();
-
-          const autoPayIntent = detectAutoPayIntent(userMessage);
-          if (autoPayIntent && data.cart && data.cart.length > 0) {
-            const autoPayMerchant =
-              data.merchant ||
-              (data.cart && data.cart[0]?.merchant) ||
-              "Merchant";
-            setPendingAutoPayOrder({
-              sessionId: data.sessionId,
-              total: data.total,
-              merchant: autoPayMerchant,
-              items: data.cart,
-            });
-            setShowAutoPaySetupModal(true);
-          }
-        }
-        loadConversations();
-        if (data.sessionId) {
-          setCurrentConversationId(data.sessionId);
-        }
-      }
-    } catch (error) {
-      console.error("Send message error:", error);
-      let errorMessage = "I'm having trouble connecting. ";
-      if (error.code === "ECONNABORTED")
-        errorMessage = "Request timeout. Please try again.";
-      else if (error.response?.status === 500)
-        errorMessage = "Server error. Please try again.";
-      else if (error.response?.data?.message)
-        errorMessage = error.response.data.message;
-      else errorMessage = "Please try again.";
-      const errorMessageObj = {
+      const aiMessageObj = {
         id: Date.now() + 1,
         role: "agent",
-        content: `❌ ${errorMessage}`,
+        content: data.response,
         timestamp: new Date().toISOString(),
+        sessionId: data.sessionId,
+        cart: data.cart,
+        total: data.total,
+        requiresAction: data.requiresAction,
+        merchant: data.merchant,
       };
-      saveMessages([...updatedMessages, errorMessageObj]);
-    } finally {
-      setLoading(false);
+      saveMessages([...updatedMessages, aiMessageObj]);
+
+      if (data.cart) {
+        setCart(data.cart);
+        setCartTotal(data.total);
+      }
+
+      if (data.requiresAction === "complete") {
+        refreshOrders();
+        loadReserveLimits();
+      }
+      loadConversations();
+      if (data.sessionId) {
+        setCurrentConversationId(data.sessionId);
+      }
     }
-  };
+  } catch (error) {
+    console.error("Send message error:", error);
+    let errorMessage = "I'm having trouble connecting. ";
+    if (error.code === "ECONNABORTED") errorMessage = "Request timeout. Please try again.";
+    else if (error.response?.status === 500) errorMessage = "Server error. Please try again.";
+    else if (error.response?.data?.message) errorMessage = error.response.data.message;
+    else errorMessage = "Please try again.";
+    const errorMessageObj = {
+      id: Date.now() + 1,
+      role: "agent",
+      content: `❌ ${errorMessage}`,
+      timestamp: new Date().toISOString(),
+    };
+    saveMessages([...updatedMessages, errorMessageObj]);
+  } finally {
+    setLoading(false);
+  }
+};
 
   // ============================================
   // RENDER
   // ============================================
   return (
     <div className="agent-chat-page">
+      <PrototypeBanner />
       <div className="chat-header">
         <button className="back-button" onClick={() => navigate(-1)}>
           <FaArrowLeft /> Back

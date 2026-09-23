@@ -1704,3 +1704,223 @@
     font-size: 0.65rem;
   }
 }
+
+
+/* ============================================
+   COMPACT RESTAURANT LIST CARDS (No Images)
+   ============================================ */
+.restaurants-list-container {
+  padding: 4px 0;
+  max-width: 100%;
+}
+
+.restaurants-list-container h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--ac-text, #1a1d2e);
+}
+
+.restaurants-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+@media (max-width: 480px) {
+  .restaurants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.restaurant-card {
+  background: var(--ac-surface, #ffffff);
+  border: 1px solid var(--ac-border, #e2e6ef);
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.restaurant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: var(--ac-primary, #4f46e5);
+}
+
+.restaurant-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.restaurant-info h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 2px 0;
+  color: var(--ac-text, #1a1d2e);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.restaurant-cuisine {
+  font-size: 0.65rem;
+  color: var(--ac-text-dim, #6b7280);
+  margin-bottom: 2px;
+}
+
+.restaurant-rating {
+  font-size: 0.65rem;
+  color: var(--ac-warning, #f59e0b);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.restaurant-delivery {
+  font-size: 0.6rem;
+  color: var(--ac-text-dim, #6b7280);
+}
+
+.restaurant-price {
+  font-size: 0.6rem;
+  color: var(--ac-text-dim, #6b7280);
+}
+
+/* Dark mode adjustments */
+.dark .restaurant-card {
+  background: var(--ac-surface, #161b22);
+  border-color: var(--ac-border, #2d3548);
+}
+.dark .restaurant-info h4 {
+  color: var(--ac-text, #e6e9f0);
+}
+
+
+/* ============================================
+   COMPACT MENU ITEMS GRID
+   ============================================ */
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.menu-item-card {
+  background: var(--ac-surface, #ffffff);
+  border: 1px solid var(--ac-border, #e2e6ef);
+  border-radius: 6px;
+  padding: 6px 6px 8px 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
+  min-height: 120px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.menu-item-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--ac-primary, #4f46e5);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.menu-item-card .menu-item-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #f3f4f6;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.menu-item-card .menu-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-item-card .veg-badge {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 0.5rem;
+  background: rgba(255,255,255,0.8);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.menu-item-card .selected-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(79, 70, 229, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ac-primary, #4f46e5);
+  font-size: 1.2rem;
+}
+
+.menu-item-card .menu-item-info {
+  width: 100%;
+}
+
+.menu-item-card .menu-item-info h4 {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin: 2px 0 0 0;
+  color: var(--ac-text, #1a1d2e);
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 2.4em;
+}
+
+.menu-item-card .menu-item-price {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--ac-primary, #4f46e5);
+  margin: 1px 0;
+}
+
+.menu-item-card .menu-item-category {
+  font-size: 0.55rem;
+  color: var(--ac-text-dim, #6b7280);
+}
+
+.menu-item-card .add-btn {
+  margin-top: auto;
+  padding: 2px 8px;
+  background: var(--ac-primary, #4f46e5);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.menu-item-card .add-btn:hover {
+  background: var(--ac-primary-dark, #4338ca);
+}
+
+/* Dark mode */
+.dark .menu-item-card {
+  background: var(--ac-surface, #161b22);
+  border-color: var(--ac-border, #2d3548);
+}
+.dark .menu-item-card .menu-item-info h4 {
+  color: var(--ac-text, #e6e9f0);
+}
