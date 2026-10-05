@@ -15,7 +15,7 @@ class AgentPaymentController {
   // ============================================
   // SEND MONEY
   // ============================================
-  async sendMoney(userId, recipientText, amount, note = "") {
+  async sendMoney(userId, recipientText, amount, note = "", bankAccountId = null) {
     try {
       const resolution = await recipientResolverService.resolve(
         recipientText,
@@ -48,8 +48,17 @@ class AgentPaymentController {
       });
 
       const bankAccounts = await dbService.getBankAccounts(userId);
+      const selectedBank = bankAccountId
+        ? bankAccounts.find((bank) => String(bank.id) === String(bankAccountId))
+        : null;
+      if (bankAccountId && !selectedBank) {
+        return {
+          error: "The selected bank account is not linked to this account.",
+          status: "failed",
+        };
+      }
       const primaryBank =
-        bankAccounts.find((b) => b.is_primary) || bankAccounts[0];
+        selectedBank || bankAccounts.find((b) => b.is_primary) || bankAccounts[0];
 
       if (!primaryBank) {
         return {
