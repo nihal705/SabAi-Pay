@@ -8,6 +8,20 @@ const orderService = require("../services/orderService");
 const scheduledOrderService = require("../services/scheduledOrderService");
 const agentSecurityService = require("../services/agentSecurityService");
 
+const readJsonRecord = (value, label) => {
+  if (typeof value === "string") {
+    try {
+      value = JSON.parse(value);
+    } catch {
+      throw new Error(`${label} is invalid`);
+    }
+  }
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    throw new Error(`${label} is invalid`);
+  }
+  return value;
+};
+
 class AgentOrderController {
   constructor() {
     console.log("✅ AgentOrderController initialized (execution only)");
@@ -799,13 +813,362 @@ class AgentOrderController {
   // ============================================
   // ORDER FETCHING
   // ============================================
+  async cancelScheduledOrder(req, res) {
+    try {
+      const order = await scheduledOrderService.cancelScheduledOrder(
+        String(req.params.orderId),
+        String(req.user.id),
+      );
+      return res.status(200).json({ success: true, data: order });
+    } catch (error) {
+      return res.status(400).json({ success: false, error: error.message });
+    }
+  }
+
+  async createScheduledOrderCheckout(req, res) {
+    const userId = String(req.user.id);
+    const scheduleId = String(req.params.orderId);
+    let claimed = false;
+
+    try {
+      const schedules = await dbService.getScheduledOrders(userId);
+      const scheduledOrder = schedules.find((item) => String(item.id) === scheduleId);
+      if (!scheduledOrder) {
+        return res.status(404).json({ success: false, error: "Scheduled order not found" });
+      }
+
+      const status = String(scheduledOrder.status || "").toLowerCase();
+      const scheduleTime = new Date(scheduledOrder.scheduled_time).getTime();
+      if (!Number.isFinite(scheduleTime) || scheduleTime > Date.now()) {
+        return res.status(409).json({ success: false, error: "This payment is not due yet" });
+      }
+
+      const orderData = readJsonRecord(scheduledOrder.order_data, "Scheduled order");
+      const amount = Number(orderData.total ?? orderData.amount);
+      const amountInPaise = Math.round(amount * 100);
+      const items = orderData.cart || orderData.items;
+      if (!Number.isFinite(amount) || amount <= 0 || !Number.isSafeInteger(amountInPaise) || amountInPaise <= 0) {
+        return res.status(400).json({ success: false, error: "Scheduled order has an invalid amount" });
+      }
+      if (!Array.isArray(items) || items.length === 0) {
+        return res.status(400).json({ success: false, error: "Scheduled order has no items" });
+      }
+
+      if (!process.env.RAZORPAY_KEY_ID || !paymentService.razorpay) {
+        return res.status(503).json({ success: false, error: "Razorpay is not configured for live payment checkout" });
+      }
+      let result = scheduledOrder.result ? readJsonRecord(scheduledOrder.result, "Scheduled payment result") : {};
+      if (status === "checkout_pending") {
+        if (result.razorpay_order_id) {
+          if (Number(result.amount_in_paise) !== amountInPaise) {
+            return res.status(409).json({ success: false, error: "Scheduled order amount changed; contact support" });
+          }
+          return res.json({
+            success: true,
+            data: {
+              checkout: {
+                key: process.env.RAZORPAY_KEY_ID,
+                orderId: result.razorpay_order_id,
+                amount: amountInPaise,
+                currency: "INR",
+                description: "Scheduled SabAI Pay order",
+              },
+            },
+          });
+        }
+        const startedAt = new Date(result.checkout_started_at).getTime();
+        if (Number.isFinite(startedAt) && Date.now() - startedAt < 180000) {
+          return res.status(409).json({ success: false, error: "Secure checkout is still being prepared; try again shortly" });
+        }
+        const reset = await dbService.transitionScheduledOrder(
+          scheduleId,
+          userId,
+          "checkout_pending",
+          { status: "awaiting_authorization", result: {} },
+        );
+        if (!reset) {
+          return res.status(409).json({ success: false, error: "Scheduled checkout changed; refresh and try again" });
+        }
+        return this.createScheduledOrderCheckout(req, res);
+      }
+      if (status !== "awaiting_authorization") {
+        return res.status(409).json({ success: false, error: "This scheduled order is not awaiting payment authorization" });
+      }
+
+      const previousResult = result;
+      result = { checkout_state: "creating", checkout_started_at: new Date().toISOString() };
+      const claim = await dbService.transitionScheduledOrder(
+        scheduleId,
+        userId,
+        "awaiting_authorization",
+        { status: "checkout_pending", result },
+      );
+      if (!claim) {
+        return res.status(409).json({ success: false, error: "This scheduled payment is already being prepared or authorized" });
+      }
+      claimed = true;
+
+      const providerOrder = await paymentService.createOrder(
+        amount,
+        "INR",
+        `sch_${scheduleId.replace(/-/g, "")}`,
+        { user_id: userId, scheduled_order_id: scheduleId },
+      );
+      if (!providerOrder.success || !providerOrder.order?.id) {
+        await dbService.transitionScheduledOrder(
+          scheduleId,
+          userId,
+          "checkout_pending",
+          { status: "awaiting_authorization", result: previousResult },
+        );
+        claimed = false;
+        return res.status(503).json({
+          success: false,
+          error: providerOrder.error || "Could not start Razorpay checkout",
+        });
+      }
+
+      const checkoutResult = {
+        checkout_state: "ready",
+        razorpay_order_id: providerOrder.order.id,
+        amount_in_paise: amountInPaise,
+        checkout_created_at: new Date().toISOString(),
+      };
+      const saved = await dbService.transitionScheduledOrder(
+        scheduleId,
+        userId,
+        "checkout_pending",
+        { result: checkoutResult },
+      );
+      if (!saved) {
+        claimed = false;
+        return res.status(409).json({ success: false, error: "Scheduled checkout changed; refresh before continuing" });
+      }
+      claimed = false;
+      return res.json({
+        success: true,
+        data: {
+          checkout: {
+            key: process.env.RAZORPAY_KEY_ID,
+            orderId: saved.result.razorpay_order_id,
+            amount: amountInPaise,
+            currency: "INR",
+            description: "Scheduled SabAI Pay order",
+          },
+        },
+      });
+    } catch (error) {
+      if (claimed) {
+        try {
+          await dbService.transitionScheduledOrder(
+            scheduleId,
+            userId,
+            "checkout_pending",
+            { status: "awaiting_authorization", result: {} },
+          );
+        } catch (recoveryError) {
+          console.error("Scheduled checkout recovery failed:", recoveryError.message);
+        }
+      }
+      console.error("Scheduled checkout creation failed:", error.message);
+      return res.status(500).json({ success: false, error: "Could not prepare scheduled payment checkout" });
+    }
+  }
+
+  async verifyScheduledOrderPayment(req, res) {
+    try {
+      const userId = String(req.user.id);
+      const scheduleId = String(req.params.orderId);
+      const {
+        razorpay_order_id: razorpayOrderId,
+        razorpay_payment_id: razorpayPaymentId,
+        razorpay_signature: razorpaySignature,
+      } = req.body;
+      if (!razorpayOrderId) {
+        return res.status(400).json({ success: false, error: "Razorpay order ID is required" });
+      }
+
+      const schedules = await dbService.getScheduledOrders(userId);
+      const scheduledOrder = schedules.find((item) => String(item.id) === scheduleId);
+      if (!scheduledOrder) {
+        return res.status(404).json({ success: false, error: "Scheduled order not found" });
+      }
+      const result = scheduledOrder.result ? readJsonRecord(scheduledOrder.result, "Scheduled payment result") : {};
+      const scheduledStatus = String(scheduledOrder.status).toLowerCase();
+      if (
+        scheduledStatus === "paid" &&
+        result.razorpay_payment_id === razorpayPaymentId &&
+        result.razorpay_order_id === razorpayOrderId
+      ) {
+        return res.json({
+          success: true,
+          data: { status: "paid", orderId: result.order_id, alreadyProcessed: true },
+        });
+      }
+      const paymentAlreadyClaimed = scheduledStatus === "payment_verification_pending";
+      const verifiedPaymentId = razorpayPaymentId || (paymentAlreadyClaimed ? result.razorpay_payment_id : null);
+      if (!verifiedPaymentId || (!paymentAlreadyClaimed && !razorpaySignature)) {
+        return res.status(400).json({ success: false, error: "Incomplete Razorpay payment verification" });
+      }
+      if (paymentAlreadyClaimed && result.razorpay_payment_id !== verifiedPaymentId) {
+        return res.status(409).json({ success: false, error: "A different payment is already being reconciled" });
+      }
+      if (
+        !["checkout_pending", "payment_verification_pending"].includes(String(scheduledOrder.status).toLowerCase()) ||
+        result.razorpay_order_id !== razorpayOrderId
+      ) {
+        return res.status(409).json({ success: false, error: "This checkout is no longer valid" });
+      }
+
+      const orderData = readJsonRecord(scheduledOrder.order_data, "Scheduled order");
+      const amount = Number(orderData.total ?? orderData.amount);
+      const expectedAmount = Math.round(amount * 100);
+      const items = orderData.cart || orderData.items;
+      if (!Number.isFinite(amount) || amount <= 0 || !Number.isSafeInteger(expectedAmount)) {
+        return res.status(400).json({ success: false, error: "Scheduled order has an invalid amount" });
+      }
+      if (!Array.isArray(items) || items.length === 0) {
+        return res.status(400).json({ success: false, error: "Scheduled order has no items" });
+      }
+      if (
+        !paymentAlreadyClaimed &&
+        !paymentService.verifyPayment(razorpayOrderId, verifiedPaymentId, razorpaySignature)
+      ) {
+        return res.status(400).json({ success: false, error: "Razorpay payment signature verification failed" });
+      }
+
+      const paymentResult = await paymentService.getPaymentDetails(verifiedPaymentId);
+      const providerPayment = paymentResult.payment;
+      if (
+        !paymentResult.success ||
+        providerPayment?.status !== "captured" ||
+        Number(providerPayment.amount) !== expectedAmount ||
+        String(providerPayment.currency || "").toUpperCase() !== "INR" ||
+        providerPayment.order_id !== razorpayOrderId
+      ) {
+        return res.status(400).json({ success: false, error: "Razorpay did not confirm the expected captured amount" });
+      }
+
+      if (scheduledStatus === "checkout_pending") {
+        const verificationClaim = await dbService.transitionScheduledOrder(
+          scheduleId,
+          userId,
+          "checkout_pending",
+          {
+            status: "payment_verification_pending",
+            result: {
+              ...result,
+              razorpay_payment_id: verifiedPaymentId,
+              verification_started_at: new Date().toISOString(),
+            },
+          },
+        );
+        if (!verificationClaim) {
+          const current = (await dbService.getScheduledOrders(userId))
+            .find((item) => String(item.id) === scheduleId);
+          const currentResult = current?.result ? readJsonRecord(current.result, "Scheduled payment result") : {};
+          if (
+            String(current?.status).toLowerCase() !== "payment_verification_pending" ||
+            currentResult.razorpay_payment_id !== verifiedPaymentId
+          ) {
+            return res.status(409).json({ success: false, error: "This payment is already being reconciled" });
+          }
+        }
+      }
+
+      const stableOrderId = `SCHEDULED-${scheduleId}`;
+      const transactionId = `RZP-${verifiedPaymentId}`;
+      let transaction = await dbService.getTransactionById(transactionId, userId);
+      if (!transaction) {
+        try {
+          await dbService.createTransaction({
+            transaction_id: transactionId,
+            user_id: userId,
+            type: "merchant_order",
+            amount,
+            status: "success",
+            description: `Scheduled order payment to ${orderData.merchant || "merchant"}`,
+            merchant: orderData.merchant || "sabai-pay",
+            provider: "razorpay",
+            payment_method_display: "Razorpay Checkout",
+            razorpay_order_id: razorpayOrderId,
+            razorpay_payment_id: verifiedPaymentId,
+          });
+        } catch (transactionError) {
+          transaction = await dbService.getTransactionById(transactionId, userId);
+          if (!transaction) throw transactionError;
+        }
+      }
+
+      const paymentConfirmedAt = new Date().toISOString();
+      const paymentBreakdown = scheduledOrder.payment_breakdown
+        ? readJsonRecord(scheduledOrder.payment_breakdown, "Scheduled payment breakdown")
+        : {};
+      const updated = await dbService.transitionScheduledOrder(
+        scheduleId,
+        userId,
+        "payment_verification_pending",
+        {
+          status: "paid",
+          executed_at: paymentConfirmedAt,
+          payment_breakdown: {
+            ...paymentBreakdown,
+            provider: "razorpay",
+            razorpay_order_id: razorpayOrderId,
+            razorpay_payment_id: verifiedPaymentId,
+          },
+          result: {
+            ...result,
+            razorpay_order_id: razorpayOrderId,
+            razorpay_payment_id: verifiedPaymentId,
+            order_id: stableOrderId,
+            transaction_id: transactionId,
+            fulfillment_status: "awaiting_merchant_confirmation",
+            payment_confirmed_at: paymentConfirmedAt,
+            tracking: [{
+              status: "payment_confirmed",
+              label: "Payment confirmed",
+              completed: true,
+              time: paymentConfirmedAt,
+            }],
+          },
+        },
+      );
+      if (!updated) {
+        const current = (await dbService.getScheduledOrders(userId))
+          .find((item) => String(item.id) === scheduleId);
+        const currentResult = current?.result ? readJsonRecord(current.result, "Scheduled payment result") : {};
+        if (
+          String(current?.status).toLowerCase() === "paid" &&
+          currentResult.razorpay_payment_id === verifiedPaymentId
+        ) {
+          return res.json({ success: true, data: { status: "paid", orderId: stableOrderId, alreadyProcessed: true } });
+        }
+        return res.status(409).json({ success: false, error: "Payment was captured, but the schedule status needs reconciliation. Contact support before retrying." });
+      }
+
+      return res.json({
+        success: true,
+        data: {
+          status: "paid",
+          orderId: stableOrderId,
+          fulfillmentStatus: "awaiting_merchant_confirmation",
+        },
+      });
+    } catch (error) {
+      console.error("Scheduled payment verification failed:", error.message);
+      return res.status(500).json({ success: false, error: "Could not reconcile scheduled payment; contact support before retrying" });
+    }
+  }
+
   async getUserOrders(req, res) {
     try {
       const userId = String(req.user.id);
       let orders = (await orderService.getUserOrders(userId)) || [];
       let scheduled = (await dbService.getScheduledOrders(userId)) || [];
       const allOrders = [...orders, ...scheduled];
-      allOrders.sort((a, b) => new Date(b.createdAt || b.scheduledTime) - new Date(a.createdAt || a.scheduledTime));
+      const timestamp = (order) => order.createdAt || order.created_at || order.scheduledTime || order.scheduled_time || 0;
+      allOrders.sort((a, b) => new Date(timestamp(b)) - new Date(timestamp(a)));
       return res.status(200).json({ success: true, data: allOrders });
     } catch (error) {
       console.error("❌ Get orders error:", error);
@@ -843,13 +1206,30 @@ class AgentOrderController {
       const { orderId } = req.params;
       const userId = req.user.id;
       let order = await orderService.getOrder(orderId, userId);
-      if (!order) return res.status(404).json({ success: false, error: "Order not found" });
+      if (!order) {
+        const schedules = await dbService.getScheduledOrders(userId);
+        const schedule = schedules.find((item) => {
+          if (String(item.status).toLowerCase() !== "paid") return false;
+          const result = item.result ? readJsonRecord(item.result, "Scheduled payment result") : {};
+          return result.order_id === orderId;
+        });
+        if (!schedule) return res.status(404).json({ success: false, error: "Order not found" });
+        const result = readJsonRecord(schedule.result, "Scheduled payment result");
+        return res.json({
+          success: true,
+          data: {
+            status: "payment_confirmed",
+            tracking: result.tracking || [],
+            estimatedDelivery: "Awaiting merchant confirmation",
+          },
+        });
+      }
       res.json({
         success: true,
         data: {
           status: order.status || "confirmed",
           tracking: order.tracking || [],
-          estimatedDelivery: order.estimatedDelivery || "45 minutes",
+          estimatedDelivery: order.estimatedDelivery || order.estimated_delivery || "45 minutes",
         },
       });
     } catch (error) {
