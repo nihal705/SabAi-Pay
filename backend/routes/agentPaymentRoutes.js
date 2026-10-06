@@ -49,9 +49,26 @@ router.post('/send-money/resolve-recipient', async (req, res) => {
 router.post('/send-money', async (req, res) => {
     try {
         const userId = req.user.id;
-        const { recipient, amount, note } = req.body;
-        
-        const result = await agentPaymentController.sendMoney(userId, recipient, amount, note);
+        const { recipient, amount, note, bankAccountId } = req.body || {};
+        const numericAmount = Number(amount);
+        if (!recipient || !Number.isFinite(numericAmount) || numericAmount <= 0) {
+            return res.status(400).json({
+                success: false,
+                error: 'A recipient and a valid amount are required.'
+            });
+        }
+
+        const result = await agentPaymentController.sendMoney(
+            userId,
+            recipient,
+            numericAmount,
+            note,
+            bankAccountId
+        );
+
+        if (result?.status === 'failed' || result?.error) {
+            return res.status(400).json({ success: false, error: result.error || 'Unable to prepare payment.' });
+        }
         
         res.json({
             success: true,
