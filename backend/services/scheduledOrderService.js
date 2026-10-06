@@ -15,7 +15,14 @@ class ScheduledOrderService {
     const order = (await databaseService.getScheduledOrders(userId)).find((item) => item.id === id);
     if (!order) throw new Error('Scheduled order not found');
     if (!['scheduled', 'awaiting_authorization'].includes(order.status)) throw new Error('This scheduled order can no longer be cancelled');
-    return this.format(await databaseService.updateScheduledOrder(id, { status: 'cancelled', cancelled_at: new Date().toISOString() }, userId));
+    const cancelled = await databaseService.transitionScheduledOrder(
+      id,
+      userId,
+      order.status,
+      { status: 'cancelled', cancelled_at: new Date().toISOString() },
+    );
+    if (!cancelled) throw new Error('This scheduled order has already changed and can no longer be cancelled');
+    return this.format(cancelled);
   }
 
   async updatePaymentMethod(id, userId, paymentMethod, bankAccountId = null) {
