@@ -42,7 +42,6 @@ const cronService = require('./services/cronService');
 
 // Initialize Express app
 const app = express();
-app.use('/api/agent/payment', agentPaymentRoutes);
 if (process.env.TRUST_PROXY === 'true') app.set('trust proxy', 1);
 
 const apiLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 300, standardHeaders: true, legacyHeaders: false, message: { success: false, message: 'Too many requests. Please try again shortly.' } });
@@ -95,6 +94,9 @@ if (process.env.NODE_ENV === 'development') {
 // Auth routes are intentionally stricter than normal authenticated API traffic.
 app.use('/api/auth', authLimiter, authRoutes);
 app.use('/api', apiLimiter);
+
+// Parse request bodies before the authenticated payment router, and keep it under the API limiter.
+app.use('/api/agent/payment', agentPaymentRoutes);
 
 // Bank routes
 app.use('/api/bank', bankRoutes);
