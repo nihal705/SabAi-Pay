@@ -1158,6 +1158,19 @@ async saveUsualOrder(userId, mealSlot, items) {
     if (userId) query = query.eq("user_id", userId);
     return unwrap(query.select("*").single(), "Update scheduled order");
   }
+  async transitionScheduledOrder(id, userId, expectedStatus, updates) {
+    return unwrap(
+      this.db
+        .from("scheduled_orders")
+        .update(present(updates))
+        .eq("id", id)
+        .eq("user_id", userId)
+        .eq("status", expectedStatus)
+        .select("*")
+        .maybeSingle(),
+      "Transition scheduled order",
+    );
+  }
   async createAgentOrder(userId, order) {
     return unwrap(
       this.db
