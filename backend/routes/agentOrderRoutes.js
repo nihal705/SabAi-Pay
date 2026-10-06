@@ -173,6 +173,9 @@ router.post("/auto-pay/setup", agentOrderController.confirmAutoPaySetup.bind(age
 // ORDERS
 // ============================================
 router.get("/orders", agentOrderController.getUserOrders.bind(agentOrderController));
+router.post("/scheduled-orders/:orderId/cancel", agentOrderController.cancelScheduledOrder.bind(agentOrderController));
+router.post("/scheduled-orders/:orderId/checkout", agentOrderController.createScheduledOrderCheckout.bind(agentOrderController));
+router.post("/scheduled-orders/:orderId/verify-payment", agentOrderController.verifyScheduledOrderPayment.bind(agentOrderController));
 router.get("/order/:orderId", agentOrderController.getOrder.bind(agentOrderController));
 router.get("/status/:orderId", agentOrderController.getOrderStatus.bind(agentOrderController));
 
