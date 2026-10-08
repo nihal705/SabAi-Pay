@@ -1798,6 +1798,423 @@
   color: var(--ac-text, #e6e9f0);
 }
 
+/* Order details and tracking */
+.agent-chat-page .modal-overlay .order-details-modal {
+  display: flex;
+  flex-direction: column;
+  width: min(540px, 100%);
+  max-height: min(88dvh, 820px);
+  overflow: hidden;
+  color: var(--ac-text);
+  background: var(--ac-surface);
+  border: 1px solid var(--ac-border);
+  border-radius: 24px;
+  box-shadow: var(--ac-shadow-lg);
+  transform-origin: center;
+}
+
+.order-detail-header,
+.order-detail-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding: 18px 22px;
+  background: var(--ac-surface);
+}
+
+.order-detail-header {
+  border-bottom: 1px solid var(--ac-border);
+}
+
+.order-detail-header h2 {
+  margin: 3px 0 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.order-detail-eyebrow {
+  display: block;
+  color: var(--ac-primary);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.order-details-content {
+  overflow-y: auto;
+  padding: 18px 22px;
+  overscroll-behavior: contain;
+}
+
+.order-detail-hero {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: linear-gradient(135deg, var(--ac-primary-soft), var(--ac-surface-2) 78%);
+  border: 1px solid var(--ac-border);
+  border-radius: 18px;
+  animation: ac-order-rise 0.35s ease both;
+}
+
+.order-detail-merchant-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  color: var(--ac-primary);
+  background: var(--ac-surface);
+  border-radius: 14px;
+  box-shadow: var(--ac-shadow-sm);
+}
+
+.order-detail-merchant-icon svg {
+  font-size: 1.15rem;
+}
+
+.order-detail-merchant {
+  min-width: 0;
+}
+
+.order-detail-merchant h3 {
+  overflow: hidden;
+  margin: 0;
+  font-size: 0.96rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.order-detail-merchant p {
+  overflow: hidden;
+  margin: 4px 0 0;
+  color: var(--ac-text-dim);
+  font-size: 0.72rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.order-detail-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 150px;
+  padding: 7px 10px;
+  overflow: hidden;
+  color: var(--order-status-color, var(--ac-primary));
+  background: color-mix(in srgb, var(--order-status-color, var(--ac-primary)) 12%, var(--ac-surface));
+  border: 1px solid color-mix(in srgb, var(--order-status-color, var(--ac-primary)) 24%, transparent);
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.order-detail-status svg {
+  flex-shrink: 0;
+}
+
+.order-detail-total {
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--ac-border);
+}
+
+.order-detail-total span,
+.order-detail-meta span {
+  color: var(--ac-text-dim);
+  font-size: 0.72rem;
+}
+
+.order-detail-total strong {
+  color: var(--ac-primary);
+  font-size: 1.35rem;
+  font-weight: 850;
+  letter-spacing: -0.03em;
+}
+
+.order-detail-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.order-detail-meta > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 5px;
+  padding: 11px 12px;
+  background: var(--ac-surface-2);
+  border: 1px solid var(--ac-border);
+  border-radius: 13px;
+}
+
+.order-detail-meta strong {
+  overflow-wrap: anywhere;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.order-detail-section {
+  padding: 15px 0;
+  border-top: 1px solid var(--ac-border);
+}
+
+.order-detail-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.order-detail-section-heading h3 {
+  margin: 3px 0 0;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.order-detail-section-heading > span:not(.order-detail-scheduled) {
+  display: grid;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  place-items: center;
+  color: var(--ac-primary);
+  background: var(--ac-primary-soft);
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.order-items-list {
+  overflow: hidden;
+  background: var(--ac-surface-2);
+  border: 1px solid var(--ac-border);
+  border-radius: 14px;
+}
+
+.order-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 13px;
+  font-size: 0.76rem;
+}
+
+.order-item-row + .order-item-row {
+  border-top: 1px solid var(--ac-border);
+}
+
+.order-item-row > span {
+  overflow-wrap: anywhere;
+  color: var(--ac-text-dim);
+}
+
+.order-item-row > span strong,
+.order-item-row > strong {
+  color: var(--ac-text);
+}
+
+.order-detail-empty {
+  margin: 0;
+  padding: 12px 14px;
+  color: var(--ac-text-dim);
+  background: var(--ac-surface-2);
+  border: 1px dashed var(--ac-border);
+  border-radius: 12px;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.order-detail-tracking .order-detail-section-heading {
+  align-items: flex-end;
+}
+
+.order-detail-scheduled {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 55%;
+  padding: 7px 9px;
+  color: var(--ac-primary);
+  background: var(--ac-primary-soft);
+  border-radius: 10px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.order-detail-scheduled svg {
+  flex-shrink: 0;
+}
+
+.tracking-steps-vertical {
+  padding: 2px 0 0 4px;
+}
+
+.tracking-step-vertical {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  min-height: 54px;
+  padding: 0 0 15px;
+}
+
+.tracking-step-vertical:not(:last-child)::after {
+  position: absolute;
+  top: 24px;
+  bottom: 2px;
+  left: 11px;
+  width: 2px;
+  content: "";
+  background: var(--ac-border);
+}
+
+.tracking-step-vertical.completed:not(:last-child)::after {
+  background: var(--ac-success);
+  opacity: 0.55;
+}
+
+.tracking-step-vertical .step-icon {
+  z-index: 1;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  place-items: center;
+  color: var(--ac-text-faint);
+  background: var(--ac-surface-2);
+  border: 1px solid var(--ac-border);
+  border-radius: 50%;
+  font-size: 0.68rem;
+}
+
+.tracking-step-vertical.completed .step-icon {
+  color: var(--ac-success);
+  background: var(--ac-success-soft);
+  border-color: color-mix(in srgb, var(--ac-success) 32%, transparent);
+}
+
+.tracking-step-vertical .step-info {
+  min-width: 0;
+  padding: 2px 0 0;
+}
+
+.tracking-step-vertical .step-label {
+  color: var(--ac-text);
+  font-size: 0.77rem;
+  font-weight: 750;
+}
+
+.tracking-step-vertical .step-time,
+.tracking-step-vertical .step-estimate {
+  margin-top: 3px;
+  color: var(--ac-text-dim);
+  font-size: 0.68rem;
+}
+
+.tracking-step-vertical .step-estimate {
+  color: var(--ac-primary);
+}
+
+.order-detail-footer {
+  justify-content: flex-end;
+  border-top: 1px solid var(--ac-border);
+}
+
+.order-detail-close {
+  min-width: 110px;
+  padding: 10px 18px;
+  color: #fff;
+  background: var(--ac-primary);
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.order-detail-close:hover {
+  background: var(--ac-primary-dark);
+  box-shadow: var(--ac-shadow);
+  transform: translateY(-1px);
+}
+
+@keyframes ac-order-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 520px) {
+  .agent-chat-page .modal-overlay .order-details-modal {
+    width: 100%;
+    max-height: 92dvh;
+    border-radius: 20px;
+  }
+
+  .order-detail-header,
+  .order-detail-footer {
+    padding: 14px 16px;
+  }
+
+  .order-details-content {
+    padding: 14px 16px;
+  }
+
+  .order-detail-hero {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px;
+    padding: 13px;
+  }
+
+  .order-detail-status {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .order-detail-meta {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .order-detail-meta > div {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 9px 11px;
+  }
+
+  .order-detail-scheduled {
+    max-width: 58%;
+    font-size: 0.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .order-detail-hero {
+    animation: none;
+  }
+
+  .order-detail-close {
+    transition: none;
+  }
+}
 
 /* ============================================
    COMPACT MENU ITEMS GRID

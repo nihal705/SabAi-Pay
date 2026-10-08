@@ -3916,86 +3916,151 @@ const handleSendMessage = async (messageOverride = null, cardData = null) => {
           >
             <motion.div
               className="order-details-modal"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="order-details-title"
+              initial={{ y: 28, scale: 0.96, opacity: 0 }}
+              animate={{ y: 0, scale: 1, opacity: 1 }}
+              exit={{ y: 16, scale: 0.98, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 320, damping: 28 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="modal-header">
-                <h2>Order Details</h2>
+              <div className="order-detail-header">
+                <div>
+                  <span className="order-detail-eyebrow">ORDER TRACKING</span>
+                  <h2 id="order-details-title">Order details</h2>
+                </div>
                 <button
                   className="modal-close"
+                  type="button"
+                  aria-label="Close order details"
                   onClick={() => setShowOrderDetails(false)}
                 >
                   ×
                 </button>
               </div>
               <div className="order-details-content">
-                <p>
-                  <strong>Order ID:</strong> {selectedOrder.id}
-                </p>
-                <p>
-                  <strong>Merchant:</strong>{" "}
-                  {selectedOrder.merchantName || selectedOrder.merchant}
-                </p>
-                <p>
-                  <strong>Date:</strong>{" "}
-                  {new Date(selectedOrder.createdAt).toLocaleString()}
-                </p>
-                <p>
-                  <strong>Status:</strong>{" "}
-                  {selectedOrder.status?.replace(/_/g, " ")}
-                </p>
-                <p>
-                  <strong>Payment Method:</strong> {selectedOrder.paymentMethod}
-                </p>
-                <p>
-                  <strong>Coins Earned:</strong> {selectedOrder.sabaiGems} 🪙
-                </p>
-                <h4>Items:</h4>
-                <div className="order-items-list">
-                  {selectedOrder.items?.map((item, i) => (
-                    <div key={i} className="order-item-row">
-                      <span>
-                        {item.quantity}x {item.name}
-                      </span>
-                      <span>₹{item.total || item.price * item.quantity}</span>
+                <section className="order-detail-hero">
+                  <div className="order-detail-merchant-icon" aria-hidden="true">
+                    <FaBoxOpen />
+                  </div>
+                  <div className="order-detail-merchant">
+                    <h3>{selectedOrder.merchantName || selectedOrder.merchant || "Your order"}</h3>
+                    <p>Order #{selectedOrder.id}</p>
+                  </div>
+                  <span
+                    className="order-detail-status"
+                    style={{
+                      "--order-status-color": getStatusColor(selectedOrder.status),
+                    }}
+                  >
+                    {getStatusIcon(selectedOrder.status)}
+                    {selectedOrder.status?.replace(/_/g, " ") || "Processing"}
+                  </span>
+                  <div className="order-detail-total">
+                    <span>Total paid</span>
+                    <strong>
+                      ₹{Number(selectedOrder.totalAmount || selectedOrder.total || 0).toLocaleString("en-IN")}
+                    </strong>
+                  </div>
+                </section>
+
+                  <section className="order-detail-meta" aria-label="Order information">
+                    <div>
+                      <span>Placed on</span>
+                      <strong>
+                        {selectedOrder.createdAt && !Number.isNaN(new Date(selectedOrder.createdAt).getTime())
+                          ? new Date(selectedOrder.createdAt).toLocaleString()
+                          : "—"}
+                      </strong>
                     </div>
-                  ))}
-                </div>
-                <h4>Real-Time Tracking:</h4>
-                <div className="tracking-steps-vertical">
-                  {selectedOrder.tracking?.map((step, i) => (
-                    <div
-                      key={i}
-                      className={`tracking-step-vertical ${step.completed ? "completed" : ""}`}
-                    >
-                      <div className="step-icon">
-                        {step.completed ? "✅" : "⏳"}
-                      </div>
-                      <div className="step-info">
-                        <div className="step-label">{step.label}</div>
-                        {step.time && (
-                          <div className="step-time">{step.time}</div>
-                        )}
-                        {step.estimatedTime && !step.completed && (
-                          <div className="step-estimate">
-                            Est. {step.estimatedTime}
+                    <div>
+                      <span>Payment method</span>
+                      <strong>{selectedOrder.paymentMethod || "—"}</strong>
+                    </div>
+                    <div>
+                      <span>Gems earned</span>
+                      <strong>{Number(selectedOrder.sabaiGems || 0).toLocaleString("en-IN")} 🪙</strong>
+                    </div>
+                  </section>
+
+                  <section className="order-detail-section">
+                    <div className="order-detail-section-heading">
+                      <h3>Items in your order</h3>
+                      <span>{selectedOrder.items?.length || 0}</span>
+                    </div>
+                    {selectedOrder.items?.length ? (
+                      <div className="order-items-list">
+                        {selectedOrder.items.map((item, i) => (
+                          <div key={item.id || `${item.name}-${i}`} className="order-item-row">
+                            <span>
+                              <strong>{item.quantity || 1}×</strong> {item.name || "Item"}
+                            </span>
+                            <strong>
+                              ₹{Number(item.total ?? Number(item.price || 0) * Number(item.quantity || 1)).toLocaleString("en-IN")}
+                            </strong>
                           </div>
-                        )}
+                        ))}
                       </div>
+                    ) : (
+                      <p className="order-detail-empty">Item details aren’t available for this order.</p>
+                    )}
+                  </section>
+
+                  <section className="order-detail-section order-detail-tracking">
+                    <div className="order-detail-section-heading">
+                      <div>
+                        <span className="order-detail-eyebrow">LIVE UPDATES</span>
+                        <h3>Order progress</h3>
+                      </div>
+                      {selectedOrder.isScheduled && (
+                        <span className="order-detail-scheduled">
+                          <FaClock />
+                          {selectedOrder.scheduledTime
+                            ? new Date(selectedOrder.scheduledTime).toLocaleString()
+                            : "Scheduled"}
+                        </span>
+                      )}
                     </div>
-                  ))}
+                    {selectedOrder.tracking?.length ? (
+                      <div className="tracking-steps-vertical">
+                        {selectedOrder.tracking.map((step, i) => (
+                          <motion.div
+                            key={`${step.label || "update"}-${i}`}
+                            className={`tracking-step-vertical ${step.completed ? "completed" : ""}`}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: Math.min(i * 0.07, 0.35), duration: 0.24 }}
+                          >
+                            <div className="step-icon">
+                              {step.completed ? <FaCheckCircle /> : <FaClock />}
+                            </div>
+                            <div className="step-info">
+                              <div className="step-label">{step.label || "Order update"}</div>
+                              {step.time && <div className="step-time">{step.time}</div>}
+                              {step.estimatedTime && !step.completed && (
+                                <div className="step-estimate">Estimated {step.estimatedTime}</div>
+                              )}
+                            </div>
+                          </motion.div>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="order-detail-empty">
+                        Tracking updates will appear here when the merchant shares them.
+                      </p>
+                    )}
+                  </section>
                 </div>
-              </div>
-              <div className="modal-actions">
-                <button
-                  className="btn-primary"
-                  onClick={() => setShowOrderDetails(false)}
-                >
-                  Close
-                </button>
-              </div>
+                <div className="order-detail-footer">
+                  <button
+                    className="order-detail-close"
+                    type="button"
+                    onClick={() => setShowOrderDetails(false)}
+                  >
+                    Done
+                  </button>
+                </div>
             </motion.div>
           </motion.div>
         )}
