@@ -1925,6 +1925,7 @@ const AgentChatPage = () => {
   const [cartTotal, setCartTotal] = useState(0);
   const [showOrderDetails, setShowOrderDetails] = useState(false);
   const [selectedOrder, setSelectedOrder] = useState(null);
+  const [trackingNow, setTrackingNow] = useState(Date.now());
   const [reserveLimits, setReserveLimits] = useState({});
   const [userLocation, setUserLocation] = useState(null);
   const [activeOrderSession, setActiveOrderSession] = useState(null);
@@ -2094,6 +2095,13 @@ const AgentChatPage = () => {
     }, 10000);
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    if (!showOrderDetails) return undefined;
+    setTrackingNow(Date.now());
+    const interval = setInterval(() => setTrackingNow(Date.now()), 1000);
+    return () => clearInterval(interval);
+  }, [showOrderDetails]);
 
   const loadCurrentChat = () => {
     startNewChat();
@@ -2545,6 +2553,87 @@ const AgentChatPage = () => {
         return <FaClock />;
     }
   };
+
+  const getOrderProgress = (order, now = Date.now()) => {
+    const isScheduled = [true, 1, "1", "true"].includes(
+      order?.isScheduled ?? order?.is_scheduled,
+    );
+    if (!order || isScheduled) return order;
+
+    const createdAt = new Date(order.createdAt || order.created_at).getTime();
+    if (!Number.isFinite(createdAt)) return order;
+
+    const estimate = String(
+      order.estimatedDelivery || order.estimated_delivery || "",
+    );
+    const range = estimate.match(
+      /(\d+(?:\.\d+)?)\s*[-–]\s*(\d+(?:\.\d+)?)\s*(hours?|hrs?|h|minutes?|mins?|m)\b/i,
+    );
+    const duration = estimate.match(
+      /(\d+(?:\.\d+)?)\s*(hours?|hrs?|h|minutes?|mins?|m)\b/i,
+    );
+    const amount = Number(range?.[2] || duration?.[1] || 45);
+    const unit = (range?.[3] || duration?.[2] || "minutes").toLowerCase();
+    const deliveryDuration = amount * (/^h|hour|hr/.test(unit) ? 60 : 1) * 60 * 1000;
+    if (!Number.isFinite(deliveryDuration) || deliveryDuration <= 0) return order;
+
+    const statusRanks = {
+      confirmed: 0,
+      preparing: 1,
+      out_for_delivery: 2,
+      delivered: 3,
+    };
+    const currentStatus = String(order.status || "").toLowerCase().replace(/[\s-]+/g, "_");
+    if (["cancelled", "canceled"].includes(currentStatus)) return order;
+    const normalizedStatus = currentStatus.replace(/^order_/, "");
+
+    const elapsed = Math.max(0, now - createdAt);
+    const elapsedRank = elapsed >= deliveryDuration
+      ? 3
+      : elapsed >= deliveryDuration * (2 / 3)
+        ? 2
+        : elapsed >= deliveryDuration / 3
+          ? 1
+          : 0;
+    const currentRank = Object.prototype.hasOwnProperty.call(statusRanks, normalizedStatus)
+      ? statusRanks[normalizedStatus]
+      : 0;
+    const progressRank = Math.max(currentRank, elapsedRank);
+    const progressStatus = Object.keys(statusRanks).find(
+      (status) => statusRanks[status] === progressRank,
+    );
+    const defaultTracking = [
+      { status: "confirmed", label: "Order Confirmed" },
+      { status: "preparing", label: "Preparing" },
+      { status: "out_for_delivery", label: "Out for Delivery" },
+      { status: "delivered", label: "Delivered" },
+    ];
+    const tracking = (Array.isArray(order.tracking) && order.tracking.length
+      ? order.tracking
+      : defaultTracking
+    ).map((step) => {
+      const stepStatus = String(step.status || "").toLowerCase().replace(/[\s-]+/g, "_").replace(/^order_/, "");
+      if (!Object.prototype.hasOwnProperty.call(statusRanks, stepStatus)) return step;
+
+      const stepRank = statusRanks[stepStatus];
+      const completed = stepRank <= progressRank;
+      const stepTime = stepRank === 0
+        ? new Date(createdAt).toLocaleTimeString()
+        : new Date(createdAt + deliveryDuration * (stepRank / 3)).toLocaleTimeString();
+      return {
+        ...step,
+        completed,
+        time: completed ? step.time || stepTime : undefined,
+        estimatedTime: stepRank === 3 && !completed
+          ? step.estimatedTime || new Date(createdAt + deliveryDuration).toLocaleTimeString()
+          : step.estimatedTime,
+      };
+    });
+
+    return { ...order, status: progressStatus, tracking };
+  };
+
+  const trackedSelectedOrder = getOrderProgress(selectedOrder, trackingNow);
 
   const refreshReserveLimitsFromBackend = async () => {
     try {
@@ -3805,50 +3894,53 @@ const handleSendMessage = async (messageOverride = null, cardData = null) => {
           </div>
           <div className="orders-list">
             {orders.length > 0 ? (
-              orders.map((order) => (
-                <div
-                  key={order.id}
-                  className="order-card"
-                  onClick={() => {
-                    setSelectedOrder(order);
-                    setShowOrderDetails(true);
-                  }}
-                >
-                  {order.isScheduled && (
-                    <p className="order-scheduled-time">
-                      📅 {new Date(order.scheduledTime).toLocaleString()}
+              orders.map((order) => {
+                const currentOrder = getOrderProgress(order, trackingNow);
+                return (
+                  <div
+                    key={order.id}
+                    className="order-card"
+                    onClick={() => {
+                      setSelectedOrder(currentOrder);
+                      setShowOrderDetails(true);
+                    }}
+                  >
+                    {order.isScheduled && (
+                      <p className="order-scheduled-time">
+                        📅 {new Date(order.scheduledTime).toLocaleString()}
+                      </p>
+                    )}
+                    <div className="order-header">
+                      <h4>{order.merchantName || order.merchant}</h4>
+                      <span
+                        className="order-status"
+                        style={{
+                          background: `${getStatusColor(currentOrder.status)}20`,
+                          color: getStatusColor(currentOrder.status),
+                        }}
+                      >
+                        {getStatusIcon(currentOrder.status)}
+                        <span>{currentOrder.status?.replace(/_/g, " ")}</span>
+                      </span>
+                    </div>
+                    <p className="order-item">
+                      {order.items
+                        ?.slice(0, 2)
+                        .map((i) => `${i.quantity}x ${i.name}`)
+                        .join(", ")}
+                      {order.items?.length > 2 && "..."}
                     </p>
-                  )}
-                  <div className="order-header">
-                    <h4>{order.merchantName || order.merchant}</h4>
-                    <span
-                      className="order-status"
-                      style={{
-                        background: `${getStatusColor(order.status)}20`,
-                        color: getStatusColor(order.status),
-                      }}
-                    >
-                      {getStatusIcon(order.status)}
-                      <span>{order.status?.replace(/_/g, " ")}</span>
-                    </span>
+                    <div className="order-footer">
+                      <span className="order-amount">
+                        ₹{order.totalAmount || order.total}
+                      </span>
+                      <span className="order-time">
+                        {formatDate(order.createdAt || order.created_at)}
+                      </span>
+                    </div>
                   </div>
-                  <p className="order-item">
-                    {order.items
-                      ?.slice(0, 2)
-                      .map((i) => `${i.quantity}x ${i.name}`)
-                      .join(", ")}
-                    {order.items?.length > 2 && "..."}
-                  </p>
-                  <div className="order-footer">
-                    <span className="order-amount">
-                      ₹{order.totalAmount || order.total}
-                    </span>
-                    <span className="order-time">
-                      {formatDate(order.createdAt)}
-                    </span>
-                  </div>
-                </div>
-              ))
+                );
+              })
             ) : (
               <p className="no-orders">No orders yet</p>
             )}
@@ -3945,22 +4037,22 @@ const handleSendMessage = async (messageOverride = null, cardData = null) => {
                     <FaBoxOpen />
                   </div>
                   <div className="order-detail-merchant">
-                    <h3>{selectedOrder.merchantName || selectedOrder.merchant || "Your order"}</h3>
-                    <p>Order #{selectedOrder.id}</p>
+                    <h3>{trackedSelectedOrder.merchantName || trackedSelectedOrder.merchant || "Your order"}</h3>
+                    <p>Order #{trackedSelectedOrder.id || trackedSelectedOrder.order_id}</p>
                   </div>
                   <span
                     className="order-detail-status"
                     style={{
-                      "--order-status-color": getStatusColor(selectedOrder.status),
+                      "--order-status-color": getStatusColor(trackedSelectedOrder.status),
                     }}
                   >
-                    {getStatusIcon(selectedOrder.status)}
-                    {selectedOrder.status?.replace(/_/g, " ") || "Processing"}
+                    {getStatusIcon(trackedSelectedOrder.status)}
+                    {trackedSelectedOrder.status?.replace(/_/g, " ") || "Processing"}
                   </span>
                   <div className="order-detail-total">
                     <span>Total paid</span>
                     <strong>
-                      ₹{Number(selectedOrder.totalAmount || selectedOrder.total || 0).toLocaleString("en-IN")}
+                      ₹{Number(trackedSelectedOrder.totalAmount ?? trackedSelectedOrder.total ?? trackedSelectedOrder.total_amount ?? 0).toLocaleString("en-IN")}
                     </strong>
                   </div>
                 </section>
@@ -3969,29 +4061,36 @@ const handleSendMessage = async (messageOverride = null, cardData = null) => {
                     <div>
                       <span>Placed on</span>
                       <strong>
-                        {selectedOrder.createdAt && !Number.isNaN(new Date(selectedOrder.createdAt).getTime())
-                          ? new Date(selectedOrder.createdAt).toLocaleString()
+                        {(trackedSelectedOrder.createdAt || trackedSelectedOrder.created_at) && !Number.isNaN(new Date(trackedSelectedOrder.createdAt || trackedSelectedOrder.created_at).getTime())
+                          ? new Date(trackedSelectedOrder.createdAt || trackedSelectedOrder.created_at).toLocaleString()
                           : "—"}
                       </strong>
                     </div>
                     <div>
                       <span>Payment method</span>
-                      <strong>{selectedOrder.paymentMethod || "—"}</strong>
+                      <strong>
+                        {trackedSelectedOrder.paymentMethod ||
+                          trackedSelectedOrder.payment_method ||
+                          trackedSelectedOrder.payment_method_display ||
+                          trackedSelectedOrder.paymentMode ||
+                          trackedSelectedOrder.payment_mode ||
+                          "—"}
+                      </strong>
                     </div>
                     <div>
                       <span>Gems earned</span>
-                      <strong>{Number(selectedOrder.sabaiGems || 0).toLocaleString("en-IN")} 🪙</strong>
+                      <strong>{Number(trackedSelectedOrder.sabaiGems || trackedSelectedOrder.sabai_gems || 0).toLocaleString("en-IN")} 🪙</strong>
                     </div>
                   </section>
 
                   <section className="order-detail-section">
                     <div className="order-detail-section-heading">
                       <h3>Items in your order</h3>
-                      <span>{selectedOrder.items?.length || 0}</span>
+                      <span>{trackedSelectedOrder.items?.length || 0}</span>
                     </div>
-                    {selectedOrder.items?.length ? (
+                    {trackedSelectedOrder.items?.length ? (
                       <div className="order-items-list">
-                        {selectedOrder.items.map((item, i) => (
+                        {trackedSelectedOrder.items.map((item, i) => (
                           <div key={item.id || `${item.name}-${i}`} className="order-item-row">
                             <span>
                               <strong>{item.quantity || 1}×</strong> {item.name || "Item"}
@@ -4013,18 +4112,18 @@ const handleSendMessage = async (messageOverride = null, cardData = null) => {
                         <span className="order-detail-eyebrow">LIVE UPDATES</span>
                         <h3>Order progress</h3>
                       </div>
-                      {selectedOrder.isScheduled && (
+                      {(trackedSelectedOrder.isScheduled || trackedSelectedOrder.is_scheduled) && (
                         <span className="order-detail-scheduled">
                           <FaClock />
-                          {selectedOrder.scheduledTime
-                            ? new Date(selectedOrder.scheduledTime).toLocaleString()
+                          {(trackedSelectedOrder.scheduledTime || trackedSelectedOrder.scheduled_time)
+                            ? new Date(trackedSelectedOrder.scheduledTime || trackedSelectedOrder.scheduled_time).toLocaleString()
                             : "Scheduled"}
                         </span>
                       )}
                     </div>
-                    {selectedOrder.tracking?.length ? (
+                    {trackedSelectedOrder.tracking?.length ? (
                       <div className="tracking-steps-vertical">
-                        {selectedOrder.tracking.map((step, i) => (
+                        {trackedSelectedOrder.tracking.map((step, i) => (
                           <motion.div
                             key={`${step.label || "update"}-${i}`}
                             className={`tracking-step-vertical ${step.completed ? "completed" : ""}`}
