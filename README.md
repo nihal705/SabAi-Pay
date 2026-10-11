@@ -64,6 +64,36 @@ SabAI Pay is a prototype AI-powered UPI payment assistant that explores the conv
 
 ---
 
+## 🖼️ Gallery
+
+<p align="center">
+  <a href="https://gnihal.com/#gallery-sabai-pay">
+    <img src="https://img.shields.io/badge/View%20Full%20Gallery-gnihal.com-blueviolet?style=for-the-badge" alt="View Full Gallery"/>
+  </a>
+</p>
+
+<p align="center">
+  <b>See SabAI Pay in action - screenshots of the complete payment experience.</b>
+</p>
+
+🔗 **Full gallery:** [gnihal.com/#gallery-sabai-pay](https://gnihal.com/#gallery-sabai-pay)
+
+### What You'll Find in the Gallery
+
+| Section | What it shows |
+|---------|---------------|
+| **Agent Chat** | Natural language conversations with the AI payment assistant |
+| **Reserve Pay** | Setting up and managing spending limits |
+| **Payments** | Choosing between UPI, Bank Account, SabAI Gems and Reserve Pay |
+| **Recharge & Bills** | Mobile recharge and utility bill payment flows |
+| **Food Ordering** | Restaurant discovery and ordering through conversation |
+| **Orders & Tracking** | Order history and real-time status updates |
+| **Auto-Pay & Scheduling** | Scheduled orders and recurring payments |
+
+> 📸 The gallery is also available on my portfolio, under the SabAI Pay project card.
+
+---
+
 ## Technology Stack
 
 ### Frontend
@@ -163,7 +193,7 @@ Do not use this software with real financial data or in any production environme
 ## 📞 Contact
 
 For inquiries, collaboration, or licensing:
-- 📧 **sabaipaycontact@gmail.com**
+- 📧 **nihalmohammad705@gmail.com**
 
 ---
 
