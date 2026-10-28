@@ -233,3 +233,14 @@ export-project1.js
 show-frontend.js
 sabai_pay_website_complete.txt
 sabaipay-frontend_export.txt
+
+
+# Test runners, ad-hoc live tests, and scratch scripts (protect live user credentials & logs)
+backend/tests/run*.js
+backend/tests/test*.js
+backend/tests/*.json
+backend/scripts/patchFrontendOrder.js
+backend/scripts/record*.js
+backend/scripts/runRealUserChatsAndConfirmations.js
+backend/scripts/simulateUserChats.js
+backend/scripts/testUsualBreakfastAndConfirm.js
