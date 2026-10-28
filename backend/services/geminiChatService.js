@@ -205,32 +205,50 @@ class GeminiChatService {
     } catch (error) {
       console.error("❌ Gemini error:", error.message);
 
-      // Rate-limit detection (429 from Google)
-      const isRateLimit =
-        error.message?.includes("429") ||
-        error.message?.toLowerCase().includes("quota") ||
-        error.message?.toLowerCase().includes("rate limit") ||
-        error?.status === 429;
+      // Try Groq as secondary provider if available
+      const groqChatService = require("./groqChatService");
+      if (groqChatService.isAvailable()) {
+        try {
+          const tools = agentToolRegistry.getToolDefinitions();
+          const groqRes = await groqChatService.processMessage(userId, message, tools);
+          if (groqRes) {
+            if (groqRes.toolCalls && groqRes.toolCalls.length > 0) {
+              const tc = groqRes.toolCalls[0];
+              const funcRes = await this.handleFunctionCall(userId, tc, context);
+              return {
+                success: true,
+                response: funcRes.response?.message || "Processed successfully",
+                functionCalls: [tc.name],
+                functionResults: [funcRes],
+                requiresAction: funcRes.response?.requiresAction || false,
+                pendingIntent: null,
+              };
+            }
+            if (groqRes.text) {
+              return { success: true, response: groqRes.text, requiresAction: false };
+            }
+          }
+        } catch (e) {
+          console.error("Groq fallback error:", e.message);
+        }
+      }
 
-      if (isRateLimit) {
+      // Fallback to direct Dialogue Service
+      const agentDialogueService = require("./agentDialogueService");
+      const dialogueRes = await agentDialogueService.process(userId, message, pendingIntent, context);
+      if (dialogueRes) {
         return {
           success: true,
-          response:
-            "⏳ **SabAI is temporarily at capacity.**\n\n" +
-            "The AI service has hit its free-tier usage limit. " +
-            "Please wait 15–60 minutes and try again.\n\n" +
-            "**Meanwhile, you can still use:**\n" +
-            "• Send Money\n• Pay Bills\n• Mobile Recharge\n• Reserve Pay limits\n• Check Gems & Transactions\n\n" +
-            "Sorry for the inconvenience — this is a known limitation of the free-tier Gemini API.",
-          requiresAction: false,
-          pendingIntent: pendingIntentService.get(userId),
+          response: dialogueRes.response || dialogueRes.message || "Processed.",
+          requiresAction: dialogueRes.requiresAction || false,
+          ...dialogueRes,
         };
       }
 
       return {
         success: true,
         response:
-          "I'm having trouble connecting right now. Please try again or rephrase your request.",
+          "I'm here to help with your payments, recharges, bill payments, and food orders. Please let me know what you'd like to do!",
         requiresAction: false,
         pendingIntent: pendingIntentService.get(userId),
       };

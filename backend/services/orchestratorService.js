@@ -2,6 +2,7 @@
 
 const geminiService = require("./geminiChatService");
 const pendingIntentService = require("./pendingIntentService");
+const agentDialogueService = require("./agentDialogueService");
 const orderAgent = require("../agents/orderAgent");
 const sendMoneyAgent = require("../agents/sendMoneyAgent");
 const rechargeAgent = require("../agents/rechargeAgent");
@@ -14,6 +15,12 @@ const preferencesAgent = require("../agents/preferencesAgent");
 class OrchestratorService {
   async processMessage(userId, message, pendingIntent, context = {}) {
     try {
+      // Step 0: Direct intent & dialogue fulfillment (recharge, send money, bills, foods, limits)
+      const dialogueResult = await agentDialogueService.process(userId, message, pendingIntent, context);
+      if (dialogueResult) {
+        return this.formatResult(dialogueResult);
+      }
+
       // Step 1: If pending intent exists and is complete, force function call
       if (pendingIntent && pendingIntentService.isComplete(userId)) {
         const result = await geminiService.forceFunctionCall(
