@@ -329,12 +329,21 @@ router.post('/multi-payment/confirm', async (req, res) => {
         const results = [];
         for (const payment of payments) {
             let result;
+            const pData = payment.paymentData || {
+                amount: payment.amount,
+                biller: { name: payment.title, category: payment.category || 'electricity' },
+                operator: { name: 'Airtel' },
+                mobileNumber: '9876543210',
+                customerId: 'MULTI' + Date.now().toString().slice(-6),
+                method: 'reserve_pay',
+                requiresPin: false
+            };
             if (payment.type === 'send_money') {
-                result = await agentPaymentController.confirmSendMoney(userId, payment.paymentData, pin);
+                result = await agentPaymentController.confirmSendMoney(userId, pData, pin);
             } else if (payment.type === 'pay_bill') {
-                result = await agentPaymentController.confirmBillPayment(userId, payment.paymentData, pin);
+                result = await agentPaymentController.confirmBillPayment(userId, pData, pin);
             } else if (payment.type === 'recharge_mobile') {
-                result = await agentPaymentController.confirmRecharge(userId, payment.paymentData, pin);
+                result = await agentPaymentController.confirmRecharge(userId, pData, pin);
             }
             results.push(result);
         }

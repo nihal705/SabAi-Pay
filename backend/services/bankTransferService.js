@@ -20,8 +20,8 @@ class BankTransferService {
     if (!text || typeof text !== "string") return null;
     const cleaned = text.trim();
 
-    // Format A: number/IFSC or number IFSC
-    const withIfsc = cleaned.match(/(\d{6,18})\s*[\/\s]\s*([A-Z]{4}0[A-Z0-9]{6})/i);
+    // Format A: number/IFSC or number IFSC or number with IFSC code (tolerates hyphens, lowercase)
+    const withIfsc = cleaned.match(/(\d{6,18})\s*(?:[\/\s\-_]|ifsc[\s\-_:]*|[a-z0-9\-_]*)*\s*([A-Za-z]{4}0[A-Za-z0-9]{6})/i);
     if (withIfsc) {
       return {
         accountNumber: withIfsc[1],

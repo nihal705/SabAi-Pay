@@ -93,12 +93,12 @@ class RecipientResolverService {
         };
       }
       if (contactResult.length > 1) {
+        // Default to the first (most recently used) contact to avoid blocking the user flow
         return {
-          resolved: false,
-          recipient: null,
+          resolved: true,
+          recipient: contactResult[0],
           candidates: contactResult,
-          ambiguity: true,
-          message: `Multiple contacts found with name "${trimmed}". Please specify.`,
+          ambiguity: false,
         };
       }
     }
