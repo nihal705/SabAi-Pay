@@ -1,6 +1,8 @@
 // backend/server.js
 // Main server file for SabAI Pay
 
+const dns = require('dns');
+try { dns.setDefaultResultOrder('ipv4first'); } catch (e) {}
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -78,6 +80,10 @@ app.use(helmet({
 // Body parsing middleware
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+
+// Static images serving
+const path = require('path');
+app.use('/images', express.static(path.join(__dirname, '../frontend/public/images')));
 
 // Request logging middleware
 if (process.env.NODE_ENV === 'development') {

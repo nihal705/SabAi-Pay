@@ -4,6 +4,10 @@
 const jwt = require('jsonwebtoken');
 const databaseService = require('../services/databaseService');
 
+// In-memory cache for user sessions to prevent 50+ concurrent remote Supabase round-trips
+const userAuthCache = new Map();
+const USER_CACHE_TTL = 60 * 1000; // 60 seconds
+
 class AuthMiddleware {
     
     static async verifyToken(req, res, next) {
@@ -33,7 +37,17 @@ class AuthMiddleware {
                 });
             }
             
-            const user = await databaseService.getUserById(userId);
+            // Check in-memory cache first
+            let user;
+            const cached = userAuthCache.get(userId);
+            if (cached && cached.expiresAt > Date.now()) {
+                user = cached.user;
+            } else {
+                user = await databaseService.getUserById(userId);
+                if (user && user.is_active) {
+                    userAuthCache.set(userId, { user, expiresAt: Date.now() + USER_CACHE_TTL });
+                }
+            }
             
             if (!user || !user.is_active) {
                 return res.status(401).json({

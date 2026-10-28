@@ -125,7 +125,8 @@ router.post('/register', async (req, res, next) => {
 
 router.post('/login', async (req, res, next) => {
   try {
-    const { phone_number: phone, password } = req.body;
+    const phone = req.body.phone_number || req.body.phone || req.body.phoneNumber;
+    const { password } = req.body;
     if (!validPhone(phone) || typeof password !== 'string') return res.status(400).json({ success: false, message: 'Phone number and password are required' });
     const user = await databaseService.getUserByPhone(phone);
     if (!user || !user.is_active || !user.password_hash || !(await bcrypt.compare(password, user.password_hash))) return res.status(401).json({ success: false, message: 'Invalid phone number or password' });

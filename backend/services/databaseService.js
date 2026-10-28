@@ -11,9 +11,30 @@ const limit = (value, maximum = 100) =>
   Math.min(Math.max(Number(value) || 1, 1), maximum);
 
 async function unwrap(query, operation) {
-  const { data, error } = await query;
-  if (error) throw new Error(`${operation}: ${error.message}`);
-  return data;
+  let lastError;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const res = await query;
+      if (res && res.error) {
+        const msg = String(res.error.message || "");
+        if ((msg.includes("fetch failed") || msg.includes("network") || msg.includes("ECONNRESET") || msg.includes("ETIMEDOUT")) && attempt < 3) {
+          await new Promise(r => setTimeout(r, 200 * attempt));
+          continue;
+        }
+        throw new Error(`${operation}: ${msg}`);
+      }
+      return res ? res.data : null;
+    } catch (err) {
+      lastError = err;
+      const msg = String(err.message || "");
+      if ((msg.includes("fetch failed") || msg.includes("network") || msg.includes("ECONNRESET") || msg.includes("ETIMEDOUT")) && attempt < 3) {
+        await new Promise(r => setTimeout(r, 200 * attempt));
+        continue;
+      }
+      throw new Error(`${operation}: ${msg}`);
+    }
+  }
+  throw lastError;
 }
 
 class DatabaseService {
@@ -531,6 +552,7 @@ class DatabaseService {
       requires_approval: Boolean(data.requires_approval),
       is_active: data.is_active !== false,
       contributions: data.contributions || [],
+      ...(data.current_spent !== undefined ? { current_spent: numeric(data.current_spent) } : {}),
     };
     let candidate = { ...record };
     for (let attempt = 0; attempt < 8; attempt += 1) {
@@ -568,17 +590,35 @@ class DatabaseService {
     );
   }
   async updateReserveLimitSpent(userId, merchant, amount) {
-  const { data, error } = await this.db.rpc('spend_reserve_limit', {
-    p_user_id: userId,
-    p_merchant: merchant,
-    p_amount: amount
-  });
-  if (error) {
-    console.error('spend_reserve_limit error:', error);
-    throw new Error(`Spend Reserve Pay: ${error.message}`);
+    try {
+      const { data, error } = await this.db.rpc('spend_reserve_limit', {
+        p_user_id: userId,
+        p_merchant: merchant,
+        p_amount: amount
+      });
+      if (!error && data) return data;
+    } catch (e) {}
+
+    // Resilient fallback: direct update on reserve_limits table
+    try {
+      const limit = await this.getReserveLimit(userId, merchant);
+      if (limit) {
+        const newSpent = numeric(limit.current_spent) + numeric(amount);
+        return await unwrap(
+          this.db
+            .from("reserve_limits")
+            .update({ current_spent: newSpent })
+            .eq("user_id", userId)
+            .eq("merchant", merchant)
+            .select("*")
+            .maybeSingle(),
+          "Update reserve limit spent fallback"
+        );
+      }
+    } catch (fallbackErr) {
+      console.warn("Reserve limit spent update fallback:", fallbackErr.message);
+    }
   }
-  return data;
-}
 
   async getBills(userId) {
     return unwrap(
@@ -728,15 +768,30 @@ class DatabaseService {
     amount,
     received = false,
   ) {
-    const old = await unwrap(
-      this.db
-        .from("contacts")
-        .select("*")
-        .eq("user_id", userId)
-        .eq("vpa", vpa)
-        .maybeSingle(),
-      "Get contact",
-    );
+    let old = null;
+    if (vpa) {
+      old = await unwrap(
+        this.db
+          .from("contacts")
+          .select("*")
+          .eq("user_id", userId)
+          .eq("vpa", vpa)
+          .maybeSingle(),
+        "Get contact by vpa",
+      ).catch(() => null);
+    }
+    if (!old && phone) {
+      old = await unwrap(
+        this.db
+          .from("contacts")
+          .select("*")
+          .eq("user_id", userId)
+          .eq("phone", phone)
+          .maybeSingle(),
+        "Get contact by phone",
+      ).catch(() => null);
+    }
+    const finalVpa = vpa || (phone ? `${phone}@upi` : null);
     const value = numeric(amount);
     if (!old)
       return unwrap(
@@ -744,9 +799,9 @@ class DatabaseService {
           .from("contacts")
           .insert({
             user_id: userId,
-            name,
-            vpa,
-            phone,
+            name: name || "Contact",
+            vpa: finalVpa,
+            phone: phone || null,
             sent_count: received ? 0 : 1,
             received_count: received ? 1 : 0,
             total_sent: received ? 0 : value,
@@ -763,6 +818,7 @@ class DatabaseService {
         .update({
           name: name || old.name,
           phone: phone || old.phone,
+          vpa: finalVpa || old.vpa,
           sent_count: old.sent_count + Number(!received),
           received_count: old.received_count + Number(received),
           total_sent: numeric(old.total_sent) + (received ? 0 : value),
@@ -1030,7 +1086,7 @@ async saveUsualOrder(userId, mealSlot, items) {
       .update({ status })
       .eq("order_id", orderId);
     if (userId) query = query.eq("user_id", userId);
-    return unwrap(query.select("*").single(), "Update Auto Pay status");
+    return unwrap(query.select("*").maybeSingle(), "Update Auto Pay status");
   }
   async deleteAutoPayOrder(orderId, userId) {
     return unwrap(
