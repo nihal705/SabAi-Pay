@@ -1166,7 +1166,29 @@ class AgentOrderController {
       const userId = String(req.user.id);
       let orders = (await orderService.getUserOrders(userId)) || [];
       let scheduled = (await dbService.getScheduledOrders(userId)) || [];
-      const allOrders = [...orders, ...scheduled];
+      const allOrders = [...orders, ...scheduled].map((order) => {
+        let items = [];
+        if (order.items) {
+          try {
+            items = typeof order.items === 'string' ? JSON.parse(order.items) : order.items;
+          } catch (e) {
+            items = [];
+          }
+        }
+        return {
+          ...order,
+          id: order.id || order.order_id,
+          orderId: order.order_id || order.orderId || order.id,
+          merchant: order.merchant || 'swiggy',
+          merchantName: order.merchant_name || order.merchantName || order.merchant || 'SWIGGY',
+          totalAmount: Number(order.total_amount || order.totalAmount || order.total || 0),
+          total: Number(order.total_amount || order.totalAmount || order.total || 0),
+          items: Array.isArray(items) ? items : [],
+          paymentMethod: order.payment_method || order.paymentMethod || 'UPI Payment',
+          status: order.status || 'confirmed',
+          createdAt: order.created_at || order.createdAt || order.scheduled_time || new Date().toISOString(),
+        };
+      });
       const timestamp = (order) => order.createdAt || order.created_at || order.scheduledTime || order.scheduled_time || 0;
       allOrders.sort((a, b) => new Date(timestamp(b)) - new Date(timestamp(a)));
       return res.status(200).json({ success: true, data: allOrders });
