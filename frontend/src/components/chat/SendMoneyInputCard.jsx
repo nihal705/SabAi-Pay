@@ -1,5 +1,5 @@
 // frontend/src/components/chat/SendMoneyInputCard.jsx
-// Interactive card for send money input
+// Interactive card for send money input with distinct, logical form fields per tab
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -14,8 +14,10 @@ import {
   FaPhone,
   FaUniversity,
   FaUserFriends,
+  FaUserPlus,
 } from "react-icons/fa";
 import axios from "axios";
+import { getContacts, addContact } from "../../services/storageService";
 import "./PaymentChatCards.css";
 
 const SendMoneyInputCard = ({
@@ -24,29 +26,42 @@ const SendMoneyInputCard = ({
   onConfirm,
   onCancel,
 }) => {
-  const [recipient, setRecipient] = useState(currentSlots?.recipient || "");
+  const [recipientType, setRecipientType] = useState("contact");
   const [amount, setAmount] = useState(currentSlots?.amount || "");
   const [note, setNote] = useState(currentSlots?.note || "");
-  const [recipientType, setRecipientType] = useState("contact");
+  const [saveToContacts, setSaveToContacts] = useState(true);
+
+  // Field states
+  const [contactRecipient, setContactRecipient] = useState(
+    currentSlots?.recipient || currentSlots?.recipientName || ""
+  );
+  const [recipientName, setRecipientName] = useState(
+    currentSlots?.recipientName || ""
+  );
+  const [upiId, setUpiId] = useState("");
+  const [phone, setPhone] = useState("");
+  const [accountNumber, setAccountNumber] = useState("");
+  const [ifsc, setIfsc] = useState("");
+
   const [contacts, setContacts] = useState([]);
   const [filteredContacts, setFilteredContacts] = useState([]);
   const [showContacts, setShowContacts] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // Load contacts
+  const UPI_HANDLES = ["@oksbi", "@okhdfcbank", "@okicici", "@ybl", "@paytm"];
+
   useEffect(() => {
     loadContacts();
   }, []);
 
-  // Filter contacts on recipient change
   useEffect(() => {
-    if (recipient.length > 0) {
+    if (contactRecipient.length > 0) {
       const filtered = contacts.filter(
         (c) =>
-          c.name?.toLowerCase().includes(recipient.toLowerCase()) ||
-          c.vpa?.toLowerCase().includes(recipient.toLowerCase()) ||
-          c.phone?.includes(recipient),
+          c.name?.toLowerCase().includes(contactRecipient.toLowerCase()) ||
+          c.vpa?.toLowerCase().includes(contactRecipient.toLowerCase()) ||
+          c.phone?.includes(contactRecipient)
       );
       setFilteredContacts(filtered);
       setShowContacts(filtered.length > 0);
@@ -54,81 +69,124 @@ const SendMoneyInputCard = ({
       setFilteredContacts(contacts.slice(0, 5));
       setShowContacts(contacts.length > 0);
     }
-  }, [recipient, contacts]);
+  }, [contactRecipient, contacts]);
 
   const loadContacts = async () => {
     try {
-      const response = await axios.get("/api/agent/contacts", {
-        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
-      });
-      if (response.data.success) {
-        setContacts(response.data.data.contacts || []);
-        setFilteredContacts((response.data.data.contacts || []).slice(0, 5));
-      }
-    } catch (error) {
-      console.error("Load contacts error:", error);
-    }
-  };
+      const loaded = await getContacts();
+      if (Array.isArray(loaded)) {
+        setContacts(loaded);
+        setFilteredContacts(loaded.slice(0, 5));
 
-  const handleRecipientChange = (e) => {
-    setRecipient(e.target.value);
-    setError("");
+        // If initial recipient was passed and isn't in contacts, auto-switch to UPI tab!
+        const initialName = currentSlots?.recipient || currentSlots?.recipientName;
+        if (initialName) {
+          const exists = loaded.some(
+            (c) =>
+              c.name?.toLowerCase() === initialName.toLowerCase() ||
+              c.vpa?.toLowerCase() === initialName.toLowerCase() ||
+              c.phone === initialName
+          );
+          if (!exists) {
+            setRecipientType("upi");
+            setRecipientName(initialName);
+          }
+        }
+      }
+    } catch (err) {
+      console.warn("Failed to load contacts:", err.message);
+    }
   };
 
   const handleAmountChange = (e) => {
     const value = e.target.value.replace(/\D/g, "");
-    if (value) {
-      setAmount(parseInt(value));
-    } else {
-      setAmount("");
-    }
+    setAmount(value ? parseInt(value, 10) : "");
+    setError("");
   };
 
   const handleQuickAmount = (amt) => {
     setAmount(amt);
+    setError("");
   };
 
   const handleContactSelect = (contact) => {
-    setRecipient(contact.name || contact.vpa || contact.phone);
+    setContactRecipient(contact.name || contact.vpa || contact.phone);
     setShowContacts(false);
     setError("");
   };
 
-  const handleConfirm = () => {
-    // Validate
-    if (!recipient || recipient.trim().length < 2) {
-      setError("Please enter a recipient name, UPI ID, or phone number");
+  const handleConfirm = async () => {
+    setError("");
+
+    if (!amount || Number(amount) < 1) {
+      setError("Please enter a valid amount (₹1 or more)");
       return;
     }
 
-    if (!amount || amount < 1) {
-      setError("Please enter a valid amount");
-      return;
+    let targetRecipient = "";
+    let formattedMessage = "";
+
+    if (recipientType === "contact") {
+      if (!contactRecipient || contactRecipient.trim().length < 2) {
+        setError("Please select or type a contact name");
+        return;
+      }
+      targetRecipient = contactRecipient.trim();
+      formattedMessage = `Send ₹${amount} to ${targetRecipient}`;
+    } else if (recipientType === "upi") {
+      if (!upiId || !upiId.includes("@")) {
+        setError("Please enter a valid UPI ID (e.g., name@bank)");
+        return;
+      }
+      targetRecipient = upiId.trim();
+      formattedMessage = `Send ₹${amount} to ${targetRecipient}`;
+    } else if (recipientType === "phone") {
+      const cleanPhone = phone.replace(/\D/g, "");
+      if (cleanPhone.length !== 10 || !/^[6-9]/.test(cleanPhone)) {
+        setError("Please enter a valid 10-digit Indian phone number");
+        return;
+      }
+      targetRecipient = cleanPhone;
+      formattedMessage = `Send ₹${amount} to ${targetRecipient}`;
+    } else if (recipientType === "bank") {
+      const cleanAccount = accountNumber.replace(/\D/g, "");
+      const cleanIfsc = ifsc.trim().toUpperCase();
+      if (cleanAccount.length < 8 || cleanAccount.length > 18) {
+        setError("Please enter a valid bank account number (8-18 digits)");
+        return;
+      }
+      if (!/^[A-Z]{4}0[A-Z0-9]{6}$/.test(cleanIfsc)) {
+        setError("Please enter a valid 11-character IFSC code (e.g. HDFC0001234)");
+        return;
+      }
+      targetRecipient = `${cleanAccount}/${cleanIfsc}`;
+      formattedMessage = `Send ₹${amount} to bank account ${cleanAccount} IFSC ${cleanIfsc}`;
     }
 
-    const cardData = {
-      recipient: recipient.trim(),
-      amount: parseInt(amount),
+    // Save contact if requested for non-contact tabs
+    if (saveToContacts && recipientType !== "contact" && (recipientName || targetRecipient)) {
+      try {
+        const cName = recipientName.trim() || targetRecipient;
+        const cVpa = recipientType === "upi" ? targetRecipient : `${targetRecipient}@upi`;
+        const cPhone = recipientType === "phone" ? targetRecipient : null;
+
+        await addContact({ name: cName, vpa: cVpa, phone: cPhone });
+      } catch (saveErr) {
+        console.warn("Could not auto-save contact:", saveErr.message);
+      }
+    }
+
+    if (note && note.trim()) {
+      formattedMessage += ` for ${note.trim()}`;
+    }
+
+    onConfirm({
+      recipient: targetRecipient,
+      amount: Number(amount),
       note: note.trim() || undefined,
-      recipientType: recipientType,
-    };
-
-    onConfirm(cardData);
-  };
-
-  const getRecipientTypeIcon = () => {
-    switch (recipientType) {
-      case "contact":
-        return <FaUserFriends />;
-      case "upi":
-        return <FaAddressCard />;
-      case "phone":
-        return <FaPhone />;
-      case "bank":
-        return <FaUniversity />;
-      default:
-        return <FaUser />;
-    }
+      recipientType,
+      message: formattedMessage,
+    });
   };
 
   return (
@@ -149,84 +207,216 @@ const SendMoneyInputCard = ({
       </div>
 
       <div className="payment-card-body">
-        {/* Recipient Type Selection */}
+        {/* Recipient Type Tabs */}
         <div className="form-group">
-          <label>Recipient Type</label>
+          <label>Transfer Method</label>
           <div className="recipient-type-select">
-            {["contact", "upi", "phone", "bank"].map((type) => (
+            {[
+              { id: "contact", label: "Contact", icon: <FaUserFriends /> },
+              { id: "upi", label: "UPI ID", icon: <FaAddressCard /> },
+              { id: "phone", label: "Phone", icon: <FaPhone /> },
+              { id: "bank", label: "Bank Wire", icon: <FaUniversity /> },
+            ].map((t) => (
               <button
-                key={type}
-                className={`type-btn ${recipientType === type ? "active" : ""}`}
-                onClick={() => setRecipientType(type)}
+                key={t.id}
+                type="button"
+                className={`type-btn ${recipientType === t.id ? "active" : ""}`}
+                onClick={() => {
+                  setRecipientType(t.id);
+                  setError("");
+                }}
               >
-                {type === "contact" && <FaUserFriends />}
-                {type === "upi" && <FaAddressCard />}
-                {type === "phone" && <FaPhone />}
-                {type === "bank" && <FaUniversity />}
-                <span>{type.charAt(0).toUpperCase() + type.slice(1)}</span>
+                {t.icon}
+                <span>{t.label}</span>
               </button>
             ))}
           </div>
         </div>
 
-        {/* Recipient Input */}
-        <div className="form-group">
-          <label>
-            {recipientType === "contact"
-              ? "Contact Name"
-              : recipientType === "upi"
-                ? "UPI ID"
-                : recipientType === "phone"
-                  ? "Phone Number"
-                  : "Bank Account Details"}
-          </label>
-          <div className="input-with-icon">
-            {getRecipientTypeIcon()}
-            <input
-              type="text"
-              value={recipient}
-              onChange={handleRecipientChange}
-              placeholder={
-                recipientType === "contact"
-                  ? "Enter contact name"
-                  : recipientType === "upi"
-                    ? "Enter UPI ID (e.g., name@bank)"
-                    : recipientType === "phone"
-                      ? "Enter phone number"
-                      : "Enter bank account details"
-              }
-              className="form-input"
-              autoFocus={missingSlots?.includes("recipient")}
-              onFocus={() => setShowContacts(true)}
-              onBlur={() => setTimeout(() => setShowContacts(false), 300)}
-            />
-          </div>
-
-          {/* Contact Suggestions */}
-          {showContacts && filteredContacts.length > 0 && (
-            <div className="contact-suggestions">
-              {filteredContacts.map((contact) => (
-                <button
-                  key={contact.id}
-                  className="contact-suggestion"
-                  onClick={() => handleContactSelect(contact)}
-                >
-                  <div className="contact-avatar">
-                    {contact.name?.charAt(0) || "U"}
-                  </div>
-                  <div className="contact-info">
-                    <span className="contact-name">
-                      {contact.name || contact.vpa}
-                    </span>
-                    <span className="contact-detail">
-                      {contact.vpa || contact.phone || ""}
-                    </span>
-                  </div>
-                </button>
-              ))}
+        {/* 1. CONTACT TAB */}
+        {recipientType === "contact" && (
+          <div className="form-group">
+            <label>Saved Contact</label>
+            <div className="input-with-icon">
+              <FaSearch className="input-icon" />
+              <input
+                type="text"
+                value={contactRecipient}
+                onChange={(e) => {
+                  setContactRecipient(e.target.value);
+                  setError("");
+                }}
+                placeholder="Search contact by name or number..."
+                className="form-input"
+                onFocus={() => setShowContacts(true)}
+              />
             </div>
-          )}
-        </div>
+            {showContacts && filteredContacts.length > 0 && (
+              <div className="contact-suggestions">
+                {filteredContacts.map((c) => (
+                  <button
+                    key={c.id || c.vpa}
+                    type="button"
+                    className="contact-suggestion"
+                    onClick={() => handleContactSelect(c)}
+                  >
+                    <div className="contact-avatar">
+                      {c.name ? c.name.charAt(0).toUpperCase() : "👤"}
+                    </div>
+                    <div className="contact-info">
+                      <span className="contact-name">{c.name || c.vpa}</span>
+                      <span className="contact-detail">{c.vpa || c.phone || ""}</span>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* 2. UPI TAB */}
+        {recipientType === "upi" && (
+          <>
+            <div className="form-group">
+              <label>Recipient Name (Optional)</label>
+              <input
+                type="text"
+                value={recipientName}
+                onChange={(e) => setRecipientName(e.target.value)}
+                placeholder="e.g. Priya Sharma"
+                className="form-input"
+              />
+            </div>
+            <div className="form-group">
+              <label>Virtual Payment Address (UPI ID)</label>
+              <div className="input-with-icon">
+                <FaAddressCard className="input-icon" />
+                <input
+                  type="text"
+                  value={upiId}
+                  onChange={(e) => {
+                    setUpiId(e.target.value);
+                    setError("");
+                  }}
+                  placeholder="e.g. username@okhdfcbank"
+                  className="form-input"
+                />
+              </div>
+              <div className="quick-handles">
+                {UPI_HANDLES.map((h) => (
+                  <button
+                    key={h}
+                    type="button"
+                    className="quick-handle-btn"
+                    onClick={() => {
+                      const prefix = upiId.includes("@") ? upiId.split("@")[0] : upiId;
+                      setUpiId((prefix || "user") + h);
+                    }}
+                  >
+                    {h}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
+
+        {/* 3. PHONE TAB */}
+        {recipientType === "phone" && (
+          <>
+            <div className="form-group">
+              <label>Recipient Name (Optional)</label>
+              <input
+                type="text"
+                value={recipientName}
+                onChange={(e) => setRecipientName(e.target.value)}
+                placeholder="e.g. Priya Sharma"
+                className="form-input"
+              />
+            </div>
+            <div className="form-group">
+              <label>10-Digit Mobile Number</label>
+              <div className="input-with-icon">
+                <FaPhone className="input-icon" />
+                <input
+                  type="tel"
+                  maxLength={10}
+                  value={phone}
+                  onChange={(e) => {
+                    setPhone(e.target.value.replace(/\D/g, ""));
+                    setError("");
+                  }}
+                  placeholder="e.g. 9876543210"
+                  className="form-input"
+                />
+              </div>
+            </div>
+          </>
+        )}
+
+        {/* 4. BANK TAB */}
+        {recipientType === "bank" && (
+          <>
+            <div className="form-group">
+              <label>Account Holder Name</label>
+              <input
+                type="text"
+                value={recipientName}
+                onChange={(e) => setRecipientName(e.target.value)}
+                placeholder="e.g. Rahul Sharma"
+                className="form-input"
+              />
+            </div>
+            <div className="form-group">
+              <label>Bank Account Number</label>
+              <div className="input-with-icon">
+                <FaUniversity className="input-icon" />
+                <input
+                  type="text"
+                  maxLength={18}
+                  value={accountNumber}
+                  onChange={(e) => {
+                    setAccountNumber(e.target.value.replace(/\D/g, ""));
+                    setError("");
+                  }}
+                  placeholder="e.g. 123456789012"
+                  className="form-input"
+                />
+              </div>
+            </div>
+            <div className="form-group">
+              <label>11-Character IFSC Code</label>
+              <input
+                type="text"
+                maxLength={11}
+                value={ifsc}
+                onChange={(e) => {
+                  setIfsc(e.target.value.toUpperCase());
+                  setError("");
+                }}
+                placeholder="e.g. HDFC0001234"
+                className="form-input"
+                style={{ textTransform: "uppercase" }}
+              />
+            </div>
+          </>
+        )}
+
+        {/* Save to contacts toggle for new recipients */}
+        {recipientType !== "contact" && (
+          <div className="save-contact-row" style={{ display: "flex", alignItems: "center", gap: "8px", margin: "10px 0" }}>
+            <input
+              type="checkbox"
+              id="saveContactCheck"
+              checked={saveToContacts}
+              onChange={(e) => setSaveToContacts(e.target.checked)}
+              style={{ width: "16px", height: "16px", cursor: "pointer" }}
+            />
+            <label htmlFor="saveContactCheck" style={{ fontSize: "13px", color: "var(--text-secondary)", cursor: "pointer", display: "flex", alignItems: "center", gap: "4px" }}>
+              <FaUserPlus /> Save as contact for instant PIN-less Reserve Pay
+            </label>
+          </div>
+        )}
 
         {/* Amount Input */}
         <div className="form-group">
@@ -240,13 +430,13 @@ const SendMoneyInputCard = ({
               placeholder="Enter amount"
               min="1"
               className="form-input"
-              autoFocus={missingSlots?.includes("amount")}
             />
           </div>
           <div className="quick-amounts">
-            {[100, 500, 1000, 2000, 5000, 10000].map((amt) => (
+            {[100, 200, 500, 1000, 2000, 5000].map((amt) => (
               <button
                 key={amt}
+                type="button"
                 className={`quick-amount-btn ${amount === amt ? "active" : ""}`}
                 onClick={() => handleQuickAmount(amt)}
               >
@@ -256,36 +446,28 @@ const SendMoneyInputCard = ({
           </div>
         </div>
 
-        {/* Note (Optional) */}
+        {/* Note */}
         <div className="form-group">
           <label>Note (Optional)</label>
           <input
             type="text"
             value={note}
             onChange={(e) => setNote(e.target.value)}
-            placeholder="What's this for?"
+            placeholder="What is this payment for?"
             className="form-input"
           />
         </div>
 
-        {/* Error */}
-        {error && <div className="error-message">{error}</div>}
+        {/* Error message */}
+        {error && <div className="error-message" style={{ color: "#ef4444", fontSize: "13px", marginTop: "4px" }}>{error}</div>}
 
         {/* Actions */}
         <div className="payment-card-actions">
-          <button className="btn-cancel" onClick={onCancel}>
+          <button type="button" className="btn-cancel" onClick={onCancel}>
             Cancel
           </button>
-          <button
-            className="btn-confirm bank-pay"
-            onClick={handleConfirm}
-            disabled={!recipient || !amount || loading}
-          >
-            {loading ? (
-              <FaSpinner className="spinner-small" />
-            ) : (
-              "Proceed to Payment"
-            )}
+          <button type="button" className="btn-confirm bank-pay" onClick={handleConfirm}>
+            Proceed
           </button>
         </div>
       </div>

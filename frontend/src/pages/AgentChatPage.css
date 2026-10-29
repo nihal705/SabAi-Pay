@@ -2341,3 +2341,220 @@
 .dark .menu-item-card .menu-item-info h4 {
   color: var(--ac-text, #e6e9f0);
 }
+
+/* ==========================================================================
+   FOOD & MENU IMAGE SIZING & THUMBNAIL NORMALIZATION
+   ========================================================================== */
+.cart-item-info img,
+.cart-item img,
+.menu-item-image img,
+.item-details img,
+.menu-item-card img {
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  max-width: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  flex-shrink: 0 !important;
+}
+
+.cart-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 8px 12px !important;
+  border-bottom: 1px solid var(--ac-border, #e5e7eb) !important;
+  gap: 12px !important;
+}
+
+.cart-item-info {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  flex: 1 !important;
+}
+
+.cart-item-info h4 {
+  margin: 0 0 2px 0 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: var(--ac-text, #111827) !important;
+}
+
+.cart-item-info .item-price {
+  font-size: 13px !important;
+  color: var(--ac-text-dim, #6b7280) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.cart-item-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.cart-item-actions button {
+  width: 28px !important;
+  height: 28px !important;
+  padding: 0 !important;
+  border-radius: 6px !important;
+  border: 1px solid var(--ac-border, #d1d5db) !important;
+  background: var(--ac-surface, #ffffff) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  font-size: 11px !important;
+}
+
+.cart-item-actions button.remove-btn {
+  border-color: #fca5a5 !important;
+  color: #ef4444 !important;
+  background: #fef2f2 !important;
+}
+
+
+/* ============================================
+   DIRECT ORDER CONFIRMATION CARD
+   ============================================ */
+.direct-order-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  padding: 16px;
+  max-width: 360px;
+  min-width: 280px;
+  font-family: inherit;
+}
+.doc-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.doc-platform-badge {
+  background: #FC8019;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 6px;
+  padding: 3px 10px;
+  letter-spacing: 1px;
+}
+.doc-reserve-badge {
+  background: #5B21B6;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+.doc-items {
+  margin-bottom: 12px;
+}
+.doc-empty {
+  font-size: 13px;
+  color: #9ca3af;
+  padding: 8px 0;
+}
+.doc-item-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+.doc-item-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.doc-item-info {
+  flex: 1;
+}
+.doc-item-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: #1f2937;
+}
+.doc-item-meta {
+  font-size: 11px;
+  color: #6b7280;
+}
+.doc-item-price {
+  font-weight: 700;
+  font-size: 14px;
+  color: #374151;
+}
+.doc-restaurant {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+.doc-totals {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+.doc-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #374151;
+  padding: 2px 0;
+}
+.doc-total-final {
+  font-weight: 700;
+  font-size: 15px;
+  color: #111827;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 6px;
+  margin-top: 4px;
+}
+.doc-gems-row {
+  font-size: 12px;
+  color: #7c3aed;
+  margin-top: 6px;
+  font-weight: 600;
+}
+.doc-reserve-info {
+  font-size: 11px;
+  color: #5B21B6;
+  background: #ede9fe;
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+}
+.doc-actions {
+  display: flex;
+  gap: 8px;
+}
+.doc-confirm-btn {
+  flex: 1;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 0;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.doc-confirm-btn:hover { opacity: 0.88; }
+.doc-cancel-btn {
+  background: #f3f4f6;
+  color: #6b7280;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.doc-cancel-btn:hover { background: #e5e7eb; }

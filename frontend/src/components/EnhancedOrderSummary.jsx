@@ -25,7 +25,7 @@ const EnhancedOrderSummary = ({
 }) => {
     const [cart, setCart] = useState(initialItems);
     const [selectedSuggestions, setSelectedSuggestions] = useState({});
-    const [view, setView] = useState('suggestions');
+    const [view, setView] = useState(initialItems && initialItems.length > 0 ? 'cart' : 'suggestions');
     const [loading, setLoading] = useState(false);
     const [showScheduleModal, setShowScheduleModal] = useState(false);
     const [scheduleDate, setScheduleDate] = useState('');
@@ -201,7 +201,11 @@ const EnhancedOrderSummary = ({
                                 onClick={() => addToCart(item)}
                             >
                                 <div className="item-image">
-                                    <img src={item.imageUrl || item.image || '/images/items/default.jpg'} alt={item.name} />
+                                    <img 
+                                        src={item.imageUrl || item.image || '/images/items/default.png'} 
+                                        alt={item.name} 
+                                        onError={(e) => { e.target.onerror = null; e.target.src = '/images/items/default.png'; }}
+                                    />
                                     {selectedSuggestions[item.id] && (
                                         <div className="added-overlay">
                                             <FaCheckCircle />
@@ -245,7 +249,11 @@ const EnhancedOrderSummary = ({
                                 {cart.map(item => (
                                     <div key={item.id} className="cart-item">
                                         <div className="item-details">
-                                            <img src={item.imageUrl || item.image || '/images/items/default.jpg'} alt={item.name} />
+                                            <img 
+                                        src={item.imageUrl || item.image || '/images/items/default.png'} 
+                                        alt={item.name} 
+                                        onError={(e) => { e.target.onerror = null; e.target.src = '/images/items/default.png'; }}
+                                    />
                                             <div>
                                                 <h5>{item.name}</h5>
                                                 {item.restaurantName && hasMultipleRestaurants && (
@@ -297,26 +305,45 @@ const EnhancedOrderSummary = ({
                                 </div>
                             </div>
 
-                            <div className="cart-actions">
-                                {showSuggestions && (
-                                    <button className="add-more-btn" onClick={() => setView('suggestions')}>
-                                        ➕ Add More Items
+                            <div className="cart-actions" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                {reserveCheck && reserveCheck.eligible && (
+                                    <button 
+                                        type="button"
+                                        className="reserve-pay-instant-btn" 
+                                        onClick={handleCheckout}
+                                        style={{
+                                            width: '100%',
+                                            background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                                            color: '#ffffff',
+                                            border: 'none',
+                                            borderRadius: '10px',
+                                            padding: '12px 16px',
+                                            fontWeight: '700',
+                                            fontSize: '14px',
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            gap: '8px',
+                                            boxShadow: '0 4px 14px rgba(16, 185, 129, 0.4)'
+                                        }}
+                                    >
+                                        ⚡ 1-Tap Reserve Pay (₹{total} PIN-less)
                                     </button>
                                 )}
-                                <button className="schedule-btn" onClick={() => setShowScheduleModal(true)}>
-                                    📅 Schedule Order
-                                </button>
-                                <button className="checkout-btn" onClick={handleCheckout}>
-                                    💳 Proceed to Payment
-                                </button>
-                                <button className="clear-cart-btn" onClick={() => {
-                                    if (window.confirm('Clear your entire cart?')) {
-                                        setCart([]);
-                                        onClearCart?.();
-                                    }
-                                }}>
-                                    🗑️ Clear Cart
-                                </button>
+                                <div style={{ display: 'flex', gap: '8px', width: '100%' }}>
+                                    {showSuggestions && (
+                                        <button className="add-more-btn" onClick={() => setView('suggestions')} style={{ flex: 1 }}>
+                                            ➕ Add More
+                                        </button>
+                                    )}
+                                    <button className="schedule-btn" onClick={() => setShowScheduleModal(true)} style={{ flex: 1 }}>
+                                        📅 Schedule
+                                    </button>
+                                    <button className="checkout-btn" onClick={handleCheckout} style={{ flex: 1.2 }}>
+                                        💳 Pay →
+                                    </button>
+                                </div>
                             </div>
                         </>
                     )}

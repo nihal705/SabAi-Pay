@@ -132,15 +132,18 @@ export const clearUserCache = () => {
 // ============ PIN CACHE MANAGEMENT ============
 let pinStatusCache = new Map();
 let pinCacheTimestamp = new Map();
-const PIN_CACHE_TTL = 5000;
+let pendingPinRequests = new Map();
+const PIN_CACHE_TTL = 60000; // 60s cache
 
 export const clearPinCache = (accountId) => {
   if (accountId) {
     pinStatusCache.delete(accountId);
     pinCacheTimestamp.delete(accountId);
+    pendingPinRequests.delete(accountId);
   } else {
     pinStatusCache.clear();
     pinCacheTimestamp.clear();
+    pendingPinRequests.clear();
   }
 };
 
@@ -267,6 +270,7 @@ export const verifyBankPin = async (bankAccountId, pin) => {
 };
 
 export const hasUpiPin = async (bankAccountId) => {
+  if (!bankAccountId) return false;
   const cached = pinStatusCache.get(bankAccountId);
   const timestamp = pinCacheTimestamp.get(bankAccountId);
 
@@ -278,19 +282,31 @@ export const hasUpiPin = async (bankAccountId) => {
     return cached;
   }
 
-  try {
-    const response = await axios.get(
-      `${API_BASE_URL}/bank/accounts/${bankAccountId}/has-pin`,
-      { headers: getAuthHeaders() },
-    );
-    const hasPin = response.data.data?.hasPin || false;
-    pinStatusCache.set(bankAccountId, hasPin);
-    pinCacheTimestamp.set(bankAccountId, Date.now());
-    return hasPin;
-  } catch (error) {
-    console.error("Failed to check PIN:", error);
-    return false;
+  // Deduplicate concurrent in-flight HTTP requests for the same bank account
+  if (pendingPinRequests.has(bankAccountId)) {
+    return pendingPinRequests.get(bankAccountId);
   }
+
+  const reqPromise = (async () => {
+    try {
+      const response = await axios.get(
+        `${API_BASE_URL}/bank/accounts/${bankAccountId}/has-pin`,
+        { headers: getAuthHeaders() },
+      );
+      const hasPin = response.data.data?.hasPin || false;
+      pinStatusCache.set(bankAccountId, hasPin);
+      pinCacheTimestamp.set(bankAccountId, Date.now());
+      return hasPin;
+    } catch (error) {
+      console.error("Failed to check PIN:", error);
+      return false;
+    } finally {
+      pendingPinRequests.delete(bankAccountId);
+    }
+  })();
+
+  pendingPinRequests.set(bankAccountId, reqPromise);
+  return reqPromise;
 };
 
 // ============ SABAI COINS ============

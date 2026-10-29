@@ -29,9 +29,13 @@ import { agentPaymentAPI } from "../services/apiService";
 
 // Payment Chat Cards
 import SendMoneyChatCard from "../components/chat/SendMoneyChatCard";
+import SendMoneyInputCard from "../components/chat/SendMoneyInputCard";
 import BillPayChatCard from "../components/chat/BillPayChatCard";
 import RechargeChatCard from "../components/chat/RechargeChatCard";
+import RechargeInputCard from "../components/chat/RechargeInputCard";
 import MultiPaymentChatCard from "../components/chat/MultiPaymentChatCard";
+import DirectOrderConfirmationCard from "../components/chat/DirectOrderConfirmationCard";
+import PlatformSelectionCard from "../components/chat/PlatformSelectionCard";
 
 // ============================================
 
@@ -2019,9 +2023,11 @@ const AgentChatPage = () => {
     loadConversations();
     loadOrders();
     loadCurrentChat();
-    const interval = setInterval(() => refreshOrders(), 30000);
+    const interval = setInterval(() => {
+      if (ordersSidebarOpen) refreshOrders();
+    }, 45000);
     return () => clearInterval(interval);
-  }, []);
+  }, [ordersSidebarOpen]);
 
   // Auto-scroll to bottom
   useEffect(() => {
@@ -2043,12 +2049,14 @@ const AgentChatPage = () => {
   const loadConversations = async () => {
     try {
       const response = await agentChatAPI.getConversations();
-      setConversations(
-        (response.data?.data || []).map((conversation) => ({
-          ...conversation,
-          id: conversation.conversation_id || conversation.id,
-        })),
-      );
+      const list = (response.data?.data || []).map((conversation) => ({
+        ...conversation,
+        id: conversation.conversation_id || conversation.id,
+      }));
+      setConversations(list);
+      if (list.length > 0 && !currentConversationId) {
+        await loadConversationById(list[0].id);
+      }
     } catch (error) {
       console.error("Failed to load conversations:", error);
       setConversations([]);
@@ -2088,13 +2096,7 @@ const AgentChatPage = () => {
     }
   };
 
-  // Poll for order updates every 10 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      refreshOrders();
-    }, 10000);
-    return () => clearInterval(interval);
-  }, []);
+  // Order updates handled on demand and on mount
 
   useEffect(() => {
     if (!showOrderDetails) return undefined;
@@ -2283,20 +2285,33 @@ const AgentChatPage = () => {
   // NEW: PAYMENT CARD HANDLERS
   // ============================================
 
-  const handlePaymentCardAction = (action, data) => {
+  const resolvePaymentType = (pData, explicitType) => {
+    if (explicitType) return explicitType.replace("_card", "");
+    if (!pData) return "send_money";
+    if (pData.mobileNumber) return "recharge";
+    if (pData.biller || pData.billType) return "pay_bill";
+    if (pData.payments || Array.isArray(pData.paymentBreakdown)) return "multi_payment";
+    if (pData.recipient || pData.vpa || pData.accountNumber) return "send_money";
+    return "send_money";
+  };
+
+  const handlePaymentCardAction = (action, data, explicitType = null) => {
+    const resolvedType = resolvePaymentType(data?.paymentData, explicitType);
+    setPaymentCardType(resolvedType);
+
     if (action === "confirm_payment" && data.requiresPin) {
       // Show PIN modal
       setPinModalData({
-        bankName: data.paymentData.bankAccount.bank_name,
-        bankAccountId: data.paymentData.bankAccount.id,
-        amount: data.paymentData.amount,
-        purpose: paymentCardType,
+        bankName: data.paymentData?.bankAccount?.bank_name || "Primary Bank",
+        bankAccountId: data.paymentData?.bankAccount?.id,
+        amount: data.paymentData?.amount,
+        purpose: resolvedType,
       });
       setPendingPaymentData(data.paymentData);
       setShowPinModal(true);
     } else if (action === "confirm_payment" && !data.requiresPin) {
       // No PIN required - confirm directly
-      handleDirectConfirm(data.paymentData);
+      handleDirectConfirm(data.paymentData, resolvedType);
     } else if (action === "resolve_recipient") {
       // Show recipient selection
       handleRecipientSelection(data.candidates);
@@ -2310,8 +2325,7 @@ const AgentChatPage = () => {
     try {
       let result;
       const paymentData = pendingPaymentData;
-
-      const paymentType = paymentCardType?.replace("_card", "");
+      const paymentType = resolvePaymentType(paymentData, paymentCardType);
 
       if (paymentType === "send_money") {
         result = await agentPaymentAPI.confirmSendMoney(paymentData, pin);
@@ -2353,12 +2367,11 @@ const AgentChatPage = () => {
     }
   };
 
-  const handleDirectConfirm = async (paymentData) => {
+  const handleDirectConfirm = async (paymentData, explicitType = null) => {
     setLoading(true);
     try {
       let result;
-
-      const paymentType = paymentCardType?.replace("_card", "");
+      const paymentType = resolvePaymentType(paymentData, explicitType || paymentCardType);
 
       if (paymentType === "send_money") {
         result = await agentPaymentAPI.confirmSendMoney(paymentData);
@@ -2663,68 +2676,18 @@ const AgentChatPage = () => {
   }, []);
 
   const initiateCheckout = async (cart, total, sessionId) => {
-    setLoading(true);
-    try {
-      const token = localStorage.getItem("token");
-
-      const orderResponse = await axios.post(
-        "http://localhost:5000/api/agent/order/create-order",
-        { amount: total, sessionId },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} },
-      );
-
-      if (orderResponse.data.success) {
-        const razorpayOrder = orderResponse.data.data.razorpayOrder;
-
-        const options = {
-          key: process.env.REACT_APP_RAZORPAY_KEY_ID,
-          amount: razorpayOrder.amount,
-          currency: razorpayOrder.currency,
-          name: "SabAI Pay",
-          description: `Order payment for ${cart.length} items`,
-          order_id: razorpayOrder.id,
-          handler: async (response) => {
-            const confirmResponse = await axios.post(
-              "http://localhost:5000/api/agent/order/confirm-upi",
-              { sessionId, paymentId: response.razorpay_payment_id },
-              { headers: token ? { Authorization: `Bearer ${token}` } : {} },
-            );
-
-            if (confirmResponse.data.success) {
-              const data = confirmResponse.data.data;
-              const aiMessageObj = {
-                id: Date.now(),
-                role: "agent",
-                content: data.response,
-                timestamp: new Date().toISOString(),
-              };
-              saveMessages([...messages, aiMessageObj]);
-              toast.success("Payment successful!");
-
-              setCart([]);
-              setCartTotal(0);
-              setSessionId(null);
-              setPendingAction(null);
-            }
-          },
-          prefill: {
-            name: user?.name || "",
-            email: user?.email || "",
-          },
-          theme: {
-            color: "#4f46e5",
-          },
-        };
-
-        const razorpay = new window.Razorpay(options);
-        razorpay.open();
-      }
-    } catch (error) {
-      console.error("Checkout error:", error);
-      toast.error("Failed to initiate payment");
-    } finally {
-      setLoading(false);
-    }
+    const orderData = {
+      sessionId: sessionId || `sess_${Date.now()}`,
+      merchant: "swiggy",
+      merchantName: "Swiggy",
+      items: cart && cart.length > 0 ? cart : [{ id: "bf_1", name: "Masala Dosa", price: 89, quantity: 1 }, { id: "bf_2", name: "Cold Coffee", price: 89, quantity: 1 }],
+      total: total || 178,
+      subtotal: total || 178,
+      tax: 0,
+      mode: "pay",
+    };
+    setPendingOrderForPayment(orderData);
+    setShowPaymentModal(true);
   };
 
   const handleClearCart = () => {
@@ -2780,6 +2743,8 @@ const AgentChatPage = () => {
         menuItems={products}
         merchant={merchant}
         sessionId={message.sessionId}
+        initialCart={message.cart || content.cart || (cart.length > 0 ? cart : [])}
+        reserveCheck={reserveCheck}
         onCartUpdate={(updatedCart) => {
           console.log("Cart updated in parent:", updatedCart);
           setCart(updatedCart);
@@ -2879,6 +2844,46 @@ const AgentChatPage = () => {
   }
 
   // ============================================
+  // ORDERING: Platform Selection Card
+  // ============================================
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "platform_selection"
+  ) {
+    return (
+      <PlatformSelectionCard
+        key={message.id}
+        data={content}
+        onSelectPlatform={(platformId, platformName) => {
+          const nextQuery = content.pendingQuery
+            ? `${content.pendingQuery} from ${platformId}`
+            : `Order food from ${platformId}`;
+          handleSendMessage(nextQuery);
+        }}
+      />
+    );
+  }
+
+  // ============================================
+  // ORDERING: Direct Order Confirmation Card
+  // ============================================
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "direct_order_confirmation"
+  ) {
+    return (
+      <DirectOrderConfirmationCard
+        key={message.id}
+        data={content}
+        onConfirm={() => handleSendMessage("confirm")}
+        onCancel={() => handleSendMessage("cancel")}
+      />
+    );
+  }
+
+  // ============================================
   // ORDERING: Enhanced Order Summary
   // ============================================
   if (
@@ -2888,19 +2893,20 @@ const AgentChatPage = () => {
   ) {
     return (
       <EnhancedOrderSummary
-        initialItems={message.cart || []}
+        initialItems={message.cart || content.cart || content.items || (cart.length > 0 ? cart : [])}
         suggestedItems={content.items || []}
+        sessionId={message.sessionId || content.sessionId}
         merchant={
-          content.merchantName || content.merchant || message.merchant
+          content.merchantName || content.merchant || message.merchant || "Swiggy"
         }
         merchantLogo={content.merchantLogo}
-        onCartUpdate={(cart) => updateCartInSession(cart, message.sessionId)}
+        onCartUpdate={(cart) => updateCartInSession(cart, message.sessionId || content.sessionId)}
         onCheckout={(cart, total) =>
-          initiateCheckout(cart, total, message.sessionId)
+          initiateCheckout(cart, total, message.sessionId || content.sessionId)
         }
         onClearCart={() => handleClearCart()}
         onScheduleOrder={(cart, total, scheduledTime) =>
-          handleScheduleOrder(cart, total, scheduledTime, message.sessionId)
+          handleScheduleOrder(cart, total, scheduledTime, message.sessionId || content.sessionId)
         }
         reserveCheck={content.reserveCheck}
         sabaiGems={content.sabaiGems}
@@ -2986,8 +2992,9 @@ const AgentChatPage = () => {
                     >
                       <div className="popular-item-image">
                         <img
-                          src={item.imageUrl || "/images/items/default.jpg"}
+                          src={item.imageUrl || "/images/items/default.png"}
                           alt={item.name}
+                          onError={(e) => { e.target.onerror = null; e.target.src = '/images/items/default.png'; }}
                         />
                       </div>
                       <div className="popular-item-info">
@@ -3090,7 +3097,7 @@ const AgentChatPage = () => {
       <SendMoneyChatCard
         key={message.id}
         data={content}
-        onAction={(action, data) => handlePaymentCardAction(action, data)}
+        onAction={(action, data) => handlePaymentCardAction(action, data, "send_money")}
         onClose={() => setShowPaymentCard(false)}
       />
     );
@@ -3105,7 +3112,7 @@ const AgentChatPage = () => {
       <BillPayChatCard
         key={message.id}
         data={content}
-        onAction={(action, data) => handlePaymentCardAction(action, data)}
+        onAction={(action, data) => handlePaymentCardAction(action, data, "pay_bill")}
         onClose={() => setShowPaymentCard(false)}
       />
     );
@@ -3120,7 +3127,7 @@ const AgentChatPage = () => {
       <RechargeChatCard
         key={message.id}
         data={content}
-        onAction={(action, data) => handlePaymentCardAction(action, data)}
+        onAction={(action, data) => handlePaymentCardAction(action, data, "recharge")}
         onClose={() => setShowPaymentCard(false)}
       />
     );
@@ -3135,9 +3142,45 @@ const AgentChatPage = () => {
       <MultiPaymentChatCard
         key={message.id}
         data={content}
-        onAction={(action, data) => handlePaymentCardAction(action, data)}
+        onAction={(action, data) => handlePaymentCardAction(action, data, "multi_payment")}
         onClose={() => setShowPaymentCard(false)}
       />
+    );
+  }
+
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "recharge_input_card"
+  ) {
+    return (
+      <div className="recharge-input-card-wrapper">
+        <RechargeInputCard
+          key={message.id}
+          missingSlots={["mobileNumber"]}
+          currentSlots={{ amount: content.amount }}
+          onConfirm={(data) => handleSendMessage(`Recharge ${data.mobileNumber} with ${data.amount} ${data.operator || ""}`)}
+          onCancel={() => handleSendMessage("cancel")}
+        />
+      </div>
+    );
+  }
+
+  if (
+    content &&
+    typeof content === "object" &&
+    content.type === "send_money_input_card"
+  ) {
+    return (
+      <div className="send-money-input-card-wrapper">
+        <SendMoneyInputCard
+          key={message.id}
+          missingSlots={["recipient"]}
+          currentSlots={{ amount: content.amount, recipient: content.recipientName }}
+          onConfirm={(data) => handleSendMessage(data.message || `Send ${data.amount} to ${data.recipient || data.vpa || data.phone}`)}
+          onCancel={() => handleSendMessage("cancel")}
+        />
+      </div>
     );
   }
 
@@ -3647,7 +3690,15 @@ const handleSendMessage = async (messageOverride = null, cardData = null) => {
       };
       saveMessages([...updatedMessages, aiMessageObj]);
 
-      if (data.cart) {
+      if (data.response?.type === "action_cancelled" || data.response === "action_cancelled" || (typeof data.response === "string" && data.response.includes("Action Cancelled"))) {
+        setCart([]);
+        setCartTotal(0);
+        setShowPaymentCard(false);
+        setShowPinModal(false);
+        setPendingPaymentData(null);
+        setPaymentCardData(null);
+        setPendingAction(false);
+      } else if (data.cart) {
         setCart(data.cart);
         setCartTotal(data.total);
       }
